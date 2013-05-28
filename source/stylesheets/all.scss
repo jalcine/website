@@ -9,3 +9,6 @@ $experimental-support-for-svg: true;
 a { transition: color 0.7s; }
 
 @import "layout";
+
+// Pages
+@import "index";
