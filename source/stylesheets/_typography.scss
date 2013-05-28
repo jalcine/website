@@ -1,0 +1,29 @@
+// We ❤ Google Fonts.
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700|Signika:400,700");
+
+// Define some fonts for me, darling.
+$sans-serif-family: Helvetica, Verdana, OpenSans, sans;
+$serif-font-family: "Signika", "Times New Roman", sans-serif;
+$base-font-size: 20px;
+
+// === MIXINS 
+@mixin dark-text-shadow   { @include text-shadow(0px 0px 2px #333); }
+@mixin light-text-shadow  { @include text-shadow(0px 0px 2px #ddd); }
+
+body {
+  font-size:   1.25em;
+  font-family: $sans-serif-family;
+  font-smooth: always;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $serif-font-family;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  @include dark-text-shadow;
+}
+
+a {
+  text-decoration: underline;
+  @include dark-text-shadow;
+}

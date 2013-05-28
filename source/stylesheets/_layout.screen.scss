@@ -1,0 +1,186 @@
+/***
+ * Dimensions: 1366 x 768
+ * Font-size: 20px;
+ */
+
+@import "compass/utilities/general/min";
+
+$marginal-height: 2.5em;
+$marginal-border: 1px solid #000;
+
+@include at-breakpoint(65em 12) {
+  body {
+    @include container;
+    margin: auto;
+    padding: 0em;
+
+    // Nothing should get in the way.
+    > header, > footer { 
+      @include span-columns(12);
+      @include set-container-width;
+      @include min-height($marginal-height);
+      clear: both;
+      position: fixed;
+      left: 0em;
+      right: 0em;
+
+      &:before, &:after {
+        content: "";
+      }
+    }
+
+    header {
+      top: $marginal-height/-3 * 2;
+      transition: top 0.4s, border-bottom-color 0.2s;
+      border-bottom: $marginal-border;
+
+      &:hover {
+        top: 0em;
+        border-bottom-color: #aaa;
+
+        nav {
+          @include opacity(1);
+        }
+      }
+
+      nav {
+        @include opacity(0.4);
+        @include span-columns(7);
+        @include squish(2,2);
+        @include min-height($marginal-height);
+        height: $marginal-height;
+        text-align: center;
+
+        ul {
+          list-style: none;
+          margin: 0em;
+          padding: 0em;
+
+          li {
+            display: block;
+            float: left;
+            margin-right: 0.5em;
+            padding: 0em;
+            margin: 0em;
+            border-right: $marginal-border;
+
+            &:first-child {
+              margin-right: 1.5em;
+              vertical-align: middle;
+
+              img {
+                height: $marginal-height * 2;
+                width: $marginal-height * 2;
+                vertical-align: middle;
+                margin-right: 0.2em;
+                border-radius: 50%;
+                background-color: $marginal-background-color;
+                margin-top: -1em;
+                border: 1px solid $marginal-background-color;
+                float: left;
+              }
+
+              a { 
+                font-family: $serif-font-family;
+                overflow: hidden;
+
+                &:hover {
+                  background-color: #fff;
+                  color: #000;
+                }
+              }
+            }
+
+            &:nth-child(even) {
+              a {
+                &:hover {
+                  color: red;
+                }
+              }
+            }
+
+            &:nth-child(5) { a {
+                &:hover {
+                  color: #4099ff;
+                }
+              }
+            }
+
+            a {
+              display: block;
+              @include min-height($marginal-height);
+              height: $marginal-height!important;
+              line-height: $marginal-height!important;
+              padding: 0em 0.5em;
+              color: white;
+              text-decoration: none;
+              text-transform: uppercase;
+              transition: background-color 0.5s;
+
+              &:hover {
+                color: orange;
+                background-color: #555;
+              }
+
+            }
+          }
+        }
+      }
+
+      a.sidebar {
+        @include span-columns(1 omega, 12);
+        @include min-height($marginal-height);
+        height: $marginal-height;
+        background-color: blue;
+        color: white;
+        line-height: $marginal-height;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+
+    footer {
+      @include span-columns(12);
+      @include set-container-width;
+      bottom: $marginal-height/-3 * 2;
+      transition: bottom ease-in-out 0.4s, border-top-color 0.2s;
+      border-top: $marginal-border;
+
+      &:hover {
+        bottom: 0em;
+        border-top-color: #aaa;
+      }
+
+      div.copyright {
+        @include span-columns(3 omega, 12);
+        font-size: 0.75em;
+        line-height: $marginal-height * (4/3);
+        transition: color 0.2s;
+        a { color: inherit; text-decoration: none; }
+
+        &:hover {
+          color: #fff;
+
+          a { color: $link-color; text-decoration: underline; }
+        }
+      }
+    }
+
+    // The header is very special; it should be able to touch each end of the 
+    // web page; while still padding the content within in.
+    > header { }
+
+
+    // Define the content's spacing and layout itself.
+    > div.content {
+      @include span-columns(10);
+      @include squish(1,1);
+      @include set-container-width;
+
+      // Define the sidebar, whenever necessary.
+      > div.sidebar {
+        @include span-columns(3 omega, 12);
+      }
+    }
+  }
+}
