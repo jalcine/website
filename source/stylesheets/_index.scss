@@ -1,0 +1,29 @@
+body.index {
+  h1.hi {
+    line-height: 3em;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  div.links-social {
+    a{
+      color: $foreground-color;
+      text-decoration: none;
+      transition: color 0.4s;
+    }
+
+    a:nth-child(1) { &:hover { color: #3B5998; } }
+    a:nth-child(2) { &:hover { color: #4099FF; } }
+    a:nth-child(3) { &:hover { color: #4875B4; } }
+    a:nth-child(4) { &:hover { color: #000000; } }
+
+    font-size: 2.4em;
+    text-align: center;
+  }
+}
+
+@include at-breakpoint(65em 12){
+  body.index {
+    h1.hi { line-height: 8em; } 
+  }
+}
