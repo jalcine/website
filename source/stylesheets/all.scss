@@ -2,13 +2,17 @@
 
 $experimental-support-for-svg: true;
 
-@import "compass/css3";
+@import "compass";
 @import "typography";
 @import "color";
 
 a { transition: color 0.7s; }
 
 @import "layout";
+@import "views";
 
 // Pages
 @import "index";
+@import "code";
+@import "work";
+@import "social";

@@ -6,7 +6,7 @@
 @import "compass/utilities/general/min";
 
 $marginal-height: 2.5em;
-$marginal-border: 1px solid #000;
+$marginal-border: 1px solid transparent;
 
 @include at-breakpoint(65em 12) {
   body {
@@ -15,7 +15,7 @@ $marginal-border: 1px solid #000;
     padding: 0em;
 
     // Nothing should get in the way.
-    > header, > footer { 
+    > header[role=banner], > footer[role=banner] { 
       @include span-columns(12);
       @include set-container-width;
       @include min-height($marginal-height);
@@ -29,7 +29,7 @@ $marginal-border: 1px solid #000;
       }
     }
 
-    header {
+    header[role=banner] {
       top: $marginal-height/-3 * 2;
       transition: top 0.4s, border-bottom-color 0.2s;
       border-bottom: $marginal-border;
@@ -38,12 +38,12 @@ $marginal-border: 1px solid #000;
         top: 0em;
         border-bottom-color: #aaa;
 
-        nav {
+        nav[role=navigation] {
           @include opacity(1);
         }
       }
 
-      nav {
+      nav[role=navigation] {
         @include opacity(0.4);
         @include span-columns(7);
         @include squish(2,2);
@@ -57,12 +57,10 @@ $marginal-border: 1px solid #000;
           padding: 0em;
 
           li {
-            display: block;
-            float: left;
+            display: inline-block;
             margin-right: 0.5em;
             padding: 0em;
             margin: 0em;
-            border-right: $marginal-border;
 
             &:first-child {
               margin-right: 1.5em;
@@ -116,10 +114,15 @@ $marginal-border: 1px solid #000;
               text-decoration: none;
               text-transform: uppercase;
               transition: background-color 0.5s;
+              border-left: $marginal-border;
+              border-right: $marginal-border;
+              transition: color 0.3s, border-color 0.3s;
 
               &:hover {
                 color: orange;
                 background-color: #555;
+                border-left-color: #fff;
+                border-right-color: #fff;
               }
 
             }
@@ -139,7 +142,7 @@ $marginal-border: 1px solid #000;
       }
     }
 
-    footer {
+    footer[role=banner] {
       @include span-columns(12);
       @include set-container-width;
       bottom: $marginal-height/-3 * 2;
@@ -165,21 +168,30 @@ $marginal-border: 1px solid #000;
         }
       }
     }
-
-    // The header is very special; it should be able to touch each end of the 
-    // web page; while still padding the content within in.
-    > header { }
-
-
     // Define the content's spacing and layout itself.
     > div.content {
       @include span-columns(10);
       @include squish(1,1);
       @include set-container-width;
 
-      // Define the sidebar, whenever necessary.
-      > div.sidebar {
-        @include span-columns(3 omega, 12);
+      > div.banner {
+        @include span-columns(12);
+        clear: both;
+        border-bottom: 2px rgba(51,51,51,0.8) solid;
+        text-align: center;
+        background-color: $background-color;
+
+        > h1.post-title {
+          line-height: 2em;
+          font-size: 2em;
+          margin: 0em;
+
+          > small {
+            display: inline-block;
+            position: relative;
+            top: -0.25em;
+          }
+        }
       }
     }
   }
