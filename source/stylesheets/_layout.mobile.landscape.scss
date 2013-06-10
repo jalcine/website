@@ -1,1 +1,30 @@
+@include at-breakpoint(12 36em) {
+  body {
+    font-size: 10pt;
 
+    header[role=banner], footer[role=banner] {
+      top: 0em;
+      transition: none;
+      position: static;
+    }
+
+    header[role=banner]{
+      nav[role=navigation] {
+        @include opacity(1);
+        @include span-columns(12,12);
+        @include squish(0,0);
+
+        ul {
+          li {
+            display: block;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    footer[role=banner] {
+      div.copyright, div.extra { @include span-columns(6, 12); }
+    }
+  }
+}
