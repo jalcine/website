@@ -1,0 +1,23 @@
+@include at-breakpoint(12 60em){
+  body {
+    font-size: 14pt;
+
+    header[role=banner] { 
+      nav[role=navigation] {
+        @include span-columns(12);
+        @include squish(0,0);
+      }
+    }
+
+    footer[role=banner] {
+      padding: 0.5em 0em;
+      div.copyright, div.extra {
+        line-height: 1em;
+        @include span-columns(11,12);
+        @include squish(0.5,0.5);
+        clear: both;
+        text-align: left;
+      }
+    }
+  }
+}
