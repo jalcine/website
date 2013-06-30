@@ -4,6 +4,7 @@
 
 # ZURB Foundation
 require "zurb-foundation"
+require "middleman-livereload"
 
 # Change Compass configuration
 # compass_config do |config|
@@ -50,6 +51,8 @@ page "humans.txt", :layout => false
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+
+activate :livereload, :host => "virgil" 
 
 # Build-specific configuration
 configure :build do

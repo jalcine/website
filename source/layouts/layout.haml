@@ -1,5 +1,4 @@
 !!! 5
-/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
 /[if IE 8] <html class="no-js lt-ie9" lang="en">
 :plain
   <!--[if gt IE 8] -->
@@ -7,19 +6,53 @@
   /<![endif]
   %head
     %meta{:charset => "utf-8"}/
-    / Set the viewport width to device width for mobile
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-    %title= data.page.title || "ZURB Foundation"
-    / Included CSS Files
+    %title= data.page.title || "Jacky Alcine"
     = stylesheet_link_tag "app"
+    = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
     = javascript_include_tag "foundation/modernizr.foundation"
-    
+
   %body{:class => page_classes}
-    .row
-      .twelve.columns
-        %h2 Welcome to Foundation on Middleman
-        %p This is version 3.2.5.
-        %hr
-    = yield
-    / Application Javascript, safe to override
+    %header
+    %div.sticky
+      %nav.top-bar
+        %ul.title-area
+          %li.name
+            %h1
+              %a{href: "/"}
+                %img.me{src:"https://secure.gravatar.com/avatar/80a10e58c35275ddb7a8e681f277e474?s=600"}
+        %section.top-bar-section
+          %ul.left
+            %li.divider
+            %li
+              %a{href: "http://blog.jalcine.me/?ref=nav"}
+                %i.icon-beer
+                Blog
+            %li.divider
+            %li
+              %a{href: "http://projects.jalcine.me/?ref=nav"}
+                %i.icon-cog
+                Projects
+            %li.divider
+            %li
+              %a{href: "/work.html?ref=nav"}
+                %i.icon-briefcase
+                Work
+          %ul.right
+            %li.divider
+            %li
+              %a{href: "http://www.url.jalcine.me/154hkpt"}
+                %i.icon-github-sign
+            %li
+              %a{href: "http://www.url.jalcine.me/ZB94JA"}
+                %i.icon-twitter-sign
+            %li
+              %a{href: "http://www.url.jalcine.me/10pvIpo"}
+                %i.icon-google-plus-sign
+            %li
+              %a{href: "skype:jackyalcine?call"}
+                %i.icon-phone-sign
+            %li.divider
+    %div.row
+      = yield
     = javascript_include_tag "app"

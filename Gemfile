@@ -1,4 +1,8 @@
 source :rubygems
 
+gem "compass"
+gem "zurb-foundation"
+gem "rack-livereload"
+
 gem "middleman"
-gem "zurb-foundation", "~> 3.2"
+gem "middleman-livereload"
