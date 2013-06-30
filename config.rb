@@ -1,21 +1,14 @@
 ###
-# Preliminary gear.
-###
-require 'lorem-ipsum'
-
-
-###
 # Compass
 ###
 
-# Susy grids in Compass
-# First: gem install susy
-require 'susy'
+# ZURB Foundation
+require "zurb-foundation"
 
 # Change Compass configuration
-compass_config do |config|
-  config.output_style = :expanded
-end
+# compass_config do |config|
+#   config.output_style = :compact
+# end
 
 ###
 # Page options, layouts, aliases and proxies
@@ -24,7 +17,8 @@ end
 # Per-page layout changes:
 #
 # With no layout
-# page "/path/to/file.html", :layout => false
+page "robots.txt", :layout => false
+page "humans.txt", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
@@ -53,9 +47,6 @@ end
 #   end
 # end
 
-###
-# Directories
-###
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
@@ -75,8 +66,9 @@ configure :build do
   # activate :relative_assets
 
   # Compress PNGs after build
-  require "middleman-smusher"
-  activate :smusher
+  # First: gem install middleman-smusher
+  # require "middleman-smusher"
+  # activate :smusher
 
   # Or use a different image path
   # set :http_path, "/Content/images/"

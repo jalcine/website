@@ -1,10 +1,4 @@
-source 'http://rubygems.org'
+source :rubygems
 
-gem "rb-inotify"
-gem "compass"
-gem "susy"
-gem "lorem-ipsum"
-
-gem "middleman", "~>3.0.14"
-gem "middleman-smusher"
-gem "middleman-livereload"
+gem "middleman"
+gem "zurb-foundation", "~> 3.2"
