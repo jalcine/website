@@ -77,3 +77,11 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+activate :deploy do | deploy |
+  deploy.method = :rsync
+  deploy.host = "home.jalcine.me"
+  deploy.path = "/var/www/home.jalcine.me"
+  deploy.user = "jacky"
+  deploy.clean = true
+end
