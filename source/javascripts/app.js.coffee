@@ -22,6 +22,7 @@
 #= require "foundation/jquery.foundation.tabs"
 #= require "foundation/jquery.foundation.tooltips"
 #= require "foundation/jquery.foundation.topbar"
+#= require "faker"
 
 (($, window, undefined_) ->
   "use strict"
@@ -54,5 +55,9 @@
       setTimeout (->
         window.scrollTo 0, 1
       ), 0
+
+  $(".faker").text(Faker.Lorem.paragraphs(2))
+  $(".faker2").text(Faker.Lorem.paragraphs(20))
+  $("section.content").css("min-height", $(window).height() - 139 - $("header").height() - $("footer").height())
 
 ) jQuery, this

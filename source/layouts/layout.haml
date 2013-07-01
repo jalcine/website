@@ -13,9 +13,9 @@
     = javascript_include_tag "foundation/modernizr.foundation"
 
   %body{:class => page_classes}
-    %header
+    %header.fadeInDownBig.animated
     %div.sticky
-      %nav.top-bar
+      %nav.top-bar.fadeInDownBig.animated
         %ul.title-area
           %li.name
             %h1
@@ -38,6 +38,7 @@
               %a{href: "/work.html?ref=nav"}
                 %i.icon-briefcase
                 Work
+            %li.divider
           %ul.right
             %li.divider
             %li
@@ -53,6 +54,16 @@
               %a{href: "skype:jackyalcine?call"}
                 %i.icon-phone-sign
             %li.divider
-    %div.row
+    %section.content.row.small-12.large-8.large-centered.columns.fadeInRight.animated
       = yield
+    %section.footer
+      %div.row
+        %div.large-8.small-12.columns.fadeInDownBig.animated
+          Copyright &copy; 2011 - 2013 by 
+          %a{href: "https://plus.google.com/u/0/118415769922038925979", property: "cc:attributionName", rel: "cc:attributionURL", "xmlns:cc" => "http://creativecommons.org/ns#"}
+            Jacky Alcine
+          under
+          %a{href: "http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"}
+            %img{src: "http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"}
+        %div.large-4.small-12.columns.fadeInRight.animated
     = javascript_include_tag "app"

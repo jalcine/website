@@ -1,0 +1,70 @@
+div.blog {
+  @include grid-row;
+
+  section.content {
+    @include grid-column($columns: 8);
+
+    article {
+      h2 {
+        margin-bottom: 0em;
+
+        &:before {
+          content: "\203a";
+          color: #4185f6;
+        }
+
+        a { 
+          color: #222;
+          transition: color 0.4s;
+          &:hover { color: #378ec9; }
+        }
+      }
+
+      div.content {
+        padding: 1em 0.5em;
+        line-height: 1.2em;
+        text-align: justify;
+        width: 100%;
+        margin: 0em;
+        padding-bottom: 0em;
+      }
+
+      div.controls {
+        height: 3em;
+        line-height: 3em;
+
+        a.permalink, span.read-more, span.time { text-align: center; }
+
+        span.time { font-size: 0.8em; }
+
+        span.read-more > a {
+          &:after {
+            content: "\203a";
+          }
+        }
+      }
+
+      padding-bottom: 10px;
+      border-bottom: 2px solid #aaa;
+      &:last-child { border-bottom: none; padding-bottom: 0em; }
+
+      &.full {
+        div.controls {
+          a.permalink { @include grid-column($columns: 6); }
+          span.time { 
+            @include grid-column($columns: 6);
+            font-size: 1em;
+          }
+        }
+      }
+
+      &.excerpt {
+        a.permalink, span.read-more, span.time { @include grid-column($columns: 4); }
+      }
+    }
+  }
+
+  section.sidebar {
+    @include grid-column($columns: 4);
+  }
+}

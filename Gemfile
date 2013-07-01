@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "faker"
 gem "compass"
 gem "zurb-foundation"
 gem "rack-livereload"

@@ -19,6 +19,8 @@ GEM
     eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faker (1.1.2)
+      i18n (~> 0.5)
     ffi (1.2.0)
     fssm (0.2.9)
     haml (3.1.7)
@@ -115,6 +117,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  faker
   middleman
   middleman-livereload
   rack-livereload

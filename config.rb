@@ -5,6 +5,7 @@
 # ZURB Foundation
 require "zurb-foundation"
 require "middleman-livereload"
+require "faker"
 
 # Change Compass configuration
 # compass_config do |config|
