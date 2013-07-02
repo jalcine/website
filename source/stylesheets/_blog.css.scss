@@ -1,11 +1,25 @@
 div.blog {
   @include grid-row;
+  padding-bottom: 5em;
+
+  hr.article { margin-bottom: 1em; }
 
   section.content {
     @include grid-column($columns: 8);
 
+    div.pagination {
+      height: 1.5em;
+      line-height: 1.5em;
+      padding: 0.5em 1em;
+      margin-bottom: 2em;
+      text-align: center;
+
+      a.prev { @extend .pull-left }
+      a.next { @extend .pull-right }
+    }
+
     article {
-      h2 {
+      h2:first {
         margin-bottom: 0em;
 
         &:before {
@@ -27,21 +41,48 @@ div.blog {
         width: 100%;
         margin: 0em;
         padding-bottom: 0em;
+
+        p {
+          img { width: 100%; }
+        }
       }
 
       div.controls {
         height: 3em;
         line-height: 3em;
+        margin-bottom: 1em;
+        clear: both;
 
-        a.permalink, span.read-more, span.time { text-align: center; }
+        span.categories, span.read-more, span.time, time { text-align: center; }
 
-        span.time { font-size: 0.8em; }
+        time, span.time { 
+          &:before {
+            font-family: "FontAwesome";
+            content: "\f017";
+            margin: 0.2em;
+          }
 
-        span.read-more > a {
-          &:after {
-            content: "\203a";
+          font-size: 1em;
+        }
+
+        span.categories {
+          &:before {
+            font-family: "FontAwesome";
+            content: "\f02c";
+            margin: 0.2em;
           }
         }
+      }
+
+      p.navigation {
+        clear: both;
+        a.pull-left, a.pull-right {
+          &:before, &:after { font-family: "FontAwesome"; margin: 0em 1em; }
+          margin: 0em 5em;
+        }
+
+        a.pull-left:before { content: "\f053"; }
+        a.pull-right:after { content: "\f054"; }
       }
 
       padding-bottom: 10px;
@@ -62,6 +103,7 @@ div.blog {
         a.permalink, span.read-more, span.time { @include grid-column($columns: 4); }
       }
     }
+
   }
 
   section.sidebar {

@@ -15,6 +15,16 @@ body > header {
 }
 
 body {
+  div.fixed.sticky > nav.top-bar > ul.title-area > li.name > h1 > a > img.me 
+  {
+    margin: 0em;
+    width: auto;
+    height: 5em;
+    border-radius: 25%;
+    @extend .bounce;
+    @extend .animated;
+  }
+  
   nav.top-bar {
     box-shadow: 0px 4px 6px #222;
     border-bottom: 5px solid #4185f6;
@@ -31,12 +41,13 @@ body {
           margin-right: 1em;
           height: 10em;
           width: 10em;
-          vertical-align: middle;
+          transition: 0.5s margin-top, 0.3s margin-left, 0.3s height, 0.3s width, 0.4s border-radius;
+          @extend .animated;
+          @extend .bounce;
         }
 
         &:hover {
-          @extend .animated;
-          @extend .hinge;
+          @extend .tada;
         }
       }
     }

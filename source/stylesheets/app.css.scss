@@ -10,7 +10,8 @@ html, body {
 }
 
 body {
-  section.footer {
+  > section.footer, > footer {
+    margin-top: 5em;
     border-top: 5px solid #4185f6;
     background-color: #222;
     color: #eee;
@@ -19,5 +20,10 @@ body {
     line-height: 3em;
     margin: 0em;
   }
+
+  hr.ghost { color: transparent; }
+
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+
   padding: 0em; margin: 0em;
 }
