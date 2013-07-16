@@ -5,13 +5,12 @@
 %html{:lang => "en"}
   /<![endif]
   %head
-    %meta{:charset => "utf-8"}/
+    %meta{:charset => "utf-8"}
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %title= data.page.title || "Jacky Alcine"
     = stylesheet_link_tag "app"
     = stylesheet_link_tag "//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css"
     = javascript_include_tag "foundation/modernizr.foundation"
-    %script{type: "text/javascript"}
   %body{:class => page_classes}
     %header.fadeInDownBig.animated
     %div.sticky
@@ -19,30 +18,30 @@
         %ul.title-area
           %li.name
             %h1
-              %a{href: "http://jackyalcine.me/"}
+              %a{href: "http://jalcine.me/"}
                 %img.me{src:"https://secure.gravatar.com/avatar/80a10e58c35275ddb7a8e681f277e474?s=600"}
         %section.top-bar-section
           %ul.left
             %li.divider
             %li
-              %a{href: "http://blog.jackyalcine.me/?ref=nav"}
+              %a{href: "http://blog.jalcine.me/?ref=nav"}
                 %i.icon-beer
                 Blog
             %li.divider
             %li
-              %a{href: "http://projects.jackyalcine.me/?ref=nav"}
+              %a{href: "http://projects.jalcine.me/?ref=nav"}
                 %i.icon-cog
                 Projects
             %li.divider
             %li
-              %a{href: "http://jackyalcine.me/work.html?ref=nav"}
+              %a{href: "http://jalcine.me/work.html?ref=nav"}
                 %i.icon-briefcase
                 Work
             %li.divider
           %ul.right
             %li.divider
             %li
-              %a{href: "http://blog.jackyalcine.me/atom.xml"}
+              %a{href: "http://blog.jalcine.me/atom.xml"}
                 %i.icon-rss-sign
             %li.divider
             %li
