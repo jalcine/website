@@ -56,10 +56,6 @@
         window.scrollTo 0, 1
       ), 0
 
-  $(".faker").text(Faker.Lorem.paragraphs(2))
-  $(".faker2").text(Faker.Lorem.paragraphs(20))
-  $("section.content").css("min-height", $(window).height() - 139 - $("header").height() - $("footer").height())
-
 ) jQuery, this
 
 _gaq = _gaq || []
@@ -70,8 +66,11 @@ _gaq.push(['_trackPageview'])
   ga = document.createElement('script')
   ga.type = 'text/javascript'
   ga.async = true
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'
+  p = ".google-analytics.com/ga.js"
+  ga.src = "http://www#{p}"
+  ga.src = "https://ssl#{p}" if document.location.protocol == "https"
   s = document.getElementsByTagName('script')[0]
   s.parentNode.insertBefore(ga, s)
+  s
 )()
 
