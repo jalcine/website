@@ -1,0 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,300italic|PT+Sans:700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+$body-font-family: "Lato", "Open Sans", Helvetica, sans-serif;
+$body-font-weight: 300;
+$base-font-size: 16px;
+$paragraph-font-weight: $body-font-weight;
+$paragraph-font-family: $body-font-family;
+$header-font-family: "PT Sans", "Open Sans", sans-serif;
+$header-font-weight: 700;
+$header-font-color: shade($periwinkle, 70%);

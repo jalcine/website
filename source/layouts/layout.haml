@@ -8,6 +8,10 @@
     %meta{:charset => "utf-8"}
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %title= data.page.title || "Jacky Alcine"
+    %script{type: "text/javascript"}
+      var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+      analytics.load("se6rauh0mx");
+      analytics.track("on home site");
     = stylesheet_link_tag "main"
   %body{:class => page_classes}
     %header
@@ -16,23 +20,25 @@
           %div.left
             %a{href: "/", class: "brand"} jalciné
           %div.right
-            %a{:href => "https://twitter.com/jackyalcine"}
+            %a{:href => "https://twitter.com/jackyalcine", target: "_blank"}
               %i.icon-twitter
-            %a{:href => "https://alpha.app.net/jackyalcine"}
+            %a{:href => "https://alpha.app.net/jackyalcine", target: "_blank"}
               %i.icon-adn
-            %a{:href => "https://github.com/jalcine"}
+            %a{:href => "https://github.com/jalcine", target: "_blank"}
               %i.icon-github-alt
     %img.brand{src: "//gravatar.com/avatar/80a10e58c35275ddb7a8e681f277e474?s=512"}
     %dl.subnav
       %dt Go:
       %dd
-        %a{href: "http://home.jalcine.me"} <i class="icon-home"></i> Home
+        %a{href: "http://jalcine.me"} <i class="icon-home"></i> Home
       %dd
         %a{href: "http://blog.jalcine.me"} <i class="icon-book"></i> Blog
       %dd
-        %a{href: "http://home.jalcine.me/work.html"} <i class="icon-cog"></i> Work
+        %a{href: "http://jalcine.me/work.html"} <i class="icon-cog"></i> Work
       %dd
-        %a{href: "http://projects.jalcine.me"} <i class="icon-beaker"></i> Projects
+        %a{href: "http://jalcine.me/projects.html"} <i class="icon-beaker"></i> Projects
+      %dd
+        %a{href: "http://jalcine.me/about.html"} <i class="icon-star"></i> About
     %div.content
       %div.landline
         = yield
@@ -40,7 +46,7 @@
       %section.colophon
         %p
           Jacky Alciné <br>
-          A duded with a laptop <br>
-          me@jalcine.me
+          A dude with a laptop <br>
+          %a{href: "mailto://me@jalcine.me"} me@jalcine.me
       %section.contact
     = javascript_include_tag "app"
