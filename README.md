@@ -1,3 +1,3 @@
 # Jacky Alcine
 
-This. Right Here. Is MY WEBSITE.
+In the nature of all things good and open, I've kept my website open.
