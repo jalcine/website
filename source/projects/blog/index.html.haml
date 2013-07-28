@@ -1,0 +1,34 @@
+---
+title: Blog - Jacky Alcine
+---
+%div.blog
+  %section.content.small-12.columns.pull-left
+    - for i in 1..4 do
+      %article.excerpt
+        %h2
+          %a{href: "/projects/blog/post.html"}
+            Blog Title
+        %div.content
+          %p.faker
+        %div.controls
+          %a.permalink{href: "/projects/blog/post.html"}
+            %i.icon-link
+            permalink
+          %span.time
+            %i.icon-time
+            3/20/93 @ 4:20 PM 
+          %span.read-more
+            %a{href: "#"}
+              Read More
+  %section.sidebar.small-12.columns.pull-right.hide-for-small
+    %aside
+      %h2
+        Awesome
+      %div
+        Data
+    %hr
+    %aside
+      %h2
+        Awesome
+      %div
+        DATA
