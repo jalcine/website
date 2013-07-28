@@ -15,6 +15,7 @@ require "faker"
 ###
 # Page options, layouts, aliases and proxies
 ###
+set :layout, "minimal"
 
 # Per-page layout changes:
 #
