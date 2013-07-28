@@ -35,6 +35,18 @@ body.minimal {
 			margin: 20% 0em;
 
 			ul > li > a { font-size: 1.2em; }
+
+			h1.brand > a:hover { color: #666; }
+
+			a {
+				color: #666;
+				transition: 0.4s color;
+				
+				&:hover {
+					color: $periwinkle;
+					border-bottom: 1px dotted $periwinkle;
+				}
+			}
 		}
 
 		img.self {
