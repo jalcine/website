@@ -57,20 +57,3 @@
       ), 0
 
 ) jQuery, this
-
-_gaq = _gaq || []
-_gaq.push(['_setAccount', 'UA-21819111-3'])
-_gaq.push(['_trackPageview'])
-
-(() ->
-  ga = document.createElement('script')
-  ga.type = 'text/javascript'
-  ga.async = true
-  p = ".google-analytics.com/ga.js"
-  ga.src = "http://www#{p}"
-  ga.src = "https://ssl#{p}" if document.location.protocol == "https"
-  s = document.getElementsByTagName('script')[0]
-  s.parentNode.insertBefore(ga, s)
-  s
-)()
-
