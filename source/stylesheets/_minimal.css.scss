@@ -37,6 +37,23 @@ body.minimal {
 			ul > li > a { font-size: 1.2em; }
 		}
 
+		img.self {
+			margin-top: -100%;
+			transition: 0.5s margin-top, 0.7s border-radius, 0.4s margin-bottom, 0.2s opacity;
+			left: $gutter-width / 2;
+			width: 100%;
+			z-index: 9999;
+			position: relative;
+			opacity: 0.4;
+
+			&:hover {
+				margin-top: -3em;
+				border-radius: 50%;
+				margin-bottom: 100%;
+				opacity: 1.0;
+			}
+		}
+
 		h1.brand { 
 			font-size: 5.5em;
 			margin: 0em;
