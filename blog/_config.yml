@@ -1,0 +1,31 @@
+name: Jacky Alciné
+url: http://blog.jalcine.me
+description: A blog by Jacky.
+pygments: true
+future: false
+show_drafts: false
+relative_permalinks: true
+permalinks: "/:year/:i_month/:title"
+paginate_path: "/page:num"
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - bin
+  - README
+  - deploy.sh
+  - README.md
+
+redcarpet:
+  extensions:
+    - footnotes
+    - autolink
+
+assets:
+  js_compressor:  yui
+  css_compressor: sass
+  cache: true
+  cachebust: hard
+  sources:
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets

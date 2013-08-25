@@ -1,0 +1,76 @@
+header {
+  position: fixed;
+  top: 0em;
+  left: 0em;
+  display: inline;
+  width: 100%;
+  z-index: 200;
+
+  nav {
+    > div.wrapper {
+      @include grid-row;
+      width: 100%;
+      margin: 0em auto;
+
+      > div.left {
+        @include grid-column($columns: 5, $push: 1);
+        text-align: left;
+
+        a.brand {
+          float: left;
+          padding: 0.5em 1.5em;
+        }
+      }
+
+      > div.right {
+        @include grid-column($columns: 5, $pull: 1);
+        text-align: right;
+
+        a {
+          background-color: $body-bg;
+          border-radius: 50%;
+          padding: 0.25em;
+          font-size: 1.5em;
+          transition: 0.3s color, 0.2s background-color;
+
+          &:hover {
+            color: #fff;
+            background-color: $periwinkle;
+          }
+        }
+      }
+    }
+  }
+}
+
+div.content {
+  @include grid-row;
+  margin: 7em auto;
+
+  > div.landline {
+    @include grid-column($columns: 9, $center: true);
+  }
+}
+
+footer {
+  height: 6em;
+  width: 100%;
+  position: fixed;
+  bottom: 0em;
+  left: 0em;
+  z-index: 200;
+  border-top: 2px solid $periwinkle;
+
+  > section.colophon, > section.contact {
+    @include grid-column($columns: 6);
+    text-align: center;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px #333;
+
+    a {
+      text-shadow: none;
+      color: #555;
+      &:hover { color: #000; }
+    }
+  }
+}

@@ -1,0 +1,135 @@
+html { width: 100%; height: 100%; }
+
+$gutter-width: 1.4em;
+
+body.minimal {
+  background-color: $periwinkle;
+  color: #333;
+  font-size: 1em;
+
+  > section.left, > section.right {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+
+    > div.wrap {
+      margin: 0em;
+      height: 100%;
+      text-align: center;
+    }
+  }
+
+  > section.left {
+    > div.wrap {
+      background-color: #fff;
+      > img.self {
+        height: 60%;
+        border-radius: 50%;
+        margin: 0.25em;
+      }
+
+      > h1.brand { display: none; }
+    }
+  }
+}
+
+@media #{$medium} {
+  body.minimal {
+    background-color: $periwinkle;
+    color: #333;
+    display: table;
+    width: 100%; height: 100%;
+
+    > section.left, > section.right {
+      vertical-align: middle;
+      height: 100%;
+      display: table-cell;
+      vertical-align: middle;
+
+      > div.wrap {
+        height: 50%;
+        margin: 20% 0em;
+
+      }
+    }
+
+    > section.left {
+      background-color: #fff;
+      color: #000;
+      width: 30%;
+      position: fixed;
+
+      > div.wrap {
+        padding-right: $gutter-width;
+        text-align: right;
+        height: 60%;
+        margin: 20% 0em;
+
+        ul > li {
+          list-style: none;
+          a { font-size: 1.2em; }
+        }
+
+        h1.brand {
+          display: block;
+          a:hover { color: #666; }
+        }
+
+        a {
+          color: #666;
+          transition: 0.4s color;
+
+          &:hover {
+            color: $periwinkle;
+            border-bottom: 1px dotted $periwinkle;
+          }
+        }
+        img.self {
+          margin: 0em auto;
+          transition: 0.5s margin-top, 0.7s border-radius, 0.4s margin-bottom, 0.2s opacity;
+          left: $gutter-width / 2;
+          z-index: 9999;
+          position: relative;
+          opacity: 0.4;
+          text-align: center;
+          width: 80%;
+        }
+      }
+
+      h1.brand { 
+        font-size: 5.5em;
+        margin: 0em;
+        text-align: center;
+      }
+    }
+
+    > section.right {
+      text-align: left;
+      width: 70%;
+      padding-right: 10%;
+
+      > div.wrap {
+        padding-left: 3em;
+        height: 90%;
+        margin: 0em;
+
+        p.caps {
+          font-variant: small-caps;
+          font-size: 2em;
+          margin: 0em;
+        }
+      }
+    }
+
+    &.index {
+      section.right {
+        width: 70%;
+
+        > div.wrap {
+          height: 50%;
+          margin: 25% 0em;
+        }
+      }
+    }
+  }
+}
