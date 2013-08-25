@@ -23,8 +23,7 @@ versioning Ruby like `[rbenv][3]` or `[rvm][4]`, then why bother installing
 system Ruby? It looks like a chicken and egg (or rather rooster and hen)
 situation. Install this tool to your local system by executing the following:
 
-{% sourcehighlight bash %}
-
-{% endsourcehighlight %}
-
 [1]: https://github.com/andsens/homeshick
+[2]: https://github.com/technicalpickles/homesick
+[3]: https://github.com/sstephenson/rbenv
+[4]: https://rvm.io/
