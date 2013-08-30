@@ -1,15 +1,12 @@
 ---
-layout: default
-title: Blog
+layout: blog
+title: Index
 ---
-<div class="landline">
-  <ul class="posts">
+<ul class="posts">
   {% for post in site.posts %}
-    <li>
-      <a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a>
-      <span title="{{ post.date }}"><i class="icon-time"></i> {{ post.date | timeago }}</span>
-      <p>{{ post.excerpt }}</p>
-    </li>
+  <li>
+    <a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a>
+    <span title="{{ post.date }}"><i class="icon-time"></i> {{ post.date | timeago }}</span>
+  </li>
   {% endfor %}
-  </ul>
-</div>
+</ul>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>My Local Configuration</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Jacky Alciné</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>My Local Configuration</h2>
+<p class="meta">25 Aug 2013</p>
+
+<div class="post">
+<p>If there&#8217;s one thing you can do right, it&#8217;s setting up your local console environment. Casual users typically don&#8217;t have to replace their computers every few years; but developers tend to upgrade every year and half or so (if budget permits). There&#8217;s other reasons for versioning your shell environment; in my case, for using it in virtual machines, remote serves or if you nuke your system.</p>
+
+<h1 id='my_setup'>My Setup</h1>
+
+<p>I use quite a lot of junk, to be honest. For example, whenever I go somewhere new and connect to their network, I rename the network to someone more friendly in my SSID list in <a href='http://kde.org'>KDE</a>.</p>
+
+<p><img alt='SSID List in KDE' src='/images/ssid_wifi_nm.png' /></p>
+
+<p>That makes it a bit more friendly when the notification alerts whenever I connect to a network. In the console, however, my shell is strictly Bash (for now). All of my Bash configuration scripts and goodies can be found at my <a href='https://github.com/jalcine/dotfiles/tree/master'>dotfiles repository</a>, but here&#8217;s a quick run down.</p>
+
+<h2 id='using_frameworks'>Using Frameworks</h2>
+
+<p>Frameworks are awesome, no? Well, some are. Some we can live without. In this case, the <a href='https://github.com/revans/bash-it'>bash-it</a> makes it way too easy to get an awesome Bash setup with minimal effort. I use it to add a lot of functionality like automatic <a href='https://github.com/revans/bash-it/blob/master/plugins/available/rbenv.plugin.bash'>rbenv</a> and <a href='https://github.com/revans/bash-it/blob/master/plugins/available/nvm.plugin.bash'>nvm</a> integration as well as <a href='https://github.com/revans/bash-it/blob/master/aliases/available/git.aliases.bash'>git</a> extensibility and a bit more. Whenever I open my terminal, I&#8217;m greeted with this:</p>
+
+<p><img alt='Hello, Konsole' src='/images/hello_konsole.png' /></p>
+
+<p>Using frameworks allow you to get a working system as soon as possible, but it&#8217;s recommended probably by every living developer on the platform that you <strong>absolutely go &#8216;vanilla&#8217;</strong> when you&#8217;re using a framework. Tweak <em>the shit</em> out of it. Make it your own. <code>bash-it</code> comes with a lot of plugins, completions (try typing <code>git</code> in your console then a space then tab. that&#8217;s <em>completion magic!</em>), and aliases for Bash.</p>
+
+<blockquote>
+<p>I recommend taking a look at <a href='http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/'>Nettuts&#8217;s tutorial on Bash</a> and how to configure it to your will.</p>
+</blockquote>
+
+<p>Let&#8217;s take a closer look at what&#8217;s going on here.</p>
+
+<p><img alt='Closer shot of Konsole' src='/images/closer_shot_konsole.png' /></p>
+
+<p>From that extra-zoomed shot of my Konsole session, you can tell the following:</p>
+
+<p>* I&#8217;m running as user &#8220;jacky&#8221; on machine &#8220;neuromancer&#8221; (my laptop). This is useful when I switch local users on my machine from <code>jacky</code> to (<code>root</code>)<sup id='fnref:1'><a href='#fn:1' rel='footnote'>1</a></sup>.</p>
+
+<p>* I&#8217;m using ruby 2.0.0 thanks to the globally set version of <code>rbenv</code> (as noted by ❖ 2.0.0-rc).</p>
+
+<p>* I&#8217;m in my <code>$HOME</code> directory (as noted by <code>~</code>).</p>
+
+<p>* The last process run exitted successfully (as noted by <code> ☷ </code>).</p>
+
+<blockquote>
+<p>This Bash-it theme is available in <a href='https://github.com/jalcine/bash-it'>my fork of bash-it</a>, it&#8217;d require another tool for version control, <a href='https://github.com/djl/vcprompt'>vcprompt</a> to be available in your $PATH.</p>
+</blockquote>
+
+<p>Now, let&#8217;s say I wanted to start hacking on <a href='http://wintermute.jalcine.me'>Wintermute</a>. This is what I&#8217;d do:</p>
+<iframe height='480' src='http://showterm.io/7a2398f70c0305fa3678c#stop' width='100%'>Visit http://showterm.io/7a2398f70c0305fa3678c.</iframe>
+<p>Some of the actions may not be visible there, but I was able to quickly &#8216;jump&#8217; from <code>~</code> to the location of my copy of the sources of Wintermute (about three folders deep) with less than 10 ten keystrokes thanks to <a href='https://github.com/clvv/fasd'>fasd</a>. Also, with a bit of editing to my <a href='https://github.com/jalcine/dotfiles/blob/master/home/.inputrc'>~/.inputrc</a>, past commands I&#8217;ve executed for opening Vim were available just by pressing up; time-saving.</p>
+
+<h1 id='pick_your_rodeo'>Pick your Rodeo</h1>
+
+<p>The tool I&#8217;d recommend for such an endeavour is <a href='https://github.com/andsens/homeshick'>homeshick</a>. It&#8217;s a Bash-implementation of the Ruby gem <a href='https://github.com/technicalpickles/homesick'>homesick</a>. It does take a bit more time to set up than its Ruby counterpart, but consider this: if you have to install Ruby on a new system, install <code>homesick</code> and then use a local tool for versioning Ruby like <a href='https://github.com/sstephenson/rbenv'>rbenv</a> or <a href='https://rvm.io/'>rvm</a>, then why bother installing system Ruby? It looks like a chicken and egg (or rather rooster and hen) situation. Install this tool to your local system by executing the following (or by following the <a href='https://github.com/andsens/homeshick#installation'>official instructions</a>):</p>
+<div class='highlight'><pre><code class='bash'><span class='c'># Download the cute lil&#39; guy.</span>
+git clone git://github.com/andsens/homeshick.git <span class='se'>\</span>
+  <span class='nv'>$HOME</span>/.homesick/repos/homeshick
+
+<span class='c'># Add `homeshick` as an alias to the command. Don&#39;t worry, you can also edit</span>
+<span class='c'># this out later (you might have to).</span>
+<span class='nb'>printf</span> <span class='s1'>&#39;\nalias homeshick=&quot;$HOME/.homesick/repos/homeshick/home/.homeshick&quot;&#39;</span> <span class='se'>\</span>
+  &gt;&gt; <span class='nv'>$HOME</span>/.bashrc
+</code></pre></div>
+<h2 id='slicing_up_configuration'>Slicing Up Configuration</h2>
+
+<p>At this point, you can begin dicing up your configuration in your local system into smaller parts. For example, I keep my <a href='https://github.com/jalcine/vimrc'>Vim configuration</a> separate from my <a href='https://github.com/jalcine/dotfiles/tree/master'>central configuration</a> out of habit. As prescribed by the docu</p>
+<div class='footnotes'><hr /><ol><li id='fn:1'>
+<p>Very bad practice. I only do this to use certain aliases and what not, but doing this can make some files you use inaccessible by your user account.</p>
+<a href='#fnref:1' rev='footnote'>&#8617;</a></li></ol></div>
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

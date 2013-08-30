@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>xf86-networktablet Packaged in Ubuntu</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Jacky Alciné</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>xf86-networktablet Packaged in Ubuntu</h2>
+<p class="meta">23 Jan 2013</p>
+
+<div class="post">
+<p>There&#8217;s some awesome dudes out there in this big ol&#8217; rock. <a href='https://github.com/rfc2822'>rfc2822</a> had the nifty idea of building out a module for <a href='http://www.x.org/wiki/'>Xorg</a> that, in a nutshell, can turn your Android tablet into a drawing tablet. <!-- more --> There&#8217;s more about it on <a href='http://blog.dev001.net/post/40681591705/x-org-use-your-android-tablet-as-a-graphics-tablet'>the blog post he mentioned it</a>, if you&#8217;re curious about the full round down. I had to make some edits to the original packaging to make it a bit niftier for building; tells you what you need to build!</p>
+
+<p>I took the liberty of taking such an awesome project and packing it up into a nifty PPA for Ubuntu. For now, it&#8217;s in my <a href='https://launchpad.net/~jackyalcine/+archive/stable'>personal PPA of stable applications</a>. The source of the Debian packaging for the PPA is <a href='https://code.launchpad.net/~jackyalcine/+junk/xf86-networktablet-debian'>hosted on Launchpad</a>. The installation procedure for this PPA would be:</p>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span>sudo apt-add-repostiory ppa:~jackyalcine/stable
+<span class='c'># &lt;Enter&gt;!</span>
+<span class='nv'>$ </span>sudo apt-get update
+<span class='nv'>$ </span>sudo apt-get install xf86-networktablet-ubuntu
+</code></pre></div>
+<p>After this, you&#8217;d need to apply these settings directly by logging off and back on. That&#8217;ll be enough to restart the X.org session and load the new module. The only application so far that seems to even consider the use of this seems to be GIMP, but there&#8217;s more practical implications for this. For example, my Google Nexus seems not to fare well with this tool and instead moves the mouse around. Haven&#8217;t figured out why it does there, but I figured that packing and sharing would make it something more viable and reveal more bugs to be fixed.</p>
+
+<p><em>Cheers!</em> Feel free to put your commentary below or tweet me.</p>
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

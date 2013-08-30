@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Why no POSIX Signal Handling, Qt?</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Jacky Alciné</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Why no POSIX Signal Handling, Qt?</h2>
+<p class="meta">27 May 2013</p>
+
+<div class="post">
+<p>After using <a href='http://qt-project.org'>Qt</a> to faciliate nearly all of my C++ project needs, one has to notice why on EARTH doesn&#8217;t it have any means of handling POSIX signals as easy as you handle signals with any other <code>QObject</code>?<!-- more --> If anything, it should be considered something of equal importance in <code>QCoreApplication</code>.</p>
+
+<p>In my own personal venture to fix this, I&#8217;ve begun working on such a little light-weight library (might just move it into a header, to be honest) on GitHub called <a href='https://github.com/jalcine/QtPosixSignal'>QtPosixSignal</a>. The <a href='https://github.com/jalcine/QtPosixSignal/blob/develop/README.md'>README.md</a> took me some time to think up but it contains the implementation and flow I&#8217;d like it to have. I&#8217;m open to suggestions on how to go about via <a href='https://github.com/jalcine/QtPosixSignal/issues/new'>issues</a> to keep the developmental flow of things open.</p>
+
+<p><strong>To better signal handling in Qt apps!</strong></p>
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

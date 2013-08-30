@@ -19,7 +19,7 @@ I use quite a lot of junk, to be honest. For example, whenever I go somewhere
 new and connect to their network, I rename the network to someone more
 friendly in my SSID list in [KDE](http://kde.org).
 
-![SSID List in KDE]({% asset_path ssid_wifi_nm.png %})
+![SSID List in KDE](/images/ssid_wifi_nm.png)
 
 That makes it a bit more friendly when the notification alerts whenever I
 connect to a network. In the console, however, my shell is strictly Bash (for
@@ -34,7 +34,7 @@ minimal effort. I use it to add a lot of functionality like automatic
 [rbenv][8] and [nvm][9] integration as well as [git][10] extensibility and a
 bit more. Whenever I open my terminal, I'm greeted with this:
 
-![Hello, Konsole]({% asset_path hello_konsole.png %})
+![Hello, Konsole](/images/hello_konsole.png)
 
 Using frameworks allow you to get a working system as soon as possible, but
 it's recommended probably by every living developer on the platform that you
@@ -48,7 +48,7 @@ magic!*), and aliases for Bash.
 
 Let's take a closer look at what's going on here.
 
-![Closer shot of Konsole]({% asset_path closer_shot_konsole.png %})
+![Closer shot of Konsole](/images/closer_shot_konsole.png)
 
 From that extra-zoomed shot of my Konsole session, you can tell the following:
 

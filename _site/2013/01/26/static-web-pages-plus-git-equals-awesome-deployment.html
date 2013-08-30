@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Static Web Pages + Git = Awesome Deployment</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Jacky Alciné</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Static Web Pages + Git = Awesome Deployment</h2>
+<p class="meta">26 Jan 2013</p>
+
+<div class="post">
+<p>I&#8217;ve been having lots of fun working with <a href='http://octopress.com'>Octopress</a> and working with it to make it as simple for me to use as possible. Fortunately, this hasn&#8217;t been much of a challenge. With a bit of trial and error, I&#8217;ve even managed to abstract the act of static web page deployment without too much help! Now, it&#8217;s near possible to implement &#8220;Heroku-like&#8221; deployment. Towards the end, I even throw in a tip on how to do something similar to how Heroku might have deployment done as well!</p>
+
+<h1 id='prerequisties'>Prerequisties</h1>
+
+<p>By continuing from here, I&#8217;m going to assume that you either:</p>
+
+<p>* have access to a remote server that&#8217;s working with a domain or, * got something like <a href='http://pow.cx'>Pow</a> or a local web server running to pick up changes from a folder of choice.</p>
+
+<p>That&#8217;d allow for you to view changes real-time. Another assumption is that you&#8217;re familiar with <a href='http://git-scm.com/book/en/Customizing-Git-Git-Hooks'>Git hooks</a> and <a href='http://stackoverflow.com/a/9653208/602588'>the difference between the two</a>. If enough confusion incurs, I might make a separate post about it.</p>
+
+<h1 id='setting_up_the_remote_environment'>Setting up the Remote Environment</h1>
+
+<p>First, make sure you got Git up and running on your system.</p>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span>git --version
+git version 1.7.10.4
+</code></pre></div>
+<p>Secondly, ensure that you can SSH as a user or at least provide yourself with access.</p>
+
+<p>Next, set up the bare repositories that you&#8217;ll be using to push your changes.</p>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span><span class='nb'>cd</span> ~
+<span class='nv'>$ </span>mkdir -p ~/repos/swag
+<span class='nv'>$ </span><span class='nb'>cd</span> ~/repos/swag
+<span class='nv'>$ </span>git init --bare
+</code></pre></div>
+<p>We use the <code>--bare</code> option here to tell Git that we only want the Git-specifics (the index, configuration options, etc) on the server, nothing more.</p>
+
+<p>Next, we go on to set up our hooks. We go back into our mighty console and execute the following:</p>
+<div class='highlight'><pre><code class='bash'><span class='c'># (from working directory ~/repos/swag)</span>
+<span class='nv'>$ </span><span class='nb'>cd </span>hooks
+<span class='nv'>$ </span>vi post-receive
+</code></pre></div>
+<p>With in the <code>post-receive</code> hook, we enter the following content:</p>
+<script src='https://gist.github.com/4618184.js'> </script>
+<p>You&#8217;ll want to change the values of the following:</p>
+
+<ul>
+<li><code>LIVE_BRANCH</code> to the name of the branch that&#8217;d hold the code for deployment and,</li>
+
+<li><code>LIVE_PATH</code> to the (preferably) absolute path that of which the code should be stored.</li>
+</ul>
+
+<p>With this, you&#8217;ve fully set up your remote enviroment. Now, you can continue off back to your local development machine and continue.</p>
+
+<h1 id='setting_up_the_local_environment'>Setting up the Local Environment</h1>
+
+<p>On your awesome local machine, the act of instant deployment begins. Now, the best part about this is that you can do this with an existing Git branch that has static files or work on this with from scratch if you&#8217;re just starting out.</p>
+
+<p>In a new directory, clone the repository from the server, add some files, commit and push; the typical personal Git flow.</p>
+<div class='highlight'><pre><code class='bash'><span class='c'># (from an awesome folder)</span>
+<span class='nv'>$ </span>git clone joe@acme.net:~/repos/swag swag
+<span class='c'># You might get a warning about cloning an empty repository; it&#39;s fine.</span>
+<span class='nv'>$ </span>git add .
+<span class='c'># Move in the files from the old repository (if it exists)</span>
+<span class='nv'>$ </span>mv file1 ../files
+<span class='nv'>$ </span>git add .
+
+<span class='nv'>$ </span>git commit -m <span class='s2'>&quot;Swag 1 point&quot;</span>
+<span class='nv'>$ </span>git push
+</code></pre></div>
+<p>After you push, you might notice information about checking out done in your remotes. That&#8217;s the <code>post-recieve</code> hook updating the code in reaction to the branch that you pushed.</p>
+
+<h1 id='quirks'>Quirks</h1>
+
+<p>I have to admit, in <a href='https://gist.github.com/4618184'>the Gist shown above</a>, there&#8217;s a few problems I&#8217;m going to have to adapt this post to show.</p>
+
+<p>1. <strong>Single branch push support</strong> - If you pushed using <code>git push origin --all</code> or whatever remote you specify, currently this hook would <em>not</em> be able to notice such a push, or rather, parse it properly. I&#8217;m experimenting with a clean way to do this.</p>
+
+<p>2. <strong>Merging issues</strong> - If, for some reason, there was a merging problem, there&#8217;s no way for you to tell, from what I know.</p>
+
+<p>Feel free to adapt to this tutorial, link back to it and provide more tips. Ciao!</p>
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

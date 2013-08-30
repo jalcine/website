@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Remote Debugging with Android</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">Jacky Alciné</a></h1>
+              <a class="extra" href="/">home</a>
+            </div>
+
+                <h2>Remote Debugging with Android</h2>
+<p class="meta">31 Jul 2013</p>
+
+<div class="post">
+<p>If there&#8217;s one thing that plagues a developer at times, it&#8217;s the number of cables we have hooked up to our machines. Laptops, phones, tablets, watches, you name it! Even chargers for our chargers. I&#8217;m out to solve <em>one</em> of those problems and it helps when you&#8217;re doing some interactive Android development.</p>
+
+<p>The Android debugging bridge tool (aka <code>adb</code>) is a super-nifty tool that allows you to manage your devices, emulated or physical. A powerful use of it is the ability to handle all of its communication over <a href='https://en.wikipedia.org/wiki/Transmission_Control_Protocol'>TCP</a>, a (mostly) state-aware means of transporting packets of data over <a href='http://en.wikipedia.org/wiki/Internet_Protocol'>IP</a>. Using a device over TCP allows you to decouple the cable from your laptop or working station and move around with said device much more freely, making it easy to build and test gyroscopic applications, for example.</p>
+
+<h2 id='getting_started'>Getting Started</h2>
+
+<p>Ironically, the first thing you&#8217;d have to do is plug your device to your station of choice. Check if it&#8217;s visible to <code>adb</code> by running the following:</p>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span>adb devices
+List of devices attached 
+&lt;hexadecimal <span class='c'>##&gt;				device</span>
+</code></pre></div>
+<blockquote>
+<p>If you see no devices listed, please ensure that <strong>USB Debugging</strong> is enabled on your Android device.</p>
+</blockquote>
+
+<p>After that, connect both devices to a <strong>WiFi network</strong>. Go into your Android device and make note of the IP address it has. You can find this under <strong>Settings</strong> &gt; <strong>Wi-Fi</strong> &gt; Options - Advanced at the field &#8220;IP address&#8221;.</p>
+
+<h2 id='connecting_to_the_device'>Connecting to the Device</h2>
+
+<p>With that knowledge, and your Android device still plugged in, let&#8217;s set the device&#8217;s debugging tool to listen over TCP on port 5555:</p>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span>adb tcpip 5555
+</code></pre></div>
+<blockquote>
+<p>I&#8217;ve seen that you&#8217;d need administrative privileges if you&#8217;re running Windows, check out <a href='http://stackoverflow.com/questions/2604727/how-can-i-connect-to-android-with-adb-over-tcp'>this question</a> for more information.</p>
+</blockquote>
+
+<p>From here, you can (and should unless you&#8217;re charging over USB) remove your Android device from your laptop. We&#8217;d finish up the connection by connecting to the device over the network.</p>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span>adb connect 0.0.0.0
+<span class='c'># Replace 0.0.0.0 with the device&#39;s IP you found earlier.</span>
+</code></pre></div>
+<p>That&#8217;s all there is to it! You should now be able to find this device in Eclipse or Android Studio for debugging now. If any more questions come up, try asking someone in <code>#android-dev</code> on Freenode or sending an e-mail to the mailing list over at <a href='https://groups.google.com/forum/#!forum/android-developers'>Google Groups</a>.</p>
+
+<p><strong>Happy hacking!</strong></p>
+</div>
+
+
+            <div class="footer">
+              <div class="contact">
+                <p>
+                  Your Name<br />
+                  What You Are<br />
+                  your@email.com
+                </p>
+              </div>
+              <div class="contact">
+                <p>
+                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
+                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /container -->
+
+    </body>
+</html>

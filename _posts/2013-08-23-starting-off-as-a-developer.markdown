@@ -27,7 +27,7 @@ the Web, but it serves as a memory anchor for me so I don't have to remember
 details.
 
 As the Doctor would put it, Hello!
-![Hello!]({% asset_path hello-im-the-doctor.gif %})
+![Hello!](/images/hello-im-the-doctor.gif)
 
 [1]: https://twitter.com/r00k
 [2]: http://codeulate.com/2013/08/a-short-guide-to-landing-your-first-rails-job/
