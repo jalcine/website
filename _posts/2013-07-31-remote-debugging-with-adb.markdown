@@ -29,7 +29,7 @@ station of choice. Check if it's visible to `adb` by running the following:
 {% highlight bash %}
 $ adb devices
 List of devices attached 
-<hexadecimal ##>				device
+<hexadecimal number of device>
 {% endhighlight %}
 
 > If you see no devices listed, please ensure that **USB Debugging** is
