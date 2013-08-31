@@ -1,12 +1,18 @@
 ---
-layout: blog
-title: Index
+layout: default
+title: weblog@jalciné:~
+classes:
+  - blog
 ---
-<ul class="posts">
-  {% for post in site.posts %}
-  <li>
-    <a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a>
-    <span title="{{ post.date }}"><i class="icon-time"></i> {{ post.date | timeago }}</span>
-  </li>
-  {% endfor %}
-</ul>
+<div id="index">
+  <h2><a href="/">home</a> &raquo; entries</h2>
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li>
+      <a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a>
+      <span title="{{ post.date }}"><i class="icon-time"></i> {{ post.date | timeago }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<span class="section"></span>

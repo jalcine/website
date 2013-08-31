@@ -1,0 +1,51 @@
+@import "compass/reset";
+@import "ie";
+@import "print";
+@import "typography";
+@import "colors";
+@import "index";
+@import "blog";
+@import "page";
+@import "lib/_media-queries";
+@import "lib/syntax.css";
+
+html, body {
+  width: auto; height: auto;
+  margin: 0em; padding: 0em;
+}
+
+body {
+  border-top: 0.5em solid #5f005f;
+
+  > header {
+    margin: 0.5em 0em;
+    text-align: center;
+    font-size: 0.8em;
+    color: darken($link-color, 10%);
+
+    > a:first-child > img {
+      @include border-radius(50%);
+      display: inline;
+      text-align: left;
+      margin-right: 1em;
+      width: 80px;
+      vertical-align: middle;
+    }
+
+    > a {
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+
+  > footer {
+    border-top: 0.15em solid rgba(#5f005f, 0.4);
+    background-color: darken(#5f005f, 15%);
+    color: #fff;
+    height: 100%;
+    width: 50%;
+    padding: 0em 25%;
+    display: block;
+    min-height: 2em;
+  }
+}

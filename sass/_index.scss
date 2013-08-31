@@ -1,0 +1,30 @@
+@import "colors";
+
+body.index {
+  header, footer { display: none; }
+
+  text-align: center;
+  > h2 {
+    padding: 15% 0em 0em;
+    display: block;
+    font-weight: 900;
+    margin: 0em!important;
+  }
+
+  > a {
+    text-decoration: none;
+    color: #368ece;
+  }
+
+  > span { display: block; }
+
+  > span.section, span.minor {
+    padding: 0.5em;
+    color: darken($background-color, 30%);
+  }
+
+  > span.section {
+    font-size: 1.5em;
+    color: darken($background-color, 10%);
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Kick-Starting Bugzilla with Plack: a PSGI Solution</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/css/screen.css">
+</head>
+<body class="blog">
+  <header>
+  <a href="/"><img src="http://gravatar.com/avatar/80a10e58c35275ddb7a8e681f277e474?s=256"></a>
+  <a href="/weblog">weblog</a>
+  &bull;
+  <a href="/portfolio.html">portfolio</a>
+  &bull;
+  <a href="/about.html">about</a>
+</header>
+
+  <div id="post">
+  <h2>Kick-Starting Bugzilla with Plack: a PSGI Solution</h2>
+  <dl id="postcard">
+    <dt>Written</dt>
+    <dd>02 Mar 2013</dd>
+    <dt>Category</dt>
+    <dd></dd>
+  </dl>
+
+  <section class="content">
+    <p>As mentioned in my landing post, I&#8217;m quite the fan of <a href='http://bugzilla.org'>Bugzilla</a>. It powers bug tracking for Firefox, KDE, Eclipse and a lot of other awesome tools out there. Being that Perl is also my first web-friendly language and most acquinated one, I decided to provide a post on how to get Bugzilla up and running by using <a href='http://plackperl.org'>Plack</a>.</p>
+
+<p>For those coming from a Ruby background, Plack is the Perl equivalent for Rack, a simple server that can be run using Fast CGI execution. This allows for direct embedded into other web serves like Apache or Nginx or stand-alone uses in a different implementation; the best of both worlds.</p>
+
+<h2 id='grab_the_source'>Grab the Source</h2>
+
+<p>First things first, you&#8217;ll have to grab a copy of Bugzilla&#8217;s source code from their website. They store all of their code in <a href='http://bazaar.canonical.com'>Bazaar</a>, so you should have a client set up before preceding. The following code snippets would get you a working copy of <a href='http://www.bugzilla.org/download/'>a stable build of Bugzilla</a>.</p>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span>bzr co bzr://bzr.mozilla.org/bugzilla/4.2
+</code></pre></div>
+<p>At this time, the installation of Bugzilla is completely up to you. However, I&#8217;d noticed that I was not able to get Bugzilla to start without running <code>./install-module.pl --all</code>.</p>
+
+<p>After that, you&#8217;ll want to grab the snippet of code that <a href='https://gist.github.com/Bhat-Gurunandan'>Gurunandan Bhat</a> made available on GitHub to run Bugzilla in a local installation.</p>
+<script src='https://gist.github.com/3930079.js'> </script>
+<p>Copy the code above into the newly branched directory of Bugzilla&#8217;s code. Now you can get the show on the road!</p>
+
+<h2 id='kicking_up_plack'>Kicking up Plack</h2>
+
+<p><a href='http://plackperl.org'>Plack</a> is a kickass tool, and it&#8217;s easy to grab if you have <a href='http://search.cpan.org/perldoc?App::cpanminus'>cpanm</a> installed. If not, follow the instructions on <a href='http://search.cpan.org/perldoc?App::cpanminus#INSTALL'>the manual</a> or install Plack the same way you installed the modules for Bugzilla (recommended).</p>
+
+<p>Once you have those files, you&#8217;re ready to start up Bugzilla.</p>
+<div class='highlight'><pre><code class='bash'><span class='nv'>$ </span>plackup --host<span class='o'>=</span>127.0.0.1 --environment<span class='o'>=</span>production
+</code></pre></div>
+<p>That&#8217;s all there this to it! You now have Bugzilla up and running via Plack.</p>
+  </section>
+</div>
+
+  <footer>
+</footer>
+
+</body>
+</html>

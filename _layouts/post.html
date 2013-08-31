@@ -1,9 +1,19 @@
 ---
 layout: default
+classes:
+  - blog
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div id="post">
+  <h2>{{ page.title }}</h2>
+  <dl id="postcard">
+    <dt>Written</dt>
+    <dd>{{ page.date | date_to_string }}</dd>
+    <dt>Category</dt>
+    <dd>{{ post.category }}</dd>
+  </dl>
+
+  <section class="content">
+    {{ content }}
+  </section>
 </div>

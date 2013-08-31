@@ -1,4 +1,4 @@
-name: Jacky Alciné
+name: jalciné
 url: http://jalcine.me
 description: A little ol' collection of text and images.
 timezone: America/New_York
@@ -8,7 +8,7 @@ future: false
 show_drafts: false
 relative_permalinks: true
 lsi: true
-permalinks: "/weblog/:year/:title"
+permalink: "/weblog/:title"
 paginate_path: "/weblog/page/:num"
 
 # Markdown engine.
@@ -24,14 +24,8 @@ redcarpet:
 
 # Don't bother with theses.
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - bin
-  - README
-  - Rakefile
-  - config.ru
-  - README.md
-
-sass:
-  syntax: scss
-  style: compressed
+  - "*.md"
+  - "*file*"
+  - "*config*"
+  - sass

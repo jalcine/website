@@ -1,0 +1,76 @@
+/*
+Syntax error: File to import not found or unreadable: ie.
+              Load paths:
+                /home/jacky/Development/Projects/jalcine.me/sass
+                /home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets
+                /home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 2 of /home/jacky/Development/Projects/jalcine.me/sass/screen.scss
+
+1: /home/jacky/Development/Projects/jalcine.me/sass/screen.scss
+
+Backtrace:
+/home/jacky/Development/Projects/jalcine.me/sass/screen.scss:2
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/import_node.rb:45:in `import'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/tree/root_node.rb:20:in `render'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/path.rb:31:in `create'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:26:in `block in created'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `each'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:25:in `created'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/state/directory.rb:17:in `refresh'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `each'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:17:in `block in run'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `loop'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/backends/polling.rb:15:in `run'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `call'
+/home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+bin/compass:16:in `load'
+bin/compass:16:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: ie.\A               Load paths:\A                 /home/jacky/Development/Projects/jalcine.me/sass\A                 /home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /home/jacky/.rbenv/versions/2.0.0-rc1/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 2 of /home/jacky/Development/Projects/jalcine.me/sass/screen.scss\A \A 1: /home/jacky/Development/Projects/jalcine.me/sass/screen.scss"; }

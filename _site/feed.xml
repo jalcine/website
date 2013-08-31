@@ -4,7 +4,7 @@
   <title type="text" xml:lang="en">A little ol' collection of text and images.</title>
   <link type="application/atom+xml" href="http://blog.jalcine.me/feed" rel="self"/>
   <link type="text" href="http://blog.jalcine.me" rel="alternate"/>
-  <updated>2013-08-30T19:32:10-04:00</updated>
+  <updated>2013-08-31T04:41:30-04:00</updated>
   <id>http://jalcine.me/weblog</id>
   <author>
     <name>Jacky Alciné</name>
@@ -14,96 +14,10 @@
 
   
   <entry>
-    <title>Welcome to Jekyll!</title>
-    <link href="http://jalcine.me/weblog/jekyll/update/2013/08/30/welcome-to-jekyll.html"/>
-    <updated>2013-08-30T14:06:51-04:00</updated>
-    <id>http://jalcine.me/weblog//jekyll/update/2013/08/30/welcome-to-jekyll</id>
-    <content type="html">&lt;p&gt;You&amp;#8217;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes! To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;ruby&#39;&gt;&lt;span class=&#39;k&#39;&gt;def&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;print_hi&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;name&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;
-  &lt;span class=&#39;nb&#39;&gt;puts&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&#39;si&#39;&gt;#{&lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;name&lt;/span&gt;&lt;span class=&#39;si&#39;&gt;}&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&#39;k&#39;&gt;end&lt;/span&gt;
-&lt;span class=&#39;n&#39;&gt;print_hi&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s1&#39;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;
-&lt;span class=&#39;c1&#39;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Check out the &lt;a href=&#39;http://jekyllrb.com&#39;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&#39;https://github.com/mojombo/jekyll&#39;&gt;Jekyll&amp;#8217;s GitHub repo&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  
-  <entry>
-    <title>My Local Configuration</title>
-    <link href="http://jalcine.me/weblog/2013/08/25/my-local-config.html"/>
-    <updated>2013-08-25T06:33:02-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/08/25/my-local-config</id>
-    <content type="html">&lt;p&gt;If there&amp;#8217;s one thing you can do right, it&amp;#8217;s setting up your local console environment. Casual users typically don&amp;#8217;t have to replace their computers every few years; but developers tend to upgrade every year and half or so (if budget permits). There&amp;#8217;s other reasons for versioning your shell environment; in my case, for using it in virtual machines, remote serves or if you nuke your system.&lt;/p&gt;
-
-&lt;h1 id=&#39;my_setup&#39;&gt;My Setup&lt;/h1&gt;
-
-&lt;p&gt;I use quite a lot of junk, to be honest. For example, whenever I go somewhere new and connect to their network, I rename the network to someone more friendly in my SSID list in &lt;a href=&#39;http://kde.org&#39;&gt;KDE&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#39;SSID List in KDE&#39; src=&#39;/images/ssid_wifi_nm.png&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;That makes it a bit more friendly when the notification alerts whenever I connect to a network. In the console, however, my shell is strictly Bash (for now). All of my Bash configuration scripts and goodies can be found at my &lt;a href=&#39;https://github.com/jalcine/dotfiles/tree/master&#39;&gt;dotfiles repository&lt;/a&gt;, but here&amp;#8217;s a quick run down.&lt;/p&gt;
-
-&lt;h2 id=&#39;using_frameworks&#39;&gt;Using Frameworks&lt;/h2&gt;
-
-&lt;p&gt;Frameworks are awesome, no? Well, some are. Some we can live without. In this case, the &lt;a href=&#39;https://github.com/revans/bash-it&#39;&gt;bash-it&lt;/a&gt; makes it way too easy to get an awesome Bash setup with minimal effort. I use it to add a lot of functionality like automatic &lt;a href=&#39;https://github.com/revans/bash-it/blob/master/plugins/available/rbenv.plugin.bash&#39;&gt;rbenv&lt;/a&gt; and &lt;a href=&#39;https://github.com/revans/bash-it/blob/master/plugins/available/nvm.plugin.bash&#39;&gt;nvm&lt;/a&gt; integration as well as &lt;a href=&#39;https://github.com/revans/bash-it/blob/master/aliases/available/git.aliases.bash&#39;&gt;git&lt;/a&gt; extensibility and a bit more. Whenever I open my terminal, I&amp;#8217;m greeted with this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#39;Hello, Konsole&#39; src=&#39;/images/hello_konsole.png&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Using frameworks allow you to get a working system as soon as possible, but it&amp;#8217;s recommended probably by every living developer on the platform that you &lt;strong&gt;absolutely go &amp;#8216;vanilla&amp;#8217;&lt;/strong&gt; when you&amp;#8217;re using a framework. Tweak &lt;em&gt;the shit&lt;/em&gt; out of it. Make it your own. &lt;code&gt;bash-it&lt;/code&gt; comes with a lot of plugins, completions (try typing &lt;code&gt;git&lt;/code&gt; in your console then a space then tab. that&amp;#8217;s &lt;em&gt;completion magic!&lt;/em&gt;), and aliases for Bash.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I recommend taking a look at &lt;a href=&#39;http://net.tutsplus.com/tutorials/tools-and-tips/the-command-line-is-your-best-friend/&#39;&gt;Nettuts&amp;#8217;s tutorial on Bash&lt;/a&gt; and how to configure it to your will.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Let&amp;#8217;s take a closer look at what&amp;#8217;s going on here.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&#39;Closer shot of Konsole&#39; src=&#39;/images/closer_shot_konsole.png&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;From that extra-zoomed shot of my Konsole session, you can tell the following:&lt;/p&gt;
-
-&lt;p&gt;* I&amp;#8217;m running as user &amp;#8220;jacky&amp;#8221; on machine &amp;#8220;neuromancer&amp;#8221; (my laptop). This is useful when I switch local users on my machine from &lt;code&gt;jacky&lt;/code&gt; to (&lt;code&gt;root&lt;/code&gt;)&lt;sup id=&#39;fnref:1&#39;&gt;&lt;a href=&#39;#fn:1&#39; rel=&#39;footnote&#39;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;* I&amp;#8217;m using ruby 2.0.0 thanks to the globally set version of &lt;code&gt;rbenv&lt;/code&gt; (as noted by ❖ 2.0.0-rc).&lt;/p&gt;
-
-&lt;p&gt;* I&amp;#8217;m in my &lt;code&gt;$HOME&lt;/code&gt; directory (as noted by &lt;code&gt;~&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;* The last process run exitted successfully (as noted by &lt;code&gt; ☷ &lt;/code&gt;).&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;This Bash-it theme is available in &lt;a href=&#39;https://github.com/jalcine/bash-it&#39;&gt;my fork of bash-it&lt;/a&gt;, it&amp;#8217;d require another tool for version control, &lt;a href=&#39;https://github.com/djl/vcprompt&#39;&gt;vcprompt&lt;/a&gt; to be available in your $PATH.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Now, let&amp;#8217;s say I wanted to start hacking on &lt;a href=&#39;http://wintermute.jalcine.me&#39;&gt;Wintermute&lt;/a&gt;. This is what I&amp;#8217;d do:&lt;/p&gt;
-&lt;iframe height=&#39;480&#39; src=&#39;http://showterm.io/7a2398f70c0305fa3678c#stop&#39; width=&#39;100%&#39;&gt;Visit http://showterm.io/7a2398f70c0305fa3678c.&lt;/iframe&gt;
-&lt;p&gt;Some of the actions may not be visible there, but I was able to quickly &amp;#8216;jump&amp;#8217; from &lt;code&gt;~&lt;/code&gt; to the location of my copy of the sources of Wintermute (about three folders deep) with less than 10 ten keystrokes thanks to &lt;a href=&#39;https://github.com/clvv/fasd&#39;&gt;fasd&lt;/a&gt;. Also, with a bit of editing to my &lt;a href=&#39;https://github.com/jalcine/dotfiles/blob/master/home/.inputrc&#39;&gt;~/.inputrc&lt;/a&gt;, past commands I&amp;#8217;ve executed for opening Vim were available just by pressing up; time-saving.&lt;/p&gt;
-
-&lt;h1 id=&#39;pick_your_rodeo&#39;&gt;Pick your Rodeo&lt;/h1&gt;
-
-&lt;p&gt;The tool I&amp;#8217;d recommend for such an endeavour is &lt;a href=&#39;https://github.com/andsens/homeshick&#39;&gt;homeshick&lt;/a&gt;. It&amp;#8217;s a Bash-implementation of the Ruby gem &lt;a href=&#39;https://github.com/technicalpickles/homesick&#39;&gt;homesick&lt;/a&gt;. It does take a bit more time to set up than its Ruby counterpart, but consider this: if you have to install Ruby on a new system, install &lt;code&gt;homesick&lt;/code&gt; and then use a local tool for versioning Ruby like &lt;a href=&#39;https://github.com/sstephenson/rbenv&#39;&gt;rbenv&lt;/a&gt; or &lt;a href=&#39;https://rvm.io/&#39;&gt;rvm&lt;/a&gt;, then why bother installing system Ruby? It looks like a chicken and egg (or rather rooster and hen) situation. Install this tool to your local system by executing the following (or by following the &lt;a href=&#39;https://github.com/andsens/homeshick#installation&#39;&gt;official instructions&lt;/a&gt;):&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# Download the cute lil&amp;#39; guy.&lt;/span&gt;
-git clone git://github.com/andsens/homeshick.git &lt;span class=&#39;se&#39;&gt;\&lt;/span&gt;
-  &lt;span class=&#39;nv&#39;&gt;$HOME&lt;/span&gt;/.homesick/repos/homeshick
-
-&lt;span class=&#39;c&#39;&gt;# Add `homeshick` as an alias to the command. Don&amp;#39;t worry, you can also edit&lt;/span&gt;
-&lt;span class=&#39;c&#39;&gt;# this out later (you might have to).&lt;/span&gt;
-&lt;span class=&#39;nb&#39;&gt;printf&lt;/span&gt; &lt;span class=&#39;s1&#39;&gt;&amp;#39;\nalias homeshick=&amp;quot;$HOME/.homesick/repos/homeshick/home/.homeshick&amp;quot;&amp;#39;&lt;/span&gt; &lt;span class=&#39;se&#39;&gt;\&lt;/span&gt;
-  &amp;gt;&amp;gt; &lt;span class=&#39;nv&#39;&gt;$HOME&lt;/span&gt;/.bashrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#39;slicing_up_configuration&#39;&gt;Slicing Up Configuration&lt;/h2&gt;
-
-&lt;p&gt;At this point, you can begin dicing up your configuration in your local system into smaller parts. For example, I keep my &lt;a href=&#39;https://github.com/jalcine/vimrc&#39;&gt;Vim configuration&lt;/a&gt; separate from my &lt;a href=&#39;https://github.com/jalcine/dotfiles/tree/master&#39;&gt;central configuration&lt;/a&gt; out of habit. As prescribed by the docu&lt;/p&gt;
-&lt;div class=&#39;footnotes&#39;&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id=&#39;fn:1&#39;&gt;
-&lt;p&gt;Very bad practice. I only do this to use certain aliases and what not, but doing this can make some files you use inaccessible by your user account.&lt;/p&gt;
-&lt;a href=&#39;#fnref:1&#39; rev=&#39;footnote&#39;&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
-  </entry>
-  
-  <entry>
     <title>Starting Off As A Developer</title>
-    <link href="http://jalcine.me/weblog/2013/08/23/starting-off-as-a-developer.html"/>
+    <link href="http://jalcine.me/weblog/weblog/starting-off-as-a-developer"/>
     <updated>2013-08-23T03:41:46-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/08/23/starting-off-as-a-developer</id>
+    <id>http://jalcine.me/weblog//weblog/starting-off-as-a-developer</id>
     <content type="html">&lt;p&gt;If there&amp;#8217;s one thing I&amp;#8217;ve been lacking in, it&amp;#8217;s being a &lt;em&gt;social coder&lt;/em&gt;. I&amp;#8217;m a social(-ish) person but I&amp;#8217;m not that social when it comes to code. I&amp;#8217;ve noticed that the best code is written by people who are out there communicating their thoughts, like the jQuery or Vim projects. It makes sense since you&amp;#8217;re &lt;em&gt;using a language&lt;/em&gt; to express an idea into a logical (or functional) flow. Communication of an idea is absolutely required then.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#39;https://twitter.com/r00k&#39;&gt;Ben&lt;/a&gt; wrote a &lt;a href=&#39;http://codeulate.com/2013/08/a-short-guide-to-landing-your-first-rails-job/&#39;&gt;very light post&lt;/a&gt; about getting a first job as a Rails developer. Of course, the details of the post can be applied to most other languages and practices, be it Android, iOS, web design or even C++, have you! But it&amp;#8217;d have to be proven for that to be fact. Nonetheless, it did get me thinking; I have this blog and I occasionally post about little things that don&amp;#8217;t really show my current situations with code. I&amp;#8217;ve decided to write a post at least twice a week about my current code projects and things I&amp;#8217;ve learned in code. It not only helps people who are just searching for stuff on the Web, but it serves as a memory anchor for me so I don&amp;#8217;t have to remember details.&lt;/p&gt;
@@ -113,9 +27,9 @@ git clone git://github.com/andsens/homeshick.git &lt;span class=&#39;se&#39;&gt;
   
   <entry>
     <title>Remote Debugging with Android</title>
-    <link href="http://jalcine.me/weblog/2013/07/31/remote-debugging-with-adb.html"/>
+    <link href="http://jalcine.me/weblog/weblog/remote-debugging-with-adb"/>
     <updated>2013-07-31T04:30:00-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/07/31/remote-debugging-with-adb</id>
+    <id>http://jalcine.me/weblog//weblog/remote-debugging-with-adb</id>
     <content type="html">&lt;p&gt;If there&amp;#8217;s one thing that plagues a developer at times, it&amp;#8217;s the number of cables we have hooked up to our machines. Laptops, phones, tablets, watches, you name it! Even chargers for our chargers. I&amp;#8217;m out to solve &lt;em&gt;one&lt;/em&gt; of those problems and it helps when you&amp;#8217;re doing some interactive Android development.&lt;/p&gt;
 
 &lt;p&gt;The Android debugging bridge tool (aka &lt;code&gt;adb&lt;/code&gt;) is a super-nifty tool that allows you to manage your devices, emulated or physical. A powerful use of it is the ability to handle all of its communication over &lt;a href=&#39;https://en.wikipedia.org/wiki/Transmission_Control_Protocol&#39;&gt;TCP&lt;/a&gt;, a (mostly) state-aware means of transporting packets of data over &lt;a href=&#39;http://en.wikipedia.org/wiki/Internet_Protocol&#39;&gt;IP&lt;/a&gt;. Using a device over TCP allows you to decouple the cable from your laptop or working station and move around with said device much more freely, making it easy to build and test gyroscopic applications, for example.&lt;/p&gt;
@@ -153,9 +67,9 @@ List of devices attached
   
   <entry>
     <title>Project Minimal</title>
-    <link href="http://jalcine.me/weblog/2013/07/27/project-mini.html"/>
+    <link href="http://jalcine.me/weblog/weblog/project-mini"/>
     <updated>2013-07-27T17:52:09-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/07/27/project-mini</id>
+    <id>http://jalcine.me/weblog//weblog/project-mini</id>
     <content type="html">&lt;p&gt;In an attempt to make things a bit more minimal-ish, I&amp;#8217;ve re-done the top-level of my website with a full-page, two-column approach. I got the original concept of it from the older version of jekyllrb.com; it had a Dr. Jeykll / Mr. Hyde look to it. I loved it and splashed my favorite color on top of it for fun.&lt;/p&gt;
 
 &lt;p&gt;This had me realize that imitation is not only the highest form of flattery, but also a good way to practice. Designing that page did re-teach me some concepts in centering text and block elements on a web page, something you&amp;#8217;d think would be direct, e.g.: &lt;code&gt;vertical-align&lt;/code&gt; + &lt;code&gt;text-align&lt;/code&gt;. There goes project Minimal!&lt;/p&gt;</content>
@@ -163,9 +77,9 @@ List of devices attached
   
   <entry>
     <title>Going Above and Beyond</title>
-    <link href="http://jalcine.me/weblog/2013/07/26/going-above-and-beyond.html"/>
+    <link href="http://jalcine.me/weblog/weblog/going-above-and-beyond"/>
     <updated>2013-07-26T06:15:00-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/07/26/going-above-and-beyond</id>
+    <id>http://jalcine.me/weblog//weblog/going-above-and-beyond</id>
     <content type="html">&lt;p&gt;I replied applied for a job as a front-end developer at a pretty amazing digital agency in SoHo, NYC. Meeting with the lead developer, I already loved the potential environment that I could have immersed myself in for days at a time. To complete the first round of the process, a code test was presented.&lt;/p&gt;
 
 &lt;p&gt;Pretty (reasonable)&lt;sup id=&#39;fnref:1&#39;&gt;&lt;a href=&#39;#fn:1&#39; rel=&#39;footnote&#39;&gt;1&lt;/a&gt;&lt;/sup&gt; (and quite standard) in the tech community for figuring out a developer&amp;#8217;s prowess. About a few days later, I called in to ask about the position. I was turned away because I &amp;#8220;overengineered&amp;#8221;. I was disheartened not because I was turned away per se, but more for to the reason of the such. I didn&amp;#8217;t think that I pushed too hard for the project. It was a simple landing page that collected a few fields from the user. The UX was built from slicing up a PSD but outside of that, it was simple.&lt;/p&gt;
@@ -182,9 +96,9 @@ List of devices attached
   
   <entry>
     <title>Why I Want A Job</title>
-    <link href="http://jalcine.me/weblog/2013/07/24/why-i-want-a-job.html"/>
+    <link href="http://jalcine.me/weblog/weblog/why-i-want-a-job"/>
     <updated>2013-07-24T07:34:38-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/07/24/why-i-want-a-job</id>
+    <id>http://jalcine.me/weblog//weblog/why-i-want-a-job</id>
     <content type="html">&lt;p&gt;At the time of writing, I&amp;#8217;m unemployed. Well, legally speaking, I&amp;#8217;m unemplyed. My &lt;a href=&#39;http://linkedin.com/in/jackyalcine&#39;&gt;LinkedIn profile&lt;/a&gt; says otherwise, but I&amp;#8217;m slowly squeezing out my savings as we speak. Being twenty and still living with your parents has its ups (and its downs, oh man the downs). But it&amp;#8217;s definitely about time I got my hands wet with something I&amp;#8217;d want to work on.&lt;/p&gt;
 
 &lt;p&gt;Before I continue, I have to admit, I had two opporunities to work in some established startups. The only problem was my lack of knowledge of certain paradigms like the &lt;a href=&#39;http://en.wikipedia.org/wiki/Facade_pattern&#39;&gt;Facade&lt;/a&gt; or the reason why Node.js seems to be such a magical god-send.&lt;/p&gt;
@@ -198,9 +112,9 @@ List of devices attached
   
   <entry>
     <title>I'm Not a Programmer</title>
-    <link href="http://jalcine.me/weblog/2013/07/21/im-not-a-programmer.html"/>
+    <link href="http://jalcine.me/weblog/weblog/im-not-a-programmer"/>
     <updated>2013-07-21T08:34:20-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/07/21/im-not-a-programmer</id>
+    <id>http://jalcine.me/weblog//weblog/im-not-a-programmer</id>
     <content type="html">&lt;p&gt;After failing to land a job with three different companies in three different fields of the Web (advertising, digital agency and art), it struck me that maybe I&amp;#8217;m just &lt;strong&gt;not a programmer&lt;/strong&gt;. I mean, I never had any real formal instruction; everything I know is from:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -247,9 +161,9 @@ List of devices attached
   
   <entry>
     <title>Welcome to Jekyll!</title>
-    <link href="http://jalcine.me/weblog/2013/07/19/welcome-to-jekyll.html"/>
+    <link href="http://jalcine.me/weblog/weblog/welcome-to-jekyll"/>
     <updated>2013-07-19T21:10:05-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/07/19/welcome-to-jekyll</id>
+    <id>http://jalcine.me/weblog//weblog/welcome-to-jekyll</id>
     <content type="html">&lt;p&gt;After a bit of trouble with &lt;a href=&#39;http://octopress.org&#39;&gt;Octopress&lt;/a&gt;, I decided to make my life a bit simpler and take it up a notch. I decided to start using &lt;a href=&#39;http://jekyllrb.com&#39;&gt;Jekyll&lt;/a&gt; after I&amp;#8217;ve noticed a &lt;a href=&#39;http://sodevious.me&#39;&gt;few&lt;/a&gt; &lt;a href=&#39;http://brandonbohling.com/&#39;&gt;people&lt;/a&gt; I knew use that as opposed to Octopress. I see why now, just write your post and you&amp;#8217;re down.&lt;/p&gt;
 
 &lt;p&gt;Jekyll also gives one a chance to modularize their static work simply. I was going to directly import my older theme for my website; but something stopped me. It wasn&amp;#8217;t simple enough for my eye and I try to be as simple (but comprehensive) as possible. In order for this to happen, of course, I had to start from scratch. Being a &lt;a href=&#39;http://foundation.zurb.com&#39;&gt;Yeti lover&lt;/a&gt;, I decided to use it to work on this blog, but with a &lt;a href=&#39;http://designshack.net/articles/css/mobilefirst/&#39;&gt;mobile-first&lt;/a&gt; approach. I went as far as to only look at my Nexus 4 whilst checking for changes; and that was quite interesting of a go.&lt;/p&gt;
@@ -278,9 +192,9 @@ List of devices attached
   
   <entry>
     <title>Wintermute's the Name, JARVIS's the Game</title>
-    <link href="http://jalcine.me/weblog/2013/07/01/wintermutes-the-name.html"/>
+    <link href="http://jalcine.me/weblog/weblog/wintermutes-the-name"/>
     <updated>2013-07-01T21:14:00-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/07/01/wintermutes-the-name</id>
+    <id>http://jalcine.me/weblog//weblog/wintermutes-the-name</id>
     <content type="html">&lt;p&gt;When people ask me what I do, I almost always reply with the sentence, &amp;#8221;I&amp;#8217;m a full stack web developer&amp;#8221;. It&amp;#8217;s not a lie, but it&amp;#8217;s only what I do because it helps me pay the bills. That might read wrong to some people, but web development has taught me a lot about remote system management and database management, so it has an immense value-add to my end-goal. &lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -333,55 +247,10 @@ List of devices attached
   </entry>
   
   <entry>
-    <title>Getting PostgreSQL up and kicking on Ubuntu</title>
-    <link href="http://jalcine.me/weblog/2013/06/03/getting-postgresql-up-and-kicking-on-ubuntu.html"/>
-    <updated>2013-06-03T13:46:00-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/06/03/getting-postgresql-up-and-kicking-on-ubuntu</id>
-    <content type="html">&lt;p&gt;After attending &lt;a href=&#39;&#39;&gt;an awesome hackathon&lt;/a&gt; last weekend, I realized quite a few things; the most prevelant being the necessity of having popular databases like PostgreSQL and MongoDB ready to go on your system.&lt;!-- more --&gt; For those using Linux system, specificially of the &lt;a href=&#39;http://debian.org&#39;&gt;Debian&lt;/a&gt; or &lt;a href=&#39;http://ubuntu.com&#39;&gt;Ubuntu&lt;/a&gt; flavors; this quick and (should be) easy guide is here for you.&lt;/p&gt;
-
-&lt;h2 id=&#39;installing_software&#39;&gt;Installing Software&lt;/h2&gt;
-
-&lt;p&gt;Typically you&amp;#8217;d need both the production software &lt;em&gt;and&lt;/em&gt; the development client headers for the server on your system. Running the following should help:&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;nv&#39;&gt;$ &lt;/span&gt;sudo apt-get install libpq-dev postgresql-9.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;That&amp;#8217;d swiftly install the packages and set up the server for automatically starting up on system start. To ensure that everything is fine, try checking the version of PostgreSQL&amp;#8217;s command line utility, &lt;code&gt;psql&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;nv&#39;&gt;$ &lt;/span&gt;psql --version
-psql &lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;PostgreSQL&lt;span class=&#39;o&#39;&gt;)&lt;/span&gt; 9.1.9
-contains support &lt;span class=&#39;k&#39;&gt;for &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;command&lt;/span&gt;-line editing
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#39;setting_up_a_user&#39;&gt;Setting up a User&lt;/h2&gt;
-
-&lt;p&gt;Now, the more tricker aspect of things might be setting up a new user. Coming from a MySQL background, the commands aren&amp;#8217;t that different (if not at all). The only problem after installing is that your user account on your system won&amp;#8217;t be recognized as a valid user account in Postgres. The following will help you log-in and set up an account to use with Postgres.&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;nv&#39;&gt;$ &lt;/span&gt;sudo -u postgres psql
-psql &lt;span class=&#39;o&#39;&gt;(&lt;/span&gt;9.1.9&lt;span class=&#39;o&#39;&gt;)&lt;/span&gt;
-Type &lt;span class=&#39;s2&#39;&gt;&amp;quot;help&amp;quot;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;for &lt;/span&gt;help.
-&lt;span class=&#39;nv&#39;&gt;postgres&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;c&#39;&gt;#&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-&lt;p&gt;You might get a warning about &lt;code&gt;psql&lt;/code&gt; not being able to switch its working directory to the directory you&amp;#8217;re working from. That&amp;#8217;s a permission issue since your user account isn&amp;#8217;t in the &lt;code&gt;postgres&lt;/code&gt; group.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Hit &lt;code&gt;Ctrl+D&lt;/code&gt; ande nter the following commands to get Postgres to recognize you as a user.&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# Tell Postgres to create a new user with our username.&lt;/span&gt;
-sudo -u postgres createuser --superuser &lt;span class=&#39;nv&#39;&gt;$USER&lt;/span&gt;
-&lt;span class=&#39;c&#39;&gt;# Open up the PostgreSQL shell.&lt;/span&gt;
-sudo -u postgres psql
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Now, within the PostgreSQL shell, create a password to be used with said account.&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;## Replace $USER with your username.&lt;/span&gt;
-&lt;span class=&#39;nv&#39;&gt;postgres&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;c&#39;&gt;# \password $USER&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Typically, when an application connects to Postgres on Ubuntu, it&amp;#8217;d try to find a user AND database with the username that&amp;#8217;s currently logged in. This&amp;#8217;ll also help with making the starting of &lt;code&gt;psql&lt;/code&gt; easier too so by running the following you should be able to do so:&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;nv&#39;&gt;$ &lt;/span&gt;createdb &lt;span class=&#39;nv&#39;&gt;$USER&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;That&amp;#8217;s all there is to it! For more information, check out the &lt;a href=&#39;https://help.ubuntu.com/community/PostgreSQL&#39;&gt;community Wiki page on Postgres&lt;/a&gt;.&lt;/p&gt;</content>
-  </entry>
-  
-  <entry>
     <title>Why no POSIX Signal Handling, Qt?</title>
-    <link href="http://jalcine.me/weblog/2013/05/27/why-no-posix-signal-handling.html"/>
+    <link href="http://jalcine.me/weblog/weblog/why-no-posix-signal-handling"/>
     <updated>2013-05-27T03:29:24-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/05/27/why-no-posix-signal-handling</id>
+    <id>http://jalcine.me/weblog//weblog/why-no-posix-signal-handling</id>
     <content type="html">&lt;p&gt;After using &lt;a href=&#39;http://qt-project.org&#39;&gt;Qt&lt;/a&gt; to faciliate nearly all of my C++ project needs, one has to notice why on EARTH doesn&amp;#8217;t it have any means of handling POSIX signals as easy as you handle signals with any other &lt;code&gt;QObject&lt;/code&gt;?&lt;!-- more --&gt; If anything, it should be considered something of equal importance in &lt;code&gt;QCoreApplication&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;In my own personal venture to fix this, I&amp;#8217;ve begun working on such a little light-weight library (might just move it into a header, to be honest) on GitHub called &lt;a href=&#39;https://github.com/jalcine/QtPosixSignal&#39;&gt;QtPosixSignal&lt;/a&gt;. The &lt;a href=&#39;https://github.com/jalcine/QtPosixSignal/blob/develop/README.md&#39;&gt;README.md&lt;/a&gt; took me some time to think up but it contains the implementation and flow I&amp;#8217;d like it to have. I&amp;#8217;m open to suggestions on how to go about via &lt;a href=&#39;https://github.com/jalcine/QtPosixSignal/issues/new&#39;&gt;issues&lt;/a&gt; to keep the developmental flow of things open.&lt;/p&gt;
@@ -391,9 +260,9 @@ sudo -u postgres psql
   
   <entry>
     <title>Mission Accomplished: laptop.jalcine.me</title>
-    <link href="http://jalcine.me/weblog/2013/05/05/mission-accomplished-laptop-dot-jalcine-dot-me.html"/>
+    <link href="http://jalcine.me/weblog/weblog/mission-accomplished-laptop-dot-jalcine-dot-me"/>
     <updated>2013-05-05T18:08:55-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/05/05/mission-accomplished-laptop-dot-jalcine-dot-me</id>
+    <id>http://jalcine.me/weblog//weblog/mission-accomplished-laptop-dot-jalcine-dot-me</id>
     <content type="html">&lt;p&gt;For about a month or so, my laptop was out of working order due to an issue with the DC jack. That&amp;#8217;s the part of the laptop&amp;#8217;s motherboard that takes power from your laptop charger cable to your battery, thus keeping your laptop up and running. &lt;!-- more --&gt; Me thinking of the cheapest and more educational route, I decided to order a new motherboard for it. I own a &lt;a href=&#39;http://www.asus.com/Notebooks_Ultrabooks/K53e&#39;&gt;ASUS K53E-BBR27 laptop&lt;/a&gt;, so I ordered a replacement board. I learned quite a few things about laptops and their internals when I replaced the board.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -415,9 +284,9 @@ sudo -u postgres psql
   
   <entry>
     <title>Why I Code: The Start</title>
-    <link href="http://jalcine.me/weblog/2013/04/30/why-i-code-the-start.html"/>
+    <link href="http://jalcine.me/weblog/weblog/why-i-code-the-start"/>
     <updated>2013-04-30T21:12:31-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/04/30/why-i-code-the-start</id>
+    <id>http://jalcine.me/weblog//weblog/why-i-code-the-start</id>
     <content type="html">&lt;p&gt;I don&amp;#8217;t really know when I started. I typically tell people 2006 only because that&amp;#8217;s when I started to use tools designed for programming instead of just Notepad and Internet Explorer.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;And also because it&amp;#8217;s when I began tinkering with compiled languages, a la C++. All of the HTML, CSS and JavaScript I knew was done mostly through experimentation and a lot of Googling. My father noticed my &amp;#8216;extreme&amp;#8217; (as he put it) interest in programming and gave me his introductory C++ programming textbook from class. The disc came with Visual Studio 2005 and even to this day, I have to applaud the comprehensive nature of Visual Studio. The IDE gave me a padding good enough to grow as a computer programmer. I started from the front of the textbook and did as many problems as I could. Going back and revisiting some cases presented in the book allowed me to grow a bit with each turn. Eventually, I couldn&amp;#8217;t learn any more from the book. It was, after all, an introductory course, and my father didn&amp;#8217;t have any more books.&lt;/p&gt;
@@ -429,9 +298,9 @@ sudo -u postgres psql
   
   <entry>
     <title>Imposing a New Habit</title>
-    <link href="http://jalcine.me/weblog/2013/03/18/imposing-a-new-habit.html"/>
+    <link href="http://jalcine.me/weblog/weblog/imposing-a-new-habit"/>
     <updated>2013-03-18T05:41:20-04:00</updated>
-    <id>http://jalcine.me/weblog//2013/03/18/imposing-a-new-habit</id>
+    <id>http://jalcine.me/weblog//weblog/imposing-a-new-habit</id>
     <content type="html">&lt;p&gt;I have been working to improve my habits this week and so far, this has been proven productive. I&amp;#8217;ve managed to get a bit of an early morning workout including a full-body stretch so I&amp;#8217;m feeling good. After I &lt;a href=&#39;http://any.do&#39;&gt;check off some tasks&lt;/a&gt; and get some music going, I can begin working on some personal projects and open-source work. Happy Monday!&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -443,9 +312,9 @@ sudo -u postgres psql
   
   <entry>
     <title>Kick-Starting Bugzilla with Plack: a PSGI Solution</title>
-    <link href="http://jalcine.me/weblog/2013/03/02/kick-starting-bugzilla-with-plack-a-psgi-solution.html"/>
+    <link href="http://jalcine.me/weblog/weblog/kick-starting-bugzilla-with-plack-a-psgi-solution"/>
     <updated>2013-03-02T06:07:31-05:00</updated>
-    <id>http://jalcine.me/weblog//2013/03/02/kick-starting-bugzilla-with-plack-a-psgi-solution</id>
+    <id>http://jalcine.me/weblog//weblog/kick-starting-bugzilla-with-plack-a-psgi-solution</id>
     <content type="html">&lt;p&gt;As mentioned in my landing post, I&amp;#8217;m quite the fan of &lt;a href=&#39;http://bugzilla.org&#39;&gt;Bugzilla&lt;/a&gt;. It powers bug tracking for Firefox, KDE, Eclipse and a lot of other awesome tools out there. Being that Perl is also my first web-friendly language and most acquinated one, I decided to provide a post on how to get Bugzilla up and running by using &lt;a href=&#39;http://plackperl.org&#39;&gt;Plack&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;For those coming from a Ruby background, Plack is the Perl equivalent for Rack, a simple server that can be run using Fast CGI execution. This allows for direct embedded into other web serves like Apache or Nginx or stand-alone uses in a different implementation; the best of both worlds.&lt;/p&gt;
@@ -473,9 +342,9 @@ sudo -u postgres psql
   
   <entry>
     <title>Adopting Technology: Then and Now</title>
-    <link href="http://jalcine.me/weblog/2013/02/23/adopting-technology-then-and-now.html"/>
+    <link href="http://jalcine.me/weblog/weblog/adopting-technology-then-and-now"/>
     <updated>2013-02-23T23:44:19-05:00</updated>
-    <id>http://jalcine.me/weblog//2013/02/23/adopting-technology-then-and-now</id>
+    <id>http://jalcine.me/weblog//weblog/adopting-technology-then-and-now</id>
     <content type="html">&lt;p&gt;This is 2013. We have some awesome technology out here in the wild, like Google Glass, Vuzix and some other awesome guys working into the field. I&amp;#8217;m a very big fan of tech, being a developer and all. But it&amp;#8217;s not that welcoming to people who don&amp;#8217;t understand it. But before I get all crazy about it, I have to explain what I want to appreciate.&lt;/p&gt;
 
 &lt;p&gt;Technology is beginning to move faster than most people can adopt to. We&amp;#8217;re producing more phones, laptops, and other devices each quarter than even before. I currently own a &lt;a href=&#39;http://www.asus.com/Notebooks_Ultrabooks/K53e&#39;&gt;ASUS laptop&lt;/a&gt;, a &lt;a href=&#39;https://play.google.com/store/devices/details?id=nexus_7_16gb&#39;&gt;Google tablet&lt;/a&gt;, and an &lt;a href=&#39;http://www.metropcs.com/metro/detail/LG+Motion%E2%84%A2+4G/LGMS770&#39;&gt;LG Android phone&lt;/a&gt;. Realistically, this is enough for one person. But I also own a personal television rigged to switch to my PC input when used, a pair of Bluetooth headphones that I use when I&amp;#8217;m using my tablet or laptop out of the house, a wireless mouse; &lt;a href=&#39;/&#39;&gt;the list goes on&lt;/a&gt;.&lt;/p&gt;
@@ -541,9 +410,9 @@ sudo -u postgres psql
   
   <entry>
     <title>Static Web Pages + Git = Awesome Deployment</title>
-    <link href="http://jalcine.me/weblog/2013/01/26/static-web-pages-plus-git-equals-awesome-deployment.html"/>
+    <link href="http://jalcine.me/weblog/weblog/static-web-pages-plus-git-equals-awesome-deployment"/>
     <updated>2013-01-26T04:09:00-05:00</updated>
-    <id>http://jalcine.me/weblog//2013/01/26/static-web-pages-plus-git-equals-awesome-deployment</id>
+    <id>http://jalcine.me/weblog//weblog/static-web-pages-plus-git-equals-awesome-deployment</id>
     <content type="html">&lt;p&gt;I&amp;#8217;ve been having lots of fun working with &lt;a href=&#39;http://octopress.com&#39;&gt;Octopress&lt;/a&gt; and working with it to make it as simple for me to use as possible. Fortunately, this hasn&amp;#8217;t been much of a challenge. With a bit of trial and error, I&amp;#8217;ve even managed to abstract the act of static web page deployment without too much help! Now, it&amp;#8217;s near possible to implement &amp;#8220;Heroku-like&amp;#8221; deployment. Towards the end, I even throw in a tip on how to do something similar to how Heroku might have deployment done as well!&lt;/p&gt;
 
 &lt;h1 id=&#39;prerequisties&#39;&gt;Prerequisties&lt;/h1&gt;
@@ -618,9 +487,9 @@ git version 1.7.10.4
   
   <entry>
     <title>xf86-networktablet Packaged in Ubuntu</title>
-    <link href="http://jalcine.me/weblog/2013/01/23/xf86-networktablet-packaged-in-ubuntu.html"/>
+    <link href="http://jalcine.me/weblog/weblog/xf86-networktablet-packaged-in-ubuntu"/>
     <updated>2013-01-23T22:45:00-05:00</updated>
-    <id>http://jalcine.me/weblog//2013/01/23/xf86-networktablet-packaged-in-ubuntu</id>
+    <id>http://jalcine.me/weblog//weblog/xf86-networktablet-packaged-in-ubuntu</id>
     <content type="html">&lt;p&gt;There&amp;#8217;s some awesome dudes out there in this big ol&amp;#8217; rock. &lt;a href=&#39;https://github.com/rfc2822&#39;&gt;rfc2822&lt;/a&gt; had the nifty idea of building out a module for &lt;a href=&#39;http://www.x.org/wiki/&#39;&gt;Xorg&lt;/a&gt; that, in a nutshell, can turn your Android tablet into a drawing tablet. &lt;!-- more --&gt; There&amp;#8217;s more about it on &lt;a href=&#39;http://blog.dev001.net/post/40681591705/x-org-use-your-android-tablet-as-a-graphics-tablet&#39;&gt;the blog post he mentioned it&lt;/a&gt;, if you&amp;#8217;re curious about the full round down. I had to make some edits to the original packaging to make it a bit niftier for building; tells you what you need to build!&lt;/p&gt;
 
 &lt;p&gt;I took the liberty of taking such an awesome project and packing it up into a nifty PPA for Ubuntu. For now, it&amp;#8217;s in my &lt;a href=&#39;https://launchpad.net/~jackyalcine/+archive/stable&#39;&gt;personal PPA of stable applications&lt;/a&gt;. The source of the Debian packaging for the PPA is &lt;a href=&#39;https://code.launchpad.net/~jackyalcine/+junk/xf86-networktablet-debian&#39;&gt;hosted on Launchpad&lt;/a&gt;. The installation procedure for this PPA would be:&lt;/p&gt;
@@ -636,9 +505,9 @@ git version 1.7.10.4
   
   <entry>
     <title>C'mon Nuance, You Didn't Even Ask!</title>
-    <link href="http://jalcine.me/weblog/2013/01/12/nuance.html"/>
+    <link href="http://jalcine.me/weblog/weblog/nuance"/>
     <updated>2013-01-12T18:30:00-05:00</updated>
-    <id>http://jalcine.me/weblog//2013/01/12/nuance</id>
+    <id>http://jalcine.me/weblog//weblog/nuance</id>
     <content type="html">&lt;p&gt;Just about the turn of the new year, a few &lt;a href=&#39;https://www.launchpad.net/~sii&#39;&gt;friends&lt;/a&gt; of mine decided to start a nifty little project. It was planned (and still is) to be the biggest thing in any of our lives.&lt;/p&gt;
 
 &lt;p&gt;I was one of the first developers and another lad, &lt;strong&gt;Dante Ashton&lt;/strong&gt;, led the product design and implementation. I must admit, we were well over our heads with this project but we did what we could and began to design and program out as much as we could for the application. Back in late 2010, early 2011, we had a server spinning and bent to our will. We had an instance of Bugzilla up and running and doing what we wanted to. We were working hard to attempt to understand what no one else did. We did it in an &lt;strong&gt;open&lt;/strong&gt; fashion. We put all of our research in a &lt;strong&gt;centralialized&lt;/strong&gt; place.&lt;/p&gt;
@@ -652,6 +521,98 @@ git version 1.7.10.4
 &lt;/blockquote&gt;
 
 &lt;p&gt;&amp;#8220;One Vision. One Purpose. We Are The Synthetic Intellect Institute.&amp;#8221;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Bugzilla: Work in Progress</title>
+    <link href="http://jalcine.me/weblog/weblog/bugzilla-work-in-progress"/>
+    <updated>2013-01-04T20:25:00-05:00</updated>
+    <id>http://jalcine.me/weblog//weblog/bugzilla-work-in-progress</id>
+    <content type="html">&lt;p&gt;I personally love &lt;a href=&#39;http://bugzilla.org&#39;&gt;Bugzilla&lt;/a&gt;. It&amp;#8217;s a true example of tried and true software and it gets the job done. It follows UNIX ideologies down to the bone. But it&amp;#8217;s showing its age. It&amp;#8217;s not really designed for the new Web 3.0 out of the box (and that&amp;#8217;s with good reason, it&amp;#8217;s more on functionality).&lt;/p&gt;
+
+&lt;p&gt;This still isn&amp;#8217;t good. Most modern sites you&amp;#8217;d interact with use a lot of AJAX or a modern MVC framework throughout the platform. This is something I was hoping to see for Bugzilla as future releases came about.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;From this point forward, I&amp;#8217;ll be referring to the latest releasde of Bugzilla, version &lt;strong&gt;4.2.3&lt;/strong&gt;, if memory serves me right.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#39;web_stack&#39;&gt;Web Stack&lt;/h2&gt;
+
+&lt;p&gt;I mentioned in my first post a few extensions that could help enhance Bugzilla to become a really amazing bug tracking tool. But the first thing that has to be done is quite hard to point out. I&amp;#8217;m not quite sure and I have to do a bit of research, but the minimum version of Perl is going to play a huge role on what can be done here.&lt;/p&gt;
+
+&lt;p&gt;I only bring attention to this largely out of the lack of simplicity when it comes to starting up an instance of Bugzilla. It&amp;#8217;s not intuitive at all in my opinion. This is speaking from a PHP/Zend and Ruby on Rails background so I&amp;#8217;m used to just starting a script in the console and having a web server being kicked up just for that application. Bugzilla requires that it&amp;#8217;s run via another web server, relinquishing that potential to make life a bit easier. Something like this, implementing a web server, or rather, web application stack under Bugzilla is something that the core team has to approve on. It&amp;#8217;s definitely something that could lead to a forking of a project, though.&lt;/p&gt;
+
+&lt;h2 id=&#39;extension_management&#39;&gt;Extension Management&lt;/h2&gt;
+
+&lt;p&gt;With most extensible software, there&amp;#8217;s typically a means of going into the server and maintaining the extensions currently loaded and being used. Bugzilla&amp;#8217;s system for building extensions is beyond simple, it&amp;#8217;s like shit easy to understand and go about doing. The only issue with that is that it &lt;strong&gt;has&lt;/strong&gt; to be done via the console, another pet peeve when you&amp;#8217;re not by the console at the moment. This provoked me to consider building out a extension that does just that. The lives of sysadmins everywhere might get a bit easier.&lt;/p&gt;
+
+&lt;h2 id=&#39;oauth_and_openid&#39;&gt;OAuth and OpenID&lt;/h2&gt;
+
+&lt;p&gt;The name might say it all to a lot of people. Having to create yet another account on yet another platform becomes annoying. I personally feel so, at least. This one still requires a bit of research and testing, though. I haven&amp;#8217;t had much success with Net::OpenID::Consumer. For now, I&amp;#8217;m going to move to a &lt;a href=&#39;http://search.cpan.org/~kgrennan/Net-OAuth-0.28/lib/Net/OAuth/Client.pm&#39;&gt;full OAuth solution&lt;/a&gt; for now and see if anyone wants to help with the OpenID support.&lt;/p&gt;
+
+&lt;h2 id=&#39;theme_management&#39;&gt;Theme Management&lt;/h2&gt;
+
+&lt;p&gt;Now, the big one. THEMES. I feel like you attempt to retheme the entire monster (gentle) that is Bugzilla, you&amp;#8217;d spend a long weekend doing so. Either we could work on making something like Persona for Firefox or even a simple tarball to be hosted and extracted would be awesome. Again, it provides amazing design opporunities for those who want to make such an awesome tool even more awesome.&lt;/p&gt;
+
+&lt;h2 id=&#39;threads_and_comments&#39;&gt;Threads and Comments&lt;/h2&gt;
+
+&lt;p&gt;Okay. Bugzilla&amp;#8217;s comments system is cool. Not great, and it&amp;#8217;s a useful tool. But it leaves so much more to be done. A bug tracking system of Bugzilla&amp;#8217;s potential with integration into VCS systems, IRC and other tools, the commenting system should be awesome as well. I did have a few ideas for it, but again, purely optimistic. Formatting support for commenting could be incorporated, but in order for changes like this to occur without messing up too much with core Bugzilla, the commenting tool would have to be refactored.&lt;/p&gt;
+
+&lt;h2 id=&#39;closing_notes&#39;&gt;Closing Notes&lt;/h2&gt;
+
+&lt;p&gt;Well, I&amp;#8217;m just looking forward to working more and more this year on Bugzilla. I see a lot of potential for the tool and I plan to push the use of it in more open source projects in the future.&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>First Starts: A Reboot</title>
+    <link href="http://jalcine.me/weblog/weblog/first-starts-a-reboot"/>
+    <updated>2012-10-30T14:34:00-04:00</updated>
+    <id>http://jalcine.me/weblog//weblog/first-starts-a-reboot</id>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Well, this is nice. This is my first blog post using &lt;a href=&#39;http://www.octopress.org&#39;&gt;OctoPress&lt;/a&gt; and I have to say, I really don&amp;#8217;t need any other blogging platform besides this one. When they say that this is the hacker&amp;#8217;s blog, they weren&amp;#8217;t kidding. I&amp;#8217;ve literally edited and installed everything from the console with no real hassle.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#39;about_myself&#39;&gt;About Myself&lt;/h2&gt;
+
+&lt;p&gt;I might as well begin this blog with a bit of detail about myself. I&amp;#8217;m &lt;strong&gt;Jacky Alcine&lt;/strong&gt;, a software engineer and avid fact checker (when I can be) living in New York City. I spend lots of time of social networks like &lt;a href=&#39;http://www.facebook.com/jacky.alcine&#39;&gt;Facebook&lt;/a&gt; or &lt;a href=&#39;http://www.twitter.com/jackyalcine&#39;&gt;Twitter&lt;/a&gt; but I try to spend more time on &lt;a href=&#39;http://stackoverflow.com/users/602588/jalcine&#39;&gt;StackOverflow&lt;/a&gt; and on &lt;a href=&#39;http://www.github.com/jalcine&#39;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I do a bit of open source work but not as much as I&amp;#8217;d like. Right now, I&amp;#8217;m working with a tech startup here in New York, so time&amp;#8217;s tied up even more, preventing me from giving 100% to open source. That, however, still doesn&amp;#8217;t stop me from contributing to the community.&lt;/p&gt;
+
+&lt;h2 id=&#39;projects_i_like&#39;&gt;Projects I Like&lt;/h2&gt;
+
+&lt;h3 id=&#39;language_background&#39;&gt;Language Background&lt;/h3&gt;
+
+&lt;p&gt;I didn&amp;#8217;t know if this was necessary to mention, but I&amp;#8217;m including it anyways. I&amp;#8217;m a big fan of C++, it being the first programming language I wrote serious code with and it taking me to whole new playing fields. This language taught me the ins and outs of object orientated programming and it made working with the language a tad bit easier. From there, I dabbled a bit with C, since everything manages to be related to that language one way or another. I guess you can call C the binding language or the kernel language. After this, I picked up a bit of C# and Java from experimentation and studying online PDFs about the language. I learned Perl from a book borrowed at the library and picked up Python as a beginner&amp;#8217;s language into &lt;a href=&#39;http://www.ubuntu.com&#39;&gt;Ubuntu&lt;/a&gt;. Now, I got about 6 languages under my belt and I&amp;#8217;m eagar to learn more.&lt;/p&gt;
+
+&lt;h3 id=&#39;bugzilla_nice_but_not_complete&#39;&gt;Bugzilla: Nice but not Complete&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#8217;m quite a fan of &lt;a href=&#39;http://www.bugzilla.org&#39;&gt;Bugzilla&lt;/a&gt;. It has an incredible amount of potential and the next few projects I have in mind should definitely bring the attention required to light. The first thing about it that kills me is its lack of real customizibility. Like okay, it has a templating system for implementing new themes, but there&amp;#8217;s no real definite guide on how to do this. I&amp;#8217;m planning on doing this and producing an extension that allows for the maintainence of themes in the platform. Shoot, if anything, you should be able to have separate themes for administrative and casual user experiences.&lt;/p&gt;
+
+&lt;p&gt;Another thing is its lack of support for OpenID authentication or even OAuth. Now, I have to understand and feel a bit of pain for these two. Building applications of any kind with an external dependency for authenication is a pain. I know this and thank God for the magic gems in Ruby that made my life easier. Perl doesn&amp;#8217;t have such a lucky layout and this should be fixed in the near future. This is probably due to the lack of a nice framework being used commonly in Perl. &lt;a href=&#39;http://mojolicio.us/&#39;&gt;Mojolicious&lt;/a&gt; is getting close, though.&lt;/p&gt;
+
+&lt;p&gt;As a bug tracker, Bugzilla &lt;strong&gt;really&lt;/strong&gt; follows the Unix principle well. But, nowadays, awesome software tends to be extensible. That&amp;#8217;s why this section of the post came to be. I wonder how working with testing servers like Hudson/Jenkins and Travis CI could help with Bugzilla&amp;#8217;s functionality. Specific tests could be referencing to a bug and provide contextual information for that bug. That would help me out a lot if I knew that a specific bug was being tested on constantly, a bit reassuring actually.&lt;/p&gt;
+
+&lt;p&gt;So, as a recap, Bugzilla should have the following (as separate extensions):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;OpenID support.&lt;/li&gt;
+
+&lt;li&gt;OAuth support.&lt;/li&gt;
+
+&lt;li&gt;A brand new commenting platform (for God&amp;#8217;s sake!)&lt;/li&gt;
+
+&lt;li&gt;Markdown support in comments.&lt;/li&gt;
+
+&lt;li&gt;Theme management support.&lt;/li&gt;
+
+&lt;li&gt;More AJAX functionality.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have any ideas what should be added here, please feel free to shoot me an idea of them. I&amp;#8217;m planning to set up a simple installation of Bugzilla on my server just so users can see my ideal setup of Bugzilla one day. Might give those developers over there a jump-start in the right direction :).&lt;/p&gt;
+
+&lt;h2 id=&#39;closing_words&#39;&gt;Closing Words&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#8217;ll definitely will be doing my best to communicate over the blog as often as I can, since it&amp;#8217;s so easy to do so. Thanks for reading, hope to procure more content for you in the near future.&lt;/p&gt;</content>
   </entry>
   
 </feed>

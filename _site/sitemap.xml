@@ -1,106 +1,92 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://jalcine.me/2012/10/30/first-starts-a-reboot.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/first-starts-a-reboot</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/01/04/bugzilla-work-in-progress.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/bugzilla-work-in-progress</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/01/12/nuance.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/nuance</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/01/23/xf86-networktablet-packaged-in-ubuntu.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/xf86-networktablet-packaged-in-ubuntu</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://jalcine.me/2013/01/26/static-web-pages-plus-git-equals-awesome-deployment.html
-        </loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/static-web-pages-plus-git-equals-awesome-deployment</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/02/23/adopting-technology-then-and-now.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/adopting-technology-then-and-now</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://jalcine.me/2013/03/02/kick-starting-bugzilla-with-plack-a-psgi-solution.html
-        </loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/kick-starting-bugzilla-with-plack-a-psgi-solution</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/03/18/imposing-a-new-habit.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/imposing-a-new-habit</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/04/30/why-i-code-the-start.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/why-i-code-the-start</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://jalcine.me/2013/05/05/mission-accomplished-laptop-dot-jalcine-dot-me.html
-        </loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/mission-accomplished-laptop-dot-jalcine-dot-me</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/05/27/why-no-posix-signal-handling.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/why-no-posix-signal-handling</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/06/03/getting-postgresql-up-and-kicking-on-ubuntu.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/wintermutes-the-name</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/07/01/wintermutes-the-name.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/welcome-to-jekyll</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/07/19/welcome-to-jekyll.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/im-not-a-programmer</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/07/21/im-not-a-programmer.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/why-i-want-a-job</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/07/24/why-i-want-a-job.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/going-above-and-beyond</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/07/26/going-above-and-beyond.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/project-mini</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/07/27/project-mini.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/remote-debugging-with-adb</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
-        <loc>http://jalcine.me/2013/07/31/remote-debugging-with-adb.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://jalcine.me/2013/08/23/starting-off-as-a-developer.html</loc>
-        <lastmod>2013-08-30T18:43:59-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://jalcine.me/2013/08/25/my-local-config.html</loc>
-        <lastmod>2013-08-30T19:27:22-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://jalcine.me/jekyll/update/2013/08/30/welcome-to-jekyll.html</loc>
-        <lastmod>2013-08-30T18:06:51-04:00</lastmod>
+        <loc>http://jalcine.me/weblog/starting-off-as-a-developer</loc>
+        <lastmod>2013-08-31T04:38:06-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/</loc>
-        <lastmod>2013-08-30T19:27:22-04:00</lastmod>
+        <lastmod>2013-08-31T04:15:40-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/weblog/</loc>
-        <lastmod>2013-08-30T19:27:22-04:00</lastmod>
+        <lastmod>2013-08-31T04:15:40-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://jalcine.me/about.html</loc>
+        <lastmod>2013-08-31T04:15:40-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/feed.xml</loc>
