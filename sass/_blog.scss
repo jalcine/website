@@ -19,9 +19,15 @@ body.blog {
           padding-right: 0.2em;
         }
 
-        > span {
-          float: right;
+        i.icon-time {
+          &:before {
+            content: "\0231B";
+            margin-right: 0.2em;
+            color: lighten($foreground-color, 40%);
+          }
         }
+
+        > span { float: right; }
       }
     }
   }
@@ -40,6 +46,8 @@ body.blog {
       transition: 0.4s left;
 
       &:hover { left: 1%; }
+
+      dt, dd { margin-bottom: 0.5em; }
 
       dt {
         font-weight: bold;
@@ -71,7 +79,7 @@ body.blog {
         line-height: 1.5;
         font-size: 1.2em;
         margin: 0.5em 0em;
-        text-align: justify;
+        text-align: left;
       }
 
       div.footnotes {
@@ -80,10 +88,16 @@ body.blog {
           list-style: decimal;
           clear: both;
           padding-left: 0.5em;
-
           p { display: inline; width: auto; margin-left: 0.4em; }
           a[rev=footnote] { float: left; }
         }
+      }
+    }
+
+    > section.related {
+      font-size: 0.8em;
+      ul > li {
+        list-style: square;
       }
     }
   }

@@ -4,7 +4,8 @@ title: "Starting Off As A Developer"
 subheading: "my (new) opinions on becoming more of a social coder"
 date: 2013-08-23 03:41:46 EDT
 comments: true
-tags: opinion code
+category: opinion
+
 ---
 
 If there's one thing I've been lacking in, it's being a *social coder*.

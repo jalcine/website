@@ -9,7 +9,11 @@ show_drafts: false
 relative_permalinks: true
 lsi: true
 permalink: "/weblog/:title"
+paginate: 5
 paginate_path: "/weblog/page/:num"
+
+category_dir: topics
+category_title_prefix: "Topics &raquo; "
 
 # Markdown engine.
 pygments: true

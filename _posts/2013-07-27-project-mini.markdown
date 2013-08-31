@@ -3,7 +3,7 @@ layout: post
 title:  "Project Minimal"
 subheader: "Do you really need that?"
 date:   2013-07-27 21:52:09
-tags: projects project-minimal
+category: projects
 
 ---
 
@@ -18,3 +18,7 @@ but also a good way to practice. Designing that page did re-teach me some
 concepts in centering text and block elements on a web page, something you'd
 think would be direct, e.g.: `vertical-align` + `text-align`. There goes
 project Minimal!
+
+--
+**EDIT 2013-08-31**: Now, I dropped the whole two-column thing and just have a
+centered 70% width column with a gutter of 15%. Fluid ftw.

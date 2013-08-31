@@ -7,13 +7,25 @@ classes:
 <div id="post">
   <h2>{{ page.title }}</h2>
   <dl id="postcard">
-    <dt>Written</dt>
+    <dt><i class="icon-pencil"></i> Written</dt>
     <dd>{{ page.date | date_to_string }}</dd>
-    <dt>Category</dt>
-    <dd>{{ post.category }}</dd>
+    <dt><i class="icon-tag"></i> Category</dt>
+    <dd>{{ page.category }}</dd>
   </dl>
 
   <section class="content">
     {{ content }}
+  </section>
+
+  <section class="related">
+    <p><strong>RELATED:</strong> You might also like</p>
+    <ul>
+      {% for page in site.related_posts %}
+      <li>
+        <a href="{{ page.url }}" title="{{ page.title }}">
+          {{ page.title }}
+        </a>
+        </li>
+      {% endfor %}
   </section>
 </div>

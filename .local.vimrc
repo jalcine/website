@@ -1,2 +1,3 @@
-set wildignore+=build/*,bin/*
-set wildignore+=_site/*
+set wildignore+=./_site/*
+set wildignore+=./bin/*
+set wildignore+=tags

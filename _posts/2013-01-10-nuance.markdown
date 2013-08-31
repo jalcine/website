@@ -3,7 +3,7 @@ layout: post
 title: "C'mon Nuance, You Didn't Even Ask!"
 date: 2013-01-12 06:30 PM
 comments: false
-tags: Android sii Wintermute artificial-intelligence Nuance projects
+category: rant
 
 ---
 
@@ -36,5 +36,3 @@ that in coming days, Nuance and the Synthetic Intellect Institute would be able 
 in attempting to provide innovative tools in the speech recognition space.
 
 > P.S: We did have a P.R. release of the project, if curious. [Akshat over at OMG!Ubuntu](http://www.omgubuntu.co.uk/2011/02/wintermute-project-aims-to-bring-artificial-intelligence-to-ubuntu) did a nice job of covering us. Hope you enjoy it.
-
-"One Vision. One Purpose. We Are The Synthetic Intellect Institute."

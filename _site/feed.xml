@@ -4,7 +4,7 @@
   <title type="text" xml:lang="en">A little ol' collection of text and images.</title>
   <link type="application/atom+xml" href="http://blog.jalcine.me/feed" rel="self"/>
   <link type="text" href="http://blog.jalcine.me" rel="alternate"/>
-  <updated>2013-08-31T04:41:30-04:00</updated>
+  <updated>2013-08-31T07:09:57-04:00</updated>
   <id>http://jalcine.me/weblog</id>
   <author>
     <name>Jacky Alciné</name>
@@ -39,7 +39,7 @@
 &lt;p&gt;Ironically, the first thing you&amp;#8217;d have to do is plug your device to your station of choice. Check if it&amp;#8217;s visible to &lt;code&gt;adb&lt;/code&gt; by running the following:&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;nv&#39;&gt;$ &lt;/span&gt;adb devices
 List of devices attached 
-&amp;lt;hexadecimal &lt;span class=&#39;c&#39;&gt;##&amp;gt;				device&lt;/span&gt;
+&amp;lt;hexadecimal number of device&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;If you see no devices listed, please ensure that &lt;strong&gt;USB Debugging&lt;/strong&gt; is enabled on your Android device.&lt;/p&gt;
@@ -72,7 +72,9 @@ List of devices attached
     <id>http://jalcine.me/weblog//weblog/project-mini</id>
     <content type="html">&lt;p&gt;In an attempt to make things a bit more minimal-ish, I&amp;#8217;ve re-done the top-level of my website with a full-page, two-column approach. I got the original concept of it from the older version of jekyllrb.com; it had a Dr. Jeykll / Mr. Hyde look to it. I loved it and splashed my favorite color on top of it for fun.&lt;/p&gt;
 
-&lt;p&gt;This had me realize that imitation is not only the highest form of flattery, but also a good way to practice. Designing that page did re-teach me some concepts in centering text and block elements on a web page, something you&amp;#8217;d think would be direct, e.g.: &lt;code&gt;vertical-align&lt;/code&gt; + &lt;code&gt;text-align&lt;/code&gt;. There goes project Minimal!&lt;/p&gt;</content>
+&lt;p&gt;This had me realize that imitation is not only the highest form of flattery, but also a good way to practice. Designing that page did re-teach me some concepts in centering text and block elements on a web page, something you&amp;#8217;d think would be direct, e.g.: &lt;code&gt;vertical-align&lt;/code&gt; + &lt;code&gt;text-align&lt;/code&gt;. There goes project Minimal!&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;EDIT 2013-08-31&lt;/strong&gt;: Now, I dropped the whole two-column thing and just have a centered 70% width column with a gutter of 15%. Fluid ftw.&lt;/p&gt;</content>
   </entry>
   
   <entry>
@@ -518,9 +520,7 @@ git version 1.7.10.4
 
 &lt;blockquote&gt;
 &lt;p&gt;P.S: We did have a P.R. release of the project, if curious. &lt;a href=&#39;http://www.omgubuntu.co.uk/2011/02/wintermute-project-aims-to-bring-artificial-intelligence-to-ubuntu&#39;&gt;Akshat over at OMG!Ubuntu&lt;/a&gt; did a nice job of covering us. Hope you enjoy it.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;#8220;One Vision. One Purpose. We Are The Synthetic Intellect Institute.&amp;#8221;&lt;/p&gt;</content>
+&lt;/blockquote&gt;</content>
   </entry>
   
   <entry>
