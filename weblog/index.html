@@ -1,0 +1,18 @@
+---
+layout: default
+title: weblog@jalciné:~
+classes:
+  - blog
+---
+<div id="index">
+  <h1 class="title"><a href="/">home</a> &raquo; entries</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li>
+      <a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a>
+      <span title="{{ post.date }}"><i class="icon-time"></i> {{ post.date | timeago }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<span class="section"></span>

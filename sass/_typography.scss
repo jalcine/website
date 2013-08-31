@@ -1,0 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@import "colors";
+
+html, body {
+  font-family: "Oxygen", "Lato", Verdana;
+  font-size: 16pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", "Times New Roman";
+  margin: 0.3em -0.1em;
+  font-weight: 800;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4, h5, h6 { font-size: 1.25em; }
+
+code { font-family: Inconsolata, Monaco, "Courier New"; }
+
+span.section {
+  &:after {
+    content: "\00A7";
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    margin: 0.3em 0em;
+    color: darken($background-color, 30%);
+  }
+}

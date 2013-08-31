@@ -1,0 +1,35 @@
+name: jalciné
+url: http://jalcine.me
+description: A little ol' collection of text and images.
+timezone: America/New_York
+
+# Blog specifics.
+future: false
+show_drafts: false
+relative_permalinks: true
+lsi: true
+permalink: "/weblog/:title"
+paginate: 5
+paginate_path: "/weblog/page/:num"
+
+category_dir: topics
+category_title_prefix: "Topics &raquo; "
+
+# Markdown engine.
+pygments: true
+redcarpet:
+  extensions:
+    - footnotes
+    - autolink
+    - smart
+    - tables
+    - strikethrough
+    - superscript
+
+# Don't bother with theses.
+exclude:
+  - bin
+  - "*.md"
+  - "*file*"
+  - "*config*"
+  - sass

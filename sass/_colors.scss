@@ -1,0 +1,21 @@
+$foreground-color: #222;
+$background-color: #dedede;
+$link-color: #3460a1;
+$active-link-color: #e7641d;
+
+html, body {
+  color: $foreground-color;
+  background-color: $background-color;
+}
+
+h1, h6 { color:   #000; }
+h2, h3 { color:   lighten(#000, 10%); }
+h3, h4 { color:   lighten(#000, 20%); }
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  transition: 0.2s color;
+
+  &:hover { color: $active-link-color; }
+}

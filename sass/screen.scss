@@ -1,0 +1,90 @@
+@import "compass/reset";
+@import "typography";
+@import "colors";
+@import "index";
+@import "blog";
+@import "page";
+@import "lib/media-queries";
+
+html, body {
+  width: auto; height: auto;
+  margin: 0em; padding: 0em;
+}
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+strong { font-weight: bold; }
+
+img { margin: 1em; }
+
+p img {
+  margin: 0em 10%;
+  text-align: center;
+  width: 80%;
+
+  &.left {
+    text-align: left;
+    width: 50%;
+    margin-left: 0em;
+  }
+}
+
+blockquote {
+  width: 80%;
+  margin: 1em 10%;
+  color: lighten($foreground-color, 25%);
+}
+
+body {
+  border-top: 0.5em solid #5f005f;
+
+  > header {
+    margin: 0.5em 0em;
+    text-align: center;
+    font-size: 0.8em;
+    color: darken($link-color, 10%);
+    height: 84px;
+
+    > a:first-child {
+      background-color: #5f005f;
+      @include border-radius(50%);
+      padding: 0em;
+      width: 80px;
+      height: 80px;
+
+      img {
+        @include border-radius(52%);
+        display: inline;
+        text-align: left;
+        margin: 0em;
+        margin-right: 1em;
+        width: 80px;
+        margin-top: -0.46em;
+        vertical-align: middle;
+        @include transition(0.4s opacity);
+        @include opacity(1);
+        &:hover { opacity: 0.4; }
+      }
+    }
+
+    > a {
+      display: inline-block;
+      line-height: 84px;
+      text-transform: uppercase;
+      padding: 0em 0.5em;
+    }
+  }
+
+  > footer {
+    color: darken(#5f005f, 15%);
+    height: 100%;
+    width: 50%;
+    padding: 1em 25%;
+    display: block;
+    min-height: 2em;
+    font-size: 0.6em;
+  }
+}
