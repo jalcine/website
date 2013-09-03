@@ -7,10 +7,12 @@ classes:
 <div id="post">
   <h2>{{ page.title }}</h2>
   <dl id="postcard">
-    <dt><i class="icon-pencil"></i> Written</dt>
-    <dd>{{ page.date | date_to_string }}</dd>
-    <dt><i class="icon-tag"></i> Category</dt>
-    <dd>{{ page.category }}</dd>
+    <ul>
+      <li>
+        <i class="icon-pencil"></i> Written <strong>
+        {{ page.date |  date_to_string }}</strong>
+      </li>
+    </ul>
   </dl>
 
   <section class="content">

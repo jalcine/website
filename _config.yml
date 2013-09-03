@@ -1,19 +1,29 @@
+# Generic values.
 name: jalciné
 url: http://jalcine.me
 description: A little ol' collection of text and images.
 timezone: America/New_York
+editor: vim
+
+# VCS data
+git:
+  branch: master
 
 # Blog specifics.
 future: false
-show_drafts: false
+show_drafts: true
 relative_permalinks: true
 lsi: true
 permalink: "/weblog/:title"
 paginate: 5
 paginate_path: "/weblog/page/:num"
 
-category_dir: topics
-category_title_prefix: "Topics &raquo; "
+# deployment
+transfer:
+  command: rsync
+  settings: -av --delete
+  source: _site/
+  destination: zordon:/var/www/jalcine.me/
 
 # Markdown engine.
 pygments: true

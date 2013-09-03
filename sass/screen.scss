@@ -44,47 +44,77 @@ body {
   > header {
     margin: 0.5em 0em;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1em;
     color: darken($link-color, 10%);
-    height: 84px;
-
-    > a:first-child {
-      background-color: #5f005f;
-      @include border-radius(50%);
-      padding: 0em;
-      width: 80px;
-      height: 80px;
-
-      img {
-        @include border-radius(52%);
-        display: inline;
-        text-align: left;
-        margin: 0em;
-        margin-right: 1em;
-        width: 80px;
-        margin-top: -0.46em;
-        vertical-align: middle;
-        @include transition(0.4s opacity);
-        @include opacity(1);
-        &:hover { opacity: 0.4; }
-      }
-    }
+    display: block;
 
     > a {
+      &:first-child {
+        background-color: #5f005f;
+        @include border-radius(50%);
+        padding: 0em;
+        width: 80px;
+        font-size: 0em;
+
+        img {
+          @include border-radius( 52%);
+          display: inline;
+          text-align: left;
+          margin: 0em;
+          margin-right: 1em;
+          width: 80px;
+          margin-top: -0.46em;
+          vertical-align: middle;
+          @include transition(0.4s opacity);
+          @include opacity(1);
+          &:hover { opacity: 0.4; }
+        }
+      }
+
       display: inline-block;
       line-height: 84px;
       text-transform: uppercase;
       padding: 0em 0.5em;
+      height: 84px;
     }
   }
 
   > footer {
     color: darken(#5f005f, 15%);
+    border-top: 1px solid darken(#5f005f, 20%);
     height: 100%;
     width: 50%;
-    padding: 1em 25%;
+    margin: 0em 25%;
+    padding: 1em 0em;
     display: block;
     min-height: 2em;
     font-size: 0.6em;
+  }
+}
+
+@include max-screen(800px) {
+  body {
+    > header {
+      height: auto;
+      > a {
+        display: block;
+        width: 100%;
+        clear: both;
+        text-align: center;
+        height: 60px;
+
+        &:first-child {
+          @include border-radius(0em);
+          background-color: transparent;
+          width: 100%;
+          font-size: 1em;
+        }
+      }
+    }
+
+    > footer {
+      width: 100%;
+      margin: 0em;
+    }
   }
 }

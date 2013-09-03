@@ -19,11 +19,15 @@ embedded projects. The only reason behind its "success" is its extremely opinion
 implementation. Maybe it's my lack of complete understanding how sockets work, but having to do
 something like:
 
-```c
+{% highlight c %}
 while (1) {
+  // Kill the unicorn.
+  // Buy a new unicorn.
+  // End scope.
 }
-```
-.. just looks stupid to me. I'm way too used to event-driven programming paradigms and object
+{% endhighlight %}
+
+.. just looks stupid to me, but that's C. I'm way too used to event-driven programming paradigms and object
 orientated ones and to do this in my C++ code scared me to no end. Since I'm using Qt, I figured
 that not only that there was a C++ binding/wrapper for ZeroMQ, there might be a Qt-level one.
 There's [two](https://github.com/jonnydee/nzmqt) [different](https://github.com/wttw/zeromqt)

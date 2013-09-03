@@ -1,7 +1,12 @@
+@import "lib/media-queries";
+
 body.page {
-  padding: 2em 10%;
+  padding: 0.25em 0.5em;
+  margin: 0em auto;
+
   width: 80%;
   padding-top: 0em;
+  transition: 0.3s padding;
 
   > h1.title {
     font-size: 3em;
@@ -10,5 +15,16 @@ body.page {
   p {
     line-height: 1.4;
     font-size: 1.5em;
+  }
+}
+
+.center { text-align: center; float: none; width: 100%; display: block; }
+
+@include max-screen(800px) {
+  body.page {
+    padding: 2em 10%;
+    padding-top: 0.1em;
+    margin: 0em;
+
   }
 }

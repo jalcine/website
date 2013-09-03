@@ -2,79 +2,87 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://jalcine.me/weblog/first-starts-a-reboot</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/bugzilla-work-in-progress</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/nuance</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/xf86-networktablet-packaged-in-ubuntu</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/static-web-pages-plus-git-equals-awesome-deployment</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/adopting-technology-then-and-now</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/kick-starting-bugzilla-with-plack-a-psgi-solution</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/imposing-a-new-habit</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/why-i-code-the-start</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/mission-accomplished-laptop-dot-jalcine-dot-me</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/why-no-posix-signal-handling</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/wintermutes-the-name</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/welcome-to-jekyll</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/im-not-a-programmer</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/why-i-want-a-job</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T10:03:24-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/going-above-and-beyond</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/project-mini</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/remote-debugging-with-adb</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://jalcine.me/weblog/2013-08-19-wintermute-updates-for-august</loc>
+        <lastmod>2013-09-03T08:57:20-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/starting-off-as-a-developer</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:54:31-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://jalcine.me/weblog/2013-09-03-kde-and-networking-thoughts</loc>
+        <lastmod>2013-09-03T09:57:45-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/jalcine.gpg</loc>
@@ -82,27 +90,23 @@
     </url>
     <url>
         <loc>http://jalcine.me/</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T10:03:24-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/weblog/weblog/</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://jalcine.me/source/projects/source/projects/index.html.haml</loc>
-        <lastmod>2013-08-31T07:19:46-04:00</lastmod>
+        <lastmod>2013-09-03T10:03:24-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/portfolio.html</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T07:28:15-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/about.html</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T08:49:01-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/projects.html</loc>
-        <lastmod>2013-08-31T07:20:20-04:00</lastmod>
+        <lastmod>2013-09-03T09:13:09-04:00</lastmod>
     </url>
     <url>
         <loc>http://jalcine.me/feed.xml</loc>

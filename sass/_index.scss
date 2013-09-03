@@ -4,11 +4,13 @@ body.index {
   header, footer { display: none; }
 
   text-align: center;
+
   > h2 {
-    padding: 15% 0em 0em;
+    padding-top: 1em;
     display: block;
     font-weight: 900;
     margin: 0em!important;
+    font-size: 4em;
   }
 
   > a {
