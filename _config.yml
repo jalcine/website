@@ -21,7 +21,7 @@ paginate_path: "/weblog/page/:num"
 # deployment
 transfer:
   command: rsync
-  settings: -av --delete
+  settings: --delete --recursive
   source: _site/
   destination: zordon:/var/www/jalcine.me/
 
