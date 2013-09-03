@@ -4,7 +4,7 @@
   <title type="text" xml:lang="en">A little ol' collection of text and images.</title>
   <link type="application/atom+xml" href="http://blog.jalcine.me/feed" rel="self"/>
   <link type="text" href="http://blog.jalcine.me" rel="alternate"/>
-  <updated>2013-09-03T10:04:47-04:00</updated>
+  <updated>2013-09-03T16:33:55-04:00</updated>
   <id>http://jalcine.me/weblog</id>
   <author>
     <name>Jacky Alciné</name>
@@ -12,35 +12,6 @@
   </author>
   <rights>Copyright (c) 2012 - 2013, Jacky Alcine; all rights reserved.</rights>
 
-  
-  <entry>
-    <title>KDE and Networking - Thoughts</title>
-    <link href="http://jalcine.me/weblog/weblog/2013-09-03-kde-and-networking-thoughts"/>
-    <updated>2013-09-03T07:55:15-04:00</updated>
-    <id>http://jalcine.me/weblog//weblog/2013-09-03-kde-and-networking-thoughts</id>
-    <content type="html">&lt;p&gt;If you haven&amp;#8217;t noticed from previous screen shots in my weblog, I use &lt;a href=&#39;http://kde.org&#39;&gt;KDE&lt;/a&gt; as my desktop environment of choice. Aside from Chrome, I use mostly KDE software for my desktop work. It has a really great way of not only working out of the box, but the feedback and updates (every month!) are great too. I might also like it a lot too since a lot of the code base is written with C++.&lt;/p&gt;
-
-&lt;h2 id=&#39;information_sharing&#39;&gt;Information Sharing&lt;/h2&gt;
-
-&lt;p&gt;However, if there&amp;#8217;s one thing that does strike me as odd, it&amp;#8217;s network information sharing with KDE. Now, the only system that I&amp;#8217;ve seen this done properly is probably Windows. Whenever you connect to a new network (specificially wireless, I haven&amp;#8217;t tried Ethernet connections), it asks for the network type. Now, some might disregard this window, but this determines the amount of information that the platform should expose the new network. If you&amp;#8217;re a casual Linux user with no real tinkering, not much about your system is ever visible over the network. However, software like Samba, ZeroConf/Avahi and others can eventually a bit of a hassle to constantly switch on and off.&lt;/p&gt;
-
-&lt;p&gt;Using Avahi to look at my local network over ZeroConf, I get a bit of interesting information:&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# You must have `avahi` installed for this to work on your machine.&lt;/span&gt;
-&lt;span class=&#39;c&#39;&gt;# sudo apt-get install kde-zeroconf (for KDE).&lt;/span&gt;
-&lt;span class=&#39;nv&#39;&gt;$ &lt;/span&gt;avahi-browse -a
-+  wlan0 IPv6 Jacky Alcine@neuromancer            iChat Presence         &lt;span class=&#39;nb&#39;&gt;local&lt;/span&gt;
-+  wlan0 IPv4 Jacky Alcine@neuromancer            iChat Presence         &lt;span class=&#39;nb&#39;&gt;local&lt;/span&gt;
-+  wlan0 IPv6 saned                               _sane-port._tcp        &lt;span class=&#39;nb&#39;&gt;local&lt;/span&gt;
-+  wlan0 IPv4 saned                               _sane-port._tcp        &lt;span class=&#39;nb&#39;&gt;local&lt;/span&gt;
-+  wlan0 IPv6 neuromancer &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt;dc:85:de:52:29:d1&lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;     Workstation            &lt;span class=&#39;nb&#39;&gt;local&lt;/span&gt;
-+  wlan0 IPv4 neuromancer &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt;dc:85:de:52:29:d1&lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;     Workstation            &lt;span class=&#39;nb&#39;&gt;local&lt;/span&gt;
-+  wlan0 IPv6 neuromancer                         Remote Disk Management &lt;span class=&#39;nb&#39;&gt;local&lt;/span&gt;
-+  wlan0 IPv4 neuromancer                         Remote Disk Management &lt;span class=&#39;nb&#39;&gt;local&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Above, you can see my local network chat capabilities (via iChat for OS X and &lt;a href=&#39;http://telepathy.kde.org&#39;&gt;Telepathy IM&lt;/a&gt; on KDE), &lt;code&gt;sane&lt;/code&gt; used for discovering scanners, machine discovery and &lt;code&gt;udisk&lt;/code&gt; abstraction so I can publish drives over Avahi. Talk about some nifty tech! Thing is, I&amp;#8217;d have to manually turn these things on and off in order to get them hidden from other users. Maybe I don&amp;#8217;t want to want my local chat presence to be visible in some networks but I&amp;#8217;d rather it to be shown when I&amp;#8217;m in others. All of the functionality and logic to create &amp;#8220;network profiles&amp;#8221;, or per-network configuration blocks for applications is here.&lt;/p&gt;
-
-&lt;p&gt;##&lt;/p&gt;</content>
-  </entry>
   
   <entry>
     <title>Starting Off As A Developer</title>
@@ -52,29 +23,6 @@
 &lt;p&gt;&lt;a href=&#39;https://twitter.com/r00k&#39;&gt;Ben&lt;/a&gt; wrote a &lt;a href=&#39;http://codeulate.com/2013/08/a-short-guide-to-landing-your-first-rails-job/&#39;&gt;very light post&lt;/a&gt; about getting a first job as a Rails developer. Of course, the details of the post can be applied to most other languages and practices, be it Android, iOS, web design or even C++, have you! But it&amp;#8217;d have to be proven for that to be fact. Nonetheless, it did get me thinking; I have this blog and I occasionally post about little things that don&amp;#8217;t really show my current situations with code. I&amp;#8217;ve decided to write a post at least twice a week about my current code projects and things I&amp;#8217;ve learned in code. It not only helps people who are just searching for stuff on the Web, but it serves as a memory anchor for me so I don&amp;#8217;t have to remember details.&lt;/p&gt;
 
 &lt;p&gt;As the Doctor would put it, Hello! &lt;img alt=&#39;Hello!&#39; src=&#39;/images/hello-im-the-doctor.gif&#39; /&gt;&lt;/p&gt;</content>
-  </entry>
-  
-  <entry>
-    <title>Wintermute: Updates For August</title>
-    <link href="http://jalcine.me/weblog/weblog/2013-08-19-wintermute-updates-for-august"/>
-    <updated>2013-08-19T15:54:39-04:00</updated>
-    <id>http://jalcine.me/weblog//weblog/2013-08-19-wintermute-updates-for-august</id>
-    <content type="html">&lt;p&gt;Well, it&amp;#8217;s August (and has been for a while now). &lt;a href=&#39;http://wintermute.jalcine.me&#39;&gt;Wintermute&lt;/a&gt; has been chugging along as you can from its &lt;a href=&#39;https://waffle.io/jalcine/wintermute&#39;&gt;task-board&lt;/a&gt;. I&amp;#8217;m at the point that can make or break Wintermute, it&amp;#8217;s remote procedure calling system. After that, it&amp;#8217;s off to the races by building out the plug-ins needed for the system and working on language bindings for the core aspect of Wintermute.&lt;/p&gt;
-
-&lt;h2 id=&#39;rpc_zeromq&#39;&gt;RPC: ZeroMQ&lt;/h2&gt;
-
-&lt;p&gt;I&amp;#8217;ve decided to use &lt;a href=&#39;http://zeromq.org&#39;&gt;ZeroMQ&lt;/a&gt; because of its protocol transparency; the ability to send the same data to both UNIX sockets and over TCP sockets with no looking back is something I&amp;#8217;d want Wintermute to have. And since support for serial sockets is supported, it&amp;#8217;d make it even more interesting for embedded projects. The only reason behind its &amp;#8220;success&amp;#8221; is its extremely opinionated approach of implementation. Maybe it&amp;#8217;s my lack of complete understanding how sockets work, but having to do something like:&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;c&#39;&gt;&lt;span class=&#39;k&#39;&gt;while&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
-  &lt;span class=&#39;c1&#39;&gt;// Kill the unicorn.&lt;/span&gt;
-  &lt;span class=&#39;c1&#39;&gt;// Buy a new unicorn.&lt;/span&gt;
-  &lt;span class=&#39;c1&#39;&gt;// End scope.&lt;/span&gt;
-&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;.. just looks stupid to me, but that&amp;#8217;s C. I&amp;#8217;m way too used to event-driven programming paradigms and object orientated ones and to do this in my C++ code scared me to no end. Since I&amp;#8217;m using Qt, I figured that not only that there was a C++ binding/wrapper for ZeroMQ, there might be a Qt-level one. There&amp;#8217;s &lt;a href=&#39;https://github.com/jonnydee/nzmqt&#39;&gt;two&lt;/a&gt; &lt;a href=&#39;https://github.com/wttw/zeromqt&#39;&gt;different&lt;/a&gt; implementations out there that have a bit of activity behind them. The &lt;code&gt;wttw&lt;/code&gt; version has a bit of a licensing issue so that would pose a problem for my project, it being under the GPLv2. The &lt;code&gt;jonnydee&lt;/code&gt; fork seems to be good, but attempt after attempt to build it locally failed on my local system. I&amp;#8217;m pointing my finger at &lt;code&gt;qmake&lt;/code&gt;, it being not that reliable of a build tool outside of Qt Creator and the likes. I might add it to a PPA of mine in the future.&lt;/p&gt;
-
-&lt;h2 id=&#39;plugins__all_the_things&#39;&gt;Plug-ins: &lt;code&gt;add_library&lt;/code&gt; ALL THE THINGS&lt;/h2&gt;
-
-&lt;p&gt;One thing that I noticed is vital is &lt;strong&gt;instant updates&lt;/strong&gt;. Before I can explain the importance of this, I&amp;#8217;d have to explain how Wintermute would operate on a machine. At the current build, Wintermute does nothing more besides creating a new &lt;a href=&#39;https://github.com/jalcine/wintermute/commit/91703e4a72ac7639dea290713c9be9b2941d1d92#src/Wintermute/Procedure/process_module.hpp&#39;&gt;&lt;code&gt;ProcessModule&lt;/code&gt;&lt;/a&gt;, send out one &lt;a href=&#39;https://github.com/jalcine/wintermute/commit/79ac9f7a4d35b3189ab2e2cf31c8dc85572c4b75#src/Wintermute/Procedure/heart_beat_call.hpp&#39;&gt;&lt;code&gt;HeartBeatCall&lt;/code&gt;&lt;/a&gt; and then hang. Nothing much. The intended goal is to replace that hang with the loading of a plug-in. Wintermute, by itself, can &lt;em&gt;not&lt;/em&gt; and &lt;em&gt;will&lt;/em&gt; not do anything. I chose this to remove as much dependencies to the core binary as possible so that binaries can be reloaded quickly.&lt;/p&gt;</content>
   </entry>
   
   <entry>
@@ -613,6 +561,58 @@ git version 1.7.10.4
 &lt;h2 id=&#39;closing_notes&#39;&gt;Closing Notes&lt;/h2&gt;
 
 &lt;p&gt;Well, I&amp;#8217;m just looking forward to working more and more this year on Bugzilla. I see a lot of potential for the tool and I plan to push the use of it in more open source projects in the future.&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>First Starts: A Reboot</title>
+    <link href="http://jalcine.me/weblog/weblog/first-starts-a-reboot"/>
+    <updated>2012-10-30T14:34:00-04:00</updated>
+    <id>http://jalcine.me/weblog//weblog/first-starts-a-reboot</id>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Well, this is nice. This is my first blog post using &lt;a href=&#39;http://www.octopress.org&#39;&gt;OctoPress&lt;/a&gt; and I have to say, I really don&amp;#8217;t need any other blogging platform besides this one. When they say that this is the hacker&amp;#8217;s blog, they weren&amp;#8217;t kidding. I&amp;#8217;ve literally edited and installed everything from the console with no real hassle.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#39;about_myself&#39;&gt;About Myself&lt;/h2&gt;
+
+&lt;p&gt;I might as well begin this blog with a bit of detail about myself. I&amp;#8217;m &lt;strong&gt;Jacky Alcine&lt;/strong&gt;, a software engineer and avid fact checker (when I can be) living in New York City. I spend lots of time of social networks like &lt;a href=&#39;http://www.facebook.com/jacky.alcine&#39;&gt;Facebook&lt;/a&gt; or &lt;a href=&#39;http://www.twitter.com/jackyalcine&#39;&gt;Twitter&lt;/a&gt; but I try to spend more time on &lt;a href=&#39;http://stackoverflow.com/users/602588/jalcine&#39;&gt;StackOverflow&lt;/a&gt; and on &lt;a href=&#39;http://www.github.com/jalcine&#39;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I do a bit of open source work but not as much as I&amp;#8217;d like. Right now, I&amp;#8217;m working with a tech startup here in New York, so time&amp;#8217;s tied up even more, preventing me from giving 100% to open source. That, however, still doesn&amp;#8217;t stop me from contributing to the community.&lt;/p&gt;
+
+&lt;h2 id=&#39;projects_i_like&#39;&gt;Projects I Like&lt;/h2&gt;
+
+&lt;h3 id=&#39;language_background&#39;&gt;Language Background&lt;/h3&gt;
+
+&lt;p&gt;I didn&amp;#8217;t know if this was necessary to mention, but I&amp;#8217;m including it anyways. I&amp;#8217;m a big fan of C++, it being the first programming language I wrote serious code with and it taking me to whole new playing fields. This language taught me the ins and outs of object orientated programming and it made working with the language a tad bit easier. From there, I dabbled a bit with C, since everything manages to be related to that language one way or another. I guess you can call C the binding language or the kernel language. After this, I picked up a bit of C# and Java from experimentation and studying online PDFs about the language. I learned Perl from a book borrowed at the library and picked up Python as a beginner&amp;#8217;s language into &lt;a href=&#39;http://www.ubuntu.com&#39;&gt;Ubuntu&lt;/a&gt;. Now, I got about 6 languages under my belt and I&amp;#8217;m eagar to learn more.&lt;/p&gt;
+
+&lt;h3 id=&#39;bugzilla_nice_but_not_complete&#39;&gt;Bugzilla: Nice but not Complete&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#8217;m quite a fan of &lt;a href=&#39;http://www.bugzilla.org&#39;&gt;Bugzilla&lt;/a&gt;. It has an incredible amount of potential and the next few projects I have in mind should definitely bring the attention required to light. The first thing about it that kills me is its lack of real customizibility. Like okay, it has a templating system for implementing new themes, but there&amp;#8217;s no real definite guide on how to do this. I&amp;#8217;m planning on doing this and producing an extension that allows for the maintainence of themes in the platform. Shoot, if anything, you should be able to have separate themes for administrative and casual user experiences.&lt;/p&gt;
+
+&lt;p&gt;Another thing is its lack of support for OpenID authentication or even OAuth. Now, I have to understand and feel a bit of pain for these two. Building applications of any kind with an external dependency for authenication is a pain. I know this and thank God for the magic gems in Ruby that made my life easier. Perl doesn&amp;#8217;t have such a lucky layout and this should be fixed in the near future. This is probably due to the lack of a nice framework being used commonly in Perl. &lt;a href=&#39;http://mojolicio.us/&#39;&gt;Mojolicious&lt;/a&gt; is getting close, though.&lt;/p&gt;
+
+&lt;p&gt;As a bug tracker, Bugzilla &lt;strong&gt;really&lt;/strong&gt; follows the Unix principle well. But, nowadays, awesome software tends to be extensible. That&amp;#8217;s why this section of the post came to be. I wonder how working with testing servers like Hudson/Jenkins and Travis CI could help with Bugzilla&amp;#8217;s functionality. Specific tests could be referencing to a bug and provide contextual information for that bug. That would help me out a lot if I knew that a specific bug was being tested on constantly, a bit reassuring actually.&lt;/p&gt;
+
+&lt;p&gt;So, as a recap, Bugzilla should have the following (as separate extensions):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;OpenID support.&lt;/li&gt;
+
+&lt;li&gt;OAuth support.&lt;/li&gt;
+
+&lt;li&gt;A brand new commenting platform (for God&amp;#8217;s sake!)&lt;/li&gt;
+
+&lt;li&gt;Markdown support in comments.&lt;/li&gt;
+
+&lt;li&gt;Theme management support.&lt;/li&gt;
+
+&lt;li&gt;More AJAX functionality.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have any ideas what should be added here, please feel free to shoot me an idea of them. I&amp;#8217;m planning to set up a simple installation of Bugzilla on my server just so users can see my ideal setup of Bugzilla one day. Might give those developers over there a jump-start in the right direction :).&lt;/p&gt;
+
+&lt;h2 id=&#39;closing_words&#39;&gt;Closing Words&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#8217;ll definitely will be doing my best to communicate over the blog as often as I can, since it&amp;#8217;s so easy to do so. Thanks for reading, hope to procure more content for you in the near future.&lt;/p&gt;</content>
   </entry>
   
 </feed>
