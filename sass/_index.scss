@@ -1,32 +1,36 @@
 @import "colors";
+@import "page";
 
 body.index {
   header, footer { display: none; }
+  border-top: none;
+  display: table;
 
-  text-align: center;
+  > #hellothere {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    > h2 {
+      display: block;
+      font-weight: 900;
+      font-size: 6em;
+    }
 
-  > h2 {
-    padding-top: 1em;
-    display: block;
-    font-weight: 900;
-    margin: 0em!important;
-    font-size: 4em;
-  }
+    > a {
+      text-decoration: none;
+      color: #368ece;
+    }
 
-  > a {
-    text-decoration: none;
-    color: #368ece;
-  }
+    > span { display: block; margin: 0.1em 0em; }
 
-  > span { display: block; margin: 0.5em 0em; }
+    > span.section, span.minor {
+      padding: 0.5em;
+      color: darken($background-color, 30%);
+    }
 
-  > span.section, span.minor {
-    padding: 0.5em;
-    color: darken($background-color, 30%);
-  }
-
-  > span.section {
-    font-size: 1.5em;
-    color: darken($background-color, 10%);
+    > span.section {
+      font-size: 1.5em;
+      color: darken($background-color, 10%);
+    }
   }
 }
