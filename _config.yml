@@ -17,6 +17,7 @@ lsi: true
 permalink: "/weblog/:title"
 paginate: 5
 paginate_path: "/weblog/page/:num"
+category_dir: "weblog/categories"
 
 # deployment
 transfer:
