@@ -8,9 +8,6 @@
 # Example usage:
 #   {% showterm <ID> %}
 #
-# Documentation:
-#   https://github.com/scottwb/jekyll-tweet-tag/blob/master/README.md
-#
 
 module Jekyll
   class ShowTermTag < Liquid::Tag
