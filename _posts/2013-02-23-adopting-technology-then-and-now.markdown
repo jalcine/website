@@ -1,10 +1,10 @@
 ---
-
 layout: post
 title: "Adopting Technology: Then and Now"
 date: 2013-02-23T23:44:19-05:00
 comments: true
 tags: nfc google-glass google-now agumented-reality
+category: review
 
 ---
 
@@ -68,7 +68,7 @@ those amazing fangs, wings and flight scenes we adore in film. Well, a lot of
 techies out there figured it to be an awesome idea. 
 
 ## Visually
--- youtube v1uyQZNg2vE
+{% youtube v1uyQZNg2vE %}
 
 That video wasn't edited to include those graphics to the upper left, this is
 [*Google Glass*](http://www.google.com/glass). It's here and it's getting
@@ -89,7 +89,7 @@ shopping.
 
 ### Physically
 
--- youtube 3b4w749Tud8
+{% youtube 3b4w749Tud8 %}
 
 [LeapMotion](http://leapmotion.com) is, hands on, the craziest cool piece of
 technology I've personally seen. It brings hand gestures and control to any
@@ -112,7 +112,7 @@ Some of these guys need no introduction. But I will anyways. Introducing **Googl
 ### Google Now
 Below is [Google Mobile](http://www.youtube.com/user/GoogleMobile?feature=watch)'s video about [Google Now](http://www.google.com/now).
 
--- youtube pPqliPzHYyc
+{% youtube pPqliPzHYyc %}
 
 [Google Now](http://www.google.com/now) is fucking awesome, but only if you're
 a Googler. If you store your contacts, e-mails, calendar, news (via Reader and
@@ -124,15 +124,10 @@ know before you know, thus curating to your pre-born needs. [Inception,
 much?](http://www.youtube.com/watch?v=V3-a58Wt2tk).
 
 ### Siri
--- youtube rNsrl86inpo
+{% youtube rNsrl86inpo %}
 
 Siri, from my research and tinkering, attempts to be your pocket assistant. It
 doesn't do any heavy lifting compared to Google Now. It waits for you to ask a
 question in order. It doesn't seem to "pry into" your information like Google
 Now, but it does leverage a lot of its work on Wolfram Alpha and Nuance's
 speech technology.
-
-# Critique?
-
-How do you think the future would change when it comes to consumer tech? Feel
-free to e-mail your ideas or comment below.

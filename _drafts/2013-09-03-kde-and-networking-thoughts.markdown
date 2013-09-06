@@ -13,17 +13,15 @@ for my desktop work. It has a really great way of not only working out of the
 box, but the feedback and updates (every month!) are great too. I might also
 like it a lot too since a lot of the code base is written with C++.
 
-## Information Sharing
+## Peer Discovery
 
-However, if there's one thing that does strike me as odd, it's network
-information sharing with KDE. Now, the only system that I've seen this done
-properly is probably Windows. Whenever you connect to a new network
-(specificially wireless, I haven't tried Ethernet connections), it asks for
-the network type. Now, some might disregard this window, but this determines
-the amount of information that the platform should expose the new network.
-If you're a casual Linux user with no real tinkering, not much about your
-system is ever visible over the network. However, software like Samba,
-ZeroConf/Avahi and others can eventually a bit of a hassle to constantly
+Whenever you connect to a new network on Windows (XP SP2 and greater, I think,
+and specificially a wireless network, I haven't tried Ethernet connections),
+it asks for the network type. Now, some might disregard this window, 
+but this determines the amount of information that the platform should 
+expose the new network. If you're a casual Linux user with no real tinkering,
+not much about your system is ever visible over the network. However, software 
+like Samba, ZeroConf/Avahi and others can eventually a bit of a hassle to constantly
 switch on and off.
 
 Using Avahi to look at my local network over ZeroConf, I get a bit of
@@ -43,16 +41,20 @@ $ avahi-browse -a
 {% endhighlight %}
 
 Above, you can see my local network chat capabilities (via iChat for OS X and
- [Telepathy IM][3] on KDE), `sane` used for discovering scanners, machine
- discovery and `udisk` abstraction so I can publish drives over Avahi.
- Talk about some nifty tech! Thing is, I'd have to manually turn these things
- on and off in order to get them hidden from other users. Maybe I don't want
- to want my local chat presence to be visible in some networks but I'd rather
- it to be shown when I'm in others. All of the functionality and logic to
- create "network profiles", or per-network configuration blocks for
- applications is here.
+[Telepathy IM][3] on KDE), `sane` used for discovering scanners, machine
+discovery and `udisk` abstraction so I can publish drives over Avahi.
+Talk about some nifty tech! Thing is, I'd have to manually turn these things
+on and off in order to get them hidden from other users. Maybe I don't want
+to want my local chat presence to be visible in some networks but I'd rather
+it to be shown when I'm in others. All of the functionality and logic to
+create "network profiles", or per-network configuration blocks for
+applications is here.
 
- ## 
+## Information Sharing
+
+Now, the concept of just finding other laptops can be annoying. But it's
+definitely useful if you don't want to drop a file into Dropbox or Google
+Drive just to share (and it's faster).
 
 [1]: http://kde.org
 [2]: http://zeroconf.org

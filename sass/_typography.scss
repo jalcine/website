@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Lato);
-@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Antic);
+@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import "colors";
 @import "lib/media-queries";
@@ -7,17 +7,20 @@
 $font-size: 16px;
 
 html, body {
-  font-family: "Oxygen", "Lato", Verdana;
+  font-family: Antic, Helvetica, Verdana;
   font-size: $font-size;
   line-height: 1;
   transition: 0.3s font-size;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", "Times New Roman";
+  font-family: "Antic Slab", Georgia, "Times New Roman";
   margin: 0.3em -0.1em;
   font-weight: 800;
+  transition: 0.3s font-size;
 }
+
+a, p, div, span, section { transition: 0.3s font-size; }
 
 h1 { font-size: 2em; }
 h2 { font-size: 1.75em; }
@@ -40,3 +43,4 @@ span.section {
 
 @include max-screen(800px)  {  html, body { font-size: $font-size * 0.8; } }
 @include min-screen(1200px) {  html, body { font-size: $font-size * 1.2; } }
+@include min-screen(1600px) {  html, body { font-size: $font-size * 1.4; } }

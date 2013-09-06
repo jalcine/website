@@ -1,6 +1,4 @@
-# from: http://jekyllrb.com/docs/plugins/
 module Jekyll
-
   class CategoryPage < Page
     def initialize(site, base, dir, category)
       @site = site
@@ -29,5 +27,6 @@ module Jekyll
       end
     end
   end
-
 end
+
+Jekyll::CategoryPageGenerator.new

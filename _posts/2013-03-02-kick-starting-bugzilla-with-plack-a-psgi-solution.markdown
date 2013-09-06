@@ -4,6 +4,7 @@ title: "Kick-Starting Bugzilla with Plack: a PSGI Solution"
 date: 2013-03-02T06:07:31-05:00
 comments: true
 tags: psgi perl plack tutorial bugzilla
+category: projects
 
 ---
 

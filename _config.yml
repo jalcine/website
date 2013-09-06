@@ -1,3 +1,4 @@
+# vim: nospell
 # Generic values.
 name: jalciné
 url: http://jalcine.me
@@ -10,7 +11,7 @@ git:
   branch: master
 
 # Blog specifics.
-future: false
+future: true
 show_drafts: true
 relative_permalinks: true
 lsi: true

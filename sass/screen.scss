@@ -7,7 +7,7 @@
 @import "lib/media-queries";
 
 html, body {
-  width: auto; height: auto;
+  width: 100%; height: 100%;
   margin: 0em; padding: 0em;
 }
 
@@ -81,11 +81,10 @@ body {
 
   > footer {
     color: darken(#5f005f, 15%);
-    border-top: 1px solid darken(#5f005f, 20%);
-    height: 100%;
-    width: 50%;
-    margin: 0em 25%;
-    padding: 1em 0em;
+    border-top: 1px solid rgba(darken(#5f005f, 20%), 0.3);
+    width: 70%;
+    margin: 0em 5%;
+    padding: 1em 10%;
     display: block;
     min-height: 2em;
     font-size: 0.6em;
@@ -113,7 +112,8 @@ body {
     }
 
     > footer {
-      width: 100%;
+      width: 90%;
+      padding: 0em 5%; 
       margin: 0em;
     }
   }

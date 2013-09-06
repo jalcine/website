@@ -3,7 +3,7 @@ layout: post
 title: "First Starts: A Reboot"
 date: 2012-10-30 14:34
 comments: true
-tags: introduction my-firsts
+category: personal
 
 ---
 

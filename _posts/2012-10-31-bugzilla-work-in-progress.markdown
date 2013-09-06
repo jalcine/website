@@ -3,7 +3,7 @@ layout: post
 title: "Bugzilla: Work in Progress"
 date: 2013-01-04 20:25
 comments: true
-tags: bugzilla projects-i-like
+category: projects
 ---
 
 I personally love [Bugzilla](http://bugzilla.org). It's a true example of tried and true
