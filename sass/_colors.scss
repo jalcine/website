@@ -1,16 +1,38 @@
-$foreground-color: #222;
-$background-color: #dedede;
-$link-color: #3460a1;
-$active-link-color: #e7641d;
+/** colors I like to use **/
+$blue:      #166098;
+$black:     #111111;
+$gray:      #dedede;
+$orange:    #e7641d;
+$purple:    #5f005f;
+
+$foreground-color:  $black;
+$background-color:  $gray;
+$link-color:        $blue;
+$active-link-color: $orange;
 
 html, body {
   color: $foreground-color;
   background-color: $background-color;
 }
 
-h1, h6 { color:   #000; }
-h2, h3 { color:   lighten(#000, 10%); }
-h3, h4 { color:   lighten(#000, 20%); }
+body {
+  border-top-color: $purple;
+
+  > header {
+    
+    > a:first-child { background-color: $purple; }
+  }
+
+  > footer {
+    border-top-color: darken($purple, 15%);
+  }
+}
+
+blockquote { color: lighten($foreground-color, 15%); }
+
+h1, h6 { color:   $black; }
+h2, h3 { color:   lighten($black, 10%); }
+h3, h4 { color:   lighten($black, 20%); }
 
 a {
   text-decoration: none;

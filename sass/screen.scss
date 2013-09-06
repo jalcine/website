@@ -1,9 +1,7 @@
 @import "compass/reset";
-@import "typography";
-@import "colors";
-@import "index";
-@import "blog";
-@import "page";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+@import "compass/css3/opacity";
 @import "lib/media-queries";
 
 html, body {
@@ -35,22 +33,19 @@ p img {
 blockquote {
   width: 80%;
   margin: 1em 10%;
-  color: lighten($foreground-color, 25%);
 }
 
 body {
-  border-top: 0.5em solid #5f005f;
+  border-top: 0.5em solid;
 
   > header {
     margin: 0.5em 0em;
     text-align: center;
     font-size: 1em;
-    color: darken($link-color, 10%);
     display: block;
 
     > a {
       &:first-child {
-        background-color: #5f005f;
         @include border-radius(50%);
         padding: 0em;
         width: 80px;
@@ -80,8 +75,7 @@ body {
   }
 
   > footer {
-    color: darken(#5f005f, 15%);
-    border-top: 1px solid rgba(darken(#5f005f, 20%), 0.3);
+    border-top: 1px solid;
     width: 70%;
     margin: 0em 5%;
     padding: 1em 10%;
@@ -90,6 +84,12 @@ body {
     font-size: 0.6em;
   }
 }
+
+@import "typography";
+@import "colors";
+@import "index";
+@import "blog";
+@import "page";
 
 @include max-screen(800px) {
   body {
