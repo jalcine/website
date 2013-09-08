@@ -23,9 +23,9 @@ category_dir: "weblog/categories"
 # deployment
 transfer:
   command: rsync
-  settings: --delete --recursive
+  settings: --delete --recursive --verbose
   source: _site/
-  destination: zordon:/var/www/jalcine.me/
+  destination: jalcine.me:/var/www/jalcine.me/
 
 # Markdown engine.
 pygments: true
