@@ -4,11 +4,12 @@ name: jalciné
 url: http://jalcine.me
 description: A little ol' collection of text and images.
 timezone: America/New_York
-editor: vim
 
 # VCS data
 git:
   branch: master
+post:
+  extension: markdown
 
 # Blog specifics.
 future: true
