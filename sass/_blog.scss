@@ -7,13 +7,9 @@ $pagination-padding: 0.15em;
 body.blog {
   @extend body.page;
 
-  > div#index, div#post {
-    margin: 5% auto;
-    width: 90%;
-    margin-top: 0em;
-  }
-
   > div#index {
+    margin: 0em auto;
+    width: 80%;
     ul.posts {
       padding: 1em 4em;
       li {
@@ -38,6 +34,8 @@ body.blog {
   }
 
   > div#post {
+    width: 80%;
+    margin: 0em auto;
     > h2.title {
       font-size: 3.5em;
       text-align: center;
@@ -87,11 +85,14 @@ body.blog {
 
     h2, h3, h4 { text-transform: uppercase; }
 
-    > h2 { font-size: 2em; }
-    > h3 { font-size: 1.75em; }
-    > h4 { font-size: 1.5em; }
+    > h2 { font-size: 2.5em; }
+    > h3 { font-size: 2.25em; }
+    > h4 { font-size: 2em; }
 
     > section.content {
+      width: 90%;
+      margin: 1em auto;
+
       ul > li { list-style: disc; }
       ol > li { list-style: decimal; }
       li { 
@@ -100,7 +101,7 @@ body.blog {
       }
       p {
         line-height: 1.5;
-        font-size: 1.2em;
+        font-size: 1em;
         margin: 0.5em 0em;
         text-align: left;
 
@@ -129,8 +130,9 @@ body.blog {
 
     > section.related {
       font-size: 0.8em;
+      margin: 2em;
       ul > li {
-        list-style: square;
+        list-style-type: circle;
       }
     }
   }
