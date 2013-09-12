@@ -31,10 +31,9 @@
     {% if page.css %}<style>{{ page.css }}</style>{% endif %}
   </head>
   <body class="{{ page.classes }}">
-    {% unless page.naked %}{% include header.html %}{% endunless %}{{ content }}{% unless page.naked %}{% include footer.html %}{% endunless %}
-    {% if page.js %}<script type="text/javascript">{{ page.js }}</script>{% endif %}
-    {% if page.javascripts %}
-    {% for js in page.javascripts %}<script type="text/javascript" src="{{ js }}"></script>{% endfor %}
-    {% endif page.javascripts %}
+    {% unless page.naked %}{% include header.html %}{% endunless %}{{ content }}{% unless page.naked %}{% include footer.html %
+    {% endunless %}{% if page.js %}<script type="text/javascript">{{ page.js }}</script>
+    {% endif %}{% if page.javascripts %}{% for js in page.javascripts %}<script type="text/javascript" src="{{ js }}"></script>
+    {% endfor %}{% endif page.javascripts %}
   </body>
 </html>
