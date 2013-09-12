@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable">
-  <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="/css/screen.css">
-  <link rel="stylesheet" href="/css/syntax.css">
-  <link rel="shortcut icon" href="/favicon.jpg">
-  <link rel=”author” href=”https://plus.google.com/118415769922038925979">
-  <link rel="canonical" href="{{site.url}}{{page.url}}">
-  <link rel="alternative" href="{{site.url}}/feed.xml" title="{{site.title}}" type="application/rss+xml">
-  <meta property=”og:title” content=”{{ page.title }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="{{site.url}}{{page.url}}">
-  <meta name="twitter:creator" content="@jackyalcine">
-  <meta name="twitter:site" content="@jackyalcine">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:domain" content="{{site.url}}">
-  <meta name="twitter:image" content="{{ site.url }}/favicon.jpg">
-  <script type="text/javascript">
-  var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
-  analytics.load("se6rauh0mx");
-  </script>
-</head>
-<body class="{{ page.classes }}">
-  {% include header.html %}
-  {{ content }}
-  {% include footer.html %}
-</body>
+  <head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="shortcut icon" href="/favicon.jpg">
+    <link rel=”author” href=”https://plus.google.com/118415769922038925979">
+    <link rel="canonical" href="{{site.url}}{{page.url}}">
+    <link rel="alternative" href="{{site.url}}/feed.xml" title="{{site.title}}" type="application/rss+xml">
+    <meta property=”og:title” content=”{{ page.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="{{site.url}}{{page.url}}">
+    <meta name="twitter:creator" content="@jackyalcine">
+    <meta name="twitter:site" content="@jackyalcine">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:domain" content="{{site.url}}">
+    <meta name="twitter:image" content="{{ site.url }}/favicon.jpg">
+    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    {% if page.stylesheets %}
+    {% for style in page.stylesheets %}<link rel="stylesheet" href="{{ style }}">{% endfor %}
+    {% endif page.stylesheets %}
+    <script type="text/javascript">
+      var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+        analytics.load("se6rauh0mx");
+    </script>
+    {% if page.css %}<style>{{ page.css }}</style>{% endif %}
+  </head>
+  <body class="{{ page.classes }}">
+    {% unless page.naked %}{% include header.html %}{% endunless %}{{ content }}{% unless page.naked %}{% include footer.html %}{% endunless %}
+    {% if page.js %}<script type="text/javascript">{{ page.js }}</script>{% endif %}
+    {% if page.javascripts %}
+    {% for js in page.javascripts %}<script type="text/javascript" src="{{ js }}"></script>{% endfor %}
+    {% endif page.javascripts %}
+  </body>
 </html>
