@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Antic);
-@import url(http://fonts.googleapis.com/css?family=Antic+Slab);
+@import url(http://fonts.googleapis.com/css?family=Port+Lligat);
+@import url(http://fonts.googleapis.com/css?family=Port+Lligat+Slab);
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import "colors";
 @import "lib/media-queries";
@@ -7,14 +7,15 @@
 $font-size: 16px;
 
 html, body {
-  font-family: Antic, Helvetica, Verdana;
+  font-family: "Port Lligat", Oxygen, Ubuntu, Verdana;
   font-size: $font-size;
+  font-weight: 200;
   line-height: 1;
   transition: 0.3s font-size;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Antic Slab", Georgia, "Times New Roman";
+  font-family: "Port Lligat Slab", Georgia, "Times New Roman";
   margin: 0.3em -0.1em;
   font-weight: 800;
   transition: 0.3s font-size;
