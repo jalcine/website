@@ -8,8 +8,8 @@ class YouTube < Liquid::Tag
       @id = $1
 
       if $2.nil? then
-          @width = 560
-          @height = 420
+          @width = "100%"
+          @height = "100%"
       else
           @width = $2.to_i
           @height = $3.to_i
@@ -21,7 +21,7 @@ class YouTube < Liquid::Tag
 
   def render(context)
     # "<iframe width=\"#{@width}\" height=\"#{@height}\" src=\"http://www.youtube.com/embed/#{@id}\" frameborder=\"0\"allowfullscreen></iframe>"
-    "<iframe width=\"#{@width}\" height=\"#{@height}\" src=\"http://www.youtube.com/embed/#{@id}?color=white&theme=light\"></iframe>"
+    "<iframe width=\"#{@width}\" height=\"#{@height}\" src=\"http://www.youtube.com/embed/#{@id}\">Woah.</iframe>"
   end
 
   Liquid::Template.register_tag "youtube", self

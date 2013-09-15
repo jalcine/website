@@ -79,3 +79,4 @@ DEPENDENCIES
   rack
   rack-contrib
   rack-livereload
+  sass

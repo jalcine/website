@@ -5,6 +5,7 @@ date: 2013-04-30T21:12:31-04:00
 comments: true
 external-url: 
 tags: background-history why-i-code
+category: personal
 
 ---
 

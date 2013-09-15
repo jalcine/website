@@ -4,6 +4,7 @@ title: "xf86-networktablet Packaged in Ubuntu"
 date: 2013-01-23 22:45
 comments: true 
 tags: xorg ubuntu packages projects tablet android
+category: projects
 
 ---
 

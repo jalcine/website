@@ -1,19 +1,32 @@
+# vim: nospell
+# Generic values.
 name: jalciné
 url: http://jalcine.me
 description: A little ol' collection of text and images.
 timezone: America/New_York
 
+# VCS data
+git:
+  branch: master
+post:
+  extension: markdown
+
 # Blog specifics.
-future: false
-show_drafts: false
+future: true
+show_drafts: true
 relative_permalinks: true
 lsi: true
 permalink: "/weblog/:title"
 paginate: 5
 paginate_path: "/weblog/page/:num"
+category_dir: "weblog/categories"
 
-category_dir: topics
-category_title_prefix: "Topics &raquo; "
+# deployment
+transfer:
+  command: rsync
+  settings: --delete --recursive --verbose
+  source: _site/
+  destination: jalcine.me:/var/www/jalcine.me/
 
 # Markdown engine.
 pygments: true

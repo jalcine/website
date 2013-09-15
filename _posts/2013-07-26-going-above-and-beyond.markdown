@@ -8,16 +8,16 @@ tags: work php code life
 
 ---
 
-I replied applied for a job as a front-end developer at a pretty amazing
+I recently applied for a job as a front-end developer at a pretty amazing
 digital agency in SoHo, NYC. Meeting with the lead developer, I already loved
 the potential environment that I could have immersed myself in for days at a
 time. To complete the first round of the process, a code test was presented.
 
 Pretty (reasonable)[^1] (and quite standard) in the tech community for
 figuring out a developer's prowess. About a few days later, I called in
-to ask about the position. I was turned away because I "overengineered".
+to ask about the position. I was turned away because I "over-engineered".
 I was disheartened not because I was turned
-away per se, but more for to the reason of the such. I didn't think that
+away per sé, but more for to the reason of the such. I didn't think that
 I pushed too hard for the project. It was a simple landing page that collected
 a few fields from the user. The UX was built from slicing up a PSD but outside
 of that, it was simple.

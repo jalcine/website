@@ -7,11 +7,11 @@ tags: jobs reflection employment
 
 ---
 
-At the time of writing, I'm unemployed. Well, legally speaking, I'm unemplyed.
-My [LinkedIn profile](http://linkedin.com/in/jackyalcine) says otherwise, but
-I'm slowly squeezing out my savings as we speak. Being twenty and still living
-with your parents has its ups (and its downs, oh man the downs). But it's
-definitely about time I got my hands wet with something I'd want to work on.
+At the time of writing, I'm unemployed. My [LinkedIn profile](http://linkedin.com/in/jackyalcine) 
+says otherwise, but I'm slowly squeezing out my savings as we speak. 
+Being twenty and still living with your parents has its ups 
+(and its downs, oh man the downs). But it's definitely about time 
+I got my hands wet with something I'd want to work on.
 
 Before I continue, I have to admit, I had two opporunities to work in some
 established startups. The only problem was my lack of knowledge of certain

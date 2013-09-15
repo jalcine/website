@@ -78,12 +78,11 @@ end
 desc "Create a post in _posts"
 task :post, :title do |t, args|
 title = args[:title]
-template = CONFIG["post"]["template"]
 extension = CONFIG["post"]["extension"]
 editor = CONFIG["editor"]
 check_title(title)
 filename = "#{DATE}-#{transform_to_slug(title, extension)}"
-content = read_file(template)
+content = "" 
 create_file(POSTS, filename, content, title, editor)
 end
 

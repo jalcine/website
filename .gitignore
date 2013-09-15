@@ -2,3 +2,6 @@
 build
 .sass-cache
 bin
+tags
+_site
+css

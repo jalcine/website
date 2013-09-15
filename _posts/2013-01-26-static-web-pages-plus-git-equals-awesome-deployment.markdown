@@ -4,6 +4,7 @@ title: "Static Web Pages + Git = Awesome Deployment"
 date: 2013-01-26 04:09
 comments: true 
 tags: web deployment octopress git
+category: development
 
 ---
 

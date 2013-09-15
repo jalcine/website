@@ -5,22 +5,24 @@ classes:
 ---
 
 <div id="post">
-  <h2>{{ page.title }}</h2>
-  <dl id="postcard">
-    <dt><i class="icon-pencil"></i> Written</dt>
-    <dd>{{ page.date | date_to_string }}</dd>
-    <dt><i class="icon-tag"></i> Category</dt>
-    <dd>{{ page.category }}</dd>
-  </dl>
-
+  <h2 class="title">{{ page.title }}</h2>
+  <section class="meta">
+    <span class="field">written <strong>{{ page.date | timeago }}</strong></span>
+    <span class="field">category <strong>{{ page.category }}</strong></span>
+    <span class="field"><strong>{{ page.content | reading_time }}</strong></span>
+  </section>
+  <section class="pagination">
+    {% if page.previous %}<a class="left"  href="{{ page.previous.url }}">&laquo;</a>{% endif %}
+    {% if page.next %}<a class="right" href="{{ page.next.url }}">&raquo;</a>{% endif %}
+  </section>
   <section class="content">
     {{ content }}
   </section>
-
+  <span class="section"></span>
   <section class="related">
     <p><strong>RELATED:</strong> You might also like</p>
     <ul>
-      {% for page in site.related_posts %}
+      {% for page in site.related_posts limit:3 %}
       <li>
         <a href="{{ page.url }}" title="{{ page.title }}">
           {{ page.title }}
