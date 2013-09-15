@@ -4,7 +4,7 @@
   <title type="text" xml:lang="en">A little ol' collection of text and images.</title>
   <link type="application/atom+xml" href="http://blog.jalcine.me/feed" rel="self"/>
   <link type="text" href="http://blog.jalcine.me" rel="alternate"/>
-  <updated>2013-08-31T07:09:57-04:00</updated>
+  <updated>2013-09-15T18:52:20-04:00</updated>
   <id>http://jalcine.me/weblog</id>
   <author>
     <name>Jacky Alciné</name>
@@ -23,6 +23,27 @@
 &lt;p&gt;&lt;a href=&#39;https://twitter.com/r00k&#39;&gt;Ben&lt;/a&gt; wrote a &lt;a href=&#39;http://codeulate.com/2013/08/a-short-guide-to-landing-your-first-rails-job/&#39;&gt;very light post&lt;/a&gt; about getting a first job as a Rails developer. Of course, the details of the post can be applied to most other languages and practices, be it Android, iOS, web design or even C++, have you! But it&amp;#8217;d have to be proven for that to be fact. Nonetheless, it did get me thinking; I have this blog and I occasionally post about little things that don&amp;#8217;t really show my current situations with code. I&amp;#8217;ve decided to write a post at least twice a week about my current code projects and things I&amp;#8217;ve learned in code. It not only helps people who are just searching for stuff on the Web, but it serves as a memory anchor for me so I don&amp;#8217;t have to remember details.&lt;/p&gt;
 
 &lt;p&gt;As the Doctor would put it, Hello! &lt;img alt=&#39;Hello!&#39; src=&#39;/images/hello-im-the-doctor.gif&#39; /&gt;&lt;/p&gt;</content>
+  </entry>
+  
+  <entry>
+    <title>Wintermute: Updates For August</title>
+    <link href="http://jalcine.me/weblog/weblog/2013-08-19-wintermute-updates-for-august"/>
+    <updated>2013-08-19T15:54:39-04:00</updated>
+    <id>http://jalcine.me/weblog//weblog/2013-08-19-wintermute-updates-for-august</id>
+    <content type="html">&lt;p&gt;Well, it&amp;#8217;s August (and has been for a while now). &lt;a href=&#39;http://wintermute.jalcine.me&#39;&gt;Wintermute&lt;/a&gt; has been chugging along as you can from its &lt;a href=&#39;https://waffle.io/jalcine/wintermute&#39;&gt;task-board&lt;/a&gt;. I&amp;#8217;m at the point that can make or break Wintermute, it&amp;#8217;s remote procedure calling system. After that, it&amp;#8217;s off to the races by building out the plug-ins needed for the system and working on language bindings for the core aspect of Wintermute.&lt;/p&gt;
+
+&lt;h2 id=&#39;rpc_zeromq&#39;&gt;RPC: ZeroMQ&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#8217;ve decided to use &lt;a href=&#39;http://zeromq.org&#39;&gt;ZeroMQ&lt;/a&gt; because of its protocol transparency; the ability to send the same data to both UNIX sockets and over TCP sockets with no looking back is something I&amp;#8217;d want Wintermute to have. And since support for serial sockets is supported, it&amp;#8217;d make it even more interesting for embedded projects. The only reason behind its &amp;#8220;success&amp;#8221; is its extremely opinionated approach of implementation. Maybe it&amp;#8217;s my lack of complete understanding how sockets work, but having to do something like:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;c
+while (1) {
+}
+&lt;/code&gt; .. just looks stupid to me. I&amp;#8217;m way too used to event-driven programming paradigms and object orientated ones and to do this in my C++ code scared me to no end. Since I&amp;#8217;m using Qt, I figured that not only that there was a C++ binding/wrapper for ZeroMQ, there might be a Qt-level one. There&amp;#8217;s &lt;a href=&#39;https://github.com/jonnydee/nzmqt&#39;&gt;two&lt;/a&gt; &lt;a href=&#39;https://github.com/wttw/zeromqt&#39;&gt;different&lt;/a&gt; implementations out there that have a bit of activity behind them. The &lt;code&gt;wttw&lt;/code&gt; version has a bit of a licensing issue so that would pose a problem for my project, it being under the GPLv2. The &lt;code&gt;jonnydee&lt;/code&gt; fork seems to be good, but attempt after attempt to build it locally failed on my local system. I&amp;#8217;m pointing my finger at &lt;code&gt;qmake&lt;/code&gt;, it being not that reliable of a build tool outside of Qt Creator and the likes. I might add it to a PPA of mine in the future.&lt;/p&gt;
+
+&lt;h2 id=&#39;plugins__all_the_things&#39;&gt;Plug-ins: &lt;code&gt;add_library&lt;/code&gt; ALL THE THINGS&lt;/h2&gt;
+
+&lt;p&gt;One thing that I noticed is vital is &lt;strong&gt;instant updates&lt;/strong&gt;. Before I can explain the importance of this, I&amp;#8217;d have to explain how Wintermute would operate on a machine. At the current build, Wintermute does nothing more besides creating a new &lt;a href=&#39;https://github.com/jalcine/wintermute/commit/91703e4a72ac7639dea290713c9be9b2941d1d92#src/Wintermute/Procedure/process_module.hpp&#39;&gt;&lt;code&gt;ProcessModule&lt;/code&gt;&lt;/a&gt;, send out one &lt;a href=&#39;https://github.com/jalcine/wintermute/commit/79ac9f7a4d35b3189ab2e2cf31c8dc85572c4b75#src/Wintermute/Procedure/heart_beat_call.hpp&#39;&gt;&lt;code&gt;HeartBeatCall&lt;/code&gt;&lt;/a&gt; and then hang. Nothing much. The intended goal is to replace that hang with the loading of a plug-in. Wintermute, by itself, can &lt;em&gt;not&lt;/em&gt; and &lt;em&gt;will&lt;/em&gt; not do anything. I chose this to remove as much dependencies to the core binary as possible so that binaries can be reloaded quickly.&lt;/p&gt;</content>
   </entry>
   
   <entry>
