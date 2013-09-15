@@ -53,8 +53,8 @@ body.blog {
       }
 
       a.left {
-       float: left;
-       left: $pagination-padding;
+        float: left;
+        left: $pagination-padding;
       }
 
       a.right {
@@ -95,10 +95,12 @@ body.blog {
 
       ul > li { list-style: disc; }
       ol > li { list-style: decimal; }
+
       li { 
         font-size: 100%;
         margin: 1em 2em;
       }
+
       p {
         line-height: 1.5;
         font-size: 1em;
