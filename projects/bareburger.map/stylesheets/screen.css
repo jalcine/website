@@ -1,4 +1,4 @@
-@import url(../vendor/stylesheets/leaflet.awesome-markers.css);
+@import url(../vendor/stylesheets/leaflet.geosearch.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
 html { line-height: 1; }
@@ -16,15 +16,88 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
+/* 
+Author: L. Voogdt
+License: MIT
+Version: 1.0
+*/
+/* Marker setup */
+.awesome-marker { background: url("../images/markers-soft.png") no-repeat 0 0; width: 35px; height: 46px; position: absolute; left: 0; top: 0; display: block; text-align: center; }
+
+.awesome-marker-shadow { background: url("../images/markers-shadow.png") no-repeat 0 0; width: 36px; height: 16px; }
+
+/* Retina displays */
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) { .awesome-marker { background-image: url("../images/markers-soft@2x.png"); background-size: 360px 46px; }
+  .awesome-marker-shadow { background-image: url("../images/markers-shadow@2x.png"); background-size: 35px 16px; } }
+.awesome-marker i { color: #333; margin-top: 10px; display: inline-block; font-size: 14px; }
+
+.awesome-marker .icon-white { color: #fff; }
+
+/* Colors */
+.awesome-marker-icon-red { background-position: 0 0; }
+
+.awesome-marker-icon-darkred { background-position: -180px 0; }
+
+.awesome-marker-icon-orange { background-position: -36px 0; }
+
+.awesome-marker-icon-green { background-position: -72px 0; }
+
+.awesome-marker-icon-darkgreen { background-position: -252px 0; }
+
+.awesome-marker-icon-blue { background-position: -108px 0; }
+
+.awesome-marker-icon-darkblue { background-position: -216px 0; }
+
+.awesome-marker-icon-purple { background-position: -144px 0; }
+
+.awesome-marker-icon-darkpurple { background-position: -288px 0; }
+
+.awesome-marker-icon-cadetblue { background-position: -324px 0; }
+
 body, html { height: 100%; width: 100%; }
 
-body { background: #eee; font-family: "Lato", Helvetica; overflow: hidden; }
-body > #body { display: table; width: 100%; height: 100%; }
+body { background-color: #111; font-family: Futura, Helvetica, Arial; overflow: hidden; }
+body > #body { width: 100%; height: 100%; }
 
 a { text-decoration: none; }
 
-header { height: 6em; background-color: #412017; color: #fff; }
-header > h2#brand { display: table-cell; line-height: 2em; padding-left: 0.25em; font-size: 3em; text-transform: uppercase; float: left; }
+/* 
+Author: L. Voogdt
+License: MIT
+Version: 1.0
+*/
+/* Marker setup */
+.awesome-marker { background: url("../images/markers-soft.png") no-repeat 0 0; width: 35px; height: 46px; position: absolute; left: 0; top: 0; display: block; text-align: center; }
+
+.awesome-marker-shadow { background: url("../images/markers-shadow.png") no-repeat 0 0; width: 36px; height: 16px; }
+
+/* Retina displays */
+@media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) { .awesome-marker { background-image: url("../images/markers-soft@2x.png"); background-size: 360px 46px; }
+  .awesome-marker-shadow { background-image: url("../images/markers-shadow@2x.png"); background-size: 35px 16px; } }
+.awesome-marker i { color: #333; margin-top: 10px; display: inline-block; font-size: 14px; }
+
+.awesome-marker .icon-white { color: #fff; }
+
+/* Colors */
+.awesome-marker-icon-red { background-position: 0 0; }
+
+.awesome-marker-icon-darkred { background-position: -180px 0; }
+
+.awesome-marker-icon-orange { background-position: -36px 0; }
+
+.awesome-marker-icon-green { background-position: -72px 0; }
+
+.awesome-marker-icon-darkgreen { background-position: -252px 0; }
+
+.awesome-marker-icon-blue { background-position: -108px 0; }
+
+.awesome-marker-icon-darkblue { background-position: -216px 0; }
+
+.awesome-marker-icon-purple { background-position: -144px 0; }
+
+.awesome-marker-icon-darkpurple { background-position: -288px 0; }
+
+.awesome-marker-icon-cadetblue { background-position: -324px 0; }
 
 body > div#body > div#map { float: left; }
 body > div#body > div#map > div#shadow { -webkit-box-shadow: inset 3px 4px 10px #222222; -moz-box-shadow: inset 3px 4px 10px #222222; box-shadow: inset 3px 4px 10px #222222; position: relative; top: 0px; left: 0px; width: 100%; margin: 100%; z-index: 999; pointer-events: none; /* Doesn't work in Opera */ }
@@ -35,18 +108,19 @@ body > div#body > div#context[data-color=red] { background-color: #cc0001; }
 body > div#body > div#context[data-color=orange] { background-color: #e7641d; }
 body > div#body > div#context[data-color=green] { background-color: #59934f; }
 body > div#body > div#context > div#toolbar { background-color: #ededed; text-align: center; padding: 0.2em; }
-body > div#body > div#context > h2#place_title { text-shadow: 1px 1px 4px #222222; background-color: rgba(34, 34, 34, 0.7); text-align: center; position: relative; font-size: 1.75em; line-height: 1.75em; top: -2.2em; height: 1.75em; padding: 0.2em; margin-bottom: -2em; margin-top: -2px; border-bottom: 1px solid #222; border-top: 1px solid #222; }
-body > div#body > div#context > div#delivery { -webkit-border-radius: 1em; -moz-border-radius: 1em; -ms-border-radius: 1em; -o-border-radius: 1em; border-radius: 1em; text-align: center; margin: 0.2em 3em; padding: 0.5em 2em; height: 1em; }
+body > div#body > div#context > h2#place_title { text-shadow: 1px 1px 4px #222222; background-color: rgba(34, 34, 34, 0.7); text-align: center; position: relative; font-size: 1.75em; line-height: 1.75em; top: -2.2em; height: 1.75em; padding: 0.2em; margin-bottom: -1em; margin-top: -2px; border-bottom: 1px solid #222; border-top: 1px solid #222; }
+body > div#body > div#context > div#delivery { -webkit-border-radius: 1em; -moz-border-radius: 1em; -ms-border-radius: 1em; -o-border-radius: 1em; border-radius: 1em; text-align: center; margin: 0.2em 3em; margin-bottom: 1em; padding: 0.5em 2em; height: 1em; }
 body > div#body > div#context > div#delivery[data-delivers=yes] { background-color: #59934f; }
 body > div#body > div#context > div#delivery[data-delivers=no] { background-color: #cc0001; }
 body > div#body > div#context > div#delivery[data-delivers=wait] { background-color: #e7641d; }
 body > div#body > div#context > p { padding-left: 0.5em; }
 body > div#body > div#context > p#number { font-size: 1.5em; text-align: center; }
+body > div#body > div#context > p#number > a { color: #efefef; }
 body > div#body > div#context > img#brand { width: 100%; }
 body > div#body > div#context > ul#hours { padding: 1em; }
 body > div#body > div#context > ul#hours > li:first-child { font-size: 1.4em; padding: 0.2em; }
 body > div#body > div#context > ul#hours > li:first-child > i { padding-right: 0.5em; }
-body > div#body > div#context > ul#hours > li { margin: 0.1em; text-align: center; }
+body > div#body > div#context > ul#hours > li { margin: 0.1em; text-align: center; font-size: 1.2em; }
 
 #about { -webkit-border-radius: 0.5em; -moz-border-radius: 0.5em; -ms-border-radius: 0.5em; -o-border-radius: 0.5em; border-radius: 0.5em; -webkit-box-shadow: 0px 2px 10px black; -moz-box-shadow: 0px 2px 10px black; box-shadow: 0px 2px 10px black; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; position: absolute; text-align: center; padding: 1em; margin-left: -1em; margin-top: -1em; display: table; left: 35%; top: 40%; width: 30%; height: 10%; font-size: 1.2em; background-color: rgba(20, 20, 20, 0.9); color: #ddd; }
 #about > p { display: table-cell; vertical-align: middle; }
