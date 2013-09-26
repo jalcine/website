@@ -39,7 +39,7 @@ drop-down terminal appear. She ignored it and just clicked back on Chrome.
 
 This time, she moved the cursor to the top of the screen. Wham! Windows for
 days since I was on my "Social" desktop, you had Facebook, Hacker News, my
-personal [RSS reader](5)[^3], dozens of dedicated windows for Ars Technica,
+personal [RSS reader][5][^3], dozens of dedicated windows for Ars Technica,
 Phoronix, The Verge, it goes on. She called me over and asked for help. 
 
 ## The Thing

@@ -8,8 +8,8 @@
   <updated>{{ site.time | date_to_xmlschema }}</updated>
   <id>{{ site.url }}/weblog</id>
   <author>
-    <name>Jacky Alciné</name>
-    <email>me@jalcine.me</email>
+    <name>{{ site.author }}</name>
+    <email>{{ site.email }}</email>
   </author>
   <rights>Copyright (c) 2012 - 2013, Jacky Alcine; all rights reserved.</rights>
 
@@ -17,9 +17,13 @@
   <entry>
     <title>{{ post.title }}</title>
     <link type="text/html" rel="alternative" href="{{ site.url }}/weblog{{ post.url }}"/>
-    <published>{{ post.date | date_to_xmlschema ||</published>
+    <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}/weblog/{{ post.id }}</id>
+    <author>
+      <name>{{ site.author }}</name>
+      <email>{{ site.email }}</email>
+    </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
