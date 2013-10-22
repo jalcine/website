@@ -6,7 +6,7 @@ category: android
 ---
 
 It sucks to say this but it wasn't *un*expected. After reading this [lengthy
-article from Ars Technica][android-ars], it's clear that Google is finishing
+article from Ars Technica][androidars], it's clear that Google is finishing
 up what it intended; to firmly place its software and enhancements ahead of
 the community and completely rejecting its initial stance of providing a
 state-of-the-art AOSP code-base. Technically, the code for most projects as
@@ -32,6 +32,6 @@ This is where things like [Ubuntu Touch][ubuntu] and [Plasma Active][pls] come
 into play. These are purely open operating systems for mobile devices and
 they'd work anywhere Debian Linux can. But hey, a guy can only dream!
 
-[android-ars]: http://arstechnica.com/gadgets/2013/10/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/3
+[androidars]: http://arstechnica.com/gadgets/2013/10/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/3
 [pls]: http://plasma-active.org
 [ubuntu]: http://www.ubuntu.com/phone
