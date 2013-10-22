@@ -26,4 +26,5 @@ towards other things:
   + Android engineer, iOS developer, Windows Phone programmer.
   + KDE developer, Windows 8 engineer, OS X programmer.
 
-What I find is that when I see this, the *programmer* role s
+What I find is that when I see this, the *programmer* role seems like the more
+like the one that touches 'metal'.
