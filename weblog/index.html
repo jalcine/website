@@ -10,7 +10,7 @@ classes:
     {% for post in site.posts %}
     <li>
       <a title="{{ post.title }}" href="{{ post.url }}">{{ post.title }}</a>
-      <span title="{{ post.date }}"><i class="icon-time"></i> {{ post.date | timeago }}</span>
+      <span title="{{ post.date }}"><i class="icon-time"></i> {{ post.date }}</span>
     </li>
     {% endfor %}
   </ul>
