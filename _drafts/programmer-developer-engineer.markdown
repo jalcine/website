@@ -40,7 +40,14 @@ Stepping up to developer implies more of a visual implementation role.
 However, these developments don't have to be something *immediately*
 visible; a lá the back-end developer. They provide the fruit that the
 front-end developer then turns into a smoothie, salad or juice for a customer
-to purchase.
+to purchase. This is something commonly used nowadays with consumer
+technologies like the Web and mobile devices as well as desktop applications.
+
+Now, when someone classifies themselves as an engineer, it not only has a
+scientific ring to it but it suggests a (lengthy) time in academica and also
+someone who either physically builds technology like on the hardware aspect of
+things or who writes the logic that would go inside of those embedded devices.
+This falls into the realm of firmware operating systems or 
 
 
 [^1]: This is relative. I work as a web developer so C would be low-level.
