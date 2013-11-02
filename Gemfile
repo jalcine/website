@@ -15,6 +15,5 @@ gem "rack-livereload"
 gem "foreman"
 
 # JEKYLL
-gem "gsl"
 gem "jekyll"
 gem "jekyll-timeago"

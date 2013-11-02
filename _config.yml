@@ -15,7 +15,7 @@ post:
 future: true
 show_drafts: true
 relative_permalinks: true
-lsi: true
+lsi: false
 permalink: "/weblog/:title"
 paginate: 5
 paginate_path: "/weblog/page/:num"
