@@ -1,3 +1,3 @@
 css: compass watch --time --css-dir css --sass-dir sass -s compressed --poll --debug --trace
-rack: rackup -p 1993
-jekyll: jekyll build --watch
+code: jekyll build --watch --trace
+web: rackup -p 1993
