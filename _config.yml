@@ -14,9 +14,9 @@ post:
 
 # Blog specifics.
 future: false
-show_drafts: false
+show_drafts: true
 relative_permalinks: false
-lsi: true
+lsi: false
 permalink: "/weblog/:title"
 paginate: 5
 paginate_path: "/weblog/page/:num"
