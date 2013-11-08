@@ -5,7 +5,7 @@ date: 2013-10-24 20:35:35 EDT
 category: thoughts
 ---
 
-In my years of being a programmer, I've only attended three hackathons to
+In my years of being a programmer, I've attended five hackathons to
 date. Or that's at many as I can recollect. I plan to attend more in the name
 of hackathons, but that begets the question: **what exactly is a hackathon?**
 I don't think I'd have the authoritative word on this mainly because of years of

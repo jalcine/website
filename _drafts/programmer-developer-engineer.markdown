@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Programmer, Developer, Engineer: The Difference?"
-date: 2013-10-10 21:14:59 EDT
+title: "Programmers, Developers, and Engineers: What's The Difference?"
+date: 2013-11-06 01:27:37 EST
 category: thoughts
 ---
 
@@ -16,7 +16,7 @@ can understand the easiest way to mix them as the same kind of thing. The
 thing that sucks is when any of the following titles are used, they (more or
 less) refer to the same thing:
 
-  + web application developer
+  * web application developer
   + back-end web programmer
   + web service engineer
 
