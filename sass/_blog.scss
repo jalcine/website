@@ -34,8 +34,9 @@ body.blog {
   }
 
   > div#post {
-    width: 80%;
+    width: 95%;
     margin: 0em auto;
+
     > h2.title {
       text-align: center;
       font-weight: 200;
@@ -82,15 +83,13 @@ body.blog {
       }
     }
 
-    h2, h3, h4 { text-transform: uppercase; }
-
     > h2 { font-size: 2.5em; }
     > h3 { font-size: 2.25em; }
     > h4 { font-size: 2em; }
 
     > section.content {
       width: 90%;
-      margin: 1em auto;
+      margin: 0em 5%;
 
       ul > li { list-style: disc; }
       ol > li { list-style: decimal; }
@@ -100,8 +99,14 @@ body.blog {
         margin: 1em 2em;
       }
 
+      blockquote {
+        font-size: 1.4em;
+        color: lighten($foreground-color, 40%);
+        text-align: center;
+      }
+
       p {
-        line-height: 1.5;
+        line-height: 2;
         font-size: 1em;
         margin: 0.5em 0em;
         text-align: left;
@@ -111,18 +116,16 @@ body.blog {
 
         > img {
           height: auto;
-          width: 60%;
-          margin: 1em 20%;
+          width: 120%;
+          margin: 0.5em -10%;
           vertical-align: top;
-
-          &:nth-child(even) { float: left; }
-          &:nth-child(odd) { float: right; }
+          clear: both;
         }
       }
 
       div.footnotes {
         ol > li {
-          font-size: 0.6em;
+          font-size: 0.8em;
           list-style: decimal;
           clear: both;
           padding-left: 0.5em;

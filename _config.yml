@@ -1,6 +1,7 @@
 # vim: nospell
 # Generic values.
 name: jalciné
+author: Jacky Alciné
 url: http://jalcine.me
 description: A little ol' collection of text and images.
 timezone: America/New_York
@@ -12,14 +13,15 @@ post:
   extension: markdown
 
 # Blog specifics.
-future: true
+future: false
 show_drafts: true
-relative_permalinks: true
+relative_permalinks: false
 lsi: false
 permalink: "/weblog/:title"
 paginate: 5
 paginate_path: "/weblog/page/:num"
 category_dir: "weblog/categories"
+tag_dir: "weblog/tags"
 
 # deployment
 transfer:
@@ -46,3 +48,6 @@ exclude:
   - "*file*"
   - "*config*"
   - sass
+
+# Do it when I was born.
+port: 1993

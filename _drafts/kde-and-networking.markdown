@@ -40,7 +40,7 @@ $ avahi-browse -a
 +  wlan0 IPv4 neuromancer                         Remote Disk Management local
 {% endhighlight %}
 
-Above, you can see my local network chat capabilities (via iChat for OS X and
+Above, you can see my local network chat capabilities (via iChat or Adium for OS X and
 [Telepathy IM][3] on KDE), `sane` used for discovering scanners, machine
 discovery and `udisk` abstraction so I can publish drives over Avahi.
 Talk about some nifty tech! Thing is, I'd have to manually turn these things
@@ -58,10 +58,31 @@ Drive just to share (and it's faster). Sometimes just using tools like Samba
 (on Linux for access to file servers on other Linux, OS X and Windows
 machines) would do. I've always found this to be the best way to send files
 quickly especially if you don't want to slow down potential network speeds.
-KDE does have an easy way of incorporating this, but so far it seems to be
-only with Samba.
+KDE does have an way of incorporating this, but so far it seems to be
+only with Samba, for the moment.
 
 ![Sharing Public Folder](/images/sharing-public-folder.png)
+
+I'm working to bring other remote document storage solutions like Dropbox and
+Google Drive natively into KDE using KIO so it's something to look forward
+to in coming months. The code will be available on its 0.1 release sometime in
+November.
+
+## Security
+
+Though not installed by default, the KDE configuration module (known as KCM)
+for UFW (uncomplicated firewall) is a straight forward tool to setting up and
+getting ufw on your system. I have to admit, though, it isn't really friendly
+for novice users; it could make do with some template profiles and I've
+considered patching it for just this purpose. But outside of that, I can
+provide the profile I [use for those interested](/files/kcm_ufw_default.ufw).
+
+![KDE and UFW](/images/kcm-ufw-shot.png)
+
+It's a old wife's tale about Linux not getting viruses and trojans but it
+doesn't happen enough to the casual desktop user of Linux or BSD (given our growing
+size) to not be safe. With `clamav`, one can stay relatively secure and
+prevent their systems from known infection streams.
 
 [1]: http://kde.org
 [2]: http://zeroconf.org

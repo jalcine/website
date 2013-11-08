@@ -1,0 +1,9 @@
+build
+deploy[message]
+draft[title]
+page[title,path]
+post[title]
+preview
+publish
+transfer
+watch[option]
