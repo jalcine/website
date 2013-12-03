@@ -6,33 +6,22 @@ body.index {
   border-top: none;
   display: table;
 
-  > #hellothere {
+  > #snugglebuddy {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    > h2 {
-      display: block;
-      font-weight: 900;
-      font-size: 6em;
-      font-family: "Monaco", "Ubuntu Mono","Courier New";
-      letter-spacing: -2px;
-    }
 
-    > a {
-      text-decoration: none;
-      color: #368ece;
-    }
+    > h1.page_title {
+      text-transform: uppercase;
 
-    > span { display: block; margin: 0.1em 0em; }
+      > small { 
+        font-size: 0.5em; 
+        position: relative;
+        top: -0.25em;
+      }
 
-    > span.section, span.minor {
-      padding: 0.5em;
-      color: darken($background-color, 30%);
-    }
-
-    > span.section {
-      font-size: 1.5em;
-      color: darken($background-color, 10%);
+      span:nth-child(1) { color: #aaa; }
+      span:nth-child(2) { color: #666; }
     }
   }
 }

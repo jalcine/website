@@ -1,5 +1,4 @@
 # vim: nospell
-# Generic values.
 name: jalciné
 author: Jacky Alciné
 url: http://jalcine.me
@@ -20,8 +19,6 @@ lsi: false
 permalink: "/weblog/:title"
 paginate: 5
 paginate_path: "/weblog/page/:num"
-category_dir: "weblog/categories"
-tag_dir: "weblog/tags"
 
 # deployment
 transfer:
