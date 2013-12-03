@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Port+Lligat);
-@import url(http://fonts.googleapis.com/css?family=Port+Lligat+Slab);
+@import url(http://fonts.googleapis.com/css?family=Open%20Sans:300|Actor:300);
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import "colors";
 @import "lib/media-queries";
@@ -7,7 +6,7 @@
 $font-size: 16px;
 
 html, body {
-  font-family: "Port Lligat", Oxygen, Ubuntu, Verdana;
+  font-family: "Open Sans", Lato, Oxygen, Ubuntu;
   font-size: $font-size;
   font-weight: 200;
   line-height: 1;
@@ -15,7 +14,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Port Lligat Slab", Georgia, "Times New Roman";
+  font-family: "Actor";
   margin: 0.3em -0.1em;
   font-weight: 900;
   transition: 0.3s font-size;

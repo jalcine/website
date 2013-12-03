@@ -19,15 +19,15 @@
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:domain" content="{{site.url}}">
     <meta name="twitter:image" content="{{ site.url }}/favicon.jpg">
-    <link rel="stylesheet" href="/stylesheets/screen.css">
-    <link rel="stylesheet" href="/stylesheets/syntax.css">
+    <link rel="stylesheet" href="/css/screen.css">
+    <link rel="stylesheet" href="/css/syntax.css">
     {% if page.stylesheets %}
     {% for style in page.stylesheets %}<link rel="stylesheet" href="{{ style }}">{% endfor %}
     {% endif page.stylesheets %}
     <script type="text/javascript" src="javascripts/packery.min.js"></script>
     <script type="text/javascript">
       var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
-    analytics.load("se6rauh0mx");
+        analytics.load("se6rauh0mx");
     </script>
     {% if page.stylesheets %}<style>{{ page.css }}</style>{% endif %}
   </head>

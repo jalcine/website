@@ -7,5 +7,4 @@ Bundler.require(:default)
 use Rack::ETag
 use Rack::Locale
 use Rack::LiveReload, vendored: false
-
-run Rack::Directory.new('_site')
+run Rack::Jekyll.new

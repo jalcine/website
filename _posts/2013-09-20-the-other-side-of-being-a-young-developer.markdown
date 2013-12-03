@@ -107,4 +107,6 @@ to stay. Being my first time, I didn't fully plan how I was going to do this.
 
 I traded my chances of going to an ivy league school and being nose-deep in
 books at the time to shuffling between coffee houses and scratching around for
-a job. 
+a job. I like this risk mainly because I can only do it now. I can do whatever
+I want and literally create things from thin air. That's like magic. Who
+wouldn't want to do that?
