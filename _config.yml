@@ -13,7 +13,7 @@ post:
 
 # Blog specifics.
 future: false
-show_drafts: false
+show_drafts: true
 relative_permalinks: false
 lsi: false
 permalink: "/weblog/:title"
