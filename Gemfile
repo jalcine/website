@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.0'
+ruby '2.0.0'
 
 # CSS + HTML magic.
 gem 'compass'
@@ -18,3 +18,7 @@ gem 'foreman'
 # JEKYLL
 gem 'jekyll'
 gem 'jekyll-timeago'
+
+# Guard
+gem 'guard'
+gem 'guard-jekyll-plus'

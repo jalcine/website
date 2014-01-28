@@ -12,8 +12,8 @@ post:
   extension: markdown
 
 # Blog specifics.
-future: false
-show_drafts: false
+future: true
+show_drafts: true
 relative_permalinks: false
 lsi: false
 permalink: "/weblog/:title"
