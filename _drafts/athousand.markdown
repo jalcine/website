@@ -31,8 +31,8 @@ that. I recommend taking a look at your `~/.profile`, `~/.vimrc` and the likes.
 Check out how your everyday tools work to see placements for improvemnts and
 optimizations and look to use this to make you a better shell user.
 
-[famous_comment]: https://github.com/twbs/bootstrap/issues/3057
-[fat]: https://github.com/fat
-[douglascrockford]: https://github.com/douglascrockford
+[famous comment]: https://github.com/twbs/bootstrap/issues/3057
+[@fat]: https://github.com/fat
+[@douglascrockford]: https://github.com/douglascrockford
 [dotfiles]: http://dotfiles.github.io/
 [own dotfiles]: https://github.com/jalcine/dotfiles

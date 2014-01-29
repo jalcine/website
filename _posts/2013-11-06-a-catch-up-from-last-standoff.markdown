@@ -74,8 +74,8 @@ for relating posts.
 [SDDM]: https://github.com/sddm/sddm
 [KDE]: http://kde.org
 [Qt]: http://qt-project.org
-[ubuntu_unity]: http://unity.ubuntu.com
-[plasma_active]: http://plasma-active.org
+[Ubuntu Unity]: http://unity.ubuntu.com
+[Plasma Active]: http://plasma-active.org
 [rpdq]: https://wiki.tizen.org/wiki/Reference_Device-PQ
 [^1]: Tizen is NOT an open source project. Do your homework. Android is more
 open. Darwin (the basis of OS X) is more open. Tizen is *not* open.

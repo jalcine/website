@@ -82,12 +82,12 @@ Food for thought. Thoughts? Leave it on Twitter. Ciao.
 [tizen]: http://tizen.org
 [ubuntu]: http://ubuntu.com
 [kde]: http://kde.org
-[plasma_active]: http://plasma-active.org/
+[Plasma Active]: http://plasma-active.org/
 [device]: http://instagram.com/p/fZYd74HPpo/
 [hackathon]: http://agenda.bemyapp.com/events/view/united-states/new-york/huge/tizen-devlab-and-hack-in-new-york
-[tizen_ide]: https://developer.tizen.org/help/index.jsp?topic=%2Forg.tizen.gettingstarted%2Fhtml%2Fdev_env%2Fide_views.htm
-[tizen_sdk]: https://developer.tizen.org/downloads/tizen-sdk
-[android_sdk]: https://developer.android.com/sdk/
+[Tizen IDE]: https://developer.tizen.org/help/index.jsp?topic=%2Forg.tizen.gettingstarted%2Fhtml%2Fdev_env%2Fide_views.htm
+[Tizen SDK]: https://developer.tizen.org/downloads/tizen-sdk
+[Android SDK]: https://developer.android.com/sdk/
 [^1]: [I reacted as any sane person would](http://nooooooooooooooo.com/).
 [^2]: Seriously, though. If you guys are using Eclipse, why not just provide a
 update site that I can just drop in? I'd love to know what was so impossible

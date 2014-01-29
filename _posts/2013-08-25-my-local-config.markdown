@@ -68,7 +68,7 @@ From that extra-zoomed shot of my Konsole session, you can tell the following:
 Now, let's say I wanted to start hacking on [Wintermute][14]. This is what I'd
 do:
 
-{% showterm 7a2398f70c0305fa3678c %}
+**TODO: Add a GIF here**
 
 Some of the actions may not be visible there, but I was able to quickly 'jump'
 from `~` to the location of my copy of the sources of Wintermute (about three

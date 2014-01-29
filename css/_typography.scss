@@ -1,0 +1,10 @@
+$body-font-family: Lato;
+$header-font-family: Cabin;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+}
+
+p, span, div, body {
+  font-family: $body-font-family;
+}

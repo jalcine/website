@@ -1,15 +1,15 @@
 # vim: nospell
-name: jalciné
-author: Jacky Alciné
-url: http://jalcine.me
-description: A little ol' collection of text and images.
-timezone: America/New_York
+name: "jalciné"
+author: "Jacky Alciné"
+url: "http://jalcine.me"
+description: "A little ol' collection of text and images."
+timezone: "America/New_York"
 
 # VCS data
 git:
-  branch: master
+  branch: "master"
 post:
-  extension: markdown
+  extension: "markdown"
 
 # Blog specifics.
 future: true
@@ -20,31 +20,24 @@ permalink: "/weblog/:title"
 paginate: 5
 paginate_path: "/weblog/page/:num"
 
-# deployment
-transfer:
-  command: rsync
-  settings: --delete --recursive --verbose
-  source: _site/
-  destination: jalcine.me:/var/www/jalcine.me/
-
 # Markdown engine.
 pygments: true
 redcarpet:
   extensions:
-    - footnotes
-    - autolink
-    - smart
-    - tables
-    - strikethrough
-    - superscript
+    - 'footnotes'
+    - 'autolink'
+    - 'smart'
+    - 'tables'
+    - 'strikethrough'
+    - 'superscript'
 
 # Don't bother with theses.
 exclude:
-  - bin
+  - 'bin'
   - "*.md"
   - "*file*"
   - "*config*"
-  - sass
+  - 'sass'
 
 # Do it when I was born.
 port: 1993
