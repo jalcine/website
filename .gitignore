@@ -1,1 +1,5 @@
 _site
+tags
+.bundle
+.sass-cache
+gem.tags
