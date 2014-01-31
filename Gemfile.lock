@@ -63,6 +63,9 @@ GEM
       redcarpet (~> 2.3.0)
       safe_yaml (~> 0.9.7)
       toml (~> 0.1.0)
+    jekyll-asset-pipeline (0.1.2)
+      jekyll (>= 0.10.0)
+      liquid (>= 1.9.0)
     jekyll-haml (0.1.1)
       haml (>= 3.0.0)
       jekyll (>= 0.10.0)
@@ -113,6 +116,7 @@ GEM
     toml (0.1.0)
       parslet (~> 1.5.0)
     yajl-ruby (1.1.0)
+    yui-compressor (0.12.0)
 
 PLATFORMS
   ruby
@@ -128,11 +132,14 @@ DEPENDENCIES
   guard-sass
   haml (= 4.0.3)
   jekyll (= 1.4.3)
+  jekyll-asset-pipeline
   jekyll-haml (~> 0.1.1)
   jekyll-sass (~> 1.2.1)
   jekyll-timeago (~> 0.5.0)
   rack
   rack-contrib
   rack-livereload
+  rb-fsevent
   redcarpet
   sass
+  yui-compressor

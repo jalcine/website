@@ -4,7 +4,12 @@
     %title= "{{ page.title }}"
     %meta{charset: 'utf-8'}
     %meta{name:'viewport', content:'width=device-width'}
-    %link{rel:'stylesheet', href:'/css/syntax.css'}
-    %link{rel:'stylesheet', href:'/css/screen.css'}
+    = "{% css_asset_tag screen %}"
+    = "{% css_asset_tag syntax %}"
   %body{class: "{{ page.classes }} foo"}
-    = "{{ content }}"
+    %header{role: :main}
+      = "{% haml header.haml %}"
+    %section{role: :main}
+      = "{{ content }}"
+    %footer{role: :main}
+      = "{% haml footer.haml %}"

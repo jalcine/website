@@ -4,8 +4,8 @@ end
 
 guard :livereload do
   watch /^_site/
-  watch /*haml$/
-  watch /*sass$/
+  watch /haml$/
+  watch /sass$/
 end
 
 guard 'ctags-bundler' do
