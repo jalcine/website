@@ -25,7 +25,7 @@ First, let's define a class that we should unit-test. Now, a classically fit
 definition of unit testing would be **a test on individually isolated units 
 of code**. In this, we'd go back to some good ol' geometry!
 
-{% highlight ruby true %}
+{% highlight ruby linenos %}
 # figure.rb
 class Figure
   attr_reader :sides
@@ -33,7 +33,9 @@ class Figure
     @sides = sides
   end
 end
+{% endhighlight %}
 
+{% highlight ruby linenos %}
 # side.rb
 class Side
   attr_reader :length
@@ -41,8 +43,15 @@ class Side
     @length = length
   end
 end
+{% endhighlight %}
 
-# spec/unit/figure_spec.rb
+{% highlight ruby linenos %}
+# spec/figure_spec.rb
+require 'rspec/core'
+require 'rspec/expectations'
+require 'figure'
+require 'side'
+
 describe Figure do
   it 'has sides' do
     figure = Figure.new([Side.new(4), Side.new(6)])
