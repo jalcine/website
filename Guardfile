@@ -2,12 +2,6 @@ guard :bundler do
   watch('Gemfile')
 end
 
-guard :livereload do
-  watch /^_site/
-  watch /haml$/
-  watch /sass$/
-end
-
 guard 'ctags-bundler' do
   watch /^_plugins/
   watch 'Gemfile.lock'
@@ -26,4 +20,10 @@ end
 
 guard :sass, source: 'css', destination: './_site/css' do
   watch /^_css/
+end
+
+guard :livereload do
+  watch /^_site*/
+  watch /haml$/
+  watch /sass$/
 end
