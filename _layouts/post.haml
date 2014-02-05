@@ -1,11 +1,32 @@
 ---
 layout: default
-classes: post
+classes: post pagination
 ---
 %header{role: :content}
-  %small.meta= "{{ page.date | date_to_string }}"
+  %small.meta
+    %i.fa.fa-fw.fa-calendar-o
+    ="{{ page.date | date_to_string }}"
   %h2= "{{ page.title }}"
+
 
 %section{role: :content}
   :plain
     {{ content }}
+
+%footer
+  %p= "This was classed under {{ page.categories | array_to_text_sentence }}."
+  :plain
+    <p class="paginator">
+      {% if page.next %}
+        <a class="next" href="{{ page.next.url }}">
+          Next Entry
+          <i class='fa fa-fw fa-arrow-right'></i>
+        </a>
+      {% endif %}
+      {% if page.previous %}
+        <a class="previous" href="{{ page.previous.url }}">
+          <i class='fa fa-fw fa-arrow-left'></i>
+          Previous Entry
+        </a>
+      {% endif %}
+    </p>
