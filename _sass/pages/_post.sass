@@ -1,9 +1,35 @@
 body.post
-  section[role=main]
-    font-size: 1.4rem
-    p
-      line-height: 1.5
-
   header[role=content]
+    clear: both
+    h2
+      margin: 0.1rem
     small.meta
+      height: 2.625rem
+      line-height: 2.625rem
+      margin-right: 1rem
       float: right
+
+  section[role=main]
+    width: 100%
+    max-width: inherit
+    font-size: 1.2rem
+
+    p, blockquote, h1, h2, h3, h4, h5, h6
+      line-height: 1.5
+      width: 80%
+
+    p, blockquote
+      margin: 0.5rem auto
+
+    h1, h2, h3, h4, h5, h6
+      margin: 1rem auto
+
+    pre > code
+      display: block
+      width: 80%
+      margin: 0rem auto
+
+    img
+      display: block
+      margin: 0rem auto
+      text-align: center
