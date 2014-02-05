@@ -4,6 +4,7 @@ title: "Wintermute's the Name, JARVIS's the Game"
 date: 2013-07-01 21:14
 comments: true
 tags: personal-goals jarvis iron-man wintermute
+categories: wintermute
 
 ---
 

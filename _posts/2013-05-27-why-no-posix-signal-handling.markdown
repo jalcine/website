@@ -4,6 +4,7 @@ title: "Why no POSIX Signal Handling, Qt?"
 date: 2013-05-27T03:29:24-04:00 -0500
 comments: false
 tags: rants programming logic ideas qt
+categories: rants
 
 ---
 

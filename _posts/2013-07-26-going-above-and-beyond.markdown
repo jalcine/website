@@ -5,7 +5,7 @@ subheader: "\"Sir, I asked for only a tissue, not the whole ROLL!\""
 date: 2013-07-26 10:15:00 -0500
 comments: false
 tags: work php code life
-
+categories: obversation
 ---
 
 I recently applied for a job as a front-end developer at a pretty amazing

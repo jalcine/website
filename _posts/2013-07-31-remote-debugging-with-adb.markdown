@@ -4,6 +4,7 @@ title: "Remote Debugging with Android"
 date: 2013-07-31 08:30:00 AM
 comments: true
 tags: android debugging tips
+categories: android
 ---
 
 If there's one thing that plagues a developer at times, it's the number of

@@ -4,7 +4,8 @@ title: "Wintermute: Updates For August"
 date: 2013-08-19 15:54:39 EDT
 comments: true
 tags: wintermute updates
-
+categories:
+  - "wintermute"
 ---
 
 Well, it's August (and has been for a while now). [Wintermute](http://wintermute.jalcine.me)

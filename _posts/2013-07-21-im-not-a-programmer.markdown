@@ -5,6 +5,7 @@ subheader: "or a coder, hacker, developer, etc."
 comments: true
 tags: rants personal-opinion
 date: 2013-07-21 12:34:20 -0500
+categories: obversation
 
 ---
 

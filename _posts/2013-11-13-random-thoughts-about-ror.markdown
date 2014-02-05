@@ -2,6 +2,9 @@
 layout: post
 title: Random Thoughts about Ruby On Rails
 date: 2013-11-13 07:31:23 EST
+categories: 
+  - "ruby on rails"
+  - "thoughts"
 ---
 
 > I don't consider myself to be an expert. I don't want to be; it's too boring

@@ -4,6 +4,7 @@ title: "Mission Accomplished: laptop.jalcine.me"
 date: 2013-05-05T18:08:55-04:00 -0500
 comments: true
 tags: life opinion
+categories: life
 
 ---
 

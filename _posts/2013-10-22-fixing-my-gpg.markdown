@@ -2,6 +2,8 @@
 layout: post
 date: 2013-10-22 06:43:26 EDT
 title: "Fixing my GPG"
+categories:
+  - "gpg"
 ---
 
 If you do a quick search on some public keyservers like `pgp.mit.edu` and the
