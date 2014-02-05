@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Imposing a New Habit"
-date: 2013-03-18T05:41:20-04:00
+date: 2013-03-18T05:41:20-04:00 -0500
 comments: true
 tags: personal
 

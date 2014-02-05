@@ -2,7 +2,7 @@
 layout: post
 title:  "Project Minimal"
 subheader: "Do you really need that?"
-date:   2013-07-27 21:52:09
+date:   2013-07-27 21:52:09 -0500
 category: projects
 
 ---

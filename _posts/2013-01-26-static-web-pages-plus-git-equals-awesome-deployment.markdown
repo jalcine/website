@@ -64,8 +64,6 @@ $ vi post-receive
 
 With in the `post-receive` hook, we enter the following content:
 
-{% gist 4618184 %}
-
 You'll want to change the values of the following:
 
  * `LIVE_BRANCH` to the name of the branch that'd hold the code for 

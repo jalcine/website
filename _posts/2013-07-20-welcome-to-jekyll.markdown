@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 subheader: "And A Reboot for the Web"
-date:   2013-07-20 01:10:05
+date:   2013-07-20 01:10:05 -0500
 tags: jekyll
 
 ---
