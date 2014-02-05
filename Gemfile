@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'rb-fsevent'
+gem 'libnotify'
 
 gem 'haml', '4.0.3'
 gem 'sass'
