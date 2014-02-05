@@ -3,4 +3,4 @@ tags
 .bundle
 .sass-cache
 .gist-cache
-gem.tags
+gems.tags
