@@ -1,12 +1,8 @@
 !!! 5
 %html
   %head
-    %title= "{{ page.title }}"
-    %meta{charset: 'utf-8'}
-    %meta{name:'viewport', content:'width=device-width'}
-    = "{% css_asset_tag screen %}"
-    = "{% css_asset_tag syntax %}"
-  %body{class: "{{ page.classes }} foo"}
+    = "{% haml head.haml %}"
+  %body{class: "{{ page.classes }}"}
     %header{role: :main}
       = "{% haml header.haml %}"
     %section{role: :main}
