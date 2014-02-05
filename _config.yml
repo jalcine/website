@@ -13,12 +13,12 @@ post:
 
 # Blog specifics.
 future: true
-show_drafts: true
+show_drafts: false
 relative_permalinks: false
 lsi: false
 permalink: "/weblog/:title"
 paginate: 5
-paginate_path: "/weblog/page/:num"
+paginate_path: "/weblog/:num"
 
 gems:
   - jekyll-compass
