@@ -1,4 +1,4 @@
-require './_plugins/bundler'
+require './src/_plugins/bundler'
 require 'rack-livereload'
 require 'rack/contrib'
 require 'rack/contrib/try_static'
