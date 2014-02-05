@@ -4,6 +4,7 @@ author: "Jacky Alciné"
 url: "http://jalcine.me"
 description: "A little ol' collection of text and images."
 timezone: "America/New_York"
+source: src
 
 # VCS data
 git:
@@ -36,6 +37,7 @@ exclude:
   - "*file*"
   - "*config*"
   - 'sass'
+  - '*tags*'
 
 # Do it when I was born.
 port: 1993
