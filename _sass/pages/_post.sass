@@ -6,7 +6,7 @@ body.post
     small.meta
       height: 2.625rem
       line-height: 2.625rem
-      margin-right: 1rem
+      margin-right: 15%
       float: right
 
   section[role=main]
@@ -14,12 +14,27 @@ body.post
     max-width: inherit
     font-size: 1.2rem
 
-    p, blockquote, h1, h2, h3, h4, h5, h6
-      line-height: 1.5
+    p, blockquote, h1, h2, h3, h4, h5, h6,
+    .footnotes, ul, ol
+      line-height: 1.8
       width: 80%
 
-    p, blockquote
+    p, blockquote, .footnotes, ul, ol
       margin: 0.5rem auto
+      padding: 0.75rem 0rem
+
+    .footnotes > ol > li > p
+      width: 100%
+
+    ul, ol
+      width: 70%
+
+      li > p
+        width: 100%
+
+    blockquote
+      width: 100%
+      font-size: 1.5rem
 
     h1, h2, h3, h4, h5, h6
       margin: 1rem auto
