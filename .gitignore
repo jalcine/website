@@ -2,4 +2,5 @@ _site
 tags
 .bundle
 .sass-cache
+.gist-cache
 gem.tags
