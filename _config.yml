@@ -20,17 +20,14 @@ permalink: "/weblog/:title"
 paginate: 5
 paginate_path: "/weblog/page/:num"
 
+gems:
+  - jekyll-compass
+  - jekyll-haml
+
 # Markdown engine.
 pygments: true
-markdown: redcarpet
 redcarpet:
-  extensions:
-    - 'footnotes'
-    - 'autolink'
-    - 'smart'
-    - 'tables'
-    - 'strikethrough'
-    - 'superscript'
+  extensions: ["footnotes", "autolink", "strikethrough", "superscript", "subscript", "no_intra_emphasis", "fenced_code_blocks", "with_toc_data"]
 
 # Don't bother with theses.
 exclude:
