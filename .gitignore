@@ -1,7 +1,6 @@
-.bundle
-build
-.sass-cache
-bin
-tags
 _site
-css
+tags
+.bundle
+.sass-cache
+.gist_cache
+gems.tags

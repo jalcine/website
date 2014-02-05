@@ -1,0 +1,44 @@
+@import 'colors'
+
+header[role=main]
+  background-color: darken($background-color, 40%)
+  color: mix($white, $lavender)
+  height: 6rem
+  max-height: 6rem
+
+  .frame
+    width: 80%
+    max-width: 600px
+    margin: 0rem auto
+
+    img.head
+      width: 5rem
+      max-width: 5rem
+      margin: 0.5rem 1rem
+      vertical-align: middle
+      border-radius: 50%
+
+    ul
+      padding: 0rem
+      margin: 0rem
+      display: inline-block
+
+      li
+        display: inline-block
+        margin: 0rem 1rem
+
+        a:hover
+          color: $white
+
+    h1
+      float: right
+
+section[role=main]
+  margin: 1rem auto
+  width: 80%
+  max-width: 62.5rem
+
+footer[role=main]
+  width: 80%
+  margin: 2rem auto
+  text-align: center

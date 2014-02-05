@@ -1,4 +1,4 @@
 set wildignore+=_site,bin,css,js
 set wildignore+=tags
 
-nnoremap <F4> :call system("bin/rake transfer")<CR>
+nnoremap <silent> <F3> :call system("bundle exec jekyll build")<CR>

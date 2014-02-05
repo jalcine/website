@@ -1,0 +1,53 @@
+@import '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
+
+$body-font-family: Lato, Verdana
+$header-font-family: Cabin, Gregoria
+$mono-font-family: Monaco, Droid Sans Pro, monospace
+$font-size: 16px
+
+h1, h2, h3, h4, h5, h6, blockquote > p
+  font-family: $header-font-family
+
+p, body
+  font-family: $body-font-family
+
+body
+  font-size: 100%
+  font-size: $font-size
+
+blockquote
+  background-color: darken($lavender, 40%)
+  color: $white
+  margin: 1rem auto
+  padding: 1rem
+  width: 90%
+
+ul > li
+  list-style: square
+
+code, pre
+  font-family: $mono-font-family
+
+p > code, p > pre
+  background-color: $white
+  border: 2px solid $lavender
+  border-radius: 5px
+  color: $black
+  padding: 0.2rem
+  margin: 0rem 0.1rem
+
+.highlight
+  pre
+    font-size: 0.9rem
+    font-family: $mono-font-family
+    padding: 0.2rem 0.4rem
+
+hr
+  width: 80%
+  background-color: $lavender
+  border: none
+  height: 0.1rem
+
+.footnotes
+  width: 90%
+  font-size: 1rem
