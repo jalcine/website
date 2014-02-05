@@ -1,0 +1,29 @@
+---
+layout: post
+title: "A New Look for 2014"
+categories: personal
+date: 2014-02-05 04:31:07 EST
+---
+
+Like the new look? It's the first in a major revamping I'm doing of my
+personal identity across the Web. In lieu of my want to constantly push out my
+ideas and projects to the world, I figured that I would use the first result
+that comes up for me in search results. The biggest thing to note is that
+everything is **lavender**! It's a color that oddly resonates deeply with me
+and I picked it over navy and black (shades of gray).
+
+Some things I plan to address are mainly computer programming ones, pertaining
+closely to the use of and writing of software for the Web and potentially
+mobile as well. I'm an Rails and Symfony application developer now but I'm
+venturing slowly into Android development out of deep interest of having more
+power over my mobile devices. I'm also picking up time to work on my personal
+hacks like Wintermute and `KIO::Cloud` so expect updates about these in the
+coming weeks.
+
+Unfortunately, I have to delay the release of the app I was planning to push
+to the Play Store; as I'm working to make it easier to deploy 'nightly
+builds'. But do be on the lookout for such a post of mine mentioning an app in
+my Google+ stream.
+
+Lightly said, I'm turning this up and bringing Jacky back into the
+blogosphere, although it's insanely crowded now; but that's a post!
