@@ -2,6 +2,8 @@
 layout: post
 title: 'Smile'
 date: 2014-01-03 22:02:39 EST
+categories: personal
+
 ---
 
 It took me a while to notice this new habit I was forming. Initially, it was

@@ -1,5 +1,4 @@
-Here Be SWAG
-============
+# jalcine.me
 
 This is the source code to my website over at http://www.jalcine.me and
 http://www.jackyalcine.com. The contents of my website is available under the

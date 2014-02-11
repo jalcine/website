@@ -1,6 +1,7 @@
 ---
 layout: post
-date: 2014-01-10 07:18:54 EST
+date: 2014-02-10 23:46:57 EST
+title: "A Thousand Stars"
 category: code
 ---
 
@@ -17,7 +18,7 @@ I've been looking to saturate my knowledge of language style and project
 management by watching how people react to things on GitHub. For example, the
 ever [famous comment][] between [@fat][] and [@douglascrockford][] is enough to
 have one take a bit of retrospect when it comes to what is actually an
-authoritative source of a language's syntax.
+authoritative source of a language's syntax (hint: no one).
 
 Another reason for my personal glimpses into people's coding habits is
 checking out their system configuration. More commonly known as [dotfiles][],
@@ -28,7 +29,7 @@ configuration across multiple machines, be it in Vagrant, my laptop or a
 remote server. Making your shell more faster is like improving your reflexes;
 and doing the same for applications you use everyday is just working on top of
 that. I recommend taking a look at your `~/.profile`, `~/.vimrc` and the likes.
-Check out how your everyday tools work to see placements for improvemnts and
+Check out how your everyday tools work to see placements for improvements and
 optimizations and look to use this to make you a better shell user.
 
 [famous comment]: https://github.com/twbs/bootstrap/issues/3057
