@@ -1,4 +1,6 @@
 @import 'compass/css3/transition'
+@import 'compass/css3/text-shadow'
+
 /** yanked from https://github.com/mrmrs/colors **/
 
 $aqua:  #7FDBFF
@@ -28,17 +30,22 @@ $lavender: #9A8FC8
 $background-color: mix($white, $lavender, 70%)
 $foreground-color: mix($black, $lavender, 70%)
 
+$link-color:        darken($background-color, 75%)
+$link-hover-color:  mix($link-color, $black, 60%)
+
 body
   background-color: $background-color
   color: $foreground-color
 
 a
-  @include transition(color 0.2s)
-  color: $lavender
+  @include transition(all 0.2s)
+  color: $link-color
   text-decoration: none
 
   &:hover
-    color: darken($lavender, 50%)
+    @include text-shaodw(2px 2px 2px $link-hover-color)
+    color: $link-hover-color
 
   &:active
-    color: darken($orange, 30%)
+    @include text-shadow(2px 2px 2px $orange)
+    color: $orange

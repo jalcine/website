@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "KDE and Networking - Thoughts"
-date: 2013-09-03 07:55:15 EDT
+date: 2014-02-15 07:46:34 EST
 comments: true
 category: kde
 
@@ -66,7 +66,7 @@ only with Samba, for the moment.
 I'm working to bring other remote document storage solutions like Dropbox and
 Google Drive natively into KDE using KIO so it's something to look forward
 to in coming months. The code will be available on its 0.1 release sometime in
-November.
+March.
 
 ## Security
 
@@ -83,6 +83,12 @@ It's a old wife's tale about Linux not getting viruses and trojans but it
 doesn't happen enough to the casual desktop user of Linux or BSD (given our growing
 size) to not be safe. With `clamav`, one can stay relatively secure and
 prevent their systems from known infection streams.
+
+---
+
+When it comes to networking, KDE does it right. KIO is fantastic for
+abstracting network resources as a local file system and the use of Avahi and
+Samba only further enhances that.
 
 [1]: http://kde.org
 [2]: http://zeroconf.org

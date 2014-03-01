@@ -15,4 +15,7 @@ hands or do you attempt to make do with what you have?
 
 Though a bit graphic of an example, the message conveyed is clear: **age is
 the leading factor in a lot of decision making**. It can bar
-otherwise-brilliant people from plac
+otherwise-brilliant people from places that could evolve in or prevent those
+requiring the necessary training to grow from obtaining it. There is a bit of
+an evolutionary aspect to things, having them learn on their own, but we've
+mitigated the need for that when we started using medicine.

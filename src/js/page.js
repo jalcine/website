@@ -1,17 +1,16 @@
 (function(){
-  "use strict";
+  'use strict';
 
   var WebFont = {
     google: {
-      families: ["Lato"]
+      families: ['Lato']
     }
   };
 
   var jalcine = {
     stickyHeader : {
       header: null,
-      init : function(){
-        jalcine.stickyHeader.header = $('')
+      init : function() {
       }
     },
     init : function() {

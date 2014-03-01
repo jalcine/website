@@ -20,4 +20,5 @@ provided below.
 I use GNU Bash, the kind of Bash you'd get when shipping with a particular
 Linux. I haven't made the attempt to try another shell out of the time capital
 it'd require but a few compelling features in shells like `fish` and `zsh`
-pique my curiousity enough to give them another look.
+pique my curiousity enough to give them another look; definitely worth a
+follow up post.
