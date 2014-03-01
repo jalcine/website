@@ -27,19 +27,19 @@ $black:  #111
 
 $lavender: #9A8FC8
 
-$background-color: mix($white, $lavender, 70%)
-$foreground-color: mix($black, $lavender, 70%)
+$background-color:   mix($white, $lavender, 70%)
+$foreground-color:   mix($black, $lavender, 70%)
 
 $link-color:        darken($background-color, 75%)
 $link-hover-color:  mix($link-color, $black, 60%)
 
 body
   background-color: $background-color
-  color: $foreground-color
+  color:            $foreground-color
 
 a
   @include transition(all 0.2s)
-  color: $link-color
+  color:           $link-color
   text-decoration: none
 
   &:hover
