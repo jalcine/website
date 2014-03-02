@@ -36,6 +36,14 @@ header[role=main]
 
     h1
       float: right
+      text-transform: small-caps
+
+      a
+        color: $lavender
+
+        &:hover
+          @include text-shadow(0px 0px 5px mix($lavender, $white, 60%))
+          color: $white
 
 section[role=main]
   margin: 1rem auto
