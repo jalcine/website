@@ -59,6 +59,7 @@ module Jekyll
     end
 
     def get_gist_from_web(gist, file)
+      return ""
       gist_url          = get_gist_url_for gist, file
       raw_uri           = URI.parse gist_url
       https             = Net::HTTP.new raw_uri.host, raw_uri.port

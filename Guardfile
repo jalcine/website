@@ -13,17 +13,16 @@ guard :rack, port: 1993 do
 end
 
 guard 'jekyll-plus', serve: false do
-  watch /^_(posts|drafts|includes|layouts)/
+  watch /^src\/_(posts|drafts|includes|layouts)/
   watch /^*\.haml$/
   ignore /^_site/
 end
 
-guard :sass, source: 'css', destination: './_site/css' do
-  watch /^_css/
+guard :sass, source: 'src/_sass', destination: './_site/css' do
+  watch /^src\/_sass/
 end
 
 guard :livereload do
   watch /^_site*/
-  watch /haml$/
-  watch /sass$/
+  ignore /^src/
 end

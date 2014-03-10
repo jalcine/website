@@ -10,3 +10,5 @@ categories:
 I have a confession; probably obvious from the title of this post. I
 absolutely **love** [Minecraft][]. The idea is so awesome and I've spent four
 hours a day just 
+
+[Minecraft]: http://lmgtfy.com/?q=minecraft

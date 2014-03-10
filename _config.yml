@@ -14,7 +14,7 @@ post:
 
 # Blog specifics.
 future: true
-show_drafts: true
+show_drafts: false 
 relative_permalinks: false
 lsi: false
 permalink: "/weblog/:title"
@@ -28,7 +28,15 @@ gems:
 # Markdown engine.
 pygments: true
 redcarpet:
-  extensions: ["footnotes", "autolink", "strikethrough", "superscript", "subscript", "no_intra_emphasis", "fenced_code_blocks", "with_toc_data"]
+  extensions: 
+    - footnotes
+    - autolink
+    - strikethrough
+    - superscript
+    - subscript
+    - no_intra_emphasis
+    - fenced_code_blocks
+    - with_toc_data
 
 # Don't bother with theses.
 exclude:

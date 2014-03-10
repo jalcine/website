@@ -27,25 +27,25 @@ $black:  #111
 
 $lavender: #9A8FC8
 
-$background-color: mix($white, $lavender, 70%)
-$foreground-color: mix($black, $lavender, 70%)
+$background-color:   mix($white, $lavender, 70%)
+$foreground-color:   mix($black, $lavender, 70%)
 
-$link-color:        darken($background-color, 75%)
-$link-hover-color:  mix($link-color, $black, 60%)
+$link-color:        darken($background-color, 30%)
+$link-hover-color:  darken($link-color, 10%)
 
 body
   background-color: $background-color
-  color: $foreground-color
+  color:            $foreground-color
 
 a
   @include transition(all 0.2s)
-  color: $link-color
+  color:           $link-color
   text-decoration: none
 
   &:hover
-    @include text-shaodw(2px 2px 2px $link-hover-color)
+    @include text-shadow(0px 0px 5px $link-hover-color)
     color: $link-hover-color
 
   &:active
-    @include text-shadow(2px 2px 2px $orange)
-    color: $orange
+    @include text-shadow(0px 0px 5px $fuchsia)
+    color: $fuchsia
