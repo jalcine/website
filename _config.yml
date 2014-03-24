@@ -6,19 +6,13 @@ description: "A little collection of text and images."
 timezone: "America/New_York"
 source: src
 
-# VCS data
-git:
-  branch: "master"
-post:
-  extension: "markdown"
-
 # Blog specifics.
 future: false
 show_drafts: false
 relative_permalinks: false
 lsi: false
 permalink: "/weblog/:title"
-paginate: 5
+paginate: 10
 paginate_path: "/weblog/:num"
 
 gems:
@@ -31,18 +25,14 @@ redcarpet:
   extensions: 
     - footnotes
     - autolink
-    - strikethrough
-    - superscript
     - subscript
-    - no_intra_emphasis
     - fenced_code_blocks
-    - with_toc_data
 
 # Don't bother with theses.
 exclude:
   - 'bin'
   - "*.md"
-  - "*file*"
+  - "*file"
   - "*config*"
   - 'sass'
   - '*tags*'

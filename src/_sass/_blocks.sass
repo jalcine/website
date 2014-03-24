@@ -1,49 +1,69 @@
 @import 'colors'
+@import 'sizes'
 
 header[role=main]
   background-color: darken($background-color, 40%)
-  color: mix($white, $lavender)
+  color: darken(mix($white, $lavender, 80%), 80%)
   height: 6rem
   max-height: 6rem
 
   .frame
-    width: 80%
-    max-width: 600px
     margin: 0rem auto
+    text-align: center
+    height: 6rem
+    max-height: 6rem
+    width: 80%
+      max-width: 40rem
 
     img.head
       width: 5rem
       max-width: 5rem
-      margin: 0.5rem 1rem
+      margin: 0.2rem 0.5rem
       vertical-align: middle
       border-radius: 50%
 
     ul
       padding: 0rem
-      margin: 0rem
+      margin:  0rem
       display: inline-block
-      height: 5rem
-      line-height: 5rem
+      height: 6rem
+      line-height: 6rem
 
       li
         display: inline-block
-        margin: 0rem 1rem
-        height: 5rem
-        line-height: 5rem
+        margin: 0rem 1.2rem
+        height: 6rem
+        line-height: 6rem
+        text-transform: uppercase
 
         a:hover
           color: $white
 
     h1
-      float: right
       text-transform: small-caps
+      display: inline-block
+      margin: 0rem 1rem
 
       a
         color: $lavender
 
         &:hover
-          @include text-shadow(0px 0px 5px mix($lavender, $white, 60%))
+          @include text-shadow(0px 0px 9px mix($lavender, $white, 60%))
           color: $white
+
+  @media #{$screen} and #{$tiny-width}
+    &
+      .frame
+        width: 97.5%
+
+        li
+          margin: 0rem 0.3rem
+
+          //b
+            //display: none
+
+        h1
+          display: none
 
 section[role=main]
   margin: 1rem auto
@@ -51,6 +71,7 @@ section[role=main]
   max-width: 62.5rem
 
 footer[role=main]
-  width: 80%
+  width: 60%
+  color: $gray
   margin: 2rem auto
   text-align: center

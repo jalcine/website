@@ -1,19 +1,62 @@
 @import '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
 
-$body-font-family: Lato, Verdana
-$header-font-family: Cabin, Gregoria
+$body-font-family: "Noto Sans", "Droid Sans", Roboto, Lato, Verdana
+$header-font-family: "Roboto Slab", Cabin, Gregoria
 $mono-font-family: Monaco, Droid Sans Pro, monospace
 $font-size: 16px
 
-h1, h2, h3, h4, h5, h6, blockquote > p
+h1, h2, h3, h4, h5, h6, blockquote
   font-family: $header-font-family
+
+h1, h2, h3
+  font-weight: 900
+
+h3, h4, h5
+  font-weight: 700
+
+h1
+  font-size: 2.2rem
+h2
+  font-size: 2.0rem
+h3
+  font-size: 1.8rem
+h4
+  font-size: 1.6rem
+h5
+  font-size: 1.4rem
+h6
+  font-size: 1.2rem
 
 p, body
   font-family: $body-font-family
+  font-weight: 100
+
+strong
+  font-weight: 900
+
+em
+  font-style: italic
+
+sup
+  vertical-align: super
+  font-size: smaller
+
+ol
+  list-style-type: decimal
 
 body
   font-size: 100%
   font-size: $font-size
+
+@media #{$tiny-width}
+  body
+    font-size: 80%
+    font-size: $font-size * 0.8
+
+@media #{$hefty-width}
+  body
+    font-size: 120%
+    font-size: $font-size * 1.2
 
 blockquote
   background-color: darken($lavender, 40%)
@@ -52,3 +95,4 @@ hr
 .footnotes
   width: 90%
   font-size: 1rem
+

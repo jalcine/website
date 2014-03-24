@@ -14,7 +14,7 @@ classes: post pagination
     {{ content }}
 
 %footer
-  %p= "This was classed under {{ page.categories | array_to_text_sentence }}."
+  %p= "This was classed under {{ page.categories | array_to_sentence_string }}."
   :plain
     <p class="paginator">
       {% if page.next %}

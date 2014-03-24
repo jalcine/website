@@ -1,30 +1,31 @@
 ---
 layout: default
-title: weblog/archives· jackyalciné
-classes: pagination
+title: weblog/archives ­ jackyalciné
+classes: "pagination"
 ---
 
 <p class="paginator">
   {% if paginator.next_page %}
     <a class="next" href="{{ paginator.next_page_path }}">
       Next Page
-      <i class='fa fa-fw fa-arrow-right'></i>
     </a>
   {% endif %}
   {% if paginator.previous_page %}
     <a class="previous" href="{{ paginator.previous_page_path }}">
-      <i class='fa fa-fw fa-arrow-left'></i>
       Previous Page
     </a>
   {% endif %}
 </p>
-{% for post in paginator.posts %}
-  <p class='entry'>
-    <time>&laquo; {{ post.date | date_to_string }}</time>
-    <a href= "{{ post.url }}">{{ post.title }}</a>
-    <p>{{ post.excerpt | strip_html }}</p>
-  </p>
-{% endfor %}
+<section role='entries'>
+  <h1>Entries</h1>
+  {% for post in paginator.posts %}
+    <p class='entry'>
+    <h3><a href="{{ post.url}}">{{post.title}}</a></h3>
+      <time>{{ post.date | date_to_string }}</time> <strong>&#x2016;</strong> 
+          <em>{{ post.categories | array_to_sentence_string }}</em>
+    </p>
+  {% endfor %}
+</section>
 <p class="paginator">
   {% if paginator.next_page %}
     <a class="next" href="{{ paginator.next_page_path }}">
