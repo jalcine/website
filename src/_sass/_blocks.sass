@@ -5,15 +5,12 @@ header[role=main]
   background-color: darken($background-color, 40%)
   color: darken(mix($white, $lavender, 80%), 80%)
   height: 6rem
-  max-height: 6rem
 
   .frame
     margin: 0rem auto
     text-align: center
-    height: 6rem
-    max-height: 6rem
     width: 80%
-      max-width: 40rem
+    max-width: 40rem
 
     img.head
       width: 5rem
@@ -31,7 +28,7 @@ header[role=main]
 
       li
         display: inline-block
-        margin: 0rem 1.2rem
+        margin: 0rem 1.5rem
         height: 6rem
         line-height: 6rem
         text-transform: uppercase
@@ -40,9 +37,8 @@ header[role=main]
           color: $white
 
     h1
-      text-transform: small-caps
+      font-variant: small-caps
       display: inline-block
-      margin: 0rem 1rem
 
       a
         color: $lavender
@@ -56,22 +52,27 @@ header[role=main]
       .frame
         width: 97.5%
 
-        li
-          margin: 0rem 0.3rem
-
-          //b
-            //display: none
-
-        h1
-          display: none
+        ul
+          li
+            margin: 0rem 0.3rem
 
 section[role=main]
   margin: 1rem auto
   width: 80%
   max-width: 62.5rem
 
+  @media #{$tiny-width}
+    &
+      width: 95%
+      margin: 0rem auto
+
 footer[role=main]
   width: 60%
   color: $gray
   margin: 2rem auto
   text-align: center
+
+  @media #{$tiny-width}
+    &
+      width: 90%
+      margin: 1rem auto

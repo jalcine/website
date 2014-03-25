@@ -3,8 +3,12 @@ body.pagination
     p.paginator
       clear: both
       height: 1.5rem
-      width: 50%
+      width: 60%
       margin: 0rem auto
+
+      @media #{$tiny-width}
+        &
+          width: 90%
 
       a.previous
         float: left
@@ -14,6 +18,10 @@ body.pagination
     section[role=entries]
       width: 60%
       margin: 0rem auto
+
+      @media #{$tiny-width}
+        &
+          width: 80%
 
       p.entry
         margin: 1rem auto

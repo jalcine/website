@@ -1,0 +1,12 @@
+/* This is assuming that we're at 16px. */
+$tiny:   45.5rem;
+$chunky: 60rem;
+$hefty:  90rem;
+
+$screen: "only screen";
+$landscape: "#{$screen} and (orientation: landscape)";
+$portrait: "#{$screen} and (orientation: portrait)";
+
+$tiny-width:   "(max-width: #{$tiny})";
+$chunky-width: "(min-width: #{$tiny} + 0.125rem) and (max-width:#{$chunky})";
+$hefty-width:  "(min-width:#{$chunky} + 0.125rem) and (max-width:#{$hefty})";

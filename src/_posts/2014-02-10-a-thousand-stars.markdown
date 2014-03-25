@@ -16,7 +16,7 @@ for scrutiny.
 While this may prove to be a bit weird for those who don't really follow code,
 I've been looking to saturate my knowledge of language style and project
 management by watching how people react to things on GitHub. For example, the
-ever [famous comment][] between [@fat][] and [@douglascrockford][] is enough to
+ever [famous comment][] between @fat and @douglascrockford is enough to
 have one take a bit of retrospect when it comes to what is actually an
 authoritative source of a language's syntax (hint: no one).
 

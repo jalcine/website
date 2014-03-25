@@ -3,11 +3,12 @@ layout: default
 classes: post pagination
 ---
 %header{role: :content}
-  %small.meta
-    %i.fa.fa-fw.fa-calendar-o
-    ="{{ page.date | date_to_string }}"
-  %h2= "{{ page.title }}"
-
+  %h1= "{{ page.title }}"
+  %p.meta
+    Posted 
+    %time
+      %i.fa.fa-fw.fa-calendar-o
+        ="{{ page.date | date_to_string }}"
 
 %section{role: :content}
   :plain

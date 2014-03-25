@@ -3,21 +3,19 @@ body.post
     clear: both
     h2
       margin: 0.1rem
-    small.meta
-      height: 2.625rem
-      line-height: 2.625rem
-      margin-right: 15%
-      float: right
 
   section[role=main]
     width: 100%
     max-width: inherit
-    font-size: 1.2rem
 
     p, blockquote, h1, h2, h3, h4, h5, h6,
     .footnotes, ul, ol
       line-height: 1.8
       width: 80%
+
+      @media #{$tiny-width}
+        &
+          width: 90%
 
     p, .footnotes, ul, ol
       margin: 0.5rem auto
@@ -29,6 +27,10 @@ body.post
     ul, ol
       width: 70%
 
+      @media #{$tiny-width}
+        &
+          width: 90%
+
       li > p
         width: 100%
 
@@ -37,6 +39,7 @@ body.post
 
     h1, h2, h3, h4, h5, h6
       margin: 1rem auto
+      clear: both
 
     pre > code
       display: block
