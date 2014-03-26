@@ -10,6 +10,7 @@ body.post
 
     p, blockquote, h1, h2, h3, h4, h5, h6,
     .footnotes, ul, ol
+      +transition(all 0.3s)
       line-height: 1.8
       width: 80%
 
@@ -51,3 +52,7 @@ body.post
       margin: 0rem auto
       text-align: center
       max-width: 95%
+
+      @media #{$tiny-width}
+        &
+          max-width: 100%

@@ -109,15 +109,8 @@ probably would be more appropriate.
 
 ## Code
 
-So, I've started working on this code and I plan to publish it soon when I get
-a working example up and going. For now, I'll babble about how it might work.
-
-
- * **TODO** Speak about the UI for the multiplexer. It should use QML/Plasma.
- * **TODO** Speak about hooking it into KRunner's system via a plug-in system
- * **TODO** Provide a notification icon for the application to embed into the
-   status bar.
- * **TODO** Provide a plasma widget to show statuses of playing files.
+Code? We do that still? Oh nah. At the moment, I haven't any code. But I plan
+to work on this in the near future. Good chance I'll tweet when I start.
 
 [kde]: http://kde.org
 [kmix]: http://kmix.kde.org

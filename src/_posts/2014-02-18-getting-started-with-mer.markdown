@@ -22,10 +22,10 @@ computer but I've wrapped it into some helper scripts for those who use
 [aliases][mer_install_alias] from my fork of the [bash-it][bash_it] project.
 With that intact, all one would need to run to get into the SDK is:
 
-```
-mer-sdk-chroot mount
-mer-sdk-chroot enter
-```
+{% highlight bash %}
+# mer-sdk-chroot mount
+$ mer-sdk-chroot enter
+{% endhighlight %}
 
 I've noticed that sometimes when I run this; I get some issues with `su` not
 being able to access `/bin/bash`. This hampers the SDK and the only way I've
@@ -33,18 +33,14 @@ managed to resolve this is by restarting my system. Right now, I think it has
 something to do with my `/etc/fstab` and `mount` but only more experimentation
 will tell.
 
-## Building An Image
-
-@TODO: Work on building images for ARM devices (i.e.: Nexus 4 & Nexus 7).
-@TODO: Work on using Plasma Active as the base image
-
 ## Moving Forward
 
 With this under my belt, I'm looking forward to continue a little project. One
 thing that'd set the biggest chance for Plasma Active would be a means of
 ominpresent storage. It's called `KIO::Cloud`, a series of extensions that
 would make it easy to connect remotely hosted file services like Google Drive
-and Dropbox.
+and Dropbox. KDE's recently added Google Drive API support into the mix so
+this would be increasingly easy.
 
 [mer]: http://merproject.org/
 [plasma_active]: http://plasma-active.org/

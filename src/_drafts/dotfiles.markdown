@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "My Shell Setup"
-date: 2014-02-06 17:19:24 EST
+title: "My Dotfiles and More: What I Use"
+date: 2014-03-25 23:02:11 EDT
 categories:
   - thoughts
   - development
@@ -15,13 +15,76 @@ able to do things like grabbing code, handling patches, managing your
 multiplexer and more easily from the CLI. This is mainly about how I've set up
 my system so my current use. 
 
-# My Shell: `bash`
+## My Shell: `bash`
 I use GNU Bash, the kind of Bash you'd get when shipping with a particular
 Linux. I haven't made the attempt to try another shell out of the time capital
 it'd require but a few compelling features in shells like `fish` and `zsh`
-pique my curiousity enough to give them another look; definitely worth a
+pique my curiosity enough to give them another look; definitely worth a
 follow up post. Initially, I set up my shell scripts in a very hazy fashion.
 Then I began to use [bash-it][], a useful tool for controlling your shell as
-if it were a toggleable and configurable machine (in a sense, it is).
+if it were a toggle-able and configurable machine (in a sense, it is). 
+[My changes to bash-it][my_bash-it] has a lot of jazz in it, although it's
+been quite polluted from the original project and probably might explain for
+its bit of lag.
+
+![Hello `bash`!](/images/konsole-shot.png)
+
+Every time the prompt opens up or logs in, it registers my GPG keychain with
+the gpg-agent as well as the SSH keys I'd use with the ssh-agent to make life
+easy when I use said tools. With an added twist, the passwords are passed in
+using `kwalletaskpass`, so they're pulled from my system's wallet. I don't
+have to worry about entering said passwords when prompted, ever. Also, if it's
+not running in a tmux pane (checks for $TMUX), then it prints out a
+(potentially offensive or stupid) fortune script. The amount of amusement that
+some of these have provided is priceless. Combining this with `cowsay` would
+be extra but worthwhile in the future.
+
+![Quick breeze of using the shell.](/images/using-shell.gif)
+
+You can see by my very short prompt that I don't care much for information
+being shown up in the shell that boldly. I'm more concerned with the output of
+applications as opposed to my current status in a directory.
+
+## My Editor(s): `vim` & `subl`
+I tend to stick to the console when I work on code. Vim has been the editor of
+choice for about a year and a half now and I learn something new whilst using
+it almost every other day. New ways way to handle text and repetitive tasks
+without moving my hand from the 'home row' has made me really rethink how the
+keyboard was meant to be used. It's more than that, too. Macros are a
+important part of Vim, and more text editors should embrace that idea. I can
+go on and on about Vim; it's enough to merit its own post.
+
+![Vim in $HOME.](/images/konsole-vim-shot.png)
+
+At times, I do miss the power of having a GUI application open and running.
+That's when the ever-popular [**Sublime Text**][subl] with its
+community-driven and powered [package repository][subl_pkg] comes to play.
+
+![Sublime Text! And Wintermute!](/images/sublime-shot-winty.png)
+
+With the Vim plug-in providing Vi-like bindings for editing text; it's
+as close as I can get to a cross-platform, non-Vim editor that packs a punch.
+
+## My Desktop Environment: KDE
+
+I've used Ubuntu for a while now; about five years now. I've used the classic
+GNOME2 shell as well as the Lubuntu/LXDE shell and after finding [KDE][], I
+haven't moved away from it since. I'm using KDE 4.12.3 as provided by
+[Kubuntu][].
+
+![My desktop as I wrote this.](/images/my-desktop-2014-03-25.png)
+
+I'm using [Kubuntu][] 13.10 on the 3.11.0-19-generic Linux kernel (at the
+time of writing) on a 64-bit processor. This is mostly expected stuff, nothing
+crazy or over the top. My processor's the Intel i3-3217U chip using up 7.6 GB
+of RAM and 25 GB of swap. It's a bit of overkill for swap, yes, but I use the
+same partition that the kernel would use as virtual memory for swap, so I
+figured why not.
 
 [bash-it]: https://github.com/revans/bash-it
+[my_bash-it]: https://github.com/jalcine/bash-it
+[vim]: http://vim.sf.net
+[subl]: http://sublimetext.com
+[subl_pkg]: http://sublime.wbond.net
+[kde]: http://kde.org
+[kubuntu]: http://kubuntu.org
