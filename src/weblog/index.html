@@ -5,38 +5,31 @@ classes: pagination
 ---
 
 <p class="paginator">
-  {% if paginator.next_page %}
-    <a class="next" href="{{ paginator.next_page_path }}">
-      Next Page
-    </a>
-  {% endif %}
   {% if paginator.previous_page %}
-    <a class="previous" href="{{ paginator.previous_page_path }}">
-      Previous Page
-    </a>
+    <a href="{{ paginator.previous_page }}">Previous</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page }}">Next</a>
   {% endif %}
 </p>
+
 <section role='entries'>
   <h1>Entries</h1>
   {% for post in paginator.posts %}
     <p class='entry'>
-    <h3><a href="{{ post.url}}">{{post.title}}</a></h3>
-      <time>{{ post.date | date_to_string }}</time> <strong>&#x2016;</strong> 
-          <em>{{ post.categories | array_to_sentence_string }}</em>
+      <h3><a href="{{ post.url}}">{{post.title}}</a></h3>
+      <time>{{ post.date | date_to_string }}</time>
+      <strong>&mdash;</strong> 
+      <em>{{ post.categories | array_to_sentence_string }}</em>
     </p>
   {% endfor %}
 </section>
+
 <p class="paginator">
-  {% if paginator.next_page %}
-    <a class="next" href="{{ paginator.next_page_path }}">
-      Next Page
-      <i class='fa fa-fw fa-arrow-right'></i>
-    </a>
-  {% endif %}
   {% if paginator.previous_page %}
-    <a class="previous" href="{{ paginator.previous_page_path }}">
-      <i class='fa fa-fw fa-arrow-left'></i>
-      Previous Page
-    </a>
+    <a href="{{ paginator.previous_page }}">Previous</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page }}">Next</a>
   {% endif %}
 </p>

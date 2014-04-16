@@ -1,26 +1,23 @@
 body.index
   > section[role=main]
-    p.grand, p.intro
-      margin: 1rem auto
+    width: 50%
 
     p.grand
       text-align: center
-      color: darken($background-color, 40%)
-
-    p.intro
-      font-family: $mono-font-family
-      font-size: 1.5rem
+      font-size: 1.15rem
+      color: darken($lavender, 40%)
+      width: 80%
+      margin: 1rem auto
 
     h1.title
-      font-size: 3.5rem
-      font-weight: 300
+      font-size: xx-large
       text-align: center
 
-    @media #{$tiny-width}
+    @media #{$medium-width}
       &
-        width: 100%
-        margin: 0rem auto
+        width: 80%
 
-        p.intro, p.grand
-          width: 90%
-          margin: 1rem auto
+    @media #{$large-width}
+      &
+        width: 90%
+

@@ -1,37 +1,40 @@
 body.pagination
-  section[role=main]
-    p.paginator
-      clear: both
-      height: 1.5rem
-      width: 60%
-      margin: 0rem auto
+  p.paginator
+    clear: both
+    display: block
+    width: 60%
+    margin: 1rem auto
+    text-align: center
+    height: 1rem
 
-      @media #{$tiny-width}
-        &
-          width: 90%
+    @media #{$small-width}
+      &
+        width: 90%
 
-      a.previous
+    a
+      display: block
+      float: left
+      line-height: 1rem
+      width: 50%
+      text-align: center
+
+  @media #{$small-width}
+    &
+      width: 90%
+
+  section[role=entries]
+    width: 80%
+    margin: 0rem auto
+
+    p.entry
+      margin: 1rem auto
+
+      &:before
+        +transition(all 0.3s)
+        content: '\204B'
         float: left
-      a.next
-        float: right
-
-    section[role=entries]
-      width: 80%
-      margin: 0rem auto
-
-      @media #{$tiny-width}
-        &
-          width: 90%
-
-      p.entry
-        margin: 1rem auto
-
-        &:before
-          +transition(all 0.3s)
-          content: '\204B'
-          float: left
-          font-size: 2.5rem
-          line-height: 3rem
-          margin-left: -2rem
-          margin-right: 1rem
-          color: darken($background-color, 5%)
+        font-size: 2.5rem
+        line-height: 3rem
+        margin-left: -2rem
+        margin-right: 1rem
+        color: darken($background-color, 5%)

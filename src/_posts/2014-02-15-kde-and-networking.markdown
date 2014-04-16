@@ -34,15 +34,15 @@ $ avahi-browse -a
 +  wlan0 IPv4 Jacky Alcine@neuromancer            iChat Presence         local
 +  wlan0 IPv6 saned                               _sane-port._tcp        local
 +  wlan0 IPv4 saned                               _sane-port._tcp        local
-+  wlan0 IPv6 neuromancer [dc:85:de:52:29:d1]     Workstation            local
-+  wlan0 IPv4 neuromancer [dc:85:de:52:29:d1]     Workstation            local
++  wlan0 IPv6 neuromancer [dc\:85:\de:\52:\29:d1] Workstation            local
++  wlan0 IPv4 neuromancer [dc\:85:\de:\52:\29:d1] Workstation            local
 +  wlan0 IPv6 neuromancer                         Remote Disk Management local
 +  wlan0 IPv4 neuromancer                         Remote Disk Management local
 {% endhighlight %}
 
-Above, you can see my local network chat capabilities (via iChat or Adium for OS X and
-[Telepathy IM][3] on KDE), `sane` used for discovering scanners, machine
-discovery and `udisk` abstraction so I can publish drives over Avahi.
+Above, you can see my local network chat capabilities (via iChat or Adium 
+for OS X and [Telepathy IM][3] on KDE), `sane` used for discovering scanners, 
+machine discovery and `udisk` abstraction so I can publish drives over Avahi.
 Talk about some nifty tech! Thing is, I'd have to manually turn these things
 on and off in order to get them hidden from other users. Maybe I don't want
 to want my local chat presence to be visible in some networks but I'd rather

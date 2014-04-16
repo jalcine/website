@@ -103,7 +103,6 @@ branch that you pushed.
 
 {% gist 4618184 %}
 
-
 # Quirks
 
 I have to admit, in [the Gist shown above][], there's a few problems I'm 

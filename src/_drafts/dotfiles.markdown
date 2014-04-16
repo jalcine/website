@@ -5,7 +5,7 @@ date: 2014-03-25 23:02:11 EDT
 categories:
   - thoughts
   - development
-
+  - dotfiles
 ---
 
 If there's one thing that makes a user of the console a good one; it's knowing
@@ -52,11 +52,12 @@ it almost every other day. New ways way to handle text and repetitive tasks
 without moving my hand from the 'home row' has made me really rethink how the
 keyboard was meant to be used. It's more than that, too. Macros are a
 important part of Vim, and more text editors should embrace that idea. I can
-go on and on about Vim; it's enough to merit its own post.
+go on and on about Vim; it's enough to merit its own post. Little things like
+key bindings, re-mapped keys and freaking color schemes matter.
 
 ![Vim in $HOME.](/images/konsole-vim-shot.png)
 
-At times, I do miss the power of having a GUI application open and running.
+At times, I do miss the convenience of having a GUI application open and running.
 That's when the ever-popular [**Sublime Text**][subl] with its
 community-driven and powered [package repository][subl_pkg] comes to play.
 
@@ -65,7 +66,7 @@ community-driven and powered [package repository][subl_pkg] comes to play.
 With the Vim plug-in providing Vi-like bindings for editing text; it's
 as close as I can get to a cross-platform, non-Vim editor that packs a punch.
 
-## My Desktop Environment: KDE
+## (Extra) My Desktop Environment: KDE
 
 I've used Ubuntu for a while now; about five years now. I've used the classic
 GNOME2 shell as well as the Lubuntu/LXDE shell and after finding [KDE][], I

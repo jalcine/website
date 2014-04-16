@@ -1,41 +1,71 @@
 @import 'colors'
 @import 'sizes'
+@import 'compass/css3/border-radius'
+@import 'compass/css3/box-shadow'
+@import 'compass/css3/opacity'
+
+$header-height: 6rem
+
+header[role=main], footer[role=main], section[role=main]
+  clear: both
+  display: block
 
 header[role=main]
+  background-image: url(/images/banner.png)
   background-color: darken($background-color, 40%)
-  color: darken(mix($white, $lavender, 80%), 80%)
-  height: 6rem
+  background-size: cover
+  background-position: 50% 50%
+  background-repeat: no-repeat
+  color: darken(mix($gray, $lavender, 80%), 80%)
+  height: $header-height
+  width: 100%
+  position: fixed
+  top: 0rem
+  left: 0rem
 
   .frame
     margin: 0rem auto
     text-align: center
     width: 80%
     max-width: 40rem
+    height: auto
+
+    a
+      line-height: $header-height
 
     img.head
-      width: 5rem
-      max-width: 5rem
-      margin: 0.2rem 0.5rem
+      +border-radius(50%)
+      +box-shadow(0px 0px 15px darken($white, 20%))
+      +transition(opacity 0.5s)
+      +opacity(0.75)
+      width: $header-height * (5/6)
+      margin-bottom: 0.4rem
       vertical-align: middle
-      border-radius: 50%
+
+    a:hover > img.head
+      +opacity(1.0)
 
     ul
+      +transition(height 0.3s)
       padding: 0rem
       margin:  0rem
       display: inline-block
-      height: 6rem
-      line-height: 6rem
+      height: $header-height
 
       li
+        +transition(height 0.3s)
         display: inline-block
-        margin: 0rem 1.5rem
-        height: 6rem
-        line-height: 6rem
+        margin: 0rem 1rem
+        line-height: $header-height
         text-transform: uppercase
+        font-size: x-large
 
-        a:hover
-          color: $white
-
+        a
+          +transition(color 0.2s, text-shadow 0.4s)
+          color: mix($lavender, $white, 60%)
+          &:hover
+            color: $white
+            +text-shadow(0px 0px 9px mix($lavender, $white, 60%))
     h1
       font-variant: small-caps
       display: inline-block
@@ -44,27 +74,39 @@ header[role=main]
         color: $lavender
 
         &:hover
-          @include text-shadow(0px 0px 9px mix($lavender, $white, 60%))
+          +text-shadow(0px 0px 9px mix($lavender, $white, 60%))
           color: $white
 
-  @media #{$screen} and #{$tiny-width}
+  @media #{$screen} and #{$small-width}
     &
+      height: $header-height * 0.75
+
       .frame
         width: 97.5%
+        a
+          line-height: $header-height * 0.75
+
+        img.head
+          width: $header-height * 0.625
+          margin-bottom: 0.1rem
 
         ul
+          height: $header-height * 0.75
+
           li
-            margin: 0rem 0.3rem
+            margin: 0rem 0.75rem
+            line-height: $header-height * 0.75
 
 section[role=main]
-  margin: 1rem auto
+  margin: $header-height auto 0rem
+  padding: 0.5rem 0rem
   width: 80%
   max-width: 62.5rem
 
-  @media #{$tiny-width}
+  @media #{$small-width}
     &
       width: 95%
-      margin: 0rem auto
+      margin: ($header-height * 0.75) auto 0rem
 
 footer[role=main]
   width: 60%
@@ -72,7 +114,7 @@ footer[role=main]
   margin: 2rem auto
   text-align: center
 
-  @media #{$tiny-width}
+  @media #{$small-width}
     &
       width: 90%
       margin: 1rem auto
