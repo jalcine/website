@@ -1,9 +1,7 @@
 ---
 layout: post
 title: "Static Web Pages + Git = Awesome Deployment"
-date: 2013-01-26 04:09
-comments: true 
-tags: web deployment octopress git
+date: 2013-01-26 04:09 UTC-0500
 category: development
 
 ---
@@ -115,8 +113,6 @@ going to have to adapt this post to show.
 
   2. __Merging issues__ - If, for some reason, there was a merging problem, 
      there's no way for you to tell, from what I know.
-
-Feel free to adapt to this tutorial, link back to it and provide more tips. Ciao!
 
 [Octopress]: http://octopress.com
 [the Gist shown above]: https://gist.github.com/4618184
