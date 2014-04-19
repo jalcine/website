@@ -1,6 +1,6 @@
 %title= "{{ page.title }} - jackyalciné"
 %meta{charset: 'utf-8'}
-%meta{name:'viewport', content:'width=device-width,height=device-height,zoom=1'}
+%meta{name:'viewport', content:'width=device-width,height=device-height,zoom=1.0'}
 %link{rel: :stylesheet, href:'/css/screen.css'}
 %link{rel: :stylesheet, href:'/css/syntax.css'}
 %link{rel: :author, href: 'https://plus.google.com/118415769922038925979/posts'}
@@ -9,7 +9,7 @@
 %meta{itemprop:'name',content:"{{page.title}}"}
 %meta{itemprop:'description',content:"{{(page.excerpt || site.description) | strip_html}}"}
 %meta{property:'og:title',content:"{{page.title}}"}
-%meta{property:'og:description',content:"{{site.description}}"}
+%meta{property:'og:description',content:"{{(page.excerpt || site.description) | strip_html}}"}
 %meta{property:'og:url',content:"{{ site.url }}{{ page.url }}"}
 %meta{name:'twitter:card',content:'summary'}
 %meta{name:'twitter:url',content:"{{site.url}}{{page.url}}"}

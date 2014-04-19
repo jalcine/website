@@ -4,6 +4,7 @@ title: "What's There to Build (Anymore)?"
 date: 2014-03-20 08:38:47 EDT
 categories:
   - thoughts
+  - development
 ---
 
 I've recently got a copy of this book called Hackers[^1] and so far, it's a

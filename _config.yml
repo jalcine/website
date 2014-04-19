@@ -23,16 +23,17 @@ gems:
 
 # Markdown engine.
 pygments: true
-redcarpet:
-  extensions: 
-    - footnotes
-    - autolink
-    - subscript
-    - fenced_code_blocks
-    - no_intra_emphasis
-    - quote
-    - with_toc_data
-    - link_attributes
+markdown: redcarpet
+extensions: 
+  - smart
+  - footnotes
+  - autolink
+  - subscript
+  - fenced_code_blocks
+  - no_intra_emphasis
+  - quote
+  - with_toc_data
+  - link_attributes
 
 # Don't bother with theses.
 exclude:

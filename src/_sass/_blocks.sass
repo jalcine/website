@@ -27,23 +27,31 @@ header[role=main]
     margin: 0rem auto
     text-align: center
     width: 80%
-    max-width: 40rem
     height: auto
+    max-width: 40rem
+
+    @media #{$medium-width}
+      width: 100%
 
     ul
-      +transition(height 0.3s)
       padding: 0rem
       margin:  0rem
       display: inline-block
       height: $header-height
 
       li
-        +transition(height 0.3s)
+        +transition(margin 0.3s)
         display: inline-block
         margin: 0rem 1rem
         line-height: $header-height
         text-transform: uppercase
         font-size: x-large
+
+        @media #{$small-width}
+          font-size: 200%
+
+          a > strong
+            display: none
 
         a
           +transition(color 0.2s, text-shadow 0.4s)
@@ -59,20 +67,20 @@ header[role=main]
 section[role=main]
   margin: $header-height auto 0rem
   padding: 0.5rem 0rem
-  width: 80%
+  width: 90%
   max-width: 62.5rem
 
   @media #{$small-width}
     &
-      width: 95%
+      width: 97.5%
 
 footer[role=main]
-  width: 60%
+  width: 80%
   color: $gray
   margin: 2rem auto
   text-align: center
 
   @media #{$small-width}
     &
-      width: 90%
+      width: 97.5%
       margin: 1rem auto

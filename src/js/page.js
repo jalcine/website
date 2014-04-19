@@ -1,12 +1,11 @@
 (function(){
   'use strict';
 
-  var WebFont = {
+  WebFont.load({
     google: {
-      families: ['Lato', 'Cabin']
+      families: ['Lato', 'Cabin', 'Droid Sans Pro']
     }
-  };
+  });
 
   var jalcine = {};
-  };
 })();

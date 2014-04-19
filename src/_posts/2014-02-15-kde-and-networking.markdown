@@ -3,7 +3,7 @@ layout: post
 title: "KDE and Networking - Thoughts"
 date: 2014-02-15 07:46:34 EST
 comments: true
-category: 
+categories: 
   - kde
   - thoughts
 ---
@@ -18,10 +18,10 @@ like it a lot too since a lot of the code base is written with C++.
 
 Whenever you connect to a new network on Windows (XP SP2 and greater, I think,
 and specificially a wireless network, I haven't tried Ethernet connections),
-it asks for the network type. Now, some might disregard this window, 
-but this determines the amount of information that the platform should 
+it asks for the network type. Now, some might disregard this window,
+but this determines the amount of information that the platform should
 expose the new network. If you're a casual Linux user with no real tinkering,
-not much about your system is ever visible over the network. However, software 
+not much about your system is ever visible over the network. However, software
 like Samba, ZeroConf/Avahi and others can eventually a bit of a hassle to constantly
 switch on and off.
 

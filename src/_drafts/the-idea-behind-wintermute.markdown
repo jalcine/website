@@ -24,7 +24,7 @@ its interface took a lot of deliberation, Q & A, observation and tons of trial
 and error. To this day, I get closer to just `rm -rv` in the source code
 directory and starting from scratch. It's hectic but the idea of what
 Wintermute should be gets sharper each time a file's rewritten from
-scratch[^1].
+scratch.
 
 # What *Should* Wintermute Be?
 
@@ -85,7 +85,8 @@ I'm a big Android user and I'm definitely aiming to have a means of
 interactivity with Wintermute on my mobile devices. Leveraging the amount of
 data that a mobile device can provide about its owner (it's a **lot more than
 necessary**) could not only further enrich Wintermute's databases but push its
-ability to provide a new interface on a device that tends to be close to me.
+ability to provide a new interface on a device that tends to be close to me. A
+friend of mine, [rrix][]
 
 [wintermute]: http://wintermute.jalcine.me
 [sp]: https://github.com/wintermuteapp/wintermute
@@ -94,4 +95,4 @@ ability to provide a new interface on a device that tends to be close to me.
 [wsx]: http://wintermute.jalcine.me/stories/exercising
 [wso]: http://wintermute.jalcine.me/stories/shopping
 [wsr]: http://wintermute.jalcine.me/stories/reading
-[^1]: Talk about lacking architecture from day one!!!
+[rrix]: http://rix.si/
