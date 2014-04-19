@@ -22,10 +22,10 @@ computer but I've wrapped it into some helper scripts for those who use
 [aliases][mer_install_alias] from my fork of the [bash-it][bash_it] project.
 With that intact, all one would need to run to get into the SDK is:
 
-{% highlight bash %}
+```bash
 # mer-sdk-chroot mount
 $ mer-sdk-chroot enter
-{% endhighlight %}
+```
 
 I've noticed that sometimes when I run this; I get some issues with `su` not
 being able to access `/bin/bash`. This hampers the SDK and the only way I've

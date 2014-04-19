@@ -3,8 +3,9 @@ layout: post
 title: "KDE and Networking - Thoughts"
 date: 2014-02-15 07:46:34 EST
 comments: true
-category: kde
-
+category: 
+  - kde
+  - thoughts
 ---
 
 If you haven't noticed from previous screen shots in my weblog, I use [KDE][1] as
@@ -26,7 +27,7 @@ switch on and off.
 
 Using Avahi to look at my local network over ZeroConf, I get a bit of
 interesting information:
-{% highlight bash %}
+```bash
 # You must have `avahi` installed for this to work on your machine.
 # sudo apt-get install kde-zeroconf (for KDE).
 $ avahi-browse -a
@@ -38,7 +39,7 @@ $ avahi-browse -a
 +  wlan0 IPv4 neuromancer [dc\:85:\de:\52:\29:d1] Workstation            local
 +  wlan0 IPv6 neuromancer                         Remote Disk Management local
 +  wlan0 IPv4 neuromancer                         Remote Disk Management local
-{% endhighlight %}
+```
 
 Above, you can see my local network chat capabilities (via iChat or Adium 
 for OS X and [Telepathy IM][3] on KDE), `sane` used for discovering scanners, 
