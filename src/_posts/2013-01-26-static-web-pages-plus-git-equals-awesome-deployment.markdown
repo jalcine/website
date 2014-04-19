@@ -6,12 +6,12 @@ category: development
 
 ---
 
-I've been having lots of fun working with [Octopress][] and working with it 
-to make it as simple for me to use as possible. Fortunately, this hasn't 
-been much of a challenge. With a bit of trial and error, I've even managed 
+I've been having lots of fun working with [Octopress][] and working with it
+to make it as simple for me to use as possible. Fortunately, this hasn't
+been much of a challenge. With a bit of trial and error, I've even managed
 to abstract the act of static web page deployment without too much help! Now,
-it's near possible to implement "Heroku-like" deployment. Towards the end, 
-I even throw in a tip on how to do something similar to how Heroku might 
+it's near possible to implement "Heroku-like" deployment. Towards the end,
+I even throw in a tip on how to do something similar to how Heroku might
 have deployment done as well!
 
 # Prerequisties
@@ -99,7 +99,6 @@ After you push, you might notice information about checking out done in your
 remotes. That's the `post-recieve` hook updating the code in reaction to the 
 branch that you pushed.
 
-{% gist 4618184 %}
 
 # Quirks
 
