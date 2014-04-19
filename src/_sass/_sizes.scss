@@ -8,5 +8,5 @@ $landscape: "#{$screen} and (orientation: landscape)";
 $portrait: "#{$screen} and (orientation: portrait)";
 
 $small-width:  "(max-width: #{$small})";
-$medium-width: "(min-width: #{$medium} + #{$buffer}) and (max-width:#{$medium})";
-$large-width:  "(min-width: #{$large} + #{$buffer}) and (max-width:#{$large})";
+$medium-width: "(min-width: #{$small} + #{$buffer}) and (max-width:#{$medium})";
+$large-width:  "(min-width: #{$medium} + #{$buffer}) and (max-width:#{$large})";
