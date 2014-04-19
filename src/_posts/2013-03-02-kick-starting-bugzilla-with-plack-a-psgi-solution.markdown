@@ -28,9 +28,9 @@ their website. They store all of their code in
 before preceding. The following code snippets would get you a working copy of 
 [a stable build of Bugzilla](http://www.bugzilla.org/download/).
 
-{% highlight bash %}
+```bash
 $ bzr co bzr://bzr.mozilla.org/bugzilla/4.2
-{% endhighlight %}
+```
 
 At this time, the installation of Bugzilla is completely up to you. However,
 I'd noticed that I was not able to get Bugzilla to start without running
@@ -56,8 +56,8 @@ install Plack the same way you installed the modules for Bugzilla
 
 Once you have those files, you're ready to start up Bugzilla.
 
-{% highlight bash %}
+```bash
 $ plackup --host=127.0.0.1 --environment=production
-{% endhighlight %}
+```
 
 That's all there this to it! You now have Bugzilla up and running via Plack.

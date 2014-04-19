@@ -76,6 +76,9 @@ ul > li
 
 code, pre
   font-family: $mono-font-family
+  color: lighten($foreground-color, 30%)
+
+p > code, p > pre, .highlight .pre
   font-size: 0.7rem
 
 p > code, p > pre
@@ -84,10 +87,8 @@ p > code, p > pre
   padding: 0.2rem
   line-height: 1rem
 
-.highlight
-  pre
-    font-family: $mono-font-family
-    padding: 1.2rem 0.4rem
+.highlight > pre
+  padding: 1.2rem 0.4rem
 
 hr
   width: 80%

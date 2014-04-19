@@ -20,13 +20,13 @@ embedded projects. The only reason behind its "success" is its extremely opinion
 implementation. Maybe it's my lack of complete understanding how sockets work, but having to do
 something like:
 
-{% highlight c %}
+```c
 while (1) {
   // Kill the unicorn.
   // Buy a new unicorn.
   // End scope.
 }
-{% endhighlight %}
+```
 
 .. just looks stupid to me, but that's C. I'm way too used to event-driven programming paradigms and object
 orientated ones and to do this in my C++ code scared me to no end. Since I'm using Qt, I figured

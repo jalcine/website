@@ -1,22 +1,23 @@
 ---
 layout: post
-title: "My Dotfiles and More: What I Use"
+title: "My Dotfiles and More: What I Use In the Shell"
 date: 2014-03-25 23:02:11 EDT
 categories:
-  - thoughts
   - development
+  - thoughts
   - dotfiles
+  - personal
 ---
 
 If there's one thing that makes a user of the console a good one; it's knowing
 it well enough to navigate through it as if it were an extension of
 themselves. If you're spending a good portion of your day in there, you should
 able to do things like grabbing code, handling patches, managing your
-multiplexer and more easily from the CLI. This is mainly about how I've set up
-my system so my current use. 
+multiplexer and more easily from the CLI. This post is about how I've set up
+my [shell environment][dotfiles] as well as my [Vim setup][vimrc].
 
 ## My Shell: `bash`
-I use GNU Bash, the kind of Bash you'd get when shipping with a particular
+I use [GNU Bash][], the kind of Bash you'd get when shipping with a particular
 Linux. I haven't made the attempt to try another shell out of the time capital
 it'd require but a few compelling features in shells like `fish` and `zsh`
 pique my curiosity enough to give them another look; definitely worth a
@@ -36,14 +37,17 @@ using `kwalletaskpass`, so they're pulled from my system's wallet. I don't
 have to worry about entering said passwords when prompted, ever. Also, if it's
 not running in a tmux pane (checks for $TMUX), then it prints out a
 (potentially offensive or stupid) fortune script. The amount of amusement that
-some of these have provided is priceless. Combining this with `cowsay` would
-be extra but worthwhile in the future.
+some of these have provided is priceless. Combining thiAAs with `cowsay` would
+be extra but worthwhile in the future. The underlying tool that handles the
+GPG and SSH keys is called [keychain][]; be sure to check it out.
 
-![Quick breeze of using the shell.](/images/using-shell.gif)
+TODO: Get gif of me going to the Wintermute directory; do diffs between two
+versions of a file. Get log info from git. Log into SSH.
 
-You can see by my very short prompt that I don't care much for information
-being shown up in the shell that boldly. I'm more concerned with the output of
-applications as opposed to my current status in a directory.
+From the GIF above, the biggest thing I'd want one to notice is the heavy use
+of aliases. For me, it's a lot easier to write `gc` instead of `git commit`
+constantly, or `findpkg` instead of `apt-cache search`. Whenever I notice I
+use a command like a *lot*, I make it a habit to make it an alias.
 
 ## My Editor(s): `vim` & `subl`
 I tend to stick to the console when I work on code. Vim has been the editor of
@@ -84,8 +88,12 @@ figured why not.
 
 [bash-it]: https://github.com/revans/bash-it
 [my_bash-it]: https://github.com/jalcine/bash-it
+[dotfiles]: https://github.com/jalcine/dotfiles
+[vimrc]: https://github.com/jalcine/vimrc
 [vim]: http://vim.sf.net
 [subl]: http://sublimetext.com
 [subl_pkg]: http://sublime.wbond.net
 [kde]: http://kde.org
 [kubuntu]: http://kubuntu.org
+[gnu bash]: http://www.gnu.org/software/bash/manual/bashref.html
+[keychain]: http://www.funtoo.org/Keychain
