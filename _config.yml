@@ -29,6 +29,10 @@ redcarpet:
     - autolink
     - subscript
     - fenced_code_blocks
+    - no_intra_emphasis
+    - quote
+    - with_toc_data
+    - link_attributes
 
 # Don't bother with theses.
 exclude:

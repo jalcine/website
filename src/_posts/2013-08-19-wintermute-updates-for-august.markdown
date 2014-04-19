@@ -42,9 +42,11 @@ Creator and the likes. I might add it to a PPA of mine in the future.
 One thing that I noticed is vital is **instant updates**. Before I can explain
 the importance of this, I'd have to explain how Wintermute would operate on a
 machine. At the current build, Wintermute does nothing more besides creating a
-new [`ProcessModule`](https://github.com/jalcine/wintermute/commit/91703e4a72ac7639dea290713c9be9b2941d1d92#src/Wintermute/Procedure/process_module.hpp),
-send out one [`HeartBeatCall`](https://github.com/jalcine/wintermute/commit/79ac9f7a4d35b3189ab2e2cf31c8dc85572c4b75#src/Wintermute/Procedure/heart_beat_call.hpp)
-and then hang. Nothing much. The intended goal is to replace that hang with the
+new `[ProcessModule][]`, send out one `[HeartBeatCall][]` and then hang. 
+Nothing much. The intended goal is to replace that hang with the
 loading of a plug-in. Wintermute, by itself, can *not* and *will* not do
 anything. I chose this to remove as much dependencies to the core binary as
 possible so that binaries can be reloaded quickly.
+
+[processmodule]: https://github.com/jalcine/wintermute/commit/91703e4a72ac7639dea290713c9be9b2941d1d92#src/Wintermute/Procedure/process_module.hpp
+[heartbeatcall]: https://github.com/jalcine/wintermute/commit/79ac9f7a4d35b3189ab2e2cf31c8dc85572c4b75#src/Wintermute/Procedure/heart_beat_call.hpp

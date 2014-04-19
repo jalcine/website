@@ -99,9 +99,8 @@ hr
 p
   clear: both
 
-p > img
+img
   display: block
-  margin: 0.5rem auto
   vertical-align: top
 
   &.full
@@ -112,7 +111,7 @@ p > img
   &.text
     padding: 0rem 1rem
 
-  &.left, &.right
+  &.left, &.right, &.middle
     min-width: 50%
     max-width: 57.5%
 
@@ -123,3 +122,8 @@ p > img
   &.left
     margin-left: -10%
     float: left
+
+  &.middle
+    float: none
+    clear: both
+    margin: 0rem auto
