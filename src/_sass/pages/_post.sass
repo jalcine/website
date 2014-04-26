@@ -1,50 +1,45 @@
 body.post
-  header[role=content]
-    clear: both
-    h2
-      margin: 0.1rem
-    small.meta
-      height: 2.625rem
-      line-height: 2.625rem
-      margin-right: 15%
-      float: right
+  header.post, footer.post
+    margin: 0rem auto
+    text-align: center
 
-  section[role=main]
-    width: 100%
-    max-width: inherit
-    font-size: 1.2rem
+    p
+      font-size: 0.8rem
 
-    p, blockquote, h1, h2, h3, h4, h5, h6,
-    .footnotes, ul, ol
-      line-height: 1.8
+  section.post
+    padding: 0.5rem 10%
+    width: 80%
+
+    blockquote, ul, ol
+      line-height: 1.5rem
+      padding: 0rem 10%
       width: 80%
 
-    p, blockquote, .footnotes, ul, ol
-      margin: 0.5rem auto
-      padding: 0.75rem 0rem
+    p, li
+      line-height: 1.75rem
+      font-size: 1.1rem
 
-    .footnotes > ol > li > p
-      width: 100%
+    p
+      margin: 1rem 0rem
+      text-align: justify
+
+      img
+        margin: 0rem auto
+        max-width: 95%
 
     ul, ol
-      width: 70%
+      margin: 1rem 0rem
 
-      li > p
-        width: 100%
+    .footnotes > ol > li,
+    .footnotes > ol > li > p
+      font-size: 0.8rem
 
-    blockquote
-      width: 100%
-      font-size: 1.5rem
+    @media #{$small-width}
+      &
+        width: 95%
+        padding: 0.5rem 2.5%
 
-    h1, h2, h3, h4, h5, h6
-      margin: 1rem auto
-
-    pre > code
-      display: block
-      width: 80%
-      margin: 0rem auto
-
-    img
-      display: block
-      margin: 0rem auto
-      text-align: center
+  footer.post
+    border-top: 0.2rem solid lighten($lavender, 20%)
+    padding-top: 0.5rem
+    width: 80%

@@ -1,28 +1,14 @@
-guard :bundler do
-  watch('Gemfile')
-end
+# vim: set ft=ruby tw=78 fdm=syntax
 
-guard 'ctags-bundler' do
-  watch /^_plugins/
-  watch 'Gemfile.lock'
+guard :livereload do
+  watch('_site')
 end
 
 guard :rack, port: 1993 do
-  watch 'config.ru'
-  watch 'Gemfile.lock'
+  watch('Gemfile.lock')
+  watch('config.ru')
 end
 
-guard 'jekyll-plus', serve: false do
-  watch /^src\/_(posts|drafts|includes|layouts)/
-  watch /^*\.haml$/
-  ignore /^_site/
-end
-
-guard :sass, source: 'src/_sass', destination: './_site/css' do
-  watch /^src\/_sass/
-end
-
-guard :livereload do
-  watch /^_site*/
-  ignore /^src/
+guard :bundler do
+  watch('Gemfile')
 end

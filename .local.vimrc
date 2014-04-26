@@ -9,6 +9,16 @@ func! s:publish_blog()
   silent :Dispatch rsync --verbose --delete --recursive ./_site/* jalcine.me:/var/www/jalcine.me
 endfunc
 
-nnoremap <silent> <F3> s:build_blog()
-command! -nargs=0 BlogBuild call s:build_blog()
+func! s:clean_blog()
+  silent :Dispatch rm _site -rvf
+endfunc
+
+func! s:deploy_blog()
+  silent :Dispatch rm _site -rvf && bundle exec jekyll build && rsync --verbose
+        \  --delete --recursive ./_site/* jalcine.me:/var/www/jalcine.me
+endfunc
+
+command! -nargs=0 BlogBuild   call s:build_blog()
+command! -nargs=0 BlogClean   call s:clean_blog()
 command! -nargs=0 BlogPublish call s:publish_blog()
+command! -nargs=0 BlogDeploy  call s:deploy_blog()

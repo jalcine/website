@@ -1,46 +1,92 @@
 @import '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
 
-$body-font-family: Lato, Verdana
-$header-font-family: Cabin, Gregoria
+$body-font-family: "Noto Sans", "Droid Sans", Roboto, Lato, Verdana
+$header-font-family: "Roboto Slab", Cabin, Gregoria
 $mono-font-family: Monaco, Droid Sans Pro, monospace
 $font-size: 16px
 
-h1, h2, h3, h4, h5, h6, blockquote > p
+/** {{{ Headings **/
+h1, h2, h3, h4, h5, h6, blockquote
   font-family: $header-font-family
+  margin: 0.8rem 0rem
+
+h1, h2, h3
+  font-weight: 900
+
+h3, h4, h5
+  font-weight: 700
+
+h1
+  font-size: 2.7rem
+h2
+  font-size: 2.5rem
+h3
+  font-size: 2.3rem
+h4
+  font-size: 2.1rem
+h5
+  font-size: 1.9rem
+h6
+  font-size: 1.7rem
+/** }}} End Headings **/
 
 p, body
   font-family: $body-font-family
+  line-height: 1.3
+
+strong
+  font-weight: 900
+
+em
+  font-style: italic
+
+sup
+  vertical-align: super
+  font-size: smaller
+
+ol
+  list-style-type: decimal
 
 body
   font-size: 100%
   font-size: $font-size
 
+@media #{$small-width}
+  body
+    font-size: 90%
+    font-size: $font-size * 0.9
+
+@media #{$medium-width}
+  body
+    font-size: 110%
+    font-size: $font-size * 1.1
+
 blockquote
   background-color: darken($lavender, 40%)
   color: $white
-  margin: 1rem auto
-  padding: 1rem
-  width: 90%
+  border: 1rem solid darken($lavender, 40%)
+  padding: 0.5rem 0rem
+  width: 95%
+  margin: 0rem auto
 
 ul > li
   list-style: square
 
 code, pre
   font-family: $mono-font-family
+  color: lighten($foreground-color, 30%)
+
+p > code, p > pre, .highlight .pre
+  font-size: 0.7rem
 
 p > code, p > pre
-  background-color: $white
-  border: 2px solid $lavender
-  border-radius: 5px
-  color: $black
+  background-color: $foreground-color
+  color: $background-color
   padding: 0.2rem
-  margin: 0rem 0.1rem
+  line-height: 1rem
 
-.highlight
-  pre
-    font-size: 0.9rem
-    font-family: $mono-font-family
-    padding: 0.2rem 0.4rem
+.highlight > pre
+  padding: 1.2rem 0.4rem
 
 hr
   width: 80%
@@ -48,6 +94,34 @@ hr
   border: none
   height: 0.1rem
 
-.footnotes
-  width: 90%
-  font-size: 1rem
+p
+  clear: both
+
+img
+  display: block
+  vertical-align: top
+
+  &.full
+    min-width: 137.5%
+    max-width: 137.5%
+    margin-left: -20%
+
+  &.text
+    padding: 0rem 1rem
+
+  &.left, &.right, &.middle
+    min-width: 50%
+    max-width: 57.5%
+
+  &.right
+    margin-right: -10%
+    float: right
+
+  &.left
+    margin-left: -10%
+    float: left
+
+  &.middle
+    float: none
+    clear: both
+    margin: 0rem auto

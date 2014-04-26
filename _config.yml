@@ -6,43 +6,40 @@ description: "A little collection of text and images."
 timezone: "America/New_York"
 source: src
 
-# VCS data
-git:
-  branch: "master"
-post:
-  extension: "markdown"
-
 # Blog specifics.
-future: true
-show_drafts: false 
+future: false
+show_drafts: false
 relative_permalinks: false
 lsi: false
 permalink: "/weblog/:title"
-paginate: 5
+paginate: 10
 paginate_path: "/weblog/:num"
 
 gems:
   - jekyll-compass
   - jekyll-haml
+  - jekyll-mentions
+  - jemoji
 
 # Markdown engine.
 pygments: true
-redcarpet:
-  extensions: 
-    - footnotes
-    - autolink
-    - strikethrough
-    - superscript
-    - subscript
-    - no_intra_emphasis
-    - fenced_code_blocks
-    - with_toc_data
+markdown: redcarpet
+extensions: 
+  - smart
+  - footnotes
+  - autolink
+  - subscript
+  - fenced_code_blocks
+  - no_intra_emphasis
+  - quote
+  - with_toc_data
+  - link_attributes
 
 # Don't bother with theses.
 exclude:
   - 'bin'
   - "*.md"
-  - "*file*"
+  - "*file"
   - "*config*"
   - 'sass'
   - '*tags*'

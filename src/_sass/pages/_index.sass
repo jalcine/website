@@ -1,40 +1,29 @@
 body.index
-  display: table
-
   > section[role=main]
-    display: table-cell
-    vertical-align: middle
-    text-align: center
-    width: 100%
-    height: 100%
-    border-left: 4rem solid darken($background-color, 40%)
-    border-right: 4rem solid darken($background-color, 40%)
+    width: 90%
+    margin-left: auto
+    margin-right: auto
 
-    h1
-      margin: 0rem
+    p.grand
+      font-size: 1.15rem
+      color: darken($lavender, 40%)
+      width: 80%
+      margin: 2rem auto
+      text-align: justify
 
-    img.head
-      background-color: mix($lavender, $black, 60%)
-      border: 4px solid mix($lavender, $black, 60%)
-      box-shadow: 0rem 0rem 0.7rem mix($lavender, $black, 80%)
-      border-radius: 49%
-      width: 14rem
-      height: 14rem
-      min-height: 14rem
-      min-width: 14rem
-      margin: 0.5rem
+    h1.title
+      text-align: center
 
-    ul
-      display: block
-      margin: 0.5rem 0rem
-      padding: 0rem
+    img.full
+      margin: 0rem auto
+      min-width: 0rem
+      width: 60%
 
-      li
-        display: inline-block
-        text-transform: small-caps
-        &:after
-          content: '\2014'
-          color: $gray
+    @media #{$medium-width}
+      &
+        width: 80%
 
-        &:last-child:after
-          content: ''
+    @media #{$large-width}
+      &
+        width: 70%
+

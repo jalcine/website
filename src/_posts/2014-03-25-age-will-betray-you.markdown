@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Age Will Betray You"
-date: 2014-02-07 23:01:05 EST
+date: 2014-03-25 22:49:56 EDT
 categories: opinion
 ---
 
@@ -23,4 +23,7 @@ there's been times I couldn't attend particular events purely out of an age
 restriction or discrimination.
 
 I don't know how we can fix this aside from preventing it being trickled down
-the generational pipeline of society.
+the generational pipeline of society. It sucks, but it comes with how we do
+education as well, I think. It's something that's being banging around in my
+head. I try to treat my siblings with the level of intellectual compassion as
+I would want to be treated myself and it works out fairly well.

@@ -27,11 +27,11 @@ gyroscopic applications, for example.
 Ironically, the first thing you'd have to do is plug your device to your
 station of choice. Check if it's visible to `adb` by running the following:
 
-{% highlight bash %}
+```bash
 $ adb devices
 List of devices attached 
 <hexadecimal number of device>
-{% endhighlight %}
+```
 
 > If you see no devices listed, please ensure that **USB Debugging** is
 > enabled on your Android device.
@@ -44,9 +44,9 @@ device and make note of the IP address it has. You can find this under
 With that knowledge, and your Android device still plugged in, let's set the
 device's debugging tool to listen over TCP on port 5555:
 
-{% highlight bash %}
+```bash
 $ adb tcpip 5555
-{% endhighlight %}
+```
 
 > I've seen that you'd need administrative privileges if you're running
 > Windows, check out [this question](http://stackoverflow.com/questions/2604727/how-can-i-connect-to-android-with-adb-over-tcp)
@@ -56,10 +56,10 @@ From here, you can (and should unless you're charging over USB) remove your
 Android device from your laptop. We'd finish up the connection by connecting
 to the device over the network.
 
-{% highlight bash %}
+```bash
 $ adb connect 0.0.0.0
 # Replace 0.0.0.0 with the device's IP you found earlier.
-{% endhighlight %}
+```
 
 That's all there is to it! You should now be able to find this device in
 Eclipse or Android Studio for debugging now. If any more questions come up,

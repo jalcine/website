@@ -1,32 +1,32 @@
 ---
 layout: default
-classes: post pagination
+classes: post
 ---
-%header{role: :content}
-  %small.meta
-    %i.fa.fa-fw.fa-calendar-o
-    ="{{ page.date | date_to_string }}"
-  %h2= "{{ page.title }}"
+%header.post
+  %h1= "{{ page.title }}"
 
+  %p
+    %span.time
+      %strong
+        &#x23F0; Posted
+      %time= "{{ page.date | date_to_string }}"
+    —
+    %span.author
+      %strong
+        &#x2668; Written by
+      %a{href: '/about'}= "{{ site.author }}"
+    —
+    %span.categories
+      %strong
+        &#x26C9; Categorized under
+      %a{href: "/weblog/categories/{{ page.categories[0] }}"}
+        ="{{ page.categories[0] }}"
 
-%section{role: :content}
+%section.post
   :plain
     {{ content }}
 
-%footer
-  %p= "This was classed under {{ page.categories | array_to_text_sentence }}."
-  :plain
-    <p class="paginator">
-      {% if page.next %}
-        <a class="next" href="{{ page.next.url }}">
-          Next Entry
-          <i class='fa fa-fw fa-arrow-right'></i>
-        </a>
-      {% endif %}
-      {% if page.previous %}
-        <a class="previous" href="{{ page.previous.url }}">
-          <i class='fa fa-fw fa-arrow-left'></i>
-          Previous Entry
-        </a>
-      {% endif %}
-    </p>
+%footer.post
+  %p
+    This was categorized under 
+    <strong>{{ page.categories | array_to_sentence_string }}</strong>.

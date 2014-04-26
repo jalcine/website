@@ -9,7 +9,7 @@ module Jekyll
       super
       @text           = text
       @cache_disabled = false
-      @cache_folder   = File.expand_path "../_gist_cache", File.dirname(__FILE__)
+      @cache_folder   = File.expand_path "../.gist-cache", File.dirname(__FILE__)
       FileUtils.mkdir_p @cache_folder
     end
 
@@ -26,7 +26,7 @@ module Jekyll
 
     def html_output_for(script_url, code)
       code = CGI.escapeHTML code
-      "<script src='#{script_url}' type='text/javascript'><!-- for the luz --></script><div><noscript><pre><code>#{code}</code></pre></noscript></div>"
+      "<pre><code>#{code}</code></pre>"
     end
 
     def script_url_for(gist_id, filename)

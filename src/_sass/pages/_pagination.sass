@@ -1,17 +1,40 @@
 body.pagination
-  section[role=main]
-    p.entry
-      time
-        font-weight: bold
-        text-transform: uppercase
-        float: right
-    p.paginator
-      clear: both
-      height: 1.5rem
-      width: 50%
-      margin: 0rem auto
+  p.paginator
+    clear: both
+    display: block
+    width: 60%
+    margin: 1rem auto
+    text-align: center
+    height: 1rem
 
-      a.previous
+    @media #{$small-width}
+      &
+        width: 97.5%
+
+    a
+      display: block
+      float: left
+      line-height: 1rem
+      width: 50%
+      text-align: center
+
+  @media #{$small-width}
+    &
+      width: 97.5%
+
+  section[role=entries]
+    width: 80%
+    margin: 0rem auto
+
+    p.entry
+      margin: 1rem auto
+
+      &:before
+        +transition(all 0.3s)
+        content: '\204B'
         float: left
-      a.next
-        float: right
+        font-size: 2.5rem
+        line-height: 3rem
+        margin-left: -2rem
+        margin-right: 1rem
+        color: darken($background-color, 5%)
