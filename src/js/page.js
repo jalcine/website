@@ -1,11 +1,12 @@
 (function(){
   'use strict';
 
-  WebFont.load({
-    google: {
-      families: ['Lato', 'Cabin', 'Droid Sans Pro']
-    }
-  });
+	var jalcine = {
+		/* 
+		 * So I'm planning to add.
+		 */ 
+		init : function() {}
+	};
 
-  var jalcine = {};
+	jalcine.init();
 })();

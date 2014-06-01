@@ -14,7 +14,6 @@ gem 'jekyll', '1.5.1'
 gem 'jekyll-haml', '~> 0.1.1'
 gem 'jekyll-compass', '~> 1.0.6'
 gem 'jekyll-mentions', '0.0.6'
-gem 'jemoji', '0.1.0'
 
 gem 'rack', '1.5.2'
 gem 'rack-contrib', '1.1.0'

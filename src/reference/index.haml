@@ -1,0 +1,30 @@
+---
+layout: default
+title: "Reference"
+---
+
+:markdown
+  Most of the content could have gone into a weblog post, but I felt that my 
+  weblog is meant to be more opinionated and report-like than actually 
+  documentation-orientated. So I decided to implement this section of my 
+  site, the Reference section.
+
+%h2 Operating System Assumptions
+:markdown
+  All of the documents here, unless otherwise specified, assumes that you're
+  running the [Ubuntu][] or [Debian][] operating systems. I'm looking to make
+  CentOS more of a serious operating system to me since it does pretty well in
+  the cloud and is used more in enterprise, so why not?
+  [ubuntu]: http://ubuntu.com
+  [debian]: http://debian.org
+
+#legion
+  %a.region{href: '/reference/vim', title: 'vim Configuration'}
+    %img{src: '/images/ref-shell-vim.png', title: 'Vim Configuration'}
+    %b Setting Up, Using and Working with Vim
+  %a.region{href: '/reference/bash', title: 'bash Configuration'}
+    %img{src: '/images/ref-shell-bash.png', title: 'Bash Configuration'}
+    %b Setting Up, Using and Working with Bash
+  %a.region{href: '/reference/tmux', title: 'tmux Configuration'}
+    %img{src: '/images/ref-shell-tmux.png', title: 'tmux Configuration'}
+    %b Setting Up, Using and Working with Tmux

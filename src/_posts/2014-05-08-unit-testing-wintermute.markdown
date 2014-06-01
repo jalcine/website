@@ -19,7 +19,7 @@ running a simple command.
 
 ## Enabling CMake's Test Driver
 
-Using CMake's test driver, [CTest][], isn't too difficult. It requires the
+Using CMake's test driver, [CTest][ctest], isn't too difficult. It requires the
 inclusion of a file and a few macro calls. The CTest Wiki [tells you how to do
 it][ctest_use] so I won't go into detail here. What I _will_ do is mention how
 I managed to make the process a bit easier. I have to note, the most annoying
@@ -98,7 +98,8 @@ Thanks to CTest, a `test` target is defined that takes all of the tests I've
 defined above and made it easier to one-click (or command) to test every
 target. When I run my suite for tests a là `make test`; I get the following
 as output:
-```sh
+
+```
 application feature/build-unit-tests/4f3bdc4 $ make -C build test
 make: Entering directory `/home/jacky/Development/Projects/Wintermute/application/build'
 Running tests...
@@ -162,6 +163,6 @@ it), you'd see that it's failing. I'm glad it is for now, but I'm working to
 make a more testable, sane and potential awesome 0.1.0 release of Wintermute.
 
 [Wintermute]: http://wintermute.jalcine.me
-[QtTest]: http://google.com
-[CMake's test driver]: http://google.com
-[ctest_use]: http://google.com
+[QtTest]: http://qt-project.org/doc/qt-4.8/qttest.html
+[ctest]: http://www.cmake.org/cmake/help/v2.8.8/ctest.html 
+[ctest_use]: http://www.vtk.org/Wiki/CMake/Testing_With_CTest

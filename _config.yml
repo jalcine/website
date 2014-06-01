@@ -19,7 +19,6 @@ gems:
   - jekyll-compass
   - jekyll-haml
   - jekyll-mentions
-  - jemoji
 
 # Markdown engine.
 pygments: true
