@@ -1,11 +1,11 @@
-/* vim: set fdm=marker fdl=0: */
+// vim: set fdm=marker fdl=0:
 
-@import '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
+//@import '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
 
 // {{{ Options
-$body-font-family: "Noto Sans", "Droid Sans", Roboto, Lato, Verdana, "Helvetica Neue"
-$header-font-family: "Roboto Slab", Cabin, Gregoria, "Helvetica Neue"
-$mono-font-family: "Droid Sans Pro", Monaco, monospace
+$body-font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif
+$header-font-family: "Open Sans", Georgia, Arial, sans-serif
+$mono-font-family: monospace
 $font-size: 16px
 // }}} End Options
 
@@ -34,13 +34,16 @@ h6
   font-size: 1.5rem
 /** }}} End Headings **/
 
-// {{{ Generic Selectors
+// {{{ Tags
 p, body
   font-family: $body-font-family
   line-height: 1.3
 
 strong
   font-weight: 900
+
+  &.lead
+    text-transform: uppercase
 
 em
   font-style: italic
@@ -86,45 +89,35 @@ p > code, p > pre
   width: 100%
   overflow-x: auto
 
+p
+  clear: both
+
 hr
   width: 80%
   background-color: $lavender
   border: none
   height: 0.1rem
 
-p
-  clear: both
 /// }}}
 
+// {{{ Mutating Selectors
+// TODO Make this into a splat of a list.
+.text-center
+  text-align: center
+
+.text-left
+  text-align: left
+
+.text-right
+  text-align: right
+
+.text-justify
+  text-align: justify
+
+
+// }}}
+
 // {{{ Other Selectors
-img
-  display: block
-  vertical-align: top
-
-  &.full
-    min-width: 137.5%
-    max-width: 137.5%
-    margin-left: -20%
-
-  &.text
-    padding: 0rem 1rem
-
-  &.left, &.right, &.middle
-    min-width: 50%
-    max-width: 57.5%
-
-  &.right
-    margin-right: -10%
-    float: right
-
-  &.left
-    margin-left: -10%
-    float: left
-
-  &.middle
-    float: none
-    clear: both
-    margin: 0rem auto
 
 section.lead
   margin: 0rem auto

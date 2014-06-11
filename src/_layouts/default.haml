@@ -3,9 +3,7 @@
   %head
     = "{% haml head.haml %}"
   %body{class: "{{ page.classes }}"}
-    %header{role: :main}
-      = "{% haml header.haml %}"
+    {% haml header.haml %}
     %section{role: :main}
       = "{{ content }}"
-    %footer{role: :main}
-      = "{% haml footer.haml %}"
+    {% haml footer.haml %}

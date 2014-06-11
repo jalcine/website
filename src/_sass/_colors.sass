@@ -1,15 +1,16 @@
 @import 'compass/css3/transition'
 @import 'compass/css3/text-shadow'
+@import 'compass/css3/box-shadow'
 
-/** yanked from https://github.com/mrmrs/colors **/
+/** {{{ yanked from https://github.com/mrmrs/colors **/
 
-$aqua:  #7FDBFF
-$blue:  #0074D9
-$navy:  #001F3F
-$teal:  #39CCCC
-$green: #2ECC40
-$olive: #3D9970
-$lime:  #01FF70
+$aqua:    #7FDBFF
+$blue:    #0074D9
+$navy:    #001F3F
+$teal:    #39CCCC
+$green:   #2ECC40
+$olive:   #3D9970
+$lime:    #01FF70
 
 $yellow:  #FFDC00
 $orange:  #FF851B
@@ -18,28 +19,28 @@ $fuchsia: #F012BE
 $purple:  #B10DC9
 $maroon:  #85144B
 
-$white:  #efefef
-$silver: #ddd
-$gray:   #aaa
-$black:  #111
+$white:   #efefef
+$silver:  #ddd
+$gray:    #aaa
+$black:   #111
 
-/** end yank **/
+/** }}} end yank **/
 
 $lavender: #9A8FC8
 
-$background-color:   mix($white, $lavender, 90%)
-$foreground-color:   mix($black, $lavender, 70%)
+$background-color: mix($white, $lavender, 90%)
+$foreground-color: mix($black, $lavender, 70%)
 
-$link-color:        $blue
+$link-color: darken($blue, 5%)
 $link-hover-color:  darken($link-color, 10%)
 
 body
   background-color: $background-color
-  color:            $foreground-color
+  color: $foreground-color
 
 a
   +transition(color 0.2s)
-  color:           $link-color
+  color: $link-color
   text-decoration: none
 
   &:hover

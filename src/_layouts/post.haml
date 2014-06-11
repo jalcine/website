@@ -5,24 +5,23 @@ classes: post
 %header.post
   %h1= "{{ page.title }}"
 
-  %p
+%section.post
+  %aside.meta
     %span.time
       %strong
         &#x23F0; Posted
       %time= "{{ page.date | date_to_string }}"
-    —
+    %br
     %span.author
       %strong
         &#x2668; Written by
       %a{href: '/about'}= "{{ site.author }}"
-    —
+    %br
     %span.categories
       %strong
-        &#x26C9; Categorized under
+        &#x26C9; Filed under
       %a{href: "/weblog/categories/{{ page.categories[0] }}"}
         ="{{ page.categories[0] }}"
-
-%section.post
   :plain
     {{ content }}
 

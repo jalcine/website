@@ -1,21 +1,39 @@
 ---
 layout: default
 title: Welcome
-classes: "index"
+description: "This is my website's front page; the welcome mat if you may."
+classes: "page index"
 ---
 
-%h1.title
-  I'm Jacky! &#9786;
+%h1.lead Jacky Alcine
+%p.text-justify
+  %strong.lead This site serves as my public-facing "portal" on the Internet.
+  I'd say comfortably that the posts and content you find here are
+  pieces of work I cobbled together and deemed worthy of sharing to
+  colleagues and non-colleagues alike.
 
-%p.grand
-  This is my website. It tells my <a href="/weblog">chronicles
-  </a> and a bit <a href="/about/">about me</a>.
-  I wrote about <a href=
-  "{% post_url 2013-09-20-the-other-side-of-being-a-young-developer %}">
-  being a young developer</a> for the curious. I reply to e-mail,
-  but typically sooner to those that are cryptographically encrypted.
-  Below is a token of good will, a gif to englighten your digital soul.
-  Take it with gratitude. <strong><a href='/qr/'>Reach out to me</a> the right way.</strong>
-%a{href:'/qr/'}
-  %img.full{src: 'images/welcome.gif', alt: 'Power Rangers & TMNT',
-    title: 'Power Rangers & TMNT'}
+%aside.half
+  %h4 Cryptography
+  %p.text-justify
+    I take part of the use of cryptography signatures to identify and encrypt
+    data whenever deemed necessary. The likes are typically taken for e-mail and
+    release of software.
+  %br
+  %p
+    %strong
+      %a{href: '/jalcine.gpg', title: 'A1A5 A0EB B69F 23AE 67B6 F914 2A23 4ABC 6E76 7393'}
+        Public Key
+      &
+      Checksum:
+      %pre 4887290abce9139de0844aae600e1ac
+
+%aside.half
+  %h4 Contact
+  %p.text-justify
+    :markdown
+      I'm reachable mainly by e-mail so feel free to send an e-mail to
+      `me` at the domain you're visiting right now. Outside of classically used 
+      mediums for communication, [Twitter][] tends to be almost as fast as SMS.
+      _Almost_.
+
+      [twitter]: https://www.twitter.com/jackyalcine
