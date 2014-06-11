@@ -13,6 +13,7 @@ $medium-width: "(min-width: #{$small}  + #{$buffer}) and (max-width: #{$medium})
 $large-width: "(min-width: #{$medium} + #{$buffer}) and (max-width: #{$large})";
 
 /*$small-up: "(min-width: #{$small})";*/
+$medium-down: "(max-width: #{$medium})";
 $medium-up: "(min-width: #{$medium})";
 $large-up: "(min-width: #{$large})";
 
