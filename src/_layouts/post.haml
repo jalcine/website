@@ -15,13 +15,13 @@ classes: post
     %span.author
       %strong
         &#x2668; Written by
-      %a{href: '/about'}= "{{ site.author }}"
+        %a{href: '/about'}= "{{ site.author }}"
     %br
     %span.categories
       %strong
         &#x26C9; Filed under
-      %a{href: "/weblog/categories/{{ page.categories[0] }}"}
-        ="{{ page.categories[0] }}"
+        %a{href: "/weblog/categories/{{ page.categories[0] }}"}
+          ="{{ page.categories[0] }}"
   :plain
     {{ content }}
 

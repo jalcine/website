@@ -6,6 +6,9 @@
 
 $main-margin: 7.5%
 
+section[role=main], footer[role=main]
+  margin: 0.75rem $main-margin
+
 header[role=main]
   +box-shadow(0px 0px 5px $black)
   background-color: mix($black, $lavender, 20%)
@@ -42,7 +45,6 @@ header[role=main]
         color: $white
 
 section[role=main]
-  margin: 0.75rem $main-margin
   font-size: 0.9rem
 
   @media #{$medium-up}
@@ -51,7 +53,8 @@ section[role=main]
   @media #{$large-up}
     margin: 0.75rem ($main-margin * 3.75)
 
-//footer[role=main]
+footer[role=main]
+  font-size: 0.8rem
 
 aside.half
   width: 40%

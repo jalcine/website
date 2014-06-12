@@ -1,3 +1,5 @@
+@import 'sizes'
+
 body.index
   > section[role=main]
     h1.lead
@@ -6,7 +8,13 @@ body.index
 
     > img
       margin: 1rem auto
-      display: block
+      width: 100%
+      max-width: 30rem
+
+      @media #{$medium-up}
+        &
+          margin: 1rem auto
+          display: block
 
     > p
       display: inline-block
