@@ -51,8 +51,7 @@ tiling and snapping, it doesn't just add up to me. Of course, each set up is
 (hopefully) as unique as its user/owner so that's that.
 
 [^1]: I might post about this when I feel more confident with the process.
-[^2]: For the not-knowing, **window managers** are applications that tell
-      other applications where they are on the screen.
+[^2]: For the not-knowing, **window managers** are applications that tell other applications where they are on the screen.
 [^3]: A anti-social reader powered by Stringer.
 [1]: http://www.kubuntu.org
 [2]: https://www.youtube.com/watch?v=tatw6W7vHLM

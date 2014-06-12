@@ -24,8 +24,3 @@ classes: post
           ="{{ page.categories[0] }}"
   :plain
     {{ content }}
-
-%footer.post
-  %p
-    This was categorized under 
-    <strong>{{ page.categories | array_to_sentence_string }}</strong>.

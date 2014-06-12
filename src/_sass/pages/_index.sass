@@ -7,7 +7,7 @@ body.index
       font-variant: small-caps
 
     > img
-      margin: 1rem auto
+      margin: 0.2rem auto
       width: 100%
       max-width: 30rem
 
@@ -20,5 +20,10 @@ body.index
       display: inline-block
 
       &.lead
-        width: 70%
-        margin: 0rem 15%
+        width: 90%
+        margin: 0.5rem 5%
+
+        @media #{$medium-up}
+          &
+            width: 70%
+            margin: 0.5rem 15%

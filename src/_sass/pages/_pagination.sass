@@ -26,15 +26,9 @@ body.pagination
     width: 80%
     margin: 0rem auto
 
+    @media #{$small-width}
+      &
+        width: 90%
+
     p.entry
       margin: 1rem auto
-
-      &:before
-        +transition(all 0.3s)
-        content: '\204B'
-        float: left
-        font-size: 2.5rem
-        line-height: 3rem
-        margin-left: -2rem
-        margin-right: 1rem
-        color: darken($background-color, 5%)

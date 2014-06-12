@@ -22,7 +22,7 @@ gems:
 
 # Markdown engine.
 pygments: true
-markdown: redcarpet
+#markdown: redcarpet
 extensions: 
   - smart
   - footnotes
