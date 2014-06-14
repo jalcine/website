@@ -23,7 +23,7 @@ use both of those to provide context-relevant, if not crucial, information
 about the current scenario is the core essence of what's to be captured by the
 Wintermute project.
 
-## Storing and Representing Data
+## Knowing Itself
 
 Wintermute requires a means of walking over seemingly massive sets of data
 in mere moments. We already do this with current Web applications but how
@@ -56,6 +56,17 @@ processes has been more or less solved by using partial selections of
 representational data. Additionally, to do a cheap form of data integrity
 checking, including a checksum with each message allows for one to then
 challenge the actual integrity of provided data.
+
+A formalization of what processes, or rather modules, are available on a
+machine wouldn't be necessary for the sake of remote execution but they would
+be necessary for discovery and maintenance of a suite of processes in order to
+ensure that each running processes has what they need to operate. These modules
+could have exposed methods that a remote process could then invoke and await a
+reply, if said remote method _has_ a return value.
+
+With parallel processes, message serialization and remote procedure invocation,
+Wintermute can run across a vast amount of machines and provide the power it
+needs when it needs to!
 
 [wntr]: http://wintermute.jalcine.me
 [sp]: https://github.com/jalcine/wintermute
