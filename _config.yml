@@ -12,7 +12,7 @@ show_drafts: false
 relative_permalinks: false
 lsi: false
 permalink: "/weblog/:title"
-paginate: 10
+paginate: 20
 paginate_path: "/weblog/:num"
 
 gems:
@@ -22,7 +22,7 @@ gems:
 
 # Markdown engine.
 pygments: true
-#markdown: redcarpet
+markdown: redcarpet
 extensions: 
   - smart
   - footnotes
