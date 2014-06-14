@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "My Dotfiles and More: What I Use In the Shell"
-date: 2014-03-25 23:02:11 EDT
 categories:
   - development
   - thoughts
@@ -37,17 +36,11 @@ using `kwalletaskpass`, so they're pulled from my system's wallet. I don't
 have to worry about entering said passwords when prompted, ever. Also, if it's
 not running in a tmux pane (checks for $TMUX), then it prints out a
 (potentially offensive or stupid) fortune script. The amount of amusement that
-some of these have provided is priceless. Combining thiAAs with `cowsay` would
+some of these have provided is priceless. Combining this with `cowsay` would
 be extra but worthwhile in the future. The underlying tool that handles the
 GPG and SSH keys is called [keychain][]; be sure to check it out.
 
-TODO: Get gif of me going to the Wintermute directory; do diffs between two
-versions of a file. Get log info from git. Log into SSH.
-
-From the GIF above, the biggest thing I'd want one to notice is the heavy use
-of aliases. For me, it's a lot easier to write `gc` instead of `git commit`
-constantly, or `findpkg` instead of `apt-cache search`. Whenever I notice I
-use a command like a *lot*, I make it a habit to make it an alias.
+![Playing with Wintermute](/images/playing-with-wintermute-readme.gif)
 
 ## My Editor(s): `vim` & `subl`
 I tend to stick to the console when I work on code. Vim has been the editor of
