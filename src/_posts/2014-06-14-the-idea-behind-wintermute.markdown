@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2014-06-14 22:14:51 EDT
 title: "The Idea Behind Wintermute"
 categories:
   - wintermute
@@ -68,6 +69,26 @@ With parallel processes, message serialization and remote procedure invocation,
 Wintermute can run across a vast amount of machines and provide the power it
 needs when it needs to!
 
+# Building Wintermute
+
+The technical logic behind Wintermute is a bit weird. Initially, I tried
+working on the project as coming from a core executable meant to run on
+dedicated machines and build platform-dependent executables that then fed to
+the core executable to handle 'raw Wintermute-esque' work. This made less and
+less sense to me so I decided to wipe the slate clean and try a different
+approach.
+
+## The Library and the Driver
+
+The initial version of Wintermute isn't going to be an executable. Instead,
+it'll be a library that handles things that Wintermute plans to abstract away.
+These would include plugin loading, remote procedure loading, process
+identification on the procedure pool and a bit more. As usually with most of my
+C++ projects, I'll be using Qt for this, but it'll be Qt4 for now until I can
+wrestle using Qt5 properly with CMake. This also means I'll be focusing on
+making [CMake support for Vim][cmake.vim] even better. It'll be fun!
+
 [wntr]: http://wintermute.jalcine.me
 [sp]: https://github.com/jalcine/wintermute
 [zeromq]: http://zeromq.org
+[cmake.vim]: https://jalcine.github.io/cmake.vim
