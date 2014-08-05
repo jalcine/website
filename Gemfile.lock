@@ -75,6 +75,7 @@ GEM
       html-pipeline (~> 1.5.0)
       jekyll (~> 1.4)
     json (1.8.1)
+    kramdown (1.4.1)
     libnotify (0.8.2)
       ffi (>= 1.0.11)
     liquid (2.5.5)
@@ -140,11 +141,11 @@ DEPENDENCIES
   jekyll-compass (~> 1.0.6)
   jekyll-haml (~> 0.1.1)
   jekyll-mentions (= 0.0.6)
+  kramdown
   libnotify
   rack (= 1.5.2)
   rack-contrib (= 1.1.0)
   rack-livereload (= 0.3.15)
   rb-fsevent
-  redcarpet (~> 2.3.0)
   sass
   yui-compressor

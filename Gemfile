@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.1.2'
 
 gem 'rb-fsevent'
 gem 'libnotify'
 
 gem 'sass'
 gem 'compass'
-gem 'redcarpet', '~> 2.3.0'
+gem 'kramdown'
 gem 'yui-compressor'
 gem 'haml'
 
