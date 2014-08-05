@@ -1,42 +1,33 @@
 ---
-layout: default
+layout: bare
 title: Welcome
 classes: "page index"
+crypto: "A1A5 A0EB B69F 23AE 67B6 F914 2A23 4ABC 6E76 7393"
+checksum: 4887290abce9139de0844aae600e1ac
 ---
+%header{role: :masthead}
+  %div#masthead
+    %ul
+      %li
+        %a{href:'/weblog'} Blog
+      %li
+        :plain
+          &mdash;
+      %li
+        %a{href: '/about'} About
+    %img{src: '/images/me.png'}
+    %h1
+      %a{href:'/'}
+        jalcine
 
-%h1.lead
-  web.jalcine.me
-%p.text-center.lead
-  %strong.lead This site serves as my public-facing "portal" on the Internet.
-  I'd say comfortably that the posts and content you find here are
-  pieces of work I cobbled together and deemed worthy of sharing to
-  colleagues and non-colleagues alike. Below is how I would greet you in
-  person; this would suffice for now.
+%section{role: :landing}
+  :markdown
+    In short, the Web pages found here are what I think are okay enough 
+    for search engines to crawl and are worthy enough to archived into the
+    books. I [write][1] occasionally and I'm getting in the habit of 
+    [taking pictures][2]. Yeah, that's me.
 
-%img{src: 'images/welcome.gif'}
+    [1]: /weblog
+    [2]: /photolog
 
-%aside.half
-  %h4 Cryptography
-  %p.text-justify
-    I take part of the use of cryptography signatures to identify and encrypt
-    data whenever deemed necessary. The likes are typically taken for e-mail and
-    release of software.
-  %br
-  %p
-    %strong
-      %a{href: '/jalcine.gpg', title: 'A1A5 A0EB B69F 23AE 67B6 F914 2A23 4ABC 6E76 7393'}
-        Public Key
-      &
-      Checksum:
-      %pre 4887290abce9139de0844aae600e1ac
-
-%aside.half
-  %h4 Contact
-  %p.text-justify
-    :markdown
-      I'm reachable mainly by e-mail so feel free to send an e-mail to
-      `me` at the domain you're visiting right now. Outside of classically used 
-      mediums for communication, [Twitter][] tends to be almost as fast as SMS.
-      _Almost_.
-
-      [twitter]: https://www.twitter.com/jackyalcine
+    ---

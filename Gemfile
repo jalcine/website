@@ -23,3 +23,5 @@ gem 'guard'
 gem 'guard-rack', '1.4.0'
 gem 'guard-bundler'
 gem 'guard-livereload', '1.4.0'
+
+gem 'flickraw'
