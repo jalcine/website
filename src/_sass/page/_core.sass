@@ -10,6 +10,13 @@ body
   background-color: darken($white, 3%)
   color: $black
 
+  @media (min-width: #{$page-max-width})
+    &
+      min-height: $page-max-width * 0.75
+
+html
+  overflow-y: scroll // This prevents that little page jump from happening.
+
 a
   color: $navy
   text-decoration: none
@@ -20,3 +27,20 @@ a strong
 a:hover,
 a:focus
   text-decoration: underline
+
+nav >ul
+  display: inline-block
+  float: right
+  height: $text-font-size * 1.8
+
+  @media (max-width: #{$page-max-width})
+    &
+      display: block
+      width: 100%
+      text-align: center
+
+  li
+    list-style: none
+    line-height: $text-font-size * 1.8
+    display: inline-block
+    padding: 0.2rem 0.5rem

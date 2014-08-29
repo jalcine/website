@@ -1,7 +1,11 @@
 header[role=main] > nav
   padding: 0.1rem
-  margin-bottom: 0.8rem
-  margin-top: 1.2rem
+  margin: 0.8rem auto 1.2rem
+  max-width: $page-max-width
+
+  @media (max-width: #{$page-max-width})
+    &
+      text-align: center
 
   h1
     margin: 0rem
@@ -9,26 +13,9 @@ header[role=main] > nav
     font-size: $text-font-size * 1.8
 
   span.lead
+    display: inline-block
     color: $gray
     font-size: $text-font-size * 0.8
-    display: inline-block
+    position: relative
     top: $text-font-size * -0.3
     left: 10px
-    position: relative
-
-  ul
-    display: inline-block
-    float: right
-    height: $text-font-size * 1.8
-
-    @media (max-width: #{$page-max-width})
-      &
-        display: block
-        width: 100%
-        text-align: center
-
-    li
-      list-style: none
-      line-height: $text-font-size * 1.8
-      display: inline-block
-      padding: 0.2rem 0.5rem

@@ -1,0 +1,26 @@
+<ufw full="true" >
+ <defaults ipv6="yes" loglevel="full" incoming="deny" outgoing="allow"/>
+ <rules>
+  <rule direction="in" v6="False" action="limit" logtype="" dport="22"/>
+  <rule direction="in" v6="False" action="limit" logtype="" dport="80"/>
+  <rule protocol="udp" direction="in" v6="False" action="allow" logtype="log" dport="5353"/>
+  <rule protocol="tcp" direction="in" v6="False" action="allow" logtype="log" dport="135,139,445"/>
+  <rule protocol="udp" direction="in" v6="False" action="allow" logtype="log" dport="137,138"/>
+  <rule protocol="tcp" direction="out" v6="False" action="allow" logtype="log" dport="135,139,445"/>
+  <rule protocol="udp" direction="out" v6="False" action="allow" logtype="log" dport="137,138"/>
+  <rule protocol="udp" direction="out" v6="False" action="allow" logtype="log" dport="5353"/>
+  <rule direction="out" v6="False" action="limit" logtype="log" dport="5060"/>
+  <rule direction="in" v6="False" action="limit" logtype="log" dport="5060"/>
+  <rule direction="in" v6="True" action="limit" logtype="" dport="22"/>
+  <rule direction="in" v6="True" action="limit" logtype="" dport="80"/>
+  <rule protocol="udp" direction="in" v6="True" action="allow" descr="ZeroConf support" logtype="log" dport="5353" hash="6889ed5f8461cb9e858353a636071b61"/>
+  <rule protocol="tcp" direction="in" v6="True" action="allow" descr="Samba Support" logtype="log" dport="135,139,445" hash="7044c034ab8dc4b00e57df44eac8ff60"/>
+  <rule protocol="udp" direction="in" v6="True" action="allow" descr="Samba Support" logtype="log" dport="137,138" hash="ab262f833356ccd0c99cf8b46f90370e"/>
+  <rule protocol="tcp" direction="out" v6="True" action="allow" descr="Samba Support" logtype="log" dport="135,139,445" hash="8fe76258f68e7326775a1dc91eb5e655"/>
+  <rule protocol="udp" direction="out" v6="True" action="allow" descr="Samba Support" logtype="log" dport="137,138" hash="819acb84991c656cc42015f3b9a8c580"/>
+  <rule protocol="udp" direction="out" v6="True" action="allow" descr="Zeroconf Support" logtype="log" dport="5353" hash="56c83a1b6ea1a6848372cc12d78b6e71"/>
+  <rule direction="out" v6="True" action="limit" descr="SIP support" logtype="log" dport="5060" hash="c55a0b93a22d639b7ec9be7221a0c28a"/>
+  <rule direction="in" v6="True" action="limit" descr="SIP support" logtype="log" dport="5060" hash="f2daa585a876f5d34cd3c0073a4c3408"/>
+ </rules>
+ <modules enabled="nf_conntrack_irc nf_conntrack_sane nf_conntrack_proto_udplite nf_nat_ipv4 nf_conntrack_broadcast nf_nat_ftp nf_nat_h323 nf_conntrack_ftp nf_conntrack_proto_sctp nf_conntrack_netlink nf_conntrack_proto_gre nf_conntrack_netbios_ns nf_nat_snmp_basic nf_conntrack_snmp nf_conntrack_sip nf_conntrack_amanda nf_nat_sip nf_conntrack_proto_dccp nf_conntrack_tftp nf_nat_irc nf_conntrack_pptp nf_nat_pptp nf_conntrack_h323 nf_nat_proto_gre" />
+</ufw>
