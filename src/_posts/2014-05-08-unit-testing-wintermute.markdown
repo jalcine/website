@@ -28,7 +28,7 @@ thing so far about CTest is that for the most decent test, you have to call
 gimmick that's unavoidable for now. Right now, Wintermute's
 `test/unit/CMakeLists.txt` looks like the following sans the licensing:
 
-```cmake
+{% highlight cmake linenos %}
 wintermute_test_render ( TARGET arguments SOURCES arguments.cpp )
 wintermute_test_render ( TARGET event_filter SOURCES Events/message_filter.cpp )
 wintermute_test_render ( TARGET event_message SOURCES Events/message.cpp )
@@ -47,7 +47,7 @@ wintermute_test_render ( TARGET procedure_module_def SOURCES Procedure/module_de
 wintermute_test_render ( TARGET procedure_receiver SOURCES Procedure/receiver.cpp )
 wintermute_test_render ( TARGET procedure_reply_call SOURCES Procedure/reply_call.cpp )
 wintermute_test_render ( TARGET version SOURCES version.cpp )
-```
+{% endhighlight %}
 
 Initially, I thought about making it use a `glob`ing method and pick up all of
 the source code under `test/unit` but CMake doesn't detect changes to the file
@@ -63,7 +63,7 @@ and all that jazz *n times easier* for me, I wrote the following to automate
 that process each time I called the method. The logic for the
 `wintermute_test_render(TARGET SOURCES)` macro I used is as follows:
 
-```cmake
+{% highlight cmake linenos %}
 macro(wintermute_test_render)
   set(_singleArgs )
   set(_oneArgs   TARGET)
@@ -82,7 +82,7 @@ macro(wintermute_test_render)
     COMMAND $<TARGET_FILE_DIR:${_test_tgt}>/$<TARGET_FILE_NAME:${_test_tgt}>
             ${WINTERMUTE_TEST_ARGUMENTS})
 endmacro()
-```
+{% endhighlight %}
 
 It's a bit shorthand willy-nilly but in short, it takes multiple values for
 sources (`SOURCES`) with the named `TARGET`, links the static library
@@ -99,7 +99,7 @@ defined above and made it easier to one-click (or command) to test every
 target. When I run my suite for tests a là `make test`; I get the following
 as output:
 
-```
+{% highlight bash linenos %}
 application feature/build-unit-tests/4f3bdc4 $ make -C build test
 make: Entering directory `/home/jacky/Development/Projects/Wintermute/application/build'
 Running tests...
@@ -150,7 +150,7 @@ The following tests FAILED:
     8 - procedure_call-driver (SEGFAULT)
    10 - procedure_reply_call-driver (SEGFAULT)
 make: Leaving directory `/home/jacky/Development/Projects/Wintermute/application/build'
-```
+{% endhighlight %}
 
 This is actually so perfect for me when I'm working with Wintermute. If I
 forget to define a method within the binary but I never happen to call it, I

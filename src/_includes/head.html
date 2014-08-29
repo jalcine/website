@@ -1,3 +1,17 @@
 <link href='/css/page.css' rel='stylesheet' />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>{{ page.title || 'Untitled' }} - {{ site.name }}</title>
+<meta charset= utf-8'>
+<meta name='viewport' content='width=device-width,height=device-height,zoom=1'>
+<link rel='author' href='https://plus.google.com/118415769922038925979/posts'>
+<meta itemprop='name' content='{{page.title}}'>
+<meta itemprop='description' content="{{ (page.excerpt || site.description) | strip_html }}">
+<meta{property:'og:title',content='{{page.title}}'>
+<meta{property:'og:description',content="{{site.description}}">
+<meta{property:'og:url', content='{{ site.url }}{ page.url }}'>
+<meta name='twitter:card', content='summary'>
+<meta name='twitter:url', content='{{site.url}}{{page.url}}'>
+<meta name='twitter:creator', content='@jackyalcine'>
+<meta name='twitter:site', content='@jackyalcine'>
+<meta name='twitter:title', content='{{ page.title }}'>
+<meta name='twitter:domain', content='{{site.url}}'>
+<meta name='twitter:image', content='{{ site.url }}/favicon.jpg'>
