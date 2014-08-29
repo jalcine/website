@@ -1,0 +1,72 @@
+html
+  font-family: $text-font-family
+  font-size: $text-font-size
+  line-height: $text-line-height
+
+@media (max-width: #{$page-max-width})
+  html
+    font-size: $text-font-size * 1.2
+
+body
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+
+body > section[role=main]
+  margin: 0rem auto
+  padding: 0rem 1rem
+  max-width: $page-max-width
+
+h1, h2, h3, h4, h5, h6
+  margin-bottom: .5rem
+  font-weight: bold
+  line-height: 1.25
+  color: lighten($black, 5%)
+  text-rendering: optimizeLegibility
+
+  &.center
+    text-align: center
+
+h1
+  font-size: 2rem
+
+h2
+  font-size: 1.5rem
+  margin-top: 1rem
+
+h3
+  font-size: 1.25rem
+  margin-top: 1.5rem
+
+h4, h5, h6
+  font-size: 1rem
+  margin-top: 1rem
+
+strong
+  color: $black
+
+ul, ol, dl
+  margin-top: 0rem
+  margin-bottom: 1.2rem
+
+hr
+  position: relative
+  margin: 1.5rem 0
+  border: 0
+  border-top: 1px solid $gray
+  border-bottom: 1px solid $white
+
+blockquote
+  padding: .2rem 1rem
+  margin: .3rem 0
+  color: $gray
+  border-left: .25rem solid lighten($gray, 10%)
+
+@media (min-width: #{$page-max-width * 0.75})
+  blockquote
+    padding-right: 5rem
+    padding-left: 1.25rem
+
+// Extenders 
+p.lead
+  font-size: 1.25rem
+  font-weight: 300

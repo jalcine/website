@@ -1,39 +1,33 @@
 ---
 layout: default
-title: weblog/archives
-classes: pagination
+title: "Weblog"
+classes: "pagination"
 ---
 
-<p class="paginator">
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a href="/weblog/">Recent Posts</a>
-    {% else %}
-      <a href="/weblog/{{ paginator.previous_page }}">Recent Posts</a>
-    {% endif %}
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="/weblog/{{ paginator.next_page }}">Older Posts</a>
-  {% endif %}
-</p>
-
 <section role='entries'>
-  <h1>Entries</h1>
-  {% for post in paginator.posts %}
+  <h2>Entries</h2>
+  <p>Here be blog posts.</p>
+  <p class="paginator">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}<a href="/weblog/">Recent Posts</a>
+      {% else %}<a href="/weblog/{{ paginator.previous_page }}/">Recent Posts</a>
+      {% endif %}
+    {% endif %}
+    {% if paginator.next_page %}<a href="/weblog/{{ paginator.next_page }}">Older Posts</a>
+    {% endif %}
+  </p>
+
+  {% for post in site.posts %}
     <p class='entry'>
       <h3><a href="{{ post.url }}">{{post.title}}</a></h3>
-      <time>{{ post.date | date_to_string }}</time>
-      <strong>&mdash;</strong>
-      <em>{{ post.categories | array_to_sentence_string }}</em>
+      <time>{{ post.date | date_to_rfc822 }}</time>
     </p>
-  {% endfor %}
+    {% endfor %}
+
+  <p class="paginator">
+    {% if paginator.previous_page %}<a href="{{ paginator.previous_page }}">Previous</a>{% endif %}
+    {% if paginator.next_page %}<a href="{{ paginator.next_page }}">Next</a>{% endif %}
+  </p>
 </section>
 
-<p class="paginator">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page }}">Previous</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page }}">Next</a>
-  {% endif %}
-</p>
+

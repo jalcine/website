@@ -1,0 +1,21 @@
+---
+class: 'post pagination'
+layout: default
+---
+
+<header role='post'>
+  <h1 class='title'> {{ page.title }} </h1>
+</header>
+<section role='post'>
+  {{ content }}
+</section>
+<footer role='post'>
+  <p class="paginator">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page }}">Previous</a>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page }}">Next</a>
+    {% endif %}
+  </p>
+</footer>
