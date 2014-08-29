@@ -25,6 +25,7 @@ GEM
     eventmachine (1.0.3)
     fast-stemmer (1.0.2)
     ffi (1.9.3)
+    flickraw (0.9.8)
     formatador (0.2.4)
     fssm (0.2.10)
     guard (1.8.3)
@@ -132,6 +133,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  flickraw
   guard
   guard-bundler
   guard-livereload (= 1.4.0)
