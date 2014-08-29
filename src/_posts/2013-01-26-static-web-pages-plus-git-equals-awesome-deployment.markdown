@@ -98,7 +98,7 @@ After you push, you might notice information about checking out done in your
 remotes. That's the `post-recieve` hook updating the code in reaction to the 
 branch that you pushed.
 
-{% gist 4618184 %}
+<!--{% gist 4618184 %}-->
 
 # Quirks
 

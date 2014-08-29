@@ -1,47 +1,23 @@
-# vim: nospell
-name: "jalciné"
-author: "Jacky Alciné"
-url: "http://jalcine.me"
-description: "A little collection of text and images."
-timezone: "America/New_York"
-source: src
+# vim: nospell :
+source: 'src'
+destination: '_site'
+plugins: 'plugins'
+layouts: 'src/_layouts'
 
-# Blog specifics.
-future: false
-show_drafts: false
+name: 'Jacky Alciné'
+author: 'Jacky Alciné'
+url: 'http://jalcine.me'
+description: 'A little collection of text and images.'
+timezone: 'America/New_York' 
+
+pagination_path: 'weblog/:num'
+permalink: '/weblog/:title'
 relative_permalinks: false
 lsi: false
-permalink: "/weblog/:title"
-paginate: 20
-paginate_path: "/weblog/:num"
+show_drafts: false
+future: false
 
-gems:
-  - jekyll-compass
-  - jekyll-haml
-  - jekyll-mentions
-
-# Markdown engine.
-pygments: true
-markdown: redcarpet
-extensions: 
-  - smart
-  - footnotes
-  - autolink
-  - subscript
-  - fenced_code_blocks
-  - no_intra_emphasis
-  - quote
-  - with_toc_data
-  - link_attributes
-
-# Don't bother with theses.
 exclude:
-  - 'bin'
-  - "*.md"
-  - "*file"
-  - "*config*"
-  - 'sass'
-  - '*tags*'
-
-# Do it when I was born.
-port: 1993
+  - '_layouts'
+  - '_includes'
+  - '_css'
