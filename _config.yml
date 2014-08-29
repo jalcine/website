@@ -1,16 +1,23 @@
 # vim: nospell :
-source: src
-destination: _site
-plugins: plugins
-layouts: src/_layouts
+source: 'src'
+destination: '_site'
+plugins: 'plugins'
+layouts: 'src/_layouts'
 
-name: "Jacky Alciné"
-author: "Jacky Alciné"
-url: "http://jalcine.me"
-description: "A little collection of text and images."
-timezone: "America/New_York" 
+name: 'Jacky Alciné'
+author: 'Jacky Alciné'
+url: 'http://jalcine.me'
+description: 'A little collection of text and images.'
+timezone: 'America/New_York' 
+
+pagination_path: 'weblog/:num'
+permalink: '/weblog/:year/:month-:day-:title'
+relative_permalinks: false
+lsi: false
+show_drafts: false
+future: false
 
 exclude:
-  - _layouts
-  - _includes
-  - _css
+  - '_layouts'
+  - '_includes'
+  - '_css'
