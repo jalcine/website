@@ -11,7 +11,7 @@ description: 'A little collection of text and images.'
 timezone: 'America/New_York' 
 
 pagination_path: 'weblog/:num'
-permalink: '/weblog/:year/:month-:day-:title'
+permalink: '/weblog/:title'
 relative_permalinks: false
 lsi: false
 show_drafts: false
