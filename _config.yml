@@ -1,0 +1,16 @@
+# vim: nospell :
+source: src
+destination: _site
+plugins: plugins
+layouts: src/_layouts
+
+name: "Jacky Alciné"
+author: "Jacky Alciné"
+url: "http://jalcine.me"
+description: "A little collection of text and images."
+timezone: "America/New_York" 
+
+exclude:
+  - _layouts
+  - _includes
+  - _css

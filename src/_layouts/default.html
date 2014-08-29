@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html lang="en_US">
+  <head>
+    {% include head.html %}
+  </head>
+  <body{{ page.class ? " class=\" + page.class + "\"" : '' }}>
+    <section role='main'>
+      <header>{% include header.html %}</header>
+      {{ content }}
+    </section>
+  </body>
+</html>
