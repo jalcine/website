@@ -101,16 +101,8 @@ and build a freely open piece of hardware. A day like that is when I feel
 technology would be as ubiquitous as other freedoms we have today. Until then,
 I'd be coding away.
 
-[^1]: "Hackers: Heroes of the Computer Revolution" by Steven Levy, 2010,
-O'Reilly Media.
-[^2]: The state **should** have no interest in religion and therefore isn't
-obligated or should ever feel compelled to teach religious doctrines as a
-equivalent to other secular fields.
-[^3]: This would probably covering being more sharp about what permissions new
-applications would want to have on your devices. Mobile devices have a whole
-permission architecture that makes it easier to see what an application can be
-possibly do but on desktop machines, it's a bit tricky.
-[^4]: Betcha didn't know that! It was about 3 years ago since I've made the
-transition.
-[^5]: I think it's discontinued; but you probably could find an executable
-somewhere.
+[^1]: "Hackers: Heroes of the Computer Revolution" by Steven Levy, 2010, O'Reilly Media.
+[^2]: The state **should** have no interest in religion and therefore isn't obligated or should ever feel compelled to teach religious doctrines as a equivalent to other secular fields.
+[^3]: This would probably covering being more sharp about what permissions new applications would want to have on your devices. Mobile devices have a whole permission architecture that makes it easier to see what an application can be possibly do but on desktop machines, it's a bit tricky.
+[^4]: Betcha didn't know that! It was about 3 years ago since I've made the transition.
+[^5]: I think it's discontinued; but you probably could find an executable somewhere.

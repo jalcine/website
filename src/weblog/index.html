@@ -19,7 +19,7 @@ classes: "pagination"
 
   {% for post in site.posts %}
     <p class='entry'>
-      <h3><a href="{{ post.url }}">{{post.title}}</a></h3>
+      <h3><a href="{{ post.url }}">{{ post.title | markdownify }}</a></h3>
       <time>{{ post.date | date_to_rfc822 }}</time>
     </p>
     {% endfor %}

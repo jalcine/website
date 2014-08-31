@@ -51,6 +51,11 @@ pre code {
   padding: 0;
   background-color: transparent;
 }
+
+.gist .highlight {
+  margin-bottom: 0rem;
+  border: none;
+}
 .gist .gist-file .gist-data {
   font-size: .8rem !important;
   line-height: 1.4;
@@ -60,4 +65,8 @@ pre code {
   color: inherit;
   background-color: transparent;
   border-radius: 0;
+}
+
+.gist table {
+  width: 100%
 }
