@@ -17,3 +17,8 @@ body.post
   section[role=post], header[role=post], footer[role=post]
     h1, h2, h3, h4, h5, h6
       text-indent: -1.2rem
+
+      @media (max-width: #{$page-max-width})
+        &
+          text-indent: 0rem
+          text-align: center

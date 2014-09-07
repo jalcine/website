@@ -1,11 +1,22 @@
 html
-  font-family: $text-font-family
   font-size: $text-font-size
   line-height: $text-line-height
 
+  &.wf-active, &
+    font-family: $text-font-family
+
+    pre, code
+      font-family: $mono-font-family
+
+  &.wf-loading, &.wf-inactive
+    font-family: sans-serif
+
+    pre, code
+      font-family: monospace
+
 @media (max-width: #{$page-max-width})
   html
-    font-size: $text-font-size * 1.2
+    font-size: $text-font-size
 
 body
   -webkit-text-size-adjust: 100%
@@ -66,7 +77,7 @@ blockquote
     padding-right: 5rem
     padding-left: 1.25rem
 
-// Extenders 
+// Extenders
 p.lead
   font-size: 1.25rem
   font-weight: 300
