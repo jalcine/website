@@ -1,6 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (4.1.5)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
     blankslate (2.1.2.4)
     celluloid (0.15.2)
       timers (~> 1.1.0)
@@ -14,8 +20,13 @@ GEM
     execjs (2.2.1)
     fast-stemmer (1.0.2)
     ffi (1.9.3)
+    gemoji (2.1.0)
     haml (4.0.5)
       tilt
+    html-pipeline (1.10.0)
+      activesupport (>= 2)
+      nokogiri (~> 1.4)
+    i18n (0.6.11)
     jekyll (2.3.0)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
@@ -39,6 +50,11 @@ GEM
       sass (~> 3.2)
     jekyll-watch (1.1.0)
       listen (~> 2.7)
+    jemoji (0.3.0)
+      gemoji (~> 2.0)
+      html-pipeline (~> 1.9)
+      jekyll (~> 2.0)
+    json (1.8.1)
     kramdown (1.4.1)
     liquid (2.6.1)
     listen (2.7.9)
@@ -46,6 +62,10 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.4)
+    mini_portile (0.6.0)
+    minitest (5.4.1)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.9)
@@ -58,10 +78,13 @@ GEM
     redcarpet (3.1.2)
     safe_yaml (1.0.3)
     sass (3.4.2)
+    thread_safe (0.3.4)
     tilt (2.0.1)
     timers (1.1.0)
     toml (0.1.1)
       parslet (~> 1.5.0)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -70,4 +93,6 @@ PLATFORMS
 DEPENDENCIES
   haml
   jekyll
+  jekyll-gist
+  jemoji
   sass

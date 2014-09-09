@@ -1,26 +1,34 @@
-header[role=main] > nav
-  padding: 0.1rem
-  margin: 0.8rem auto 1.2rem
-  max-width: $page-max-width
+header[role=main]
+  display: block
+  background-color: $gray
+  width: 100%
+  border-bottom: 1px solid $black
+  clear: both
+  margin-bottom: 0.2rem
 
-  @media (max-width: #{$page-max-width})
-    &
-      text-align: center
+  > nav
+    padding: 0.4rem 0.1rem
+    margin: 0rem auto
+    max-width: $page-max-width
 
-      ul
-        -webkit-padding-start: 0rem
-        -moz-padding-start: 0rem
-        margin-bottom: 0.2rem
+    @media (max-width: #{$page-max-width})
+      &
+        text-align: center
 
-  h1
-    margin: 0rem
-    display: inline-block
-    font-size: $text-font-size * 1.8
+        ul
+          -webkit-padding-start: 0rem
+          -moz-padding-start: 0rem
+          margin-bottom: 0.2rem
 
-  span.lead
-    display: inline-block
-    color: $gray
-    font-size: $text-font-size * 0.8
-    position: relative
-    top: $text-font-size * -0.3
-    left: 10px
+    h1
+      margin: 0rem
+      display: inline-block
+      font-size: $text-font-size * 1.8
+
+    span.lead
+      display: inline-block
+      color: darken($gray, 30%)
+      font-size: $text-font-size * 0.8
+      position: relative
+      top: $text-font-size * -0.3
+      left: 10px

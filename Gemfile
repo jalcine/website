@@ -6,10 +6,10 @@ gem 'sass'
 gem 'haml'
 
 # Core Blog Utilities
+gem 'jemoji'
 gem 'jekyll'
+gem 'jekyll-gist'
 #gem 'jekyll-archives'
-#gem 'jekyll-gist'
 #gem 'jekyll-paginate'
 #gem 'jekyll-sitemap'
 #gem 'jekyll-tagging'
-#gem 'jemoji'

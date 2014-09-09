@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using `shared_ptr` to manage `dlfcn.h`"
-date: 2014-08-30 23:21:05 EDT
+date: 2014-08-30 23:20:15 EDT
 categories:
   - development
   - c++
