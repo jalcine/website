@@ -10,10 +10,6 @@ body
   background-color: darken($white, 3%)
   color: $black
 
-  @media (min-width: #{$page-max-width})
-    &
-      min-height: $page-max-width * 0.75
-
 html
   // This prevents that little page jump from happening.
   overflow-y: scroll 
@@ -47,5 +43,11 @@ nav > ul
     padding: 0.2rem 0.5rem
 
 section[role=main]
-  max-width: $page-max-width
-  margin: 0.5rem auto
+  p, blockquote, ul, li, dd,
+  h1, h2, h3, h4, h5, h6, img
+    max-width: $page-max-width
+    margin: 0.5rem auto
+
+  @media (max-width: "#{$page-max-width}")
+    &
+      margin: 0.1rem

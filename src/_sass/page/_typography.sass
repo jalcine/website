@@ -2,17 +2,11 @@ html
   font-size: $text-font-size
   line-height: $text-line-height
 
-  &.wf-active, &
+  &.wf-active
     font-family: $text-font-family
 
     pre, code
       font-family: $mono-font-family
-
-  &.wf-loading, &.wf-inactive
-    font-family: sans-serif
-
-    pre, code
-      font-family: monospace
 
 @media (max-width: #{$page-max-width})
   html
@@ -21,11 +15,6 @@ html
 body
   -webkit-text-size-adjust: 100%
   -ms-text-size-adjust: 100%
-
-body > section[role=main]
-  margin: 0rem auto
-  padding: 0rem 1rem
-  max-width: $page-max-width
 
 h1, h2, h3, h4, h5, h6
   margin-bottom: .5rem
@@ -65,9 +54,9 @@ ul, ol, dl
 hr
   position: relative
   margin: 1.5rem 0
-  border: 0
-  border-top: 1px solid $gray
-  border-bottom: 1px solid $white
+  border-style: solid
+  border-color: darken($gray, 5%)
+  width: 100%
 
 blockquote
   padding: .2rem 1rem
@@ -82,5 +71,6 @@ blockquote
 
 // Extenders
 p.lead
-  font-size: 1.25rem
-  font-weight: 300
+  font-size: 2.25rem
+  font-weight: 100
+  margin: 0.8rem auto

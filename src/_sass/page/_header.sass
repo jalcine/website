@@ -1,10 +1,10 @@
 header[role=main]
-  display: block
   background-color: $gray
-  width: 100%
-  border-bottom: 1px solid $black
+  border-bottom: darken($gray, 10%) 1px solid
   clear: both
+  display: block
   margin-bottom: 0.2rem
+  width: 100%
 
   > nav
     padding: 0.4rem 0.1rem
@@ -20,15 +20,19 @@ header[role=main]
           -moz-padding-start: 0rem
           margin-bottom: 0.2rem
 
+          li > a:hover
+            background-color: $navy
+            color: $white
+
     h1
       margin: 0rem
       display: inline-block
       font-size: $text-font-size * 1.8
 
     span.lead
-      display: inline-block
       color: darken($gray, 30%)
+      display: inline-block
       font-size: $text-font-size * 0.8
+      left: 10px
       position: relative
       top: $text-font-size * -0.3
-      left: 10px

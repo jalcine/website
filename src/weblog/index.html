@@ -1,12 +1,11 @@
 ---
 layout: default
 title: "Weblog"
-classes: "pagination"
+class: "pagination"
 ---
 
 <section role='entries'>
-  <h2>Entries</h2>
-  <p>Here be blog posts.</p>
+  <p class="lead">Here be blog posts.</p>
   <p class="paginator">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}<a href="/weblog/">Recent Posts</a>
@@ -18,11 +17,13 @@ classes: "pagination"
   </p>
 
   {% for post in site.posts %}
-    <p class='entry'>
-      <h3><a href="{{ post.url }}">{{ post.title | markdownify }}</a></h3>
+    <div class="entry">
+      <h3>
+        <a href="{{ post.url }}">{{ post.title | markdownify }}</a>
+      </h3>
       <time>{{ post.date | date_to_rfc822 }}</time>
-    </p>
-    {% endfor %}
+    </div>
+  {% endfor %}
 
   <p class="paginator">
     {% if paginator.previous_page %}<a href="{{ paginator.previous_page }}">Previous</a>{% endif %}
