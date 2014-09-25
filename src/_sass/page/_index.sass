@@ -1,6 +1,6 @@
 body.index
   background-image: url(https://farm3.staticflickr.com/2900/14419900815_285cffe8c6_k_d.jpg)
-  background-position: middle middle
+  background-position: center center
   background-size: cover
   background-repeat: no-repeat
 
@@ -31,6 +31,11 @@ body.index
         float: none
         text-align: center
         padding: 0rem
+
+      @media (max-width: "#{$page-max-width}")
+        &
+          h1, a
+            color: $gray
 
   footer[role=main]
     display: none
