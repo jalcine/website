@@ -1,12 +1,36 @@
 body.index
-  p img.inline
-    margin-bottom: -0.1rem
-    margin-left: 0.2rem
+  background-image: url(https://farm3.staticflickr.com/2900/14419900815_285cffe8c6_k_d.jpg)
+  background-position: middle middle
+  background-size: cover
+  background-repeat: no-repeat
 
-  section[role=main]
-    p:nth-child(n+1)
-      font-size: 2rem
-      line-height: 1.2
+  .region
+    height: 90%
+    width: 100%
+    display: table
 
-    p:nth-child(2), p:nth-child(3)
-      color: darken($gray, 40%)
+  header[role=main]
+    @extend .region
+
+    nav
+      display: table-cell
+      height: 100%
+      width: 100%
+      vertical-align: middle
+      text-align: center
+
+      h1
+        text-align: center
+        text-transform: uppercase
+
+      span
+        display: none
+
+      ul
+        display: block
+        float: none
+        text-align: center
+        padding: 0rem
+
+  footer[role=main]
+    display: none

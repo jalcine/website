@@ -1,4 +1,5 @@
 body.post
+
   section[role=post]
     text-align: justify
     font-size: 1.2rem
@@ -9,18 +10,23 @@ body.post
     p
       line-height: 1.8
       font-weight: 100
+      padding-left: 10%
+
+      @media (max-width: #{$page-max-width})
+        &
+          padding-left: 0rem
 
       > img
         margin: 0rem auto
+        max-width: $page-max-width
+        width: 100%
 
     ul > li
       list-style: square
 
   section[role=post], header[role=post], footer[role=post]
     h1, h2, h3, h4, h5, h6
-      text-indent: -1.2rem
-
+      text-align: right
       @media (max-width: #{$page-max-width})
         &
-          text-indent: 0rem
           text-align: center

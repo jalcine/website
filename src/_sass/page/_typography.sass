@@ -9,9 +9,15 @@ html
     pre, code
       font-family: $mono-font-family
 
+    h1, h2, h3, h4, h5, h6
+      font-family: $header-font-family
+
+  &.wf-loading, &.wf-inactive, &
+    font-family: $failsafe-font-family
+
 @media (max-width: #{$page-max-width})
   html
-    font-size: $text-font-size
+    font-size: $text-font-size * 0.8
 
 body
   -webkit-text-size-adjust: 100%
