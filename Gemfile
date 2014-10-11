@@ -3,6 +3,7 @@ ruby '2.1.2'
 
 # Web Development Utilties
 gem 'sass'
+gem 'compass'
 gem 'haml'
 
 # Core Blog Utilities
