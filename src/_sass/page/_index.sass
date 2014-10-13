@@ -1,41 +1,55 @@
 body.index
-  background-image: url(https://farm3.staticflickr.com/2900/14419900815_285cffe8c6_k_d.jpg)
-  background-position: center center
-  background-size: cover
-  background-repeat: no-repeat
+  section[role=main]
+    section.region
+      +flexbox
+      +flex-direction('column')
+      text-align: center
+      min-height: 30rem
+      height: 90%
 
-  .region
-    height: 90%
-    width: 100%
-    display: table
+    section.region-main
+      margin-top: -1 * $header-height
+      padding-top: $header-height * 0.75
+      background-color: #749BDE
+
+      p
+        display: block
+        width: 100%
+
+      p.lead
+        font-family: $header-font-family
+        text-align: center
+        max-width: inherit
+        margin: 1rem auto
+        width: 100%
 
   header[role=main]
-    @extend .region
+    margin: 0rem
+    padding: 0rem
+    height: $header-height
 
     nav
-      display: table-cell
-      height: 100%
+      +flexbox
+      +flex-direction('row')
       width: 100%
-      vertical-align: middle
-      text-align: center
 
       h1
-        text-align: center
+        flex: 1
+        +align-content('center')
+        +justify-content('center')
         text-transform: uppercase
+        width: 20%
 
       span
         display: none
 
       ul
-        display: block
-        float: none
-        text-align: center
+        flex: 2
+        +align-content('center')
+        +justify-content('center')
+        text-align: right
         padding: 0rem
+        width: auto
 
-      @media (max-width: "#{$page-max-width}")
-        &
-          h1, a
-            color: $black
-
-  footer[role=main]
-    display: none
+        li
+          padding: ($header-gutter-width * 0.1) ($header-gutter-width * 0.6)
