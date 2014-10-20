@@ -1,27 +1,53 @@
+$main-section-url: url()
+
 body.index
   section[role=main]
     section.region
       +flexbox
-      +flex-direction('column')
       text-align: center
       min-height: 30rem
       height: 90%
 
-    section.region-main
-      margin-top: -1 * $header-height
-      padding-top: $header-height * 0.75
-      background-color: #749BDE
+      &.region-main
+        // TODO Make content flow in the middle (vertical alignment)
+        +flex-direction('row')
+        margin-top: -1 * $header-height
+        padding: $header-height * 1.25 $header-height * 0.75
+        background-color: #749BDE
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
 
-      p
-        display: block
+        p
+          display: block
+          margin: 0rem auto
+          width: 60%
+
+        p.lead
+          font-family: $header-font-family
+          text-align: center
+          max-width: inherit
+          margin: 1rem auto
+          width: 100%
+
+      > aside.block
+        +flex-direction('row')
         width: 100%
 
-      p.lead
-        font-family: $header-font-family
-        text-align: center
-        max-width: inherit
-        margin: 1rem auto
-        width: 100%
+        $base-padding: $page-max-width * 0.050
+
+        &.block-half:first-child
+          // TODO Make content flow in the middle (vertical alignment)
+          +flex-direction('column')
+          +align-content('top')
+          width: 35%
+          padding: $base-padding ($base-padding * 0.5)
+
+        &.block-half:last-child
+          +flex-direction('column')
+          +align-content('middle')
+          width: 65%
+          padding: ($base-padding * 0.5)
 
   header[role=main]
     margin: 0rem
