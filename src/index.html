@@ -5,12 +5,15 @@ class: "index"
 links:
   -
     title: "GPG: 6E767393"
-    link: "/gpg.txt"
+    icon: key
+    link: "https://keybase.io/jackyalcine"
   -
     title: "Twitter"
+    icon: twitter
     link: "https://twitter.com/jackyalcine"
   -
     title: "Github"
+    icon: github
     link: "https://github.com/jalcine"
   -
     title: "LinkedIn"
@@ -41,7 +44,9 @@ links:
     <!-- TODO: Add an HR? -->
     <p class="link-roll">
       {% for hash in page.links %}
-        <a href="{{ hash.link }}" title="{{ hash.title }}">{{ hash.title }}</a>
+        <a href="{{ hash.link }}" title="{{ hash.title }}">
+          {% if hash.icon %}<i class="icon-{{ hash.icon }}"></i>{% endif %}
+          {{ hash.title }}</a>
       {% endfor %}
     </p>
   </aside>

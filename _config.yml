@@ -21,3 +21,17 @@ exclude:
   - '_layouts'
   - '_includes'
   - '_css'
+
+nav_links:
+  -
+    title: "Weblog"
+    icon: "pencil"
+    link: "/weblog"
+  -
+    title: "Twitter"
+    icon: "twitter"
+    link: "https://twitter.com/jackyalcine"
+  -
+    title: "Github"
+    icon: "github"
+    link: "https://github.com/jalcine"

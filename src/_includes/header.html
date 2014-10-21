@@ -3,11 +3,12 @@
     <a href="{{ site.url }}" title="{{ site.name }}">{{ site.name }}</a>
   </h1>
   <ul>
-    <li>
-      <a href="/"><i class='icon-user'></i>About</a>
-    </li>
-    <li>
-      <a href="/weblog"><i class='icon-quill'></i>Blog</a>
-    </li>
+    {% for link in site.nav_links %}
+      <li>
+        <a href="{{ link.link }}">
+          <i class='icon-{{ link.icon }}'></i>{{ link.title }}
+        </a>
+      </li>
+    {% endfor %}
   </ul>
 </nav>
