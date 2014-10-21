@@ -1,4 +1,18 @@
 body.pagination
-  div.entry
-    max-width: $page-max-width
-    margin: 0rem auto
+  section[role=entries]
+    dl
+      width: 60%
+      margin: 0rem auto
+
+      dt
+        +flexbox
+        +flex-direction('column')
+        width: 50%
+
+        +flex(2)
+        +inline-flex
+        font-weight: bold
+
+      dd
+        +flex(1)
+        +inline-flex

@@ -16,14 +16,14 @@ class: "pagination"
     {% endif %}
   </p>
 
-  {% for post in site.posts %}
-    <div class="entry">
-      <h3>
-        <a href="{{ post.url }}">{{ post.title | markdownify }}</a>
-      </h3>
-      <time>{{ post.date | date_to_rfc822 }}</time>
-    </div>
+  <dl>
+  {% for post in site.posts | sort %}
+    <dt>
+      <a href="{{ post.url }}">{{ post.title | markdownify }}</a>
+      <dd><time>{{ post.date | date_to_rfc822 }}</time></dd>
+    </dt>
   {% endfor %}
+  </dl>
 
   <p class="paginator">
     {% if paginator.previous_page %}<a href="{{ paginator.previous_page }}">Previous</a>{% endif %}
