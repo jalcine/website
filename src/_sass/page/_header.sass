@@ -2,12 +2,16 @@ header[role=main]
   clear: both
   display: block
   margin-bottom: 0.2rem
+  height: $header-height
+  max-height: $header-height
   width: 100%
 
   > nav
-    padding: 0.4rem 1.5rem
+    padding: ($header-height * 0.1) ($header-height * 0.5)
     margin: 0rem auto
-    //max-width: $page-max-width
+    height: $header-height
+    max-height: $header-height
+    max-width: $page-max-width
 
     @media (max-width: #{$page-max-width})
       &
