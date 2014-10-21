@@ -26,8 +26,22 @@ body.post
     ul > li
       list-style: square
 
+  section[role=main] > section[role=stats]
+    text-align: center
+    font-size: 0.9rem
+    margin-bottom: 2rem
+
   section[role=post], header[role=post], footer[role=post]
     h1, h2, h3, h4, h5, h6
       @media (max-width: #{$page-max-width})
         &
           text-align: center
+
+  section[role=post] > p:first-child
+    display: block
+
+    &:first-line
+      font-weight: 100
+      text-transform: uppercase
+      letter-spacing: 0.3rem
+      font-size: 2rem
