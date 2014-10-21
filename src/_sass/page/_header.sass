@@ -1,17 +1,30 @@
+section[role=main]
+  margin-top: $header-height
+
 header[role=main]
+  background-color: darken($header-accent, 40%)
   clear: both
   display: block
-  margin-bottom: 0.2rem
+  margin: 0rem
   height: $header-height
-  max-height: $header-height
+  max-height: $header-height * 1.1
   width: 100%
+  position: fixed
+  top: 0rem
 
   > nav
+    +flexbox
+    +flex-direction('row')
     padding: ($header-height * 0.1) ($header-height * 0.5)
     margin: 0rem auto
     height: $header-height
     max-height: $header-height
     max-width: $page-max-width
+
+    a
+      color: #ddd
+      i
+        margin-right: 0.3rem
 
     @media (max-width: #{$page-max-width})
       &
@@ -29,14 +42,27 @@ header[role=main]
             color: $white
 
     h1
-      margin: 0rem
+      margin: 0rem 0.8rem 0rem
       display: inline-block
       font-size: $text-font-size * 1.8
+      +align-content('center')
+      +justify-content('center')
+      text-transform: uppercase
 
-    span.lead
-      color: darken($gray, 30%)
-      display: inline-block
-      font-size: $text-font-size * 0.8
-      left: 10px
-      position: relative
-      top: $text-font-size * -0.3
+    ul
+      flex: 2
+      +align-content('center')
+      +justify-content('center')
+      text-align: right
+      padding: 0rem
+      width: auto
+
+      li > a
+        padding: 0.25rem 0.7rem 0.25rem 0.4rem
+        transition: all 0.3s
+
+        &:hover,
+        &:hover:visited
+          text-decoration: none
+          border-radius: 0.35rem
+          background-color: #001F3F

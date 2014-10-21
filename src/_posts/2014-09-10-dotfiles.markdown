@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Dotfiles and More: What I Use In the Shell"
+title: "What I Use In the Shell"
 date: 2014-09-10 00:52:05 EDT
 categories:
   - development

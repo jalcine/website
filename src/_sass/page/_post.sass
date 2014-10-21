@@ -1,9 +1,16 @@
 body.post
-
-  section[role=post]
+  section[role=main]
     text-align: justify
     font-size: 1.2rem
     min-height: 10rem
+
+    header[role=post]
+      margin-top: 2.5rem
+
+      h1
+        text-align: center
+        font-size: 3rem
+        line-height: 1
 
     a
       text-decoration: underline
@@ -11,11 +18,6 @@ body.post
     p
       line-height: 1.8
       font-weight: 100
-      padding-left: 10%
-
-      @media (max-width: #{$page-max-width})
-        &
-          padding-left: 0rem
 
       > img
         margin: 0rem auto
@@ -25,9 +27,23 @@ body.post
     ul > li
       list-style: square
 
+  section[role=main] > section[role=stats]
+    text-align: center
+    font-size: 0.9rem
+    margin-bottom: 2rem
+
   section[role=post], header[role=post], footer[role=post]
     h1, h2, h3, h4, h5, h6
-      text-align: right
+      padding-top: 1.5rem
       @media (max-width: #{$page-max-width})
         &
           text-align: center
+
+  section[role=post] > p:first-child
+    display: block
+
+    &:first-line
+      font-weight: 100
+      text-transform: uppercase
+      letter-spacing: 0.3rem
+      font-size: 2rem

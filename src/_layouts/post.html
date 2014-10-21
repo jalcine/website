@@ -6,6 +6,17 @@ layout: default
 <header role='post'>
   <h1 class='title'> {{ page.title | markdownify }} </h1>
 </header>
+<section role='stats'>
+  <span>
+    {{ page.content || number_of_words }} words
+  </span> &mdash;
+  <span>
+    written {{ page.date || date_to_long_string }}
+  </span> &mdash;
+  <span>
+    labeled under <strong>{{ page.categories || array_to_sentence_string }}</strong>
+  </span>
+</section>
 <section role='post'>
   {{ content }}
 </section>

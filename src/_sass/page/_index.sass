@@ -1,5 +1,5 @@
 $main-section-url: url()
-$index-accent: #749BDE
+$index-accent: $header-accent
 
 body.index
   section[role=main]
@@ -31,6 +31,7 @@ body.index
         box-shadow: 0px 0px 5px darken($index-accent, 15%)
         padding: 0rem $header-height * 0.75
         max-width: inherit
+        color: $white
 
         aside.block
           +justify-content('center')
@@ -53,6 +54,7 @@ body.index
 
           a
             font-weight: bold
+            color: $gray
 
           &.lead
             text-align: center
@@ -151,44 +153,3 @@ body.index
           &
             height: 12rem
             +flex-direction('row')
-
-body.index > header[role=main]
-  margin: 0rem
-  padding: 0rem
-  height: $header-height * 1.1
-  background-color: darken($index-accent, 40%)
-  z-index: 30
-
-  nav
-    +flexbox
-    +flex-direction('row')
-    width: 100%
-
-    h1
-      margin-left: 0.8rem
-      +align-content('center')
-      +justify-content('center')
-      text-transform: uppercase
-
-    span
-      display: none
-
-    ul
-      flex: 2
-      +align-content('center')
-      +justify-content('center')
-      text-align: right
-      padding: 0rem
-      width: auto
-
-      li > a
-        padding: 0.25rem 0.7rem 0.25rem 0.4rem
-        transition: all 0.3s
-
-        &:hover,
-        &:hover:visited
-          text-decoration: none
-          border-radius: 0.35rem
-          background-color: #001F3F
-  a
-    color: #ddd
