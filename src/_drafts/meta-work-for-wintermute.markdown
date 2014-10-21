@@ -17,7 +17,7 @@ that my toolchain is lacking specific features necessary to build the kind of
 software I'd need right now is enough to break open the editor and start
 writing them myself.
 
-## Building Up cmake.vim
+# Building Up cmake.vim
 
 The biggest issue I had was with Vim not having things about my project known
 like tags, include paths and `:make` information. I initially thought about
@@ -35,7 +35,7 @@ representing all of the methods and logic exposed by the plugin so we can get
 it going into other plugins like probably Syntastic, vim-dispatch and even
 YouCompleteMe (given it'd cooperate).
 
-## Redrawing the System
+# Redrawing the System
 
 Rebuilding Wintermute meant taking everything I've done so far, learn from it
 and understand what exactly I could do now with the knowledge I've obtained and
@@ -58,5 +58,19 @@ doesn't know if it's meant to be used with the `Wintermute::Dispatcher` or
 class which is necessary to do identification of modules without prying too
 much into the modules themselves.
 
+Even to this day, I still have a bit of back thought on how this should be
+done, but I think I finally came to a resolution on it. One thing that'd make
+it relatively easier to patch and change across different devices, be it
+embedded or not, would be distrubting Wintermute as a library. Having the core
+functionality written in C++11 code[^1], it's going to be straight forward to
+integrate this into something like [JohnnyFive][3] for Node and [Firmata][4]
+hardware. Realistically, I don't think that Wintermute's libraries would run
+directly on the hardware but wrapper libraries that could translate low-level
+instructions from hardware like light or power toggles, motion sensors and the
+likes should
+
 [1]: https://github.com/jalcine/cmake.vim
 [2]: http://umbrello.kde.org
+[3]: https://github.com/rwaldron/johnny-five
+[4]: http://www.firmata.org/wiki/Main_Page
+[^1]: Right now, I've only targeted my laptop (a Linux 3.13.0-34-generic x86_64 machine) and I want to port this to work on the Raspberry Pi (shouldn't be *too* hard) and work with lower devices like the Arduino (very challenging).

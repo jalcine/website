@@ -1,6 +1,8 @@
 ---
+# This is required to make it include from the root Sass directory.
 ---
 
 @import '_lib';
+@import '_extra';
 @import '_page';
 @import '_code';
