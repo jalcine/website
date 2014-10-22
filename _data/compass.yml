@@ -1,0 +1,8 @@
+---
+require:
+- jekyll-compass
+http_path: "/"
+css_dir: src/css
+sass_dir: src/_sass
+images_dir: src/images
+javascripts_dir: src/javascripts
