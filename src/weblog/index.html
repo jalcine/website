@@ -5,7 +5,7 @@ class: "pagination"
 ---
 
 <section role='entries'>
-  <p class="lead">Here be blog posts.</p>
+  <p class="lead">Here be a buncha blog posts. Read if you dare.</p>
   <p class="paginator">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}<a href="/weblog/">Recent Posts</a>
@@ -20,7 +20,7 @@ class: "pagination"
   {% for post in site.posts | sort %}
     <dt>
       <a href="{{ post.url }}">{{ post.title | markdownify }}</a>
-      <dd><time>{{ post.date | date_to_rfc822 }}</time></dd>
+      <dd><time>{{ post.date | time_to_string }}</time></dd>
     </dt>
   {% endfor %}
   </dl>

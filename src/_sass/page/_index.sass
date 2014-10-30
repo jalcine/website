@@ -28,9 +28,10 @@ body.index
           padding: ($base-padding * 0.5)
 
       &.region--main
-        +background(linear-gradient($index-accent, darken($index-accent, 20%), $index-accent))
-        box-shadow: 0px 0px 5px darken($index-accent, 15%)
+        //+background(linear-gradient($index-accent, darken($index-accent, 20%), $index-accent))
+          box-shadow: 0px 0px 5px darken($index-accent, 15%)
         max-width: inherit
+        background-color: $index-accent
         background-repeat: no-repeat
         background-position: center center
         background-size: cover
@@ -40,7 +41,7 @@ body.index
         aside.block
           +justify-content('center')
           +align-items('center')
-        
+
         p
           display: block
           margin: 0rem auto
@@ -126,6 +127,8 @@ body.index
       &.region--photos
         height: 10rem
 
+        /* TODO Add text hidden by default but then faded in with grayed out bg
+         */
         a.image-region
           +flex(1)
           +flex-direction('column')
@@ -139,15 +142,15 @@ body.index
             text-decoration: none
             background-size: 100% auto
 
-          &.region--1
+          &:nth-child(1)
             background-image: url("https://farm3.staticflickr.com/2900/14419900815_034c7fe2f7_z.jpg")
 
-          &.region--2
+          &:nth-child(2)
             background-image: url("https://farm6.staticflickr.com/5450/9412752276_ae8ec54acb_o.jpg")
 
-          &.region--3
+          &:nth-child(3)
             background-image: url("https://farm6.staticflickr.com/5145/5651771300_64f6296d86_o.jpg")
-        
+
         @media #{$mobile}
           &
             height: 12rem
