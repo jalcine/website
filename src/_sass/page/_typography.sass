@@ -15,10 +15,6 @@ html
   &.wf-loading, &.wf-inactive, &
     font-family: $failsafe-font-family
 
-@media (max-width: #{$page-max-width})
-  html
-    font-size: $text-font-size * 0.8
-
 body
   -webkit-text-size-adjust: 100%
   -ms-text-size-adjust: 100%
@@ -70,11 +66,6 @@ blockquote
   margin: .3rem 0
   color: $gray
   border-left: .25rem solid lighten($gray, 10%)
-
-@media (min-width: #{$page-max-width * 0.75})
-  blockquote
-    padding-right: 5rem
-    padding-left: 1.25rem
 
 // Extenders
 p.lead

@@ -1,68 +1,55 @@
-section[role=main]
-  margin-top: $header-height
+$navigation-max-width: 30rem
 
 header[role=main]
-  background-color: darken($header-accent, 40%)
-  clear: both
-  display: block
-  margin: 0rem
-  height: $header-height
-  max-height: $header-height * 1.1
+  display: flex
+  +flex-flow(row wrap)
+
   width: 100%
-  position: fixed
-  top: 0rem
+  height: 3.5rem
+  font-size: 0.8rem
+  color: $header-foreground-color
+  background-color: $header-background-color
+
+  > hgroup
+    background-color: $green
+    height: 100%
+    width: 10rem
+    order: 1
+
+    h4
+      margin: 0rem
 
   > nav
-    +flexbox
-    +flex-direction('row')
-    padding: ($header-height * 0.1) ($header-height * 0.5)
-    margin: 0rem auto
-    height: $header-height
-    max-height: $header-height
-    max-width: $page-max-width
-
-    a
-      color: #ddd
-      i
-        margin-right: 0.3rem
-
-    @media (max-width: #{$page-max-width})
-      &
-        text-align: center
-        width: 100%
-        padding: 0.4rem 0.1rem
-
-        ul
-          -webkit-padding-start: 0rem
-          -moz-padding-start: 0rem
-          margin-bottom: 0.2rem
-
-          li > a:hover
-            background-color: $navy
-            color: $white
-
-    h1
-      margin: 0rem 0.8rem 0rem
-      display: inline-block
-      font-size: $text-font-size * 1.8
-      +align-content('center')
-      +justify-content('center')
-      text-transform: uppercase
+    order: 2
+    flex-grow: 1
+    height: 100%
+    display: flex
+    justify-content: flex-end
+    align-content: stretch
 
     ul
-      flex: 2
-      +align-content('center')
-      +justify-content('center')
-      text-align: right
+      +flex-flow(row wrap)
+      margin: 0rem
       padding: 0rem
-      width: auto
+      display: inline-flex
+      max-width: 20rem
+      justify-content: space-around
+      align-content: center
+      line-height: 2.5rem
+      order: 1
+      margin-right: 0.25rem
 
-      li > a
-        padding: 0.25rem 0.7rem 0.25rem 0.4rem
-        transition: all 0.3s
+      li
+        list-style: none
+        margin: 0rem
 
-        &:hover,
-        &:hover:visited
-          text-decoration: none
-          border-radius: 0.35rem
-          background-color: #001F3F
+        a
+          display: block
+          padding: 0.5rem
+          color: $header-foreground-color
+
+          &:hover, &:visited:hover
+            text-decoration: none
+
+        a > i
+          margin: 0.25rem

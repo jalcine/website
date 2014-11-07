@@ -12,7 +12,7 @@ body
   color: $black
 
 html
-  overflow-y: scroll 
+  overflow-y: scroll
 
 a
   color: $navy
@@ -25,29 +25,8 @@ a:hover,
 a:focus
   text-decoration: underline
 
-nav > ul
-  display: inline-block
-  float: right
-  height: $text-font-size * 1.8
-
-  @media (max-width: #{$page-max-width})
-    &
-      display: block
-      width: 100%
-      text-align: center
-
-  li
-    list-style: none
-    line-height: $text-font-size * 1.8
-    display: inline-block
-    padding: 0.2rem 0.5rem
-
 section[role=main]
   p, blockquote, ul, li, dd,
   h1, h2, h3, h4, h5, h6, img
     max-width: $page-max-width
     margin: 0.5rem auto
-
-  @media (max-width: "#{$page-max-width}")
-    &
-      margin: 0.1rem

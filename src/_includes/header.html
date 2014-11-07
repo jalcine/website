@@ -1,7 +1,12 @@
-<nav>
-  <h1>
-    <a href="{{ site.url }}" title="{{ site.name }}">{{ site.name }}</a>
-  </h1>
+<hgroup>
+  <h4>
+    <a href="{{ site.url }}" title="{{ site.name }}">
+      {{ site.name }}
+    </a>
+  </h4>
+</hgroup>
+
+<nav role="main">
   <ul>
     {% for link in site.nav_links %}
       <li>

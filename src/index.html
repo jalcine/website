@@ -1,83 +1,12 @@
 ---
-layout: default
-title: "Home"
-class: "index"
-links:
-  -
-    title: "GPG: 6E767393"
-    icon: key
-    link: "https://keybase.io/jackyalcine"
-  -
-    title: "Twitter"
-    icon: twitter
-    link: "https://twitter.com/jackyalcine"
-  -
-    title: "Github"
-    icon: github
-    link: "https://github.com/jalcine"
-  -
-    title: "LinkedIn"
-    link: "https://linkedin.com/in/jackyalcine"
-
+layout: 'default'
+title: 'Home'
+class: 'index'
 ---
 
-<section class="region region--main">
-  <aside class="block">
-    <p class="lead">
-      Decent Net Worth. <br />
-      Quip Factory. <br />
-      Helps With What He Can. <br />
-      <strike><em>Definitely not</em></strike> Working on becoming the black
-      <strong>Iron Man</strong>.
-    </p>
-    <br />
-    <p class="link-roll">
-      {% for hash in page.links %}
-        <a href="{{ hash.link }}" title="{{ hash.title }}">
-          {% if hash.icon %}<i class="icon-{{ hash.icon }}"></i>{% endif %}
-          {{ hash.title }}</a>
-      {% endfor %}
-    </p>
-  </aside>
-</section>
-<section class="region">
-  <p>
-    I'm a <a href="https://github.com/jalcine">computer programmer</a>,
-    interested in systems and web programming. I tend to
-    <a href="https://www.goodreads.com/user/show/11273359-jacky-alcin">read books</a>,
-    <a href="https://www.twitter.com/jackyalcine">tweets quite often</a> and
-    just recently gotten in the habit of
-    <a href="https://www.flickr.com/photos/jackyalcine/">taking pictures</a>
-    again.
-  </p>
-</section>
-
-<section class="region region-2x region--about">
-  <aside class="block block-half">
-    <img src="/images/me.jpeg" alt="Image of Jacky." title="Image of Jacky.">
-  </aside>
-  <aside class="block block-half">
-    <p class="lead">The things I'm interested in</p>
-    <dl>
-      <dd>
-        TRYING to quit being <strong>hyper-judgmental</strong>,
-       </dd>
-      <dd>
-        WRITING on my <strong><a href="/weblog">blog</a></strong>,
-      </dd>
-      <dd>
-        TAKING more
-        <strong><a href="https://flickr.com/photos/jackyalcine">pictures</a></strong>
-        of life and
-      </dd>
-      <dd>
-        LEARNING two new things every day.
-      </dd>
-    </dl>
-  </aside>
-</section>
-<section class="region region--photos">
-  <a class="image-region" href="https://secure.flickr.com/photos/jackyalcine/14419900815/">&nbsp;</a>
-  <a class="image-region" href="https://secure.flickr.com/photos/jackyalcine/9412752276/">&nbsp;</a>
-  <a class="image-region" href="https://secure.flickr.com/photos/jackyalcine/5651771300/">&nbsp;</a>
-</section>
+<!-- REGION: 0) Title + Quips -->
+<!-- REGION: 1) Mapbox with markers on where I've been -->
+<!-- REGION: 2) Moving collage of photos I've taken -->
+<!-- REGION: 3) Places I've worked at -->
+<!-- REGION: 4) (1/2) Most recent blog post -->
+<!-- REGION: 4) (2/2) Links to place on social media -->
