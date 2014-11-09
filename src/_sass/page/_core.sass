@@ -6,13 +6,14 @@ html, body
   padding: 0px
   height: 100%
   width: 100%
-  min-height: 100vh
 
 body
   background-color: darken($white, 3%)
   color: $black
   display: flex
-  +flex-flow(column nowrap)
+  min-height: 100vh
+  +flex-flow(column)
+  +align-content(flex-end)
 
 html
   overflow-y: scroll
@@ -21,26 +22,20 @@ a
   color: $navy
   text-decoration: none
 
-a strong
-  color: inherit
+  strong
+    color: inherit
 
-a:hover,
-a:focus
-  text-decoration: underline
-
-header[role=main]
-  flex: 1
+  &:hover,
+  &:focus
+    text-decoration: underline
 
 section[role=main]
   flex: 15
+  max-width: $page-max-width
+  margin: 0rem auto
+  padding-top: $header-height
 
   p, blockquote, ul, li, dd,
   h1, h2, h3, h4, h5, h6, img
     max-width: $page-max-width
     margin: 0.5rem auto
-
-  @media #{$not-desktop}
-    &
-      width: 95%
-      max-width: 95%
-      margin: 0rem auto
