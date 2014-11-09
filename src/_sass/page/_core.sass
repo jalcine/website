@@ -30,3 +30,9 @@ section[role=main]
   h1, h2, h3, h4, h5, h6, img
     max-width: $page-max-width
     margin: 0.5rem auto
+
+  @media #{$not-desktop}
+    &
+      width: 95%
+      max-width: 95%
+      margin: 0rem auto

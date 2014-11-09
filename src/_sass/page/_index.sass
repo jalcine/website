@@ -1,0 +1,148 @@
+$title-background-image: "https://farm4.staticflickr.com/3953/15556142996_a7851a86f1_k.jpg"
+
+@keyframes index_header_fadein
+  0%
+    opacity: 1.0
+
+  100%
+    opacity: 1.0
+    position: fixed
+    z-index: 9999
+
+body.index
+  height: 100%
+
+  header[role=main]
+    background-color: transparent
+    animation: index_header_fadein 0.5s
+    animation-fill-mode: forwards
+    transform: color 0.75s
+    color: $gray
+
+    hgroup
+      display: none
+
+    &:hover
+      color: $black
+
+      nav li a
+        color: $gray
+
+        &:hover
+          background-color: $black
+          color: $white
+
+  section[role=main]
+    display: flex
+    +flex
+    +flex-flow(row wrap)
+    justify-content: space-around
+    align-content: space-between
+    height: 100%
+    width: 100%
+
+    @media #{$not-desktop}
+      &
+        max-width: 100%
+
+    > section
+      +inline-flex
+      width: 100%
+      min-height: 80%
+      align-content: center
+      align-items: center
+      border-bottom: 1px solid $black
+
+      &[role=title]
+        background-color: $black
+        background-image: url(#{$title-background-image})
+        background-position: center center
+        background-size: cover
+        background-repeat: no-repeat
+        color: $white
+        min-height: calc(100% - #{$header-height})
+        +flex-flow(column)
+        +justify-content(center)
+
+        $shadow-color: rgba(0,0,0,0.6)
+
+        h1
+          color: lighten($gray, 40%)
+          background-color: $shadow-color
+          box-shadow: 2px 2px 2px $shadow-color
+          padding: 0.6rem 0.9rem
+
+        p.lead
+          align-self: flex-end
+          background-color: $shadow-color
+          box-shadow: 2px 2px 2px $shadow-color
+          padding: 1.2rem 1.8rem
+          font-size: 2rem
+          max-width: 70%
+
+          @media #{$mobile}
+            &
+              max-width: 100%
+              padding: 0.4rem 0.6rem
+              background-color: $black
+              font-size: 1.5rem
+              box-shadow: none
+
+      @media #{$not-desktop}
+        &
+          +flex-flow(column wrap)
+          h1, p
+            box-shadow: none
+
+      &[role=collage]
+        +flex-flow(row wrap)
+
+        p.photostrip
+          display: flex
+          +flex-flow(row nowrap)
+          justify-content: space-between
+          align-items: center
+
+          &:hover
+            a
+              opacity: 0.5
+
+          a
+            margin: 0rem 1.5rem
+            transition: opacity 0.2s ease
+
+            &:hover
+              opacity: 1
+
+          img
+            max-width: 15rem
+
+
+          @media #{$not-desktop}
+            &
+              +flex-flow(column nowrap)
+              justify-content: space-between
+
+              img
+                max-height: auto
+                width: 90%
+
+  footer[role=main]
+    display: inline-flex
+    clear: both
+
+    &::before, &::after
+      display: table
+      clear: both
+      content: ' '
+
+#mapWhereIBeAt
+  min-height: 10rem
+  width: 100%
+
+  div.leaflet-map-pane
+    width: 100%
+
+  div.leaflet-overlay-for-jacky
+    font-size: 2rem
+    color: $black

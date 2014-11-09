@@ -1,55 +1,93 @@
 $navigation-max-width: 30rem
+$header-height: 3.5rem
 
 header[role=main]
   display: flex
-  +flex-flow(row wrap)
+  +flex
+  +flex-flow(row nowrap)
 
   width: 100%
-  height: 3.5rem
-  font-size: 0.8rem
+  height: $header-height
+  min-height: $header-height
+  font-size: 0.9rem
   color: $header-foreground-color
   background-color: $header-background-color
+  justify-content: space-around
+  border-bottom: 0.1rem solid $header-foreground-color
+
+  a
+    color: inherit
+
+    &:hover
+      text-decoration: none
 
   > hgroup
-    background-color: $green
-    height: 100%
-    width: 10rem
-    order: 1
+    +inline-flex
+    +order(1)
+    +align-items(center)
+    +justify-content(space-around)
+    height: $header-height
 
-    h4
+    h3
+      color: inherit
       margin: 0rem
 
   > nav
-    order: 2
-    flex-grow: 1
-    height: 100%
-    display: flex
-    justify-content: flex-end
-    align-content: stretch
+    +inline-flex
+    +order(2)
+    +justify-content(flex-end)
+    height: $header-height
 
     ul
-      +flex-flow(row wrap)
+      +inline-flex
+      +justify-content(space-around)
+      +align-items(center)
       margin: 0rem
-      padding: 0rem
-      display: inline-flex
-      max-width: 20rem
-      justify-content: space-around
-      align-content: center
-      line-height: 2.5rem
-      order: 1
-      margin-right: 0.25rem
+      list-style: none
 
       li
-        list-style: none
-        margin: 0rem
-
         a
+          transition: background-color 0.3s, color 0.1s
+          border-radius: 0.2rem
           display: block
+          text-transform: uppercase
+          font-weight: 100
+          font-size: 1rem
+          height: 80%
           padding: 0.5rem
-          color: $header-foreground-color
+          margin: 0rem 0.2rem
 
-          &:hover, &:visited:hover
-            text-decoration: none
+          &:hover
+            background-color: $header-foreground-color
+            color: $header-background-color
 
-        a > i
-          margin: 0.25rem
+          i
+            margin: 0.2rem 0.3rem 0.2rem 0rem
+
+  @media (max-width: #{$mobile-screen})
+    &
+      +flex-flow(column nowrap)
+      +justify-content(space-between)
+      height: auto
+      padding-bottom: $header-height * 0.1
+
+      > hgroup, > nav
+        display: inline-flex
+        +justify-content(space-around)
+        line-height: auto
+        height: auto
+        width: 100%
+
+      > hgroup
+        padding-left: 0.2rem
+        margin: 0.5rem 0rem
+
+  @media (max-width: #{$mobile-screen})
+    &
+      > nav li >  a
+        font-size: 0rem
+
+        i
+          font-size: 1rem
+
+  &.minified

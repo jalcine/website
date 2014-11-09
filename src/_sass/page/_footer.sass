@@ -1,9 +1,11 @@
 footer[role=main]
-  width: 100%
+  display: flex
   background-color: $black
   color: $gray
   font-size: 0.8rem
   padding: 1rem 2rem
+  clear: both
+  width: 100%
 
   a
     color: $gray
@@ -15,7 +17,8 @@ footer[role=main]
     max-width: $page-max-width
     text-align: center
 
-    span
-      clear: both
-      display: block
-      visibility: hidden
+    @media (max-width: #{$tablet-screen})
+      & > span
+        clear: both
+        display: block
+        visibility: hidden

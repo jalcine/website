@@ -7,8 +7,12 @@ layouts: 'src/_layouts'
 name: 'Jacky Alciné'
 author: 'Jacky Alciné'
 url: 'http://jalcine.me'
-description: 'A little collection of text and images.'
-timezone: 'America/New_York' 
+timezone: 'America/New_York'
+description: |
+  The site of a young guy learning about computers and
+  the things that work with them. Growing a bit of a
+  Starkian and Waynian complex, this'll be a hub of
+  information of said growth.
 
 pagination_path: 'weblog/:num'
 permalink: '/weblog/:title'
@@ -28,10 +32,10 @@ nav_links:
     icon: "pencil"
     link: "/weblog"
   -
-    title: "Twitter"
-    icon: "twitter"
-    link: "https://twitter.com/jackyalcine"
+    title: "About"
+    icon: "penci"
+    link: "/about"
   -
-    title: "Github"
-    icon: "github"
-    link: "https://github.com/jalcine"
+    title: "Elsewhere"
+    icon: "pencil"
+    link: "/social"

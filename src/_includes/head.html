@@ -1,5 +1,8 @@
 <title>{{ page.title || 'Untitled' }} - {{ site.name }}</title>
 <link href='/css/page.css' rel='stylesheet' />
+{% for src in page.styles %}
+  <link href="{{ src }}" rel='stylesheet' />
+{% endfor %}
 <link href='/images/me.jpeg' rel='shortcut icon' />
 <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width,height=device-height'>
@@ -7,9 +10,9 @@
 <meta name='apple-mobile-web-app-capable' content='yes'>
 <meta name='apple-mobile-web-app-status-bar-style' content='#F7F7F7'>
 <meta itemprop='name' content='{{page.title}}'>
-<meta itemprop='description' content="{{ (page.excerpt || site.description) | strip_html }}">
+<meta itemprop='description' content="{{ (page.excerpt || site.description) | strip_html | xml_escape }}">
 <meta property='og:title' content='{{page.title}}'>
-<meta property='og:description' content="{{site.description}}">
+<meta property='og:description' content="{{site.description | xml_escpae }}">
 <meta property='og:url'  content='{{ site.url }}{{ page.url }}'>
 <meta name='twitter:card'  content='summary'>
 <meta name='twitter:url'  content='{{site.url}}{{page.url}}'>
@@ -26,3 +29,4 @@
 <link rel='apple-touch-icon' sizes='76x76' href='/images/me-76.png' />
 <link rel='apple-touch-icon' sizes='120x120' href='/images/me-120.png' />
 <link rel='apple-touch-icon' sizes='152x152' href='/images/me-152.png' />
+<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js'></script>

@@ -6,6 +6,7 @@ $desktop-screen: 90rem;
 $screen: "only screen";
 $mobile: "only screen and (max-width:#{$mobile-screen})";
 $tablet: "only screen and (min-width:#{$mobile-screen}) and (max-width: #{$tablet-screen})";
+$not-desktop: "only screen and (max-width: #{$tablet-screen})";
 $desktop: "only screen and (min-width:#{$tablet-screen})";
 $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)";
