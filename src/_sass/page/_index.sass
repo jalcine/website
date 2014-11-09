@@ -34,7 +34,6 @@ body.index
 
   section[role=main]
     display: flex
-    +flex
     +flex-flow(row wrap)
     justify-content: space-around
     align-content: space-between
@@ -46,12 +45,13 @@ body.index
         max-width: 100%
 
     > section
-      +inline-flex
+      display: flex
+      +flex-flow(column wrap)
       width: 100%
       min-height: 80%
+      padding: 0.5rem 0rem
       align-content: center
       align-items: center
-      border-bottom: 1px solid $black
 
       &[role=title]
         background-color: $black
@@ -96,27 +96,35 @@ body.index
 
       &[role=collage]
         +flex-flow(row wrap)
+        background-color: lighten($black, 10%)
+        color: $white
+
+        p.lead
+          font-size: 2.75rem
+          text-align: center
+          max-width: 80%
 
         p.photostrip
           display: flex
           +flex-flow(row nowrap)
           justify-content: space-between
           align-items: center
+          max-width: none
+          padding: 0rem 1rem
 
           &:hover
             a
               opacity: 0.5
 
           a
-            margin: 0rem 1.5rem
             transition: opacity 0.2s ease
 
             &:hover
               opacity: 1
 
           img
-            max-width: 15rem
-
+            max-width: 20rem
+            margin: 0.125rem
 
           @media #{$not-desktop}
             &
@@ -124,8 +132,59 @@ body.index
               justify-content: space-between
 
               img
-                max-height: auto
+                max-height: 30rem
+                max-width: auto
                 width: 90%
+
+      &[role=work]
+        display: flex
+        +flex-flow(column nowrap)
+        background-color: darken($red, 40%)
+        color: $white
+        justify-content: center
+        text-align: center
+
+        p.lead
+          a[href*="shutterstock"]
+            color: $red
+
+        div
+          display: flex
+          +flex-flow(column nowrap)
+          justify-content: space-between
+          align-items: center
+
+          a
+            text-align: center
+
+            img
+              clear: both
+              max-width: 20rem
+              min-width: 8rem
+
+      &[role=promotions]
+        display: flex
+        +flex-flow(row wrap)
+        justify-content: center
+        text-align: center
+
+        aside.left
+          max-width: 30%
+
+        aside.right
+          max-width: 50%
+
+          p.lead
+            margin-bottom: 2.5rem
+            font-size: 1rem
+
+          a:hover
+            text-decoration: none
+
+          a > i[class^="icon-"]
+            font-size: 2rem
+            margin: 0.5rem
+
 
   footer[role=main]
     display: inline-flex

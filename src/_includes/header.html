@@ -8,7 +8,7 @@
 
 <nav role="main">
   <ul>
-    {% for link in site.nav_links %}
+    {% for link in site.links.navigation %}
       <li>
         <a href="{{ link.link }}">
           <i class='icon-{{ link.icon }}'></i>{{ link.title }}

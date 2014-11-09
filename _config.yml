@@ -26,16 +26,38 @@ exclude:
   - '_includes'
   - '_css'
 
-nav_links:
-  -
-    title: "Weblog"
-    icon: "pencil"
-    link: "/weblog"
-  -
-    title: "About"
-    icon: "penci"
-    link: "/about"
-  -
-    title: "Elsewhere"
-    icon: "pencil"
-    link: "/social"
+links:
+  navigation:
+    -
+      title: "Weblog"
+      icon: "pencil"
+      link: "/weblog"
+    -
+      title: "About"
+      icon: "about"
+      link: "/about"
+  social:
+    -
+      title: "Twitter"
+      icon: "twitter"
+      link: "https://twitter.com/jackyalcine"
+    -
+      title: "Github"
+      icon: "github"
+      link: "https://github.com/jalcine"
+    -
+      title: "Reddit"
+      icon: "reddit"
+      link: "https://reddit.com/user/jackyalcine"
+    -
+      title: "LinkedIn"
+      icon: "linkedin"
+      link: "https://linkedin.com/in/jackyalcine"
+    -
+      title: "Keybase"
+      icon: "key"
+      link: "https://keybase.io/jackyalcine"
+    -
+      title: "Keybase"
+      icon: "key"
+      link: "https://keybase.io/jackyalcine"
