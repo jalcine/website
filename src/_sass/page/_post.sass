@@ -1,43 +1,40 @@
-body.post
-  section[role=main]
-    text-align: justify
-    font-size: 1.2rem
-    min-height: 10rem
+body.post > section[role=main]
+  text-align: justify
+  font-size: 1.2rem
+  min-height: 10rem
 
-    header[role=post]
-      h1
-        text-align: center
-        font-size: 3rem
-        line-height: 1
+  header[role=post]
+    padding-top: 0rem
+    h1
+      text-align: center
+      font-size: 3rem
+      line-height: 1
 
-    a
-      text-decoration: underline
+  a
+    text-decoration: underline
 
-    p
-      line-height: 1.8
-      font-weight: 100
+  p
+    line-height: 1.8
+    font-weight: 100
 
-      > img
-        margin: 0rem auto
-        max-width: $page-max-width
-        width: 100%
+    > img
+      margin: 0rem auto
+      max-width: $page-max-width
+      width: 100%
 
-    ul > li
-      list-style: square
+  ul > li
+    list-style: square
 
-  section[role=main] > section[role=stats]
+  section[role=stats]
     text-align: center
     font-size: 0.9rem
     margin-bottom: 2rem
 
-  section[role=post], header[role=post], footer[role=post]
+  section[role=post]
     h1, h2, h3, h4, h5, h6
       padding-top: 1.5rem
-      @media (max-width: #{$page-max-width})
-        &
-          text-align: center
 
-  section[role=post] > p:first-child
+  > p:first-child
     display: block
 
     // That pretty hanging line.

@@ -30,11 +30,11 @@ links:
   navigation:
     -
       title: "Weblog"
-      icon: "pencil"
+      icon: "pen"
       link: "/weblog"
     -
       title: "About"
-      icon: "about"
+      icon: "home"
       link: "/about"
   social:
     -
@@ -55,9 +55,21 @@ links:
       link: "https://linkedin.com/in/jackyalcine"
     -
       title: "Keybase"
-      icon: "key"
+      icon: "lock"
       link: "https://keybase.io/jackyalcine"
     -
-      title: "Keybase"
+      title: "GPG"
       icon: "key"
-      link: "https://keybase.io/jackyalcine"
+      link: "/jalcine.gpg.asc"
+    -
+      title: "Stack Overflow"
+      icon: "stackoverflow"
+      link: "https://stackoverflow.com/users/602588/jackyalcine"
+    -
+      title: "Last.FM"
+      icon: "lastfm"
+      link: "https://last.fm/user/jackyalcine"
+    -
+      title: "Goodreads"
+      icon: "pen"
+      link: "https://www.goodreads.com/jalcine"

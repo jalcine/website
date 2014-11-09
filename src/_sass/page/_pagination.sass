@@ -1,18 +1,23 @@
 body.pagination
   section[role=entries]
     dl
-      width: 60%
+      width: 80%
       margin: 0rem auto
 
-      dt
-        +flexbox
-        +flex-direction('column')
-        width: 50%
+      dd > time
+        color: $gray
 
-        +flex(2)
-        +inline-flex
-        font-weight: bold
+      dt a
+        position: relative
 
-      dd
-        +flex(1)
-        +inline-flex
+        &:before
+          transition: all 0.3s
+          font-family: 'icomoon'
+          content: '\e601'
+          position: absolute
+          left: -2rem
+          color: transparent
+
+        &:hover:before
+          color: $black
+          

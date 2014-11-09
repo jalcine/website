@@ -6,10 +6,13 @@ html, body
   padding: 0px
   height: 100%
   width: 100%
+  min-height: 100vh
 
 body
   background-color: darken($white, 3%)
   color: $black
+  display: flex
+  +flex-flow(column nowrap)
 
 html
   overflow-y: scroll
@@ -25,7 +28,12 @@ a:hover,
 a:focus
   text-decoration: underline
 
+header[role=main]
+  flex: 1
+
 section[role=main]
+  flex: 15
+
   p, blockquote, ul, li, dd,
   h1, h2, h3, h4, h5, h6, img
     max-width: $page-max-width

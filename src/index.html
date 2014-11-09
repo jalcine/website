@@ -3,9 +3,9 @@ layout: 'default'
 title: 'Home'
 class: 'index'
 javascripts:
-- "http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"
+  - "http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"
 styles:
-- "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"
+  - "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"
 ---
 
 <!-- REGION: 0) Title + Quips -->
@@ -70,8 +70,7 @@ styles:
       <a href="{{ site.posts.first.url }}">
         {{ site.posts.first.title }}
       </a>
-    </h2>
-    <p>
+    </h2> <p>
       My latest blog post is categorized under
       <strong>{{ site.posts.first.category || 'no category' }}</strong>
       and is tagged with {{ site.posts.first.tags | array_to_sentence_string }}.
@@ -96,7 +95,7 @@ styles:
   </aside>
 </section>
 
-<script type="text/javascript" defer="true" async="false">
+<script type="text/javascript" defer="true">
   (function() {
     var buildMap = function buildMap(){
       var map = L.map('mapWhereIBeAt',{
@@ -151,7 +150,7 @@ styles:
       var mapContainer = $('#mapWhereIBeAt');
       var titleContainer = $('section[role=title]')
       mapContainer.css({
-        height: titleContainer.height() + 32
+        height: titleContainer.height()
       });
       buildMap();
     });
