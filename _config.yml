@@ -9,10 +9,10 @@ author: 'Jacky Alciné'
 url: 'http://jalcine.me'
 timezone: 'America/New_York'
 description: |
-  The site of a young guy learning about computers and
-  the things that work with them. Growing a bit of a
-  Starkian and Waynian complex, this'll be a hub of
-  information of said growth.
+  The site of a young Black male living in New York City learning about the
+  world and the people within it. The education he was brought up
+  with was broken by default, and is currently attempting to learn what
+  he should have known a decade ago. He's also a bit of a Afrofuturist.
 
 pagination_path: 'weblog/:num'
 permalink: '/weblog/:title'
