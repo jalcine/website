@@ -60,7 +60,7 @@ links:
     -
       title: "GPG"
       icon: "key"
-      link: "/jalcine.gpg.asc"
+      link: "/gpg"
     -
       title: "Stack Overflow"
       icon: "stackoverflow"
