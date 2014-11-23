@@ -16,6 +16,11 @@ layout: default
   <span>
     labeled under <strong>{{ page.categories || array_to_sentence_string }}</strong>
   </span>
+{% if page.description %}
+  <blockquote class='narrative'>
+    {{ page.description | markdownify }}
+  </blockquote>
+{% endif %}
 </section>
 <section role='post'>
   {{ content }}
