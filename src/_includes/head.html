@@ -1,32 +1,33 @@
-<title>{{ page.title || 'Untitled' }} - {{ site.name }}</title>
-<link href='/css/page.css' rel='stylesheet' />
+<title>{{ page.title || "Untitled" }} - {{ site.name }}</title>
+<link href="/css/page.css" rel="stylesheet" />
 {% for src in page.styles %}
-  <link href="{{ src }}" rel='stylesheet' />
+  <link href="{{ src }}" rel="stylesheet" />
 {% endfor %}
-<link href='/images/me.jpeg' rel='shortcut icon' />
-<meta charset='utf-8'>
-<meta name='viewport' content='width=device-width,height=device-height'>
-<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-<meta name='apple-mobile-web-app-capable' content='yes'>
-<meta name='apple-mobile-web-app-status-bar-style' content='#F7F7F7'>
-<meta itemprop='name' content='{{page.title}}'>
-<meta itemprop='description' content="{{ (page.excerpt || site.description) | strip_html | xml_escape }}">
-<meta property='og:title' content='{{page.title}}'>
-<meta property='og:description' content="{{site.description | xml_escpae }}">
-<meta property='og:url'  content='{{ site.url }}{{ page.url }}'>
-<meta name='twitter:card'  content='summary'>
-<meta name='twitter:url'  content='{{site.url}}{{page.url}}'>
-<meta name='twitter:creator'  content='@jackyalcine'>
-<meta name='twitter:site'  content='@jackyalcine'>
-<meta name='twitter:title'  content='{{ page.title }}'>
-<meta name='twitter:domain'  content='{{site.url}}'>
-<meta name='application-name' content='{{ site.title }}'/>
-<meta name='msapplication-TileColor' content='#F7F7F7'/>
-<meta name='msapplication-square70x70logo' content='/images/me-76.png' />
-<meta name='twitter:image'  content='{{ site.url }}/favicon.jpg' />
-<link rel='author' href='https://plus.google.com/118415769922038925979/posts' />
-<link rel='apple-touch-icon' href='/images/me.png' />
-<link rel='apple-touch-icon' sizes='76x76' href='/images/me-76.png' />
-<link rel='apple-touch-icon' sizes='120x120' href='/images/me-120.png' />
-<link rel='apple-touch-icon' sizes='152x152' href='/images/me-152.png' />
-<script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js'></script>
+<link href="/images/me.jpeg" rel="shortcut icon" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="/feeds/articles.xml" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Linklog" href="/feeds/linklog.xml" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#F7F7F7">
+<meta itemprop="name" content="{{page.title}}">
+<meta itemprop="description" content="{{ (page.excerpt || site.description) | strip_html | xml_escape }}">
+<meta property="og:title" content="{{page.title}}">
+<meta property="og:description" content="{{site.description | xml_escpae }}">
+<meta property="og:url"  content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:card"  content="summary">
+<meta name="twitter:url"  content="{{site.url}}{{page.url}}">
+<meta name="twitter:creator"  content="@jackyalcine">
+<meta name="twitter:site"  content="@jackyalcine">
+<meta name="twitter:title"  content="{{ page.title }}">
+<meta name="twitter:domain"  content="{{site.url}}">
+<meta name="application-name" content="{{ site.title }}"/>
+<meta name="msapplication-TileColor" content="#F7F7F7"/>
+<meta name="theme-color" content="#F7F7F7"/>
+<meta name="msapplication-square70x70logo" content="/images/me-76.png" />
+<meta name="twitter:image"  content="{{ site.url }}/favicon.jpg" />
+<link rel="author" href="https://plus.google.com/118415769922038925979/posts" />
+<link rel="apple-touch-icon" sizes="152x152" href="/images/me-152.png" />
+<link rel="icon" sizes="152x152" href="/images/me-152.png" />
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"></script>
