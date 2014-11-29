@@ -30,7 +30,7 @@ links:
   navigation:
     -
       title: "Weblog"
-      icon: "pen"
+      icon: "blog"
       link: "/weblog"
     -
       title: "About"
@@ -71,5 +71,5 @@ links:
       link: "https://last.fm/user/jackyalcine"
     -
       title: "Goodreads"
-      icon: "pen"
+      icon: "book"
       link: "https://www.goodreads.com/jalcine"
