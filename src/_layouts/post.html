@@ -11,7 +11,8 @@ layout: default
     {{ page.content || number_of_words }} words
   </span> &mdash;
   <span>
-    written {{ page.date || date_to_long_string }}
+    written on <strong>{{ page.date || date_to_long_string }}</strong>
+    {% if page.location %}in <strong>{{ page.location }}</strong>{% endif %}
   </span> &mdash;
   <span>
     labeled under <strong>{{ page.categories || array_to_sentence_string }}</strong>
