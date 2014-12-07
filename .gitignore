@@ -5,3 +5,4 @@ tags
 *.gist_cache
 *.tweet-cache
 gems.tags
+.env

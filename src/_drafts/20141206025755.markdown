@@ -1,0 +1,26 @@
+---
+
+layout: "post"
+title: "Untitled"
+category: "thoughts"
+date: 2014-12-06 03:36:57 EST
+tags:
+  - civil-rights
+  - thoughts
+  - personal
+  - quickie
+
+---
+
+After getting home with David, playing a few moments of a video game and
+finally prepping for bed, I pop onto my Twitter news feed to see this bluntly
+composed tweet, followed by more enlightened ones. These have gone into my
+personal collection of quotes to recite and ... Quote!
+
+{% twitter oembed https://twitter.com/TheBlackVoice/status/541139227250286592 %}
+{% twitter oembed https://twitter.com/TheBlackVoice/status/541150396883152897 %}
+{% twitter oembed https://twitter.com/Felonious_munk/status/541149200688631808 %}
+
+Plainly put and well said. When was the last time an oppressor has done
+__anything__ "nice"? I'm not waiting to be spoon-fed bullshit. I'll take what's
+owed to (or better put, stolen from) us.
