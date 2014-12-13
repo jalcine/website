@@ -1,4 +1,4 @@
-body.post > section[role=main]
+body.post > main[role=main]
   text-align: justify
   font-size: 1.2rem
   min-height: 10rem
@@ -10,6 +10,7 @@ body.post > section[role=main]
       text-align: center
       font-size: 3rem
       line-height: 1
+      +ghostly
 
   a
     text-decoration: underline
@@ -23,6 +24,10 @@ body.post > section[role=main]
       max-width: $page-max-width
       width: 100%
 
+      &.emoji
+        width: auto
+        max-width: auto
+
   ul > li
     list-style: square
 
@@ -30,12 +35,15 @@ body.post > section[role=main]
     text-align: center
     font-size: 0.9rem
     margin-bottom: 2rem
+    margin-top: 0.5rem
 
-  section[role=post]
+  main[role=post]
     margin: auto 1rem
 
-    h1, h2, h3, h4, h5, h6
-      padding-top: 1.5rem
+    > p
+      margin: 1rem 0rem
+      h1, h2, h3, h4, h5, h6
+        padding-top: 1.5rem
 
     > p:first-child
       display: block

@@ -1,0 +1,11 @@
+<footer role='post'>
+  <section id="isso-thread"></section>
+  <p class="paginator">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page }}">Previous</a>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page }}">Next</a>
+    {% endif %}
+  </p>
+</footer>

@@ -1,13 +1,26 @@
 body.about
-  section[role=main]
-    max-width: ($page-max-width * 0.6)
+  main[role=main]
+    max-width: $page-max-width
     margin: 0rem auto
+    padding: 0.75rem 0.1rem
+    display: block
 
     img.me
-      float: right
-      margin: 0rem 2rem
-      height: 200px
-      border-radius: 50%
+      margin: 1rem auto
+      max-height: 20rem
+      border-radius: 80%
+      display: block
 
     a
       font-weight: 700
+
+    @media #{$desktop}
+      &
+        max-width: ($page-max-width * 0.8)
+
+        img.me
+          float: right
+          margin: 1rem
+          min-height: 15rem
+          height: 10rem
+          clear: auto

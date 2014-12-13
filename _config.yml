@@ -20,22 +20,29 @@ relative_permalinks: false
 lsi: false
 show_drafts: false
 future: false
+markdown: kramdown
+highlighter: pygments
 
-exclude:
-  - '_layouts'
-  - '_includes'
-  - '_css'
+gems:
+  - jekyll-gist
+  - jekyll-sass
+  - jekyll-haml
+  - jemoji
 
 links:
   navigation:
     -
       title: "Weblog"
-      icon: "blog"
       link: "/weblog/"
+      icon: "blog"
     -
       title: "About"
-      icon: "home"
       link: "/about/"
+      icon: "home"
+    -
+      title: "Gear"
+      link: "/gear/"
+      icon: "stats"
   social:
     -
       title: "Twitter"

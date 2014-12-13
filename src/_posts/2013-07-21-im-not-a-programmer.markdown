@@ -86,12 +86,7 @@ capable of actually feeling like a developer and not just calling myself one.
 **Wish me luck**.
 
 
-[^1]: I'm not going to name them, but refusing to pay me for the hours I work
-is worth noting and if I was ever approached by them, I'd say lightly,
-"They're less-than-okay people and they see coders as batteries."
-[^2]: Jenkins is my best friend here. It was a hurdle to set up, but once it
-was up, it would **not** come down.
+[^1]: I'm not going to name them, but refusing to pay me for the hours I work is worth noting and if I was ever approached by them, I'd say lightly, "They're less-than-okay people and they see coders as batteries."
+[^2]: Jenkins is my best friend here. It was a hurdle to set up, but once it was up, it would **not** come down.
 [^3]: Noticing a trend here? Yeah? Good.
-[^4]: I'm not very original, sadly. It's hard for me to come up with
-interesting ideas to myself. To others, it might pique their curiosity, but
-mine has yet to be.
+[^4]: I'm not very original, sadly. It's hard for me to come up with interesting ideas to myself. To others, it might pique their curiosity, but mine has yet to be.

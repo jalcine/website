@@ -4,38 +4,47 @@
 html, body
   margin: 0px
   padding: 0px
-  height: 100%
-  width: 100%
 
 body
-  background-color: $white
-  color: lighten($black, 5%)
+  background-color: $background-color
+  color: $foreground-color
   display: flex
+  flex-direction: column
   min-height: 100vh
   +flex-flow(column)
   +align-content(flex-end)
 
 html
-  overflow-y: scroll
+  overflow-y: auto
 
-a
-  color: $navy
-  text-decoration: none
-
-  strong
-    color: inherit
-
-  &:hover,
-  &:focus
-    text-decoration: underline
-
-section[role=main]
-  flex: 15
+main[role=main]
+  order: 2
+  flex: 1 0 auto
   max-width: $page-max-width
   margin: 0rem auto
   padding-top: $header-height / 2
 
-  p, blockquote, ul, li, dd,
-  h1, h2, h3, h4, h5, h6, img
-    max-width: $page-max-width
-    margin: 0.5rem auto
+  p
+    line-height: 1.8
+    font-size: 120%
+
++keyframes(header_float_in)
+  from
+    top: $header-height / 3
+
+  to
+    opacity: 1
+    top: 0rem
+
+header[role=main]
+  order: 1
+  opacity: 0
+  position: relative
+  flex: 0 0 0
+  +prefix-property(animation, header_float_in 0.5s ease)
+  +prefix-property(animation-fill-mode, forwards)
+  +prefix-property(animation-delay, 0.5s)
+
+img.image-half
+  width: 45%
+  margin: 0rem 1.25%

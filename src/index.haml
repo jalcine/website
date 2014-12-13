@@ -1,0 +1,20 @@
+---
+layout: 'default'
+title: 'Home'
+class: 'index'
+---
+
+%section{role:"title"}
+  %span.header
+    %img.lead{alt:"Image of Jacky Alcine",src:"/images/me.jpeg"}
+    %h1.lead= "Hey, I'm Jacky."
+  %p.lead
+    I'm a programmer, amateur photographer & futurist from
+    <strong>Brooklyn, New York</strong>. I'm working on
+    documenting my exploration of the world from a developer's
+    and a (growing!) young Black man's view.
+  %div
+    {% for link in site.links.social %}
+    %a{href:"{{ link.link }}",title:"{{ link.title }}"}
+      %i{class:"icon-{{ link.icon }}"}
+    {% endfor %}

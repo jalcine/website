@@ -1,0 +1,10 @@
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - autolink
+    - space_after_headers
+    - highlight
+    - quote
+    - footnotes
+  render_options:
+    - with_toc_data

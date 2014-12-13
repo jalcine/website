@@ -1,6 +1,6 @@
 ---
 # vim: set ft=liquid.xml :
-layout: none
+layout: empty
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>

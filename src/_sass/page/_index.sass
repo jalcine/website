@@ -1,13 +1,14 @@
 $title-background-image: "https://farm4.staticflickr.com/3953/15556142996_a7851a86f1_k.jpg"
 
 body.index
-  height: 100%
-
   header[role=main]
-    animation: index_header_fadein 0.5s ease
-    animation-fill-mode: forwards
+    +prefix-property(animation, index_header_fadein 0.5s ease)
+    +prefix-property(animation-fill-mode, forwards)
+    +prefix-property(animation-delay, 0.5s)
+    border: none
     transform: color 0.75s
     color: $gray
+    opacity: 1
 
     hgroup
       display: none
@@ -16,23 +17,28 @@ body.index
       flex: 2.1
       justify-content: center
 
+      li a
+        border-bottom: 1px solid transparent
+        border-bottom-left-radius: 0rem
+        border-bottom-right-radius: 0rem
+
     &:hover
       color: $black
 
-      nav li a
+      nav li a, nav li a:visited
         color: $gray
 
         &:hover
           background-color: $black
           color: $white
+          border-bottom: 1px solid $white
 
-  section[role=main]
+  main[role=main]
     display: flex
     padding-top: 0rem
     +flex-flow(row wrap)
     justify-content: space-around
     align-content: space-between
-    height: 100%
     width: 100%
     max-width: 100%
 
@@ -44,7 +50,6 @@ body.index
       display: flex
       +flex-flow(column wrap)
       width: 100%
-      min-height: 80%
       padding: 0.5rem 0rem
       align-content: center
       align-items: center
@@ -56,35 +61,58 @@ body.index
         background-size: cover
         background-repeat: no-repeat
         color: $white
-        min-height: calc(100% - #{$header-height})
         +flex-flow(column)
         +justify-content(center)
 
         $shadow-color: rgba(0,0,0,0.8)
 
-        h1
-          border-radius: 0.4rem
-          color: lighten($gray, 40%)
-          background-color: $shadow-color
-          padding: 0.6rem 0.9rem
+        span.header
+          display: flex
+          align-items: center
+
+          @media #{$desktop}
+            &
+              min-width: 40rem
+
+          h1
+            +ghostly
+            border-radius: none
+            color: lighten($gray, 40%)
+            background-color: $shadow-color
+            padding: 0.6rem 0.1rem
+            height: 6rem
+            transition: 0.4s all
+
+            @media #{$desktop}
+              &
+                border-radius: 0.4rem
+                padding: 0.6rem 0.9rem
+
+          img.lead
+            height: 10rem
+            margin: 0.5rem
+            border-radius: 50%
+            box-shadow: 0px 0px 5px 1px $shadow-color
+            transition: 0.4s all
 
         p.lead
-          border-radius: 0.4rem
-          align-self: flex-end
+          border-radius: 0rem
+          align-self: center
           background-color: $shadow-color
-          padding: 1.2rem 1.8rem
-          font-size: 2rem
-          max-width: 70%
-          text-align: center
+          padding: 0.4rem 0.6rem
+          font-size: 1.5rem
+          max-width: 100%
+          text-align: left
+          transition: 0.4s all
+          line-height: 1.2
+          box-shadow: none
 
-          @media #{$mobile}
+          @media #{$desktop}
             &
-              max-width: 100%
-              padding: 0.4rem 0.6rem
-              background-color: $black
-              font-size: 1.5rem
-              box-shadow: none
-
+              border-radius: 0.4rem
+              max-width: 40rem
+              padding: 1.2rem 1.8rem
+              font-size: 1.6rem
         a
           padding: 0.1rem 0.4rem
           background-color: $shadow-color
@@ -96,144 +124,18 @@ body.index
           h1, p
             box-shadow: none
 
-      &[role=collage]
-        +flex-flow(row wrap)
-        background-color: lighten($black, 10%)
-        color: $white
+          span.header
+            flex-direction: column
 
-        p.lead
-          font-size: 2.75rem
-          text-align: center
-          max-width: 80%
-
-        p.photostrip
-          display: flex
-          +flex-flow(row nowrap)
-          justify-content: space-between
-          align-items: center
-          max-width: none
-          padding: 0rem 1rem
-
-          &:hover
-            a
-              opacity: 0.5
-
-          a
-            transition: opacity 0.2s ease
-
-            &:hover
-              opacity: 1
-
-          img
-            max-width: 20rem
-            margin: 0.125rem
-
-          @media #{$not-desktop}
-            &
-              +flex-flow(column nowrap)
-              justify-content: space-between
-
-              img
-                max-height: 30rem
-                width: 100%
-
-      &[role=map]
-        background-color: $black
-        padding: 0rem
-
-      &[role=work]
-        display: flex
-        +flex-flow(column nowrap)
-        background-color: darken($red, 40%)
-        color: $white
-        justify-content: center
-        text-align: center
-
-        p.lead
-          a[href*="shutterstock"]
-            color: $red
-
-        div
-          display: flex
-          +flex-flow(column nowrap)
-          justify-content: space-between
-          align-items: center
-
-          a
-            text-align: center
-
-            img
-              clear: both
-              max-width: 20rem
-              min-width: 8rem
-
-      &[role=promotions]
-        display: flex
-        +flex-flow(row wrap)
-        justify-content: center
-        text-align: center
-        min-height: 50%
-
-        aside.left
-          max-width: 30%
-
-        aside.right
-          max-width: 50%
-
-          p.lead
-            margin: 0rem auto
-            font-size: 1rem
-
-          p.lead ~ p
-            display: flex
-            +flex-flow(row nowrap)
-            align-items: space-between
-            justify-content: space-between
-
-          a
-            margin: 0.25rem
-
-          a:hover
-            text-decoration: none
-
-          a > i[class^="icon-"]
-            font-size: 2rem
-            margin: 0.5rem
-
-        @media #{$not-desktop}
-          &
-            +flex-flow(column nowrap)
-
-            aside.left, aside.right
-              max-width: 90%
-
-            aside.right > hr
-              transform: none
+            h1.lead
               width: 100%
-              margin: 2rem auto
-              float: none
+              text-align: center
 
-
-  footer[role=main]
-    display: none
-
-#mapWhereIBeAt
-  min-height: 10rem
-  width: 100%
-
-  div.leaflet-map-pane
-    width: 100%
-
-  div.leaflet-overlay-for-jacky
-    font-size: 2rem
++keyframes(index_header_fadein)
+  0%
+    background-color: $white
     color: $black
 
-@keyframes index_header_fadein
-  0%
-    opacity: 1.0
-
   100%
-    opacity: 1.0
-    position: fixed
-    z-index: 9999
     background-color: $black
+    color: $white

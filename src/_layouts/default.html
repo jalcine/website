@@ -1,37 +1,12 @@
 <!DOCTYPE HTML>
-<!--
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
--->
 <html lang="en_US">
   <head>
     {% include head.html %}
   </head>
   <body class="{{ page.class ? "class=\" + page.class + "\"" : 'page' }}">
     <header role='main'>{% include header.html %}</header>
-    <section role='main'>
-      {{ content }}
-      {% comment %}<footer role='main'>{% include footer.html %}</footer>{% endcomment %}
-    </section>
+    <main role='main'>{{ content }}</main>
+    <footer role='main'>{% include footer.html %}</footer>
     {% include javascript.html %}
   </body>
 </html>
-<!--
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1
-
-iQIcBAEBAgAGBQJUcEKZAAoJECojSrxudnOTKwMP/iZbB+zx1HkYzGq7z/RtXLOS
-DBCCLR99QplU0eOc9lgDAizhL9KD7ykemj4yFghUMhRPzRbdjTqUiX2NqVaKe5Pe
-AyH7sy79DethLq8jO8L1m+B+YSzeJgowHfatDy3vGANPC35IsYTdT9wQ6G3LssTw
-wz7hV4/zXCzO1BaNDh9Djsjd1iGeQAGYTLPPVByuEIc4QLDjfJfxP9Kqz7Se1djl
-yjprgl4EQDAiBZvUglQKNfYv5OffMv8gtYLvBlSecHHWYgW6PIZBmaoFRJI+nbIg
-/GDSTfRm+7JLHJXBgC9pTG7JCJ97Qu6rp43rjxpuvstJMW7giAdYcbcRdUhP2c7x
-dLACXek6rC1UqGvRPO/RFWNSgXK2lmK3wSRXP6E7s7P51g6NH2m8FuazOdRKNi7O
-woA5zwoD4Py146wJsTHmGcZm8QUxv1gqtT69Me2v8Yi591brj0RPg1Mr0JYEGRK7
-rlPGFZxXCLrBRIHgd15W7q4dxFMNd1bGys4UXNq7sz/iJ7XGAfLc8E/+qFMPEfSB
-L/e/w03lXTnDMbgGRN0jofMNhke/YJlcse4w2gUstjjNWYKCMbEvgRvjw6a3mSTA
-v4efVQv8EZLyGSNMrUdDOwj7Jjcl2rDFysprXAzS0Bk8CcCq8twr8fu6fdmofvsY
-E7Xar0DdgQjet5Iv4xDG
-=eYWo
------END PGP SIGNATURE-----
--->

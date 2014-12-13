@@ -1,9 +1,9 @@
 $navigation-max-width: 30rem
-$header-height: 3.5rem
+$header-height: 5rem
 
 header[role=main]
   display: flex
-  +flex(1)
+  +flex(0 0 auto)
   +flex-flow(row nowrap)
 
   width: 100%
@@ -13,6 +13,7 @@ header[role=main]
   color: $header-foreground-color
   background-color: $header-background-color
   justify-content: space-around
+  align-items: center
   border-bottom: 0.1rem solid $header-foreground-color
   z-index: 900
 
@@ -32,6 +33,8 @@ header[role=main]
     h3
       color: inherit
       margin: 0rem
+      display: inline-flex
+      flex-direction: row
 
   > nav
     +inline-flex
@@ -66,14 +69,15 @@ header[role=main]
           i
             margin: 0.2rem 0.3rem 0.2rem 0rem
 
-  @media (max-width: #{$mobile-screen})
+  @media #{$mobile}
     &
       +flex-flow(column nowrap)
       +justify-content(space-between)
       height: auto
-      padding-bottom: $header-height * 0.1
+      padding-bottom: 0.2rem
 
-      > hgroup, > nav
+      > hgroup,
+      > nav
         display: inline-flex
         +justify-content(space-around)
         line-height: auto
@@ -84,12 +88,17 @@ header[role=main]
         padding-left: 0.2rem
         margin: 0.5rem 0rem
 
-  @media (max-width: #{$mobile-screen})
+        h3
+          flex-direction: column
+          text-align: center
+
+          span
+            display: none
+
+  @media #{$mobile}
     &
-      > nav li >  a
+      nav ul li a
         font-size: 0rem
 
         i
           font-size: 1rem
-
-  &.minified

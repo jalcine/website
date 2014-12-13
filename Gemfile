@@ -1,4 +1,4 @@
-# vim: set fdm=marker :
+# vim: set fdm=marker nospell:
 source 'https://rubygems.org'
 ruby '2.1.3'
 
@@ -10,9 +10,8 @@ gem 'dotenv'
 # {{{ Jekyll
 gem 'jekyll'
 gem 'jekyll-gist'
-gem 'jekyll-archives'
-gem 'jekyll-paginate'
-gem 'jekyll-sitemap'
+gem 'jekyll-sass'
+gem 'jekyll-haml'
 gem 'jemoji'
 # }}}
 
@@ -20,7 +19,7 @@ gem 'rack'
 gem 'rack-livereload'
 
 gem 'guard'
-gem 'guard-jekyll-plus', path: '~/Development/Projects/guard-jekyll-plus'
+gem 'guard-jekyll-plus'
 gem 'guard-rack'
 gem 'guard-bundler'
 gem 'guard-livereload'

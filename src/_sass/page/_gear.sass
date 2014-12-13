@@ -1,0 +1,40 @@
+body.gear
+  main[role=main]
+    max-width: $page-max-width
+    margin: 0rem auto
+    padding: 0.75rem 0.1rem
+    display: block
+
+    section.lead
+      font-size: 1.5
+      padding: 0rem 0.75rem
+      margin: 0rem auto
+
+      @media #{$desktop}
+        &
+          padding: 0rem
+          max-width: $page-max-width * 0.6
+
+      h1
+        text-align: center
+
+    section.hardware,
+    section.software
+      padding: 0rem
+      width: 100%
+      margin: 0rem auto
+      clear: both
+
+      @media #{$desktop}
+        &
+          padding: 0rem
+          max-width: $page-max-width
+
+      h2 ~ address
+        color: $gray
+
+      img
+        margin: 1rem
+
+        &.image-half
+          margin: 0rem 1.25%

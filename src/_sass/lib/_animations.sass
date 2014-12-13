@@ -1,5 +1,53 @@
-@keyframes fadein
+=prefix-property($property, $value)
+  -moz-#{$property}: $value
+  -webkit-#{$property}: $value
+  -o-#{$property}: $value
+  -ms-#{$property}: $value
+
+=prefix-property-varadic($property, $values...)
+  -moz-#{$property}: $values
+  -webkit-#{$property}: $values
+  -o-#{$property}: $values
+  -ms-#{$property}: $values
+
+
+=prefix-block($text)
+  -moz-#{$text}
+    @content
+  -webkit-#{$text}
+    @content
+  -o-#{$text}
+    @content
+  -ms-#{$text}
+    @content
+
+=keyframes($text)
+  @-moz-keyframes #{$text}
+    @content
+  @-webkit-keyframes #{$text}
+    @content
+  @-o-keyframes #{$text}
+    @content
+  @-ms-keyframes #{$text}
+    @content
+
++keyframes(fadein)
   from
     opacity: 0
   to
     opacity: 1
+
++keyframes(floatup)
+  from
+    margin-top: 2rem
+    margin-bottom: -2rem
+  to
+    margin-top: initial
+    margin-bottom: initial
+
+=ghostly
+  +prefix-property-varadic(animation-name, fadein, floatup)
+  +prefix-property(animation-fill-mode, forwards)
+  +prefix-property(animation-delay, 0s)
+  +prefix-property(animation-duration, 0.75s)
+
