@@ -11,7 +11,7 @@ class: "pagination"
       {% else %}<a href="/weblog/{{ paginator.previous_page }}/">Recent Posts</a>
       {% endif %}
     {% endif %}
-    {% if paginator.next_page %}<a href="/weblog/{{ paginator.next_page }}">Older Posts</a>
+    {% if paginator.next_page %}<a href="/weblog/{{ paginator.next_page }}/">Older Posts</a>
     {% endif %}
   </p>
 
@@ -27,8 +27,8 @@ class: "pagination"
   </dl>
 
   <p class="paginator">
-    {% if paginator.previous_page %}<a href="{{ paginator.previous_page }}">Previous</a>{% endif %}
-    {% if paginator.next_page %}<a href="{{ paginator.next_page }}">Next</a>{% endif %}
+    {% if paginator.previous_page %}<a href="/weblog/{{ paginator.previous_page }}/">Previous</a>{% endif %}
+    {% if paginator.next_page %}<a href="/weblog/{{ paginator.next_page }}/">Next</a>{% endif %}
   </p>
 </section>
 
