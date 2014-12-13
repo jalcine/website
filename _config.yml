@@ -14,8 +14,8 @@ description: |
   with was broken by default, and is currently attempting to learn what
   he should have known a decade ago. He's also a bit of a Afrofuturist.
 
-pagination_path: 'weblog/:num'
-permalink: '/weblog/:title'
+pagination_path: 'weblog/:num/'
+permalink: '/weblog/:title/'
 relative_permalinks: false
 lsi: false
 show_drafts: false
@@ -31,11 +31,11 @@ links:
     -
       title: "Weblog"
       icon: "blog"
-      link: "/weblog"
+      link: "/weblog/"
     -
       title: "About"
       icon: "home"
-      link: "/about"
+      link: "/about/"
   social:
     -
       title: "Twitter"
@@ -60,7 +60,7 @@ links:
     -
       title: "GPG"
       icon: "key"
-      link: "/gpg"
+      link: "/gpg/"
     -
       title: "Stack Overflow"
       icon: "stackoverflow"

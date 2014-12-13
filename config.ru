@@ -1,5 +1,5 @@
 require 'rack/livereload'
 
-use Rack::LiveReload, source: :livereload, no_swf: true
-use Rack::Static, urls: [/^\/*/], root: "_site"
+use Rack::LiveReload
+use Rack::Static, urls: [/\/$/], root: "_site", index: 'index.html'
 run Rack::File.new('_site')
