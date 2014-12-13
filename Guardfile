@@ -7,7 +7,7 @@ guard :livereload do
   watch(%r{^_site}) { |m| "#{m[0]}" }
 end
 
-guard :rack do
+guard :rack, port: 3000 do
   watch('Gemfile.lock')
   watch('config.ru')
 end

@@ -2,7 +2,10 @@
 class: 'post pagination'
 layout: default
 ---
-
+<script
+  data-isso="//comments.jalcine.me:81/"
+  async="true"
+  src="//comments.jalcine.me:81/js/embed.min.js"></script>
 <header role='post'>
   <h1 class='title'> {{ page.title }} </h1>
 </header>
@@ -27,6 +30,7 @@ layout: default
   {{ content }}
 </section>
 <footer role='post'>
+  <section id="isso-thread"></section>
   <p class="paginator">
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page }}">Previous</a>
