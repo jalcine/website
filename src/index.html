@@ -2,159 +2,19 @@
 layout: 'default'
 title: 'Home'
 class: 'index'
-javascripts:
-  - "http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"
-styles:
-  - "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"
 ---
 
-<!-- REGION: 0) Title + Quips -->
 <section role="title">
-  <h1 class="lead">
-    I am Jacky Alcin&#233;.
-  </h1>
+  <h1 class="lead">Hey, I'm Jacky.</h1>
   <p class="lead">
-    {{ site.description }}
+    I'm a programmer, amateur photographer &amp; reader from
+    Brooklyn, New York.
   </p>
-  <small>
-    <a href="https://www.flickr.com/photos/jackyalcine/15638794309/" target="_blank">
-      Image: Flickr
-    </a>
-  </small>
-</section>
-<!-- REGION: 1) Mapbox with markers on where I've been -->
-<section role="map">
-  <div id="mapWhereIBeAt"></div>
-</section>
-<!-- REGION: 2) Moving collage of photos I've taken -->
-<section role="collage">
-  <p class="lead">
-    I take pictures occasionally, in hopes that they capture what I saw.
-  </p>
-  <p class="photostrip">
-    <a href="https://www.flickr.com/photos/jackyalcine/14945867704/" target="_blank">
-      <img src="https://farm6.staticflickr.com/5604/14945867704_834f17e532_z.jpg">
-    </a>
-    <a href="https://www.flickr.com/photos/jackyalcine/15379559229/" target="_blank">
-      <img src="https://farm4.staticflickr.com/3775/9430504525_69a4701e5a_z.jpg">
-    </a>
-    <a href="https://www.flickr.com/photos/jackyalcine/9412752276/" target="_blank">
-      <img src="https://farm6.staticflickr.com/5450/9412752276_ae8ec54acb_o.jpg">
-    </a>
-  </p>
-</section>
-<!-- REGION: 3) Places I've worked at -->
-<section role="work">
-  <p class="lead">
-    I don't work anywhere at the moment. In the past, I've worked at the following places:
-  </p>
-  <div>
-    <a href="https://shutterstock.com">
-      <img src="/images/work/shutterstock.png">
-    </a>
-    <a href="https://google.com">
-      <img src="/images/work/google.png">
-    </a>
-    <a href="https://horizonmedia.com">
-      <img src="/images/work/horizonmedia.png">
-    </a>
-    <a href="https://bareburger.com">
-      <img src="/images/work/bareburger.png">
-    </a>
-  </div>
-</section>
-<!-- REGION: 4) (1/2) Most recent blog post -->
-<section role="promotions">
-  <aside class="left">
-    <h1>Latest Blog Entry</h1>
-    <hr>
-    <h2>
-      <a href="{{ site.posts.first.url }}">
-        {{ site.posts.first.title }}
+  <p>
+    {% for link in site.links.social %}
+      <a href="{{ link.link }}" title="{{ link.title }}">
+        <i class="icon-{{ link.icon }}"></i>
       </a>
-    </h2> <p>
-      My latest blog post is categorized under
-      <strong>{{ site.posts.first.category || 'no category' }}</strong>
-      and is tagged with {{ site.posts.first.tags | array_to_sentence_string }}.
-    </p>
-    <p>
-      <strong><a href="{{ site.posts.first.url }}">Read now</a></strong>.
-    </p>
-  </aside>
-  <aside class="right">
-    <hr class="vertical left" />
-    <p class="lead">
-      I use these social media sites so you can spy on me, track my movements,
-      payments, recommedations and the likes.
-    </p>
-    <p>
-      {% for link in site.links.social %}
-        <a href="{{ link.link }}" title="{{ link.title }}">
-          <i class="icon-{{ link.icon }}"></i>
-        </a>
-      {% endfor %}
-    </p>
-  </aside>
+    {% endfor %}
+  </p>
 </section>
-
-<script type="text/javascript" defer="true">
-  (function() {
-    var buildMap = function buildMap(){
-      var map = L.map('mapWhereIBeAt',{
-        center: [40.652876, -73.959494],
-        zoom: 14,
-        dragging: false,
-        touchZoom: false,
-        scrollWheelZoom: false,
-        doubleClickZoom: false,
-        tap: false,
-        keyboard: false,
-        zoomControl: false
-      });
-      L.tileLayer('http://{s}.tiles.mapbox.com/v3/jackyalcine.k64ka8di/{z}/{x}/{y}.png', {
-        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-      }).addTo(map);
-      addOverlap(map);
-    };
-
-    var addOverlap = function addOverlayToMap(map) {
-      var MyTextLayer = L.Class.extend({
-
-        initialize: function (latlng) {
-          this._latlng = latlng;
-        },
-
-        onAdd: function (map) {
-          this._map = map;
-
-          this._el = L.DomUtil.create('div', 'leaflet-overlay-for-jacky');
-          this._el.innerHTML="I lived in this area for over two decades.";
-          map.getPanes().overlayPane.appendChild(this._el);
-          map.on('viewreset', this._reset, this);
-          this._reset();
-        },
-
-        onRemove: function (map) {
-          map.getPanes().overlayPane.removeChild(this._el);
-          map.off('viewreset', this._reset, this);
-        },
-
-        _reset: function () {
-          var pos = this._map.latLngToLayerPoint(this._latlng);
-          L.DomUtil.setPosition(this._el, pos);
-        }
-      });
-
-      map.addLayer(new MyTextLayer([40.650876, -73.983494]));
-    };
-
-    $(window).on('load', function windowOnLoad() {
-      var mapContainer = $('#mapWhereIBeAt');
-      var titleContainer = $('section[role=title]')
-      mapContainer.css({
-        height: titleContainer.height()
-      });
-      buildMap();
-    });
-  })();
-</script>
