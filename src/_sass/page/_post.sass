@@ -27,6 +27,9 @@ body.post > main[role=main]
         width: auto
         max-width: auto
 
+  ul, ol
+    margin: 1.25rem 2.5rem
+
   ul > li
     list-style: square
 
@@ -41,6 +44,7 @@ body.post > main[role=main]
 
     > p
       margin: 1rem 0rem
+
       h1, h2, h3, h4, h5, h6
         padding-top: 1.5rem
 
@@ -51,12 +55,17 @@ body.post > main[role=main]
       &:first-line
         text-transform: uppercase
         font-weight: 100
-        font-size: 2.5rem
+        font-size: 150%
         font-family: $header-font-family
 
     div.embed
       display: flex
       justify-content: center
+
+    a.footnote
+      text-decoration: none
+      font-weight: bold
+      color: $link-color
 
     div.footnotes
       font-size: 0.75rem

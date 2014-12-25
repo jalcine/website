@@ -17,7 +17,7 @@ like it a lot too since a lot of the code base is written with C++.
 ## Peer Discovery
 
 Whenever you connect to a new network on Windows (XP SP2 and greater, I think,
-and specificially a wireless network, I haven't tried Ethernet connections),
+and specifically a wireless network, I haven't tried Ethernet connections),
 it asks for the network type. Now, some might disregard this window,
 but this determines the amount of information that the platform should
 expose the new network. If you're a casual Linux user with no real tinkering,
@@ -27,7 +27,7 @@ switch on and off.
 
 Using Avahi to look at my local network over ZeroConf, I get a bit of
 interesting information:
-```bash
+{% highlight bash %}
 # You must have `avahi` installed for this to work on your machine.
 # sudo apt-get install kde-zeroconf (for KDE).
 $ avahi-browse -a
@@ -40,6 +40,7 @@ $ avahi-browse -a
 +  wlan0 IPv6 neuromancer                         Remote Disk Management local
 +  wlan0 IPv4 neuromancer                         Remote Disk Management local
 ```
+{% endhighlight %}
 
 Above, you can see my local network chat capabilities (via iChat or Adium 
 for OS X and [Telepathy IM][3] on KDE), `sane` used for discovering scanners, 
