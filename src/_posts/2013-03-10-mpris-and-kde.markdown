@@ -116,6 +116,5 @@ to work on this in the near future. Good chance I'll tweet when I start.
 [kmix]: http://kmix.kde.org
 [amarok]: http://amarok.kde.org
 [spotify]: http://spotify.com
-[^1]: Since the time of writing, I've changed it back to work with Amarok
-(since I've picked up podcasting listening).
+[^1]: Since the time of writing, I've changed it back to work with Amarok (since I've picked up podcasting listening).
 [^2]: Make 'interface' into a pointer; freaking Markdown highlightling in Vim.
