@@ -39,5 +39,5 @@ shit done, making strides down the road I've set out for myself and to keep
 moving. I might not be ready for 2015, but rest assured, when it's over, I'll be
 on top.
 
-[wntr]: https://github.com/jalcine/winutermute
+[wntr]: https://github.com/jalcine/wintermute
 [^1]: Though I wouldn't mind saving even more money now :smirk:
