@@ -11,6 +11,18 @@ body.post > main[role=main]
       line-height: 1
       +ghostly
 
+
+  footer[role=post]
+    margin: 2rem auto
+    padding: 0rem 1rem
+    font-size: 0.8rem
+    color: lighten($foreground-color, 20%)
+    text-transform: uppercase
+
+    @media #{$desktop}
+      &
+        width: 50%
+
   a
     text-decoration: underline
 
@@ -40,6 +52,13 @@ body.post > main[role=main]
     font-size: 0.9rem
     margin-bottom: 2rem
     margin-top: 0.5rem
+
+  blockquote.response
+    border: none
+    font-size: 1.2rem
+    color: lighten($foreground-color, 30%)
+    max-width: 60%
+    margin: 0rem auto
 
   main[role=post]
     margin: auto 1rem
@@ -77,3 +96,27 @@ body.post > main[role=main]
       a.reversefootnote
         float: right
         text-decoration: none
+
+body.post.response
+  main[role=post]
+    blockquote
+      border-left: none
+      margin: -3rem auto
+      max-width: 85%
+      color: darken($background-color, 40%)
+      font-size: 1.2rem
+
+      &:before, &:after
+        font-size: 3rem
+        display: inline
+        position: relative
+
+      &:before
+        content: "“"
+        right: 2rem
+        top: 3rem
+
+      &:after
+        content: "”"
+        right: -100%
+        top: -3rem

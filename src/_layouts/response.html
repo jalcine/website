@@ -1,20 +1,24 @@
 ---
-layout: post
+layout: default
+class: 'post pagination response'
 ---
 
+{% capture title %}RE: {{ page.link.title }}{% endcapture %}
+{% include post_header.html title=title %}
 <blockquote class='response'>
   This post is a response to
-  <a href="{{ page.link.author_link }}" target="_blank">
-    {{ page.link.author }}</a>'s
+  <a href="{{ page.link.author.link }}" target="_blank">
+    {{ page.link.author.name }}</a>'s
   work
   <a href="{{ page.link.src }}" target="_blank">
-    {{ page.link.name }}</a>.
+    {{ page.link.title }}</a>.
   For suggestions, comments and updated critique, please send it 
   to me via <a href="mailto:?yo@jacky.wtf">email (PGP encrypted)</a>
   or via Twitter to
   <strong>
     <a href="https://twitter.com/jackyalcine">@jackyalcine</a></strong>.
 </blockquote>
-
-<hr>
-{{ content }}
+<main role='post'>
+  {{ content }}
+</main>
+{% include post_footer.html %}
