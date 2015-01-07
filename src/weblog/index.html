@@ -16,12 +16,16 @@ class: "pagination"
   </p>
 
   <dl>
-  {% for post in site.posts | sort %}
+  {% for post in site.posts %}
     <dt>
       <h2>
         <a href="{{ post.url }}">{{ post.title | markdownify }}</a>
       </h2>
-      <dd><time>{{ post.date | time_to_string }}</time></dd>
+      <dd>
+        <span>{{ post.layout }}</span>
+        <time>{{ post.date | time_to_string }}</time>
+        <span>tagged {{ page.tags | link_to_tags }} </span>
+      </dd>
     </dt>
   {% endfor %}
   </dl>

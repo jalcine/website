@@ -13,10 +13,14 @@ class: 'post pagination response'
   <a href="{{ page.link.src }}" target="_blank">
     {{ page.link.title }}</a>.
   For suggestions, comments and updated critique, please send it 
-  to me via <a href="mailto:?yo@jacky.wtf">email (PGP encrypted)</a>
+  to me via
+  <a href="mailto:Jacky Alcine<yo@jacky.wtf>?subject={{ title | url_escape }}">
+    email (GPG encrypted)
+  </a>
   or via Twitter to
   <strong>
-    <a href="https://twitter.com/jackyalcine">@jackyalcine</a></strong>.
+    <a target="_blank" href="https://twitter.com/jackyalcine">@jackyalcine</a>
+  </strong>.
 </blockquote>
 <main role='post'>
   {{ content }}

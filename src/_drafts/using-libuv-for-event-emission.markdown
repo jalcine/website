@@ -157,9 +157,9 @@ emitter->emit(msgEvent);
 
 But this brought me back to my original problem; not being able to listen and
 wait for messages from receivers. It hit me over (yet another) cup of tea:
-receiving messages would be similar to reading a infinite stream. This led to
-my realizing that we'd have to implement a `uv_stream_t` type for ZeroMQ
-sockets.
+receiving messages would be similar to reading a infinite stream. For now, I
+figure that using a polling system would work best; having it query each
+receiver in a separate thread every 10 seconds for a new mes
 
 [libuv]: https://github.com/libuv/libuv
 [wintermute]: https://github.com/jalcine/wintermute

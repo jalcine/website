@@ -1,5 +1,5 @@
 <header role='post'>
-  <h1 class='title'>{{ title }}</h1>
+  <h1 class='title'>{{ include.title || page.title }}</h1>
 </header>
 <section role='stats'>
   <span>
@@ -10,7 +10,7 @@
     {% if page.location %}in <strong>{{ page.location }}</strong>{% endif %}
   </span> &mdash;
   <span>
-    labeled under <strong>{{ page.categories || array_to_sentence_string }}</strong>
+    tagged under <strong>{{ page.tags || array_to_sentence_string }}</strong>
   </span>
 {% if page.description %}
   <blockquote class='narrative'>
