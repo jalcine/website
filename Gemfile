@@ -13,6 +13,8 @@ gem 'jekyll-gist'
 gem 'jekyll-sass'
 gem 'jekyll-haml'
 gem 'jemoji'
+gem 'jekyll-tagging'
+gem 'jekyll-compose'
 # }}}
 
 gem 'rack'
