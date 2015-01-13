@@ -43,6 +43,12 @@ links:
       title: "Gear"
       link: "/gear/"
       icon: "stats"
+    -
+      title: "Projects"
+      link: "/projects/"
+      icon: "book"
+    -
+
   social:
     -
       title: "Twitter"
