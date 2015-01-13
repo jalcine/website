@@ -6,3 +6,4 @@ tags
 *.tweet-cache
 gems.tags
 .env
+**/*/.directory
