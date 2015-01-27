@@ -13,7 +13,7 @@ class: 'index'
     <strong>Brooklyn, New York</strong>. I'm working on
     documenting my exploration of the world from a developer's
     and a (growing!) young Black man's view.
-  %div
+  %div#linksBar
     {% for link in site.links.social %}
     %a{href:"{{ link.link }}",title:"{{ link.title }}"}
       %i{class:"icon-{{ link.icon }}"}
