@@ -134,6 +134,28 @@ body.index
   padding: 0.5rem 1.5rem
   background-color: $shadow-color
 
+  a
+    text-decoration: none
+
+    &:hover
+
+    &[href*="goodreads"]:hover,
+    &[href*="stackoverflow"]:hover
+      color: $orange
+
+    &[href*="last\.fm"]:hover,
+    &[href*="reddit"]:hover
+      color: $red
+
+    &[href*="twitter"]:hover,
+    &[href*="linkedin"]:hover
+      color: $blue
+
+    &[href*="github"]:hover,
+    &[href*="gpg"]:hover,
+    &[href*="keybase"]:hover
+      color: $gray
+
 +keyframes(index_header_fadein)
   0%
     background-color: $white
