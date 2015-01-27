@@ -17,7 +17,7 @@ tags:
 > passion projects, it's definitely the overwhelming amount of emotion one can
 > throw into it.
 
-# What's Wintermute [Going to be] Capable Of? {#synopsis}
+# What's Wintermute Capable Of? {#synopsis}
 
 Wintermute is an attempt to build a "universal" communication platform for
 existing and future bits of software I find and plan to build. The idea is
