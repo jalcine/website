@@ -6,15 +6,4 @@
     <span>&nbsp;&mdash; My slice of the <code>*/64</code> space</span>
   </h3>
 </hgroup>
-
-<nav role="main">
-  <ul>
-    {% for link in site.links.navigation %}
-      <li>
-        <a href="{{ link.link }}">
-          <i class="icon-{{ link.icon }}"></i>{{ link.title }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
+{% include navigation.html %}

@@ -2,19 +2,34 @@
 layout: 'default'
 title: 'Home'
 class: 'index'
+no_header: true
 ---
 
-%section{role:"title"}
-  %span.header
-    %img.lead{alt:"Image of Jacky Alcine",src:"/images/me.jpeg"}
-    %h1.lead= "Hey, I'm Jacky."
-  %p.lead
-    I'm a programmer, amateur photographer &amp; futurist from
-    <strong>Brooklyn, New York</strong>. I'm working on
-    documenting my exploration of the world from a developer's
-    and a (growing!) young Black man's view.
-  %div#linksBar
-    {% for link in site.links.social %}
-    %a{href:"{{ link.link }}",title:"{{ link.title }}"}
-      %i{class:"icon-{{ link.icon }}"}
-    {% endfor %}
+%header.index
+  %span.pre= "Hey, I'm"
+  %h2.lead="{{ site.author }}"
+%section.blurb
+  :markdown
+    # Who Are You?
+    I'm a software engineer in New York City. I currently am working as a
+    freelancer but am open to new opportunities. You can [hire me][] for
+    website-related work. It doesn't hurt to learn a bit [about me][].
+
+    ## Whatcha Doing?
+    Right now, I'm spending a lot of attention towards [Wintermute][].
+    I'm also working on helping people of color getting into software
+    development as well as using said skills to aid social justice.
+    [All in the works, of course][blkops].
+
+    [about me]: /about/
+    [hire me]: /work/#hire
+    [wintermute]: {% post_url 2015-01-10-ambitions-wintermute %}
+    [blkops]: https://blkops.github.io
+%section.links
+  %ul
+  {% for link in site.links.social %}
+    %li
+      %a{href:"{{ link.link }}",title:"{{ link.title }}",target:"_blank"}
+        %i{class:"icon-{{ link.icon }}"}
+  {% endfor %}
+

@@ -86,3 +86,7 @@ links:
       title: "Goodreads"
       icon: "book"
       link: "https://www.goodreads.com/jalcine"
+    -
+      title: "Flickr"
+      icon: "flickr"
+      link: "https://www.flickr.com/photos/jackyalcine"

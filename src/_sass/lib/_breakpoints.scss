@@ -2,7 +2,7 @@
 $mobile-screen: 43.125rem;
 $tablet-screen: 62.1875rem;
 $desktop-screen: 90rem;
- 
+
 $screen: "only screen";
 $mobile: "only screen and (max-width:#{$mobile-screen})";
 $tablet: "only screen and (min-width:#{$mobile-screen}) and (max-width: #{$tablet-screen})";

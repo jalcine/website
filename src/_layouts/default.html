@@ -4,9 +4,13 @@
     {% include head.html %}
   </head>
   <body class="{{ page.class ? "class=\" + page.class + "\"" : 'page' }}">
+  {% unless page.no_header %}
     <header role='main'>{% include header.html %}</header>
+  {% endunless %}
     <main role='main'>{{ content }}</main>
+  {% unless page.no_footer %}
     <footer role='main'>{% include footer.html %}</footer>
+  {% endunless %}
     {% include javascript.html %}
   </body>
 </html>

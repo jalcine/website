@@ -1,166 +1,81 @@
-$title-background-image: "https://farm4.staticflickr.com/3953/15556142996_a7851a86f1_k.jpg"
-$shadow-color: rgba(0,0,0,0.8)
+body.index > main[role=main]
+  max-width: none
+  width: 100%
+  padding: 0rem
 
-body.index
-  header[role=main]
-    +prefix-property(animation, index_header_fadein 0.5s ease)
-    +prefix-property(animation-fill-mode, forwards)
-    +prefix-property(animation-delay, 0.5s)
-    border: none
-    transform: color 0.75s
-    color: $gray
-    opacity: 1
-
-    hgroup
-      display: none
-
-    nav
-      flex: 2.1
-      justify-content: center
-
-      li a
-        border-bottom: 1px solid transparent
-        border-bottom-left-radius: 0rem
-        border-bottom-right-radius: 0rem
-
-    &:hover
-      color: $black
-
-      nav li a, nav li a:visited
-        color: $gray
-
-        &:hover
-          background-color: $black
-          color: $white
-          border-bottom: 1px solid $white
-
-  main[role=main]
+  > header.index
+    height: 8rem
     display: flex
-    padding-top: 0rem
-    +flex-flow(row wrap)
-    justify-content: space-around
-    align-content: space-between
-    width: 100%
-    max-width: 100%
-
-    @media #{$not-desktop}
-      &
-        max-width: 100%
-
-    > section
-      display: flex
-      +flex-flow(column wrap)
-      width: 100%
-      padding: 0.5rem 0rem
-      align-content: center
-      align-items: center
-
-      &[role=title]
-        background-color: $black
-        background-image: url(#{$title-background-image})
-        background-position: center center
-        background-size: cover
-        background-repeat: no-repeat
-        color: $white
-        +flex-flow(column)
-        +justify-content(center)
-
-
-        span.header
-          display: flex
-          align-items: center
-
-          @media #{$desktop}
-            &
-              min-width: 40rem
-
-          h1
-            +ghostly
-            border-radius: none
-            color: lighten($gray, 40%)
-            background-color: $shadow-color
-            padding: 0.6rem 0.1rem
-            height: 6rem
-            transition: 0.4s all
-
-            @media #{$desktop}
-              &
-                border-radius: 0.4rem
-                padding: 0.6rem 0.9rem
-
-          img.lead
-            height: 10rem
-            margin: 0.5rem
-            border-radius: 50%
-            box-shadow: 0px 0px 5px 1px $shadow-color
-            transition: 0.4s all
-
-        p.lead
-          border-radius: 0rem
-          align-self: center
-          background-color: $shadow-color
-          padding: 0.4rem 0.6rem
-          font-size: 1.5rem
-          max-width: 100%
-          text-align: left
-          transition: 0.4s all
-          line-height: 1.2
-          box-shadow: none
-
-          @media #{$desktop}
-            &
-              border-radius: 0.4rem
-              max-width: 40rem
-              padding: 1.2rem 1.8rem
-              font-size: 1.6rem
-        a
-          padding: 0.1rem 0.4rem
-          color: $white
-
-      @media #{$not-desktop}
-        &
-          +flex-flow(column wrap)
-          h1, p
-            box-shadow: none
-
-          span.header
-            flex-direction: column
-
-            h1.lead
-              width: 100%
-              text-align: center
-
-#linksBar
-  padding: 0.5rem 1.5rem
-  background-color: $shadow-color
-
-  a
-    text-decoration: none
-
-    &:hover
-
-    &[href*="goodreads"]:hover,
-    &[href*="stackoverflow"]:hover
-      color: $orange
-
-    &[href*="last\.fm"]:hover,
-    &[href*="reddit"]:hover
-      color: $red
-
-    &[href*="twitter"]:hover,
-    &[href*="linkedin"]:hover
-      color: $blue
-
-    &[href*="github"]:hover,
-    &[href*="gpg"]:hover,
-    &[href*="keybase"]:hover
-      color: $gray
-
-+keyframes(index_header_fadein)
-  0%
-    background-color: $white
-    color: $black
-
-  100%
+    flex-direction: column
+    align-items: center
+    justify-content: center
     background-color: $black
+    background-image: url(/images/space.jpg)
+    background-position: center center
+    background-size: cover
+    background-repeat: no-repeat
     color: $white
+    text-transform: uppercase
+    border-bottom: 0.25rem solid $black
+
+    @media #{$desktop}
+      &
+        flex-direction: row
+        height: 18rem
+
+        > span.pre
+          margin: 0rem 1rem
+          margin-top: 0.5rem
+          font-size: 1.2rem
+
+        > h2.lead
+          font-size: 4rem
+
+    > h2.lead
+      font-weight: 100
+      color: inherit
+
+  > section.links > ul
+    list-style: none
+    display: flex
+    justify-content: center
+    padding: 0.3rem 0rem
+    background-color: $black
+    margin-bottom: 0rem
+
+    > li
+      padding: 0.4rem
+      display: inline
+
+      a
+        font-size: 120%
+        color: $white
+        text-decoration: none
+        transition: color 0.4s
+
+        &[href*="goodreads"]:hover,
+        &[href*="stackoverflow"]:hover
+          color: $orange
+
+        &[href*="last\.fm"]:hover,
+        &[href*="reddit"]:hover,
+        &[href*="flickr"]:hover
+          color: $red
+
+        &[href*="twitter"]:hover,
+        &[href*="linkedin"]:hover
+          color: $blue
+
+        &[href*="github"]:hover,
+        &[href*="gpg"]:hover,
+        &[href*="keybase"]:hover
+          color: $gray
+
+  > section.blurb
+    max-width: $page-max-width * 0.6
+    margin: 1rem auto
+    padding: 0rem 0.5rem
+
+    @media #{$desktop}
+      &
+        font-size: 1.5rem
