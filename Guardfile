@@ -12,7 +12,7 @@ guard :rack, port: 3000, host: 'stark.jalcine', server: :webrick do
   watch('config.ru')
 end
 
-guard 'jekyll-plus', serve: false, future: true, drafts: true,
+guard 'jekyll_plus', serve: false, future: true, drafts: true,
                      silent: true, config: ['_config.yml'] do
   watch(/^src/)
   watch(/^plugins/) { '_config.yml' }
