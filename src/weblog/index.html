@@ -24,7 +24,7 @@ class: "pagination"
       <dd>
         <span>{{ post.layout }}</span>
         <time>{{ post.date | time_to_string }}</time>
-        <span>tagged {{ page.tags | link_to_tags }} </span>
+        <span>tagged {{ post.tags | array_to_sentence }}</span>
       </dd>
     </dt>
   {% endfor %}

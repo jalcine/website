@@ -17,6 +17,7 @@ description: |
 pagination_path: 'weblog/:num/'
 permalink: '/weblog/:title/'
 relative_permalinks: false
+tag_dir: '/weblog/tag'
 lsi: false
 show_drafts: false
 future: false

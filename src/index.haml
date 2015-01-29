@@ -8,6 +8,10 @@ no_header: true
 %header.index
   %span.pre= "Hey, I'm"
   %h2.lead="{{ site.author }}"
+%nav.mini
+  %a{href: "/weblog/",title:"Weblog"}="Weblog"
+  %a{href: "/about/",title:"About"}="About"
+  %a{href: "/files/resume.pdf",title:"Resume"}="Resume"
 %section.blurb
   :markdown
     # Who Are You?
@@ -31,5 +35,6 @@ no_header: true
     %li
       %a{href:"{{ link.link }}",title:"{{ link.title }}",target:"_blank"}
         %i{class:"icon-{{ link.icon }}"}
+        %b="{{ link.title }}"
   {% endfor %}
 

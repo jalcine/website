@@ -3,6 +3,16 @@ body.index > main[role=main]
   width: 100%
   padding: 0rem
 
+  nav.mini
+    background-color: $black
+    display: flex
+    align-items: center
+    justify-content: center
+
+    a
+      color: $gray
+      padding: 0.3rem 0.5rem
+
   > header.index
     height: 8rem
     display: flex
@@ -53,6 +63,9 @@ body.index > main[role=main]
         color: $white
         text-decoration: none
         transition: color 0.4s
+
+        b
+          font-size: 0rem
 
         &[href*="goodreads"]:hover,
         &[href*="stackoverflow"]:hover
