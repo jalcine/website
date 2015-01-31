@@ -15,9 +15,10 @@ no_header: true
 %section.blurb
   :markdown
     # Who Are You?
-    I'm a software engineer in New York City. I currently am working as a
-    freelancer but am open to new opportunities. You can [hire me][] for
-    website-related work. It doesn't hurt to learn a bit [about me][].
+    I'm a software engineer in Brooklyn, New York City. I currently am
+    [working as a **freelancer**][freelance] but am open to new opportunities.
+    You can **[hire me][]** for website-related work. It doesn't hurt to learn
+    a bit [about me][].
 
     ## Whatcha Doing?
     Right now, I'm spending a lot of attention towards [Wintermute][].
@@ -29,12 +30,13 @@ no_header: true
     [hire me]: /files/resume.pdf
     [wintermute]: {% post_url 2015-01-10-ambitions-wintermute %}
     [blkops]: https://blkops.github.io
+    [freelance]: {% post_url 2015-01-30-freelancing-2015 %}
 %section.links
   %ul
-  {% for link in site.links.social %}
+    {% for link in site.links.social %}
     %li
       %a{href:"{{ link.link }}",title:"{{ link.title }}",target:"_blank"}
         %i{class:"icon-{{ link.icon }}"}
         %b="{{ link.title }}"
-  {% endfor %}
+    {% endfor %}
 
