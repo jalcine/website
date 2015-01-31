@@ -12,7 +12,7 @@ You know how annoying it is to build a Tumblr theme? From the bottom up? :rage:
 I figured it'd be as simple as uploading a few pages of HTML with the specific
 markup that they provide and whammo, it'd work! Technically, that's all there
 is to it, but the testing process is a bit of a headache, especially since I've
-been spoiled with tools like [Sass][] and [LiveReload][] :sweat:. In lieu of said
+been spoiled with tools like [Sass][] and [LiveReload][] :sad:. In lieu of said
 frustration, I decided to do the following:
 
   + Add an extension to [Swig][] that allows for the generation of both output
