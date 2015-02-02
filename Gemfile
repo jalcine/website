@@ -20,8 +20,20 @@ gem 'jekyll-compose'
 gem 'rack'
 gem 'rack-livereload'
 
+# {{{ Development Automation
 gem 'guard'
 gem 'guard-jekyll-plus'
 gem 'guard-rack'
 gem 'guard-bundler'
 gem 'guard-livereload'
+# }}}
+
+# {{{ Deployment
+gem 'capistrano'
+gem 'capistrano-nginx'
+gem 'capistrano-bundler'
+# }}}
+
+# {{{ Testing
+gem 'html-proofer'
+# }}}

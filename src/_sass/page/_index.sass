@@ -14,23 +14,23 @@ body.index > main[role=main]
       padding: 0.3rem 0.5rem
 
   > header.index
-    height: 8rem
+    height: 15rem
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     background-color: $black
-    background-image: url(/images/space.jpg)
-    background-position: center center
-    background-size: cover
-    background-repeat: no-repeat
-    background-attachment: fixed
     color: $white
     text-transform: uppercase
     border-bottom: 0.25rem solid $black
 
     @media #{$desktop}
       &
+        background-image: url(/images/space.jpg)
+        background-position: center center
+        background-size: cover
+        background-repeat: no-repeat
+        background-attachment: fixed
         flex-direction: row
         height: 25rem
 

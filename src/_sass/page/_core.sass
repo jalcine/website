@@ -20,9 +20,13 @@ html
 main[role=main]
   order: 2
   flex: 1 0 auto
-  max-width: $page-max-width
+  width: 100%
   margin: 0rem auto
-  padding-top: $header-height / 2
+  padding: 0.2rem 0.75rem 0rem 0.75rem
+
+  @media #{$desktop}
+    &
+      max-width: $page-max-width
 
   p, li
     line-height: 1.8

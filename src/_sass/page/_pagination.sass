@@ -1,14 +1,14 @@
-body.pagination > section[role=pagination]
-  section[role=entries]
+body section[role=entries]
+  > dl
+    margin: 0rem auto
 
-    dl
-      margin: 0rem auto
+    dt
+      font-size: 1.5rem
+      font-weight: 400
 
-      dd > time
-        color: $gray
-
-      dt a
+      a
         position: relative
+        display: flex
 
         &:hover
           text-decoration: none
@@ -25,3 +25,8 @@ body.pagination > section[role=pagination]
 
         &:hover p:before
           color: $black
+
+    dd
+      padding: 0rem 1rem
+      color: darken($gray, 30%)
+      margin-bottom: 0.5rem
