@@ -31,4 +31,9 @@ gem 'guard-livereload'
 # {{{ Deployment
 gem 'capistrano'
 gem 'capistrano-nginx'
+gem 'capistrano-bundler'
+# }}}
+
+# {{{ Testing
+gem 'html-proofer'
 # }}}

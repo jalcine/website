@@ -1,0 +1,32 @@
+header[role="main"] > nav[role="main"]
+  > ul
+    display: flex
+    list-style: none
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+    li
+      margin: 0rem 0.2rem
+
+      a
+        align-items: center
+        transition: all 0.3s
+        padding: 0.5rem 0.75rem
+        display: inline-flex
+        text-decoration: none
+        border-radius: 0.25rem
+        font-size: 0rem
+        line-height: 1.5rem
+
+        @media #{$desktop}
+          &
+            font-size: 1rem
+
+        &:hover
+          color: $white
+          background-color: $link-color
+
+        i
+          font-size: 1.5rem
+          margin: 0.2rem
