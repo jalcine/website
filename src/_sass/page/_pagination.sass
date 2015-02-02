@@ -2,6 +2,11 @@ body section[role=entries]
   > dl
     margin: 0rem auto
 
+    @media #{$desktop}
+      &
+        max-width: $page-max-width * 0.6
+        margin: 0rem auto
+
     dt
       font-size: 1.5rem
       font-weight: 400
