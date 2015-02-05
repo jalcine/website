@@ -1,4 +1,4 @@
-# vim: set fdl=0 nospell:
+# vim:set fdl=0 nospell:
 source 'https://rubygems.org'
 ruby '2.1.3'
 
@@ -6,35 +6,37 @@ ruby '2.1.3'
 gem 'sass'
 gem 'haml'
 gem 'dotenv'
+gem 'rb-gsl'
+gem 'nokogiri'
 # }}}
 
-# {{{ Jekyll
-gem 'jekyll'
-gem 'jekyll-gist'
-gem 'jekyll-sass'
-gem 'jekyll-haml'
-gem 'jemoji'
-gem 'jekyll-tagging'
-gem 'jekyll-compose'
-# }}}
-
-group :development do
-  # Local web server
-  gem 'rack'
-  gem 'rack-livereload'
-
-  # Automation
-  gem 'guard'
-  gem 'guard-jekyll-plus'
-  gem 'guard-rack'
-  gem 'guard-bundler'
-  gem 'guard-livereload'
+group :jekyll do
+  gem 'jekyll'
+  gem 'jekyll-gist'
+  gem 'jekyll-sass'
+  gem 'jekyll-haml'
+  gem 'jemoji'
+  gem 'jekyll-tagging'
+  gem 'jekyll-compose'
+  gem 'jekyll-timeago'
+  gem 'jekyll-git_metadata'
 end
 
-# {{{ Deployment
+# {{{ Development
+# Local web server
+gem 'rack'
+gem 'rack-livereload'
+
+# Automation
+gem 'guard'
+gem 'guard-jekyll-plus', '2.0.0'
+gem 'guard-rack'
+gem 'guard-bundler'
+gem 'guard-livereload'
+# }}}
+
 group :deployment do
   gem 'capistrano'
   gem 'capistrano-nginx'
   gem 'capistrano-bundler'
 end
-# }}}

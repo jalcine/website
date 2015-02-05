@@ -1,23 +1,23 @@
-# vim: set ft=ruby :
+# vim:set ft=ruby:
 
 # Automatically install gems when I add some to my gem list.
 guard :bundler do
-  watch('Gemfile')
+  watch 'Gemfile'
 end
 
 # Handle the act of live reloading changes to the browser (hard refreshes)
 guard :livereload do
-  watch(/^_site/) { |m| "#{m[0]}" }
+  watch(/^_site*.(html|css|js)/) { |m| "#{m[0]}" }
 end
 
 # Load a Rack server to handle the local serving of the site.
 guard :rack, port: 1993, server: :webrick do
-  watch('Gemfile.lock')
-  watch('config.ru')
+  watch 'Gemfile.lock'
+  watch 'config.ru'
 end
 
 # Monitor the files for Jekyll and include in a special development mode.
-guard 'jekyll_plus', serve: false, future: true, drafts: true,
+guard 'jekyll-plus', serve: false, future: true, drafts: true,
                      silent: true, config: ['_config.yml'] do
   watch(/^src/)
   watch(/^plugins/)

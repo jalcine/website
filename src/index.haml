@@ -28,12 +28,12 @@ no_header: true
 
     [about me]: /about/
     [hire me]: /work/
-    [wintermute]: {% post_url 2015-01-10-ambitions-wintermute %}
     [blkops]: https://blkops.github.io
+    [wintermute]: {% post_url 2015-01-10-ambitions-wintermute %}
     [freelance]: {% post_url 2015-01-30-freelancing-2015 %}
 %section.links
   %ul
-    {% for link in site.links.social %}
+    {% for link in site.data.links.social %}
     %li
       %a{href:"{{ link.link }}",title:"{{ link.title }}",target:"_blank"}
         %i{class:"icon-{{ link.icon }}"}

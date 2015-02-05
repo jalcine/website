@@ -10,8 +10,8 @@
       google: {
         families: [
           'Lato:400,900',
-          'Merriweather:400,900:latin',
-          'Inconsolata:300,900:latin'
+          'Merriweather:400,900',
+          'Inconsolata:300,900'
         ]
       }
     });
@@ -20,3 +20,5 @@
 {% for src in page.javascripts %}
   <script type="text/javascript" src="{{ src }}" defer="true"></script>
 {% endfor %}
+<script type="text/javascript" src="/js/vendor/jquery.timeago.js" defer="true"></script>
+<script type="text/javascript" src="/js/main.js" defer="true"></script>

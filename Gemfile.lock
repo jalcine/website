@@ -53,9 +53,8 @@ GEM
       guard (~> 2.2)
       guard-compat (~> 1.1)
     guard-compat (1.2.1)
-    guard-jekyll-plus (2.0.1)
-      guard (~> 2.10, >= 2.10.3)
-      guard-compat (~> 1.1)
+    guard-jekyll-plus (2.0.0)
+      guard (~> 2.8)
       jekyll (>= 1.0.0)
     guard-livereload (2.4.0)
       em-websocket (~> 0.5)
@@ -94,6 +93,8 @@ GEM
       coffee-script (~> 2.2)
     jekyll-compose (0.2.1)
     jekyll-gist (1.1.0)
+    jekyll-git_metadata (0.0.3)
+      jekyll (~> 2.0)
     jekyll-haml (0.1.1)
       haml (>= 3.0.0)
       jekyll (>= 0.10.0)
@@ -106,6 +107,7 @@ GEM
       sass (~> 3.2)
     jekyll-tagging (0.6.0)
       ruby-nuggets
+    jekyll-timeago (0.8.2)
     jekyll-watch (1.2.1)
       listen (~> 2.7)
     jemoji (0.4.0)
@@ -127,6 +129,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.10.1)
+    narray (0.6.1.1)
     nenv (0.2.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -152,6 +155,8 @@ GEM
       rack
     rake (10.4.2)
     rb-fsevent (0.9.4)
+    rb-gsl (1.16.0.4)
+      narray (>= 0.5.9)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.2)
@@ -188,17 +193,21 @@ DEPENDENCIES
   dotenv
   guard
   guard-bundler
-  guard-jekyll-plus
+  guard-jekyll-plus (= 2.0.0)
   guard-livereload
   guard-rack
   haml
   jekyll
   jekyll-compose
   jekyll-gist
+  jekyll-git_metadata
   jekyll-haml
   jekyll-sass
   jekyll-tagging
+  jekyll-timeago
   jemoji
+  nokogiri
   rack
   rack-livereload
+  rb-gsl
   sass

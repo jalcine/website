@@ -40,10 +40,12 @@ highlighter: pygments
 # Jekyll load all of the gems under the 'jekyll' group in the Gemfile. 
 # {{{ Gems
 gems:
+  - jemoji
   - jekyll-gist
   - jekyll-sass
   - jekyll-haml
-  - jemoji
+  - jekyll-timeago
+  - jekyll-git_metadata
 # }}}
 
 # {{{ Markdown renderer options
@@ -55,6 +57,7 @@ redcarpet:
     - highlight
     - quote
     - footnotes
+    - with_toc_data
   render_options:
     - with_toc_data
 # }}}

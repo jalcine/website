@@ -12,4 +12,4 @@ def apply_tag(name, klass)
   Liquid::Template.register_tag(name, klass)
 end
 
-TAGS_TO_ADD.each apply_tag
+TAGS_TO_ADD.each { | name, klass | apply_tag(name, klass) }

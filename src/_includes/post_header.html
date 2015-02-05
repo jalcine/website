@@ -1,5 +1,5 @@
-<header role='post'>
-  <h1 class='title'>{{ include.title || page.title }}</h1>
+<header role="post">
+  <h1 class="title">{{ include.title || page.title }}</h1>
   <p class="links">
     <a href="{{ page.url }}" title="Permalink">permalink</a>
     &mdash;
@@ -12,19 +12,19 @@
     </a>
   </p>
 </header>
-<section role='stats'>
+<section role="stats">
   <span>
-    {{ page.content || number_of_words }} words
+    {{ page.content | number_of_words | intcomma }} words
   </span> &mdash;
   <span>
-    written on <strong>{{ page.date || date_to_long_string }}</strong>
+    written <strong>{{ page.date | timeago }}</strong>
     {% if page.location %}in <strong>{{ page.location }}</strong>{% endif %}
   </span> &mdash;
   <span>
-    tagged under <strong>{{ page.tags || array_to_sentence_string }}</strong>
+    tagged under <strong>{{ page.tags | array_to_sentence_string }}</strong>
   </span>
 {% if page.description %}
-  <blockquote class='narrative'>
+  <blockquote class="narrative">
     {{ page.description | markdownify }}
   </blockquote>
 {% endif %}
