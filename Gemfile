@@ -1,9 +1,10 @@
-# vim: set fdm=marker nospell:
+# vim: set fdl=0 nospell:
 source 'https://rubygems.org'
 ruby '2.1.3'
 
 # {{{ Core Utilities
 gem 'sass'
+gem 'haml'
 gem 'dotenv'
 # }}}
 
@@ -17,23 +18,23 @@ gem 'jekyll-tagging'
 gem 'jekyll-compose'
 # }}}
 
-gem 'rack'
-gem 'rack-livereload'
+group :development do
+  # Local web server
+  gem 'rack'
+  gem 'rack-livereload'
 
-# {{{ Development Automation
-gem 'guard'
-gem 'guard-jekyll-plus'
-gem 'guard-rack'
-gem 'guard-bundler'
-gem 'guard-livereload'
-# }}}
+  # Automation
+  gem 'guard'
+  gem 'guard-jekyll-plus'
+  gem 'guard-rack'
+  gem 'guard-bundler'
+  gem 'guard-livereload'
+end
 
 # {{{ Deployment
-gem 'capistrano'
-gem 'capistrano-nginx'
-gem 'capistrano-bundler'
-# }}}
-
-# {{{ Testing
-gem 'html-proofer'
+group :deployment do
+  gem 'capistrano'
+  gem 'capistrano-nginx'
+  gem 'capistrano-bundler'
+end
 # }}}
