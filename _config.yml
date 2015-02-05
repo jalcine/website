@@ -1,91 +1,76 @@
-# vim: nospell :
+# vim: nospell fdm=marker :
+
 source: 'src'
 destination: '_site'
 layouts: 'src/_layouts'
 plugins: 'plugins'
 
+# Metadata about the site that we'd use very very often.
+# TODO: In the future, we'd be serving the site over SSL and _only_ from the
+# domain name 'jalcine.me'.
+# {{{ Metadata
 name: 'Jacky Alciné'
 author: 'Jacky Alciné'
 url: 'http://jalcine.me'
-timezone: 'America/New_York'
 description: |
   The site of a young Black male living in New York City learning about the
   world and the people within it. The education he was brought up
   with was broken by default, and is currently attempting to learn what
   he should have known a decade ago. He's also a bit of a Afrofuturist.
+# }}}
 
+# Time & encoding.
+timezone: 'America/New_York'
+encoding: 'utf-8'
+
+# {{{ Routing And Rendering
 pagination_path: 'weblog/:num/'
 permalink: '/weblog/:title/'
-relative_permalinks: false
-tag_dir: '/weblog/tag'
-lsi: false
 show_drafts: false
+tag_dir: '/weblog/tag'
+lsi: true
 future: false
+relative_permalinks: false
 markdown: kramdown
 highlighter: pygments
+# }}}
 
+# Loading in the gems used by Jekyll. I really hate having to updating this
+# list but it is what it is. Might look into making 'jekyll-bundler' that has
+# Jekyll load all of the gems under the 'jekyll' group in the Gemfile. 
+# {{{ Gems
 gems:
   - jekyll-gist
   - jekyll-sass
   - jekyll-haml
   - jemoji
+# }}}
 
-links:
-  navigation:
-    -
-      title: "Weblog"
-      link: "/weblog/"
-      icon: "blog"
-    -
-      title: "About"
-      link: "/about/"
-      icon: "home"
-    -
-      title: "Gear"
-      link: "/gear/"
-      icon: "stats"
-    -
-      title: "Projects"
-      link: "/projects/"
-      icon: "book"
-  social:
-    -
-      title: "Twitter"
-      icon: "twitter"
-      link: "https://twitter.com/jackyalcine"
-    -
-      title: "Github"
-      icon: "github"
-      link: "https://github.com/jalcine"
-    -
-      title: "Reddit"
-      icon: "reddit"
-      link: "https://reddit.com/user/jackyalcine"
-    -
-      title: "LinkedIn"
-      icon: "linkedin"
-      link: "https://linkedin.com/in/jackyalcine"
-    -
-      title: "Keybase"
-      icon: "lock"
-      link: "https://keybase.io/jackyalcine"
-    -
-      title: "GPG"
-      icon: "key"
-      link: "/gpg/"
-    -
-      title: "Stack Overflow"
-      icon: "stackoverflow"
-      link: "https://stackoverflow.com/users/602588/jackyalcine"
-    -
-      title: "Last.FM"
-      icon: "lastfm"
-      link: "https://last.fm/user/jackyalcine"
-    -
-      title: "Goodreads"
-      icon: "book"
-      link: "https://www.goodreads.com/jalcine"
-    -
-      title: "Flickr"
-      icon: "flickr"
-      link: "https://www.flickr.com/photos/jackyalcine"
+# {{{ Markdown renderer options
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - autolink
+    - space_after_headers
+    - highlight
+    - quote
+    - footnotes
+  render_options:
+    - with_toc_data
+# }}}
+
+# {{{ Page Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      types: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      types: "posts"
+    values:
+      layout: "post"
+# }}}
