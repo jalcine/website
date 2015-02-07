@@ -16,6 +16,7 @@ header[role=main]
       align-items: center
       display: flex
       flex-direction: column
+      transition: flex-direction 0.3s
 
       @media #{$desktop}
         &
@@ -23,11 +24,16 @@ header[role=main]
 
       > span
         color: darken($gray, 20%)
+        font-size: 1.2rem
 
         &:before
           padding: 0rem 0.2rem
+          transition: padding 0.3s
 
-          @media #{$desktop}
-            &
+        @media #{$desktop}
+          &
+            font-size: 1.75rem // Not good (fixed to h3)
+
+            &:before
               color: $black
               content: '\2014'

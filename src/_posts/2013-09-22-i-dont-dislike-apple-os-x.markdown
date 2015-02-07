@@ -102,13 +102,11 @@ my environment, to actually know what is it I'm spending my time in front of
 and have that piece of mind to actually understand why something may not work
 as intended. In practice, it's always better to know what's wrong and how to
 fix it then to rely on someone else. *"If you want it done right, do it
-yourself."*
+yourself (or pay someone else to do it)."*
 
 [1]: http://www.ubuntu.com
 [2]: http://www.kde.org
 [3]: http://www.alfredapp.com
 [4]: http://kmail.kde.org
-[^1]: However, users of Facebook that don't use either Windows or OS X miss
-      out on Facebook Video calling functionality.
-[^2]: This is, of course, my opinion. If you'd like to sleep in a hotel for
-      the rest of your life, do so ;)
+[^1]: However, users of Facebook that don't use either Windows or OS X miss out on Facebook Video calling functionality.
+[^2]: This is, of course, my opinion. If you'd like to sleep in a hotel for the rest of your life, do so ;)

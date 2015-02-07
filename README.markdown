@@ -10,9 +10,10 @@ publish anything older than October 2012.
 
 As aforementioned, [Jekyll][1] is the core blogging tool; with [Compass][2]
 and [Sass][3] used for styling the site and the light JavaScript use to make
-it fully l33t. Work's slowly being done to make this into a more interactive
-site using Rack, though it's mainly static.
+it fully l33t. The [Markdown][] rendered used in this site is [Kramdown][].
 
 [1]: http://jekyllrb.com
 [2]: http://compass-style.org
 [3]: http://sass-lang.com
+[markdown]: http://daringfireball.net/projects/markdown/
+[kramdown]: http://kramdown.gettalong.org/syntax.html

@@ -3,7 +3,7 @@
 layout: post
 title: "Going Sovereign: Reclaiming my Digital Independence"
 category: development
-date: 2015-02-01 22:54:02 EST
+date: 2015-02-07 10:53:15 EST
 tags:
   - goals
   - development
@@ -31,7 +31,7 @@ things from the following. No reason to build shit all willy-nilly.
 In an attempt to remain organized, I throw all of the projects that I've
 checked out using any VCS and threw it into a single folder. With a little
 `wc`, that made a rough count of about 190 projects I have checked out at
-once on my machine. I probably active touch a tenth of those on a weekly
+once on my machine[^1]. I probably active touch a tenth of those on a weekly
 basis. Half of them, though, are typically projects that aren't meant to
 see the light of day, like my laptop's configuration setup or the Git
 index of my digital book collection. Having hosted Git repositories would
@@ -100,3 +100,4 @@ to occupy a lot of my free time over the month of February. Excited to start!
 [vim]: https://vim.org
 [ryan]: http://rix.si
 [`sovereign`]: https://github.com/al3x/sovereign
+[^1]: After a little fun messing up LUKS, that number's dropped down to less than 20.

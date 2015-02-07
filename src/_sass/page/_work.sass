@@ -1,11 +1,21 @@
+$bg-img: "https://farm8.staticflickr.com/7406/16191566199_1b7d775e9f_z.jpg"
+$work-header-height: 8rem
+
 body.work > main[role=main]
+  max-width: $page-max-width * 0.8
+
   > header.work
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
     text-transform: uppercase
-    margin: 0rem auto 2rem
+    margin: 0rem auto 1rem
+    height: $work-header-height
+    min-height: $work-header-height
+
+    span.pre
+      color: $black
 
     @media #{$desktop}
       &
@@ -22,4 +32,4 @@ body.work > main[role=main]
 
     > h2.lead
       font-weight: 100
-      color: inherit
+      color: $black
