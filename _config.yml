@@ -58,8 +58,6 @@ redcarpet:
     - quote
     - footnotes
     - with_toc_data
-  render_options:
-    - with_toc_data
 # }}}
 
 # {{{ Page Defaults
