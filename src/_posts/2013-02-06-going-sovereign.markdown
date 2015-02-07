@@ -3,7 +3,7 @@
 layout: post
 title: "Going Sovereign: Reclaiming my Digital Independence"
 category: development
-date: 2015-02-03 10:53:15 EST
+date: 2015-02-06 10:53:15 EST
 tags:
   - goals
   - development
