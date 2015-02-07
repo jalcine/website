@@ -17,7 +17,7 @@
     {{ page.content | number_of_words | intcomma }} words
   </span> &mdash;
   <span>
-    written <strong>{{ page.date | timeago }}</strong>
+    written <strong>{{ page.date | date_to_rfc822 }}</strong>
     {% if page.location %}in <strong>{{ page.location }}</strong>{% endif %}
   </span> &mdash;
   <span>
