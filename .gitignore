@@ -7,3 +7,4 @@ tags
 gems.tags
 .env
 **/*/.directory
+.capistrano
