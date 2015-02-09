@@ -37,6 +37,5 @@ gem 'guard-livereload'
 
 group :deployment do
   gem 'capistrano'
-  gem 'capistrano-nginx'
-  gem 'capistrano-bundler'
+  gem 'capistrano-scm-local'
 end
