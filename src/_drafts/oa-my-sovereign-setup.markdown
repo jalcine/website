@@ -54,11 +54,11 @@ optional message about my current pre-occupation. **Yay for sovereignity**!
 [last post]: {% post_url 2015-02-06-going-sovereign %}
 [ansible]: http://www.ansible.com/home
 [git-achievements]: https://github.com/icefox/git-achievements
-[cmake.vim]: https://git.jalcine.me/cmake.vim.git/about
-[wintermute]: https://git.jalcine.me/wintermute.git/about
-[1]: http://git.jalcine.me/oa.git/about
-[2]: http://git.jalcine.me/git-achievements/about
-[devsite]: http://git.jalcine.me/website.git/about
+[cmake.vim]: https://git.jacky.wtf/cmake.vim.git/about
+[wintermute]: https://git.jacky.wtf/wintermute.git/about
+[1]: http://git.jacky.wtf/oa.git/about
+[2]: http://git.jacky.wtf/git-achievements/about
+[devsite]: http://git.jacky.wtf/website.git/about
 [^1]: Way to support everything _but_ one of the coolest parts of Git :frowning:
 [^2]: There's no reason to yay :frowning:.
 [^3]: Upcoming projects!!11
