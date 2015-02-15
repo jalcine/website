@@ -7,14 +7,17 @@ tags:
   - future
 ---
 
-Someone asked me a really good question the other day. One that I thought I had
-the answer to. **Where do you see yourself in the future professionally?** It's
-not that simple of a question but it's something you think your average
-young adult might have some idea of what the answer would be. I couldn't even
-think of it immediately. So I quickly thought of what I've spent my time
+Someone asked me a really good question the other day; one that I thought I had
+the answer to. Plainly put, it was just this:
+
+> **Where do you see yourself in the future professionally?**
+
+It's not that simple of a question but it's something you think your average
+young adult might have some idea of what the answer would be. I couldn't think
+of an answer off the top of my head. I quickly thought of what I've spent my time
 currently doing, what I like doing and what I can see myself doing for a longer
 period of time (but not for the rest of my life). I'm quite the enthusiast for
-all things artificial intelligence related, but it's more so on the side of
+all things [artificial intelligence][ai] related, but it's more so on the side of
 improving human-computer interactions. Despite my lack of a college education, I
 have a (semi-)working knowledge of computer theory and pick up calculus thanks
 to MIT OCW. Of course, there's a ceiling that I'm starting to see and it's (and
