@@ -36,6 +36,6 @@ gem 'guard-livereload'
 # }}}
 
 group :deployment do
-  gem 'capistrano'
-  gem 'capistrano-scm-local'
+  gem 'mina'
+  gem 'mina-rsync'
 end

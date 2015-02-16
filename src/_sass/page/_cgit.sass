@@ -1,0 +1,540 @@
+div#cgit
+  padding: 0em
+  margin: 0em
+  a
+    color: blue
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+  table
+    border-collapse: collapse
+    &#header
+      width: 100%
+      margin-bottom: 1em
+      td
+        &.logo
+          width: 96px
+          vertical-align: top
+        &.main
+          font-size: 250%
+          padding-left: 10px
+          white-space: nowrap
+          a
+            color: #000
+        &.form
+          text-align: right
+          vertical-align: bottom
+          padding-right: 1em
+          padding-bottom: 2px
+          white-space: nowrap
+          form, input, select
+            font-size: 90%
+        &.sub
+          color: #777
+          border-top: solid 1px #ccc
+          padding-left: 10px
+    &.tabs
+      border-bottom: solid 3px #ccc
+      border-collapse: collapse
+      margin-top: 2em
+      margin-bottom: 0px
+      width: 100%
+      td
+        padding: 0px 1em
+        vertical-align: bottom
+        a
+          padding: 2px 0.75em
+          color: #777
+          font-size: 110%
+          &.active
+            color: #000
+            background-color: #ccc
+        &.form
+          text-align: right
+          form
+            padding-bottom: 2px
+            font-size: 90%
+            white-space: nowrap
+          input, select
+            font-size: 90%
+  div
+    &.path
+      margin: 0px
+      padding: 5px 2em 2px 2em
+      color: #000
+      background-color: #eee
+    &.content
+      margin: 0px
+      padding: 2em
+      border-bottom: solid 3px #ccc
+  table.list
+    width: 100%
+    border: none
+    border-collapse: collapse
+    tr
+      background: white
+      &.logheader, &:hover
+        background: #eee
+      &.nohover:hover
+        background: white
+    th
+      font-weight: bold
+      /* color: #888;
+       *  border-top: dashed 1px #888;
+       *border-bottom: dashed 1px #888;
+      padding: 0.1em 0.5em 0.05em 0.5em
+      vertical-align: baseline
+    td
+      border: none
+      padding: 0.1em 0.5em 0.1em 0.5em
+      &.commitgraph
+        font-family: monospace
+        white-space: pre
+        .column1
+          color: #a00
+        .column2
+          color: #0a0
+        .column3
+          color: #aa0
+        .column4
+          color: #00a
+        .column5
+          color: #a0a
+        .column6
+          color: #0aa
+      &.logsubject
+        font-family: monospace
+        font-weight: bold
+      &.logmsg
+        font-family: monospace
+        white-space: pre
+        padding: 0 0.5em
+      a
+        color: black
+        &.ls-dir
+          font-weight: bold
+          color: #00f
+        &:hover
+          color: #00f
+  img
+    border: none
+  input#switch-btn
+    margin: 2px 0px 0px 0px
+  td#sidebar input.txt
+    width: 100%
+    margin: 2px 0px 0px 0px
+  table#grid
+    margin: 0px
+  td#content
+    vertical-align: top
+    padding: 1em 2em 1em 1em
+    border: none
+  div#summary
+    vertical-align: top
+    margin-bottom: 1em
+  table#downloads
+    float: right
+    border-collapse: collapse
+    border: solid 1px #777
+    margin-left: 0.5em
+    margin-bottom: 0.5em
+    th
+      background-color: #ccc
+  div
+    &#blob
+      border: solid 1px black
+    &.error
+      color: red
+      font-weight: bold
+      margin: 1em 2em
+  a
+    &.ls-blob, &.ls-dir, &.ls-mod
+      font-family: monospace
+  td
+    &.ls-size
+      text-align: right
+      font-family: monospace
+      width: 10em
+    &.ls-mode
+      font-family: monospace
+      width: 10em
+  table
+    &.blob
+      margin-top: 0.5em
+      border-top: solid 1px black
+      td
+        &.lines
+          margin: 0
+          padding: 0 0 0 0.5em
+          vertical-align: top
+          color: black
+        &.linenumbers
+          margin: 0
+          padding: 0 0.5em 0 0.5em
+          vertical-align: top
+          text-align: right
+          border-right: 1px solid gray
+      pre
+        padding: 0
+        margin: 0
+      td.linenumbers a
+        color: gray
+        text-align: right
+        text-decoration: none
+    &.ssdiff td.lineno a
+      color: gray
+      text-align: right
+      text-decoration: none
+    &.blob td.linenumbers a:hover, &.ssdiff td.lineno a:hover
+      color: black
+    &.bin-blob
+      margin-top: 0.5em
+      border: solid 1px black
+      th
+        font-family: monospace
+        white-space: pre
+        border: solid 1px #777
+        padding: 0.5em 1em
+      td
+        font-family: monospace
+        white-space: pre
+        border-left: solid 1px #777
+        padding: 0em 1em
+    &.nowrap td
+      white-space: nowrap
+    &.commit-info
+      border-collapse: collapse
+      margin-top: 1.5em
+  div.cgit-panel
+    float: right
+    margin-top: 1.5em
+    table
+      border-collapse: collapse
+      border: solid 1px #aaa
+      background-color: #eee
+    th
+      text-align: center
+    td
+      padding: 0.25em 0.5em
+      &.label
+        padding-right: 0.5em
+      &.ctrl
+        padding-left: 0.5em
+  table.commit-info
+    th
+      text-align: left
+      font-weight: normal
+      padding: 0.1em 1em 0.1em 0.1em
+      vertical-align: top
+    td
+      font-weight: normal
+      padding: 0.1em 1em 0.1em 0.1em
+  div
+    &.commit-subject
+      font-weight: bold
+      font-size: 125%
+      margin: 1.5em 0em 0.5em 0em
+      padding: 0em
+    &.commit-msg
+      white-space: pre
+      font-family: monospace
+    &.notes-header
+      font-weight: bold
+      padding-top: 1.5em
+    &.notes
+      white-space: pre
+      font-family: monospace
+      border: solid 1px #ee9
+      background-color: #ffd
+      padding: 0.3em 2em 0.3em 1em
+      float: left
+    &.notes-footer
+      clear: left
+    &.diffstat-header
+      font-weight: bold
+      padding-top: 1.5em
+  table.diffstat
+    border-collapse: collapse
+    border: solid 1px #aaa
+    background-color: #eee
+    th
+      font-weight: normal
+      text-align: left
+      text-decoration: underline
+      padding: 0.1em 1em 0.1em 0.1em
+      font-size: 100%
+    td
+      padding: 0.2em 0.2em 0.1em 0.1em
+      font-size: 100%
+      border: none
+      &.mode
+        white-space: nowrap
+      span.modechange
+        padding-left: 1em
+        color: red
+      &.add a
+        color: green
+      &.del a
+        color: red
+      &.upd a
+        color: blue
+      &.graph
+        width: 500px
+        vertical-align: middle
+        table
+          border: none
+        td
+          padding: 0px
+          border: 0px
+          height: 7pt
+          &.add
+            background-color: #5c5
+          &.rem
+            background-color: #c55
+  div.diffstat-summary
+    color: #888
+    padding-top: 0.5em
+  table.diff
+    width: 100%
+    td
+      font-family: monospace
+      white-space: pre
+      div
+        &.head
+          font-weight: bold
+          margin-top: 1em
+          color: black
+        &.hunk
+          color: #009
+        &.add
+          color: green
+        &.del
+          color: red
+  .sha1
+    font-family: monospace
+    font-size: 90%
+  .left
+    text-align: left
+  .right
+    text-align: right
+  table.list td.reposection
+    font-style: italic
+    color: #888
+  a
+    &.button
+      font-size: 80%
+      padding: 0em 0.5em
+    &.primary
+      font-size: 100%
+    &.secondary
+      font-size: 90%
+  td.toplevel-repo
+  table.list td.sublevel-repo
+    padding-left: 1.5em
+  ul.pager
+    list-style-type: none
+    text-align: center
+    margin: 1em 0em 0em 0em
+    padding: 0
+    li
+      display: inline-block
+      margin: 0.25em 0.5em
+    a
+      color: #777
+    .current
+      font-weight: bold
+  span
+    &.age-mins
+      font-weight: bold
+      color: #080
+    &.age-hours
+      color: #080
+    &.age-days
+      color: #040
+    &.age-weeks
+      color: #444
+    &.age-months
+      color: #888
+    &.age-years
+      color: #bbb
+  div.footer
+    margin-top: 0.5em
+    text-align: center
+    font-size: 80%
+    color: #ccc
+    a
+      color: #ccc
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+  a
+    &.branch-deco
+      color: #000
+      margin: 0px 0.5em
+      padding: 0px 0.25em
+      background-color: #88ff88
+      border: solid 1px #007700
+    &.tag-deco
+      color: #000
+      margin: 0px 0.5em
+      padding: 0px 0.25em
+      background-color: #ffff88
+      border: solid 1px #777700
+    &.remote-deco
+      color: #000
+      margin: 0px 0.5em
+      padding: 0px 0.25em
+      background-color: #ccccff
+      border: solid 1px #000077
+    &.deco
+      color: #000
+      margin: 0px 0.5em
+      padding: 0px 0.25em
+      background-color: #ff8888
+      border: solid 1px #770000
+  div.commit-subject a
+    &.branch-deco, &.tag-deco, &.remote-deco, &.deco
+      margin-left: 1em
+      font-size: 75%
+  table
+    &.stats
+      border: solid 1px black
+      border-collapse: collapse
+      th
+        text-align: left
+        padding: 1px 0.5em
+        background-color: #eee
+        border: solid 1px black
+      td
+        text-align: right
+        padding: 1px 0.5em
+        border: solid 1px black
+        &.total
+          font-weight: bold
+          text-align: left
+        &.sum
+          color: #c00
+          font-weight: bold
+          /*	background-color: #eee;
+        &.left
+          text-align: left
+    &.vgraph
+      border-collapse: separate
+      border: solid 1px black
+      height: 200px
+      th
+        background-color: #eee
+        font-weight: bold
+        border: solid 1px white
+        padding: 1px 0.5em
+      td
+        vertical-align: bottom
+        padding: 0px 10px
+      div.bar
+        background-color: #eee
+    &.hgraph
+      border: solid 1px black
+      width: 800px
+      th
+        background-color: #eee
+        font-weight: bold
+        border: solid 1px black
+        padding: 1px 0.5em
+      td
+        vertical-align: middle
+        padding: 2px 2px
+      div.bar
+        background-color: #eee
+        height: 1em
+    &.ssdiff
+      width: 100%
+      td
+        font-size: 75%
+        font-family: monospace
+        white-space: pre
+        padding: 1px 4px 1px 4px
+        border-left: solid 1px #aaa
+        border-right: solid 1px #aaa
+        &.add
+          color: black
+          background: #cfc
+          min-width: 50%
+        &.add_dark
+          color: black
+          background: #aca
+          min-width: 50%
+      span.add
+        background: #cfc
+        font-weight: bold
+      td
+        &.del
+          color: black
+          background: #fcc
+          min-width: 50%
+        &.del_dark
+          color: black
+          background: #caa
+          min-width: 50%
+      span.del
+        background: #fcc
+        font-weight: bold
+      td
+        &.changed
+          color: black
+          background: #ffc
+          min-width: 50%
+        &.changed_dark
+          color: black
+          background: #cca
+          min-width: 50%
+        &.lineno
+          color: black
+          background: #eee
+          text-align: right
+          width: 3em
+          min-width: 3em
+        &.hunk
+          color: black
+          background: #ccf
+          border-top: solid 1px #aaa
+          border-bottom: solid 1px #aaa
+        &.head
+          border-top: solid 1px #aaa
+          border-bottom: solid 1px #aaa
+          div.head
+            font-weight: bold
+            color: black
+        &.foot
+          border-top: solid 1px #aaa
+          border-left: none
+          border-right: none
+          border-bottom: none
+        &.space
+          border: none
+          div
+            min-height: 3em
+  span.libravatar
+    img
+      &.onhover
+        display: none
+        border: 1px solid gray
+        padding: 0px
+        -webkit-border-radius: 4px
+        -moz-border-radius: 4px
+        border-radius: 4px
+        width: 128px
+        height: 128px
+      &.inline
+        -webkit-border-radius: 3px
+        -moz-border-radius: 3px
+        border-radius: 3px
+        width: 13px
+        height: 13px
+        margin-right: 0.2em
+        opacity: 0.6
+    &:hover > img.onhover
+      display: block
+      position: absolute
+      margin-left: 1.5em
+      background-color: #eeeeee
+      box-shadow: 5px 5px 3px #bbb
