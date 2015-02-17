@@ -23,8 +23,3 @@ namespace :rsync do
     }
   end
 end
-
-after "setup" do
-  print_msg "Making directory for rsync..."
-  invoke :":rsync:setup"
-end
