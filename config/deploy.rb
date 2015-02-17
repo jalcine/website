@@ -1,8 +1,9 @@
 require_relative '../lib/mina'
 require 'mina/multistage'
 
-set :user, 'jalcine'
-set :domain, 'virgil.jalcine.me'
+set :user, 'vagrant'
+#set :domain, 'virgil.jalcine.me'
+set :domain, 'default'
 set :forward_agent, true
 set :deploy_to, '/var/www/jalcine-www'
 set :rsync_source, File.expand_path('../..', __FILE__) + '/_site/*'
