@@ -9,8 +9,12 @@ set :rsync_source, File.expand_path('../..', __FILE__) + '/_site/*'
 set :rsync_options, [
   '--recursive',
   '--times',
-  '--delete-before',
+  '--delete-during',
+  '--archive',
+  '--progress',
   '--compress',
+  '--ignore-existing',
+  '--checksum',
   '-6'
 ]
 
