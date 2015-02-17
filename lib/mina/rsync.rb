@@ -11,9 +11,20 @@ namespace :rsync do
     puts "-> Invoking #{rsync_command}.."
     Kernel.system rsync_command
 
-    puts "-> Moving from #{deploy_to} to build directory..."
+    print_msg "Moving from #{deploy_to} to build directory..."
     queue %{
       mv -v #{deploy_to}/tmp/rsync/* .
     }
   end
+
+  task :setup do
+    queue %{
+      mkdir -p #{deploy_to}/tmp/rsync
+    }
+  end
+end
+
+after "setup" do
+  print_msg "Making directory for rsync..."
+  invoke :":rsync:setup"
 end
