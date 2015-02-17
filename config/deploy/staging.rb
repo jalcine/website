@@ -1,1 +1,1 @@
-set :deploy_to, '/var/www/jalcine-www/stag'
+set :deploy_to, '/var/www/jalcine-www/staging'

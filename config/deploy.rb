@@ -1,11 +1,21 @@
-require 'mina/rsync'
+require_relative '../lib/mina'
 require 'mina/multistage'
 
-set :domain,         'virgil.jalcine.me'
-set :repository,     '.'
-set :branch,         'master'
-set :forward_agent,   true
-set :deploy_to,      '/var/www/jalcine-www'
+set :user, 'jalcine'
+set :domain, 'virgil.jalcine.me'
+set :forward_agent, true
+set :deploy_to, '/var/www/jalcine-www'
+set :rsync_source, File.expand_path('../..', __FILE__) + '/_site/*'
+set :rsync_options, [
+  '--recursive',
+  '--times',
+  '--delete-before',
+  '--compress',
+  '-6'
+]
+
+# TODO: Add a maintenance mode.
+# TODO: Add rules to restart nginx.
 
 task :logs do
   queue 'echo "Tailing all logs for nginx."'
@@ -14,16 +24,15 @@ end
 
 task :deploy do
   deploy do
-    binding.pry
-    invoke "rsync:deploy"
+    puts "-> Deploying to #{deploy_to}..."
+    invoke :'jekyll:clean'
+    invoke :'jekyll:build'
+    invoke :'rsync:copy'
 
     to :launch do; end
-    to :clean do; end
-  end
-end
 
-namespace :deploy do
-  task :setup do
-    queue "mkdir -p #{deploy_to}"
+    to :clean do
+      invoke :'jekyll:clean'
+    end
   end
 end
