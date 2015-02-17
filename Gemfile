@@ -38,4 +38,5 @@ gem 'guard-livereload'
 group :deployment do
   gem 'mina'
   gem 'mina-rsync'
+  gem 'mina-multistage'
 end
