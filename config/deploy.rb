@@ -40,3 +40,8 @@ task :deploy do
     end
   end
 end
+
+task :prep do
+  invoke :'rsync:setup'
+  invoke :'setup'
+end
