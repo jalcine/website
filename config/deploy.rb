@@ -2,8 +2,7 @@ require_relative '../lib/mina'
 require 'mina/multistage'
 
 set :user, 'vagrant'
-#set :domain, 'virgil.jalcine.me'
-set :domain, 'default'
+set :domain, 'jacky.wtf'
 set :forward_agent, true
 set :deploy_to, '/var/www/jalcine-www'
 set :rsync_source, File.expand_path('../..', __FILE__) + '/_site/*'
@@ -34,7 +33,11 @@ task :deploy do
     invoke :'jekyll:build'
     invoke :'rsync:copy'
 
-    to :launch do; end
+    to :launch do
+      queue %{
+        chown -R www-data:www-data /var/www
+      }
+    end
 
     to :clean do
       invoke :'jekyll:clean'
@@ -45,4 +48,10 @@ end
 task :prep do
   invoke :'rsync:setup'
   invoke :'setup'
+  queue %{
+    chown -R www-data:www-data /var/www
+    rm /var/www/.profile
+    rm /var/www/.bash*
+    ls -lla /var/www
+  }
 end

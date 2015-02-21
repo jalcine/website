@@ -1,5 +1,5 @@
 $header-image: "https://farm8.staticflickr.com/7406/16191566199_c7db9ac807_k.jpg"
-$header-height: 19.93rem
+$header-height: 9rem
 
 body.index > main[role=main]
   max-width: none
@@ -41,7 +41,7 @@ body.index > main[role=main]
         background-repeat: no-repeat
         background-attachment: fixed
         flex-direction: row
-        height: 25rem
+        height: 19.93rem
 
         > span.pre
           margin: 0rem 1rem
@@ -99,8 +99,14 @@ body.index > main[role=main]
   > section.blurb
     max-width: $page-max-width * 0.6
     margin: 1rem auto
-    padding: 0rem 0.5rem
+    padding: 0rem 1rem
+
+    h1, h2
+      text-align: center
 
     @media #{$desktop}
       &
         font-size: 1.5rem
+
+        h1, h2
+          text-align: left
