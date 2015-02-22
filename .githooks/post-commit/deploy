@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+# Author: Jacky Alcine <me@jalcine.me>
+
+current_branch = `git rev-parse --abbrev-ref HEAD`.chomp!
+
+case current_branch
+when 'master'
+  `bundle exec mina production deploy`
+when 'develop'
+  `bundle exec mina staging deploy`
+end
