@@ -1,11 +1,23 @@
 #!/usr/bin/env ruby
 # Author: Jacky Alcine <me@jalcine.me>
 
-current_branch = `git rev-parse --abbrev-ref HEAD`.chomp!
+def handle_deploy
+  current_branch = `git rev-parse --abbrev-ref HEAD`.chomp!
 
-case current_branch
-when 'master'
-  `bundle exec mina production deploy`
-when 'develop'
-  `bundle exec mina staging deploy`
+  case current_branch
+  when 'master'
+    `bundle exec mina production deploy`
+  when 'develop'
+    `bundle exec mina staging deploy`
+  end
 end
+
+case ARGV.join(' ')
+when "--about"
+when "--help"
+when "-h"
+  puts "Deploys using Mina when on either 'develop' or 'master.'"
+else
+  handle_deploy
+end
+
