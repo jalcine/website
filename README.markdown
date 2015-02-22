@@ -12,11 +12,17 @@ As aforementioned, [Jekyll][1] is the core blogging tool; with [Compass][2]
 and [Sass][3] used for styling the site and the light JavaScript use to make
 it fully `l33t`. The [Markdown][] rendered used in this site is [Kramdown][].
 For deployments, I use [Mina][] to allow for versioned deployments and rollback
-support (nobody's perfect).
+support (nobody's perfect). The act of automatic deployments also help with
+one-commit deploy setups via [`git-hooks`][4].
+
+## TODO
+
+  + [ ] Incorporate testing to confirm all expectations for the site are meant.
 
 [1]: http://jekyllrb.com
 [2]: http://compass-style.org
 [3]: http://sass-lang.com
+[4]: https://github.com/icefox/git-hooks
 [markdown]: http://daringfireball.net/projects/markdown/
 [kramdown]: http://kramdown.gettalong.org/syntax.html
 [mina]: http://nadarei.co/mina/
