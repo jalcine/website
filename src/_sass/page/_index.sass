@@ -1,5 +1,5 @@
-$header-image: "https://farm8.staticflickr.com/7406/16191566199_c7db9ac807_k.jpg"
-$header-height: 9rem
+$header-image: "https://farm8.staticflickr.com/7365/16413377670_475da2a196_b.jpg"
+$header-height: 11rem
 
 body.index > main[role=main]
   max-width: none
@@ -36,20 +36,21 @@ body.index > main[role=main]
     @media #{$desktop}
       &
         background-image: url($header-image)
-        background-position: center center
+        background-position: center bottom
         background-size: cover
         background-repeat: no-repeat
         background-attachment: fixed
         flex-direction: row
         height: 19.93rem
 
-        > span.pre
-          margin: 0rem 1rem
-          margin-top: 0.5rem
-          font-size: 1.2rem
-          text-shadow: 2px 2px 10px $black
-
         > h2.lead
+          > span.pre
+            position: relative
+            bottom: 1rem
+            margin: 0rem
+            font-size: 1.2rem
+            text-shadow: 2px 2px 10px $black
+
           font-size: 4rem
           text-shadow: 2px 2px 10px $black
 

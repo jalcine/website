@@ -6,8 +6,9 @@ no_header: true
 ---
 
 %header.index
-  %span.pre= "Hey, I'm"
-  %h2.lead="{{ site.author }}"
+  %h2.lead
+    %span.pre= "Hey, I'm"
+    {{ site.author }}
 %nav.mini
   %a{href: "/weblog/",title:"Weblog"}="Weblog"
   %a{href: "/about/",title:"About"}="About"
@@ -22,9 +23,8 @@ no_header: true
 
     ## Whatcha Doing?
     Right now, I'm spending a lot of attention towards [Wintermute][].
-    I'm also working on helping people of color getting into software
-    development as well as using said skills to aid social justice.
-    [All in the works, of course][blkops].
+    I'm actively working on building tools to enhance the day-to-day activities
+    of Black people over with [`blkops`][blkops].
 
     I'm currently working on [federated services][2]. [**Read more**][3].
 
