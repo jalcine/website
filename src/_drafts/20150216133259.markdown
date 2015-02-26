@@ -1,5 +1,6 @@
 ---
 title: "Clawing Back Privacy, One Piece at a Time"
+date: 2015-02-25 22:33:00 EST
 layout: post
 category: sovereign
 tags:
@@ -20,7 +21,7 @@ Realistically, there won't be much out-facing changes for those who tend to
 interact with me on a daily basis. I'd still be commenting on GitHub issues like
 a mad man and keep up the starring streak. Email might be the more tricky thing
 since I didn't realize how many places I've thrown my email at[^1]. The public
-facing version of cgit is over at <https://git.jacky.wtf> for those interested.
+facing version of cgit is over at <https://jacky.wtf/a/git> for those interested.
 I'm debating making some patches to it to allow for some more features like
 whole page templating and the likes, but if that doesn't work, I'd begin to
 wonder if this would be a nifty project to implement in Go :grin:. Take some

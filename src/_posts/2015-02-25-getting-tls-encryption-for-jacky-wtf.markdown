@@ -7,12 +7,13 @@ tags:
   - ssl
   - security
 title: "Getting TLS Encryption For jacky.wtf"
+date: 2015-02-25 22:31:33 EST
 
 ---
 
 Recently I've managed to get `jacky.wtf` and friends to use **TLS 1.2**
 encryption for the site. This is personally practice to understand the plight of
-setting up SSL on web servers[^1] in lieu of the upcoming wide support of [HTTP/2][1].
+setting up SSL on web servers in lieu of the upcoming wide support of [HTTP/2][1].
 It's pretty cheap for (up to 3) multi-TLD (multiple top level domains)
 certificates over at [Gandi][2]. Sadly though, I didn't think how this would
 effect my deployment of services since I've placed [cgit][3] and my other
@@ -37,9 +38,8 @@ Long live HTTP/2 (hurry up, would ya? :grin:)!
 **Edit**: Lo and behold, [Firefox already has support for HTTP/2][4]! This is the
 kind of stuff I want to do!
 
-[^1]: Check the `Server` header :smirk:.
 [^2]: Didn't really have much of a choice, actually.
 [1]: http://http2.github.io/faq/
 [2]: https://www.gandi.net/ssl/standard#single
-[3]: http://git.jacky.wtf
+[3]: https://jacky.wtf/a/git/
 [4]: http://bitsup.blogspot.com/2015/02/http2-is-live-in-firefox.html
