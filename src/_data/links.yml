@@ -60,8 +60,11 @@ social:
     title: "Flickr"
     icon: "flickr"
     link: "https://www.flickr.com/photos/jackyalcine"
-
   -
     title: "Steam"
     icon: "game"
     link: "http://steamcommunity.com/id/jackyalcine/"
+  -
+    title: "Reading"
+    icon: "reading"
+    link: "https://www.reading.am/jackyalcine"

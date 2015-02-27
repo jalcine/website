@@ -33,6 +33,10 @@ here since it's supposed to be a reminder to me before anything else of the
 things that I've done, am working on and have experienced. So yeah; this
 definitely isn't the last post of its kind.
 
+---
+
+**Edit 2015-02-26 23:46:07 EST** - Update paths to personal Git repositories.
+
 [^1]: Every project was meant to expectations sans timing.
-[oa]: https://jacky.wtf/a/git/oa.git
-[wintermute]: https://jacky.wtf/a/git/wintermute.git
+[oa]: http://git.jacky.wtf/oa.git
+[wintermute]: http://git.jacky.wtf/wintermute.git
