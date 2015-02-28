@@ -41,5 +41,5 @@ kind of stuff I want to do!
 [^2]: Didn't really have much of a choice, actually.
 [1]: http://http2.github.io/faq/
 [2]: https://www.gandi.net/ssl/standard#single
-[3]: https://jacky.wtf/a/git/
+[3]: http://git.jacky.wtf/
 [4]: http://bitsup.blogspot.com/2015/02/http2-is-live-in-firefox.html
