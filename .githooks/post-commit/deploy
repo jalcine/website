@@ -18,6 +18,6 @@ when "--help"
 when "-h"
   puts "Deploys using Mina when on either 'develop' or 'master.'"
 else
-  handle_deploy
+  #handle_deploy
 end
 

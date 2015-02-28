@@ -23,14 +23,19 @@ task :logs do
   queue 'sudo tail -f /var/log/nginx/*.log'
 end
 
-# TODO: Add a maintenance mode.
 namespace :maintenance do
   task :start do
     puts "-> Setting site to be in maintenance mode..."
+    queue %{
+      touch #{deploy_to}/maintain.txt
+    %}
   end
 
   task :stop do
     puts "-> Setting site to be in maintenance mode..."
+    queue %{
+      rm #{deploy_to}/maintain.txt
+    %}
   end
 end
 
