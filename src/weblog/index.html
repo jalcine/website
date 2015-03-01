@@ -4,40 +4,25 @@ title: "Weblog"
 class: "pagination"
 ---
 
-<section role='entries'>
+<section role="entries">
   <p class="lead">
-    I'm in the habit of writing a blog. It's mostly for self-reflection and
-    preventing me from making mistakes again.
-  </p>
-  <p class="paginator">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}<a href="/weblog/">Recent Posts</a>
-      {% else %}<a href="/weblog/{{ paginator.previous_page }}/">Recent Posts</a>
-      {% endif %}
-    {% endif %}
-    {% if paginator.next_page %}<a href="/weblog/{{ paginator.next_page }}/">Older Posts</a>
-    {% endif %}
+    John Barger coined the term <strong>weblog</strong> at the end of 1997 but
+    still to this day, we use it as a means of representing the digital longform
+    text people use to encapsulate thoughts, moments and experiences over time.
+    This is where I hold mine. So for, I've written {{ paginator.total_posts }}
+    here since 2012 on this site. I've had older entries on
+    <a href="https://bloger.com" target="_blank">Blogger</a> from 2009 on but
+    that's another lifetime ago.
   </p>
 
-  <dl>
+  <ul class="entries">
   {% for post in site.posts %}
-    <dt>
-      <a href="{{ post.url }}">
-        {{ post.title | markdownify | remove: '<p>' | remove: '</p>' }}
+    <li>
+      <time datetime="{{ post.date }}">{{ post.date | date: "%b %d %y" }}</time>
+      <a href="{{ post.url }}" title="{{ post.title }}">
+        {{ post.title }}
       </a>
-    </dt>
-    <dd>
-      a <strong>{{ post.layout }}</strong>
-      written <time>{{ post.date | time_to_string }}</time>
-      tagged <strong>{{ post.tags | array_to_sentence_string }}</strong>
-    </dd>
+    </li>
   {% endfor %}
-  </dl>
-
-  <p class="paginator">
-    {% if paginator.previous_page %}<a href="/weblog/{{ paginator.previous_page }}/">Previous</a>{% endif %}
-    {% if paginator.next_page %}<a href="/weblog/{{ paginator.next_page }}/">Next</a>{% endif %}
-  </p>
+  </ul>
 </section>
-
-

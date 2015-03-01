@@ -1,37 +1,11 @@
 body section[role=entries]
-  > dl
+  ul.entries
     margin: 0rem auto
+    width: 80%
 
-    @media #{$desktop}
-      &
-        max-width: $page-max-width * 0.6
-        margin: 0rem auto
+    li
+      list-style: none
 
-    dt
-      font-size: 1.5rem
-      font-weight: 400
+      time
+        color: $gray
 
-      a
-        position: relative
-        display: flex
-
-        &:hover
-          text-decoration: none
-
-        p:before
-          transition: all 0.3s
-          font-family: 'icomoon'
-          content: '\e601'
-          margin-left: -2.0rem
-          margin-right: 0.5rem
-          position: relative
-          top: 0.25rem
-          color: transparent
-
-        &:hover p:before
-          color: $black
-
-    dd
-      padding: 0rem 1rem
-      color: darken($gray, 30%)
-      margin-bottom: 0.5rem

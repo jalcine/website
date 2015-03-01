@@ -1,23 +1,32 @@
 html
   font-size: 16px
-  line-height: $text-line-height
 
-  body
-    font-family: $text-font-family
-    font-weight: inherit
+  &.wf-active
+    body
+      line-height: $text-line-height
+      font-weight: $text-font-weight
+      font-family: $text-font-family
 
-  pre, code
-    font-family: $mono-font-family
+    pre, code
+      font-family: $mono-font-family
 
-  h1, h2, h3, h4, h5, h6
-    font-family: $header-font-family
+    h1, h2, h3, h4, h5, h6
+      font-family: $header-font-family
 
   &.wf-loading, &.wf-inactive, &
-    font-family: $failsafe-font-family
+    body
+      font-family: $text-font-family, $failsafe-font-family
+
+    pre, code
+      font-family: $mono-font-family, $failsafe-mono-font-family
+
+    h1, h2, h3, h4, h5, h6
+      font-family: $failsafe-header-font-family, $header-font-family
 
 body
   -webkit-text-size-adjust: 100%
   -ms-text-size-adjust: 100%
+  text-size-adjust: 100%
 
 h1, h2, h3, h4, h5, h6
   margin-bottom: .5rem

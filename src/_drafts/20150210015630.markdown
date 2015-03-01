@@ -17,10 +17,10 @@ young adult might have some idea of what the answer would be. I couldn't think
 of an answer off the top of my head. I quickly thought of what I've spent my time
 currently doing, what I like doing and what I can see myself doing for a longer
 period of time (but not for the rest of my life). I'm quite the enthusiast for
-all things [artificial intelligence][ai] related, but it's more so on the side of
+all things [artificial intelligence][1] related, but it's more so on the side of
 improving human-computer interactions. Despite my lack of a college education, I
-have a (semi-)working knowledge of computer theory and pick up calculus thanks
-to MIT OCW. Of course, there's a ceiling that I'm starting to see and it's (and
+have a working knowledge of computer theory and pick up calculus thanks to
+[MIT OCW][2]. Of course, there's a ceiling that I'm starting to see and it's (and
 the ever-endearing encouragement of family and friends) leading me to go towards
 the academic route for more training into the fields of study that I think I'll
 need to continue my endeavors. It's going to be heavily math-based and I don't
