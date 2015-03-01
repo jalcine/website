@@ -18,6 +18,7 @@ when "--help"
 when "-h"
   puts "Deploys using Mina when on either 'develop' or 'master.'"
 else
+  # TODO: Ask if a deploy's wanted then handle push.
   #handle_deploy
 end
 
