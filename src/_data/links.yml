@@ -68,3 +68,7 @@ social:
     title: "Reading"
     icon: "reading"
     link: "https://www.reading.am/jackyalcine"
+  -
+    title: "Vim.org"
+    icon: "vim"
+    link: "http://www.vim.org/account/profile.php?user_id=62285"
