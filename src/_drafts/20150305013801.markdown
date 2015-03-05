@@ -1,0 +1,22 @@
+---
+layout: post
+---
+
+Setting up a VPN server is one hell of a job. I really thought it'd be easy to
+just set up and go. Setting up a static key VPN using **[OpenVPN][]** [is really
+straightforward][1] but we don't use static keys out here. It's a good start
+though, in terms of familiarizing yourself with how OpenVPN works and all but
+holy balls, lol. I remember seeing a tool that created a VPN automatically for
+you using your own DigitalOcean[^1] account to handle making the VPS. For
+$5/month, your own controlled VPN sounds really good. But as always, I was
+curious how I could incorporate this VPN building into [oa][]. OpenVPN can use
+TLS for its encryption since I figured since I managed to get the blog using
+TLS, why not have the VPN do the same?[^2].
+
+## Getting Things Going
+
+[openvpn]: http://openvpn.net/
+[oa]: http://git.jacky.wtf/oa
+[1]: https://wiki.debian.org/OpenVPN#TODO
+[^1]: I think this was extended to Linode as well.
+[^2]: Next time I get this cynical, punch me in the jaw and tell Batman to run me over.
