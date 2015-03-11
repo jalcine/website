@@ -1,5 +1,5 @@
 body.post > main[role=main]
-  text-align: justify
+  text-align: left
   min-height: 10rem
 
   header[role=post]
@@ -95,13 +95,15 @@ body.post > main[role=main]
       color: $link-color
 
     div.footnotes
-      font-size: 0.75rem
-      margin: 4rem 0.75rem 2rem
+      margin: 2rem 0.75rem 2rem
       text-align: left
 
       a.reversefootnote
         float: right
         text-decoration: none
+
+      li, li > p
+        font-size: 0.9rem
 
 body.post.response
   main[role=post]
