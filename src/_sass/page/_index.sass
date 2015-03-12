@@ -1,115 +1,38 @@
-$header-height: 11rem
-
 body.index > main[role=main]
   max-width: none
-  width: 100%
-  height: 100%
   padding: 0rem
+  margin: 0rem
 
-  nav.mini
-    flex: 1 1 auto
-    background-color: $black
-    display: flex
-    align-items: center
-    justify-content: center
-
-    a
-      color: $gray
-      font-size: 120%
-      padding: 0.3rem 0.5rem
-      transition: font-weight 0.3s
-      text-transform: uppercase
-
-      &:hover
-        font-weight: 900
-        text-decoration: none
-
-  > header.index
-    min-height: $header-height
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    text-transform: uppercase
+  section#top
+    height: 100%
     background-color: $black
     color: $white
-    border-bottom: 0.25rem solid $black
-    flex: 4 1 100%
+    background-image: url(/images/space.jpg)
+    background-size: cover
+    background-position: fixed
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
 
-    > h2.lead
-      color: inherit
-      font-family: $text-font-family
+    h1
+      font-size: 300%
+      font-weight: 100
+      letter-spacing: 0.1rem
+      word-spacing: 0.3rem
+      color: $white
+      font-family: $cursive-font-family, $failsafe-cursive-font-family
 
-    @media #{$desktop}
-      &
-        flex-direction: row
-        height: 100%
+      @media #{$desktop}
+        &
+          font-size: 500%
 
-        > h2.lead
-          > span.pre
-            position: relative
-            bottom: 1rem
-            margin: 0rem
-            font-size: 1.2rem
-            text-shadow: 2px 2px 10px $black
-
-          font-size: 4rem
-          text-shadow: 2px 2px 10px $black
-
-  > section.links
-    flex: 1 1 auto
-
-    > ul
-      list-style: none
-      display: flex
-      justify-content: center
-      padding: 0.3rem 0rem
-      background-color: $black
-      margin-bottom: 0rem
-
-      > li
-        padding: 0.4rem
-        display: inline
-
+    p
+      &.lead
+        font-weight: 125%
         a
-          font-size: 120%
-          color: $white
-          text-decoration: none
-          transition: color 0.4s
+          color: $gray
+          font-weight: 400
 
-          b
-            font-size: 0rem
-
-          &[href*="goodreads"]:hover,
-          &[href*="stackoverflow"]:hover
-            color: $orange
-
-          &[href*="last\.fm"]:hover,
-          &[href*="reddit"]:hover,
-          &[href*="flickr"]:hover
-            color: $red
-
-          &[href*="twitter"]:hover,
-          &[href*="linkedin"]:hover
-            color: $blue
-
-          &[href*="github"]:hover,
-          &[href*="gpg"]:hover,
-          &[href*="keybase"]:hover
-            color: $gray
-
-  > section.blurb
-    flex: 1 1 auto
-    max-width: $page-max-width * 0.6
-    margin: 1rem auto
-    padding: 0rem 1rem
-
-    h1, h2
-      text-align: center
-
-    @media #{$desktop}
-      &
-        font-size: 1.5rem
-
-        h1, h2
-          text-align: left
+body.index footer
+  display: none
