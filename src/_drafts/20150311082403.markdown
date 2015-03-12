@@ -1,0 +1,24 @@
+---
+layout: post
+---
+
+I've been using [ownCloud][] to handle my contacts and calendars recently in
+(very high) hopes of moving away from using Google for all of my calendar and
+contact purposes. So far, it's been working out pretty well. I have quite a
+few applications installed on my instance handling files and RSS as well. The
+nifty thing is that it has a Android client for file synchronization so I can
+take a picture or video on my phone and it syncs over to ownCloud and gets on
+my laptop as well, very similar to Dropbox's sync[^1]. When it comes to the
+calendar application, it looks like exceptions to dates don't reflect well on
+the Web interface despite it looking fine on my laptop when I use KOrganizer.
+With the tasks application for ownCloud, I can finally move away from Wunderlist
+and get to working on things locally. There isn't a default task application for
+ownCloud but there's [Mirakel][1] which aims to handle tasks once they've
+hammered out the issues with a CalDav extension on Android.
+
+All in all, it's been quite enjoyable. The default theme is beginning to become
+a bit of an eyesore though, so I think I might work on making a new one (I don't
+see many themes for ownCloud to begin with so it might be worth looking to).
+
+[^1]: There's still one thing to be ironed out; LAN sync. <https://github.com/owncloud/client/issues/230>
+[1]
