@@ -6,23 +6,16 @@ body.post > main[role=main]
     padding-top: 0rem
 
     h1
-      text-align: center
-      font-size: 1.5rem
-      line-height: 1.2
+      text-align: left
+      font-size: 200%
+      line-height: 1.1
       +ghostly
-
-      @media #{$tablet}
-        &
-          font-size: 2.25rem
-
-      @media #{$desktop}
-        &
-          font-size: 3rem
 
     p.links
       margin: 0.2rem auto
-      text-align: center
-      font-size: 1rem
+      text-align: left
+      font-size: 0.7rem
+      color: $gray
 
       a
         text-decoration: none
@@ -32,7 +25,7 @@ body.post > main[role=main]
     padding: 0rem 1rem
     font-size: 0.8rem
     color: lighten($foreground-color, 20%)
-    text-align: center
+    text-align: left
 
     @media #{$desktop}
       &
@@ -63,10 +56,11 @@ body.post > main[role=main]
     list-style: square
 
   section[role=stats]
-    text-align: center
-    font-size: 0.9rem
+    text-align: left
+    font-size: 0.7rem
     margin-bottom: 2rem
     margin-top: 0.5rem
+    color: $gray
 
   blockquote.response
     border: none
@@ -99,8 +93,8 @@ body.post > main[role=main]
       text-align: left
 
       a.reversefootnote
-        float: right
         text-decoration: none
+        font-weight: 900
 
       li, li > p
         font-size: 0.9rem
