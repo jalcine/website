@@ -27,7 +27,8 @@ learned in code. It not only helps people who are just searching for stuff on
 the Web, but it serves as a memory anchor for me so I don't have to remember
 details.
 
-As the Doctor would put it, Hello!
+As the Doctor would put it, **Hello**!
+
 ![Hello!](/images/hello-im-the-doctor.gif)
 
 [1]: https://twitter.com/r00k

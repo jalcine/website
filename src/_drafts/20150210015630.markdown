@@ -29,3 +29,28 @@ academia, I don't necessarily mean higher education. I might take up private
 tutoring and have concepts taught that way. I'm not too big of a fan of taking
 up debt from institutions that can only ensure you get a really expensive
 receipt.
+
+I don't know how to have this chat with myself so I've (quasi) documented it.
+I've already written a bit about how and kind of why I began programming[^1]
+[^2] but it doesn't really explain why I should continue. I've also had moments
+where I felt like I should stop programming altogether and consider a different
+career path [^3] [^4] [^5] [^6] and in some cases where [the industry did
+shun me][1]. I had [doubts about continuing][2] as a programmer. But I still
+spend at least three hours of every waking day working on some particular
+project. Why? Because I **like** doing it.
+
+I like having the ability to make something out of nothing. I'm an enthusiast
+for art and in its own regard, programming's a form of art; the molding and
+crafting of idealistic models into something digitally tangible[^7], something
+that other people can use, enjoy and extend[^8].
+
+[1]: {% post_url 2013-07-21-im-not-a-programmer %}
+[2]: {% post_url 2014-03-25-age-will-betray-you %}
+[^1]: <{{ site.url }}{% post_url 2013-04-30-why-i-code-the-start %}>
+[^2]: <{{ site.url }}{% post_url 2013-08-23-starting-off-as-a-developer %}>
+[^3]: <{{ site.url }}{% post_url 2013-09-06-the-problem-im-having-with-cs-jobs %}>
+[^4]: <{{ site.url }}{% post_url 2013-09-20-the-other-side-of-being-a-young-developer %}>
+[^5]: <{{ site.url }}{% post_url 2014-03-02-doing-too-much %}>
+[^6]: <{{ site.url }}{% post_url 2014-03-20-whats-there-to-build %}>
+[^7]: Someone is going to hate me for that analogy, haha.
+[^8]: If the license permits. Because you know. LEGAL.

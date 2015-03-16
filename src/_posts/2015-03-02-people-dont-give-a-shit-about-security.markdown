@@ -2,6 +2,7 @@
 layout: post
 title: "Regular People Don't Give a Shit About Their Digital Security"
 category: thought
+date: 2015-03-02 23:18:29 EST
 tags:
   - world
   - security

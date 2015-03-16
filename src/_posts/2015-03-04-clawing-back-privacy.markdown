@@ -1,6 +1,6 @@
 ---
 title: "Clawing Back Privacy, One Piece at a Time"
-date: 2015-02-25 22:33:00 EST
+date: 2015-03-04 03:18:57 EST
 layout: post
 category: sovereign
 tags:

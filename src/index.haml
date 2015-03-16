@@ -5,44 +5,13 @@ class: 'index'
 no_header: true
 ---
 
-%header.index
-  %h2.lead
-    %span.pre= "Hey, I'm"
-    {{ site.author }}
-%nav.mini
-  %a{href: "/weblog/",title:"Weblog"}="Weblog"
-  %a{href: "/about/",title:"About"}="About"
-  %a{href: "/work/",title:"Work"}="Work"
-%section.blurb
-  :markdown
-    # Who Are You?
-    I'm a software engineer in [Brooklyn, New York City][1]. I currently am
-    [working as a **freelancer**][freelance] but am open to new opportunities.
-    You can **[hire me][]** for website-related work. It doesn't hurt to learn
-    a bit [about me][].
-
-    ## Whatcha Doing?
-    Right now, I'm spending a lot of attention towards [Wintermute][].
-    I'm actively working on building tools to enhance the day-to-day activities
-    of Black people over with [`blkops`][blkops].
-
-    I'm currently working on [federated services][2]. [**Read more**][3].
-
-    [about me]: /about/
-    [hire me]: /work/
-    [blkops]: https://blkops.github.io
-    [wintermute]: {% post_url /weblog/2015-01-10-ambitions-wintermute %}
-    [freelance]: {% post_url /weblog/2015-01-30-freelancing-2015 %}
-    [1]: https://duckduckgo.com/Brooklyn?ia=about
-    [2]: https://duckduckgo.com/?q=federated+architecture&t=canonical&ia=about
-    [3]: {% post_url 2015-02-06-going-sovereign %}
-
-%section.links
-  %ul
-    {% for link in site.data.links.social %}
-    %li
-      %a{href:"{{ link.link }}",title:"{{ link.title }}",target:"_blank"}
-        %i{class:"icon-{{ link.icon }}"}
-        %b="{{ link.title }}"
-    {% endfor %}
-
+%section#top
+  %h1="Ohai, I'm Jacky."
+  %p.lead
+    %a{href:"/weblog/"} Writings
+    &mdash;
+    %a{href:"/about/"} About
+    &mdash;
+    %a{href:"/gear/"} Gear
+  %p
+    %strong hey. dis right hur my site.

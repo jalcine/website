@@ -1,38 +1,24 @@
 body.post > main[role=main]
-  text-align: justify
-  min-height: 10rem
+  text-align: left
 
   header[role=post]
     padding-top: 0rem
 
     h1
-      text-align: center
-      font-size: 1.5rem
-      line-height: 1.2
+      text-align: left
+      font-size: 200%
+      line-height: 1.1
       +ghostly
-
-      @media #{$tablet}
-        &
-          font-size: 2.25rem
-
-      @media #{$desktop}
-        &
-          font-size: 3rem
-
-    p.links
-      margin: 0.2rem auto
-      text-align: center
-      font-size: 1rem
-
-      a
-        text-decoration: none
 
   footer[role=post]
     margin: 2rem auto
     padding: 0rem 1rem
     font-size: 0.8rem
     color: lighten($foreground-color, 20%)
-    text-align: center
+    text-align: left
+
+    p#comments
+      text-align: center
 
     @media #{$desktop}
       &
@@ -46,15 +32,17 @@ body.post > main[role=main]
 
     > img
       margin: 0rem auto
-      max-width: $page-max-width
-      width: 100%
+      max-width: 100vh
+      display: block
 
       &.emoji
-        margin: auto 0rem
+        margin: 0rem
+        margin-top: -0.3rem
         vertical-align: middle
         width: auto
         max-width: auto
         height: 1.25rem
+        display: inline
 
   ul, ol
     margin: 1.25rem 2.5rem
@@ -63,10 +51,11 @@ body.post > main[role=main]
     list-style: square
 
   section[role=stats]
-    text-align: center
-    font-size: 0.9rem
+    text-align: left
+    font-size: 0.7rem
     margin-bottom: 2rem
     margin-top: 0.5rem
+    color: $gray
 
   blockquote.response
     border: none
@@ -95,13 +84,15 @@ body.post > main[role=main]
       color: $link-color
 
     div.footnotes
-      font-size: 0.75rem
-      margin: 4rem 0.75rem 2rem
+      margin: 2rem 0.75rem 2rem
       text-align: left
 
       a.reversefootnote
-        float: right
         text-decoration: none
+        font-weight: 900
+
+      li, li > p
+        font-size: 0.9rem
 
 body.post.response
   main[role=post]
