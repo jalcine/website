@@ -8,13 +8,13 @@ set :deploy_to, '/var/www/jalcine-www'
 set :rsync_source, File.expand_path('../..', __FILE__) + '/_site/*'
 set :rsync_options, [
   '--recursive',
-  '--times',
-  '--delete-during',
   '--archive',
-  '--progress',
   '--compress',
   '--ignore-existing',
   '--checksum',
+  '--delete',
+  '-vv',
+  '--progress',
   '-6'
 ]
 

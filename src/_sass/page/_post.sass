@@ -1,6 +1,5 @@
 body.post > main[role=main]
   text-align: left
-  min-height: 10rem
 
   header[role=post]
     padding-top: 0rem
@@ -27,6 +26,9 @@ body.post > main[role=main]
     color: lighten($foreground-color, 20%)
     text-align: left
 
+    p#comments
+      text-align: center
+
     @media #{$desktop}
       &
         width: 80%
@@ -39,15 +41,17 @@ body.post > main[role=main]
 
     > img
       margin: 0rem auto
-      max-width: $page-max-width
-      width: 100%
+      max-width: 100vh
+      display: block
 
       &.emoji
-        margin: auto 0rem
+        margin: 0rem
+        margin-top: -0.3rem
         vertical-align: middle
         width: auto
         max-width: auto
         height: 1.25rem
+        display: inline
 
   ul, ol
     margin: 1.25rem 2.5rem

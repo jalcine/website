@@ -21,7 +21,7 @@ main[role=main]
   order: 2
   flex: 1 0 auto
   width: 100%
-  height: 100vh
+  min-height: 100vh
   margin: 0rem auto
   padding: 0.2rem 1rem 0rem
 
@@ -38,13 +38,13 @@ main[role=main]
     top: 0rem
 
 header[role=main]
-  order: 1
-  opacity: 0
-  position: relative
-  flex: 0 0 0
   +prefix-property(animation, header_float_in 0.5s ease)
   +prefix-property(animation-fill-mode, forwards)
   +prefix-property(animation-delay, 0.5s)
+  opacity: 0
+  position: relative
+  flex: 0 0 0
+  order: 1
 
 img.image-half
   width: 45%

@@ -37,7 +37,7 @@ highlighter: pygments
 
 # Loading in the gems used by Jekyll. I really hate having to updating this
 # list but it is what it is. Might look into making 'jekyll-bundler' that has
-# Jekyll load all of the gems under the 'jekyll' group in the Gemfile. 
+# Jekyll load all of the gems under the 'jekyll' group in the Gemfile.
 # {{{ Gems
 gems:
   - jemoji
@@ -47,6 +47,9 @@ gems:
   - jekyll-timeago
   - jekyll-git_metadata
 # }}}
+
+emoji:
+  src: "/images"
 
 # {{{ Markdown renderer options
 redcarpet:
