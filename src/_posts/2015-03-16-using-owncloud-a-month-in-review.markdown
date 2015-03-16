@@ -1,6 +1,11 @@
 ---
 layout: post
-title: "Using Owncloud: A Month In Review"
+title: "Using Owncloud: A Month In Review + Extra"
+category: sovereignty
+tags:
+ - owncloud
+ - wallabag
+ - sovereign
 ---
 
 I've been using :cloud: [ownCloud][] to handle my contacts and calendars recently in
@@ -37,7 +42,8 @@ as the [News app][2] and the [Calendar app][3], there's definitely loads of
 room for improvement; if you're into working on PHP code, that is. There's
 always the concern that this might be a bit work for some to take on, having
 now a few services that you have to coddle like infants[^3] but with the right
-tools, it becomes less of a burden :facepunch:.
+tools, it becomes less of a burden :facepunch:. I think my only concern now
+with ownCloud might be handling storage.
 
 ## Setting Up Owncloud
 
@@ -51,9 +57,25 @@ particular questions about how to use [Oa][], feel free to hit me up about it.
 As for ownCloud, I'm going to dabble more into making its News app work with
 [Wallabag][], right now it has flaky support in Firefox :weary:.
 
+## Leaving My Shell
+
+One question that I figure that might arise is how does one manage calendar
+sharing with ownCloud? I'd say that it's up to the client to handle things
+like that. I've already taken the initiative this year to use my laptop to
+handle invitation acceptances and the likes, but this is definitely
+something that might break over time. The ability to share your contact
+information between people is a bit haphazard and I don't actually
+understand how Google gets its down outside of a lot of ACLs and
+synchronized CalDav instances.
+
+All in all, if you want to mess around with ownCloud and getting it up and
+running, why not [a month free on a VPS][7] and try it yourself[^4]? Only
+thing you can lose is time (though that's expensive for some).
+
 [^1]: There's still one thing to be ironed out; [LAN sync](https://github.com/owncloud/client/issues/230) :dancers:.
 [^2]: There's a few kinks that need to be hammered out by [Mirakel][] though :cry:
 [^3]: Why you no use [monitoring services][4]?
+[^4]: This post isn't sponsored by DigitalOcean, but they're dope as hell so free promo!
 [owncloud]: https://owncloud.org/features/
 [korganizer]: https://userbase.kde.org/KOrganizer
 [wunderlist]: https://www.wunderlist.com/
@@ -67,3 +89,4 @@ As for ownCloud, I'm going to dabble more into making its News app work with
 [4]: https://mmonit.com/monit/
 [5]: https://software.opensuse.org/download/package?project=isv:ownCloud:community&package=owncloud
 [6]: http://git.jacky.wtf/oa/tree/roles/cloud/tasks/owncloud
+[7]: https://www.digitalocean.com/?refcode=7db9600b0820

@@ -48,9 +48,6 @@ gems:
   - jekyll-git_metadata
 # }}}
 
-emoji:
-  src: "/images"
-
 # {{{ Markdown renderer options
 redcarpet:
   extensions:
