@@ -39,3 +39,8 @@ group :deployment do
   gem 'mina'
   gem 'mina-multistage'
 end
+
+group :test do
+  # TODO Add HTML testing gem.
+  #gem 'rspec'
+end

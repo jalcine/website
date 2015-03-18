@@ -17,6 +17,10 @@ navigation:
     title: "Projects"
     link: "/projects/"
     icon: "book"
+  -
+    title: "GPG"
+    link: "/gpg/"
+    icon: "key"
 
 # Social links I have.
 social:

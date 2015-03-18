@@ -1,5 +1,6 @@
 ---
 layout: post
+title: "Setting Up OpenVPN on Debian Wheezy"
 ---
 
 Setting up a VPN server is one hell of a job. I really thought it'd be easy to
@@ -17,7 +18,11 @@ Before we continue, I should remind you that this is a reflection post of me
 setting up OpenVPN on Debian. If you're looking to do so yourself, check out
 [Debian's][2] and [OpenVPN's][3] official documentation before continuing here.
 
-## Getting Things Going
+## Installing OpenVPN
+
+  1. TODO: Explain how you'd install OpenVPN's APT source list for Debian.
+  2. TODO: Explain why you'd do #1.
+
 
 [openvpn]: http://openvpn.net/
 [oa]: http://git.jacky.wtf/oa
