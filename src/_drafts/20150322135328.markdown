@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Thoughts Post #HackHarlem March 2k15"
+category: reflections
+tags:
+  - hackathon
+  - harlem
+---
+
+**[#HackHarlem][1]** happened one Saturday in March and it was dope. Despite all
+of the events happening out here in New York regarding diversity, it was amazing
+to see a Black-run, Black-judged and Black-focused hackathon. **Representation
+matters**. The goal of the hackathon was to have local technologists brainstorm,
+discuss and hash together drafts and ideas that can be used to enhance the
+livelihood of the residents of Harlem. Not even being from Harlem, this
+hackathon touched close to home. Software that helps communities **helps people**;
+especially in communities that are being socially, economically and to an extent
+_mentally_ attacked[^3]. Anything to make the lives of the residents easier is a
+plus (I'm looking at you, MTA).
+
+I didn't do a lot of homework about the state of Harlem prior to coming to this.
+For example, I learned that 37% of the population of Harlem uses
+[SNAP and/or EBT][2][^1]. That was an opportunity for a team to build an
+application that'd serve as a discovery tool for establishments that
+accepted SNAP &amp; EBT. You'd think the City would have something on this![^2]
+
+[1]: https://twitter.com/search?q=#HackHarlem
+[2]: http://lmgtfy.org/?q=snap+ebt+nyc
+[^1]: **TODO**: Fact check this.
+[^2]: They do and that's where the information sourced from. But it's more Yellowpages than Yelp.
+[^3]: This might seem a bit off-topic (if you're not from such an environment).
