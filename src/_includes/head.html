@@ -1,5 +1,5 @@
 <title>{{ page.title || "Untitled" }} - {{ site.name }}</title>
-<!-- Set Dat Encoding and Content-Type -->
+<!-- Set Data Encoding and Content-Type -->
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -19,9 +19,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#F7F7F7">
 
-<!-- What Everyone Should Base Their Metadata On But Don't Because They're Dicks -->
+<!-- Classic Metadata -->
 <meta itemprop="name" content="{{page.title}}">
-<meta itemprop="description" content="{{ (page.excerpt || site.description) | strip_html | xml_escape }}">
+<meta itemprop="description" content="{{ split (page.excerpt || site.description) '\n' | join | strip_html }}">
 
 <!-- Facebook Open Graph -->
 <meta property="og:title" content="{{page.title}}">
@@ -35,14 +35,16 @@
 <meta name="twitter:site" content="@jackyalcine">
 <meta name="twitter:title" content="{{ page.title }}">
 <meta name="twitter:domain" content="{{site.url}}">
-<meta name="twitter:image" content="{{ site.url }}/favicon.jpg" />
-<!-- End Twitter Card Support -->
+{% if page.image %}<meta name="twitter:image" content="{{page.image}}"/>
+{%else%}<meta name="twitter:image" content="{{site.url}}/favicon.jpg"/>
+{%endif%}<!-- End Twitter Card Support -->
 
 <!-- Microsoft Support -->
 <meta name="application-name" content="{{ site.title }}"/>
 <meta name="msapplication-TileColor" content="#F7F7F7"/>
 <meta name="theme-color" content="#F7F7F7"/>
 <meta name="msapplication-square70x70logo" content="/images/me-76.png" />
+<!-- Microsoft Support -->
 
 <!-- Google Authorship -->
 <link rel="author" href="https://plus.google.com/118415769922038925979/posts" />
