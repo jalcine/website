@@ -41,6 +41,6 @@ group :deployment do
 end
 
 group :test do
-  # TODO Add HTML testing gem.
-  #gem 'rspec'
+  # TODO: Add HTML testing gem.
+  # gem 'rspec'
 end
