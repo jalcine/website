@@ -1,7 +1,8 @@
 require_relative '../lib/mina'
 require 'mina/multistage'
 
-set :user, 'heimdall'
+set :user, ENV['JALCINE_SUDO_USER']
+set :web_user, 'www-data'
 set :domain, 'howard.jalcine.me'
 set :forward_agent, true
 set :deploy_to, '/var/www/jalcine-www'
@@ -25,17 +26,17 @@ end
 
 namespace :maintenance do
   task :start do
-    puts "-> Setting site to be in maintenance mode..."
-    queue %{
-      touch #{deploy_to}/maintain.txt
-    %}
+    puts '-> Setting site to be in maintenance mode...'
+    queue %(
+      sudo -u #{web_user} touch #{deploy_to}/maintain.txt
+    )
   end
 
   task :stop do
-    puts "-> Setting site to be in maintenance mode..."
-    queue %{
+    puts '-> Setting site to be in maintenance mode...'
+    queue %(
       rm #{deploy_to}/maintain.txt
-    %}
+    )
   end
 end
 
@@ -55,10 +56,10 @@ end
 task :prep do
   invoke :'rsync:setup'
   invoke :'setup'
-  queue %{
-    chown -R :www-data /var/www/jalcine-www 2> /dev/null
+  queue %(
+    sudo -u #{web_user} chown -R :www-data /var/www/jalcine-www 2> /dev/null
     rm /var/www/.profile 2> /dev/null
     rm /var/www/.bash* 2> /dev/null
     ls -lla #{deploy_to}
-  }
+  )
 end

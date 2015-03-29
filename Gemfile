@@ -1,6 +1,6 @@
 # vim:set fdl=0 nospell:
 source 'https://rubygems.org'
-ruby '2.1.3'
+ruby '2.1.5'
 
 # {{{ Core Utilities
 gem 'sass'
