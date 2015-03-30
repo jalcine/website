@@ -1,13 +1,14 @@
 ---
 layout: "post"
 title: "Untitled"
+date: 2015-03-29 22:31:54 EDT
 category: thoughts
 tags:
   - opinions
   - future
 ---
 
-Someone asked me a really good question the other day; one that I thought I had
+Someone asked me a really good question a month ago; one that I thought I had
 the answer to. Plainly put, it was just this:
 
 > **Where do you see yourself in the future professionally?**
