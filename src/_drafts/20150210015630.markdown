@@ -18,8 +18,8 @@ of an answer off the top of my head. I quickly thought of what I've spent my tim
 currently doing, what I like doing and what I can see myself doing for a longer
 period of time (but not for the rest of my life). I'm quite the enthusiast for
 all things [artificial intelligence][1] related, but it's more so on the side of
-improving human-computer interactions. Despite my lack of a college education, I
-have a working knowledge of computer theory and pick up calculus thanks to
+improving human-computer interactions. Despite my lack of a collegiate education, I
+have a working knowledge of computer theory and picked up calculus thanks to
 [MIT OCW][2]. Of course, there's a ceiling that I'm starting to see and it's (and
 the ever-endearing encouragement of family and friends) leading me to go towards
 the academic route for more training into the fields of study that I think I'll
@@ -31,26 +31,26 @@ up debt from institutions that can only ensure you get a really expensive
 receipt.
 
 I don't know how to have this chat with myself so I've (quasi) documented it.
-I've already written a bit about how and kind of why I began programming[^1]
-[^2] but it doesn't really explain why I should continue. I've also had moments
+I've already written a bit about how and kind of [why I began programming][3]
+but it doesn't really explain why I should continue. I've also had moments
 where I felt like I should stop programming altogether and consider a different
-career path [^3] [^4] [^5] [^6] and in some cases where [the industry did
-shun me][1]. I had [doubts about continuing][2] as a programmer. But I still
-spend at least three hours of every waking day working on some particular
-project. Why? Because I **like** doing it.
+career path [^1] and in some cases where [the industry did shun me][1]. I had
+[doubts about continuing][2] as a programmer. But I still spend at least three
+hours of every waking day working on some particular project. Why?
+Because I **like** doing it.
 
 I like having the ability to make something out of nothing. I'm an enthusiast
 for art and in its own regard, programming's a form of art; the molding and
-crafting of idealistic models into something digitally tangible[^7], something
-that other people can use, enjoy and extend[^8].
+crafting of idealistic models into something digitally tangible[^2], something
+that other people can use, enjoy and extend[^3].
 
 [1]: {% post_url 2013-07-21-im-not-a-programmer %}
 [2]: {% post_url 2014-03-25-age-will-betray-you %}
-[^1]: <{{ site.url }}{% post_url 2013-04-30-why-i-code-the-start %}>
-[^2]: <{{ site.url }}{% post_url 2013-08-23-starting-off-as-a-developer %}>
-[^3]: <{{ site.url }}{% post_url 2013-09-06-the-problem-im-having-with-cs-jobs %}>
-[^4]: <{{ site.url }}{% post_url 2013-09-20-the-other-side-of-being-a-young-developer %}>
-[^5]: <{{ site.url }}{% post_url 2014-03-02-doing-too-much %}>
-[^6]: <{{ site.url }}{% post_url 2014-03-20-whats-there-to-build %}>
-[^7]: Someone is going to hate me for that analogy, haha.
-[^8]: If the license permits. Because you know. LEGAL.
+[3]: {% post_url 2013-08-23-starting-off-as-a-developer %}
+[one]:{% post_url 2013-09-06-the-problem-im-having-with-cs-jobs %}
+[two]:{% post_url 2013-09-20-the-other-side-of-being-a-young-developer %}
+[three]: {% post_url 2014-03-02-doing-too-much %}
+[four]: {% post_url 2014-03-20-whats-there-to-build %}
+[^1]: [One][]. [Two][]. [Three][]. [Four][] times.
+[^2]: Someone is going to hate me for that analogy, haha.
+[^3]: If the license permits. Because you know. LEGAL.
