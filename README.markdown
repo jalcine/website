@@ -19,6 +19,7 @@ one-commit deploy setups via [`git-hooks`][4].
 
   + [ ] Incorporate testing to confirm all expectations for the site are meant.
   + [ ] Prevent drafts from being generated when making a staging build.
+  + [ ] Add information about contributing to tree.
 
 [1]: http://jekyllrb.com
 [2]: http://compass-style.org
