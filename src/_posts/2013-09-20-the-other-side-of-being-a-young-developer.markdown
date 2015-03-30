@@ -102,7 +102,7 @@ in hopes of meeting. Definitely worth (internally) exclaiming about.
 
 After that, I got to spend about two weeks in Hawaii to attend Aloha Ruby, a
 Ruby conference in paradise. It was for me, haha. I didn't pack much since I
-planned to be on my does. When I landed though, I was lost and without a place
+planned to be on my toes. When I landed though, I was lost and without a place
 to stay. Being my first time, I didn't fully plan how I was going to do this.
 
 I traded my chances of going to an ivy league school and being nose-deep in
