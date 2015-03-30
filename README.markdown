@@ -1,4 +1,4 @@
-# jalcine.me
+# jalcine-website
 
 This repository holds the source code for the [Jekyll][1]-powered website
 that's hosted as a front facing representation of Jacky Alciné's online

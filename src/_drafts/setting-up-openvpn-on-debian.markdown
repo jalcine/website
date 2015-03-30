@@ -1,6 +1,13 @@
 ---
 layout: post
 title: "Setting Up OpenVPN on Debian Wheezy"
+date: 2015-03-29 21:32:41 EDT
+category: security
+tags:
+  - openvpn
+  - vpn
+  - debian
+  - tutorial
 ---
 
 Setting up a VPN server is one hell of a job. I really thought it'd be easy to
