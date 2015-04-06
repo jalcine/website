@@ -20,6 +20,9 @@ was done using C from what I'm seeing but challenges are for seizing.
 Why does this matter so much? Well, Wintermute's not a project I'd want to have
 me stuck in C++ if I want to do a lot of prototyping and experimenting between
 the datasets different plugins provide; Ruby's excellent for that. Thus, the
-creation of the [Ruby gem for Wintermute][1]. I took a lot of notes from the 
+creation of the [Ruby gem for Wintermute][1]. I took a lot of notes from
+[nokogiri][2][^1]
 
 [1]: http://git.jacky.wtf/wintermute/ruby
+[2]: http://nokogiri.org
+[^1]: No, seriously, I don't think that there could be a better real world example of a native C++ gem. Thank y'all!
