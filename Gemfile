@@ -3,19 +3,17 @@ source 'https://rubygems.org'
 ruby '2.1.5'
 
 # {{{ Core Utilities
-gem 'sass'
-gem 'haml'
 gem 'dotenv'
-gem 'rb-gsl'
 gem 'nokogiri'
 # }}}
 
 group :jekyll do
+  gem 'rb-gsl'
   gem 'jekyll'
+  gem 'jemoji'
   gem 'jekyll-gist'
   gem 'jekyll-sass'
   gem 'jekyll-haml'
-  gem 'jemoji'
   gem 'jekyll-tagging'
   gem 'jekyll-compose'
   gem 'jekyll-timeago'
@@ -24,15 +22,21 @@ end
 
 # {{{ Development
 # Local web server
-gem 'rack'
-gem 'rack-livereload'
+group :web do
+  gem 'rack'
+  gem 'rack-livereload'
+  gem 'sass'
+  gem 'haml'
+end
 
 # Automation
-gem 'guard'
-gem 'guard-jekyll-plus', '2.0.0'
-gem 'guard-rack'
-gem 'guard-bundler'
-gem 'guard-livereload'
+group :guard do
+  gem 'guard'
+  gem 'guard-jekyll-plus', '2.0.0', require: false
+  gem 'guard-rack', require: false
+  gem 'guard-bundler', require: false
+  gem 'guard-livereload', require: false
+end
 # }}}
 
 group :deployment do
