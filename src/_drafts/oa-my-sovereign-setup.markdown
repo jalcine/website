@@ -17,7 +17,7 @@ list of things I have set up are [hosted on cgit][1]. This is going to be
 something I plan to have grow (as yet another personal project). A few things
 to note would be that:
 
-  * All of the Web requests from my other domains like **jalcine.me** and
+  * All of the Web requests from my other FQDNs like **jalcine.me** and
   **jacky.nyc** are now automatically routed to **jacky.wtf**. This is done
   in part of a vanity reclaiming for me and it looks a _lot_ saner in the
   logs. And of course, **jacky.wtf** is incredibly more memorable.
