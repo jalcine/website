@@ -62,7 +62,9 @@ accounts. There's a few other things you'd want to look into like:
     helps reduce the frustrating cycle of "reclaiming your accounts".
 
   * Making use of synchronization services like for Chrome or Firefox help
-    out as well.
+  out as well.
+
+Live long and prosper!
 
 [^1]: A Western Digital drive, if that matters.
 [^2]: Private clouds and on-demand caching FTW!
