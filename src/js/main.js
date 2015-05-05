@@ -3,8 +3,7 @@
 (function jalcineMain() {
 
   var jalcine = (function jalcine() {
-    // TODO: This is dirty.
-    var self = new Object();
+    var self = this;
     self.init = function jalcineInit() { };
     return self;
   })();
