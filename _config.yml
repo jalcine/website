@@ -75,3 +75,9 @@ defaults:
     values:
       layout: "post"
 # }}}
+
+jekyll-press:
+  exclude: 'feeds/*.xml'
+  js_options: {}
+  css_options: {}
+  html_options: {}

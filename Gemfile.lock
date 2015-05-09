@@ -18,6 +18,10 @@ GEM
       execjs
     coffee-script-source (1.9.1)
     colorator (0.1)
+    css_press (0.3.2)
+      csspool-st (= 3.1.2)
+      json
+    csspool-st (3.1.2)
     dotenv (2.0.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
@@ -59,6 +63,11 @@ GEM
     html-pipeline (1.11.0)
       activesupport (>= 2)
       nokogiri (~> 1.4)
+    html_press (0.8.2)
+      htmlentities
+      multi_css (>= 0.1.0)
+      multi_js (>= 0.1.0)
+    htmlentities (4.3.3)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     jekyll (2.5.3)
@@ -86,6 +95,11 @@ GEM
       haml (>= 3.0.0)
       jekyll (>= 0.10.0)
     jekyll-paginate (1.1.0)
+    jekyll-press (0.2.1)
+      html_press (>= 0.8.2)
+      jekyll
+      multi_css (>= 0.1.0)
+      multi_js (>= 0.1.0)
     jekyll-sass (1.2.2)
       colorator (~> 0.1)
       jekyll (>= 0.10.0)
@@ -118,6 +132,10 @@ GEM
       mina (>= 0.2.1)
     mini_portile (0.6.2)
     minitest (5.5.1)
+    multi_css (0.1.0)
+      css_press
+    multi_js (0.1.0)
+      uglifier (~> 2)
     multi_json (1.11.0)
     narray (0.6.1.1)
     nenv (0.2.0)
@@ -165,6 +183,9 @@ GEM
       parslet (~> 1.5.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uglifier (2.7.1)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     yajl-ruby (1.2.1)
 
 PLATFORMS
@@ -183,6 +204,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-git_metadata
   jekyll-haml
+  jekyll-press
   jekyll-sass
   jekyll-tagging
   jekyll-timeago

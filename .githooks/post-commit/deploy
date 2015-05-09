@@ -1,6 +1,11 @@
 #!/usr/bin/env ruby
 # Author: Jacky Alcine <me@jalcine.me>
 
+def want_to_deploy?
+  # TODO: Query if user wants to deploy.
+  false
+end
+
 def handle_deploy
   current_branch = `git rev-parse --abbrev-ref HEAD`.chomp!
 
@@ -9,7 +14,7 @@ def handle_deploy
     `bundle exec mina production deploy`
   when 'develop'
     `bundle exec mina staging deploy`
-  end
+  end if want_to_deploy?
 end
 
 case ARGV.join(' ')
@@ -18,7 +23,6 @@ when "--help"
 when "-h"
   puts "Deploys using Mina when on either 'develop' or 'master.'"
 else
-  # TODO: Ask if a deploy's wanted then handle push.
-  #handle_deploy
+  handle_deploy
 end
 

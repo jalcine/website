@@ -1,6 +1,6 @@
 # vim:set fdl=0 nospell:
 source 'https://rubygems.org'
-ruby '2.1.5'
+ruby '2.2.2'
 
 # {{{ Core Utilities
 gem 'dotenv'
@@ -18,6 +18,7 @@ group :jekyll do
   gem 'jekyll-compose'
   gem 'jekyll-timeago'
   gem 'jekyll-git_metadata'
+  gem 'jekyll-press'
 end
 
 # {{{ Development
