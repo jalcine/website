@@ -8,6 +8,7 @@ gem 'nokogiri'
 # }}}
 
 group :jekyll do
+  gem 'redcarpet'
   gem 'rb-gsl'
   gem 'jekyll'
   gem 'jemoji'
@@ -38,6 +39,7 @@ group :guard do
   gem 'guard-rack', require: false
   gem 'guard-bundler', require: false
   gem 'guard-livereload', require: false
+  gem 'guard-cucumber', require: false
 end
 # }}}
 
@@ -47,6 +49,7 @@ group :deployment do
 end
 
 group :test do
-  # TODO: Add HTML testing gem.
-  # gem 'rspec'
+  gem 'rspec-expectations'
+  gem 'cucumber'
+  gem 'poltergeist'
 end

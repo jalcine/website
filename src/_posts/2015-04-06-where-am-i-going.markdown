@@ -41,7 +41,7 @@ hours of every waking day working on some particular project. Why?
 Because I **like** doing it.
 
 I like having the ability to make something out of nothing. I'm an enthusiast
-for art and in its own regard, programming's a form of art; the molding and
+for art and in its own regard, programming is a form of art; the molding and
 crafting of idealistic models into something digitally tangible[^2], something
 that other people can use, enjoy and extend[^3].
 

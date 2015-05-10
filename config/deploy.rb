@@ -28,7 +28,7 @@ namespace :maintenance do
   task :start do
     puts '-> Setting site to be in maintenance mode...'
     queue %(
-      sudo -u #{web_user} touch #{deploy_to}/maintain.txt
+      sudo touch #{deploy_to}/maintain.txt
     )
   end
 
@@ -58,7 +58,7 @@ task :prep do
   invoke :'setup'
   puts '-> Correcting permissions for files..'
   queue %(
-    sudo -u #{web_user} chown -R #{web_user}:www-data /var/www/jalcine-www 2> /dev/null
+    sudo chown -R #{web_user}:www-data /var/www/jalcine-www 2> /dev/null
     rm /var/www/.profile 2> /dev/null
     rm /var/www/.bash* 2> /dev/null
   )

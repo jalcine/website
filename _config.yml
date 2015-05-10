@@ -24,14 +24,14 @@ timezone: 'America/New_York'
 encoding: 'utf-8'
 
 # {{{ Routing And Rendering
-pagination_path: 'weblog/:num/'
+pagination_path: '/weblog/:num/'
 permalink: '/weblog/:title/'
 show_drafts: false
 tag_dir: '/weblog/tag'
-lsi: true
+lsi: false
 future: false
 relative_permalinks: false
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 # }}}
 
@@ -51,15 +51,9 @@ gems:
 # }}}
 
 # {{{ Markdown renderer options
-kramdown:
+redcarpet:
   extensions:
-    - no_intra_emphasis
-    - autolink
-    - space_after_headers
-    - highlight
-    - quote
     - footnotes
-    - with_toc_data
 # }}}
 
 # {{{ Page Defaults

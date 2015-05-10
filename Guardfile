@@ -27,3 +27,12 @@ guard 'jekyll-plus', serve: false, future: true, drafts: true,
   watch(/^plugins/)
   watch('_config.yml')
 end
+
+guard :cucumber do
+  watch(%r{^features/.+\.feature$})
+  watch(%r{^features/support/.+$})          { 'features' }
+
+  watch(%r{^features/step_definitions/(.+)_steps\.rb$}) do |m|
+    Dir[File.join("**/#{m[1]}.feature")][0] || 'features'
+  end
+end

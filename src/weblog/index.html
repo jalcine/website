@@ -2,6 +2,8 @@
 layout: default
 title: "Weblog"
 class: "pagination"
+excerpt: |
+  A listing of all of the posts Jacky has written on his website.
 ---
 
 <section role="entries">
@@ -22,6 +24,10 @@ class: "pagination"
       <a href="{{ post.url }}" title="{{ post.title }}">
         {{ post.title }}
       </a>
+      {% if post.category %}
+        &mdash;
+        <small><strong>{{ post.category }}</strong></small>
+      {% endif %}
     </li>
   {% endfor %}
   </ul>
