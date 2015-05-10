@@ -74,3 +74,4 @@ Live long and prosper!
 [1]: https://duckduckgo.com/?q=LUKS
 [homeshick]: https://github.com/andsens/homeshick
 [owncloud]: https://owncloud.org
+[sparkleshare]: https://sparkleshare.org

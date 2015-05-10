@@ -1,7 +1,10 @@
 require_relative '../lib/mina'
 require 'mina/multistage'
+require 'dotenv'
 
-set :user, ENV['JALCINE_SUDO_USER']
+Dotenv.load
+
+set :user, ENV['JALCINE_WEB_USER']
 set :web_user, 'www-data'
 set :domain, 'howard.jalcine.me'
 set :forward_agent, true
@@ -13,10 +16,7 @@ set :rsync_options, [
   '--compress',
   '--ignore-existing',
   '--checksum',
-  '--delete',
-  '-vv',
-  '--progress',
-  '-6'
+  '--delete'
 ]
 
 task :logs do
@@ -41,9 +41,9 @@ namespace :maintenance do
 end
 
 task :deploy do
+  invoke :'jekyll:clean'
+
   deploy do
-    puts "-> Deploying to #{deploy_to}..."
-    invoke :'jekyll:clean'
     invoke :'jekyll:build'
     invoke :'rsync:copy'
 
@@ -56,10 +56,11 @@ end
 task :prep do
   invoke :'rsync:setup'
   invoke :'setup'
+  puts '-> Correcting permissions for files..'
   queue %(
-    sudo -u #{web_user} chown -R :www-data /var/www/jalcine-www 2> /dev/null
+    sudo -u #{web_user} chown -R #{web_user}:www-data /var/www/jalcine-www 2> /dev/null
     rm /var/www/.profile 2> /dev/null
     rm /var/www/.bash* 2> /dev/null
-    ls -lla #{deploy_to}
   )
+  puts '-> Corrected permissions for files.'
 end

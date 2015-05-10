@@ -4,7 +4,6 @@ namespace :rsync do
     dest_dir = "#{settings[:user]}@#{settings[:domain]}:#{deploy_to}/tmp/rsync"
 
     if !Dir.glob(src_dir).empty?
-
       rsync_command = ['rsync']
       rsync_command += settings[:rsync_options]
       rsync_command += [src_dir]
@@ -15,16 +14,18 @@ namespace :rsync do
 
       print_msg "Moving from #{deploy_to} to build directory..."
       queue %(
-        sudo -u #{www_user} mv -v #{deploy_to}/tmp/rsync/* .
+        mv #{deploy_to}/tmp/rsync/* .
+        rm #{deploy_to}/tmp/rsync/* -r
       )
     else
       print_msg '-> Cannot copy, src_dir is empty.'
     end
   end
-
   task :setup do
+    puts '-> Setting up rsync temporary directory...'
     queue %(
-      sudo -u #{www_user} mkdir -p #{deploy_to}/tmp/rsync
+      sudo -u #{web_user} mkdir -p #{deploy_to}/tmp/rsync
     )
+    puts '-> Set up rsync temporary directory.'
   end
 end

@@ -21,22 +21,26 @@
 
 <!-- Classic Metadata -->
 <meta itemprop="name" content="{{page.title}}">
-<meta itemprop="description" content="{{ split (page.excerpt || site.description) '\n' | join | strip_html }}">
+<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
 
 <!-- Facebook Open Graph -->
 <meta property="og:title" content="{{page.title}}">
-<meta property="og:description" content="{{site.description | xml_escpae }}">
+
+<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
+
 <meta property="og:url"  content="{{ site.url }}{{ page.url }}">
 
 <!-- Twitter Card Support -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:url" content="{{site.url}}{{page.url}}">
+<meta name="twitter:url" content="{{page.url | prepend: site.url }}">
 <meta name="twitter:creator" content="@jackyalcine">
 <meta name="twitter:site" content="@jackyalcine">
-<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:title" content="{{ page.title | truncate: 70 }}">
 <meta name="twitter:domain" content="{{site.url}}">
-{% if page.image %}<meta name="twitter:image" content="{{page.image}}"/>
-{%else%}<meta name="twitter:image" content="{{site.url}}/favicon.jpg"/>
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
+{% if page.image %}<meta name="twitter:image:src" content="{{page.image}}"/>
+<meta name="twitter:card" content="summary_large_image">
+{%else%}<meta name="twitter:image:src" content="{{site.url | append: '/favicon.jpg'}}"/>
+<meta name="twitter:card" content="summary">
 {%endif%}<!-- End Twitter Card Support -->
 
 <!-- Microsoft Support -->

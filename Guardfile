@@ -1,5 +1,7 @@
 # vim:set ft=ruby:
 
+clearing :on
+
 # Automatically install gems when I add some to my gem list.
 guard :bundler do
   watch 'Gemfile'
@@ -11,7 +13,9 @@ guard :livereload do
 end
 
 # Load a Rack server to handle the local serving of the site.
-guard :rack, port: 1993, server: :webrick do
+guard :rack,
+      port: 1993, server: :webrick, force_run: true,
+      cmd: 'bin/rackup' do
   watch 'Gemfile.lock'
   watch 'config.ru'
 end

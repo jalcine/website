@@ -7,13 +7,13 @@ title: "Let's Get Over Github"
 [Launchpad][] (to an extent), and now [Google Code][] decided to let them
 [handle the code-hosting jazz][1][^1]. It's what every startup company would
 want, to come into a game _after_ its competitors and have them bend to their
-will; essentially becoming the _market_. People've built companies around Github
+will; essentially becoming the _market_. People've built products around Github
 like [Waffle.io][] and [Gitter.im][]. But we get it. One-click repository
 creation! Per-repository Wikis! Web hooks based on the Git hooks! Amazeballs!
 
 But now it's gotten a bit ridiculous to be honest. There's people who I can't
 name who'd go as far as to deem you an incapable programmer if you lack a Github
-account or don't use Git. I feel like that's a loaded statement (and a judge of 
+account or don't use Git. I feel like that's a loaded statement (and a judge of
 individual character), but it points to a bigger problem. We rely _too_ much on
 this service. Anyone can say the same of Google, but they've had a habit of
 cutting things when we get close to them, to make us stronger[^2].

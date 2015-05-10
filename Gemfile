@@ -18,7 +18,8 @@ group :jekyll do
   gem 'jekyll-compose'
   gem 'jekyll-timeago'
   gem 'jekyll-git_metadata'
-  gem 'jekyll-press'
+  gem 'jekyll-twitter-plugin'
+  gem 'jekyll-auto-image'
 end
 
 # {{{ Development
