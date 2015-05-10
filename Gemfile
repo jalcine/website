@@ -1,41 +1,54 @@
 # vim:set fdl=0 nospell:
 source 'https://rubygems.org'
-ruby '2.1.3'
+ruby '2.2.2'
 
 # {{{ Core Utilities
-gem 'sass'
-gem 'haml'
 gem 'dotenv'
-gem 'rb-gsl'
-gem 'nokogiri'
+gem 'jekyll'
 # }}}
 
 group :jekyll do
-  gem 'jekyll'
+  gem 'redcarpet'
+  gem 'rb-gsl'
+  gem 'jemoji'
   gem 'jekyll-gist'
   gem 'jekyll-sass'
   gem 'jekyll-haml'
-  gem 'jemoji'
   gem 'jekyll-tagging'
   gem 'jekyll-compose'
   gem 'jekyll-timeago'
   gem 'jekyll-git_metadata'
+  gem 'jekyll-twitter-plugin'
+  gem 'jekyll-auto-image'
 end
 
 # {{{ Development
 # Local web server
-gem 'rack'
-gem 'rack-livereload'
+group :web do
+  gem 'rack'
+  gem 'rack-livereload'
+  gem 'sass'
+  gem 'haml'
+end
 
 # Automation
-gem 'guard'
-gem 'guard-jekyll-plus', '2.0.0'
-gem 'guard-rack'
-gem 'guard-bundler'
-gem 'guard-livereload'
+group :guard do
+  gem 'guard'
+  gem 'guard-jekyll-plus', '2.0.0', require: false
+  gem 'guard-rack', require: false
+  gem 'guard-bundler', require: false
+  gem 'guard-livereload', require: false
+  gem 'guard-cucumber', require: false
+end
 # }}}
 
 group :deployment do
   gem 'mina'
   gem 'mina-multistage'
+end
+
+group :test do
+  gem 'rspec-expectations'
+  gem 'cucumber'
+  gem 'poltergeist'
 end

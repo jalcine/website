@@ -1,29 +1,32 @@
-# jalcine.me
+# [jalcine-website](http://jacky.wtf)
 
-This repository holds the source code for the [Jekyll][1]-powered website
-that's hosted as a front facing representation of Jacky Alciné's online
-presence. I've been working on this version of the site since mid-2012, but
-been blogging since about 2008. However, for my own sake, I won't attempt to
-publish anything older than October 2012.
+This repository holds the sources for my website. The FQDN for my site is
+currently <https://jacky.wtf> but it's been either <http://jalcine.github.io>
+or <http://jalcine.me> before so confusion may ensue. Redirects, for example,
+don't exist for older blog posts largely because of it being a maintenance
+issue.
 
 ## Technologies
 
-As aforementioned, [Jekyll][1] is the core blogging tool; with [Compass][2]
-and [Sass][3] used for styling the site and the light JavaScript use to make
-it fully `l33t`. The [Markdown][] rendered used in this site is [Kramdown][].
-For deployments, I use [Mina][] to allow for versioned deployments and rollback
-support (nobody's perfect). The act of automatic deployments also help with
-one-commit deploy setups via [`git-hooks`][4].
+This site is rendered currently using [Jekyll][] via the [Kramdown][] processor.
+CSS compilation is done using [Compass][] and [Sass][] whereas the JavaScript
+used (very little) is vanilla. Deployment is done using [Mina][] to allow for
+versioned deploys and easy rolling back of said deployment using nothing but
+plain ol' SSH.
 
-## TODO
+## Things To Do
+
+The following are things I need to work on for the site.
 
   + [ ] Incorporate testing to confirm all expectations for the site are meant.
   + [ ] Prevent drafts from being generated when making a staging build.
+  + [ ] Add information about contributing to tree.
+  + [ ] Set up Git hooks using [`git-hooks`][1].
 
-[1]: http://jekyllrb.com
-[2]: http://compass-style.org
-[3]: http://sass-lang.com
-[4]: https://github.com/icefox/git-hooks
-[markdown]: http://daringfireball.net/projects/markdown/
+[1]: https://github.com/icefox/git-hooks
+[compass]: http://compass-style.org
+[jekyll]: http://jekyllrb.com
 [kramdown]: http://kramdown.gettalong.org/syntax.html
+[markdown]: http://daringfireball.net/projects/markdown/
 [mina]: http://nadarei.co/mina/
+[sass]: http://sass-lang.com

@@ -1,3 +1,6 @@
+require 'rubygems'
+
+Bundler.require :rack
 require 'rack/livereload'
 
 use Rack::LiveReload, no_swf: true, use_swf: false

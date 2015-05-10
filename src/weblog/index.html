@@ -2,17 +2,19 @@
 layout: default
 title: "Weblog"
 class: "pagination"
+excerpt: |
+  A listing of all of the posts Jacky has written on his website.
 ---
 
 <section role="entries">
   <p class="lead">
     John Barger coined the term <strong>weblog</strong> at the end of 1997 but
-    still to this day, we use it as a means of representing the digital longform
-    text people use to encapsulate thoughts, moments and experiences over time.
-    This is where I hold mine. So for, I've written {{ paginator.total_posts }}
-    here since 2012 on this site. I've had older entries on
-    <a href="https://bloger.com" target="_blank">Blogger</a> from 2009 on but
-    that's another lifetime ago.
+    still to this day, we use it as a means of representing the digital long
+    form text people use to encapsulate thoughts, moments and experiences over
+    time. This is where I hold mine. So for, I've written
+    {{ paginator.total_posts }} here since 2012 on this site. I have older
+    entries on <a href="https://bloger.com" target="_blank">Blogger</a>
+    from 2009 on but  that's another lifetime ago.
   </p>
 
   <ul class="entries">
@@ -22,6 +24,10 @@ class: "pagination"
       <a href="{{ post.url }}" title="{{ post.title }}">
         {{ post.title }}
       </a>
+      {% if post.category %}
+        &mdash;
+        <small><strong>{{ post.category }}</strong></small>
+      {% endif %}
     </li>
   {% endfor %}
   </ul>

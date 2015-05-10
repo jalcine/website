@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Moving on the Road with Wintermute - Driving and Mobile"
+category: development
+tags:
+  - wintermute
+  - progress
+---
+
+I've gotten the parts of Wintermute that I've wanted to iron out down pat. The
+core C++ library is about 75% tested and it handles its two primary plugins
+okay enough for me to consider moving to the next steps. This steps involves a
+few things. Building a "driver", or an executable that can load plugins and have
+them operate on their own is one part of the step. That's going to be relatively
+easy, since it's just reading options from the command line and working
+accordingly; a shell of sorts. The tricker part would be binding Wintermute to
+another language, Ruby in particular. It might be been a bit simple to do if it
+was done using C from what I'm seeing but challenges are for seizing.
+
+Why does this matter so much? Well, Wintermute's not a project I'd want to have
+me stuck in C++ if I want to do a lot of prototyping and experimenting between
+the datasets different plugins provide; Ruby's excellent for that. Thus, the
+creation of the [Ruby gem for Wintermute][1]. I took a lot of notes from
+[nokogiri][2][^1]
+
+[1]: http://git.jacky.wtf/wintermute/ruby
+[2]: http://nokogiri.org
+[^1]: No, seriously, I don't think that there could be a better real world example of a native C++ gem. Thank y'all!

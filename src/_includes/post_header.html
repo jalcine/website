@@ -1,30 +1,19 @@
 <header role="post">
   <h1 class="title">{{ include.title || page.title }}</h1>
-  <p class="links">
-    <a href="{{ page.url }}" title="Permalink">permalink</a>
-    &mdash;
-    <a target="_blank" title="Share on Twitter" href="https://twitter.com/share?text={{ page.title | uri_escape }}&link={{ page.url }}">
-      <i class="icon-twitter"></i> share
-    </a>
-    &mdash;
-    <a target="_blank" title="Read it Later" href="http://getpocket.com/edit?url={{ site.url || uri_escape }}{{ page.url || uri_escape }}">
-      <i class="icon-book"></i> read later
-    </a>
-  </p>
 </header>
 <section role="stats">
   <span>
     {{ page.content | number_of_words | intcomma }} words
   </span> &mdash;
   <span>
-    written <strong>{{ page.date | date_to_rfc822 }}</strong>
+    written <a href="{{ page.url }}"><strong>{{ page.date | date_to_rfc822 }}</strong></a>
     {% if page.location %}in <strong>{{ page.location }}</strong>{% endif %}
   </span> &mdash;
   <span>
     tagged under <strong>{{ page.tags | array_to_sentence_string }}</strong>
   </span> &mdash;
   <span>
-    <a href="/my-uri.html#isso-thread">Comments</a>
+    {% if page.category %}a <strong>{{ page.category }}</strong> post{% endif %}
   </span>
 {% if page.description %}
   <blockquote class="narrative">

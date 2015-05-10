@@ -67,3 +67,9 @@ run is their passion to actually build something, improve on it and make it
 awesome as hell. The people who just pass it off as a means of paying bills
 might not get too far. I'm aiming to go even further with this, I mean, I'm
 still trying to build JARVIS after all.
+
+---
+**Update** 2015-03-29 22:30:20 EDT: I mention how JavaScript has a "pitfall" of
+global instance variables. This isn't a pitfall per-se, but more-so a feature
+in the language. In some cases, it'd make sense to have global variables
+like this (read: factory classes).

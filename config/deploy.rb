@@ -1,21 +1,22 @@
 require_relative '../lib/mina'
 require 'mina/multistage'
+require 'dotenv'
 
-set :user, 'heimdall'
+Dotenv.load
+
+set :user, ENV['JALCINE_WEB_USER']
+set :web_user, 'www-data'
 set :domain, 'howard.jalcine.me'
 set :forward_agent, true
 set :deploy_to, '/var/www/jalcine-www'
 set :rsync_source, File.expand_path('../..', __FILE__) + '/_site/*'
 set :rsync_options, [
   '--recursive',
-  '--times',
-  '--delete-during',
   '--archive',
-  '--progress',
   '--compress',
   '--ignore-existing',
   '--checksum',
-  '-6'
+  '--delete'
 ]
 
 task :logs do
@@ -25,24 +26,24 @@ end
 
 namespace :maintenance do
   task :start do
-    puts "-> Setting site to be in maintenance mode..."
-    queue %{
-      touch #{deploy_to}/maintain.txt
-    %}
+    puts '-> Setting site to be in maintenance mode...'
+    queue %(
+      sudo touch #{deploy_to}/maintain.txt
+    )
   end
 
   task :stop do
-    puts "-> Setting site to be in maintenance mode..."
-    queue %{
+    puts '-> Setting site to be in maintenance mode...'
+    queue %(
       rm #{deploy_to}/maintain.txt
-    %}
+    )
   end
 end
 
 task :deploy do
+  invoke :'jekyll:clean'
+
   deploy do
-    puts "-> Deploying to #{deploy_to}..."
-    invoke :'jekyll:clean'
     invoke :'jekyll:build'
     invoke :'rsync:copy'
 
@@ -55,10 +56,11 @@ end
 task :prep do
   invoke :'rsync:setup'
   invoke :'setup'
-  queue %{
-    chown -R :www-data /var/www/jalcine-www 2> /dev/null
+  puts '-> Correcting permissions for files..'
+  queue %(
+    sudo chown -R #{web_user}:www-data /var/www/jalcine-www 2> /dev/null
     rm /var/www/.profile 2> /dev/null
     rm /var/www/.bash* 2> /dev/null
-    ls -lla #{deploy_to}
-  }
+  )
+  puts '-> Corrected permissions for files.'
 end

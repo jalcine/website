@@ -1,4 +1,5 @@
 ---
+title: "Defining All of the Things"
 layout: post
 category: thoughts
 tags:
@@ -19,10 +20,10 @@ of every day objects as a suite of objects that have properties and methods
 is what I think what the definition of a sink could have:
 
 {% highlight bash %}
-object Sink {
-  float fillPercentage;
-  float waterPressure;
-  float waterTemperature;
+object Sink : public {
+  float fillPercentage();
+  float waterPressure();
+  float waterTemperature();
   void setWaterTemperature(float);
   void turnWaterOff();
   void turnWaterOn();

@@ -11,12 +11,12 @@ plugins: 'plugins'
 # {{{ Metadata
 name: 'Jacky Alciné'
 author: 'Jacky Alciné'
-url: 'http://jalcine.me'
+url: 'https://jacky.wtf'
 description: |
   The site of a young Black male living in New York City learning about the
   world and the people within it. The education he was brought up
   with was broken by default, and is currently attempting to learn what
-  he should have known a decade ago. He's also a bit of a Afrofuturist.
+  he should have known a decade ago.
 # }}}
 
 # Time & encoding.
@@ -24,20 +24,20 @@ timezone: 'America/New_York'
 encoding: 'utf-8'
 
 # {{{ Routing And Rendering
-pagination_path: 'weblog/:num/'
+pagination_path: '/weblog/:num/'
 permalink: '/weblog/:title/'
 show_drafts: false
 tag_dir: '/weblog/tag'
-lsi: true
+lsi: false
 future: false
 relative_permalinks: false
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 # }}}
 
 # Loading in the gems used by Jekyll. I really hate having to updating this
 # list but it is what it is. Might look into making 'jekyll-bundler' that has
-# Jekyll load all of the gems under the 'jekyll' group in the Gemfile. 
+# Jekyll load all of the gems under the 'jekyll' group in the Gemfile.
 # {{{ Gems
 gems:
   - jemoji
@@ -46,18 +46,14 @@ gems:
   - jekyll-haml
   - jekyll-timeago
   - jekyll-git_metadata
+  - jekyll-twitter-plugin
+  - jekyll-auto-image
 # }}}
 
 # {{{ Markdown renderer options
 redcarpet:
   extensions:
-    - no_intra_emphasis
-    - autolink
-    - space_after_headers
-    - highlight
-    - quote
     - footnotes
-    - with_toc_data
 # }}}
 
 # {{{ Page Defaults
@@ -75,3 +71,16 @@ defaults:
     values:
       layout: "post"
 # }}}
+
+jekyll-press:
+  exclude: 'feeds/*.xml'
+  js_options: {}
+  css_options: {}
+  html_options: {}
+
+cleantheweb:
+  enable:       true
+  quiet:        true
+  initial:      "NOARCHIVE, INDEX, FOLLOW"
+  old:          "NOARCHIVE, NOINDEX, FOLLOW"
+  days_to_age:  90

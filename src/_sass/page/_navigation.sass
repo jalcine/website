@@ -1,3 +1,5 @@
+$navigation-link-color: mix($link-color, $background-color, 80%)
+
 header[role="main"] > nav[role="main"]
   > ul
     display: flex
@@ -19,6 +21,7 @@ header[role="main"] > nav[role="main"]
         border-radius: 0.25rem
         font-size: 0rem
         line-height: 1.5rem
+        color: $navigation-link-color
 
         @media #{$desktop}
           &
@@ -26,7 +29,7 @@ header[role="main"] > nav[role="main"]
 
         &:hover
           color: $white
-          background-color: $link-color
+          background-color: $navigation-link-color
 
         i
           font-size: 1.5rem
