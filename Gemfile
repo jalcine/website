@@ -7,30 +7,26 @@ gem 'dotenv'
 gem 'nokogiri'
 # }}}
 
-group :jekyll do
-  gem 'redcarpet'
-  gem 'rb-gsl'
-  gem 'jekyll'
-  gem 'jemoji'
-  gem 'jekyll-gist'
-  gem 'jekyll-sass'
-  gem 'jekyll-haml'
-  gem 'jekyll-tagging'
-  gem 'jekyll-compose'
-  gem 'jekyll-timeago'
-  gem 'jekyll-git_metadata'
-  gem 'jekyll-twitter-plugin'
-  gem 'jekyll-auto-image'
-end
+gem 'redcarpet'
+gem 'rb-gsl'
+gem 'jekyll'
+gem 'jemoji'
+gem 'jekyll-gist'
+gem 'jekyll-sass'
+gem 'jekyll-haml'
+gem 'jekyll-tagging'
+gem 'jekyll-compose'
+gem 'jekyll-timeago'
+gem 'jekyll-git_metadata'
+gem 'jekyll-twitter-plugin'
+gem 'jekyll-auto-image'
 
 # {{{ Development
 # Local web server
-group :web do
-  gem 'rack'
-  gem 'rack-livereload'
-  gem 'sass'
-  gem 'haml'
-end
+gem 'rack'
+gem 'rack-livereload'
+gem 'sass'
+gem 'haml'
 
 # Automation
 group :guard do
@@ -43,13 +39,8 @@ group :guard do
 end
 # }}}
 
-group :deployment do
-  gem 'mina'
-  gem 'mina-multistage'
-end
-
-group :test do
-  gem 'rspec-expectations'
-  gem 'cucumber'
-  gem 'poltergeist'
-end
+gem 'mina'
+gem 'mina-multistage'
+gem 'rspec-expectations'
+gem 'cucumber'
+gem 'poltergeist'
