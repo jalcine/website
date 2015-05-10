@@ -28,7 +28,8 @@ guard 'jekyll-plus', serve: false, future: true, drafts: true,
   watch('_config.yml')
 end
 
-guard :cucumber do
+guard :cucumber,
+      bundler: false, notification: true, change_format: 'doc'  do
   watch(%r{^features/.+\.feature$})
   watch(%r{^features/support/.+$})          { 'features' }
 

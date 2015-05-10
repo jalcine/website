@@ -39,8 +39,13 @@ group :guard do
 end
 # }}}
 
-gem 'mina'
-gem 'mina-multistage'
-gem 'rspec-expectations'
-gem 'cucumber'
-gem 'poltergeist'
+group :deployment do
+  gem 'mina'
+  gem 'mina-multistage'
+end
+
+group :test do
+  gem 'rspec-expectations'
+  gem 'cucumber'
+  gem 'poltergeist'
+end
