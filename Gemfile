@@ -4,29 +4,32 @@ ruby '2.2.2'
 
 # {{{ Core Utilities
 gem 'dotenv'
-gem 'nokogiri'
+gem 'jekyll'
 # }}}
 
-gem 'redcarpet'
-gem 'rb-gsl'
-gem 'jekyll'
-gem 'jemoji'
-gem 'jekyll-gist'
-gem 'jekyll-sass'
-gem 'jekyll-haml'
-gem 'jekyll-tagging'
-gem 'jekyll-compose'
-gem 'jekyll-timeago'
-gem 'jekyll-git_metadata'
-gem 'jekyll-twitter-plugin'
-gem 'jekyll-auto-image'
+group :jekyll do
+  gem 'redcarpet'
+  gem 'rb-gsl'
+  gem 'jemoji'
+  gem 'jekyll-gist'
+  gem 'jekyll-sass'
+  gem 'jekyll-haml'
+  gem 'jekyll-tagging'
+  gem 'jekyll-compose'
+  gem 'jekyll-timeago'
+  gem 'jekyll-git_metadata'
+  gem 'jekyll-twitter-plugin'
+  gem 'jekyll-auto-image'
+end
 
 # {{{ Development
 # Local web server
-gem 'rack'
-gem 'rack-livereload'
-gem 'sass'
-gem 'haml'
+group :web do
+  gem 'rack'
+  gem 'rack-livereload'
+  gem 'sass'
+  gem 'haml'
+end
 
 # Automation
 group :guard do

@@ -262,7 +262,6 @@ DEPENDENCIES
   jemoji
   mina
   mina-multistage
-  nokogiri
   poltergeist
   rack
   rack-livereload
