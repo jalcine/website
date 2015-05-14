@@ -24,8 +24,8 @@ namespace :rsync do
   task :setup do
     puts '-> Setting up rsync temporary directory...'
     queue %(
-      sudo mkdir -p #{deploy_to}/tmp/rsync
-      sudo chown -R #{web_user}:www-data #{deploy_to}/tmp/rsync
+      mkdir -p #{deploy_to}/tmp/rsync
+      chown -R #{web_user}:www-data #{deploy_to}/tmp/rsync
     )
     puts '-> Set up rsync temporary directory.'
   end

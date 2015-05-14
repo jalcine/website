@@ -6,7 +6,7 @@ Dotenv.load
 
 set :user, ENV['JALCINE_WEB_USER']
 set :web_user, 'www-data'
-set :domain, 'howard.jalcine.me'
+set :domain, 'heimdall.jacky.wtf'
 set :forward_agent, true
 set :deploy_to, '/var/www/jalcine-www'
 set :rsync_source, File.expand_path('../..', __FILE__) + '/_site/*'
@@ -58,7 +58,6 @@ task :prep do
   invoke :'setup'
   puts '-> Correcting permissions for files..'
   queue %(
-    sudo chown -R #{web_user}:www-data /var/www/jalcine-www 2> /dev/null
     rm /var/www/.profile 2> /dev/null
     rm /var/www/.bash* 2> /dev/null
   )
