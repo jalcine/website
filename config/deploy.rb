@@ -1,14 +1,15 @@
-require_relative '../lib/mina'
 require 'mina/multistage'
 require 'dotenv'
+require_relative '../lib/mina'
 
 Dotenv.load
 
 set :user, ENV['JALCINE_WEB_USER']
 set :web_user, 'www-data'
-set :domain, 'heimdall.jacky.wtf'
+set :domain, ENV['JALCINE_DOMAIN']
+set :deploy_to, ENV['JALCINE_WWW']
+
 set :forward_agent, true
-set :deploy_to, '/var/www/jalcine-www'
 set :rsync_source, File.expand_path('../..', __FILE__) + '/_site/*'
 set :rsync_options, [
   '--recursive',
@@ -19,25 +20,24 @@ set :rsync_options, [
   '--delete'
 ]
 
-task :logs do
-  queue 'echo "Tailing all logs for nginx."'
-  queue 'sudo tail -f /var/log/nginx/*.log'
-end
-
 namespace :maintenance do
   task :start do
     puts '-> Setting site to be in maintenance mode...'
     queue %(
-      sudo touch #{deploy_to}/maintain.txt
+      touch #{deploy_to}/maintain.txt
     )
   end
-
   task :stop do
     puts '-> Setting site to be in maintenance mode...'
     queue %(
       rm #{deploy_to}/maintain.txt
     )
   end
+end
+
+task :logs do
+  queue 'echo "Tailing all logs for nginx."'
+  queue 'sudo tail -f /var/log/nginx/*.log'
 end
 
 task :deploy do
@@ -58,8 +58,8 @@ task :prep do
   invoke :'setup'
   puts '-> Correcting permissions for files..'
   queue %(
-    rm /var/www/.profile 2> /dev/null
-    rm /var/www/.bash* 2> /dev/null
+    rm /var/www/.profile -f
+    rm /var/www/.bash* -f
   )
   puts '-> Corrected permissions for files.'
 end
