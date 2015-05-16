@@ -41,11 +41,6 @@ group :guard do
 end
 # }}}
 
-group :deployment do
-  gem 'mina'
-  gem 'mina-multistage'
-end
-
 group :test do
   gem 'rspec-expectations'
   gem 'cucumber'
