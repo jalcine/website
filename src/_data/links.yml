@@ -21,6 +21,10 @@ navigation:
     title: "GPG"
     link: "/gpg/"
     icon: "key"
+  -
+    title: "Work"
+    link: "/work/"
+    icon: "stackoverflow"
 
 # Social links I have.
 social:
