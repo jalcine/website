@@ -149,11 +149,6 @@ GEM
     mercenary (0.3.5)
     method_source (0.8.2)
     mime-types (2.5)
-    mina (0.3.4)
-      open4 (~> 1.3.4)
-      rake
-    mina-multistage (1.0.1)
-      mina (>= 0.2.1)
     mini_portile (0.6.2)
     minitest (5.6.1)
     multi_json (1.11.0)
@@ -168,7 +163,6 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     nuggets (1.0.0)
-    open4 (1.3.4)
     parslet (1.5.0)
       blankslate (~> 2.0)
     poltergeist (1.6.0)
@@ -189,7 +183,6 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rake (10.4.2)
     rb-fsevent (0.9.4)
     rb-gsl (1.16.0.4)
       narray (>= 0.5.9)
@@ -260,8 +253,6 @@ DEPENDENCIES
   jekyll-timeago
   jekyll-twitter-plugin
   jemoji
-  mina
-  mina-multistage
   poltergeist
   rack
   rack-livereload

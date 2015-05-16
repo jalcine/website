@@ -3,10 +3,9 @@ body.post > main[role=main]
 
   header[role=post]
     padding-top: 0rem
+    text-align: center
 
     h1
-      text-align: left
-      font-size: 200%
       line-height: 1.1
       +ghostly
 
@@ -51,11 +50,11 @@ body.post > main[role=main]
     list-style: square
 
   section[role=stats]
-    text-align: left
+    text-align: center
     font-size: 0.7rem
     margin-bottom: 2rem
     margin-top: 0.5rem
-    color: $gray
+    color: darken($gray, 20%)
 
   blockquote.response
     border: none
@@ -66,10 +65,12 @@ body.post > main[role=main]
 
   main[role=post]
     margin: 0rem auto
-    max-width: $page-max-width * 1.2
+    max-width: $page-max-width * 0.9
 
     > p
       margin: 1rem 0rem
+      line-height: $text-line-height * 2
+      text-align: justify
 
       h1, h2, h3, h4, h5, h6
         padding-top: 1.5rem
