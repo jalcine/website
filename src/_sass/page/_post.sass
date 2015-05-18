@@ -9,6 +9,14 @@ body.post > main[role=main]
       line-height: 1.1
       +ghostly
 
+    &.image
+      display: flex
+      flex-direction: column
+
+      img
+        width: 30vw
+        clip: rect(0px 0px 0px 0px)
+
   footer[role=post]
     margin: 2rem auto
     padding: 0rem 1rem

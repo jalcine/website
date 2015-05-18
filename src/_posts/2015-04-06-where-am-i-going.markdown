@@ -6,6 +6,7 @@ category: thoughts
 tags:
   - opinions
   - future
+image: https://farm8.staticflickr.com/7636/16881743421_02a9b35e39_z.jpg
 ---
 
 Someone asked me a really good question a month ago; one that I thought I had

@@ -1,0 +1,247 @@
+---
+title: "Resume"
+layout: 'default'
+no_header: true
+no_footer: true
+class: resume
+---
+
+%header.resume
+  %h1.name
+    %a{href:'{{ site.url }}',target:'_blank'} {{ site.author }}
+  %p
+    Web developer with a strong Linux background and big on oatmeal
+    raisin cookies.
+    %strong Not a ninja.
+
+  %p.links
+    %a{href: 'https://github.com/jalcine'} Github
+    &mdash;
+    %a{href: 'https://twitter.com/jackyalcine'} Twitter
+    &mdash;
+    %a{href: 'https://launchpad.net/~jackyalcine'} Launchpad
+    &mdash;
+    %a{href: 'skype:jackyalcine?call'} Skype
+
+  %p
+    %strong SYNOPSIS
+    Developer with 3 years experience in Web technologies and heavy tinkerer with
+    C++. I've been writing software since 2009, but only began doing it as a
+    profession in 2012. Thus, this document will only relate to my work experience
+    in the industry pertaining to technology.
+%nav
+  %ul
+    %li
+      %a{href:'#2015'} 2015
+    %li
+      %a{href:'#2014'} 2014
+    %li
+      %a{href:'#2013'} 2013
+    %li
+      %a{href:'#2012'} 2012
+    %li
+      %a{href:'#2011'} 2011
+    %li
+      %a{href:'#2010'} 2010
+%main.resume
+  %section.year#2015
+    %h2
+      %a{name: 2015} 2015
+
+    // Freelancing work
+    %section.position
+      %h3
+        Freelance Fullstack Web Developer,
+        %strong
+          %a{href: '{{ site.url }}/work/', target: '_blank'} jalcine
+      %span January 2015 to today (to infinity and beyond!)
+      %p
+        Taking on client jobs for website construction. Working as a consultant,
+        I took project results, helped clients flesh them out into a basis that
+        could be actionable for designers, copywriters and the like to join in on.
+        I've taken this time to not only expand my network but to also begin
+        helping other small enterprises expand their platform.
+      %ul
+        %li.lead Tools
+        %li Heroku
+        %li Sinatra
+        %li Jekyll
+      %ul
+        %li.lead Languages
+        %li Ruby
+        %li JavaScript
+        %li CSS
+        %li HTML
+
+  %section.year#2014
+    %h2
+      %a{name: 2014} 2014
+    // Shutterstock time
+    %section.position
+      %h3
+        Fullstack Web Developer,
+        %strong
+          %a{href: 'https://shutterstock.com'} Shutterstock
+      %span April 2014 to December 2014 (nine months)
+      %p
+        :markdown
+          Joining the [Contributor][] team, I assisted in the partitioning of
+          legacy software that made up the Contributor site as well as the
+          implementation of the new Contributor Guides site. Upon joining,
+          I ended up writing out the basis of a functional acceptance test suite
+          for the majority of the Contributor site. Lots of pair programming
+          practices were used here and were heavily encouraged as well keeping
+          the contracts upheld by tests as accurate as possible.
+
+          [contributor]: http://submit.shutterstock.com
+      %ul
+        %li.lead Tools
+        %li Segment.io
+        %li Express
+        %li Dancer
+        %li Cucumber
+        %li Pair Programming
+      %ul
+        %li.lead Languages
+        %li JavaScript
+        %li Ruby
+        %li Perl
+        %li CSS
+        %li HTML
+
+  %section.year#2013
+    %h2
+      %a{name: 2013} 2013
+
+    // Contracting for yet another agency.
+    %section.position
+      %h3
+        %em Contracting
+        Fullstack Web Developer,
+        %strong
+          %a{href: 'http://aquent.com', target: '_blank'} Aquent
+      %span September 2013 to November 2013 (one month)
+      %p
+        I worked across different kinds of platforms helping to bring them
+        up to modern Web standards and incorporating new features requested by
+        clients. Below are the companies I worked with whilst working at Aquent.
+
+      %h4
+        %a{href:'http://www.bareburger.com/', target: '_blank'} Bareburger
+      %p
+        I worked on a Wordpress plugin that allowed for easy additions of new
+        locations to the site's map of restaurant openings across the United
+        States. This made it a lot easier for management to just enter a bit
+        of information about the new location and go from there. I also advised
+        on the kind of customer relationship management (CRM) tool that they
+        should take up to help with their expanding company.
+      %ul
+        %li.lead Tools
+        %li jQuery
+        %li Wordpress
+      %ul
+        %li.lead Languages
+        %li PHP
+        %li HTML
+        %li CSS
+        %li JavaScript
+
+      %h4
+        %a{href:'https://paddle8.com/', target: '_blank'} Paddle8
+      %p
+        :markdown
+          Joining the [Archiv8][] team, I worked to improve invoicing rendering
+          for merchants wanting to sell their art. It includes rendering PDF
+          pages on demand and caching when necessary and catching overdue invoices
+          for our platform. Everything I wrote at this company had to be
+          accompanied with an acceptance test if it was user facing and unit
+          tests given it was a modification to lower components in the system.
+          This conditioned me more for test-driven development.
+          [archiv8]: https://paddle8.com/sell/
+      %ul
+        %li.lead Languages
+        %li Ruby
+        %li JavaScript
+        %li CSS
+        %li HTML
+      %ul
+        %li.lead Tools
+        %li Rails
+        %li jQuery
+        %li Service Orientated Architecture
+        %li Testing
+
+      %h4
+        %a{href: 'http://horizonmedia.com', target: '_blank'} Horizon Media
+      %p
+        :markdown
+          Working on their Intranet, I was tasked with implementing a new
+          dashboard interface for their employee directory as well as their
+          in-house personnel management software. The only real technological
+          hurdle that I found to be constantly hard to work with was the fact
+          that since the means of editing code was over said Intranet, I had to
+          in-house machines to do so, all of them running Windows, where I tend
+          to [prefer Linux][1].
+
+          [1]: /gear/#laptop
+      %ul
+        %li.lead Languages
+        %li JavaScript
+        %li CSS
+        %li HTML
+      %ul
+        %li.lead Tools
+        %li Modernizr
+        %li jQuery
+        %li Microsoft Sharepoint
+
+  %section.year#2012
+    %h2
+      %a{name: 2012} 2012
+
+    %section.position
+      %h3
+        %em Founding
+        Fullstack Web Developer,
+        %strong
+          %a{href: 'https://viridislearning.com', target: '_blank'} Virdis Learning
+      %span July 2012 to Jan 2013 (five months)
+      :markdown
+        Going from an idea in the founder's machine to a prototype solution that
+        was pitched and well-received by multiple angel investors, I, on a team
+        of 3, worked on designing, testing and implementing the Viridis Learning
+        education platform. Being that the team was already so small, I picked
+        up other IT roles like managing our Google Apps infrastructure. I also
+        had to wrap the [O*NET search api][1] and [Taleo's now defunct][2] job
+        search API to seed the job boards of the platform, as well as using the
+        [TinCan specification][3] to write out an API for importing and consuming
+        course work.
+
+        [1]: http://www.onetonline.org/
+        [2]: http://www.programmableweb.com/api/taleo
+        [3]: http://tincanapi.com/
+
+
+  %section.year#2011
+    %h2
+      %a{name: 2011} 2011
+
+
+  %section.year#2010
+    %h2
+      %a{name: 2010} 2010
+
+    %section.position
+      %h3
+        %em Intern
+        Software Engineering Intern,
+        %a{href: 'https://www.google.com/places/'} Google Places
+      :markdown
+        While interning at Google New York on the Google Places (now Business) teams,
+        I got a chance to sink head-first into the daily routines and tasks software
+        engineers took up at work. I also learned about tools like GeoClue and Google's
+        in-house tools to h
+
+%footer.resume
+  %p Last updated
+  %p Download PDF
