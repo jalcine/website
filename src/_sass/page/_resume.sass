@@ -27,74 +27,74 @@ body.resume > main
         text-align: center
         line-height: 1.9rem
 
-nav
-  width: 100%
-  display: flex
-  flex-direction: column
-  align-items: center
-  margin: 1rem auto 0rem
-
-  ul
-    list-style: none
-
-    li
-      display: inline-block
-      margin: 0rem auto
-
-      &:after
-        content: '\2012'
-        color: $gray
-
-      &:last-child:after
-        content: ''
-
-main.resume
-  section.year
-    border-bottom: 1px solid $gray
-    padding: 0.5rem 0rem 1rem
-    min-height: 25vh
-    justify-content: center
+  nav
+    width: 100%
     display: flex
-    flex-direction: row
+    flex-direction: column
+    align-items: center
+    margin: 1rem auto 0rem
 
-    h2
-      min-width: 4em
-      text-align: center
-      font-family: $text-font-family
-      margin: 0rem
+    ul
+      list-style: none
 
-    h3
-      margin: 0rem
-      color: darken($gray, 30%)
+      li
+        display: inline-block
+        margin: 0rem auto
 
-    h4
-      margin-top: 0.5rem
+        &:after
+          content: '\2012'
+          color: $gray
 
-    &:last-child
-      border-bottom: none
+        &:last-child:after
+          content: ''
 
-    section.position
-      margin: 0.3em 0em 0.2em
-      span
-        color: $gray
+  main.resume
+    section.year
+      border-bottom: 1px solid $gray
+      padding: 0.5rem 0rem 1rem
+      min-height: 25vh
+      justify-content: center
+      display: flex
+      flex-direction: row
 
-      ul
-        list-style: none
-        margin-bottom: 0.5rem
-        width: 100%
+      h2
+        min-width: 4em
+        text-align: center
+        font-family: $text-font-family
+        margin: 0rem
 
-        li
-          font-size: 80%
-          display: inline-block
-          padding: 0.3rem 0.5rem
-          background-color: darken($blue, 10%)
-          color: $white
-          border-top-right-radius: 0.4rem
-          border-bottom-left-radius: 0.4rem
+      h3
+        margin: 0rem
+        color: darken($gray, 30%)
 
-          &.lead
-            color: darken($gray, 20%)
-            background-color: transparent
-            font-weight: bold
-            text-transform: uppercase
-            font-size: 90%
+      h4
+        margin-top: 0.5rem
+
+      &:last-child
+        border-bottom: none
+
+      section.position
+        margin: 0.3em 0em 0.2em
+        span
+          color: $gray
+
+        ul
+          list-style: none
+          margin-bottom: 0.5rem
+          width: 100%
+
+          li
+            font-size: 80%
+            display: inline-block
+            padding: 0.3rem 0.5rem
+            background-color: darken($blue, 10%)
+            color: $white
+            border-top-right-radius: 0.4rem
+            border-bottom-left-radius: 0.4rem
+
+            &.lead
+              color: darken($gray, 20%)
+              background-color: transparent
+              font-weight: bold
+              text-transform: uppercase
+              font-size: 90%
