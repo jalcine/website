@@ -1,4 +1,4 @@
-body.resume > main
+body.resume > main[role=main]
   width: 80vw
   max-width: $page-max-width * 0.8
 
@@ -19,6 +19,10 @@ body.resume > main
       width: 70%
       text-align: justify
       margin: 0rem auto
+
+      @media #{$mobile}
+        &
+          width: 100%
 
       strong
         color: $black
@@ -56,6 +60,13 @@ body.resume > main
       justify-content: center
       display: flex
       flex-direction: row
+
+      @media #{$mobile}
+        &
+          flex-direction: column
+
+          h2
+            font-size: 3em
 
       h2
         min-width: 4em
