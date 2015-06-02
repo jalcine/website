@@ -54,6 +54,15 @@ gems:
 redcarpet:
   extensions:
     - footnotes
+    - autolink
+    - space_after_headers
+    - highlight
+    - fenced_code_blocks
+    - disabled_indented_code_blocks
+    - underline
+    - with_toc_data
+    - prettify
+    - link_attributes
 # }}}
 
 # {{{ Page Defaults
