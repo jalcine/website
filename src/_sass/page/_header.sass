@@ -4,8 +4,12 @@ $header-height: 5rem
 header[role=main]
   display: flex
   flex-direction: column
-  margin-top: 0.5rem
-  min-height: 8rem
+  justify-content: center
+  min-height: 12rem
+
+  @media #{$desktop}
+    &
+      min-height: 8rem
 
   > hgroup
     margin: 0.5rem auto
@@ -18,6 +22,7 @@ header[role=main]
       display: flex
       flex-direction: column
       transition: flex-direction 0.3s
+      font-size: 3rem
 
       @media #{$desktop}
         &

@@ -12,7 +12,7 @@ I'm writing this after I've sent my brother off to school and getting ready to
 awaken another for class. These guys give me pain like none other but I
 wouldn't trade it for the world. Whenever I'm not working, be it in an office,
 co-working place or from my desk, I'm paying these cats back for every minute
-of trouble they give. One of my brothers is fansticted with how the MTA manages
+of trouble they give. One of my brothers is beyond fanatical with how the MTA manages
 to be running 24/7[^1] and the other isn't too sure what he's interested in.
 I'm glad that I had the chance to show them how words on a screen can turn into
 what both of them may like[^2]. When it comes to helping others outside of the

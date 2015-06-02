@@ -27,13 +27,13 @@ body
   -webkit-text-size-adjust: 100%
   -ms-text-size-adjust: 100%
   text-size-adjust: 100%
+  text-rendering: optimizeLegibility
 
 h1, h2, h3, h4, h5, h6
   margin-bottom: .5rem
   font-weight: 900
   line-height: 1.25
   color: lighten($black, 5%)
-  text-rendering: optimizeLegibility
 
   &.center
     text-align: center
@@ -66,9 +66,11 @@ em
   font-weight: inherit
 
 ul, ol, dl
-  margin-top: 0rem
-  margin-bottom: 1.2rem
   list-style: inside
+  margin-left: 1rem
+
+ul > li, ol > li
+  margin: 0.5rem
 
 ul > li
   list-style: square

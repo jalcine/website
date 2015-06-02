@@ -12,9 +12,13 @@ body.resume > main[role=main]
       font-size: 300%
       line-height: 1
 
+      @media #{$mobile}
+        &
+          font-size: 200%
+
     p
       font-size: 0.8rem
-      color: $gray
+      color: darken($gray, 20%)
       line-height: 1.1
       width: 70%
       text-align: justify
@@ -24,12 +28,26 @@ body.resume > main[role=main]
         &
           width: 100%
 
+      @media #{$tablet}
+        &
+          width: 100%
+
       strong
         color: $black
 
       &.links
         text-align: center
         line-height: 1.9rem
+
+  @media #{$mobile}
+    &
+      width: 100%
+      max-width: none
+
+  @media #{$tablet}
+    &
+      width: 100%
+      max-width: $page-max-width
 
   nav
     width: 100%
