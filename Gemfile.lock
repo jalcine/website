@@ -28,6 +28,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     colorator (0.1)
+    colored (1.2)
     cucumber (2.0.0)
       builder (>= 2.1.2)
       cucumber-core (~> 1.1.3)
@@ -43,6 +44,8 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     equalizer (0.0.11)
+    ethon (0.7.3)
+      ffi (>= 1.3.0)
     eventmachine (1.0.7)
     execjs (2.5.2)
     faraday (0.9.1)
@@ -88,6 +91,14 @@ GEM
     html-pipeline (1.11.0)
       activesupport (>= 2)
       nokogiri (~> 1.4)
+    html-proofer (2.2.0)
+      addressable (~> 2.3)
+      colored (~> 1.2)
+      mercenary (~> 0.3.2)
+      nokogiri (~> 1.5)
+      parallel (~> 1.3)
+      typhoeus (~> 0.7)
+      yell (~> 2.0)
     http (0.6.4)
       http_parser.rb (~> 0.6.0)
     http_parser.rb (0.6.0)
@@ -163,6 +174,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     nuggets (1.0.0)
+    parallel (1.6.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
     poltergeist (1.6.0)
@@ -220,6 +232,8 @@ GEM
       memoizable (~> 0.4.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
+    typhoeus (0.7.1)
+      ethon (>= 0.7.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     websocket-driver (0.5.4)
@@ -228,6 +242,7 @@ GEM
     xpath (2.0.0)
       nokogiri (~> 1.3)
     yajl-ruby (1.2.1)
+    yell (2.0.5)
 
 PLATFORMS
   ruby
@@ -242,6 +257,7 @@ DEPENDENCIES
   guard-livereload
   guard-rack
   haml
+  html-proofer
   jekyll
   jekyll-auto-image
   jekyll-compose

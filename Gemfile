@@ -45,4 +45,5 @@ group :test do
   gem 'rspec-expectations'
   gem 'cucumber'
   gem 'poltergeist'
+  gem 'html-proofer'
 end

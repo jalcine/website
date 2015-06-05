@@ -62,7 +62,6 @@ redcarpet:
     - underline
     - with_toc_data
     - prettify
-    - link_attributes
 # }}}
 
 # {{{ Page Defaults
