@@ -1,0 +1,14 @@
+---
+layout: post
+title: Getting Emoji as a First-Class Citizen (Sorta)
+date: 2015-06-18 17:26:57 EDT
+---
+
+I've craved for the day that I could use emoji anywhere from the console. Right
+now in Firefox, I [use an extension to handle copy and pasting][1] of emoji but
+this can only take one so far. Just hitting a few strokes on the keyboard
+_should_ be enough to get emoji going and thanks to [eevee's `.XCompose`][2]
+file, it seems VERY possible.
+
+[1]: http://github.com/johannhof/emoji-helper
+[2]: https://github.com/eevee/rc/blob/master/.XCompose

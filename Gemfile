@@ -25,7 +25,8 @@ end
 # Local web server
 group :web do
   gem 'rack'
-  gem 'rack-livereload'
+  gem 'puma'
+  gem 'rack-livereload', require: 'rack/livereload'
   gem 'sass'
   gem 'haml'
 end
@@ -37,13 +38,5 @@ group :guard do
   gem 'guard-rack', require: false
   gem 'guard-bundler', require: false
   gem 'guard-livereload', require: false
-  gem 'guard-cucumber', require: false
 end
 # }}}
-
-group :test do
-  gem 'rspec-expectations'
-  gem 'cucumber'
-  gem 'poltergeist'
-  gem 'html-proofer'
-end

@@ -14,7 +14,7 @@ end
 
 # Load a Rack server to handle the local serving of the site.
 guard :rack,
-      port: 1993, server: :webrick, force_run: true,
+      port: 1993, server: :puma, force_run: true, daemon: true,
       cmd: 'bin/rackup' do
   watch 'Gemfile.lock'
   watch 'config.ru'
@@ -26,14 +26,4 @@ guard 'jekyll-plus', serve: false, future: true, drafts: true,
   watch(/^src/)
   watch(/^plugins/)
   watch('_config.yml')
-end
-
-guard :cucumber,
-      bundler: false, notification: true, change_format: 'doc'  do
-  watch(%r{^features/.+\.feature$})
-  watch(%r{^features/support/.+$})          { 'features' }
-
-  watch(%r{^features/step_definitions/(.+)_steps\.rb$}) do |m|
-    Dir[File.join("**/#{m[1]}.feature")][0] || 'features'
-  end
 end
