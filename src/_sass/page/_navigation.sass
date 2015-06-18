@@ -1,6 +1,10 @@
 $navigation-link-color: mix($link-color, $background-color, 80%)
 
 header[role="main"] > nav[role="main"]
+  @media print
+    &
+      display: none
+
   > ul
     display: flex
     list-style: none
