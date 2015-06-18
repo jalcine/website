@@ -57,4 +57,14 @@ Bash aliases something like this wouldn't work within an editor like Vim, so
 dropping to the shell using `:shell`, running said command and then hitting `^D`
 to get back to Vim would be an option (that's how I do it right now).
 
+```bash
+# From within Vim
+:sh
+# Under bash
+find_and_sed . "s/Fruits/Cookies/" "*.txt"
+exit
+# Back in Vim
+e! # To reload changes
+```
+
 [dry]: https://en.wikipedia.org/wiki/Don't_repeat_yourself
