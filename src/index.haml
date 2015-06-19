@@ -8,7 +8,7 @@ no_header: true
 %section#top
   %h1="Ohai! I'm Jacky."
   %p.lead
-    %a{href:"/weblog/"} Writings
+    %a{href:"/weblog/"} Weblog
     &mdash;
     %a{href:"/about/"} About
     &mdash;
@@ -19,3 +19,7 @@ no_header: true
     %a{href:"/gpg/"} GPG
   %p
     %strong My rented corner of the public IPv4/6 Web.
+  %p
+    %strong Latest Entry:
+    %a{href: "{{ site.posts.first.url }}"}
+      = "{{ site.posts.first.title }}"
