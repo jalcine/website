@@ -17,7 +17,7 @@ tags:
 > passion projects, it's definitely the overwhelming amount of emotion one can
 > throw into it.
 
-# What's Wintermute Capable Of? {#synopsis}
+# What's Wintermute Capable Of?
 
 Wintermute is an attempt to build a "universal" communication platform for
 existing and future bits of software I find and plan to build. The idea is
@@ -36,12 +36,12 @@ when it comes to working with more lower level pieces of hardware like the
 [Spark][sparkio] line of tools or the [Raspberry Pi][rpi]. You know, for that
 home automation and wearables tech stuff everyone's raving about.
 
-![Spin, my Pi, spin.](/images/rpi-rotate.gif){:style="margin: 1rem auto"}
+![Spin, my Pi, spin.](/images/rpi-rotate.gif)
 
 There's a few things I want Wintermute to do. Having it written out makes it
 more of a declarative thing and gives me a bit of direction as to what
 Wintermute _should_ be capable of doing. Mind you, I'm open to
-[suggestions](#comments) for the list, just be willing to provide a solution
+suggestions for the list, just be willing to provide a solution
 for execution or implementation.
 
   * **Rudimentary natural language processing** -- Mixing together things like
@@ -58,7 +58,7 @@ for execution or implementation.
   I'd be damned if I couldn't natively make a call and send SMS from my
   laptop. It'd also help with automatically screening calls depending on my
   current activity (if Wintermute's aware of it).
-  ![Home automation](/images/im3-rdj-robe.gif){:style="width:40rem; margin: 1rem auto; display: flex"}
+  ![Home automation](/images/im3-rdj-robe.gif)
   Things like sending calls to voice mail with a small prompt if I'm exercising
   or sending a text message to people whilst I'm in transit and informing them
   of when would be a good time to call back (or have them leave a message
@@ -80,7 +80,7 @@ for execution or implementation.
   being able to check on the temperature of different rooms or controlling
   speakers and television sets is really cool of a prospect. Also, this can go
   outside of the home; who knows? :sparkles:
-  ![Home automation](/images/lame-home-automation.gif){:style="width:40rem; margin: 1.5rem auto; display: flex"}
+  ![Home automation](/images/lame-home-automation.gif)
 
   * **On-the-fly speech recognition enhancement** -- One thing that's always
   going to be tricky about speech recognition is the _recognition_ part. I can
@@ -102,7 +102,7 @@ for execution or implementation.
   the act of playing a local collection of music and videos a lot simpler
   to do with compatible devices as well as allowing other devices to 'hone in'
   on what's going on.
-  ![FTW](/images/rdj-deal-with-it.gif){:style="width:40rem; margin: 1rem auto; display: flex"}
+  ![FTW](/images/rdj-deal-with-it.gif)
   Being able to say "Put on the show I was watching last
   night" and being presented (or prompted) with a list of what I did watch
   (be it on YouTube, Netflix or from my purchased collection) is when I
@@ -126,7 +126,7 @@ for execution or implementation.
   so to duplicate effort would be wasteful. A very good chance that we'll
   leverage their work as well pull in public-domain reference material from
   projects like [Protege][owl] for sourcing a lot of our [ontologies][].
-  ![Does an Internet](/images/brb-downloading-the-internet.gif){:style="width:30rem; margin: 1rem auto; display: flex"}
+  ![Does an Internet](/images/brb-downloading-the-internet.gif)
   However, the point of this is to allow Wintermute to make other parts of
   itself more useful. For example, if Wintermute's aware of coverage
   information for my cellular device and knows my destination, it could inform
@@ -136,7 +136,7 @@ for execution or implementation.
   from packages, flights and typical transit routes could be added into the
   fold, but that's definitely something for later down the route.
 
-![Does an Internet](/images/rdj-im3-haul-suit.gif){:style="width:80%; margin: 1rem auto; display: flex"}
+![Does an Internet](/images/rdj-im3-haul-suit.gif)
 
 All in all, I want something similar to, if not exactly like, [Jarvis][]. It's
 overly ambitious and on that reason alone is why I'm eager to continue
@@ -145,7 +145,7 @@ continuous deployment, having a strong test suite, a maintainable repository
 and the benefits of composition and abstractions in software _just_ from this
 project[^1]. And this is just the crux of it.
 
-# What's The Approach? {#approach}
+# What's The Approach?
 
 When I first started hammering out the code base for Wintermute, I used a shit
 ton of tools to make it quick 'n' dirty. [Qt][], [Boost][], [CMake][] and a lot of
@@ -167,7 +167,7 @@ I thought this to be a super big and annoying challenge, but I think that
 this'll allow me to have focused builds of Wintermute and iterate accordingly
 for each platform. It's not like I'm rebuilding streams in C++, though.
 
-# So, What's the Library Doing? {#library}
+# So, What's the Library Doing?
 
 The core library of Wintermute, `libwintermute` is meant to provide the
 following:
@@ -195,7 +195,7 @@ following:
   to [EventEmitter][] for C++. There's one for [C][uvemitter], but I prefer
   something that takes up more of the C++ paradigms.
 
-![Does an Internet](/images/im1-jericho.gif){:style="width:80%; margin: 0rem auto; display: flex"}
+![Does an Internet](/images/im1-jericho.gif)
 With the preceding, (hopefully) any application can then utilize
 Wintermute's base functionality and build a tool that'd feed back to
 the connection system of Wintermute. At least, that's the plan. Right now,

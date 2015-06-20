@@ -15,7 +15,11 @@
     {% if page.location %}in <strong>{{ page.location }}</strong>{% endif %}
   </span> &mdash;
   <span>
-    tagged under <strong>{{ page.tags | array_to_sentence_string }}</strong>
+    tagged under
+    <strong>
+      {{ page.tags | linkify_tags | array_to_sentence_string }}
+      {{ linkify_tags: page.tags }}
+    </strong>
   </span> &mdash;
   <span>
     {% if page.category %}a <strong>{{ page.category }}</strong> post{% endif %}
