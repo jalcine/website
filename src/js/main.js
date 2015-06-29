@@ -1,15 +1,13 @@
 "use strict";
 
-(function jalcineMain() {
+(function jalcineCtor() {
 
-  var jalcine = (function jalcine() {
+  var jalcine = (function Jacky() {
     var self = this;
-    self.init = function jalcineInit() { };
-    return self;
+
+    self.determineState = function JackyDetermineState() {
+      // TODO: Query CSS on page to see if we're on a desktop device.
+    };
   })();
 
-  $(window).load(function windowOnLoad() {
-    jalcine.init();
-  });
-
-})();
+});
