@@ -1,4 +1,4 @@
-{% if page.image %}
+{% if page.image and page.image != 'none' %}
   <header role="post" class="image" style="background-image: url('{{ page.image }}');">
 {% else %}
   <header role="post">
