@@ -1,0 +1,31 @@
+---
+layout: post
+title: The Blur Between The Sense of Technology and People
+date: 2015-07-02 03:39:27 EDT
+category: response
+tags:
+  - google
+  - ai
+  - twitter
+---
+
+It was the night of the BET 2015 Awards ceremony. I wasn't really paying
+attention to it; thanks to the ever-present live streaming of events on Twitter.
+A friend of mine shared a GIF that was made of a collage of selfies that she
+liked. In order for me to open it up, I had to view it on Google Photos in my
+Web browser on my laptop. I admired it and then continued to the landing page
+of [Google Photos][1] to check out the photos I have uploaded to Google. At the
+time, it was quite some time since I've visited the Web interface and since the
+[new features announced at Google I/O][2], I was curious. The page's partitioned
+into a few spaces, as once might see, pictures of faces Google's recognized
+throughout your collection; family, friends, former partners, the whole
+stretch. Underneath that, the location specific partition showed the general
+location of where photos were taken (for me, New York). Then I saw it.
+
+{% twitter oembed https://twitter.com/jackyalcine/status/615329515909156865 %}
+
+The speed at which I screenshotted and then tweeted this represented the
+momentary anger I had.
+
+[1]: https://photos.google.com/search
+[2]: https://www.google.com/intl/en/photos/about/

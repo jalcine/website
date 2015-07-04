@@ -1,3 +1,6 @@
+$index-background: url(/images/bkm.jpg)
+$index-fg-color: lighten($black, 10%)
+
 body.index > main[role=main]
   max-width: none
   padding: 0rem
@@ -5,26 +8,27 @@ body.index > main[role=main]
 
   section#top
     height: 100vh
-    background-color: $black
-    color: $white
-    background-image: url(/images/space.jpg)
+    background-color: $white
+    color: $index-fg-color
+    background-image: $index-background
     background-size: cover
     background-position: fixed
     display: flex
     align-items: center
     justify-content: center
     flex-direction: column
+    text-shadow: 1px 1px 2px $white
 
     a
-      color: lighten($gray, 50%)
-      font-weight: 400
+      color: $index-fg-color
+      font-weight: 900
 
     h1
       font-size: 300%
       font-weight: 100
       letter-spacing: 0.1rem
       word-spacing: 0.3rem
-      color: $white
+      color: darken($white, 80%)
       font-family: $cursive-font-family, $failsafe-cursive-font-family
 
       @media #{$desktop}
@@ -34,6 +38,15 @@ body.index > main[role=main]
     p
       &.lead
         font-weight: 125%
+
+      strong
+        font-weight: 400
+
+      @media #{$tablet}
+        &:last-child
+          background-color: rgba($white, 0.80)
+          padding: 0.25rem 0.3rem
+          border-radius: 0.1rem
 
 body.index footer
   display: none

@@ -6,7 +6,7 @@ no_header: true
 ---
 
 %section#top
-  %h1="Ohai! I'm Jacky."
+  %h1="I'm Jacky."
   %p.lead
     %a{href:"/weblog/"} Weblog
     &mdash;
@@ -18,8 +18,11 @@ no_header: true
     &mdash;
     %a{href:"/gpg/"} GPG
   %p
-    %strong My rented corner of the public IPv4/6 Web.
+    %strong My rented corner of the public IPv4/6 Web
+    &mdash;
+    %a{href: "https://www.flickr.com/photos/jackyalcine/15556142996/", target: "_blank"}
+      background
   %p
-    %strong Latest Entry:
-    %a{href: "{{ site.posts.first.url }}"}
+    %strong LATEST ENTRY:
+    %a{href: "{{ site.posts.first.url }}", style: "text-decoration: underline"}
       = "{{ site.posts.first.title }}"
