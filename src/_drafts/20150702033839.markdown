@@ -48,10 +48,11 @@ that they both can agree on. There's no question that Google has the such[^2].
 
 I agree with this. With Google being a global company, you'd assume that
 racial and gender diversity wouldn't be that difficult of a problem for them
-to solve. That's an utopian though given the state of the tech world today.
+to solve. That's an Utopian though given the state of the tech world today.
 To go further, the technology industry's outlook of how people should be
 treated is a softer angle at how events against minority occur in the United
-States. And that's it putting __very, very__ lightly.
+States, more accurately how minorities are represented in higher positions in
+US government. And that's it putting __very, very__ lightly.
 
 However, [Erica Baker][eb] mentioned her experience as a beta user for Google
 Photos:
@@ -60,14 +61,16 @@ Photos:
 
 This makes me wonder a few things. For starters, what kind of photos were used
 in the acceptance cycle that wouldn't have allowed what I've experienced from
-happening then? Were lower quality images (like in the range of two megapixels)
+happening to them? Were lower quality images (like in the range of two megapixels)
 used? Did the tests include personal content or were they purely stock level
 imagery?
 
 I doubt that answers like these with example content would be provided because
 of the amazing world of intellectual property, but for my personal stance, I'm
 going to assume "no" for the first two questions and "stock quality; less
-organic" for the last one.
+organic" for the last one. Though using personal content might have made for
+some peculiar cases and probably extra paperwork, it's perhaps as accurate as
+you can get outside of collecting a sample focus group to take pictures of.
 
 ## Higher Quality === Better Matching?
 
@@ -78,9 +81,10 @@ from that collection:
 
 All of the shots were taken on a Nexus 4 using the front-facing camera.
 I still have that phone that I used to take these shots here. Tech pundits are
-free to use this as an excuse as to why the recognition was poor but that's
-easily contested. Did the team have a large enough collection of darker toned
-problem, if not equivalent, to photos of other people they have in their
+free to use this as an excuse as to why the recognition was poor but it's
+easily contested. Again, I have questions: did the team have a large enough
+collection of darker toned people to help circumvent if not avoid this
+problem, if not equivalent in size, to photos of other people they have in their
 collection when they began to build models of what a face looks like. It seems
 like the color of the face played quite a role in it being made. Mind you, I
 have other photos with this person where it matched perfectly fine; with the
