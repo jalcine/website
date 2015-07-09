@@ -42,7 +42,7 @@ that led to this problem.
 Having a strong QA (quality assurance) team allows developers and product
 managers work with comfort knowing that products are working to the expectations
 that they both can agree on. There's no question that Google has the such[^2].
-[Scott Hanselman][sh] presented a very good point on Twitter:
+[Scott][sh] presented a very good point on Twitter:
 
 {% twitter oembed https://twitter.com/shanselman/status/616478860981334016 %}
 
@@ -54,19 +54,14 @@ treated is a softer angle at how events against minority occur in the United
 States, more accurately how minorities are represented in higher positions in
 US government. And that's it putting __very, very__ lightly.
 
-However, [Erica Baker][eb] mentioned her experience as a beta user for Google
-Photos:
-
-{% twitter oembed https://twitter.com/EricaJoy/status/616649164978388992 %}
-
-This makes me wonder a few things. For starters, what kind of photos were used
-in the acceptance cycle that wouldn't have allowed what I've experienced from
-happening to them? Were lower quality images (like in the range of two megapixels)
-used? Did the tests include personal content or were they purely stock level
-imagery?
+Of course, I began to wonder a few things. For starters, what kind of photos
+were used in the acceptance cycle that wouldn't have allowed what I've
+experienced from happening to them? Were lower quality images (like in the range
+of two mega pixels) used? Did the tests include personal content or were they
+purely stock level imagery?
 
 I doubt that answers like these with example content would be provided because
-of the amazing world of intellectual property, but for my personal stance, I'm
+of the amazing world of _intellectual property_, but for my personal stance, I'm
 going to assume "no" for the first two questions and "stock quality; less
 organic" for the last one. Though using personal content might have made for
 some peculiar cases and probably extra paperwork, it's perhaps as accurate as
@@ -79,24 +74,46 @@ from that collection:
 
 ![Details on image with matching issues.](/images/snapshot249.png)
 
-All of the shots were taken on a Nexus 4 using the front-facing camera.
+All of the shots were taken on a [Nexus 4][10] using the front-facing camera.
 I still have that phone that I used to take these shots here. Tech pundits are
 free to use this as an excuse as to why the recognition was poor but it's
-easily contested. Again, I have questions: did the team have a large enough
-collection of darker toned people to help circumvent if not avoid this
-problem, if not equivalent in size, to photos of other people they have in their
-collection when they began to build models of what a face looks like. It seems
-like the color of the face played quite a role in it being made. Mind you, I
-have other photos with this person where it matched perfectly fine; with the
-only difference was that we were facing the sun and not putting our backs to it.
-And I'd be willing to be comfortable with that answer if it was the case.
+easily contested. Again, I have one prevalent question: did the team have a large
+enough collection of darker toned people to help circumvent, if not avoid this
+problem or have a quantity equivalent in size, to photos of other people they have
+in their collection when they began to build models of what a face looks like? 
+It just seems like the darker the toner of skin, the less likely one would have
+gotten a match with their facial recognition algorithm. Mind you, I have other
+photos with this person where it matched perfectly fine; with the only difference
+was that we were facing the sun and not putting our backs to it. And I'd be willing
+to be comfortable with that answer if it was the case.
 
-But it's not. The faces aren't invisible, the features not obscured. I'm really
+**But it's not**. The faces aren't invisible, the features not obscured. I'm really
 convinced that due to a lack of priming from a company that can literally cover
-my city with printed sheets of paper with its image search index
+my city with printed sheets of paper with its image search index the images of
+my friend and I were classed as the distinct relatives of [Grogg][11].
+
+## So What? We Taking Group Photos?
+
+I don't know how much of a deal this is to Google. Will they lose money over the
+fact that darker-toned Black faces aren't that matchable or detectable by their
+systems? Not necessarily. The whole sensationalizing of this event was partially
+necessary just because things like this show the implicit, unchecked and
+ever-present bias that exists in technology. I mean, it can be matching a face
+or [matching the level of respect and value of other companies that get funding][12];
+the handling of Black people in technology seems unfathomable for these tech
+giants who are otherwise "too big to fail".
+
+Someone suggested that I take a bunch of photos and zip them over Google. I'd sit
+in comfort that my few hundred photos out of the potential millions already primed
+and favored in an algorithm that probably leans towards more on the neural side
+than on something similar to a Markov chain. What now? That legitimately would
+be a band aid over the more pressing but "invisible" problem: Anyone but the
+creator of a tool is a second thought. One solution would be having a team
+that's diverse AND from intersections broad in scopes of culture, background and
+experiences so that if a tool or device were to be created; the intended
+audiences become apparent; not only because the presenter is palatable.
 
 [sh]: http://hanselman.com
-[eb]: http://www.ericabaker.com/
 [1]: https://photos.google.com/search
 [2]: https://www.google.com/intl/en/photos/about/
 [3]: /work/resume/
@@ -106,5 +123,8 @@ my city with printed sheets of paper with its image search index
 [7]: http://www.huffingtonpost.com/2015/07/02/google-black-people-goril_n_7717008.html/
 [8]: http://www.bbc.com/news/technology-33347866
 [9]: http://bits.blogs.nytimes.com/2015/07/01/google-photos-mistakenly-labels-black-people-gorillas/
+[10]: http://www.phonearena.com/phones/Google-Nexus-4_id7531
+[11]: http://marvel.wikia.com/Grogg_(Earth-616)
+[12]: https://medium.com/@blastchatbleez/black-ideas-matter-10345d0b4d2b#a967
 [^1]: Some of the publications need to take advantage of caching oEmbed content instead of taking screenshots of things. A bit of semantic information (relative time-stamps) are lost in screenshots of tweets.
 [^2]: [I've worked at Google before as an intern][3].
