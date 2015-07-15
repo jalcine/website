@@ -10,8 +10,8 @@ tags:
   - twitter
 ---
 
-Some of us out there believe that one day, we'll live in a world where
-computers will practically have a hand in every aspect of life; from driving to
+Some of us out there, myself included, believe that one day, we'll live in a
+world where computers will have a hand in every aspect of life; from driving to
 creating food and probably making our beds one day. For now, we'll have to deal
 and work on the problems that technology and our internal biases produce:
 
@@ -19,21 +19,23 @@ and work on the problems that technology and our internal biases produce:
 
 The speed at which this was screenshotted and then tweeted this represented the
 momentary anger I felt. A company with offices in probably every part of the
-planet, holding nearly 95% of my e-mail traffic and maintainer of my
-hone and tablet's operating system and hardware couldn't be bothered to ensure
-that their software couldn't reach a broad audience of people who tend to be
-heavy technology consumers? :triumph:
+planet, holding nearly 95% of my e-mail traffic and maintainer of my phone and
+tablet's operating system and hardware couldn't be bothered to ensure that their
+software couldn't reach a broad audience of people who tend to be heavy technology
+consumers? :triumph:
 
-Frustration aside, if we took away the people involved in this complication and
-focused *solely* on software; one can say that this was just a misclassification
-due to pictures being provided that fell outside of the domain of the facial
-recognition algorithm's provided models. That statement in itself leads to the
-bigger problem; which involves more of the wet-ware that was involved in building
-said models and tweaking said algorithms. I'm not going to repeat what [many][5]
-[news][6] [outlets][7] [have][8] [reported][9] on this situation at this
-point[^1]; Twitter can help you follow the sequence of events. What will be
-addressed here are the issues that led to this problem and maybe the providing
-of solutions for free.
+---
+
+Frustration aside, if we took away the people aspect involved in this
+complication and focused *solely* on software; one can say that this was just
+a misclassification due to pictures being provided that fell outside of the
+domain of the facial recognition algorithm's provided models. That statement in
+itself leads to the bigger problem; which involves more of the wet-ware that was
+involved in building said models and tweaking said algorithms. I'm not going to
+repeat what [many][5] [news][6] [outlets][7] [have][8] [reported][9] on this
+situation at this point[^1]; Twitter can help you follow the sequence of events.
+What will be addressed here are the issues that led to this problem and maybe
+the providing of solutions for free.
 
 ## Having a Diverse & Inclusive Quality Assurance Team
 
@@ -44,12 +46,13 @@ that they both can agree on. There's no question that Google has the such[^2].
 
 {% twitter oembed https://twitter.com/shanselman/status/616478860981334016 %}
 
-I agree with this. Like 100%. With Google being a global company, you'd assume that
-[racial and gender diversity wouldn't be that difficult of a problem][13] for them
-to solve. That's an Utopian way of looking at things though given the state of
-the world of tech when it began and how it's behaved. Saying it bluntly, it just
-doesn't make sense, barring the obvious, why the world's most popular search
-engine was incapable of recognizing the face of a dark skinned Black person.
+My thoughts align with this. Like :100:. With Google being a global company, you'd
+assume that [racial and gender diversity][13] wouldn't be that difficult of a
+problem for them to solve. That's an Utopian way of looking at things though
+given the state of the world of tech when it began and how it's behaved.
+Saying it bluntly, it just doesn't make sense barring the obvious why the
+world's most popular search engine was incapable of recognizing the face of
+a dark skinned Black person.
 
 In a reply to Scott's tweet, [Erica][eb] mentions her experience as a beta user
 for Google Photos:
@@ -65,8 +68,8 @@ personal content or were they purely stock level imagery?
 Answers like these are unlikely to be answered because of the amazing world
 of _intellectual property_ (from Google's side), but for my personal stance,
 the assumption of "no" for the first two questions would be made and
-"stock quality; less organic" for the last one. Though using personal content
-might have made for some peculiar cases and probably extra paperwork, it's
+"stock quality; less organic" for the last one (sans Erica's photos, of course).
+Though using personal content might have made for some peculiar cases, it's
 perhaps as accurate as you can get outside of collecting a sample focus group
 to take pictures of.
 
@@ -84,14 +87,14 @@ enough collection of darker toned people to help circumvent, if not avoid this
 problem or have a quantity equivalent in size, to photos of other people they have
 in their collection when they began to build models of what a face looks like? 
 It just seems like the darker the toner of skin, the less likely one would have
-gotten a match with their facial recognition algorithm. Mind you, other photos
-with this person where it matched perfectly fine; with the only difference
-was that we were facing the sun and not putting our backs to it.
+gotten a match with their facial recognition algorithm. 
 
 **But it's not**. The faces aren't invisible, the features not obscured. I'm really
 convinced that due to a lack of priming from a company that can literally cover
 my city with printed sheets of paper with its image search index the images of
-the two of us were classed as the distinct relatives of [Grogg][11].
+the two of us were classed as the distinct relatives of [Grogg][11]. Mind you,
+other photos with this person where it matched perfectly fine; with the only
+difference was that we were facing the sun and not putting our backs to it.
 
 > For the continued privacy of my friend, I can't even place images of matches
 > with her; so don't ask for said images.
@@ -141,6 +144,17 @@ to help them gain more of a foot hold in their respectable field. If Google's
 willing to do this[^3], they know my email address and can hit me up about a few
 people willing to cooperate.
 
+---
+
+This went from a rant about why machine learning and dark Black faces can be
+problematic for Silicon Valley's White technologies to frustration over the
+infallible homogeneous nature of technologies that are built nowadays that
+legitimately give no shits about anyone but the 'stereotypical White person'.
+
+Also, if anyone's offended by this point, let me [know how you feel][4] so I can
+explain to you at a price how your internalized prejudice and biases compelled
+you to even bother e-mailing me.
+
 ----
 
 __Thank you [Nia Bolling][nb] for proof-reading this.__
@@ -160,7 +174,7 @@ __Thank you [Nia Bolling][nb] for proof-reading this.__
 [10]: http://www.phonearena.com/phones/Google-Nexus-4_id7531
 [11]: http://marvel.wikia.com/Grogg_(Earth-616)
 [12]: https://medium.com/@blastchatbleez/black-ideas-matter-10345d0b4d2b#a967
-[13]: https://google.com/diversity/
+[13]: https://encrypted.google.com/diversity/
 [14]: https://www.crunchbase.com/organization/google/investments
 [^1]: Some of the publications need to take advantage of caching oEmbed content instead of taking screenshots of things. A bit of semantic information (relative time-stamps) are lost in screenshots of tweets.
 [^2]: [I've worked at Google before as an intern][3].
