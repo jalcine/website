@@ -6,7 +6,7 @@ body.post > main[role=main]
     text-align: left
     margin-top: 1.5rem
 
-    h1
+    h1.title
       line-height: 1.1
       +ghostly
 
@@ -85,6 +85,10 @@ body.post > main[role=main]
     margin: 0rem auto
     max-width: $page-max-width * 0.9
 
+    @media #{$desktop}
+      &
+        font-size: 120%
+
     > p
       margin: 1rem 0rem
       line-height: $text-line-height * 2
@@ -121,7 +125,7 @@ body.post.response
       max-width: 85%
       color: darken($background-color, 40%)
       font-size: 1.2rem
-      background-color: #ddd
+      background-color: $silver
 
       &:before, &:after
         font-size: 3rem

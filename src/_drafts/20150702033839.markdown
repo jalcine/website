@@ -1,7 +1,8 @@
 ---
 layout: post
 title: The Blur Between The Sense of Technology and People
-date: 2015-07-02 03:39:27 EDT
+byline: My response to the Google Photos incidient and then some
+date: 2015-07-16 21:12:16 EDT
 category: response
 image: none
 tags:
@@ -12,7 +13,7 @@ tags:
 
 Some of us out there, myself included, believe that one day, we'll live in a
 world where computers will have a hand in every aspect of life; from driving to
-creating food and probably making our beds one day. For now, we'll have to deal
+creating food and probably making our beds for us. For now, we'll have to deal
 and work on the problems that technology and our internal biases produce:
 
 {% twitter oembed https://twitter.com/jackyalcine/status/615329515909156865 %}
@@ -42,7 +43,7 @@ the providing of solutions for free.
 Having a strong QA (quality assurance) team allows developers and product
 managers work with comfort knowing that products are working to the expectations
 that they both can agree on. There's no question that Google has the such[^2].
-[Scott][sh] presented a very good point on Twitter:
+[Scott][sh] presented this point on Twitter:
 
 {% twitter oembed https://twitter.com/shanselman/status/616478860981334016 %}
 
@@ -65,13 +66,7 @@ wouldn't have allowed what I've experienced from happening to them? Were lower
 quality images (like in the range of two mega pixels) used? Did the tests include
 personal content or were they purely stock level imagery?
 
-Answers like these are unlikely to be answered because of the amazing world
-of _intellectual property_ (from Google's side), but for my personal stance,
-the assumption of "no" for the first two questions would be made and
-"stock quality; less organic" for the last one (sans Erica's photos, of course).
-Though using personal content might have made for some peculiar cases, it's
-perhaps as accurate as you can get outside of collecting a sample focus group
-to take pictures of.
+![Obama's questioning this as well.](/images/obama-wtf.gif)
 
 ## Higher Quality === Better Matching?
 
@@ -150,10 +145,6 @@ This went from a rant about why machine learning and dark Black faces can be
 problematic for Silicon Valley's White technologies to frustration over the
 infallible homogeneous nature of technologies that are built nowadays that
 legitimately give no shits about anyone but the 'stereotypical White person'.
-
-Also, if anyone's offended by this point, let me [know how you feel][4] so I can
-explain to you at a price how your internalized prejudice and biases compelled
-you to even bother e-mailing me.
 
 ----
 
