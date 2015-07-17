@@ -97,7 +97,8 @@ difference was that we were facing the sun and not putting our backs to it.
 ## So What? We Taking Group Photos?
 
 One can only assume how much of a deal this might be to Google. The chief
-architect didn't think it was a good thing.
+architect didn't think it was a good thing. My tweet following is one a _LOT_ of
+people somehow over looked; at least the first sentence.
 
 {% twitter oembed https://twitter.com/yonatanzunger/status/615355996114804737 %}
 
@@ -146,12 +147,7 @@ problematic for Silicon Valley's White technologies to frustration over the
 infallible homogeneous nature of technologies that are built nowadays that
 legitimately give no shits about anyone but the 'stereotypical White person'.
 
-----
-
-__Thank you [Nia Bolling][nb] for proof-reading this.__
-
 [sh]: http://hanselman.com
-[nb]: http://niabolling.com
 [eb]: https://twitter.com/ericajoy/
 [1]: https://photos.google.com/search
 [2]: https://www.google.com/intl/en/photos/about/
