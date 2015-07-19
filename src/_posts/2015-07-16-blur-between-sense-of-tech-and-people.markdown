@@ -3,6 +3,7 @@ layout: post
 title: The Blur Between The Sense of Technology and People
 byline: My response to the Google Photos incidient and then some
 date: 2015-07-16 21:12:16 EDT
+revised: 2015-07-18 22:54:20 EDT
 category: response
 image: none
 tags:
@@ -13,13 +14,13 @@ tags:
 
 Some of us out there, myself included, believe that one day, we'll live in a
 world where computers will have a hand in every aspect of life; from driving to
-creating food and probably making our beds for us. For now, we'll have to deal
+creating food and probably making our beds for us. But for now, we'll have to deal
 and work on the problems that technology and our internal biases produce:
 
 {% twitter oembed https://twitter.com/jackyalcine/status/615329515909156865 %}
 
-The speed at which this was screenshotted and then tweeted this represented the
-momentary anger I felt. A company with offices in probably every part of the
+The speed at which this was screenshotted and tweeted represents the anger
+I felt at the moment. A company with offices in probably every part of the
 planet, holding nearly 95% of my e-mail traffic and maintainer of my phone and
 tablet's operating system and hardware couldn't be bothered to ensure that their
 software couldn't reach a broad audience of people who tend to be heavy technology
@@ -84,7 +85,7 @@ in their collection when they began to build models of what a face looks like?
 It just seems like the darker the toner of skin, the less likely one would have
 gotten a match with their facial recognition algorithm. 
 
-**But it's not**. The faces aren't invisible, the features not obscured. I'm really
+**But it's not**; the faces aren't invisible, the features not obscured. I'm really
 convinced that due to a lack of priming from a company that can literally cover
 my city with printed sheets of paper with its image search index the images of
 the two of us were classed as the distinct relatives of [Grogg][11]. Mind you,
@@ -104,7 +105,7 @@ people somehow over looked; at least the first sentence.
 
 Will they lose money over the fact that darker-toned Black faces aren't that
 matchable or detectable by their systems? Not necessarily, as far as I can tell.
-Things of monetary importance to companies for profit tend to be prioritized.
+Things of monetary value to companies for profit tend to be prioritized.
 The whole sensationalizing of this event was partially necessary just because
 things like this show the implicit, unchecked and ever-present bias that
 exists in technology. It can be matching a face or [matching the level of respect

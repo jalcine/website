@@ -13,6 +13,7 @@
   </span> &mdash;
   <span>
     written <a href="{{ page.url }}"><strong>{{ page.date | date_to_rfc822 }}</strong></a>
+    {% if page.revised %}, updated <strong>{{ page.revised | date_to_rfc822 }}</strong>{% endif %}
     {% if page.location %}in <strong>{{ page.location }}</strong>{% endif %}
   </span> &mdash;
   <span>
