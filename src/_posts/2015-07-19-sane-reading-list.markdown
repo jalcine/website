@@ -2,7 +2,7 @@
 layout: post
 title: Maintaining a Sane Reading List
 byline: "Who Is Dewey?"
-date: 2015-07-19 10:22:24 EDT
+date: 2015-07-20 10:40:50 EDT
 tags:
   - reading
   - habit
@@ -28,8 +28,19 @@ potentially captivating article that could have changed my life! Given that an
 article had so much potential; one would think that it'd float back to one's
 attention if it was meant to be.
 
+My things is, I still want to read the latest articles I have queued up. So
+after reading the first 10 random articles; I open up reader views for the top 3
+most recent articles and keep them open for idle time. Idle time comes on us
+all; be it waiting for an instance of Vagrant to warm up or provisioning a
+machine for the first time[^2]. Idle time could even be whilst you're eating
+lunch[^3]. This probably goes back to older habits from junior high school or
+even high school; provided a chance, I'd read something whilst having lunch. Old
+habits die hard, no?
+
 [1]: https://www.youtube.com/watch?v=lbXz3MXx2DU
 [2]: http://getpocket.com
 [3]: http://www.maclife.com/article/howtos/how_use_safari_reading_lists
 [4]: http://wallabag.org
 [^1]: So fun that [going to your local library turned into an adventure][1]. You should do it too.
+[^2]: I really need to get on the Docker scene.
+[^3]: Unless I feel like being social; I'm the kind of person to take his lunch and head back to his their laptop to just read + watch something whilst eating. Two birds.
