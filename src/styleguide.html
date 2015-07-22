@@ -3,16 +3,6 @@ layout: default
 title: "Poor Man's StyleGuide"
 ---
 
-<!-- Beginning of Styleguide -->
-
-<h1>Poor Man's Styleguide</h1>
-
-<p>A quick-and-dirty frontend styleguide, designed to be copied and pasted into your CMS.</p>
-
-<strong><a href="http://poormansstyleguide.com">See the full demo at poormansstyleguide.com</a></strong>
-
-<hr />
-
 <h1 id="headings">Headings</h1>
 
 <h1>Heading 1</h1>
@@ -41,7 +31,9 @@ title: "Poor Man's StyleGuide"
 
 <hr />
 
-<h1 id="paragraph">Paragraph</h1>
+<h1 id="text-block">Block Elements</h1>
+
+<h2 id="paragraph">Paragraphs and Images</h2>
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
 <p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
@@ -50,21 +42,42 @@ title: "Poor Man's StyleGuide"
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
 
+<h2>Blockquote</h2>
+
+<p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
 <blockquote>
-  "This is a blockquote. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."
+  "<strong>This is a blockquote.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."
 </blockquote>
+<p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+<h2>Figure-Caption</h2>
+
+<figure>
+  <img src="http://placehold.it/350x150" alt="A placeholder figure image." />
+  <figcaption>The figcaption element example</figcaption>
+</figure>
+
+<h2>Details-Summary</h2>
+
+<details>
+  <summary>The summary element example</summary>
+  <p>The details example text. It may be styled differently based on what browser or operating system you are using.</p>
+</details>
+
+<hr />
 
 <h1 id="text-elements"> Text Elements</h1>
 
-<p>The <a href="#">a element</a> example</p>
+<p>The <a href="#">a element</a> and <a href="http://example.com" target="_blank">external a element</a> examples</p>
 <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
 <p>The <acronym title="A Cowboy Ran One New York Marathon">ACRONYM</acronym> element example</p>
 <p>The <b>b element</b> example</p>
 <p>The <cite>cite element</cite> example</p>
 <p>The <code>code element</code> example</p>
-<p>The <em>em element</em> example</p>
+<p>The <data value="3967381398">data element</data> example</p>
 <p>The <del>del element</del> example</p>
 <p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
+<p>The <em>em element</em> example</p>
 <p>The <i>i element</i> example</p>
 <p>The <ins>ins element</ins> example</p>
 <p>The <kbd>kbd element</kbd> example</p>
@@ -78,6 +91,7 @@ title: "Poor Man's StyleGuide"
 <p>The <strong>strong element</strong> example</p>
 <p>The <sub>sub element</sub> example</p>
 <p>The <sup>sup element</sup> example</p>
+<p>The <time datetime="2005-05-15 19:00">time element</time> example</p>
 <p>The <u>u element</u> example</p>
 <p>The <var>var element</var> example</p>
 
@@ -98,28 +112,50 @@ for (i = 0; i < divs.length; ++i) {
 
 <h1 id="list_types">List Types</h1>
 
-<h3>Ordered List</h3>
+<h2>Ordered List</h2>
 <ol>
   <li>List Item 1</li>
   <li>List Item 2</li>
-  <li>List Item 3</li>
+  <li>List Item 3
+    <ol>
+      <li>List Item 3.1</li>
+      <li>List Item 3.2
+        <ol>
+          <li>List Item 3.2.1</li>
+          <li>List Item 3.2.2</li>
+        </ol>
+      </li>
+      <li>List Item 3.3</li>
+    </ol>
+  </li>
+  <li>List Item 4</li>
 </ol>
 
-<h3>Unordered List</h3>
+<h2>Unordered List</h2>
 <ul>
   <li>List Item 1</li>
   <li>List Item 2</li>
-  <li>List Item 3</li>
+  <li>List Item 3
+    <ul>
+      <li>List Item 3.1</li>
+      <li>List Item 3.2
+        <ul>
+          <li>List Item 3.2.1</li>
+          <li>List Item 3.2.2</li>
+        </ul>
+      </li>
+      <li>List Item 3.3</li>
+    </ul>
+  </li>
+  <li>List Item 4</li>
 </ul>
 
-<h3>Definition List</h3>
+<h2>Definition List</h2>
 <dl>
-  <dt>Definition List Term 1</dt>
-  <dd>This is a definition list description.</dd>
-  <dt>Definition List Term 2</dt>
-  <dd>This is a definition list description.</dd>
-  <dt>Definition List Term 3</dt>
-  <dd>This is a definition list description.</dd>
+  <dt>Definition Term 1</dt>
+  <dd>Definition Description 1</dd>
+  <dt>Definition Term 2</dt>
+  <dd>Definition Description 2</dd>
 </dl>
 
 <hr />
@@ -128,41 +164,55 @@ for (i = 0; i < divs.length; ++i) {
 
 <table cellspacing="0" cellpadding="0">
   <caption>This is a table caption</caption>
-  <tr>
-    <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
-  </tr>
-  <tr>
-    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-  </tr>
-  <tr class="even">
-    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-  </tr>
-  <tr>
-    <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-  </tr>
+  <thead>
+    <tr>
+      <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr class="even">
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr>
+      <td colspan="3">A row with a cell spanning all 3 columns</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Table Footer 1</th><th>Table Footer 2</th><th>Table Footer 3</th>
+    </tr>
+  </tfoot>
 </table>
 
 <hr />
 
 <h1 id="form_elements">Media and Form Elements</h1>
 
-<p>This last section contains elements that don't render well in markdown. Please consult the final section in <a href="https://github.com/bryanbraun/poor-mans-styleguide/blob/gh-pages/index.html">index.html</a>, to see the rest of the styleguide.</p>
-
 <h2>Media</h2>
 
-<p>The Audio Element:</p>
+<h3>The Audio Element:</h3>
 <audio controls>
   <source src="http://www.w3schools.com/tags/horse.ogg" type="audio/ogg" />
   <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg" />
   Your browser does not support the audio element.
 </audio>
 
-<p>The Video Element:</p>
+<h3>The Video Element:</h3>
 <video width="320" height="240" controls>
   <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4" />
   <source src="http://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
   Your browser does not support the video tag.
 </video>
+
+<h3>Embedded content:</h3>
+<p>YouTube video (iframe):</p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/l4f9QF0SGuQ" frameborder="0" allowfullscreen></iframe>
 
 <h2>Form Elements</h2>
 
@@ -289,6 +339,18 @@ for (i = 0; i < divs.length; ++i) {
       <input type="range" id="range" name="points" min="1" max="10" />
     </p>
 
+    <p><label for="output">Output:</label><br />
+      <output name="result" id="output">42</output>
+    </p>
+
+    <p><label for="progress">Progress:</label><br />
+      <progress id="progress" value="65" max="100"></progress>
+    </p>
+
+    <p><label for="meter">Meter:</label><br />
+      <meter id="meter" min="200" max="500" value="350">350 degrees</meter>
+    </p>
+
     <p>
       <button class="button">Button Element</button>
       <input class="button" type="reset" value="Clear" />
@@ -297,5 +359,3 @@ for (i = 0; i < divs.length; ++i) {
   </form>
 
 </fieldset>
-
-<!-- End of Styleguide -->
