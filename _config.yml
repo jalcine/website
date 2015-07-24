@@ -31,7 +31,7 @@ tag_dir: '/weblog/tag'
 lsi: false
 future: false
 relative_permalinks: false
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 # }}}
 
@@ -51,7 +51,7 @@ gems:
 # }}}
 
 # {{{ Markdown renderer options
-redcarpet:
+kramdown:
   extensions:
     - footnotes
     - autolink

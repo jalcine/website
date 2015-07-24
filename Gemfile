@@ -3,12 +3,15 @@ source 'https://rubygems.org'
 
 # {{{ Core Utilities
 gem 'dotenv'
-gem 'jekyll'
 # }}}
 
 group :jekyll do
-  gem 'redcarpet'
+  gem 'jekyll'
+  gem 'kramdown'
   gem 'rb-gsl'
+end
+
+group :jekyll_plugins do
   gem 'jemoji'
   gem 'jekyll-gist'
   gem 'jekyll-sass'
