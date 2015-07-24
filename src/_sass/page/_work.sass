@@ -4,6 +4,18 @@ $work-header-height: 8rem
 body.work > main[role=main]
   max-width: $page-max-width * 0.8
 
+  h2#activity + section.blurb
+    img:first-child
+      display: block
+      margin: 0.5rem auto
+      float: none
+
+      @media #{$desktop}
+        &
+          display: inline-block
+          margin: 0.2rem 0.5rem
+          float: right
+
   > header.work
     display: flex
     flex-direction: column

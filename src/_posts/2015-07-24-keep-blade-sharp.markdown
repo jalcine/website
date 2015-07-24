@@ -30,7 +30,8 @@ relation][5]:
 
 $$
 \begin{align*}
-F_{n} = F_{n-1} + F_{n-2}
+F_{n} = F_{n-1} + F_{n-2},\
+F_{0} = 0, F_{1} = 1
 \end{align*}
 $$
 
