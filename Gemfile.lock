@@ -152,6 +152,7 @@ GEM
     rack (1.6.1)
     rack-livereload (0.3.15)
       rack
+    rake (10.4.2)
     rb-fsevent (0.9.4)
     rb-gsl (1.16.0.4)
       narray (>= 0.5.9)
@@ -215,6 +216,7 @@ DEPENDENCIES
   puma
   rack
   rack-livereload
+  rake
   rb-gsl
   sass
 

@@ -8,13 +8,22 @@ body.post > main[role=main]
 
     h1.title
       line-height: 1.1
+      text-align: left
       +ghostly
+
+      @media #{$desktop}
+        &
+          text-align: center
 
     h3.byline
       +ghostly
       color: darken($silver, 30%)
       font-size: 1.2rem
       font-weight: $font-weight-bold
+
+      @media #{$desktop}
+        &
+          text-align: center
 
     &.image
       border-top-left-radius: 1em
@@ -42,6 +51,17 @@ body.post > main[role=main]
 
     p#comments
       text-align: center
+      border: 1px solid lighten($foreground-color, 20%)
+      background-color: lighten($background-color, 25%)
+      padding: 0.5rem 1rem
+      font-weight: $font-weight-bold
+      width: 70vw
+      margin: 0rem auto
+      border-radius: 4px
+
+      @media #{$desktop}
+        &
+          width: 50vw
 
     @media #{$desktop}
       &
@@ -77,8 +97,8 @@ body.post > main[role=main]
     text-align: center
     font-size: 0.7rem
     margin-bottom: 2rem
-    margin-top: 0.5rem
-    color: darken($gray, 20%)
+    margin-top: 1rem
+    color: $black
 
   blockquote.response
     border: none
