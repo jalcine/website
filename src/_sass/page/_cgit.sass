@@ -78,7 +78,7 @@ div#cgit
       &.nohover:hover
         background: white
     th
-      font-weight: bold
+      font-weight: $font-weight-bold
       /* color: #888;
        *  border-top: dashed 1px #888;
        *border-bottom: dashed 1px #888;
@@ -104,7 +104,7 @@ div#cgit
           color: #0aa
       &.logsubject
         font-family: monospace
-        font-weight: bold
+        font-weight: $font-weight-bold
       &.logmsg
         font-family: monospace
         white-space: pre
@@ -112,7 +112,7 @@ div#cgit
       a
         color: black
         &.ls-dir
-          font-weight: bold
+          font-weight: $font-weight-bold
           color: #00f
         &:hover
           color: #00f
@@ -145,7 +145,7 @@ div#cgit
       border: solid 1px black
     &.error
       color: red
-      font-weight: bold
+      font-weight: $font-weight-bold
       margin: 1em 2em
   a
     &.ls-blob, &.ls-dir, &.ls-mod
@@ -223,15 +223,15 @@ div#cgit
   table.commit-info
     th
       text-align: left
-      font-weight: normal
+      font-weight: $font-weight-normal
       padding: 0.1em 1em 0.1em 0.1em
       vertical-align: top
     td
-      font-weight: normal
+      font-weight: $font-weight-normal
       padding: 0.1em 1em 0.1em 0.1em
   div
     &.commit-subject
-      font-weight: bold
+      font-weight: $font-weight-bold
       font-size: 125%
       margin: 1.5em 0em 0.5em 0em
       padding: 0em
@@ -239,7 +239,7 @@ div#cgit
       white-space: pre
       font-family: monospace
     &.notes-header
-      font-weight: bold
+      font-weight: $font-weight-bold
       padding-top: 1.5em
     &.notes
       white-space: pre
@@ -251,14 +251,14 @@ div#cgit
     &.notes-footer
       clear: left
     &.diffstat-header
-      font-weight: bold
+      font-weight: $font-weight-bold
       padding-top: 1.5em
   table.diffstat
     border-collapse: collapse
     border: solid 1px #aaa
     background-color: #eee
     th
-      font-weight: normal
+      font-weight: $font-weight-normal
       text-align: left
       text-decoration: underline
       padding: 0.1em 1em 0.1em 0.1em
@@ -301,7 +301,7 @@ div#cgit
       white-space: pre
       div
         &.head
-          font-weight: bold
+          font-weight: $font-weight-bold
           margin-top: 1em
           color: black
         &.hunk
@@ -342,10 +342,10 @@ div#cgit
     a
       color: #777
     .current
-      font-weight: bold
+      font-weight: $font-weight-bold
   span
     &.age-mins
-      font-weight: bold
+      font-weight: $font-weight-bold
       color: #080
     &.age-hours
       color: #080
@@ -410,11 +410,11 @@ div#cgit
         padding: 1px 0.5em
         border: solid 1px black
         &.total
-          font-weight: bold
+          font-weight: $font-weight-bold
           text-align: left
         &.sum
           color: #c00
-          font-weight: bold
+          font-weight: $font-weight-bold
           /*	background-color: #eee;
         &.left
           text-align: left
@@ -424,7 +424,7 @@ div#cgit
       height: 200px
       th
         background-color: #eee
-        font-weight: bold
+        font-weight: $font-weight-bold
         border: solid 1px white
         padding: 1px 0.5em
       td
@@ -437,7 +437,7 @@ div#cgit
       width: 800px
       th
         background-color: #eee
-        font-weight: bold
+        font-weight: $font-weight-bold
         border: solid 1px black
         padding: 1px 0.5em
       td
@@ -465,7 +465,7 @@ div#cgit
           min-width: 50%
       span.add
         background: #cfc
-        font-weight: bold
+        font-weight: $font-weight-bold
       td
         &.del
           color: black
@@ -477,7 +477,7 @@ div#cgit
           min-width: 50%
       span.del
         background: #fcc
-        font-weight: bold
+        font-weight: $font-weight-bold
       td
         &.changed
           color: black
@@ -502,7 +502,7 @@ div#cgit
           border-top: solid 1px #aaa
           border-bottom: solid 1px #aaa
           div.head
-            font-weight: bold
+            font-weight: $font-weight-bold
             color: black
         &.foot
           border-top: solid 1px #aaa
