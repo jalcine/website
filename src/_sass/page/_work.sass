@@ -4,17 +4,10 @@ $work-header-height: 8rem
 body.work > main[role=main]
   max-width: $page-max-width * 0.8
 
-  h2#activity + section.blurb
-    img:first-child
-      display: block
-      margin: 0.5rem auto
-      float: none
-
-      @media #{$desktop}
-        &
-          display: inline-block
-          margin: 0.2rem 0.5rem
-          float: right
+  h2#activity + section.blurb > figure.captioned-image
+    @media #{$desktop}
+      &
+        margin-top: -2rem
 
   > header.work
     display: flex
