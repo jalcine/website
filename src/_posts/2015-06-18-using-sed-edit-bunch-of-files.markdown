@@ -18,17 +18,17 @@ project that uses RSpec and I want to update a namespace that's used throughout
 the project. I'd use `find` to do a search for all of the files containing that
 text:
 
-```bash
+{% highlight bash %}
 find ./spec -type f -name "*.rb" -exec grep -H "Site::Models" {} \;
-```
+{% endhighlight %}
 
 That'd dump the relative path of the file with the text "Site::Models" as well
 as the partial context that the text was used. Very nifty! From here, I can
 consider running the in-place replacement using `sed` and `find` again.
 
-```
+{% highlight bash %}
 find ./spec -type f -name "*.rb" -exec sed -i.bak -e 's/Site::Models/Site::NewM/' {} \;
-```
+{% endhighlight %}
 
 This'll replace the text _and_ generate a backup of said modified files in the
 process. Always make backups!
@@ -39,25 +39,25 @@ Now, in the practice of keeping things [DRY][], one can add the following Bash
 function to their `~/.bash_profile` to make it easy to do a search and replace
 from the shell.
 
-```bash
+{% highlight bash %}
 # Usage: `find_and_sed $PATH $REGEX [$FILE_REGEX]`
 find_and_sed() {
   find $1 -type f -name ${3:"*"} -exec sed -i.bak -e '$2' {} \;
 }
-```
+{% endhighlight %}
 
 Using it would look a bit like:
 
-```bash
+{% highlight bash %}
 find_and_sed . "s/Site::Models/Site::NewM/" "*.rb" # Only on Ruby files
 find_and_sed . "s/Site::Models/Site::NewM/" # On all of the files.
-```
+{% endhighlight %}
 
 Bash aliases something like this wouldn't work within an editor like Vim, so
 dropping to the shell using `:shell`, running said command and then hitting `^D`
 to get back to Vim would be an option (that's how I do it right now).
 
-```bash
+{% highlight bash %}
 # From within Vim
 :sh
 # Under bash
@@ -65,6 +65,6 @@ find_and_sed . "s/Fruits/Cookies/" "*.txt"
 exit
 # Back in Vim
 e! # To reload changes
-```
+{% endhighlight %}
 
 [dry]: https://en.wikipedia.org/wiki/Don't_repeat_yourself

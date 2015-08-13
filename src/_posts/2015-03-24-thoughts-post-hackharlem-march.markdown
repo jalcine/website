@@ -3,6 +3,7 @@ layout: post
 title: "Thoughts Post #HackHarlem March 2k15"
 date: 2015-03-24 13:35:20 EDT
 category: reflections
+image: none
 tags:
   - hackathon
   - harlem

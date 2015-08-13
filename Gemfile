@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # {{{ Core Utilities
 gem 'dotenv'
+gem 'rake'
 # }}}
 
 group :jekyll do

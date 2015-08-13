@@ -14,6 +14,10 @@ used (very little) is vanilla. Deployment is done using [Mina][] to allow for
 versioned deploys and easy rolling back of said deployment using nothing but
 plain ol' SSH.
 
+I've added a few things to this site including:
+
+  + [`jekyll-compress-html`](https://github.com/penibelst/jekyll-compress-html)
+
 ## Things To Do
 
 The following are things I need to work on for the site.
