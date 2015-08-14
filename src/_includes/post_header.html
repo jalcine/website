@@ -3,7 +3,15 @@
 {% else %}
   <header role="post">
 {% endif %}
-    <h1 class="title">{{ include.title || page.title }}</h1>
+    <h1 class="title">
+      {% if page.external-url %}
+        <a href="{{ page.external-url }}">
+      {% else %}
+        <a href="{{ page.url }}">
+      {% endif %}
+        {{ include.title || page.title }}
+      </a>
+    </h1>
     {% if page.byline %}<h3 class="byline">{{ page.byline }}</h1>{% endif %}
   </header>
 
