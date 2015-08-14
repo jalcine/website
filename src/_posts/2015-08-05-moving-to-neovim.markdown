@@ -17,7 +17,7 @@ to the fork of it dubbed [Neovim][]. Personally, if you've used Vim for some
 time, I recommend installing and firing up `nvim` to try it out. It comes with a
 lot [of saner defaults][2], a [terminal emulator _within_ itself][3] and [job
 control support][4]. This might all mean _nothing_ but consider the following
-abilities of these plugins:
+abilities of these:
 
   * [`neomake`][5]: Allows asynchronous checking of your files.
   * [`vim-test`][6]: Allows for testing your code immediately whilst in Vim.

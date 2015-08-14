@@ -20,7 +20,7 @@ making a post or media expose on the event.
 
 ## Sketching It Out
 
-As every Web designer does now, I pulled up my notebook and began doodling how I
+As every Web designer might do, I pulled up my notebook and began doodling how I
 wanted this to work in my head. The look is equivalent to the function, which
 should be implicit. The first page that I worked on was the active chat room
 which is probably going to be the most used pages by users. It looks like this:
