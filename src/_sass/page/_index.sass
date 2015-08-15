@@ -1,44 +1,45 @@
-$index-background: url(/images/bkm.jpg)
-$index-fg-color: lighten($black, 10%)
-
-body.index > main[role=main]
-  max-width: none
+body.index
   padding: 0rem
-  margin: 0rem
 
-  section#top
-    height: 100vh
-    background-color: $white
-    color: $index-fg-color
-    background-color: $silver
-    display: flex
-    align-items: center
-    justify-content: center
-    flex-direction: column
-    text-shadow: 1px 1px 2px $white
+  main[role=main]
+    background-color: transparent
+    max-width: none
+    padding: 0rem
 
-    a
-      color: $index-fg-color
-      font-weight: $font-weight-bold
+    @media #{$desktop}
+      &
+        padding: 0rem
 
-    h1
-      font-size: 300%
-      font-weight: 100
-      letter-spacing: 0.1rem
-      word-spacing: 0.3rem
-      color: darken($white, 80%)
-      font-family: $cursive-font-family, $failsafe-cursive-font-family
+    > section#top
+      color: $background-color
+      background-color: $foreground-color
+      height: 70vh
+      width: 100vw
+      min-height: 45vh
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding: 0rem 1rem
 
-      @media #{$desktop}
-        &
-          font-size: 500%
+      a
+        color: lighten($link-color, 30%)
 
-    p
-      &.lead
-        font-weight: 125%
+      h1, h3
+        color: $white
+        text-align: center
+        margin: 0rem
+        padding: 0rem
 
-      strong
-        font-weight: 400
+      h1
+        font-weight: $font-weight-bold
+        font-size: 4rem
+        align-self: center
+        width: 100vw
 
-body.index footer
-  display: none
+    > nav
+      display: flex
+      flex-direction: row
+      justify-content: center
+
+      a
+        margin: 0.5rem 0.25rem

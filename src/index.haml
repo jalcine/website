@@ -3,26 +3,16 @@ layout: 'default'
 title: 'Home'
 class: 'index'
 no_header: true
+no_footer: true
 ---
 
 %section#top
-  %h1="I'm Jacky."
-  %p.lead
-    %a{href:"/weblog/"} Weblog
-    &mdash;
-    %a{href:"/about/"} About
-    &mdash;
-    %a{href:"/work/"} Work
-    &mdash;
-    %a{href:"/gear/"} Gear
-    &mdash;
-    %a{href:"/gpg/"} GPG
-  %p
-    %strong My rented corner of the public IPv4/6 Web
-    &mdash;
-    %a{href: "https://www.flickr.com/photos/jackyalcine/15556142996/", target: "_blank"}
-      background
-  %p
-    %strong LATEST ENTRY:
-    %a{href: "{{ site.posts.first.url }}", style: "text-decoration: underline"}
-      = "{{ site.posts.first.title }}"
+  %h1 Jacky Alciné
+  %h3 I totally know what I'm doing, honest.
+
+%nav.index
+  %a{href: "/about/"} About
+  %a{href: "/weblog/"} Weblog
+  %a{href: "/gear/"} Gear
+  %a{href: "/work/"} Work
+  %a{href: "/gpg/"} GPG
