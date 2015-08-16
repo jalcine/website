@@ -1,16 +1,38 @@
 footer[role=main]
   order: 3
-  background-color: $black
-  color: $background-color
-  padding: 0.8rem 0.5rem
-  text-align: center
-  text-transform: uppercase
-  min-height: 3rem
-  font-size: 0.75rem
-  margin-top: 0.75rem
+  margin-top: 1.25rem
+  min-height: 6rem
+  display: flex
+  flex-direction: row
+  background-color: darken($background-color, 20%)
+  border-top: 0.25rem darken($background-color, 10%) solid
+  font-size: 0.8rem
+  justify-content: center
 
-  span
-    display: block
+  img
+    max-width: 6rem
+    max-height: 6rem
+    margin: 0.375rem
+    border-radius: 1rem
 
-  a, a:active
-    color: lighten($link-color, 30%)
+  section.bio
+    max-width: 40vw
+    padding: 0.75rem 0.5rem
+    align-self: center
+
+    h4
+      padding: 0rem
+      margin: 0rem
+      width: 100%
+
+  section.links
+    align-self: center
+
+    nav
+      disply: inherit
+
+      a
+        width: 100%
+        padding: 0.1rem
+        text-align: left
+        display: block
