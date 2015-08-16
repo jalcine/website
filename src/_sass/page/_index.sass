@@ -1,3 +1,6 @@
+$header-bg: url(/images/space.jpeg)
+$image-ironman-url: url(/images/iron-legion.jpg)
+
 body.index
   padding: 0rem
 
@@ -13,13 +16,18 @@ body.index
     > section#top
       color: $background-color
       background-color: $foreground-color
-      height: 70vh
+      height: 40vh
       width: 100vw
       min-height: 45vh
       display: flex
       flex-direction: column
       justify-content: center
       padding: 0rem 1rem
+      background-image: $header-bg
+      background-attachment: scroll
+      background-size: 100%
+      background-repeat: none
+      background-position: 30%
 
       a
         color: lighten($link-color, 30%)
@@ -40,6 +48,59 @@ body.index
       display: flex
       flex-direction: row
       justify-content: center
+      background-color: $black
 
       a
         margin: 0.5rem 0.25rem
+        color: $white
+        text-transform: uppercase
+
+        @media #{$desktop}
+          &
+            margin: 0.75rem
+
+    > section#blurb
+      display: flex
+      flex-direction: column
+      margin: 0rem auto
+
+      @media #{$desktop}
+        &
+          margin: 2rem auto
+          flex-direction: row
+          justify-content: center
+          align-items: center
+          width: 40vw
+
+      h1
+        width: 100vw
+        text-align: center
+        font-size: 5rem
+        margin: 1.5rem 0rem
+
+        @media #{$desktop}
+          &
+            width: 10vw
+
+      > p
+        width: 80vw
+        margin: 0rem auto
+        text-align: justify
+        font-size: 1rem
+
+        @media #{$desktop}
+          &
+            width: 30vw
+            align-self: center
+
+    > section.image
+      background-attachment: scroll
+      background-size: 100%
+      background-repeat: none
+      background-position: 30%
+      min-height: 30vh
+      width: 90vw
+      margin: 2rem 0rem
+
+      &#ironman
+        background-image: $image-ironman-url
