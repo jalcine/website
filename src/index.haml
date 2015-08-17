@@ -19,13 +19,16 @@ no_header: true
 %section#blurb
   %h1 Yo.
   %p
-    Yeah, you made it. This is where Jacky stashes all of the stuff that he
-    finds on the Web that'd he care to have publicly available. I mean, I'm
-    readably discoverable on the Web so if you were looking for this, you
-    made it.
+    The last thing I wrote was
+    %a{href: "{{ site.posts.first.url }}"}= "{{ site.posts.first.title }}."
+    You should check it out. You could also learn
+    %a{href: "/about"} about me
+    or
+    %a{href: "/work/"} hire me
+    so I can help you build useful software.
 
 %section#ironman.image
-
+  %p
 %section#things
   %div.region
     %div.image
