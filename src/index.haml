@@ -6,23 +6,36 @@ no_header: true
 ---
 
 %section#top
-  %h1="I'm Jacky."
-  %p.lead
-    %a{href:"/weblog/"} Weblog
-    &mdash;
-    %a{href:"/about/"} About
-    &mdash;
-    %a{href:"/work/"} Work
-    &mdash;
-    %a{href:"/gear/"} Gear
-    &mdash;
-    %a{href:"/gpg/"} GPG
+  %h1 Jacky Alciné
+  %h3 I totally know what I'm doing, honest.
+
+%nav.index
+  %a{href: "/about/"} About
+  %a{href: "/weblog/"} Weblog
+  %a{href: "/gear/"} Gear
+  %a{href: "/work/"} Work
+  %a{href: "/gpg/"} GPG
+
+%section#blurb
+  %h1 Yo.
   %p
-    %strong My rented corner of the public IPv4/6 Web
-    &mdash;
-    %a{href: "https://www.flickr.com/photos/jackyalcine/15556142996/", target: "_blank"}
-      background
+    The last thing I wrote was
+    %a{href: "{{ site.posts.first.url }}"}= "{{ site.posts.first.title }}."
+    You should check it out. You could also learn
+    %a{href: "/about"} about me
+    or
+    %a{href: "/work/"} hire me
+    so I can help you build useful software.
+
+%section#ironman.image
   %p
-    %strong LATEST ENTRY:
-    %a{href: "{{ site.posts.first.url }}", style: "text-decoration: underline"}
-      = "{{ site.posts.first.title }}"
+%section#things
+  %div.region
+    %div.image
+    %p I like trees in LA.
+  %div.region
+    %div.image
+    %p I think RDJ is awesome.
+  %div.region
+    %div.image
+    %p Being an avid social media user, this is my constant reaction.

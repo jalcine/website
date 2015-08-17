@@ -1,7 +1,14 @@
 body section[role=entries]
+  p.lead
+    text-align: justify
+
   ul.entries
     margin: 0rem auto
-    width: 80%
+    width: 95vw
+
+    @media #{$desktop}
+      &
+        width: 90vw
 
     li
       list-style: none

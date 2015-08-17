@@ -4,7 +4,7 @@ html
   &.wf-active
     body
       line-height: $text-line-height
-      font-weight: $text-font-weight
+      font-weight: $font-weight-normal
       font-family: $text-font-family
 
     pre, code
@@ -101,11 +101,11 @@ hr
     margin-left: 10%
 
 blockquote
-  padding: 0.2rem 0.375rem
+  padding: 0.25rem 0.75rem
   margin: 0.3rem auto
   background-color: lighten($gray, 30%)
   border: 0.1rem solid $gray
-  border-left: none
+  color: darken($gray, 40%)
   line-height: 1.4
   text-align: justify
 
@@ -119,7 +119,6 @@ blockquote
 a[href]
   color: $link-color
   text-decoration: none
-  font-weight: bold
 
   strong
     color: inherit
