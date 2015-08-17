@@ -35,6 +35,10 @@ group :web do
   gem 'haml'
 end
 
+group :deployment do
+  gem 'mina'
+end
+
 # Automation
 group :guard do
   gem 'guard'
