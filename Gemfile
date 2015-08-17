@@ -37,6 +37,7 @@ end
 
 group :deployment do
   gem 'mina'
+  gem 'mina-scp'
 end
 
 # Automation
