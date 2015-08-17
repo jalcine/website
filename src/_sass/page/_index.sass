@@ -50,11 +50,16 @@ body.index
     > nav
       display: flex
       flex-direction: row
-      justify-content: center
       background-color: $black
+      justify-content: space-around
+      padding: 0rem 2rem
+
+      @media #{$desktop}
+        &
+          justify-content: center
 
       a
-        padding: 0.5rem 0.25rem
+        padding: 0.5rem
         color: $white
         text-transform: uppercase
 
@@ -81,7 +86,6 @@ body.index
           height: 20vw
 
       h1
-        width: 100vw
         text-align: center
         font-size: 5rem
         margin: 1.5rem 0rem
@@ -164,6 +168,10 @@ body.index
 
         &:nth-child(1) > div.image
           background-image: $thing-image-1
+
+          @media #{$desktop}
+            &
+              background-position: 50%
 
         &:nth-child(2) > div.image
           background-image: $thing-image-2
