@@ -1,19 +1,14 @@
 require 'mina/bundler'
 require 'mina/rbenv'
+require 'mina/scp'
 require 'dotenv'
 
 Dotenv.load
 
-# Basic settings:
-#   domain       - The hostname to SSH to.
-#   deploy_to    - Path to deploy into.
-#   repository   - Git repo to clone from. (needed by mina/git)
-#   branch       - Branch name to deploy. (needed by mina/git)
-
 set :domain, ENV['JALCINE_DEPLOY_DOMAIN']
 set :deploy_to, ENV['JALCINE_DEPLOY_PATH']
-set :repository, 'git://git.jacky.wtf/website'
-set :branch, 'master'
+set :verbose, true
+set :keep_releases, 10
 
 set :shared_paths, ['']
 
@@ -24,13 +19,17 @@ task :environment do
   invoke :'rbenv:load'
 end
 
-desc "Deploys the current version to the server."
-task :deploy => :environment do
+task :upload do
+  ssh "mkdir -p #{deploy_to}/tmp-scp"
+  scp_upload("-v #{Dir.pwd}/_site/*", "#{deploy_to}/tmp-scp",
+             recursively: true,
+             verbose: true)
+  queue "cp -vr #{deploy_to}/tmp-scp/* ."
 end
 
-# For help in making your deploy script, see the Mina documentation:
-#
-#  - http://nadarei.co/mina
-#  - http://nadarei.co/mina/tasks
-#  - http://nadarei.co/mina/settings
-#  - http://nadarei.co/mina/helpers
+desc 'Deploys the current version to the server.'
+task deploy: :environment do
+  deploy do
+    invoke :upload
+  end
+end
