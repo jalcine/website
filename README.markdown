@@ -1,5 +1,7 @@
 # [jalcine-website](http://jacky.wtf)
 
+Last release date was **2015-08-16 21:44:27 EDT**.
+
 This repository holds the sources for my website. The FQDN for my site is
 currently <https://jacky.wtf> but it's been either <http://jalcine.github.io>
 or <http://jalcine.me> before so confusion may ensue. Redirects, for example,
