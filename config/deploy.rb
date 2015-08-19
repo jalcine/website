@@ -10,7 +10,7 @@ set :deploy_to, ENV['JALCINE_DEPLOY_PATH']
 set :verbose, true
 set :keep_releases, 10
 
-set :shared_paths, ['']
+set :shared_paths, ['images']
 
 set :user, ENV['JALCINE_DEPLOY_USER']
 set :forward_agent, true
