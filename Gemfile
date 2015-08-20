@@ -1,4 +1,4 @@
-# vim:set fdl=0 nospell:
+# vim:set fdl=-1 nospell:
 source 'https://rubygems.org'
 
 # {{{ Core Utilities
