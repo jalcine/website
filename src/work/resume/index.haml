@@ -106,7 +106,10 @@ class: resume
           I ended up writing out the basis of a functional acceptance test suite
           for the majority of the Contributor site. Lots of pair programming
           practices were used here and were heavily encouraged as well keeping
-          the contracts upheld by tests as accurate as possible.
+          the contracts upheld by tests as accurate as possible. Rebuilding the
+          static nature of the Contributor site involved using a cached CMS
+          powered view that allowed product to update the pages without requiring
+          a complete new deploy of the website.
 
           [contributor]: http://submit.shutterstock.com
       %ul
@@ -115,6 +118,8 @@ class: resume
         %li Express
         %li Dancer
         %li Cucumber
+        %li memcached
+        %li MariaDB
         %li Pair Programming
       %ul
         %li.lead Languages
@@ -183,8 +188,7 @@ class: resume
         %li.lead Tools
         %li Rails
         %li jQuery
-        %li Service Orientated Architecture
-        %li Testing
+        %li RSpec
 
       %h4
         %a{href: 'http://horizonmedia.com', target: '_blank'} Horizon Media
