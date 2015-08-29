@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Returning to Freelance (Softly)"
+date: 2015-08-29 15:33:50 EDT
+category: thoughts
+
+---
+
+So, a few weeks ago, I've posted a tweet about me leaving freelance and openly
+searching for full-time work:
+
+{% twitter oembed https://twitter.com/jackyalcine/status/622631537322950656 %}
+
+I wrote that tweet in hopes of landing a position within two months. From the
+second week of July to the time of writing, I've interviewed at 13 different
+companies, some large, some small and some in between and have been turned down
+by _all but 2_[^1]. That's like two rejections and a half a week. After the first
+three, I switched up my approach a bit but the one prevalent message that I've
+got from everyone was that I didn't have enough experience. I don't advertise
+myself as a senior developer[^2] and I bluntly admit if I don't know something.
+Surprisingly enough, that 'lack of knowledge' of something conventionally
+hyper-specific to a company is something I'm supposed to somehow know without
+actually working in most of these places. Speaking with some of the hiring
+managers about things that could have been improved, it's always fallen in one
+of the following statements:
+
+> We need someone who thinks the same way our team does.
+
+I can (barely) understand how one gets to the conclusion of the first bullet
+point. But from what I know, an environment like that could result in a lot of
+'yes' with no real challenging of the ideas brought to the table. This is my
+personal opinion. All of the places I worked at before was filled of people with
+different work backgrounds and levels of experience. That led to very
+interesting discussions on architecture and 
+
+> We're looking for someone who's more familiar with our practices and conventions.
+> Your background and experience doesn't seem mature enough for our team's needs.
+
+[^1]: Two of them have blockers that are outside of HR acceptance.
+[^2]: To be honest, I see myself as an advanced junior developer. To be honest, we need to find a better naming and assertion tool to determine what good 'title' to give to developers.
