@@ -2,9 +2,11 @@
 title: "Defining All of the Things"
 layout: post
 category: thoughts
+date: 2015-08-30 11:41:28 EST
 tags:
   - home-automation
   - wintermute
+
 ---
 
 Whilst chatting in this new [Slack][] room [@bossjones][] set up for [home automation

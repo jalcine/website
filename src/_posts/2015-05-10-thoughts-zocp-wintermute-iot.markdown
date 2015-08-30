@@ -1,6 +1,13 @@
 ---
 layout: post
 title: "Thoughts about ZOCP, Wintermute, and the IOT"
+date: 2015-08-30 05:46:34 -0400
+category: wintermute
+tags:
+  - zeromq
+  - iot
+  - wintermute
+
 ---
 
 I'm halfway through [a video about ZOCP][1], a nifty protocol layer that allows
