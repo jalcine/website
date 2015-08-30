@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Blogging More, Tweet Less"
+category: thoughts
+tags:
+  - blogging
+  - thoughts
+
+---
+
+Scott's an interestingly clever guy. He had a post recently about [blogs as
+the clog of an online community][1] and I managed to pull this quote from the
+post:
+
+{% twitter oembed https://twitter.com/jackyalcine/status/633130781464989696 %}
+
+It's a simple statement but it made me really think. As opposed to just shooting
+off random thoughts on a platform you don't necessarily own; expressing your
+thoughts in a more concise.
+
+[1]: http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx
