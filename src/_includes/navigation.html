@@ -1,11 +1,8 @@
-<nav role="main">
-  <ul>
-    {% for link in site.data.links.navigation %}
-      <li itemscope"{{ link.type ? " itemtype='http://schema.org/" + link.type + "'" : ''}}">
-        <a href="{{ link.link }}" itemprop="url">
-          <i class="icon-{{ link.icon }}"></i>{{ link.title }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+<nav>
+  {% for link in site.data.links.navigation %}
+    <a href="{{ link.link }}">
+      <i class="icon-{{ link.icon }}"></i>
+      {{ link.title }}
+    </a>
+  {% endfor %}
 </nav>
