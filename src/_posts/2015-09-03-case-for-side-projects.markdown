@@ -60,6 +60,17 @@ another reason why pairing up with a friend to work on a project helps a lot. It
 doesn't have to be a huge part of it, it could be just getting feedback on a
 particular class or view if it's been conventionally implemented[^4].
 
+The one important thing I think that helps a lot with the development of said
+project[^5] is the act of self-review. This is done either by checking over the
+tests, confirming that the project's brief aligns with the goals you've set out
+of the project and also blogging about your process of development as well.
+
+Blogging on the process of your project's growth is probably the most important
+thing I'd want you as a reader to take away from. And this transcends the class
+of project you're working on -- be it a software, hardware or just a
+non-tech project. Talk about your project. Make it your own experience and learn
+from it.
+
 [1]: /projects/
 [2]: https://jalcine.github.io/cmake.vim
 [3]: https://www.tumblr.com/docs/en/custom_themes
@@ -68,3 +79,4 @@ particular class or view if it's been conventionally implemented[^4].
 [^2]: It's worth it. I need work. Work gets me money. Money keeps this site up.
 [^3]: THIS GUY DOES THAT!
 [^4]: If you're a designer, feel free to swap out for more design-orientated lingo here.
+[^5]: Coming from someone with one failed, one funky and a barely popular project, haha.
