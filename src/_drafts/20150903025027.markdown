@@ -29,15 +29,32 @@ But in doing so, I noticed how much work this'll take. And how it's all unpaid
 labor[^1]. This is going to be something nice to tack onto my sash of projects
 but I'm debating if the effort's worth it[^2].
 
-## Starting Over
+## Starting Over When You Stop
 
 There's definitely a few more reasons why I gave up on `swig-tumblr`. Most
 notably is definitely that I didn't really outline in detail what I wanted to
 do. I know I gave a brief above, but take a look at [what goes into making a
-theme for Tumblr][3].
+theme for Tumblr][3]. There's 12 different kinds of posts to consider and a lot
+of conditional blocks that should only appear on a particular post. This is
+something I overlooked the first time around. As opposed to just making a Tumblr
+tag parser, I'd need a file generator tool and perhaps a local Web server to
+render how each page is intended to look with tests to ensure the expected
+content appears on the page.
+
+**Mad**. **Work**.
+
+A lot of work that I didn't initially anticipate when I first went out to begin
+this project. I'm glad that I did stop when I did because I think I might have
+run into this realization a bit too late. With this in mind, I can continue to
+work on it and potentially release 1.0.0 soon. Its project page is currently
+hosted on [Github Pages][4] but it'll be moving soon once I get around to
+tinkering with it.
+
+## 
 
 [1]: /projects/
 [2]: https://jalcine.github.io/cmake.vim
 [3]: https://www.tumblr.com/docs/en/custom_themes
+[4]: https://jalcine.github.io/tumblr-theme-toolkit
 [^1]: The intent is to use this to make it easier to get paid work.
 [^2]: It's worth it. I need work. Work gets me money. Money keeps this site up.
