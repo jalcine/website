@@ -1,0 +1,43 @@
+---
+layout: post
+title: "The Case for Side Projects"
+date: 2015-09-03 02:50:42 EDT
+category: thoughts
+
+---
+
+I've worked on a [few projects][1] during my time as a developer. Admittedly,
+they don't have much notary but they tend to be things that I've found important
+to me. However, the projects I've worked on don't help anyone else but me
+(outside of [cmake.vim][2]). They're positioned to help me learn more about
+patterns in programming and experiment with new technologies. This leads me to
+the point of this blog post.
+
+## Side Projects Are Like Badges
+
+A side project by itself shows a commitment you had for a period of time to
+accomplish a particular goal. I'd say that it doesn't matter if it works or not,
+but some would argue that functionality would play a role into whether or not
+the side project was worth fussing with. An example of this would be my failed
+and now deleted project `swig-tumblr`. It was supposed to make it easy to
+convert a bunch of concatenated Swig template files so that one could generate a
+Tumblr theme. Over time, I stopped working on it for a number of reasons. The
+tests were unwieldy and I just became uninterested in using Swig for this.
+
+Due to a personal need for this, however, I've decided to pick up this project.
+But in doing so, I noticed how much work this'll take. And how it's all unpaid
+labor[^1]. This is going to be something nice to tack onto my sash of projects
+but I'm debating if the effort's worth it[^2].
+
+## Starting Over
+
+There's definitely a few more reasons why I gave up on `swig-tumblr`. Most
+notably is definitely that I didn't really outline in detail what I wanted to
+do. I know I gave a brief above, but take a look at [what goes into making a
+theme for Tumblr][3].
+
+[1]: /projects/
+[2]: https://jalcine.github.io/cmake.vim
+[3]: https://www.tumblr.com/docs/en/custom_themes
+[^1]: The intent is to use this to make it easier to get paid work.
+[^2]: It's worth it. I need work. Work gets me money. Money keeps this site up.
