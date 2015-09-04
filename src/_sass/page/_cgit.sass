@@ -2,7 +2,7 @@ div#cgit
   padding: 0em
   margin: 0em
   a
-    color: blue
+    color: $blue
     text-decoration: none
     &:hover
       text-decoration: underline
@@ -70,13 +70,14 @@ div#cgit
   table.list
     width: 100%
     border: none
+    border-bottom: 2px solid $black
     border-collapse: collapse
     tr
-      background: white
+      background: $white
       &.logheader, &:hover
         background: #eee
       &.nohover:hover
-        background: white
+        background: $white
     th
       font-weight: $font-weight-bold
       /* color: #888;
@@ -110,7 +111,7 @@ div#cgit
         white-space: pre
         padding: 0 0.5em
       a
-        color: black
+        color: $black
         &.ls-dir
           font-weight: $font-weight-bold
           color: #00f
@@ -142,9 +143,9 @@ div#cgit
       background-color: #ccc
   div
     &#blob
-      border: solid 1px black
+      border: solid 1px $black
     &.error
-      color: red
+      color: $red
       font-weight: $font-weight-bold
       margin: 1em 2em
   a
@@ -161,13 +162,13 @@ div#cgit
   table
     &.blob
       margin-top: 0.5em
-      border-top: solid 1px black
+      border-top: solid 1px $black
       td
         &.lines
           margin: 0
           padding: 0 0 0 0.5em
           vertical-align: top
-          color: black
+          color: $black
         &.linenumbers
           margin: 0
           padding: 0 0.5em 0 0.5em
@@ -178,18 +179,18 @@ div#cgit
         padding: 0
         margin: 0
       td.linenumbers a
-        color: gray
+        color: $gray
         text-align: right
         text-decoration: none
     &.ssdiff td.lineno a
-      color: gray
+      color: $gray
       text-align: right
       text-decoration: none
     &.blob td.linenumbers a:hover, &.ssdiff td.lineno a:hover
-      color: black
+      color: $black
     &.bin-blob
       margin-top: 0.5em
-      border: solid 1px black
+      border: solid 1px $black
       th
         font-family: monospace
         white-space: pre
@@ -210,7 +211,7 @@ div#cgit
     margin-top: 1.5em
     table
       border-collapse: collapse
-      border: solid 1px #aaa
+      border: solid 1px $gray
       background-color: #eee
     th
       text-align: center
@@ -255,7 +256,7 @@ div#cgit
       padding-top: 1.5em
   table.diffstat
     border-collapse: collapse
-    border: solid 1px #aaa
+    border: solid 1px $gray
     background-color: #eee
     th
       font-weight: $font-weight-normal
@@ -271,13 +272,13 @@ div#cgit
         white-space: nowrap
       span.modechange
         padding-left: 1em
-        color: red
+        color: $red
       &.add a
-        color: green
+        color: $green
       &.del a
-        color: red
+        color: $red
       &.upd a
-        color: blue
+        color: $blue
       &.graph
         width: 500px
         vertical-align: middle
@@ -303,13 +304,13 @@ div#cgit
         &.head
           font-weight: $font-weight-bold
           margin-top: 1em
-          color: black
+          color: $black
         &.hunk
           color: #009
         &.add
-          color: green
+          color: $green
         &.del
-          color: red
+          color: $red
   .sha1
     font-family: monospace
     font-size: 90%
@@ -398,17 +399,17 @@ div#cgit
       font-size: 75%
   table
     &.stats
-      border: solid 1px black
+      border: solid 1px $black
       border-collapse: collapse
       th
         text-align: left
         padding: 1px 0.5em
         background-color: #eee
-        border: solid 1px black
+        border: solid 1px $black
       td
         text-align: right
         padding: 1px 0.5em
-        border: solid 1px black
+        border: solid 1px $black
         &.total
           font-weight: $font-weight-bold
           text-align: left
@@ -420,7 +421,7 @@ div#cgit
           text-align: left
     &.vgraph
       border-collapse: separate
-      border: solid 1px black
+      border: solid 1px $black
       height: 200px
       th
         background-color: #eee
@@ -433,12 +434,12 @@ div#cgit
       div.bar
         background-color: #eee
     &.hgraph
-      border: solid 1px black
+      border: solid 1px $black
       width: 800px
       th
         background-color: #eee
         font-weight: $font-weight-bold
-        border: solid 1px black
+        border: solid 1px $black
         padding: 1px 0.5em
       td
         vertical-align: middle
@@ -453,14 +454,14 @@ div#cgit
         font-family: monospace
         white-space: pre
         padding: 1px 4px 1px 4px
-        border-left: solid 1px #aaa
-        border-right: solid 1px #aaa
+        border-left: solid 1px $gray
+        border-right: solid 1px $gray
         &.add
-          color: black
+          color: $black
           background: #cfc
           min-width: 50%
         &.add_dark
-          color: black
+          color: $black
           background: #aca
           min-width: 50%
       span.add
@@ -468,11 +469,11 @@ div#cgit
         font-weight: $font-weight-bold
       td
         &.del
-          color: black
+          color: $black
           background: #fcc
           min-width: 50%
         &.del_dark
-          color: black
+          color: $black
           background: #caa
           min-width: 50%
       span.del
@@ -480,32 +481,32 @@ div#cgit
         font-weight: $font-weight-bold
       td
         &.changed
-          color: black
+          color: $black
           background: #ffc
           min-width: 50%
         &.changed_dark
-          color: black
+          color: $black
           background: #cca
           min-width: 50%
         &.lineno
-          color: black
+          color: $black
           background: #eee
           text-align: right
           width: 3em
           min-width: 3em
         &.hunk
-          color: black
+          color: $black
           background: #ccf
-          border-top: solid 1px #aaa
-          border-bottom: solid 1px #aaa
+          border-top: solid 1px $gray
+          border-bottom: solid 1px $gray
         &.head
-          border-top: solid 1px #aaa
-          border-bottom: solid 1px #aaa
+          border-top: solid 1px $gray
+          border-bottom: solid 1px $gray
           div.head
             font-weight: $font-weight-bold
-            color: black
+            color: $black
         &.foot
-          border-top: solid 1px #aaa
+          border-top: solid 1px $gray
           border-left: none
           border-right: none
           border-bottom: none

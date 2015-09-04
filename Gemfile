@@ -1,4 +1,4 @@
-# vim:set fdl=0 nospell:
+# vim:set fdl=-1 nospell:
 source 'https://rubygems.org'
 
 # {{{ Core Utilities
@@ -33,6 +33,11 @@ group :web do
   gem 'rack-livereload', require: 'rack/livereload'
   gem 'sass'
   gem 'haml'
+end
+
+group :deployment do
+  gem 'mina'
+  gem 'mina-scp'
 end
 
 # Automation
