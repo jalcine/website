@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 # {{{ Core Utilities
 gem 'dotenv'
 gem 'rake'
+gem 'rake-jekyll'
 # }}}
 
 group :jekyll do

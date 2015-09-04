@@ -1,9 +1,7 @@
 #!/usr/bin/env ruby
-# Author: Jacky Alcine <me@jalcine.me>
 
 def want_to_deploy?
-  # TODO: Query if user wants to deploy.
-  false
+  true
 end
 
 def handle_deploy
@@ -11,17 +9,15 @@ def handle_deploy
 
   case current_branch
   when 'master'
-    `bundle exec mina production deploy`
-  when 'develop'
-    `bundle exec mina staging deploy`
+    `bundle exec rake deploy`
+  else
+    puts 'Not on master.'
   end if want_to_deploy?
 end
 
 case ARGV.join(' ')
-when "--about"
-when "--help"
 when "-h"
-  puts "Deploys using Mina when on either 'develop' or 'master.'"
+  puts "Deploys using Mina when on either 'develop'."
 else
   handle_deploy
 end
