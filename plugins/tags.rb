@@ -1,5 +1,6 @@
 require_relative '../lib/timeline'
 require_relative '../lib/liquid/tags'
+require_relative '../lib/liquid/filters'
 
 TAGS_TO_ADD =
 {
