@@ -1,15 +1,10 @@
-{% if page.image and page.image != 'none' %}
-  <header role="post" class="image" style="background-image: url('{{ page.image }}');">
-{% else %}
-  <header role="post">
-{% endif %}
-    <h1 class="title">
-      <a href="{{ page.url }}">
-        {{ include.title || page.title }}
-      </a>
-    </h1>
-    {% if page.byline %}<h3 class="byline">{{ page.byline }}</h3>{% endif %}
-  </header>
+<header role="post" class="linked">
+  <h1 class="title">
+    <a href="{{ page.link }}">
+      {{ include.title || page.title }}
+    </a>
+  </h1>
+</header>
 
 <section role="stats">
   <span>
