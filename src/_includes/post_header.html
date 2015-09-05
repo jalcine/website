@@ -4,11 +4,7 @@
   <header role="post">
 {% endif %}
     <h1 class="title">
-      {% if page.external-url %}
-        <a href="{{ page.external-url }}">
-      {% else %}
-        <a href="{{ page.url }}">
-      {% endif %}
+      <a href="{{ page.url }}">
         {{ include.title || page.title }}
       </a>
     </h1>
