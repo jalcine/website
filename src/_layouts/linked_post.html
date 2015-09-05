@@ -1,0 +1,12 @@
+---
+class: 'linked post pagination'
+layout: default
+---
+
+{% include linked_post_header.html title=page.title %}
+
+<main role='post' itemscope itemtype='http://schema.org/BlogPosting'>
+  {{ content }}
+</main>
+
+{% include post_footer.html %}
