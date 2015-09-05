@@ -1,9 +1,9 @@
 module TagLinksFilter
   def linkify_tags(list)
-    puts list
     list.map! { |v| "<a href='/weblog/tag/#{v}' title='#{v}'>#{v}</a>" }
     puts list
-    list
+    list.join '\n'
+    'dfkkdsfjdlkf'
   end
 end
 

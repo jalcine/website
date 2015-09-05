@@ -9,7 +9,8 @@
 
 <section role="stats">
   <span>
-    {{ page.content | number_of_words | intcomma }} words
+    {{ page.content | number_of_words | intcomma }} words,
+    {{ page.content | reading_time }}
   </span> &mdash;
   <span>
     written <a href="{{ page.url }}"><strong>{{ page.date | date_to_rfc822 }}</strong></a>
@@ -19,8 +20,7 @@
   <span>
     tagged under
     <strong>
-      {{ page.tags | linkify_tags | array_to_sentence_string }}
-      {{ linkify_tags: page.tags }}
+      {% linkify_tags page.tags %}
     </strong>
   </span> &mdash;
   <span>
