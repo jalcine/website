@@ -8,6 +8,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.3.8)
+    autoprefixer-rails (2.2.0.20140804)
+      execjs
     blankslate (2.1.2.4)
     buftok (0.2.0)
     celluloid (0.16.0)
@@ -141,9 +143,62 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     nuggets (1.0.0)
+    octopress (3.0.11)
+      jekyll (>= 2.0)
+      mercenary (~> 0.3.2)
+      octopress-deploy
+      octopress-escape-code (~> 2.0)
+      octopress-hooks (~> 2.0)
+      redcarpet (~> 3.0)
+      titlecase
+    octopress-autoprefixer (1.0.1)
+      autoprefixer-rails (~> 2.2)
+      jekyll (>= 2.0)
+      octopress-hooks (~> 2.0)
+    octopress-date-format (3.0.3)
+      jekyll (>= 2.0)
+    octopress-deploy (1.3.0)
+      colorator
+    octopress-escape-code (2.0.6)
+      octopress-hooks (~> 2.0)
+    octopress-feeds (2.0.4)
+      octopress-date-format
+      octopress-ink (~> 1.0)
+      octopress-return-tag
+    octopress-filters (1.4.0)
+      jekyll
+      octopress-hooks (~> 2.0)
+      rubypants-unicode
+      titlecase
+    octopress-hooks (2.6.1)
+      jekyll (>= 2.0)
+    octopress-include-tag (1.1.3)
+      jekyll (>= 2.0)
+      octopress-tag-helpers (~> 1.0)
+    octopress-ink (1.2.0)
+      jekyll (>= 2.0)
+      octopress (~> 3.0)
+      octopress-autoprefixer
+      octopress-date-format
+      octopress-filters (~> 1.1)
+      octopress-hooks (~> 2.2)
+      octopress-include-tag (~> 1.0)
+      uglifier (~> 2.5)
+    octopress-linkblog (2.0.2)
+      octopress-hooks (~> 2.1)
+      titlecase
+    octopress-littlefoot (1.0.2)
+      octopress-ink (~> 1.0)
     octopress-quote-tag (1.0.4)
       jekyll
       rubypants
+    octopress-return-tag (1.0.1)
+      jekyll
+      octopress-tag-helpers (~> 1.0)
+    octopress-social (1.4.5)
+      jekyll (>= 2.0)
+    octopress-tag-helpers (1.0.8)
+      jekyll (>= 2.0)
     open4 (1.3.4)
     parslet (1.5.0)
       blankslate (~> 2.0)
@@ -172,6 +227,7 @@ GEM
     ruby-nuggets (1.0.0)
       nuggets (= 1.0.0)
     rubypants (0.2.0)
+    rubypants-unicode (0.2.5)
     safe_yaml (1.0.4)
     sass (3.4.13)
     shellany (0.0.1)
@@ -184,6 +240,7 @@ GEM
     tilt (2.0.1)
     timers (4.0.1)
       hitimes
+    titlecase (0.1.1)
     toml (0.1.2)
       parslet (~> 1.5.0)
     twitter (5.14.0)
@@ -199,6 +256,9 @@ GEM
       simple_oauth (~> 0.3.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uglifier (2.7.2)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     yajl-ruby (1.2.1)
 
 PLATFORMS
@@ -226,7 +286,11 @@ DEPENDENCIES
   kramdown
   mina
   mina-scp
+  octopress-feeds
+  octopress-linkblog
+  octopress-littlefoot
   octopress-quote-tag
+  octopress-social
   puma
   rack
   rack-livereload

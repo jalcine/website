@@ -39,6 +39,9 @@ connect with people. If there's a way to predict what response will be
 online, I sure don't know it.
 {% endquote %}
 
+This is one of those "just do it!" kind statements you'd want on those
+pseudo-motivational
+
 [1]: http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx
 [2]: http://anildash.com/2014/09/15-lessons-from-15-years-of-blogging.html
 [anil dash]: http://anildash.com/
