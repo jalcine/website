@@ -28,16 +28,16 @@ providing content that you find as meaningful, I think you should write on it.
 it's filled with very useful points[^2]. There's a few things below that I'll
 refer to in no particular order from it:
 
-> **There is absolutely no pattern to which blog posts people will like.** I've
-> had pieces that I worked on for years that landed with a thud, ignored by
-> even my close friends, and I've had dashed-off rants explode into huge
-> conversations on the web. I've had short pieces or silly lists that people
-> found meaningful, and lengthy, researched work that mostly earned a shrug.
-> And of course, I've had pieces that I put my heart and soul into that did
-> connect with people. If there's a way to predict what response will be
-> online, I sure don't know it.
->
-> [Anil Dash][], <http://anildash.com/2014/09/15-lessons-from-15-years-of-blogging.html>
+{% quote author:"Anil Dash" url:http://anildash.com/2014/09/15-lessons-from-15-years-of-blogging.html title:"15 Lessons For 15 Years of Blogging" %}
+**There is absolutely no pattern to which blog posts people will like.** I've
+had pieces that I worked on for years that landed with a thud, ignored by
+even my close friends, and I've had dashed-off rants explode into huge
+conversations on the web. I've had short pieces or silly lists that people
+found meaningful, and lengthy, researched work that mostly earned a shrug.
+And of course, I've had pieces that I put my heart and soul into that did
+connect with people. If there's a way to predict what response will be
+online, I sure don't know it.
+{% endquote %}
 
 [1]: http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx
 [2]: http://anildash.com/2014/09/15-lessons-from-15-years-of-blogging.html

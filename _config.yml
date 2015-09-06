@@ -47,6 +47,7 @@ gems:
   - jekyll-git_metadata
   - jekyll-twitter-plugin
   - jekyll-auto-image
+  - octopress-quote-tag
 # }}}
 
 # {{{ Markdown renderer options
