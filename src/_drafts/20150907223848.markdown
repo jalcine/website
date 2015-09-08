@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Testing Routes with Hapi"
+category: tutorials
+tags:
+  - hapi
+  - chai
+  - testing
+date: 2015-09-07 22:39:34 EDT
+---
+
+I'm working on a personal project that makes uses of [Hapi][] for its API layer.
+I've managed to go about in a mostly test-driven fashion and worked from the
+bottom up (from data modelling up to the route definition). Whilst working on
+the ability to test the response states of routes, I noticed the incapibility of
+the [Chai][] plugin for HTTP testing, [`chai-http`][]. For completeness, here is
+what I'm working with:
+
+{% codeblock app/routes/pumpkin.js lang:javascript %}
+{% endcodeblock %}
