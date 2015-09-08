@@ -1,0 +1,49 @@
+---
+layout: post
+title: "Blogging More, Tweet Less"
+category: thoughts
+tags:
+  - blogging
+  - thoughts
+
+---
+
+Scott's a frequent blogger and had a new entry recently about [blogs as
+the clog of an online community][1] and I managed to pull this quote from the
+post:
+
+{% twitter oembed https://twitter.com/jackyalcine/status/633130781464989696 %}
+
+It's a simple statement but it made me really think. As opposed to just shooting
+off random thoughts on a platform you don't necessarily own; there's the option
+of expressing your thoughts in a more concise and controlled manner. If you
+follow me on Twitter, you know that I have a habit of tweeting frequently[^1]
+but recently I feel like anything that I'd want to save that's either meaningful
+or worthwhile is lost in the super-fast current that is Twitter. This post isn't
+really a mantra of mine to "keep on blogging" but more so for the reason. It
+absoultely does not matter what you're interested in; as long as you continue
+providing content that you find as meaningful, I think you should write on it.
+
+[Anil Dash][] wrote a post about [things he's learned while blogging][2] and
+it's filled with very useful points[^2]. There's a few things below that I'll
+refer to in no particular order from it:
+
+{% quote author:"Anil Dash" url:http://anildash.com/2014/09/15-lessons-from-15-years-of-blogging.html title:"15 Lessons For 15 Years of Blogging" %}
+**There is absolutely no pattern to which blog posts people will like.** I've
+had pieces that I worked on for years that landed with a thud, ignored by
+even my close friends, and I've had dashed-off rants explode into huge
+conversations on the web. I've had short pieces or silly lists that people
+found meaningful, and lengthy, researched work that mostly earned a shrug.
+And of course, I've had pieces that I put my heart and soul into that did
+connect with people. If there's a way to predict what response will be
+online, I sure don't know it.
+{% endquote %}
+
+This is one of those "just do it!" kind statements you'd want on those
+pseudo-motivational
+
+[1]: http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx
+[2]: http://anildash.com/2014/09/15-lessons-from-15-years-of-blogging.html
+[anil dash]: http://anildash.com/
+[^1]: It's nearly uncontrollable now! Seriously, follow me for a week and I might end taking over your timeline, heh. But it'll give you a perspective in Black cutlure, with a mix of nerdiness, development, and food.
+[^2]: Definitely in my 'Pre-Publish, While-Writing' bookmark folder.

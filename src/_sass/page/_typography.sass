@@ -117,9 +117,32 @@ blockquote
       border-right: 0.1rem solid $gray
       font-size: 115%
 
+figure.quote
+  background-color: lighten($gray, 30%)
+  border: 0.1rem solid $gray
+  border-radius: 0.25rem
+  color: darken($gray, 40%)
+  max-width: 90%
+  margin: 0rem auto
+
+  > blockquote
+    background-color: transparent
+    color: inherit
+    border: none
+    margin: 0.75rem
+    padding: 0rem
+    font-size: 0.9rem
+
+  > figcaption
+    text-align: right
+    background-color: lighten($gray, 10%)
+    color: darken($gray, 30%)
+    padding: 0.2rem 0.5rem
+
 a[href]
   color: $link-color
   text-decoration: none
+  border-bottom: 1px dashed solid
 
   strong
     color: inherit
