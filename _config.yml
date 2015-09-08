@@ -48,10 +48,7 @@ gems:
   - jekyll-twitter-plugin
   - jekyll-auto-image
   - octopress-quote-tag
-  - octopress-littlefoot
-  - octopress-feeds
-  - octopress-linkblog
-  - octopress-social
+  - octopress-codeblock
 # }}}
 
 # {{{ Markdown renderer options

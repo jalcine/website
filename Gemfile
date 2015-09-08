@@ -25,10 +25,11 @@ group :jekyll_plugins do
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-auto-image'
   gem 'octopress-quote-tag'
-  gem 'octopress-littlefoot'
-  gem 'octopress-feeds'
-  gem 'octopress-linkblog'
-  gem 'octopress-social'
+  # gem 'octopress-littlefoot'
+  # gem 'octopress-feeds'
+  # gem 'octopress-linkblog'
+  # gem 'octopress-social'
+  gem 'octopress-codeblock'
 end
 
 # {{{ Development
