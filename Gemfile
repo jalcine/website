@@ -27,9 +27,7 @@ group :jekyll_plugins do
   gem 'octopress-quote-tag'
   # gem 'octopress-littlefoot'
   # gem 'octopress-feeds'
-  # gem 'octopress-linkblog'
   # gem 'octopress-social'
-  gem 'octopress-codeblock'
 end
 
 # {{{ Development

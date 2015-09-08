@@ -141,13 +141,6 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     nuggets (1.0.0)
-    octopress-code-highlighter (4.2.6)
-      colorator (~> 0.1)
-      octopress-hooks
-    octopress-codeblock (1.0.5)
-      octopress-code-highlighter (~> 4.2)
-    octopress-hooks (2.6.1)
-      jekyll (>= 2.0)
     octopress-quote-tag (1.0.4)
       jekyll
       rubypants
@@ -233,7 +226,6 @@ DEPENDENCIES
   kramdown
   mina
   mina-scp
-  octopress-codeblock
   octopress-quote-tag
   puma
   rack
