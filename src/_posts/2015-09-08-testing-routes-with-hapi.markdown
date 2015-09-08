@@ -139,7 +139,7 @@ in my project).
 
 [hapi]: http://hapijs.com/
 [chai]: http://chaijs.com/
-[chap-http]: http://chaijs.com/plugins/chai-http
+[chai-http]: http://chaijs.com/plugins/chai-http
 [server.listener]: http://hapijs.com/api#serverlistener
 [server.inject]: http://hapijs.com/api#serverinjectoptions-callback
 [mocha]: http://mochajs.org/
