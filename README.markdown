@@ -1,6 +1,6 @@
 # [Jacky Alcine][1]
 
-Last release date was **2015-09-08 00:11:24 EDT**.
+Last release date was **2015-09-08 00:20:20 EDT**.
 
 This repository holds the sources for the core [static website][1] that I serve
 on the Internet. I host the Git tree on [Github][2] as well as on my personal
