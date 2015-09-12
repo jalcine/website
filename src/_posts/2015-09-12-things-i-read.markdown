@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Things I Read in the Week of 2015-09-11"
-date: 2015-09-11 10:22:01 EDT
+date: 2015-09-12 04:03:37 EDT
 image: none
 category: review
 tags:
