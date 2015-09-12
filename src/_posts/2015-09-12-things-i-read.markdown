@@ -21,6 +21,8 @@ providing a week review of the things I've read here with a short blurb. This is
 my way of writing a _really short_ book report but not for books and definitely
 not a report.
 
+## Digital Publications
+
 ### [Yak Shaving Defined - I'll get that done, as soon as I shave this yak.][link:1]
 
 [Scott][] has a habit of cranking out some really useful posts and this, by far, is
@@ -62,7 +64,9 @@ algorithm[^2], or with empty quotes for close to 5 years stating "We're
 working hard on fixing shit whilst not ever attempting to hire from places
 that are predominately NOT like us". Anjuan hits home with this.
 
-## Novels
+## Physical Publications
+
+Because books with physical pages are still cool.
 
 ### [Slavery By Another Name][book:1]
 Right now, I'm going over the chapter **Slavery is Not A Crime** in [Slavery By
