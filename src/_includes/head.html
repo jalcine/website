@@ -30,7 +30,9 @@
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
 
 <meta property="og:url"  content="{{ site.url }}{{ page.url }}">
-
+{% if page.image %}<meta property="og:image" content="{{ site.url | append: page.image }}"/>
+{%else%}<meta name="og:image" content="{{site.url | append: '/favicon.jpg'}}"/>
+{%endif%}
 <!-- Twitter Card Support -->
 <meta name="twitter:url" content="{{page.url | prepend: site.url }}">
 <meta name="twitter:creator" content="@jackyalcine">
@@ -38,7 +40,7 @@
 <meta name="twitter:title" content="{{ page.title | truncate: 70 }}">
 <meta name="twitter:domain" content="{{site.url}}">
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}">
-{% if page.image %}<meta name="twitter:image:src" content="{{page.image}}"/>
+{% if page.image %}<meta name="twitter:image:src" content="{{site.url | append: page.image }}"/>
 <meta name="twitter:card" content="summary_large_image">
 {%else%}<meta name="twitter:image:src" content="{{site.url | append: '/favicon.jpg'}}"/>
 <meta name="twitter:card" content="summary">
