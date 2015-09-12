@@ -1,0 +1,106 @@
+---
+layout: post
+title: "Things I Read in the Week of 2015-09-11"
+date: 2015-09-12 04:03:37 EDT
+image: none
+category: review
+tags:
+  - read-this-week
+  - review
+javascripts:
+  - https://platform.instagram.com/en_US/embeds.js
+
+---
+
+> This blog post is the first in a series of posts I'll be attempting to make
+> every week to help me reflect on the things I've read this week. You can
+> check out the **[read this week][]** tag for more entries in the future.
+
+I track my reading habits using [Reading.am][] and occasionally, I work on
+providing a week review of the things I've read here with a short blurb. This is
+my way of writing a _really short_ book report but not for books and definitely
+not a report.
+
+### [Yak Shaving Defined - I'll get that done, as soon as I shave this yak.][link:1]
+
+[Scott][] has a habit of cranking out some really useful posts and this, by far, is
+one that I have bookmarked and revisit often. [Yak shaving][1] is amazingly well
+depicted by that GIF he uses from Malcolm in the Middle:
+
+![Hal, can you change the lightbulb?](http://i.minus.com/ibaDjk7AeIcvxv.gif)
+
+### [Blavity’s August Review: Curls, podcasts and #BlackGirlMagic][link:2]
+
+If you haven't noticed already, I'm a *very big* fan of Blavity. The minute I
+found out about it, I've taken extra time out of my day to read the published
+content and mention it to friends. I have a hoodie _and_ a t-shirt. I'm
+potentially obsessed, heh.
+
+<blockquote class="instagram-media" data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:62.5% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/68gHK4nPuO/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_top">A photo posted by Jacky (@jackyalcine)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-08-28T23:22:55+00:00">Aug 28, 2015 at 4:22pm PDT</time></p></div></blockquote>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://instagram.com/p/tsKmginPsg/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_top">In case you missed it on Twitter, a better headshot.</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A photo posted by Jacky (@jackyalcine) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2014-10-03T12:18:59+00:00">Oct 3, 2014 at 5:18am PDT</time></p></div></blockquote>
+
+I'm also glad to see New York City at the top of the list of places that hits
+Blavity the most[^1]. This and the geographic move to the East Coast are things
+to keep an eye out for. The East Coast's the best coast, by the way. 
+
+### [All Websites Look The Same][link:3]
+
+**Where is the lie?** Hegemonic thoughts leads to hegemonic stuff :frog: :tea:.
+
+### [Debugging Diversity][link:4]
+
+{% quote author:"Anjuan Simmons" title:"Debugging Diversity" url:"https://abernathymagazine.com/debugging-diversity/" %}
+Diversity in technology is often presented as a numbers game. Huge companies
+such as Google, Facebook, Yahoo, Linkedin, and others jump-started the
+conversation about diversity in tech a couple of years ago by publishing their
+diversity numbers. While numbers are necessary, however, they are insufficient
+to fully solve the diversity problem in tech. 
+{% endquote %}
+
+It's not something that can be readily solved with an off-the-shelve
+algorithm[^2], or with empty quotes for close to 5 years stating "We're
+working hard on fixing shit whilst not ever attempting to hire from places
+that are predominately NOT like us". Anjuan hits home with this.
+
+## Novels
+
+### [Slavery By Another Name][book:1]
+Right now, I'm going over the chapter **Slavery is Not A Crime** in [Slavery By
+Another Name][book:1]. This book, I have to say, is one that I've found so
+interesting, I've legit re-read pages close to five times before advancing.
+Blackmon condenses a lot on each page and still manages to make it paint a
+picture of the events as they played out in the eras mentioned in the book. If
+you don't have it, buy it.
+
+### [The ThoughtWorks Anthology 2][book:2]
+
+I've read this book before in 2013 and intentionally took time to crawl through
+it over a period of six months. But reading it again now with more experience
+gave me a more objective view to not only the kind of tools that were available
+when the book was written _and_ the kind of ideologies that the authors held.
+Things like TDD for JavaScript was portrayed as if it was frown upon[^3]. If
+there's one thing this book constantly reminds me of, it's definitely the
+importance of understanding the tools that you use to a point of near expert
+levels. It makes it a lot easier to test.
+
+Also, this book implicitly reinforced the idea of needing to not be afraid to
+_look into the source code_. This, in itself, can be a whole blog post.
+
+---
+
+That's it for this week. I take suggestions for things to read very openly via
+email or Twitter. Let's see if I can keep this up :running:!
+
+[1]: http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html
+[^1]: Now if we can _prove_ that Brooklyn holds it down, lol :grin:!
+[^2]: Eh. If you remove HR's human hiring with computers, then maybe.
+[^3]: I guess it was. People gon' people.
+[book:1]: https://www.goodreads.com/book/show/2319745.Slavery_by_Another_Name
+[book:2]: https://www.goodreads.com/book/show/15842800-the-thoughtworks-anthology-volume-2
+[link:1]: http://www.hanselman.com/blog/YakShavingDefinedIllGetThatDoneAsSoonAsIShaveThisYak.aspx
+[link:2]: http://blavity.com/curls-podcasts-black-girl-magic-blavity-august-review/
+[link:3]: http://www.zeldman.com/2015/09/10/all-websites-look-the-same/
+[link:4]: https://abernathymagazine.com/debugging-diversity/
+[read this week]: /weblog/tag/read-this-week/
+[reading.am]: https://www.reading.am/
+[scott]: http://www.hanselman.com/
