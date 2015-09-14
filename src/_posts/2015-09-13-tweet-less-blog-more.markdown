@@ -60,6 +60,12 @@ What I'm saying, If I'm saying anything at all[^4], is that blogging is a
 low-barrier, time-semi-consummative process that can help you become move
 visible in development communities and also round out your digital profile.
 
+---
+
+**Update** 2015-09-14 12:32:41 EDT: Heh, I did _not_ see that timestamp on
+Scott's post. It's close to four years old! Curious now as to how it surfaced up
+on my radar!
+
 [1]: http://www.hanselman.com/blog/YourBlogIsTheEngineOfCommunity.aspx
 [2]: http://anildash.com/2014/09/15-lessons-from-15-years-of-blogging.html
 [anil dash]: http://anildash.com/
