@@ -56,7 +56,7 @@ often; thus potentially being promoted to legit documentation.
 
 ---
 
-What I'm saying, If I'm saying anything at all[^1], is that blogging is a
+What I'm saying, If I'm saying anything at all[^4], is that blogging is a
 low-barrier, time-semi-consummative process that can help you become move
 visible in development communities and also round out your digital profile.
 
