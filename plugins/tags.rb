@@ -1,13 +1,11 @@
-require_relative '../lib/timeline'
-require_relative '../lib/liquid/tags'
 require_relative '../lib/liquid/filters'
+require_relative '../lib/liquid/tags/youtube'
 
 TAGS_TO_ADD =
 {
-  'tl_event'      => Timeline::EventBlock,
   'tweet'         => TwitterJekyll::TwitterTag,
   'tweetnocache'  => TwitterJekyll::TwitterTagNoCache,
-  'cleantheweb'   => Jekyll::CleanTheWebTag
+  'youtube'       => Jekyll::Youtube
 }
 
 def apply_tag(name, klass)
