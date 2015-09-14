@@ -29,6 +29,13 @@ main[role=main]
       padding: 0.2rem 1rem 0rem
       max-width: $page-max-width
 
+  @at-root
+    body.front-and-center &
+      display: flex
+      flex-direction: column
+      align-content: center
+      justify-content: center
+
   @media #{$tablet}
     &
       padding: 0.1rem 0.5rem 0rem
