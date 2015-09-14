@@ -5,7 +5,6 @@ layout: compress
 <html lang="en_US">
   <head>
     {% include head.html %}
-    {% cleantheweb %}
   </head>
   <body class="{{ page.class ? "class=\" + page.class + "\"" : 'page' }}">
     {% unless page.no_header %}<header role='main'>{% include header.html %}</header>{% endunless %}

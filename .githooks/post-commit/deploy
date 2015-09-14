@@ -11,7 +11,7 @@ def handle_deploy
   when 'master'
     `bundle exec rake deploy`
   else
-    puts 'Not on master.'
+    puts '[post-commit/deploy] Not on master; not deploying.'
   end if want_to_deploy?
 end
 
