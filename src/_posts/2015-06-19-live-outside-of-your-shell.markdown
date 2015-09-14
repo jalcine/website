@@ -51,8 +51,6 @@ hope that this gets to someone who needs it.
 
 **I know I did.** Thanks, Will.
 
-{% twitter oembed https://twitter.com/willmanduffy/status/611766377377083392 %}
-
 [^1]: By the way, this is what it means to "feel a way".
 [^2]: And forwarded them to _very_ capable people, to no avail :sad:
 [^3]: Not even AVR (augmented virtual reality via games or the like).
