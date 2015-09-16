@@ -2,6 +2,7 @@
 layout: post
 title: "Returning to Freelance (Softly)"
 category: thoughts
+date: 2015-09-15 21:16:05 EDT
 tags:
   - freelance
   - thoughts
