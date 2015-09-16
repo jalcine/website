@@ -7,9 +7,9 @@ title: 'Contact'
 %p You can reach out to me using this form for prioritization into my email / notification pool.
 
 %form{action:"//formspree.io/yo@jacky.wtf", method:"POST"}
-  %input{type:'text', name: 'name'}
-  %input{type:'email', name: '_replyTo'}
-  %input{type:'submit', value: 'Send'}
+  %input{type:'text', name: 'name', placeholder: 'Your Name'}
+  %input{type:'email', name: '_replyTo', placeholder: 'email@domain.tld'}
   %input{type:'hidden', name: '_next', value: 'https://jacky.wtf/contact/complete'}
   %input{type:'hidden', name: '_subject', value: 'Site Inquiry'}
   %input{type:'text', name:"_gotcha", style: 'display:none'}
+  %input{type:'submit', value: 'Send'}
