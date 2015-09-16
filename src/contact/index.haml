@@ -1,7 +1,16 @@
 ---
 layout: 'default'
 title: 'Contact'
+javascripts:
+  - "/js/vendor/pen.js"
+styles:
+  - "/css/pen.css"
 ---
+
+%script
+  $(function () {
+    var editor = new Pen('#editorRegion')
+  })
 
 %h1 Contact
 %p You can reach out to me using this form for prioritization into my email / notification pool.
@@ -13,3 +22,4 @@ title: 'Contact'
   %input{type:'hidden', name: '_subject', value: 'Site Inquiry'}
   %input{type:'text', name:"_gotcha", style: 'display:none'}
   %input{type:'submit', value: 'Send'}
+  %div#editorRegion
