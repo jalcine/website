@@ -7,10 +7,22 @@ styles:
   - "/css/pen.css"
 ---
 
-%script
-  $(function () {
+:javascript
+  window.onload = function () {
     var editor = new Pen('#editorRegion')
-  })
+  }
+
+:css
+  form {
+    text-align: center;
+  }
+  div#editorRegion.css {
+    border: 1px solid #222;
+    padding: 0.5rem 1rem;
+    width: 90%;
+    margin: 1rem auto;
+    max-width: 40rem;
+  }
 
 %h1 Contact
 %p You can reach out to me using this form for prioritization into my email / notification pool.
