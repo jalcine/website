@@ -1,8 +1,12 @@
 ---
 layout: post
 title: "Returning to Freelance (Softly)"
-date: 2015-08-29 15:33:50 EDT
 category: thoughts
+date: 2015-09-15 21:16:05 EDT
+tags:
+  - freelance
+  - thoughts
+  - career
 
 ---
 
@@ -12,7 +16,7 @@ searching for full-time work:
 {% twitter oembed https://twitter.com/jackyalcine/status/622631537322950656 %}
 
 I wrote that tweet in hopes of landing a position within two months. From the
-second week of July to the time of writing, I've interviewed at 13 different
+second week of July to August 29th, I've interviewed at 13 different
 companies from that date until 29 August. Some companies were large, some
 small and some in between and have been turned down by _all but 2_[^1]. That's
 like two rejections and a half a week. After the first three, I switched up
@@ -28,8 +32,8 @@ of the following statements.
 
 > We need someone who thinks the same way our team does.
 
-I can (barely) understand how one gets to the conclusion of the first bullet
-point. But from what I know, an environment like that could result in a lot of
+I can (barely) understand how one gets to the conclusion here. If it's generic.
+But from what I know, an environment like that could result in a lot of
 'yes' with no real challenging of the ideas brought to the table. This is my
 personal opinion. All of the places I worked at before was filled of people with
 different work backgrounds and levels of experience. That led to very
@@ -68,7 +72,10 @@ background to be asked. But this will make the bar personally higher for
 companies that want to hire me and places that I'd consider working at. Working
 as a freelance developer is not easy but waiting in constant disappointment
 about job interviews really tears down one's psyche. For those wishing to refer
-me to prospective clients, send them to <https://jacky.wtf/work/freelance>.
+me to prospective clients, send them to <https://jacky.wtf/work/freelance>. This
+isn't a reflection of companies that I'm currently interviewing with at the
+moment (some **amazing** ones), moreso with ones I've interviewed at in the
+past.
 
 ---
 
