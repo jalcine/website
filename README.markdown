@@ -25,10 +25,9 @@ Below is a rough graph of the pages I plan to lay out for the site.
     * Tags
     * Categories
   - Projects
-    => Wintermute
-    => twch.at
-    => cmake.vim
-    => tumblr-dev
+    * `Wintermute`
+    * `cmake.vim`
+    * `tumblr-dev`
 
 ## Dependencies
 
