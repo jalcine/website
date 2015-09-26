@@ -3,7 +3,7 @@ layout: post
 title: "I'm Still Tweeting Though. Why?"
 byline: "Didn't I just say I'd stop tweeting?"
 draft: true
-date: 2015-09-23 12:27:35 EDT
+image: none
 category: thoughts
 tags:
   - twitter
@@ -93,8 +93,48 @@ the short version of a story instead of fussing with a whole extended form.
 Things like time, energy and vetting whether or not if it's worth the previous
 two items come into play here. I'm still working on a good way to measure this.
 
+### Breathing and Tweeting
+
+A bit like the separation of topics, sometimes, shit's not worth writing a whole
+1,000+ word thing about it. My post tends to average around 600 words[^6] so
+short writing is my thing. Tweeting is also. I don't know if there's a tool
+since <http://www.howoftendoyoutweet.com/> is down, but I know that I do it too
+often and it's mostly manually[^7]. Another site did provide me with some
+interesting graphs for the month of September:
+
+![Man](/images/snapshot397.png)
+
+I tweet a lot. That's a bit over 25 tweets in an hour if I did in a 8 hour
+window.
+
+![Man](/images/snapshot398.png)
+
+This graph is the one I wanted the most: how often I tweeted in relation to
+other days. It also exposes my non-conventional sleeping cycle. I take longer
+sleeps for close to 4 hours in the evening and attempt to catch naps in the late
+evening either around 6pm to 8pm. Without those naps though (and being in this
+[freelance state of mind][3]), I tend to wake up about an hour later and thus
+nixing chances to catch up on news, go run, etc.
+
+Most of my tweets are just bits and pieces of my personality. I mention this a
+lot to people in person but I use Twitter as voraciously as I would engage
+in conversation had I been sitting in front of you. Might not be the best means
+of the platform's use, but it's an ingrained habit now.
+
+---
+
+I wouldn't say nor do I think there's enough evidence to say that tweeting has
+killed the blogging platform. They exist together and at the moment, Medium has
+found a way to bridge the two very nicely. The thing for me now is to figure out
+as I tweet:
+
+  * When it's a good idea for me to begin a blog post,
+  * If it's a good situation to hash out the post via tweet thread,
+  * Sleep more often :grin:.
+
 [1]: {% post_url 2015-09-13-tweet-less-blog-more %}
 [2]: https://carnivalapp.io/
+[3]: {% post_url 2015-09-19-going-back-to-freelance %}
 [markdown]: http://daringfireball.net/projects/markdown/
 [jekyll]: https://jekyllrb.com
 [^1]: By now, I think you've noticed that all of the linked tweet are part of a thread :grin:.
@@ -102,3 +142,5 @@ two items come into play here. I'm still working on a good way to measure this.
 [^3]: Be it on your own installation of Wordpress, Blogger, Tumblr or what have you.
 [^4]: One could go as far as to provide as a means for hooking in tweet-replies here. That would be a compelling feature in itself.
 [^5]: Tumblr, when used for long form text, rocks.
+[^6]: This is off the top of my head, not an accurate measure.
+[^7]: I did find this site, <http://www.tweetstats.com/status/jackyalcine>
