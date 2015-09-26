@@ -2,7 +2,6 @@
 layout: post
 title: "I'm Still Tweeting Though. Why?"
 byline: "Didn't I just say I'd stop tweeting?"
-draft: true
 image: none
 category: thoughts
 tags:
