@@ -25,7 +25,7 @@ pagination_path: '/weblog/:num/'
 permalink: '/weblog/:title/'
 show_drafts: false
 tag_dir: '/weblog/tag'
-lsi: true
+lsi: false
 future: false
 relative_permalinks: false
 markdown: kramdown
@@ -46,6 +46,7 @@ gems:
   - jekyll-twitter-plugin
   - jekyll-auto-image
   - octopress-quote-tag
+  - octopress-video-tag
 # }}}
 
 # {{{ Markdown renderer options

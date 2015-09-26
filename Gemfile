@@ -25,6 +25,7 @@ group :jekyll_plugins do
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-auto-image'
   gem 'octopress-quote-tag'
+  gem 'octopress-video-tag'
 end
 
 # {{{ Development
