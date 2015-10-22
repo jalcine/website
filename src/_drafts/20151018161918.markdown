@@ -1,0 +1,31 @@
+---
+layout: post
+date: 2015-10-18 16:22:13 EDT
+category: life
+tags:
+  - clef
+  - work
+  - life
+image: /images/snapshot421.png
+
+---
+
+I have two big announcements that I'm more than honored to share with you all.
+The first one is that I'm moving to California! Leaving my ever-loved home of
+Brooklyn, NY to land in the East Bay. I'm feeling a mixture of excitement, fear
+and joy all the same time. The move is one I've wanted to make for a _long time_
+but didn't have the momentary availability or requirement to do so. That leads
+me to my second announcement! As of 2nd Nov 2015, I'll be the 8th employee over
+at [Clef][]. If, somehow, you don't know what they[^1] do, [start here][1].
+
+That's all I'll say **for now**. Just wanted y'all to know!
+
+----
+
+_re-enters the room_
+
+That and the team at Clef is beyond!
+
+[clef]: https://getclef.com
+[^1]: Well, now we! :grin:
+[1]: https://getclef.com/about/
