@@ -11,12 +11,7 @@ class: resume
     %a{href:'{{ site.url }}',target:'_blank'} {{ site.author }}
 
   %blockquote.alert
-    I'm actively looking for work. Please check my background on
-    %a{href: '{{site.url}}/work/'} my work page for a lighter
-    description. If you use Twitter, please RT this
-    %a{href: 'https://twitter.com/intent/retweet?tweet_id=622631537322950656'}
-      tweet
-    to bring more awareness. It's greatly appreciated.
+    I'm no longer looking for work :fireworks:!
 
   %p
     Web developer with a strong Linux background and big on oatmeal
@@ -32,7 +27,7 @@ class: resume
     &mdash;
     %a{href: 'skype:jackyalcine?call'} Skype
     &mdash;
-    %a{href: "mailto:yo@jacky.wtf?subject=I'd Like To Work With You"}
+    %a{href: "mailto:yo@jacky.wtf?subject=I'd Like To Talk To You"}
       Email
 
   %p
@@ -56,7 +51,20 @@ class: resume
     %li
       %a{href:'#2010'} 2010
 %main.resume
-  %section.year#2015
+  %section.year.current
+    %h2
+      %a{name: :Current} Current
+
+    %section.position
+      %h3
+        Fullstack Web Developer
+        %strong
+          %a{href: 'https://getclef.com', target: '_blank'} Clef
+      %span November 2015 until today
+      %p
+        This is an active work in progress!
+
+  %section.year
     %h2
       %a{name: 2015} 2015
 
@@ -88,7 +96,7 @@ class: resume
         %li CSS
         %li HTML
 
-  %section.year#2014
+  %section.year
     %h2
       %a{name: 2014} 2014
     // Shutterstock time
@@ -129,7 +137,7 @@ class: resume
         %li CSS
         %li HTML
 
-  %section.year#2013
+  %section.year
     %h2
       %a{name: 2013} 2013
 
@@ -214,7 +222,7 @@ class: resume
         %li jQuery
         %li Microsoft Sharepoint
 
-  %section.year#2012
+  %section.year
     %h2
       %a{name: 2012} 2012
 
@@ -241,7 +249,7 @@ class: resume
         [3]: http://tincanapi.com/
 
 
-  %section.year#2011
+  %section.year
     %h2
       %a{name: 2011} 2011
 
@@ -249,7 +257,7 @@ class: resume
       Nothing crazy happened here work wise. I spent the year working on
       an artificial intelligence project that I'm still hammering out today.
 
-  %section.year#2010
+  %section.year
     %h2
       %a{name: 2010} 2010
 
