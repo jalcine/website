@@ -7,35 +7,26 @@ header[role=main]
   justify-content: center
   min-height: 9rem
 
-  > hgroup
-    margin: 0.5rem auto
+  > h1
+    margin: 0rem
+    align-items: center
     display: flex
-    justify-content: center
+    flex-direction: column
+    transition: flex-direction 0.3s
+    font-size: 3rem
 
-    > h3
-      margin: 0rem
-      align-items: center
-      display: flex
-      flex-direction: column
-      transition: flex-direction 0.3s
-      font-size: 3rem
+    > span
+      color: darken($gray, 20%)
+      font-size: 1.2rem
+
+      &:before
+        padding: 0rem 0.2rem
+        transition: padding 0.3s
 
       @media #{$desktop}
         &
-          flex-direction: row
+          font-size: 1.75rem // Not good (fixed to h3)
 
-      > span
-        color: darken($gray, 20%)
-        font-size: 1.2rem
-
-        &:before
-          padding: 0rem 0.2rem
-          transition: padding 0.3s
-
-        @media #{$desktop}
-          &
-            font-size: 1.75rem // Not good (fixed to h3)
-
-            &:before
-              color: $black
-              content: '\2014'
+          &:before
+            color: $black
+            content: '\2014'

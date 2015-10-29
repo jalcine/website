@@ -1,21 +1,25 @@
 ---
 layout: post
 title: "Returning to Freelance (Softly)"
-date: 2015-08-29 15:33:50 EDT
 category: thoughts
+date: 2015-09-19 07:11:35 EDT
+tags:
+  - freelance
+  - thoughts
+  - career
 
 ---
 
-A few weeks ago, I've posted a tweet about me leaving freelance and openly
+Two months ago, I've posted a tweet about me leaving freelance and openly
 searching for full-time work:
 
 {% twitter oembed https://twitter.com/jackyalcine/status/622631537322950656 %}
 
-I wrote that tweet in hopes of landing a position within two months. From the
-second week of July to the time of writing, I've interviewed at 13 different
+I posted that tweet with hopes of landing a position within _two months_. From the
+second week of July to August 29th, I've interviewed at 13 different
 companies from that date until 29 August. Some companies were large, some
 small and some in between and have been turned down by _all but 2_[^1]. That's
-like two rejections and a half a week. After the first three, I switched up
+like two rejections a week. After the first three, I switched up
 my approach a bit but the one prevalent message that I've got from everyone
 was that I didn't have enough experience. I don't advertise myself as a
 senior developer[^2] and I bluntly admit if I don't know something.
@@ -23,21 +27,21 @@ senior developer[^2] and I bluntly admit if I don't know something.
 Surprisingly enough, that 'lack of knowledge' of something conventionally
 hyper-specific to a company is something I'm supposed to somehow know without
 actually working in most of these places. Speaking with some of the hiring
-managers about things that could have been improved, it's always fallen in one
+managers about things that could have been improved, it's generally fallen in one
 of the following statements.
 
 > We need someone who thinks the same way our team does.
 
-I can (barely) understand how one gets to the conclusion of the first bullet
-point. But from what I know, an environment like that could result in a lot of
-'yes' with no real challenging of the ideas brought to the table. This is my
-personal opinion. All of the places I worked at before was filled of people with
-different work backgrounds and levels of experience. That led to very
-interesting discussions on architecture. It also resulted in learning
-experiences for those (like myself) who didn't understand larger components and
-gave more experienced developers a chance to reinforce their thought process and
-even see if it was worth implementing. There's a saying that thinking out loud
-helps with the validation process of an idea.
+I can (barely) understand how one gets to the conclusion here. It's _generic_.
+But from what I know, an environment like that could result in a lot of
+'yes' with no real challenging of the ideas brought to the table. This is what
+I think to be true from experience. All of the places I worked at before was
+filled of people with different work backgrounds and levels of experience. That
+led to very interesting discussions on well, _anything_. It also resulted in
+learning experiences for those (like myself) who didn't understand larger
+components and gave more experienced developers a chance to reinforce their
+thought process and even see if it was worth implementing. There's a saying
+that thinking out loud helps with the validation process of an idea.
 
 > We're looking for someone who's more familiar with our practices and conventions.
 
@@ -69,6 +73,10 @@ companies that want to hire me and places that I'd consider working at. Working
 as a freelance developer is not easy but waiting in constant disappointment
 about job interviews really tears down one's psyche. For those wishing to refer
 me to prospective clients, send them to <https://jacky.wtf/work/freelance>.
+
+This post isn't a reflection of companies that I'm currently interviewing with
+at the moment (some **amazing** ones), moreso with ones I've interviewed at in the
+past (up to with confirmed 'no' on August 29th, 2015).
 
 ---
 
