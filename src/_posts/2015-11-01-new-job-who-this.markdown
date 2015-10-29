@@ -109,7 +109,7 @@ Thank you Nia for proofreading this. I love you.
 [4]: https://instagram.com/p/7Y72-kLzsa/?taken-by=hirakunyc
 [5]: {% post_url 2015-09-26-im-still-tweeting %}
 [clef]: https://getclef.com
-[medium]: https://medium.com/p/d4b7636caf9a
+[medium]: https://medium.com/@jackyalcine/new-job-who-dis-leaving-home-for-a-new-one-50c2c6255cef
 [^1]: Well, now **we**! :grin:
 [^2]: The number of times I've been asked this (and how it's almost always the second question)...
 [^3]: The _bad_ kind of smart. Like someone always with a retort. Runs in the family, come to think of :laughing:
