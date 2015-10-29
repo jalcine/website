@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-11-01 00:00:00 PST
+date: 2015-10-29 09:04:29 EDT
 category: life
 title: “New Job, Who This?” - Leaving Home for a New One
 tags:
