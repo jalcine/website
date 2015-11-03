@@ -3,7 +3,7 @@
   <head>
     {% include head.html %}
   </head>
-  <body {{ page.class ? (' class="' + page.class + '"') : '' }}>
+  <body>
     {% unless page.no_header %}<header class="main">{% include header.html %}</header>{% endunless %}
     <main class="main">{{ content }}</main>
     {% unless page.no_footer %}<footer class="main">{% include footer.html %}</footer>{% endunless %}

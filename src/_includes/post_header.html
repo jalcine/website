@@ -1,10 +1,10 @@
 <header role="post">
-  <h1>
+  <h1 class="sift-to-left">
     <a href="{{ page.url }}">
       {{ include.title || page.title }}
     </a>
   </h1>
-  {% if page.byline %}<h3 class="byline">{{ page.byline }}</h3>{% endif %}
+  {% if page.byline %}<h3 class="text-small">{{ page.byline }}</h3>{% endif %}
 </header>
 <aside role="stats">
   <span>

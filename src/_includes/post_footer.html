@@ -4,4 +4,10 @@
     any of the emails held by my
     <a target="_blank" title="GPG info" href="/gpg/">GPG key</a>.
   </p>
+  {% if page.previous.url %}
+    <a href="{% page.previous.url %}">{% page.previous.title%}</a>
+  {% endif %}
+  {% if page.next.url %}
+    <a href="{% page.next.url %}">{% page.next.url %}</a>
+  {% endif %}
 </footer>
