@@ -151,3 +151,18 @@ aside[role=stats] {
   @extend .sift-to-center;
   font-size: 0.75rem;
 }
+
+h1#jalcinePrompt {
+  font-family: monospace;
+}
+
+hr {
+  color: #999;
+  border: 1px solid transparent;
+}
+
+ol, li {
+  padding-inline-start: 1.2rem;
+}
+
+@import 'code';
