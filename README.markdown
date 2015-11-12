@@ -9,14 +9,12 @@ pages more interactive.
 
 Below is a rough graph of the pages I plan to lay out for the site. 
 
+  - Simple Landing
   - About (homepage)
     * Press
     * Contact
     * Social Media
   - Work
-    * Freelance
-      - Open Lead
-    * Schedule Chat
     * Past Projects
     * Resume
   - Blog
@@ -28,6 +26,7 @@ Below is a rough graph of the pages I plan to lay out for the site.
     * `Wintermute`
     * `cmake.vim`
     * `tumblr-dev`
+  - GPG information
 
 ## Dependencies
 
