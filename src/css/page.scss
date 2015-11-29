@@ -2,6 +2,8 @@
 # This is required to make it include from the root Sass directory.
 ---
 
+@import '_reset'
+
 //
 // COLOR VARIABLES
 //
@@ -152,8 +154,12 @@ aside[role=stats] {
   font-size: 0.75rem;
 }
 
-h1#jalcinePrompt {
+h3#jalcinePrompt {
   font-family: monospace;
+
+  > span {
+    background-color: #000;
+  }
 }
 
 hr {
