@@ -2,7 +2,7 @@
 # This is required to make it include from the root Sass directory.
 ---
 
-@import '_reset'
+@import '_reset';
 
 //
 // COLOR VARIABLES
@@ -67,7 +67,7 @@ header.main {
   background-color: $black;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 0rem 0.75rem 0rem;
+  padding: 1.25rem 0rem;
 
   a {
     color: $gray;
@@ -143,11 +143,21 @@ body.about > img#self {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-weight: bolder;
+  margin: 0.5rem 0rem;
+
   a {
     @extend .link;
     color: $color-text;
   }
 }
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
 
 aside[role=stats] {
   @extend .sift-to-center;
@@ -158,7 +168,7 @@ h3#jalcinePrompt {
   font-family: monospace;
 
   > span {
-    background-color: #000;
+    color: #000;
   }
 }
 
@@ -169,6 +179,84 @@ hr {
 
 ol, li {
   padding-inline-start: 1.2rem;
+}
+
+header[role=post] {
+  padding: 0.5rem 0rem;
+  margin: 0.75rem 0.5rem 1.5rem;
+}
+
+main.main {
+  padding: 0.75rem 0rem;
+}
+
+img#self {
+  float: right;
+  margin: 1rem;
+}
+
+figure.captioned-image {
+  margin-top: -2rem;
+  display: inline-block;
+  float: right;
+
+  img {
+    margin: 0rem auto;
+    display: block;
+  }
+
+  figcaption {
+    display: block;
+    font-size: small;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+  }
+}
+
+p {
+  margin: 0.5rem 0rem;
+  line-height: 2;
+
+  &.lead {
+    font-size: 125%;
+    line-height: 1.2;
+  }
+}
+
+.footnotes {
+  margin: 1rem 2.5rem 2rem;
+
+  ol {
+    list-style-type: decimal;
+    li, p { margin: 0.25rem 0rem; }
+    font-size: 0.9rem;
+  }
+}
+
+ul.entries {
+  width: 95%;
+  margin: 1rem auto;
+
+  li {
+    list-style: none;
+    margin: 0.2rem 0rem;
+    padding: 0.4rem;
+    padding-inline-start: 0rem;
+
+    > time { font-weight: bold; }
+  }
+}
+
+dl {
+  dt { font-weight: bold; }
+  dd { padding: 1rem 0rem; }
+}
+
+section.focused {
+  width: 80%;
+  max-width: 45rem;
+  margin: 0rem auto;
 }
 
 @import 'code';
