@@ -2,6 +2,7 @@
 title: "Using libuv for Event Subscription & Invoking in Wintermute"
 date: 2015-02-05 01:41:54 EST
 category: development
+layout: post
 tags:
   - libuv
   - thoughts
