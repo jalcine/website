@@ -3,36 +3,33 @@
 {% else %}
   <header role="post">
 {% endif %}
-    <h1 class="title">
-      <a href="{{ page.url }}">
-        {{ include.title || page.title }}
-      </a>
-    </h1>
-    {% if page.byline %}<h3 class="byline">{{ page.byline }}</h3>{% endif %}
-  </header>
-
-<section role="stats">
+  <h1 class="sift-to-left">
+    <a href="{{ page.url }}">
+      {{ include.title || page.title }}
+    </a>
+  </h1>
+  {% if page.byline %}<h3 class="text-small">{{ page.byline }}</h3>{% endif %}
+</header>
+<aside role="stats">
   <span>
     {{ page.content | number_of_words | intcomma }} words,
     {{ page.content | reading_time }}
-  </span> &mdash;
+  </span>
+  <br />
   <span>
     written <a href="{{ page.url }}"><strong>{{ page.date | date_to_rfc822 }}</strong></a>
     {% if page.revised %}, updated <strong>{{ page.revised | date_to_rfc822 }}</strong>{% endif %}
     {% if page.location %}in <strong>{{ page.location }}</strong>{% endif %}
-  </span> &mdash;
-  <span>
-    tagged under
-    <strong>
-      {{ page.tags | linkify_tags }}
-    </strong>
-  </span> &mdash;
-  <span>
-    {% if page.category %}a <strong>{{ page.category }}</strong> post{% endif %}
   </span>
+  <br />
+  <span>
+    tagged under <strong>{{ page.tags | linkify_tags }}</strong>
+  </span>
+  <br />
+  <span>{% if page.category %}a <strong>{{ page.category }}</strong> post{% endif %}</span>
 {% if page.description %}
-  <blockquote class="narrative">
+  <blockquote>
     {{ page.description | markdownify }}
   </blockquote>
 {% endif %}
-</section>
+</aside>

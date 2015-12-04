@@ -1,7 +1,6 @@
-<script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js"></script>
-<script type="text/javascript">
-  if (WebFont) {
-    WebFont.load({
+<script type="text/javascript" defer async>
+  (function addWebFontScript(d) {
+    var webFontConfig = {
       google: {
         families: [
           'Permanent+Marker:500',
@@ -9,11 +8,17 @@
           'Inconsolata:200'
         ]
       }
-    });
-  }
+    }
+
+    var webFontSrc =
+      'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js'
+    var webFontScriptElem = d.createElement('script')
+    var firstScriptElem = d.scripts[0]
+    webFontScriptElem.src = webFontSrc
+    firstScriptElem.parentNode.insertBefore(webFontScriptElem, firstScriptElem)
+
+    webFontScriptElem.addEventListener('load', (function loadFonts() {
+      WebFont.load(webFontConfig)
+    }).bind(this))
+  })(document)
 </script>
-{% for src in page.javascripts %}
-  <script type="text/javascript" src="{{ src }}" defer="true"></script>
-{% endfor %}
-<script type="text/javascript" src="/js/vendor/jquery.timeago.js" defer="true"></script>
-<script type="text/javascript" src="/js/main.js" defer="true"></script>
