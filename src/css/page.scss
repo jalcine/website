@@ -165,7 +165,7 @@ h6 { font-size: 1rem; }
 
 aside[role=stats] {
   font-size: 0.85rem;
-  color: $gray;
+  color: darken($gray, 20%);
 }
 
 h3#jalcinePrompt {
@@ -197,6 +197,7 @@ header.image[role=post] {
   background-position: center bottom;
   background-size: cover;
   margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
 
   h1 {
     @extend .sift-to-center;
@@ -210,12 +211,27 @@ header.image[role=post] {
   }
 }
 
+header[role=post], main[role=post],
+footer[role=post], aside[role=stats] {
+  max-width: 60rem;
+  margin: 0rem auto;
+}
+
 main[role=post] {
   img.emoji { vertical-align: text-top; }
 }
 
+footer[role=post] {
+  background-color: $black;
+  color: $white;
+  text-align: center;
+}
+
 main.main {
   padding: 0.75rem 0rem;
+  max-width: 60rem;
+  width: 80%;
+  margin: 0rem auto;
 }
 
 img#self {
@@ -254,7 +270,9 @@ li, p {
 }
 
 .footnotes {
-  margin: 1rem 2.5rem 2rem;
+  margin: 0rem auto;
+  width: 80%;
+  max-width: 50rem;
 
   ol {
     list-style-type: decimal;
@@ -296,14 +314,6 @@ blockquote {
   background-color: darken($white, 10%);
   color: $black;
   font-size: 115%;
-}
-
-div.footnotes {
-  margin: 0rem auto;
-  width: 80%;
-  max-width: 50rem;
-
-  > ol > li { font-size: 90%; }
 }
 
 a.foonote {
