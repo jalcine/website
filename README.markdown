@@ -22,3 +22,6 @@ Below is a rough graph of the pages I plan to lay out for the site.
     * `cmake.vim`
     * `tumblr-dev`
   - GPG information
+
+[1]: https://jacky.wtf/about/
+[jekyll]: https://jekyllrb.com/
