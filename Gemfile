@@ -23,7 +23,7 @@ group :jekyll_plugins do
   gem 'jekyll-timeago'
   gem 'jekyll-git_metadata'
   gem 'jekyll-twitter-plugin'
-  gem 'jekyll-auto-image'
+  gem 'jekyll-auto-image', '1.0.2'
   gem 'octopress-quote-tag'
   gem 'octopress-video-tag'
 end
