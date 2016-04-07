@@ -72,28 +72,47 @@ pre, code, kbd {
 
 header.main {
   width: 100%;
-  background-color: $black;
   display: flex;
   flex-direction: column;
-  padding: 1.25rem 0rem;
+  padding: 0.8rem 0rem;
 
-  a {
+  > section {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.1rem 0rem;
+  }
+
+  img { display: none; }
+
+  a[name=top] {
+    font-size: 1.5rem;
     color: $gray;
   }
 
-  > h1 {
-    margin: 0rem 0rem 0.75rem 0rem;
-    line-height: 1;
+  ul {
+    display: flex;
+    margin: 0rem;
+    padding: 0rem;
+
+    > li {
+      list-style: none;
+      display: inline;
+      padding: 0rem 0.2rem;
+      font-size: 0.9rem;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    > h1 {
-      margin-top: 0.15rem;
-      font-size: 4rem;
-    }
+  @media #{$desktop} {
+    & {
+      a[name=top] {
+        font-size: 3rem;
+      }
 
-    > a {
-      font-size: 1.5rem;
+      ul > li {
+        padding: 0.2rem 0.8rem;
+        font-size: 1.2rem;
+      }
     }
   }
 }
@@ -137,18 +156,6 @@ img {
 .instagram-media {
   margin: 0rem auto!important;
   display: block;
-}
-
-body.about > img#self {
-  @extend img.round;
-  width: 100%;
-
-  @media (min-width: $desktop-width) {
-    > & {
-      width: auto;
-      float: right;
-    }
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -269,6 +276,12 @@ li, p {
     font-size: 1.5rem;
     line-height: 1.2;
   }
+
+  @media #{$desktop} {
+    &.wrapped {
+      width: 60%;
+    }
+  }
 }
 
 .footnotes {
@@ -326,6 +339,33 @@ a.footnote {
 video {
   display: block;
   margin: 0rem auto;
+}
+
+body.index {
+  background-color: $black;
+  color: $white;
+
+  a {
+    color: lighten($color-link, 30%);
+  }
+}
+
+body.about {
+  img#self {
+    width: 60%;
+    float: none;
+    display: block;
+    margin: 0rem auto;
+    clear: both;
+
+    @media #{$desktop} {
+      > & {
+        width: auto;
+        float: right;
+        display: inline-block;
+      }
+    }
+  }
 }
 
 @import 'code';
