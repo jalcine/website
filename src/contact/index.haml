@@ -1,16 +1,7 @@
 ---
 layout: 'default'
 title: 'Contact'
-javascripts:
-  - "/js/vendor/pen.js"
-styles:
-  - "/css/pen.css"
 ---
-
-:javascript
-  window.onload = function () {
-    var editor = new Pen('#editorRegion')
-  }
 
 :css
   form {
@@ -58,5 +49,7 @@ styles:
   %label{for: '_replyTo'}
     %span Email
     %input{type:'email', name: '_replyTo', placeholder: 'email@domain.tld'}
-  %div#editorRegion
+  %label{for: '_content'}
+    %span Body
+    %textarea{name: '_content', placeholder: 'HAY'}
   %button{type:'submit'} Send Message
