@@ -1,0 +1,15 @@
+---
+title: Going From CtrlP to Unite (Again)
+date: 2016-04-09 07:55:14 PDT
+category: vim
+layout: default
+tags:
+  - vim
+  - unite
+  - file searching
+---
+
+So, I’ve been using CtrlP for about two months now.[^1]
+
+[unite]: https://github.com/Shougo/unite.vim
+[^1]: I _think_ it’s two months. I can’t be bothered to check the git log right now.
