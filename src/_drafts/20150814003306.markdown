@@ -17,12 +17,16 @@ is going to highlight the capabilities of two plugins in particular;
 **[vim-test][]** and **[neomake][]**. This plugin aims to be a no-nonsense,
 plug-n-play solution to run tests for code written in languags like Ruby,
 JavaScript, and even Vimscript. Of course, there's the whole having a watcher
-tool (like Guard for Ruby) to standby and run your plugins with no complaint but
-this is meant to take advantage of not only the different test suites you have
-but also the way one can go about invoking their tests.
+tool (like [Guard for Ruby][2]) to standby and run your plugins with no complaint
+but this is meant to take advantage of not only the different test suites you
+have but also the way one can go about invoking their tests.
 
-There's the _talking_ about things and there's the _showing_ part. Below is an
-screencast of me writing 
+[`neomake`][] goes a step further and aims to be the Neovim-compatible
+equivalent of [Syntastic][]. `neomake` _is_ lacking in a few of the "checkers"
+that `syntastic` provides but for my particular use-case, this isn't a problem.
 
 [1]: {% post_url 2015-08-05-moving-to-neovim %}
+[2]: http://guardgem.org/
+[neomake]: https://github.com/benekastah/neomake
+[syntastic]: https://github.com/scrooloose/syntastic/
 [vim-test]: https://github.com/janko-m/vim-test/
