@@ -10,6 +10,7 @@ gem 'mini_magick'
 gem 'autoprefixer-rails'
 gem 'kramdown'
 gem 'rb-gsl'
+gem 'rake'
 # }}
 
 # {{ jekyll

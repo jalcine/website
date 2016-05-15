@@ -224,6 +224,7 @@ DEPENDENCIES
   rack
   rack-jekyll
   rack-livereload
+  rake
   rb-gsl
   sprockets-es6
 
