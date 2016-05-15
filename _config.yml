@@ -17,6 +17,7 @@ source: source
 destination: build
 layouts_dir: _templates/layouts
 includes_dir: _templates/includes
+plugins_dir: plugins
 
 show_drafts: false
 lsi: false
@@ -24,3 +25,8 @@ future: false
 pagination_path: '/weblog/:num/'
 permalink: '/weblog/:title/'
 tag_dir: '/weblog/tag'
+
+gems:
+  - jemoji
+  - jekyll-gist
+  - jekyll-twitter-plugin

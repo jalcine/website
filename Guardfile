@@ -12,5 +12,6 @@ end
 
 guard :rack do
   watch('Gemfile.lock')
-  watch(%r{^(config|lib|app)/.*})
+  watch('config.ru')
+  watch(%r{^(plugins)/.*})
 end
