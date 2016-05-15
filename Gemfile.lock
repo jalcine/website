@@ -34,6 +34,7 @@ GEM
       sass (>= 3.2)
     formatador (0.2.5)
     gemoji (2.1.0)
+    gsl (2.1.0.1)
     guard (2.13.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, <= 4.0)
@@ -149,6 +150,8 @@ GEM
       rack
     rake (11.1.2)
     rb-fsevent (0.9.7)
+    rb-gsl (1.16.0.6)
+      gsl
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     ref (2.0.0)
@@ -221,6 +224,7 @@ DEPENDENCIES
   rack
   rack-jekyll
   rack-livereload
+  rb-gsl
   sprockets-es6
 
 RUBY VERSION
