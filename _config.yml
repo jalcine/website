@@ -1,9 +1,11 @@
 title: site@jacky.inet
+name: Jacky Alciné
 email: yo@jacky.wtf
 description: >
   A young Black male from Brooklyn, New York in Oakland, California learning
   more about the world and now working to help make it way more secure for the
   people who live in it. So much to learn and yet so little time!
+timezone: America/Los_Angeleos
 
 url: "https://jacky.wtf"
 
@@ -15,3 +17,10 @@ source: source
 destination: build
 layouts_dir: _templates/layouts
 includes_dir: _templates/includes
+
+show_drafts: false
+lsi: false
+future: false
+pagination_path: '/weblog/:num/'
+permalink: '/weblog/:title/'
+tag_dir: '/weblog/tag'

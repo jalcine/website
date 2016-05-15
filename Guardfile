@@ -1,3 +1,5 @@
+# vim: set ft=ruby :
+
 guard :bundler do
   require 'guard/bundler'
   require 'guard/bundler/verify'

@@ -1,6 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (4.2.6)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
     addressable (2.4.0)
     autoprefixer-rails (6.3.6)
       execjs
@@ -23,6 +29,7 @@ GEM
     font-awesome-sass (4.6.2)
       sass (>= 3.2)
     formatador (0.2.5)
+    gemoji (2.1.0)
     guard (2.13.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, <= 4.0)
@@ -46,7 +53,11 @@ GEM
       ffi
       guard (~> 2.3)
       spoon
+    html-pipeline (2.4.1)
+      activesupport (>= 2, < 5)
+      nokogiri (>= 1.4)
     http_parser.rb (0.6.0)
+    i18n (0.7.0)
     jekyll (3.1.3)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
@@ -75,6 +86,10 @@ GEM
     jekyll-timeago (0.9.1)
     jekyll-watch (1.4.0)
       listen (~> 3.0, < 3.1)
+    jemoji (0.6.2)
+      gemoji (~> 2.0)
+      html-pipeline (~> 2.2)
+      jekyll (>= 3.0)
     json (1.8.3)
     kramdown (1.11.1)
     libv8 (3.16.14.15)
@@ -92,6 +107,7 @@ GEM
       mina (>= 0.3.0, < 2)
     mini_magick (4.5.1)
     mini_portile2 (2.0.0)
+    minitest (5.8.4)
     multi_json (1.12.0)
     multipart-post (2.0.0)
     nenv (0.3.0)
@@ -140,6 +156,9 @@ GEM
       libv8 (~> 3.16.14.0)
       ref
     thor (0.19.1)
+    thread_safe (0.3.5)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
 
 PLATFORMS
   ruby
@@ -161,6 +180,7 @@ DEPENDENCIES
   jekyll-sitemap (~> 0.10.0)
   jekyll-terminal
   jekyll-timeago
+  jemoji
   kramdown
   mina
   mina-rsync

@@ -21,6 +21,7 @@ gem 'jekyll-timeago'
 gem 'jekyll-lunr-js-search'
 gem 'jekyll-archives'
 gem 'jekyll-terminal'
+gem 'jemoji'
 # }}
 
 gem 'mina'
