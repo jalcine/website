@@ -1,3 +1,4 @@
 build
-.sass-cache
+.*-cache
 .jekyll-metadata
+.env
