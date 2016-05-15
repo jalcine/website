@@ -1,0 +1,38 @@
+---
+layout: post
+title: Introducing twch.at
+byline: Making Collective Chats on Twitter A Bit Easier
+date: 2015-08-02 20:48:16 EDT
+---
+
+Once again, I was sitting and almost sleeping while reading about using finite
+state automata to determine two-phase morphology for a given word. I was kind of
+thinking about how dope the last [#BlerdChat on Twitter][1] was **lit**. I
+haven't participated in a chat like that since the last Black comics chat (I
+don't remember when it was) and I liked it a lot! This gave me the idea that
+hundreds of people probably have of creating a tool that makes it easy to
+administer and handle Twitter chats. The thing with searching is that it's
+currently not intuitive to pull up a search query like the one I did without
+even knowing that the advanced section exists. Also, being able to highlight
+certain tweets as a moderator allows for more visibility to interesting content
+and makes for an excellent means for pulling up older tweets when interesting in
+making a post or media expose on the event.
+
+## Sketching It Out
+
+As every Web designer might do, I pulled up my notebook and began doodling how I
+wanted this to work in my head. The look is equivalent to the function, which
+should be implicit. The first page that I worked on was the active chat room
+which is probably going to be the most used pages by users. It looks like this:
+
+{% comment %} Take picture and add here. {% endcomment %}
+
+The page is sparse but after taking that and making a static page mockup with
+some sample data, it looks a bit like this (yay for WebM!)
+
+{% comment %} Record page using Backbone to emulate traffic. {% endcomment %}
+
+So there's that. This took me a week and change to hammer down into this level
+of detail.
+
+[1]: https://twitter.com/search?q=%23BlerdChat%20since%3A2015-07-29%20until%3A2015-07-31&src=typd
