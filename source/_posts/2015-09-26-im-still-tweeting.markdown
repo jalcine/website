@@ -17,12 +17,12 @@ more frequently. But I ended up breaking down and writing out a few 5+ tweet
 threads about things I could have expanded on here. Why? Because it's so _easy_
 to write a tweet after tweet after tweet. What's going to stop me?
 
-{% tweet oembed https://twitter.com/jackyalcine/status/647847405598191616 %}
+{% twitter oembed https://twitter.com/jackyalcine/status/647847405598191616 %}
 
 And then the ease of using Twitter to write out a tweet versus my current (but
 favored) setup for handling my blog posts:
 
-{% tweet oembed https://twitter.com/jackyalcine/status/647848957985615872 %}
+{% twitter oembed https://twitter.com/jackyalcine/status/647848957985615872 %}
 
 Of course, there's a difference in perhaps the quality of content provided as
 well as the detail that could be provided (unless it's accompanied by video,
@@ -35,7 +35,7 @@ into your thoughts on Twitter. The rest of the thread (and perhaps a rehashing
 of the thoughts made in the 140 limit) could be done in a blog post. Of course,
 there's the angle of visibility[^1]:
 
-{% tweet oembed https://twitter.com/jackyalcine/status/647849798478000129 %}
+{% twitter oembed https://twitter.com/jackyalcine/status/647849798478000129 %}
 
 There is the notion that with Medium's ability to provide screenshots of
 highlighted text and with one's follower base[^2] that classical

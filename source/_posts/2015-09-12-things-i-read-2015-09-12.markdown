@@ -51,13 +51,12 @@ to keep an eye out for. The East Coast's the best coast, by the way.
 
 ### [Debugging Diversity][link:4]
 
-{% quote author:"Anjuan Simmons" title:"Debugging Diversity" url:"https://abernathymagazine.com/debugging-diversity/" %}
-Diversity in technology is often presented as a numbers game. Huge companies
-such as Google, Facebook, Yahoo, Linkedin, and others jump-started the
-conversation about diversity in tech a couple of years ago by publishing their
-diversity numbers. While numbers are necessary, however, they are insufficient
-to fully solve the diversity problem in tech. 
-{% endquote %}
+> [Debugging Diversity - Anjuan Simmons](https://abernathymagazine.com/debugging-diversity/)
+> Diversity in technology is often presented as a numbers game. Huge companies
+> such as Google, Facebook, Yahoo, Linkedin, and others jump-started the
+> conversation about diversity in tech a couple of years ago by publishing their
+> diversity numbers. While numbers are necessary, however, they are insufficient
+> to fully solve the diversity problem in tech. 
 
 It's not something that can be readily solved with an off-the-shelve
 algorithm[^2], or with empty quotes for close to 5 years stating "We're
