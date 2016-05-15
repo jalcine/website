@@ -3,6 +3,4 @@ require 'rack-livereload'
 
 use Rack::LiveReload
 
-run Rack::Jekyll.new force_build: true,
-  auto: true,
-  config: '_config.yml'
+run Rack::Jekyll.new force_build: true
