@@ -1,0 +1,38 @@
+title: Jacky Alcine
+email: yo@jacky.wtf
+description: >
+  Magic
+
+baseurl: /
+url: "https://jacky.wtf"
+usernames:
+  twitter: jackyalcine
+  github: jalcine
+
+markdown: kramdown
+
+source: source
+destination: build
+plugins_dir: plugins
+includes_dir: partials/includes
+layouts_dir: partials/layouts
+safe: true
+timezone: America/Los_Angeles
+encoding: utf-8
+future: false
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style

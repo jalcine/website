@@ -8,6 +8,7 @@ gem 'sprockets-es6'
 gem 'font-awesome-sass'
 gem 'mini_magick'
 gem 'autoprefixer-rails'
+gem 'kramdown'
 # }}
 
 # {{ jekyll
@@ -24,5 +25,14 @@ gem 'jekyll-terminal'
 
 gem 'mina'
 gem 'mina-rsync'
+
+gem 'guard'
+gem 'guard-bundler'
+gem 'guard-rack'
+gem 'guard-livereload'
+
+gem 'rack'
+gem 'rack-livereload'
+gem 'rack-jekyll'
 
 # vim: set foldmarker={{,}} foldmethod=marker foldlevel=0 :
