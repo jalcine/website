@@ -24,6 +24,7 @@ gem 'jekyll-lunr-js-search'
 gem 'jekyll-archives'
 gem 'jekyll-terminal'
 gem 'jekyll-twitter-plugin'
+gem 'jekyll-time-to-read'
 gem 'jemoji'
 # }}
 
