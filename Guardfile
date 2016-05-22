@@ -10,7 +10,7 @@ guard :bundler do
   files.each { |file| watch(helper.real_path(file)) }
 end
 
-guard :rack do
+guard :rack, port: 1993 do
   watch('Gemfile.lock')
   watch('config.ru')
   watch(%r{^(plugins)/.*})
