@@ -70,6 +70,9 @@ pre, code, kbd {
   font-family: Inconsolata;
 }
 
+em { font-style: italic; }
+strong { font-weight: bolder; }
+
 header.main {
   width: 100%;
   display: flex;
@@ -126,13 +129,13 @@ nav.main {
 }
 
 main.main {
-  width: 100vw;
+  width: 92vw;
   margin: 0rem auto;
-  padding: 0.75rem 0.5rem;
+  padding: 0.75rem 4vw;
 
   @media (min-width: $desktop-width) {
     max-width: $page-max-width;
-    width: 80vw;
+    width: 78vw;
   }
 }
 
@@ -241,11 +244,8 @@ footer[role=post] {
   background-color: $black;
   color: $white;
   text-align: center;
-}
-
-img#self {
-  float: right;
-  margin: 1rem;
+  font-size: 0.5rem;
+  padding: auto 0.5rem;
 }
 
 figure.captioned-image {
@@ -328,7 +328,7 @@ blockquote {
   margin: 1.5rem;
   background-color: darken($white, 10%);
   color: $black;
-  font-size: 115%;
+  font-size: 0.85rem;
 }
 
 a.footnote {
@@ -342,29 +342,62 @@ video {
 }
 
 body.index {
-  background-color: $black;
-  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 
-  a {
-    color: lighten($color-link, 30%);
+  @media #{$desktop} {
+    & {
+      h2, h4 {
+        text-align: right;
+      }
+    }
+  }
+
+  main.main {
+    display: inline-flex;
+    flex-direction: column;
+
+    @media #{$desktop} {
+      & {
+        display: block;
+        max-width: 60rem;
+      }
+    }
+  }
+
+  img#self {
+    margin: 0rem auto 2rem;
+    border-radius: 0.5rem;
+    height: 15rem;
+    width: auto;
+
+    @media #{$desktop} {
+      & {
+        margin: 0.5rem 0rem 0.5rem 2rem;
+        float: right;
+        width: auto;
+        vertical-align: middle;
+      }
+    }
   }
 }
 
-body.about {
-  img#self {
-    width: 60%;
-    float: none;
-    display: block;
-    margin: 0rem auto;
-    clear: both;
+table {
+  width: 100%;
+  border: 1px solid $black;
+  padding: 0.25rem;
+  margin: 0.25rem;
 
-    @media #{$desktop} {
-      > & {
-        width: auto;
-        float: right;
-        display: inline-block;
-      }
-    }
+  th, td {
+    padding: 0.25rem;
+  }
+
+  > thead th {
+    min-height: 1.5rem;
+    border: 1px solid $black;
+    border-width: none 1px;
   }
 }
 
