@@ -1,0 +1,152 @@
+@import 'breakpoints';
+
+body.index {
+  > header[role=index] {
+    background-image: url(/images/self-portrait.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    background-attachment: fixed;
+
+    > div.wrapper {
+      color: $black;
+      border: 0rem rgb(177, 173, 170) solid;
+      border-top-width: 0.25rem;
+      background-color: rgba(177, 173, 170, 0.75);
+      height: auto;
+      width: 100%;
+      margin: 0rem auto;
+      position: relative;
+      text-align: left;
+      padding: 0.8rem 0rem;
+
+      a {
+        color: $black;
+        font-weight: bold;
+
+        &::before { background-color: $black; }
+      }
+
+      p, h2 {
+        margin: 0rem 0.5rem;
+      }
+
+      h2 { font-size: 1.5rem; }
+      p { font-size: 0.8rem; }
+    }
+
+    @media #{$tablet} {
+      & {
+        background-image: url(/images/self-portrait@2x.jpg);
+        height: 100%;
+
+        > div.wrapper {
+          height: 20vh;
+        }
+      }
+    }
+
+    @media #{$tablet-up} {
+      & {
+        margin: 1.5%;
+        background-image: url(/images/self-portrait@3x.jpg);
+        color: $black;
+        flex-direction: row-reverse;
+        width: 97%;
+        height: 80vh;
+        min-height: 33rem;
+        background-size: 67.5%;
+        background-position: 0% 9%;
+
+        > div.wrapper {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          background-color: $white;
+          border-width: 0rem;
+          border-left-width: 0.25rem;
+          margin: 0rem;
+          height: 100%;
+          width: 30%;
+          padding: 0rem 0.5rem;
+
+          p { font-size: 1.75rem; }
+          h2 { font-size: 3.25rem; }
+        }
+      }
+    }
+  }
+
+  nav[role=index], section.region {
+    padding: 1.5%;
+    margin: 0rem;
+
+    @media #{$desktop} {
+      padding: 2% 15%;
+    }
+  }
+
+  nav[role=index] {
+    padding: 0rem;
+    background-color: $black;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+
+    a {
+      color: $white;
+      margin: 0rem 0.625rem;
+      font-size: 1.25rem;
+      font-weight: $font-weightHeavy;
+
+      &::before {
+        top: 100%;
+        background-color: $white;
+      }
+    }
+
+    @media #{$desktop} {
+      & {
+        height: 4.5rem;
+        line-height: 4.5rem;
+        a {
+          font-size: 2.25rem;
+        }
+      }
+    }
+  }
+
+  section.region {
+    color: $white;
+    min-height: 5rem;
+    text-align: center;
+    align-content: center;
+
+    a {
+      color: $white;
+      font-weight: $font-weightHeavy;
+
+      &::before {
+        top: 90%;
+        background-color: $white;
+      }
+    }
+
+    h1 { font-size:  2rem; }
+
+    @media #{$mobile-up} {
+      text-align: left;
+    }
+
+    @media #{$tablet-up} {
+      h1 { font-size: 3rem; }
+    }
+
+    &[role=work]   { background-color: #1B4263; }
+    &[role=music]  { background-color: #7F3D41; }
+    &[role=weblog] { background-color: #3B2015; };
+  }
+}

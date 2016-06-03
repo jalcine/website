@@ -1,0 +1,76 @@
+@import 'colors';
+
+$header-height: 4rem;
+
+header.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: $black;
+
+  > section {
+    display: flex;
+  }
+
+  > section:nth-child(1) {
+    text-align: center;
+    > a {
+      width: 5rem;
+      height: $header-height;
+      line-height: $header-height;
+      display: block;
+      overflow: hidden;
+      transition: 0.3s all;
+
+      > img {
+        height: $header-height;
+        border-radius: 50%;
+        vertical-align: top;
+        margin: 0rem 0.3rem;
+        transition: 0.3s all;
+        animation-delay: 0.2s;
+      }
+
+      &:hover {
+        width: 10.5rem;
+        background-color: $white;
+        color: $black;
+
+        > img {
+          border-radius: 0rem;
+          margin-left: 0rem;
+        }
+      }
+
+      &::before { background-color: transparent; }
+    }
+  }
+
+  > section:nth-child(2) {
+    > ul {
+      display: inline;
+      margin: 0rem;
+      padding: 0rem;
+
+      > li {
+        list-style: none;
+        display: inline;
+        line-height: $header-height;
+
+        a {
+          color: $white;
+
+          &::before { background-color: $white; }
+        }
+      }
+    }
+  }
+
+  @media #{$desktop} {
+    & {
+      flex-direction: row;
+    }
+  }
+}
