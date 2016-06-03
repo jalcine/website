@@ -5,9 +5,7 @@
   </head>
   <body class="{{ page.class || '' }}">
     {% unless page.no_header %}{% include header.html %}{% endunless %}
-    <main class="main">
-      {{ content }}
-    </main>
+    {{ content }}
     {% unless page.no_footer %}{% include footer.html %}{% endunless %}
     {% include javascript.html %}
   </body>

@@ -1,0 +1,51 @@
+header[role=post], footer[role=post] {
+  padding: 0.5rem 0rem;
+  margin: 0.75rem 0.5rem 1.5rem;
+}
+
+header.image[role=post] {
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  display: flex;
+  min-height: 45vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+
+  h1 {
+    text-align: center;
+    background-color: rgba($black, 0.5);
+    padding: 1.5rem 0.75rem 0.5rem;
+    margin-bottom: -0.5rem;
+
+    a {
+      color: $white
+    }
+  }
+}
+
+header[role=post], main[role=post],
+footer[role=post], aside[role=stats] {
+  max-width: $page-max-width;
+  margin: 0rem auto;
+}
+
+main[role=post] {
+  img.emoji { vertical-align: text-top; }
+  img:not(.emoji) {
+    margin: 0rem auto;
+    display: block;
+  }
+}
+
+footer[role=post] {
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  font-size: 0.5rem;
+  padding: auto 0.5rem;
+}

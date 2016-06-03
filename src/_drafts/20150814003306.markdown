@@ -74,12 +74,12 @@ you're currently under. A demonstration of this (from the [README][7]):
 This is personally useful when I'm working on related projects that live in a
 parent directory. An example structure of said directory layout would be:
 
-{% highlight shell %}
-acme
- |- api
- |- infra
- |- web
- |- admin
+{% highlight yaml %}
+acme:
+ - api
+ - infra
+ - web
+ - admin
 {% endhighlight %}
 
 Being able to work from the root directory (`acme` in this case), jump to a file
