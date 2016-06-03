@@ -30,7 +30,7 @@ header.image[role=post] {
 
 header[role=post], main[role=post],
 footer[role=post], aside[role=stats] {
-  max-width: $page-max-width;
+  max-width: $max-page-width;
   margin: 0rem auto;
 }
 
@@ -48,4 +48,23 @@ footer[role=post] {
   text-align: center;
   font-size: 0.5rem;
   padding: auto 0.5rem;
+}
+
+body.pagination {
+  section[role=entries] {
+    max-width: $max-page-width;
+    margin: 0rem auto;
+
+    ul {
+      max-width: ($max-page-width / 5) * 4;
+      margin: 0rem auto;
+      padding: 0.25rem;
+
+      li {
+        list-style: none;
+
+        a { display: block; }
+      }
+    }
+  }
 }

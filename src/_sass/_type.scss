@@ -15,7 +15,7 @@ html.wf-active {
   pre, code, kbd { font-family: $font-webMono; }
 }
 
-body  {
+body {
   font-family: $font-sans;
   font-weight: $font-weightNormal;
 }
@@ -51,7 +51,6 @@ ol, ul {
   margin: 0.5rem auto;
   padding: 0.5rem;
   padding-left: 1rem;
-  font-weight: $font-weightLight;
 }
 
 ul > li { list-style: disc; }
@@ -84,6 +83,14 @@ h5 { font-size: 1.75rem; }
 h6 { font-size: 1.5rem; }
 
 // }
+
+li {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
 
 li, p {
   margin: 0.75rem 0.25rem;
