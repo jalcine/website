@@ -123,11 +123,11 @@ p {
 /// Web font specifics ========================= {
 html.wf-active {
   body {
-    font-family: $font-webSerif;
+    font-family: $font-webSans;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: $font-webSans;
+    font-family: $font-webSerif;
   }
 
   pre, code, kbd {

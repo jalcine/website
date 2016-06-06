@@ -5,7 +5,7 @@ $clr-headerFg: $black;
 $header-bgImageSize: 60%;
 
 header[role=index] {
-  background-image: url(/images/self-portrait.jpg);
+  background-image: url(/images/brand/splash.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center center;
@@ -27,6 +27,14 @@ header[role=index] {
     color: inherit;
   }
 
+  @media #{$tablet} {
+    background-image: url(/images/brand/splash@2x.jpg);
+  }
+
+  @media #{$desktop} {
+    background-image: url(/images/brand/splash@3x.jpg);
+  }
+
   @media #{$tablet-up} {
     background-size: $header-bgImageSize;
     background-position: 3% 19%;
@@ -39,7 +47,6 @@ div.index-wrapper {
   text-align: left;
   color: $clr-headerFg;
   background-color: rgba($clr-headerBg, 0.85);
-  background-image: url(/images/iron_man_splash.gif);
   background-position: center 10%;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -48,7 +55,18 @@ div.index-wrapper {
   margin: 0rem auto;
   padding: 0.8rem 0rem;
 
+  h1 {
+    padding-left: 0.5rem;
+    font-size: 2.5rem;
+  }
+
+  // Edge-case: if the screen's too short; hide Tony.
+  @media (min-height: 30rem) {
+    background-image: none;
+  }
+
   @media #{$tablet-up} {
+    background-image: url(/images/iron_man_splash.gif);
     background-color: $white;
     color: $black;
     height: 100%;
@@ -62,15 +80,26 @@ div.index-wrapper {
     justify-content: flex-end;
     padding: 1rem;
 
+    h1, p {
+      margin: 0rem;
+      padding: 0rem;
+    }
+
     h1 {
       font-variant: small-caps;
-      margin: 0rem;
     }
 
     p {
-      margin: 0rem;
-      &:nth-child(1) { font-size: 1.6; }
-      &:nth-child(2) { font-size: 1.3; }
+      font-family: $font-serif;
+      font-size: 1.25rem;
+      color: lighten($black, 10%);
+
+      &:nth-child(1) {
+        font-size: 2.25rem;
+        font-family: $font-sans;
+      }
+
+      &:nth-child(2) { font-size: 1.75rem; }
     }
   }
 }
@@ -116,8 +145,8 @@ nav[role=index] {
 section.region {
   color: $white;
   min-height: 5rem;
-  text-align: center;
   align-content: center;
+  font-size: 1.2rem;
 
   a {
     color: $white;
@@ -129,7 +158,7 @@ section.region {
     }
   }
 
-  h1 { font-size:  2rem; }
+  // h1 { font-size: 2rem; }
 
   @media #{$mobile-up} {
     text-align: left;
