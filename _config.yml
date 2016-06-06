@@ -57,3 +57,12 @@ kramdown:
     - with_toc_data
     - prettify
 # }}}
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      components:
+        header: true
+        footer: true

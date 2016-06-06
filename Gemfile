@@ -21,6 +21,7 @@ group :jekyll_plugins do
   gem 'jekyll-tagging'
   gem 'jekyll-compose'
   gem 'jekyll-timeago'
+  gem 'jekyll-contentblocks'
   gem 'jekyll-git_metadata'
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-auto-image', '1.0.2'

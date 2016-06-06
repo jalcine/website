@@ -5,118 +5,132 @@ title: "My Gear"
 class: "gear"
 ---
 
-%section.lead
-  %h1 My Gear
-  :markdown
-    Here lies a page that's meant to label the things that I own and use to do
-    the stuff that I like doing like writing software or take pictures.
-
-%section.hardware
-  %h2
-    %a{name:"hardware"} Hardware
-  %address Updated March 4, 2015
-
-  %h3
-    %a{name:"laptop"} My Laptop
-  %p
+%section.parent-wrapper
+  %section.lead
+    %h1 My Gear
     :markdown
-      My laptop of choice is the [Dell XPS 14][laptop] with 500 GB of disk space,
-      32 GB SSD and a [Intel i7-3537U core][core]. With 8 GB SDDRAM3 @ 1.6 GHz,
-      it's relatively fast and gets the job done. Bluetooth's in there as well
-      and it has a backlit keyboard which really helps at night. It has a shoddy
-      web camera though, only 2 megapixels. The speakers, however, are amazing
-      (before I messed them up). They really boom despite them behind under the
-      laptop. And they're practically invisible. A nugget of gold about this
-      laptop? Under the bottom left corner of the keyboard, a button lights
-      up to five LEDs, letting you know how much power's left. More useful
-      then it should be!
-      ![Overhead shot of the Dell XPS 14 laptop, keyboard in focus](/images/dell-xps-14-keyboard-amzn.jpg)
-      [laptop]:http://amzn.com/B00HK8V4PU
-      [core]:http://ark.intel.com/products/72054/Intel-Core-i7-3537U-Processor-4M-Cache-up-to-3_10-GHz
+      Here lies a page that's meant to label the things that I own and use to do
+      the stuff that I like doing like writing software or take pictures.
 
-  %h3
-    %a{name:"camera"} My Cameras
-  %p
-    :markdown
-      Most of the shots I've taken come from my nifty [Nikon L830][l830]
-      since it's mostly automatic when it comes to handling. I really
-      just tweak ISO, white balance and focus with this camera.
-      However, the [Nikon D3200][d3200] handles a lot better, takes way better
-      shots but requires me to fiddle with it a bit more. This might be me
-      handling it incorrectly; we'll find out.
-      [l830]: http://amzn.com/B00HQ4W3X0
-      [d3200]: http://amzn.com/B009OAOG9S
-  %p
-    %img.image-half{src:"/images/nikon-l830-isoview.jpg",alt:"Isometric(ish) view of Nikon L830"}
-    %img.image-half{src:"/images/nikon-d3200.jpg",alt:"Isometric(ish) view of Nikon D3200"}
+  %section.hardware
+    %h2
+      %a{name:"hardware"} Hardware
+    %address Updated March 4, 2015
 
-  %h3
-    %a{name: "mouse"} Mouse
-  %p
-    :markdown
-      The cool kids are using track pads and what not. I not only like
-      sticking to my mouse, I use it on the left side. I've done this
-      for a long time (about 3 years now) and I noticed that I tend to
-      place drinks and food to the right side and having a moving target
-      over there was dangerous. So I invested in the [Logitech M150][mouse].
-      Best investment EVAH!
+    %h3
+      %a{name:"laptop"} My Laptop
+    %p
+      %img.image-half.pull-right{src:"/images/dell-xps-14-keyboard-amzn.jpg", alt:"Overhead shot of the Dell XPS 14 laptop, keyboard in focus"}
+      :markdown
+        My laptop of choice is the [Dell XPS 14][laptop] with 500 GB of disk space,
+        32 GB SSD and a [Intel i7-3537U core][core]. With 8 GB SDDRAM3 @ 1.6 GHz,
+        it's relatively fast and gets the job done. Bluetooth's in there as well
+        and it has a backlit keyboard which really helps at night. It has a shoddy
+        web camera though, only 2 megapixels. The speakers, however, are amazing
+        (before I messed them up). They really boom despite them behind under the
+        laptop. And they're practically invisible. A nugget of gold about this
+        laptop? Under the bottom left corner of the keyboard, a button lights
+        up to five LEDs, letting you know how much power's left. More useful
+        then it should be!
+        [laptop]:http://amzn.com/B00HK8V4PU
+        [core]:http://ark.intel.com/products/72054/Intel-Core-i7-3537U-Processor-4M-Cache-up-to-3_10-GHz
 
-      [mouse]: http://amzn.com/B003NR57BY
-      [mouse2]: https://apple.com/mouse
+    %h3
+      %a{name:"camera"} My Cameras
+    %p
+      :markdown
+        Most of the shots I've taken come from my nifty [Nikon L830][l830]
+        since it's mostly automatic when it comes to handling. I really
+        just tweak ISO, white balance and focus with this camera.
+        However, the [Nikon D3200][d3200] handles a lot better, takes way better
+        shots but requires me to fiddle with it a bit more. This might be me
+        handling it incorrectly; we'll find out.
+        [l830]: http://amzn.com/B00HQ4W3X0
+        [d3200]: http://amzn.com/B009OAOG9S
+    %p
+      %img.image-half.first{src:"/images/nikon-l830-isoview.jpg",alt:"Isometric(ish) view of Nikon L830"}
+      %img.image-half.second{src:"/images/nikon-d3200.jpg",alt:"Isometric(ish) view of Nikon D3200"}
 
-%section.software
-  %h2
-    %a{name:"software"} Software
-  %address Updated January 10, 2015
+    %h3
+      %a{name: "mouse"} Mouse
+    %address Update 2016-06-06
 
-  Most of the files for replicating my environment is over on Github for the
-  %a{href: "https://github.com/jalcine/dotfiles"} shell
-  and
-  %a{href: "https://github.com/jalcine/kderc"} KDE
-  repositories.
+    %p
+      :markdown
+        The cool kids are using track pads and what not. I not only like
+        sticking to my mouse, I use it on the left side. I've done this
+        for a long time (about 3 years now) and I noticed that I tend to
+        place drinks and food to the right side and having a moving target
+        over there was dangerous. So I invested in the [Logitech M150][mouse].
+        Best investment EVAH!
 
-  %h3 Terminal Emulator
-  %p
-    :markdown
-      I spend too much time in [Konsole][] after trying out things
-      like [FinalTerm][] and [GNOME Terminal][] on Linux machines.
-      Konsole supports more colors and is very flexible with glyph rendering.
-      I use the [Base 16 Ocean][clr] color scheme for the emulator.
-      It's not completely black in the background, but it's dark enough
-      to be a backdrop of sorts. The typeface used is [monoOne][] and it
-      works really well at size 9 **and** comes with Powerline symbol support.
+        ---
 
-      ![Snapshot](/images/konsole.png)
+        **Updated 2016-06-06 11:12:32 EDT**
 
-      [konsole]: https://konsole.kde.org/
-      [finalterm]: http://finalterm.org/
-      [gnome terminal]: https://wiki.gnome.org/Apps/Terminal
-      [clr]: https://github.com/chriskempson/base16/blob/master/scheme-previews/base16-ocean.svg
-      [monoOne]: https://github.com/madmalik/monoOne
+        So I gave that mouse away and instead went up a few models and got the
+        [Logitech M185][mouse3] in a bundle with a wireless keyboard - I had
+        complications with my onboard keyboard and needed this until I was able
+        to replace it.
 
-  %h3 Shell
-  %p
-    :markdown
-      As most developers might, I use [Bash][] as my default shell.
-      I use [homeshick][] to set up a system of shell configuration files for
-      [vim][], [git][], [tmux][] and [anything else that isn't big][dot]
-      enough to pull out into a separate repository.
+        [mouse]: http://amzn.com/B003NR57BY
+        [mouse2]: https://apple.com/mouse
+        [mouse3]: http://amzn.com/B004YAVF8I 
 
-      I use Vim as my primary text editor and like using [KDE][] software due to its
-      synergy. [KMail][], [KOrganizer][] and [Krita][] are all tools I use
-      too often. Despite all of that, I've picked up [i3][] as my primary window
-      manager. As a user of tmux and vim, this was the natural choice.
+  %section.software
+    %h2
+      %a{name:"software"} Software
+    %address Updated 2015-01-10
 
-      ![Snapshot](/images/snapshot270.png)
+    Most of the files for replicating my environment is over on Github for the
+    %a{href: "https://github.com/jalcine/dotfiles"} shell
+    and
+    %a{href: "https://github.com/jalcine/kderc"} KDE
+    repositories.
 
-      [bash]: https://www.gnu.org/software/bash/
-      [homeshick]: https://github.com/andsens/homeshick
-      [vim]: https://github.com/jalcine/vimrc
-      [git]: https://github.com/jalcine/gitrc
-      [tmux]: https://github.com/jalcine/tmuxrc
-      [dot]: https://github.com/jalcine/dotfiles
-      [i3]: http://i3wm.org/
-      [kmail]: https://www.kde.org/applications/internet/kmail/
-      [korganizer]: https://userbase.kde.org/KOrganizer
-      [krita]: http://krita.org/
-      [kde]: http://kde.org
+    %h3 Terminal Emulator
+    %p
+      :markdown
+        I spend too much time in [Konsole][] after trying out things
+        like [FinalTerm][] and [GNOME Terminal][] on Linux machines.
+        Konsole supports more colors and is very flexible with glyph rendering.
+        I use the [Base 16 Ocean][clr] color scheme for the emulator.
+        It's not completely black in the background, but it's dark enough
+        to be a backdrop of sorts. The typeface used is [monoOne][] and it
+        works really well at size 9 **and** comes with Powerline symbol support.
+
+        ![Snapshot](/images/konsole.png)
+
+        [konsole]: https://konsole.kde.org/
+        [finalterm]: http://finalterm.org/
+        [gnome terminal]: https://wiki.gnome.org/Apps/Terminal
+        [clr]: https://github.com/chriskempson/base16/blob/master/scheme-previews/base16-ocean.svg
+        [monoOne]: https://github.com/madmalik/monoOne
+
+    %h3 Shell
+    %p
+      :markdown
+        I use [Bash][] as my default shell. Judge me :grin:
+
+        I use [homeshick][] to set up a system of shell configuration files for
+        [vim][], [git][], [tmux][] and [anything else that isn't big][dot]
+        enough to pull out into a separate repository.
+
+        I use Vim as my primary text editor and like using [KDE][] software due to its
+        synergy. [KMail][], [KOrganizer][] and [Krita][] are all tools I use
+        too often. Despite all of that, I've picked up [i3][] as my primary window
+        manager. As a user of tmux and vim, this was the natural choice.
+
+        ![Snapshot](/images/snapshot270.png)
+
+        [bash]: https://www.gnu.org/software/bash/
+        [homeshick]: https://github.com/andsens/homeshick
+        [vim]: https://github.com/jalcine/vimrc
+        [git]: https://github.com/jalcine/gitrc
+        [tmux]: https://github.com/jalcine/tmuxrc
+        [dot]: https://github.com/jalcine/dotfiles
+        [i3]: http://i3wm.org/
+        [kmail]: https://www.kde.org/applications/internet/kmail/
+        [korganizer]: https://userbase.kde.org/KOrganizer
+        [krita]: http://krita.org/
+        [kde]: http://kde.org

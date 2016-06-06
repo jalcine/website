@@ -4,10 +4,10 @@
   <head>
     {% include head.html %}
   </head>
-  <body{% if page.class %} class="{{ page.class }}"{% endif %}>
-    {% if page.components.header == "true" %}{% include header.html %}{% endif %}
+  <body{% unless page.class == '' %} class="{{ page.class }}"{% endunless %}>
+    {% if page.components.header == true %}{% include header.html %}{% endif %}
     {{ content }}
-    {% if page.components.footer == "true" %}{% include footer.html %}{% endif %}
+    {% if page.components.footer == true %}{% include footer.html %}{% endif %}
     {% include javascript.html %}
   </body>
 </html>

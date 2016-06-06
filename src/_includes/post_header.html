@@ -1,35 +1,34 @@
 {% if page.image and page.image != 'none' %}
-  <header role="post" class="image" style="background-image: url('{{ page.image }}');">
+<header role="post" class="image" style="background-image: url('{{ page.image }}');">
 {% else %}
-  <header role="post">
+<header role="post">
 {% endif %}
-  <h1 class="sift-to-left">
-    <a href="{{ page.url }}">
-      {{ include.title || page.title }}
-    </a>
+  <h1 class="post-title">
+    <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
   </h1>
-  {% if page.byline %}<h3 class="text-small">{{ page.byline }}</h3>{% endif %}
+  {% if page.byline %}
+    <h2 class="post-byline">
+      {{ page.byline }}
+    </h2>
+  {% endif %}
 </header>
 <aside role="stats">
-  <span>
-    {{ page.content | number_of_words | intcomma }} words,
-    {{ page.content | reading_time }}
-  </span>
-  <br />
-  <span>
-    written <a href="{{ page.url }}"><strong>{{ page.date | date_to_rfc822 }}</strong></a>
-    {% if page.revised %}, updated <strong>{{ page.revised | date_to_rfc822 }}</strong>{% endif %}
-    {% if page.location %}in <strong>{{ page.location }}</strong>{% endif %}
-  </span>
-  <br />
-  <span>
-    tagged under <strong>{{ page.tags | linkify_tags }}</strong>
-  </span>
-  <br />
-  <span>{% if page.category %}a <strong>{{ page.category }}</strong> post{% endif %}</span>
+  <ul>
+    <li><strong>{{ page.content | strip_html | number_of_words | intcomma }}</strong> words</li>
+    <li>{{ page.content | reading_time }} long</li>
+    <li>
+      Written <strong>{{ page.date | date_to_rfc822 }}</strong>
+      {% if page.revised %}, updated <strong>{{ page.revised | date_to_rfc822 }}</strong>{% endif %}
+      {% if page.location %}in <strong>{{ page.location }}</strong>{% endif %}
+    </li>
+    <li>tagged under <strong>{{ page.tags | linkify_tags }}</strong></li>
+    {% if page.category %}
+      <li>a <strong>{{ page.category }}</strong> post</li>
+    {% endif %}
+  </ul>
+</aside>
 {% if page.description %}
-  <blockquote>
+  <blockquote class="quick-description">
     {{ page.description | markdownify }}
   </blockquote>
 {% endif %}
-</aside>

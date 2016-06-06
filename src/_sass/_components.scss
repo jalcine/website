@@ -1,24 +1,32 @@
 hr {
   color: #999;
-  border: 1px solid transparent;
+  background-color: #999;
 }
 
 figure.captioned-image {
-  margin-top: -2rem;
-  display: inline-block;
-  float: right;
+  width: 100%;
+  display: block;
 
   img {
     margin: 0rem auto;
     display: block;
+    width: 100%;
   }
 
   figcaption {
     display: block;
-    font-size: small;
+    font-size: 0.8rem;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  @media #{$tablet-up} {
+    width: auto;
+    display: inline-block;
+    float: right;
+    max-width: 35vw;
+    margin: 0.5rem;
   }
 }
 
@@ -27,3 +35,23 @@ video {
   margin: 0rem auto;
 }
 
+img.image-half {
+  width: 80%;
+  display: block;
+  margin: 0.5rem 10%;
+
+  @media #{$tablet-up} {
+    width: 48%;
+    margin: 0rem auto;
+
+    &.first {
+      display: inline-block;
+      margin-right: 0rem;
+    }
+
+    &.second {
+      display: inline-block;
+      margin-left: 0rem;
+    }
+  }
+}

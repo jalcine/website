@@ -16,11 +16,16 @@ header.main {
 }
 
 img {
-  height: $header-height;
-  border-radius: 50%;
-  vertical-align: middle;
-  margin: 0.3rem;
-  transition: 0.3s color;
+  &.header-logo {
+    height: $header-height;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0.3rem;
+    transition: 0.3s color;
+  }
+
+  &.emoji {
+  }
 }
 
 aside.main {
@@ -63,3 +68,19 @@ nav.main {
     }
   }
 }
+
+section.parent-wrapper {
+  max-width: $max-page-width;
+  margin: 0rem auto;
+  padding: 0rem 0.5rem;
+
+  img {
+    max-width: 100%;
+  }
+
+  section.larger {
+    font-size: 120%;
+  }
+}
+
+.pull-right { float: right; }

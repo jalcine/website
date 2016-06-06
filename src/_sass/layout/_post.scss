@@ -1,6 +1,9 @@
-header[role=post], footer[role=post] {
+header[role=post],
+main[role=post],
+footer[role=post] {
   padding: 0.5rem 0rem;
   margin: 0.75rem 0.5rem 1.5rem;
+  max-width: $max-page-width;
 }
 
 header.image[role=post] {
@@ -28,10 +31,11 @@ header.image[role=post] {
   }
 }
 
-header[role=post], main[role=post],
-footer[role=post], aside[role=stats] {
-  max-width: $max-page-width;
-  margin: 0rem auto;
+aside[role=stats] {
+  float: right;
+  border: 1px solid #555;
+  padding: 0.5rem;
+  margin: 0.1rem 1.5rem;
 }
 
 main[role=post] {
@@ -42,38 +46,47 @@ main[role=post] {
   }
 }
 
+h1.post-title {
+  font-size: 4rem;
+}
+
+h2.post-byline {
+  color: lighten($black, 40%);
+}
+
 footer[role=post] {
   background-color: $black;
   color: $white;
   text-align: center;
-  font-size: 0.5rem;
-  padding: auto 0.5rem;
+  padding: auto 0.125rem;
 }
 
-body.pagination {
-  section[role=entries] {
-    max-width: $max-page-width;
+section[role=entries] {
+  ul {
+    max-width: ($max-page-width / 5) * 4;
     margin: 0rem auto;
+    padding: 0.25rem 0rem;
 
-    ul {
-      max-width: ($max-page-width / 5) * 4;
-      margin: 0rem auto;
-      padding: 0.25rem;
+    li {
+      list-style: square;
+      margin: 0.25rem 0rem 0.5rem;
+      padding: 0rem;
+      color: lighten($black, 10%);
 
-      li {
-        list-style: none;
+      a {
+        display: inline;
+        clear: both;
+      }
 
-        a {
-          display: inline;
-          clear: both;
-        }
-
-        time {
-          font-size: 0.75rem;
-          color: $gray;
-          line-height: 1.5rem;
-        }
+      time {
+        font-size: 0.75rem;
+        color: $gray;
+        line-height: 1.5rem;
       }
     }
   }
+}
+
+div.footnotes {
+  font-size: 0.7rem;
 }
