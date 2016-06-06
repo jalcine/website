@@ -1,12 +1,13 @@
+{% unless page.class %}{% assign page.class = '' %}{% endunless %}
 <!DOCTYPE HTML>
 <html lang="en_US">
   <head>
     {% include head.html %}
   </head>
-  <body class="{{ page.class || '' }}">
-    {% unless page.no_header %}{% include header.html %}{% endunless %}
+  <body{% if page.class %} class="{{ page.class }}"{% endif %}>
+    {% if page.components.header == "true" %}{% include header.html %}{% endif %}
     {{ content }}
-    {% unless page.no_footer %}{% include footer.html %}{% endunless %}
+    {% if page.components.footer == "true" %}{% include footer.html %}{% endif %}
     {% include javascript.html %}
   </body>
 </html>

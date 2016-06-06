@@ -1,19 +1,4 @@
-$font-webSans: "Roboto";
-$font-webSerif: "Roboto Slab";
-$font-webMono: "Inconsolata";
-$font-sans: sans-serif;
-$font-serif: serif;
-$font-mono: "Courier New", monospace;
-$font-headingSize: 3rem;
-$font-weightLight: 100;
-$font-weightNormal: 400;
-$font-weightHeavy: 700;
-
-html.wf-active {
-  body { font-family: $font-webSerif; }
-  h1, h2, h3, h4, h5, h6 { font-family: $font-webSans; }
-  pre, code, kbd { font-family: $font-webMono; }
-}
+@import 'options';
 
 body {
   font-family: $font-sans;
@@ -29,10 +14,10 @@ body {
     content: "";
     width: 100%;
     height: 0.125rem;
-    bottom: 0;
     position: absolute;
     left: 0;
-    top: 85%;
+    top: 100%;
+    bottom: 0;
     background-color: $clr-LinkForeground;
     visibility: hidden;
     transform: scaleX(0);
@@ -48,73 +33,105 @@ body {
 }
 
 ol, ul {
-  margin: 0.5rem auto;
-  padding: 0.5rem;
-  padding-left: 1rem;
+  margin: 0.5rem 0.2rem;
+  padding: 0 0 0 1rem;
 }
 
-ul > li { list-style: disc; }
-ol > li { list-style: decimal; }
+ul > li {
+  list-style: square;
+}
+
+ol > li {
+  list-style: decimal;
+}
+
+li {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
 
 pre, code, kbd {
   font-family: $font-mono;
 }
 
-em { font-style: italic; }
-strong { font-weight: $font-weightHeavy; }
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: $font-weightHeavy;
+}
+
+small {
+  font-size: 0.8rem;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weightHeavy;
   font-family: $font-serif;
-  margin: 0.5rem 0rem;
+  margin: 0.5rem 0;
 
   a {
     @extend .link;
-    color: $clr-TextForeground;
+    color: inherit;
   }
 }
 
 // Headings {
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 2.25rem; }
-h4 { font-size: 2rem; }
-h5 { font-size: 1.75rem; }
-h6 { font-size: 1.5rem; }
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+h4 { 
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.75rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
 
 // }
 
-li {
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px;
-}
-
-li, p {
+p {
+  @extend li;
   margin: 0.75rem 0.25rem;
   line-height: 1.5;
-  font-size: 1.1rem;
+  font-size: 1.2;
 
   &.lead {
     font-size: 1.5rem;
-    line-height: 1.2;
-  }
-
-  @media #{$desktop} {
-    &.wrapped {
-      width: 60%;
-    }
   }
 }
 
-blockquote {
-  border: 1px solid $black;
-  border-left: 2px solid $navy;
-  padding: 0.5rem 0.5rem 0.5rem 1.5rem;
-  margin: 1.5rem;
-  background-color: darken($white, 10%);
-  color: $black;
-  font-size: 0.85rem;
+/// ==============================================
+/// Web font specifics ========================= {
+html.wf-active {
+  body {
+    font-family: $font-webSerif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-webSans;
+  }
+
+  pre, code, kbd {
+    font-family: $font-webMono;
+  }
 }
+/// ============================================ }

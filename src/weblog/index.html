@@ -20,15 +20,12 @@ excerpt: |
   <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}" title="{{ post.title }}">
-        {{ post.title }}
-      </a>
+      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       {% if post.tagline %}
         <h6>{{ post.tagline }}</h6>
       {% endif %}
       <time datetime="{{ post.date }}">{{ post.date | date: "%b %d %y" }}</time>
       {% if post.category %}
-        &mdash;
         <small><strong>{{ post.category }}</strong></small>
       {% endif %}
       {% if post.excerpt %}

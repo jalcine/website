@@ -12,5 +12,3 @@ $tablet-up: "only screen and (min-width:#{$tablet-screen})";
 $desktop: "only screen and (min-width:#{$desktop-screen})";
 $landscape: "only screen and (orientation: landscape)";
 $portrait: "only screen and (orientation: portrait)";
-
-/* FIXME: Add jazz for portrait views. */

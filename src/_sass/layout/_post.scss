@@ -63,7 +63,16 @@ body.pagination {
       li {
         list-style: none;
 
-        a { display: block; }
+        a {
+          display: inline;
+          clear: both;
+        }
+
+        time {
+          font-size: 0.75rem;
+          color: $gray;
+          line-height: 1.5rem;
+        }
       }
     }
   }

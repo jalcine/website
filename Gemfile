@@ -36,6 +36,7 @@ group :web do
   gem 'rack-livereload', require: 'rack/livereload'
   gem 'sass'
   gem 'haml'
+  gem 'susy'
 end
 
 group :deployment do

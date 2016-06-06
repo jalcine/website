@@ -2,16 +2,6 @@
 
 $header-height: 4rem;
 
-main.wrapped {
-  max-width: $max-page-width;
-  margin: 0rem auto;
-  padding: 0rem 0.5rem;
-
-  @media #{$desktop} {
-    padding: 0rem;
-  }
-}
-
 header.main {
   display: flex;
   flex-direction: column;
@@ -20,60 +10,55 @@ header.main {
   width: 100%;
   background-color: $black;
 
-  > section {
+  aside, nav {
     display: flex;
   }
+}
 
-  > section:nth-child(1) {
-    text-align: center;
-    > a {
-      width: 5rem;
-      height: $header-height;
-      line-height: $header-height;
-      display: block;
-      overflow: hidden;
-      transition: 0.3s all;
+img {
+  height: $header-height;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0.3rem;
+  transition: 0.3s color;
+}
 
-      > img {
-        height: $header-height;
-        border-radius: 50%;
-        vertical-align: top;
-        margin: 0rem 0.3rem;
-        transition: 0.3s all;
-        animation-delay: 0.2s;
-      }
+aside.main {
+  text-align: center;
 
-      &:hover {
-        width: 10.5rem;
-        background-color: $white;
-        color: $black;
+  a {
+    height: $header-height;
+    line-height: $header-height;
+    display: block;
+    transition: 0.3s color;
+    color: lighten($black, 20%);
 
-        > img {
-          border-radius: 0rem;
-          margin-left: 0rem;
-        }
-      }
+    &:hover {
+      color: $white;
 
-      &::before { background-color: transparent; }
+      > img { opacity: 0.6; }
     }
+
+    &::before { background-color: transparent; }
   }
+}
 
-  > section:nth-child(2) {
-    > ul {
+nav.main {
+  ul {
+    display: inline;
+    margin: 0rem;
+    padding: 0rem;
+
+    > li {
+      list-style: none;
       display: inline;
-      margin: 0rem;
-      padding: 0rem;
+      line-height: $header-height;
 
-      > li {
-        list-style: none;
-        display: inline;
-        line-height: $header-height;
+      a {
+        color: $white;
+        margin: 0.2rem 0.25rem;
 
-        a {
-          color: $white;
-
-          &::before { background-color: $white; }
-        }
+        &::before { background-color: $white; }
       }
     }
   }
