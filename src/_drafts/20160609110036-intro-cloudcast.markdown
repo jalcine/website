@@ -1,7 +1,6 @@
 ---
 title: "Building Cloudcast"
 byline: "Adventures with ES6, Ember and building API wrappers"
-date: 2015-07-31 08:01:07 EDT
 category: projects
 tags:
   - ember
@@ -23,11 +22,11 @@ spending $12 a month for the service, I know quite a few people who use
 up listening to are stored on Soundcloud. That, coupled with the fact that I
 don't have Soundcloud installed on my Android or iOS devices makes it a bit
 complicated for listening. The services _does_ provide a means of connecting a
-[SoundCloud account to iTunes for podcasting][1], but I don't use iTunes on my Linux
-laptop. Coupled with the fact that Soundcloud has a dedicated but implicit [portal
-for podcasting][2] behind a pay wall (for the content producers), most of these
-services don't make it easy for me to import the content into something like
-[gpodder][] or [Amarok][].
+[SoundCloud account to iTunes for podcasting][1], but I don't use iTunes on my
+Linux laptop. Coupled with the fact that Soundcloud has a dedicated but 
+implicit [portal for podcasting][2] behind a pay wall (for the content
+producers), most of these services don't make it easy for me to import
+the content into something like [gpodder][] or [Amarok][].
 
 ## Building from Nothing
 

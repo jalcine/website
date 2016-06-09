@@ -3,7 +3,11 @@ layout: post
 title: "Recovering My Primary Machine"
 date: 2015-05-04 04:41:57 EDT
 category: thoughts
-
+tags:
+  - recovery
+  - laptop
+  - personal
+  - hardware
 ---
 
 I've designated my current laptop (at the time of writing) `stark`, for its
@@ -68,7 +72,7 @@ Live long and prosper!
 
 [^1]: A Western Digital drive, if that matters.
 [^2]: Private clouds and on-demand caching FTW!
-[^3]: I spend a lot of time outside, either in cafes or libraries. Thus, having my laptop with me is, without a doubt, a must.
+[^3]: I spend a lot of time outside, either in cafés or libraries. Thus, having my laptop with me is, without a doubt, a must.
 [^4]: Currently using a crap-ton of Git repositories via [homeshick][].
 [^5]: Please encrypt the password database before moving to another storage medium.
 [1]: https://duckduckgo.com/?q=LUKS

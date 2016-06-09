@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Testing and Checking Code in Neovim === ❤️
-date: 2016-05-07 19:40:11 PDT
+title: "Testing and Checking Code in Neovim === ❤️"
 category: vim
 tags:
   - neovim
@@ -19,10 +18,10 @@ This is going to highlight the capabilities of two plugins in particular;
 
 ## Understanding neomake
 
-[neomake][] aims to be the Neovim-orientated quivalent of [Syntastic][].
+[neomake][] aims to be the Neovim-orientated equivalent of [Syntastic][].
 `neomake` _is_ lacking in a few of the "checkers" that `syntastic` provides
 but for my particular use-case, this isn't a problem nor would it be a
-permanent one, provided that syntastic checkers and neomake checkers follow a
+permanent one, provided that syntastic checkers and `neomake` checkers follow a
 common format in definition.
 
 > I won't go over [setting up `neomake` here][3]; this is a blog post, not a Wiki!
@@ -53,7 +52,7 @@ to pass to the underlying checkers for the buffer's filetype.
 
 _This_ part is similar to what `syntastic` does. The difference here now is how
 `neomake` takes advantage of Neovim's [job control][6]. In short, job control in
-Vim is a means to handle **multitasking** work in Vimscript. This allows neomake to
+Vim is a means to handle **multitasking** work in VimScript. This allows neomake to
 execute as many checkers as possible in the background and report status updates when
 it's completed. This is handy for large files or even checkers that can be run
 using a network.
@@ -98,7 +97,7 @@ execution of a provided test suite's command is called a
 have it run in tmux, iTerm's separate worker support or even externally.
 
 Strategies can allow for flexible execution of tests, even sending them to a
-remote machine if necessary so that your machine is alleivated of load. This
+remote machine if necessary so that your machine is alleviated of load. This
 remote execution can be done using [transformations][12].
 
 [1]: {% post_url 2015-08-05-moving-to-neovim %}
@@ -116,4 +115,3 @@ remote execution can be done using [transformations][12].
 [neomake]: https://github.com/benekastah/neomake
 [syntastic]: https://github.com/scrooloose/syntastic/
 [vim-test]: https://github.com/janko-m/vim-test/
-[^1]: That
