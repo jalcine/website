@@ -1,5 +1,3 @@
-require 'mina/bundler'
-require 'mina/rbenv'
 require 'mina/scp'
 require 'dotenv'
 
@@ -13,17 +11,14 @@ set :keep_releases, 10
 set :shared_paths, ['images']
 
 set :user, ENV['JALCINE_DEPLOY_USER']
-set :forward_agent, true
-
-task :environment do
-  invoke :'rbenv:load'
-end
+# set :forward_agent, true
 
 task :upload do
   ssh "mkdir -p #{deploy_to}/tmp-scp"
   scp_upload("-v #{Dir.pwd}/_site/*", "#{deploy_to}/tmp-scp",
              recursively: true,
-             verbose: true)
+             verbose: true,
+             identity_file: '~/.ssh/keys/jalcine.pem.pub')
   queue "cp -vr #{deploy_to}/tmp-scp/* ."
 end
 
