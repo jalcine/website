@@ -2,14 +2,17 @@
 
 $header-height: 4rem;
 
-header.main {
+header.main, footer.main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.75rem 0rem 0rem;
+  padding: 0.75rem 0rem;
   width: 100%;
   background-color: $black;
+  color: $white;
+}
 
+header.main {
   aside, nav {
     display: flex;
   }
@@ -24,8 +27,17 @@ img {
     transition: 0.3s color;
   }
 
-  &.emoji {
+  &.padded {
+    max-width: 100%;
+    margin: 1.5rem auto;
+    display: block;
+    clear: both;
   }
+}
+
+footer.main {
+  padding: 1.5rem 0rem;
+  font-size: 1.25rem;
 }
 
 aside.main {

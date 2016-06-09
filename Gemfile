@@ -20,6 +20,7 @@ group :jekyll_plugins do
   gem 'jekyll-haml'
   gem 'jekyll-tagging'
   gem 'jekyll-compose'
+  gem 'jekyll-paginate'
   gem 'jekyll-timeago'
   gem 'jekyll-contentblocks'
   gem 'jekyll-git_metadata'

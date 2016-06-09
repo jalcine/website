@@ -3,105 +3,106 @@ layout: default
 title: "GPG Info"
 ---
 
-%h1 GPG Information for Jacky Alcine
+%section.parent-wrapper
+  %h1 GPG Information for Jacky Alcine
 
-%blockquote
-  At the time of writing, 2015-03-29 22:13:57 EDT, the following information
-  about my GPG setup is said to be true. I've used the word REDACTED to indicate
-  information about the keys that I don't want to share.
+  %blockquote
+    At the time of writing, 2015-03-29 22:13:57 EDT, the following information
+    about my GPG setup is said to be true. I've used the word REDACTED to indicate
+    information about the keys that I don't want to share.
 
-%h2#current Current Key
-%p
-  My public facing key for most Internet activities is as follows:
-  %code A826 B139 0E3B B730 7058  F32B 58F9 4BCE E02A D2C4
-  You can download the
-  %a{href: "/jalcine-e02ad2c4.gpg.asc", target: "_blank"}
-    public key
-  \. As mentioned below, my primary key's set to expire July 2, 2016.
+  %h2#current Current Key
+  %p
+    My public facing key for most Internet activities is as follows:
+    %code A826 B139 0E3B B730 7058  F32B 58F9 4BCE E02A D2C4
+    You can download the
+    %a{href: "/jalcine-e02ad2c4.gpg.asc", target: "_blank"}
+      public key
+    \. As mentioned below, my primary key's set to expire July 2, 2016.
 
-%pre
-  :plain
-    pub   4096R/E02AD2C4 2016-04-03 [expires: 2016-07-02]
-    uid       [ultimate] Jacky Alcine <jacky.is@black.af>
-    uid       [ultimate] Jacky Alcine <gpg@jacky.wtf>
-    uid       [ultimate] Jacky Alcine <yo@jacky.wtf>
-    uid       [ultimate] Jacky Alcine <damn.you@black.af>
-    sub   4096R/AA65CE0A 2016-04-03 [expires: 2016-07-02]
+  %pre
+    :plain
+      pub   4096R/E02AD2C4 2016-04-03 [expires: 2016-07-02]
+      uid       [ultimate] Jacky Alcine <jacky.is@black.af>
+      uid       [ultimate] Jacky Alcine <gpg@jacky.wtf>
+      uid       [ultimate] Jacky Alcine <yo@jacky.wtf>
+      uid       [ultimate] Jacky Alcine <damn.you@black.af>
+      sub   4096R/AA65CE0A 2016-04-03 [expires: 2016-07-02]
 
-%h2#expired Expired or Invalid Keys
+  %h2#expired Expired or Invalid Keys
 
-%p
-  Everyone fucks up with technology, even more so with GPG. Here's some keys
-  to be cautious of if you see them in use.
+  %p
+    Everyone fucks up with technology, even more so with GPG. Here's some keys
+    to be cautious of if you see them in use.
 
-%h4
-  %code A1A5 A0EB B69F 23AE 67B6  F914 2A23 4ABC 6E76 7393
-%p
-  Don't ask. I just fucked it up.
+  %h4
+    %code A1A5 A0EB B69F 23AE 67B6  F914 2A23 4ABC 6E76 7393
+  %p
+    Don't ask. I just fucked it up.
 
-%h4
-  %code= "1B93 75B3 9BB6 EFA2 A3C7 7B61 FCA8 D82A E599 5FD9"
-%p
-  I used this a key a lot to sign bunch of Wintermute's old code trees and
-  projects I had stored up in archives on Ubuntu Launchpad. All of those have
-  since been retired and kept here for reference purposes.
-%pre
-  :plain
-    pub   4096R/E5995FD9 2013-06-29 [expires: 2015-06-29]
-          Key fingerprint = 1B93 75B3 9BB6 EFA2 A3C7  7B61 FCA8 D82A E599 5FD9
-    uid       [ REDACTED] Jacky Alcine (jalcine) (me@jalcine.me)
-    uid       [ REDACTED] Jacky Alcine (Primary, internal e-mail address.) (jackyalcine@gmail.com)
-    uid       [ REDACTED] Jacky Alcine (GPG access to personal for Synthetic Intellect Institute) (jacky.alcine@thesii.org)
-    sub   4096R/29263C66 2013-06-29 [expires: 2015-06-29]
+  %h4
+    %code= "1B93 75B3 9BB6 EFA2 A3C7 7B61 FCA8 D82A E599 5FD9"
+  %p
+    I used this a key a lot to sign bunch of Wintermute's old code trees and
+    projects I had stored up in archives on Ubuntu Launchpad. All of those have
+    since been retired and kept here for reference purposes.
+  %pre
+    :plain
+      pub   4096R/E5995FD9 2013-06-29 [expires: 2015-06-29]
+            Key fingerprint = 1B93 75B3 9BB6 EFA2 A3C7  7B61 FCA8 D82A E599 5FD9
+      uid       [ REDACTED] Jacky Alcine (jalcine) (me@jalcine.me)
+      uid       [ REDACTED] Jacky Alcine (Primary, internal e-mail address.) (jackyalcine@gmail.com)
+      uid       [ REDACTED] Jacky Alcine (GPG access to personal for Synthetic Intellect Institute) (jacky.alcine@thesii.org)
+      sub   4096R/29263C66 2013-06-29 [expires: 2015-06-29]
 
-%h3
-  Other Keys
-%p
-  These keys were generated and published but personally, I don't remember
-  why or what I generated them.
+  %h3
+    Other Keys
+  %p
+    These keys were generated and published but personally, I don't remember
+    why or what I generated them.
 
-%pre
-  :plain
-    pub   4096R/84A854E3 2010-08-23
-          Key fingerprint = 6695 EC69 2AE7 471C A214  A87A 34A2 8567 84A8 54E3
-    uid       [ REDACTED] Jacky Alcine (Primary OpenPGP key.) (jackyalcine@gmail.com)
-    uid       [ REDACTED] [jpeg image of size 4051]
-    sub   4096R/6ED364AD 2010-08-23
+  %pre
+    :plain
+      pub   4096R/84A854E3 2010-08-23
+            Key fingerprint = 6695 EC69 2AE7 471C A214  A87A 34A2 8567 84A8 54E3
+      uid       [ REDACTED] Jacky Alcine (Primary OpenPGP key.) (jackyalcine@gmail.com)
+      uid       [ REDACTED] [jpeg image of size 4051]
+      sub   4096R/6ED364AD 2010-08-23
 
-%pre
-  :plain
-    pub   4096R/46B4D0CF 2011-11-16
-          Key fingerprint = 1D46 A46D CE04 AED1 C7B8  1B87 986A C307 46B4 D0CF
-    uid       [ REDACTED] Jacky Alcine (Standard key for Encrypting) (jackyalcine@gmail.com)
-    sub   4096R/00574CF1 2011-11-16
+  %pre
+    :plain
+      pub   4096R/46B4D0CF 2011-11-16
+            Key fingerprint = 1D46 A46D CE04 AED1 C7B8  1B87 986A C307 46B4 D0CF
+      uid       [ REDACTED] Jacky Alcine (Standard key for Encrypting) (jackyalcine@gmail.com)
+      sub   4096R/00574CF1 2011-11-16
 
-%pre
-  :plain
-    pub   4096R/31C6B309 2011-02-07
-          Key fingerprint = 406D 47C6 87C5 708A 4D9B  CF17 12BC 9429 31C6 B309
-    uid       [ REDACTED] Jacky Alcine (Standard PGP Key) (jackyalcine@gmail.com)
+  %pre
+    :plain
+      pub   4096R/31C6B309 2011-02-07
+            Key fingerprint = 406D 47C6 87C5 708A 4D9B  CF17 12BC 9429 31C6 B309
+      uid       [ REDACTED] Jacky Alcine (Standard PGP Key) (jackyalcine@gmail.com)
 
-%pre
-  :plain
-    pub   4096R/96226D09 2012-02-18
-          Key fingerprint = FD18 E73A D2E5 E932 58A7  20EC 37F8 731F 9622 6D09
-    uid       [ REDACTED] Jacky Alcine (jackyalcine@gmail.com)
-    uid       [ REDACTED] Jacky Alcine (jacky.alcine@thesii.org)
-    sub   1024R/7DA4AB9E 2012-02-18
+  %pre
+    :plain
+      pub   4096R/96226D09 2012-02-18
+            Key fingerprint = FD18 E73A D2E5 E932 58A7  20EC 37F8 731F 9622 6D09
+      uid       [ REDACTED] Jacky Alcine (jackyalcine@gmail.com)
+      uid       [ REDACTED] Jacky Alcine (jacky.alcine@thesii.org)
+      sub   1024R/7DA4AB9E 2012-02-18
 
-%h1#ref Reference Material
-%p
-  Here are some links of sites you can visit to learn more about PGP.
-  I use a Linux machine, but I do try to show love for other platforms.
+  %h1#ref Reference Material
+  %p
+    Here are some links of sites you can visit to learn more about PGP.
+    I use a Linux machine, but I do try to show love for other platforms.
 
-:markdown
-  + The EFF's guide to PGP for [Linux][gpg-lin], [Windows][gpg-win]
-    and [OS X][gpg-osx].
-  + [Understanding Public Key Encryption][pkc-pgp] from the EFF
-  + [GPG Tutorial][gpg-tut] by Alan Eliasen.
+  :markdown
+    + The EFF's guide to PGP for [Linux][gpg-lin], [Windows][gpg-win]
+      and [OS X][gpg-osx].
+    + [Understanding Public Key Encryption][pkc-pgp] from the EFF
+    + [GPG Tutorial][gpg-tut] by Alan Eliasen.
 
-  [gpg-lin]: https://ssd.eff.org/en/module/how-use-pgp-linux
-  [gpg-win]: https://ssd.eff.org/en/module/how-use-pgp-windows-pc
-  [gpg-osx]: https://ssd.eff.org/en/module/how-use-pgp-mac-os-x
-  [pkc-pgp]: https://ssd.eff.org/en/module/introduction-public-key-cryptography-and-pgp
-  [gpg-tut]: https://futureboy.us/pgp.html
+    [gpg-lin]: https://ssd.eff.org/en/module/how-use-pgp-linux
+    [gpg-win]: https://ssd.eff.org/en/module/how-use-pgp-windows-pc
+    [gpg-osx]: https://ssd.eff.org/en/module/how-use-pgp-mac-os-x
+    [pkc-pgp]: https://ssd.eff.org/en/module/introduction-public-key-cryptography-and-pgp
+    [gpg-tut]: https://futureboy.us/pgp.html

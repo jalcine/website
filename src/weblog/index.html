@@ -17,21 +17,22 @@ excerpt: >
     from 2009 on but  that's another lifetime ago.
   </p>
 
+  <h3>Posts</h3>
   <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-      {% if post.tagline %}
-        <h6>{{ post.tagline }}</h6>
-      {% endif %}
-      <time datetime="{{ post.date }}">{{ post.date | date: "%b %d %y" }}</time>
-      {% if post.category %}
-        <small><strong>{{ post.category }}</strong></small>
-      {% endif %}
-      {% if post.excerpt %}
-        <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 80 }}</p>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        {% if post.tagline %}
+          <h6>{{ post.tagline }}</h6>
+        {% endif %}
+        <time datetime="{{ post.date }}">{{ post.date | date: "%b %d %y" }}</time>
+        {% if post.category %}
+          <small><strong>{{ post.category }}</strong></small>
+        {% endif %}
+        {% if post.excerpt %}
+          <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 80 }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 </section>

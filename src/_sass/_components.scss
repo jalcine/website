@@ -1,6 +1,10 @@
 hr {
-  color: #999;
+  color: transparent;
   background-color: #999;
+  width: 80%;
+  display: block;
+  max-width: ($max-page-width / 5) * 2;
+  margin: 0rem auto;
 }
 
 figure.captioned-image {

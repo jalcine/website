@@ -12,6 +12,7 @@
     </h2>
   {% endif %}
 </header>
+
 <aside role="stats">
   <ul>
     <li><strong>{{ page.content | strip_html | number_of_words | intcomma }}</strong> words</li>
@@ -27,6 +28,7 @@
     {% endif %}
   </ul>
 </aside>
+
 {% if page.description %}
   <blockquote class="quick-description">
     {{ page.description | markdownify }}

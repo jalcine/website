@@ -3,3 +3,22 @@
 .instagram-media {
   @extend video;
 }
+
+.embed {
+  margin: 2rem auto;
+  display: block;
+  clear: both;
+
+  .twitter-tweet {
+    width: 60%;
+    margin: 0rem auto;
+    background-color: $clr-TwitterBlue;
+    color: $clr-TwitterBlack;
+    border: 0.2rem solid darken($clr-TwitterBlue, 10%);
+    padding: 0.5rem;
+
+    p { margin: 0; }
+
+    a { color: $white; }
+  }
+}

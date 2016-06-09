@@ -105,7 +105,7 @@ email or Twitter. Let's see if I can keep this up :running:!
 [link:1]: http://talkingpointsmemo.com/edblog/some-initial-thoughts
 [link:2]: http://www.wired.com/2015/09/google-2-billion-lines-codeand-one-place/
 [link:3]: http://blog.teamtreehouse.com/first-job-may-not-dream-job
-[person:1]: https://www.linkedin.com/pub/rachel-potvin/1/659/103https://www.linkedin.com/pub/rachel-potvin/1/659/103
+[person:1]: https://www.linkedin.com/pub/rachel-potvin/1/659/103
 [read this week]: /weblog/tag/read-this-week/
 [reading.am]: https://www.reading.am/
 [prev]: {% post_url 2015-09-12-things-i-read-2015-09-12 %}

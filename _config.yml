@@ -15,25 +15,19 @@ description: |
 # }}}
 
 # Time & encoding.
-timezone: 'America/New_York'
+timezone: 'America/Los_Angeles'
 encoding: 'utf-8'
 
-# {{{ Routing And Rendering
-pagination_path: '/weblog/:num/'
-permalink: '/weblog/:title/'
+permalink: "/weblog/:title/"
 show_drafts: false
-tag_dir: '/weblog/tag'
 lsi: false
 future: false
 relative_permalinks: false
 markdown: kramdown
 highlighter: pygments
-# }}}
 
 # Loading in the gems used by Jekyll. I really hate having to updating this
-# list but it is what it is. Might look into making 'jekyll-bundler' that has
-# Jekyll load all of the gems under the 'jekyll' group in the Gemfile.
-# {{{ Gems
+# list but it is what it is. 
 gems:
   - jemoji
   - jekyll-gist
@@ -42,7 +36,7 @@ gems:
   - jekyll-timeago
   - jekyll-twitter-plugin
   - jekyll-auto-image
-# }}}
+  - jekyll-paginate
 
 # {{{ Markdown renderer options
 kramdown:
@@ -66,3 +60,7 @@ defaults:
       components:
         header: true
         footer: true
+
+tag_page_layout: tag_page
+tag_page_dir: weblog/tag/
+tag_permalink_style: pretty

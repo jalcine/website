@@ -236,6 +236,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-git_metadata
   jekyll-haml
+  jekyll-paginate
   jekyll-sass
   jekyll-tagging
   jekyll-timeago
