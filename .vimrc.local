@@ -5,3 +5,12 @@
 
 set wildignore+=_site/*
 set wildignore+=.sass-cache/*
+setl g:jekyll_post_dirs = ['src/_posts']
+setl g:jekyll_post_template = [
+      \ '---',
+      \ 'layout: post',
+      \ 'title: "JEKYLL_TITLE"',
+      \ 'date: "JEKYLL_DATE"',
+      \ 'hidden: true',
+      \ '---',
+      \ '']

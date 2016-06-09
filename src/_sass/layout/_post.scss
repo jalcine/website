@@ -58,6 +58,7 @@ main[role=post] {
   blockquote {
     border-left: 0.5rem solid $gray;
     padding-left: 0.5rem;
+    color: darken($gray, 20%);
   }
 }
 

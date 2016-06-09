@@ -7,10 +7,12 @@ tags:
   - thoughts
   - testing
   - opinion
+date: 2016-06-09 13:37:49 EDT
 ---
 
 > I wrote a bit about [moving over to neovim][1] and it got a bit of good
 > reception so I'm deciding to write a bit more on neovim from now on.
+> Also, I totally finished this on an airplane.
 
 There's been quite a few interesting plugins that's popped up about neovim.
 This is going to highlight the capabilities of two plugins in particular;

@@ -3,6 +3,7 @@
 body {
   font-family: $font-sans;
   font-weight: $font-weightNormal;
+  font-size: 0.8rem;
 }
 
 .link, a {
@@ -129,6 +130,7 @@ p {
 html.wf-active {
   body {
     font-family: $font-webSans;
+    font-size: 1rem;
   }
 
   h1, h2, h3, h4, h5, h6 {

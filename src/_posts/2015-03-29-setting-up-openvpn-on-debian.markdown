@@ -198,13 +198,6 @@ From here, you can do a few things:
   2. Enable **client-to-client** in your server so you can chat with other devices
      on the network. Useful for making private Web services avaiable on only VPN
      users.
-
-I'm currently working on a Ruby gem that'd automate the entire process above
-using DigitalOcean as the virtual service provider and Ansible to handle the
-provisioning of the server. The primary tree is over at my personal Git tree,
-<http://git.jacky.wtf/ruby-openvpn-generator.git> and will be on Github and
-Gitlab once I get it down to a 1.0.0 release.
-
 [openvpn]: http://openvpn.net/
 [oa]: http://git.jacky.wtf/oa
 [1]: https://wiki.debian.org/OpenVPN#Static-Key_VPN
