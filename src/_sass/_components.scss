@@ -1,9 +1,9 @@
 hr {
   color: transparent;
-  background-color: #999;
-  width: 80%;
+  background-color: $black;
   display: block;
-  max-width: ($max-page-width / 5) * 2;
+  width: 80%;
+  max-width: ($max-page-width / 5) * 4;
   margin: 0rem auto;
 }
 

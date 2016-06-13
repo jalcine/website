@@ -18,15 +18,23 @@ header.image[role=post] {
   background-size: cover;
   margin-top: 0.5rem;
   margin-bottom: 0.75rem;
+  padding: 0.5rem;
 
-  h1 {
+  .post-title {
     text-align: center;
-    background-color: rgba($black, 0.5);
+    background-color: rgba($black, 0.8);
     padding: 1.5rem 0.75rem 0.5rem;
     margin-bottom: -0.5rem;
+    margin-top: 8rem;
 
     a {
-      color: $white
+      color: $white;
+    }
+
+    + .post-byline {
+      padding: 0.5rem 0.75rem;
+      background-color: rgba($black, 0.8);
+      color: $white;
     }
   }
 }
@@ -35,21 +43,25 @@ aside[role=stats] {
   width: 100%;
   clear: both;
   margin: 0.5rem auto;
-  border: 1px solid #555;
+  font-size: 0.8rem;
+  color: $gray;
+
+  li { font-size: inherit; }
 
   @media #{$mobile-up} {
     padding: 0.5rem;
     position: relative;
     right: 0.5rem;
-    max-width: 50%;
+    max-width: 40%;
     float: right;
     display: inline-block;
     margin: 1.5rem;
+    border: 1px solid $gray;
   }
 }
 
 main[role=post] {
-  img.emoji { vertical-align: text-top; }
+  img.emoji { vertical-align: middle; }
   img:not(.emoji) {
     margin: 0rem auto;
     display: block;
@@ -57,8 +69,9 @@ main[role=post] {
 
   blockquote {
     border-left: 0.5rem solid $gray;
-    padding-left: 0.5rem;
+    padding: 0.5rem 0.8rem;
     color: darken($gray, 20%);
+    margin: 1.5rem 0.5rem;
   }
 }
 
@@ -69,15 +82,13 @@ figcaption.quote-score {
 }
 
 h1.post-title {
-  font-size: 4rem;
-
   a:before {
     transform: none;
     width: 0px;
   }
 }
 
-h2.post-byline {
+.post-title + .post-byline {
   color: lighten($black, 40%);
 }
 
@@ -120,5 +131,17 @@ section[role=entries] {
 }
 
 div.footnotes {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  width: 90%;
+  margin: 1rem auto;
+  color: $gray;
+
+  li { font-size: inherit; }
+}
+
+h1, h2, h3 {
+  & + p:first-line {
+    font-size: 120%;
+    text-variant: small-caps;
+  }
 }

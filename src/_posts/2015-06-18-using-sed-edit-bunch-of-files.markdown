@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Using Sed to Edit A Bunch of Files At Once
 date: 2015-06-18 15:53:00 EDT
 category: tips

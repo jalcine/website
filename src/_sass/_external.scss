@@ -10,15 +10,26 @@
   clear: both;
 
   .twitter-tweet {
-    width: 60%;
-    margin: 0rem auto;
     background-color: $clr-TwitterBlue;
     color: $clr-TwitterBlack;
     border: 0.2rem solid darken($clr-TwitterBlue, 10%);
     padding: 0.5rem;
+    width: 100%;
+    margin: 0;
+
+    @media #{$tablet-up} {
+      width: 90%;
+      margin: 0 auto;
+    }
 
     p { margin: 0; }
 
     a { color: $white; }
+  }
+
+  .twitter-tweet-rendered {
+    background-color: inherit;
+    color: inherit;
+    border: none;
   }
 }

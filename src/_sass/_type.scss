@@ -3,7 +3,7 @@
 body {
   font-family: $font-sans;
   font-weight: $font-weightNormal;
-  font-size: 0.8rem;
+  font-size: 12px;
 }
 
 .link, a {
@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // Headings {
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 h2 {
@@ -121,7 +121,7 @@ p {
   margin: 0.75rem 0;
 
   &.lead {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -130,7 +130,6 @@ p {
 html.wf-active {
   body {
     font-family: $font-webSans;
-    font-size: 1rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -144,5 +143,7 @@ html.wf-active {
 /// ============================================ }
 
 sup {
-  font-variant: super;
+  vertical-align: super;
+  font-size: 70%;
+  font-weight: bolder;
 }

@@ -2,6 +2,11 @@
 layout: post
 title: "Static Web Pages + Git = Awesome Deployment"
 date: 2013-01-26 04:09 UTC-0500
+tags:
+  - git
+  - jekyll
+  - octopress
+  - sites
 category: development
 ---
 
@@ -29,22 +34,22 @@ If enough confusion incurs, I might make a separate post about it.
 
 First, make sure you got Git up and running on your system.
 
-```bash
+{% highlight bash %}
 $ git --version
 git version 1.7.10.4
-```
+{% endhighlight %}
 
 Secondly, ensure that you can SSH as a user or at least provide yourself 
 with access.
 
 Next, set up the bare repositories that you'll be using to push your changes.
 
-```bash
+{% highlight bash %}
 $ cd ~
 $ mkdir -p ~/repos/swag
 $ cd ~/repos/swag
 $ git init --bare
-```
+{% endhighlight %}
 
 We use the `--bare` option here to tell Git that we only want the 
 Git-specifics (the index, configuration options, etc) on the server, 
@@ -53,11 +58,11 @@ nothing more.
 Next, we go on to set up our hooks. We go back into our mighty console and 
 execute the following:
 
-```bash
+{% highlight bash %}
 # (from working directory ~/repos/swag)
 $ cd hooks
 $ vi post-receive
-```
+{% endhighlight %}
 
 With in the `post-receive` hook, we enter the following content:
 
@@ -81,7 +86,7 @@ starting out.
 In a new directory, clone the repository from the server, add some files, 
 commit and push; the typical personal Git flow.
 
-```bash
+{% highlight bash %}
 # (from an awesome folder)
 $ git clone joe@acme.net:~/repos/swag swag
 # You might get a warning about cloning an empty repository; it's fine.
@@ -92,13 +97,13 @@ $ git add .
 
 $ git commit -m "Swag 1 point"
 $ git push
-```
+{% endhighlight %}
 
 After you push, you might notice information about checking out done in your 
 remotes. That's the `post-recieve` hook updating the code in reaction to the 
 branch that you pushed.
 
-<!--{% gist 4618184 %}-->
+{% gist 4618184 %}
 
 # Quirks
 
