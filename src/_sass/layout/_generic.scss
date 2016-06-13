@@ -83,7 +83,8 @@ nav.main {
 
 section.parent-wrapper {
   max-width: $max-page-width;
-  margin: 0rem auto;
+  width: 100%;
+  margin: 0 auto;
   padding: 1rem 0.5rem;
 
   img {
