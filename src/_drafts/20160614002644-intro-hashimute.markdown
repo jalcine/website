@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Introducing hashimute"
+byline: "Muting in bulk - with purpose."
+excerpt: >
+  This is one of the many projects I've been subtweeting a lot over the few
+  weeks. I'm so glad I can share it with y'all.
+category: launch
+date: 2016-06-14 00:27:54 PDT
+tags:
+  - twitter
+  - side-project
+  - launch
+---
+
+I live on the West Coast as of the time of writing, Oakland, to be exact. I used
+to live in Brooklyn, New York. If there's one thing the West _hates_ the East
+for doing on Twitter, it's ruining broadcast television events before they
+premiere on their side of the world. I never had to run into this when I lived
+out in New York City, but since moving to the Bay, I'd had show after show
+spoiled right before my tweet-monitoring eyes.
+
+I know. This is _beyond_ a first-world problem. This is _peak_ "free time" kind
+of problem. However, since my free time has since been reduced and I've used
+Twitter more to collect information on current events; having media I intend to
+savor myself ruined right there before my eyes got me frustrated.
+
+**In came <hashimute|http://hashimute.nl>*.

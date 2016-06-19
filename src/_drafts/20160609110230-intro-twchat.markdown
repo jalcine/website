@@ -1,7 +1,10 @@
 ---
 layout: post
-title: "Introducing twch.at"
-byline: "Making Collective Chats on Twitter A Bit Easier"
+title: Introducing twch.at
+byline: "Making collective chats on Twitter a bit easier."
+excerpt: >
+  After months of watching conversation after conversation fly by with no real
+  way to fetch the usefulness out of said chats, I had enough.
 ---
 
 Once again, I was sitting and almost sleeping while reading about using finite

@@ -30,7 +30,7 @@ excerpt: >
           <small><strong>{{ post.category }}</strong></small>
         {% endif %}
         {% if post.excerpt %}
-          <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 80 }}</p>
+          <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
         {% endif %}
       </li>
     {% endfor %}

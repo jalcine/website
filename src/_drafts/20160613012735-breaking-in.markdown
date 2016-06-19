@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Breaking into Web Technology - The Eternal Question"
+excerpt: >
+  I reflect on points made by Amelie on how people in the industry can help
+  people who wish to become better developers grow into the roles they'd like to
+  see themselves in.
+date: 2016-06-13 01:28:46 PDT
+category: thoughts
+tags:
+  - growth
+  - development
+---
+
+I read [@amelielamont][]'s post on the role people _in_ the industry play in
+teaching other people how to be more valued and skilled workers[^1]. If there's
+one thing that's becoming commodifying, it's definitely developers. Recently,
+it's branched out into design on some training platforms, but I still fear that
+people are being handed some tools with about four steps on how to use them but
+never any contxtual awareness on why these tools _are_ perhaps the best ones
+they'll ever get or if those tools should be discarded altogether.
+
+[@amelielamont]: https://twitter.com/amelielamont
+[^1]: <http://amelielamont.com/notes/new-to-tech/>

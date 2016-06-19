@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="en_US">
   <head>
-    {% include head.html %}
+    {% include head.html title=page.title %}
   </head>
   <body{% unless page.class == '' %} class="{{ page.class }}"{% endunless %}>
     {% if page.components.header == true %}{% include header.html %}{% endif %}
