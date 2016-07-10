@@ -60,23 +60,22 @@ aside.main {
   }
 }
 
-nav.main {
-  ul {
+nav.main ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
     display: inline;
-    margin: 0;
-    padding: 0;
+    line-height: $header-height;
+    font-size: 1.5rem;
 
-    > li {
-      list-style: none;
-      display: inline;
-      line-height: $header-height;
+    a {
+      color: $white;
+      margin: 0.2rem 0.25rem;
 
-      a {
-        color: $white;
-        margin: 0.2rem 0.25rem;
-
-        &::before { background-color: $white; }
-      }
+      &::before { background-color: $white; }
     }
   }
 }

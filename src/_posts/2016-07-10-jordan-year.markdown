@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Jordan Year
-date: 2016-06-13 23:30:49 PDT
+title: 2016 - Jordan Year
+date: 2016-07-10 04:00:00 PDT
 excerpt: >
   This is more of a rant that an actual post. At the same time, maybe this blog
   is one giant rant.
@@ -18,7 +18,7 @@ for my parents putting up with me through school and thereafter, for everyone
 who has helped mold me into the person I am today. And I know I'm not supposed 
 to know (or shouldn't expect to) where I'm headed but I still feel lost.
 
-I feel like I'm supposed to know my **objective** by now. Not even by a message
+I feel like I'm supposed to know my **objective** by now. Not because of a message
 passed down by some higher plane, but because lots of people approach me as if I
 do.
 
@@ -40,4 +40,6 @@ Until you just really begin to stop giving a fuck about what the world
 
 Until I begin accepting me for who I am.
 
-**The problem is, I still don't know who that is**.
+**The problem is, I still don't know who that is**. I'm learning that it's okay
+not to know. As long as I do my absolute best, I don't think I can do too much
+wrong.

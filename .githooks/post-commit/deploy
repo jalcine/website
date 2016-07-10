@@ -1,24 +1,19 @@
 #!/usr/bin/env ruby
+# This script aims to invoke the commands required to deploy this tree of code
+# whenever we finish making a commit to 'master'.
+#
+# This has light dependencies on the aliases I currently use for my shell.
 
-def want_to_deploy?
-  true
+def current_branch
+  `git currentbranch`
 end
 
-def handle_deploy
-  current_branch = `git rev-parse --abbrev-ref HEAD`.chomp!
-
-  case current_branch
-  when 'master'
-    `bundle exec rake deploy`
-  else
-    puts '[post-commit/deploy] Not on master; not deploying.'
-  end if want_to_deploy?
+def is_on_master?
+  current_branch == 'master'
 end
 
-case ARGV.join(' ')
-when "-h"
-  puts "Deploys using Mina when on either 'develop'."
-else
-  handle_deploy
+def invoke_deploy
+  `rake deploy`
 end
 
+invoke_deploy if is_on_master?

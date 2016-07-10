@@ -2,6 +2,7 @@
 layout: post
 title: "Introducing hashimute"
 byline: "Muting in bulk - with purpose."
+image: none
 excerpt: >
   This is one of the many projects I've been subtweeting a lot over the few
   weeks. I'm so glad I can share it with y'all.
@@ -25,4 +26,12 @@ of problem. However, since my free time has since been reduced and I've used
 Twitter more to collect information on current events; having media I intend to
 savor myself ruined right there before my eyes got me frustrated.
 
-**In came <hashimute|http://hashimute.nl>*.
+# The Value Add
+
+# The Technical Details
+> If you're not a developer, designer or not interested in the underlying
+> software and design process I took for hashimute, I recommend skipping this
+> section.
+
+Hashimute's client side application is built using [Ember][], a pretty solid
+framework for going 0 to :100:.
