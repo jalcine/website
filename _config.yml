@@ -1,3 +1,4 @@
+# vim: set nospell:
 source: 'src'
 destination: '_site'
 layouts: 'src/_layouts'
