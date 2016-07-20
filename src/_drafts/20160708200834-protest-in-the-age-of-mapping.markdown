@@ -35,6 +35,45 @@ take _anything_ away from it and apply it to the community. Action isn't only
 here, it's a constant flow of work that's been applied to heal and undo the
 damage done.
 
-That stuck with me.
+That stuck with me. But that's outside of something that hit me while out on the
+880 that Thursday night.
+
+Yes, we managed to choke off a freeway for close to 5 hours.
+Yes, we got peoples' attention regarding the most recent events involving the
+Oakland Police Department.
+
+**But, did anyone have to go on the 880 at the points we were at in order to go
+where they were going?**
+
+I turned to a friend who I was friend and my partner and mentioned this idea.
+If Google or other traffic-monitoring tools noticed irrational high rates of
+back-up on a particular mode of transportation, wouldn't they _re-route_ people?
+
+This and a few other people came to this idea and eventually ending up letting
+the people we've bottlenecked out to go about their lives but we kept the road
+blocked. It still got me thinking, what is the point if you can literally go
+around? It won't be faster.
+
+The same point as before.
+To bring awareness.
+To bring community (for those who didn't they existed in this form). 
+But also, to be aware.
+
+These cops came up with shields and were swinging batons. Now, two years ago, I
+was more willing to throw myself to protect someone. This time around, I had a
+lot more than I cared to admit at risk and to be honest, I should have left a
+long time ago. See, at that point of the protest, when the cops wanted to get a
+pat on the back for beating or attacking a protester, we, people of color (but
+particularly Black people), do _not_ throw ourselves into a line of fire that
+extends to **everyday life** for us. There were allies who had no problem
+antagonizing police officers and then scurrying behind people. *Agitators* will
+always exist, and they exist to continue an agenda of the disregard of Black
+lives. So little concern and thought given to how _easily_ officers dispatch
+Black women out in the streets they _swore_ to protect.
+
+I have to end here because I'm lightly rambling but I want to think a bit more
+about how technology, specifically surveillance-laden devices and pieces of
+equipment are poised to dismantle any sort of social uprising and what people in
+the industry plan to do about it.
 
 [^1]: Inclined to deem as self-proclaimed. That's an oxymoron, by the way.
