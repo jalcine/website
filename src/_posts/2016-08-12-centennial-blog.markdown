@@ -21,11 +21,11 @@ everywhere I go (macOS / OS X, Linux, CentOS) - feels _extremely_ more valuable,
 intuitive and more transitive than attempting to understand the GUI and its
 operation. 
 
----
+It's a random sentiment, but yes, 100 blog posts and counting. Maybe I'll reach
+a thousand one of these days if social media doesn't end up replacing blogs.
 
-The above goes to say how I feel I tried to evolve myself via this blog. I've
-redesigned this site _many_ times. I took some time to display those evolutions
-below (thank God for Git):
+Who knows?
+
 
 [^1]: Every morning, for about 10 minutes, I write my active thoughts into a text file and rsync to an encryted file system. Like a journal.
 [^2]: Natural language user interface
