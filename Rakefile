@@ -4,11 +4,11 @@ require 'fileutils'
 task default: %w[clean build:dev]
 
 task :clean do
-  FileUtils.rmdir('_site', verbose: true)
+  FileUtils.rmdir('_deploy', verbose: true)
 end
 
 task :build do
-  system 'bin/jekyll build --verbose'
+  system 'bin/jekyll build --verbose -d _deploy'
 end
 
 task :'build:drafts' do

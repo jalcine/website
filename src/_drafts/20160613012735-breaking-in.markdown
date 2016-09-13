@@ -5,7 +5,7 @@ excerpt: >
   I reflect on points made by Amelie on how people in the industry can help
   people who wish to become better developers grow into the roles they'd like to
   see themselves in.
-date: 2016-06-13 01:28:46 PDT
+date: "2016-06-13 01:28:46 PDT"
 category: thoughts
 tags:
   - growth

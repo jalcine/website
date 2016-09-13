@@ -15,7 +15,7 @@ set :user, ENV['JALCINE_DEPLOY_USER']
 
 task :upload do
   ssh "mkdir -p #{deploy_to}/tmp-scp"
-  scp_upload("-v #{Dir.pwd}/_site/*", "#{deploy_to}/tmp-scp",
+  scp_upload("-v #{Dir.pwd}/_deploy/*", "#{deploy_to}/tmp-scp",
              recursively: true,
              verbose: true,
              identity_file: '~/.ssh/keys/jalcine.pem.pub')
