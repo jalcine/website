@@ -8,7 +8,7 @@ body {
 
 .link, a {
   text-decoration: none;
-  color: $clr-LinkForeground;
+  color: $blue;
   position: relative;
 
   &:hover {
@@ -23,7 +23,7 @@ body {
       left: 0;
       top: 100%;
       bottom: 0;
-      background-color: $clr-LinkForeground;
+      background-color: $blue;
       visibility: hidden;
       transform: scaleX(0);
       transition: all 0.2s ease-in-out 0s;
@@ -60,7 +60,6 @@ li {
   font-size: 1.2rem;
   line-height: 1.5;
 }
-
 
 pre, code, kbd {
   font-family: $font-mono;

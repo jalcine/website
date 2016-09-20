@@ -1,29 +1,28 @@
 header[role=post],
 main[role=post],
 footer[role=post] {
-  padding: 0.5rem 0rem;
+  padding: 0.75rem 0.5rem;
   margin: 0.75rem 0.5rem 1.5rem;
-  max-width: $max-page-width;
+
+  @media #{$desktop} {
+    max-width: $max-page-width;
+  }
 }
 
 header.image[role=post] {
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
   display: flex;
   min-height: 45vh;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
   flex-direction: column;
   justify-content: flex-end;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  margin-top: 0.5rem;
-  margin-bottom: 0.75rem;
-  padding: 0.5rem;
 
   .post-title {
     text-align: center;
-    background-color: rgba($black, 0.8);
-    padding: 1.5rem 0.75rem 0.5rem;
+    background-color: $black;
     margin-bottom: -0.5rem;
     margin-top: 8rem;
 
@@ -33,34 +32,32 @@ header.image[role=post] {
 
     + .post-byline {
       padding: 0.5rem 0.75rem;
-      background-color: rgba($black, 0.8);
+      background-color: $black;
       color: $white;
     }
   }
 }
 
 aside[role=stats] {
-  width: 100%;
   clear: both;
-  margin: 0.5rem auto;
+  margin: 0.25rem auto;
   font-size: 0.8rem;
   color: $gray;
+  max-width: 90%;
 
   li { font-size: inherit; }
 
   @media #{$mobile-up} {
-    padding: 0.5rem;
-    position: relative;
-    right: 0.5rem;
-    max-width: 40%;
-    float: right;
-    display: inline-block;
-    margin: 1.5rem;
+    width: 90%;
+    clear: both;
     border: 1px solid $gray;
+    margin: 0rem auto;
   }
 }
 
 main[role=post] {
+  margin: 0rem auto;
+
   img.emoji { vertical-align: middle; }
   img:not(.emoji) {
     margin: 0rem auto;
@@ -68,17 +65,18 @@ main[role=post] {
   }
 
   blockquote {
-    border-left: 0.5rem solid $gray;
     padding: 0.5rem 0.8rem;
-    color: darken($gray, 20%);
-    margin: 1.5rem 0.5rem;
+    margin: 1.5rem auto; 
+    width: 90%;
+    color: $gray;
+    border-left: 0.5rem solid $gray;
   }
 }
 
 figcaption.quote-score {
   color: $gray;
 
-  a { color: lighten($clr-LinkForeground, 20%); }
+  a { color: $blue; }
 }
 
 h1.post-title {
@@ -89,13 +87,15 @@ h1.post-title {
 }
 
 .post-title + .post-byline {
-  color: lighten($black, 40%);
+  color: $black;
 }
 
 footer[role=post] {
   background-color: $black;
   color: $white;
   text-align: center;
+  width: 100%;
+  margin: 0rem;
 
   a {
     color: inherit;
@@ -114,7 +114,7 @@ section[role=entries] {
       list-style: square;
       margin: 0.25rem 0rem 0.5rem;
       padding: 0rem;
-      color: lighten($black, 10%);
+      color: $black;
 
       a {
         display: inline;

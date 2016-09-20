@@ -1,13 +1,10 @@
 ---
-# This is required to make it include from the root Sass directory.
 ---
 
-@import 'reset';
-@import 'breakpoints';
 @import 'colors';
-@import 'type';
-@import 'layout';
-@import 'components';
-@import 'tables';
-@import 'external';
+@import 'breakpoints';
+
 @import 'code';
+@import 'type';
+
+@import 'layout';

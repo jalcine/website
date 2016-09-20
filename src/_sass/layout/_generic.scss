@@ -1,20 +1,35 @@
-@import 'colors';
-
 $header-height: 4rem;
 
 header.main, footer.main {
+  background-color: $black;
+  color: $white;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0.75rem 0rem;
   width: 100%;
-  background-color: $black;
-  color: $white;
+
+  @media #{$desktop} {
+    & {
+      flex-direction: row;
+      aside, nav { margin: 0rem 1rem; }
+    }
+  }
 }
 
 header.main {
+  justify-content: space-around;
+  aside {
+    margin-top: -0.5rem;
+  }
+
   aside, nav {
     display: flex;
+  }
+
+  @media #{$desktop} {
+    & {
+    }
   }
 }
 
@@ -84,7 +99,7 @@ section.parent-wrapper {
   max-width: $max-page-width;
   width: 100%;
   margin: 0 auto;
-  padding: 1rem 0.5rem;
+  padding: 0rem;
 
   img {
     max-width: 100%;

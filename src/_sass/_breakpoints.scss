@@ -1,8 +1,9 @@
 // Snagged from: https://gist.github.com/jalcine/ce901836dce4b3588ae2
+
 $mobile-screen: 690px;
 $tablet-screen: 994px;
 $desktop-screen: 1280px;
-$max-page-width: $desktop-screen * (3/5);
+$max-page-width: $desktop-screen * (4/5);
 
 $screen: "only screen";
 $mobile: "only screen and (max-width:#{$mobile-screen})";
