@@ -48,10 +48,11 @@ aside[role=stats] {
   li { font-size: inherit; }
 
   @media #{$mobile-up} {
-    width: 90%;
-    clear: both;
+    width: 30%;
+    clear: left;
+    float: right;
     border: 1px solid $gray;
-    margin: 0rem auto;
+    display: block;
   }
 }
 

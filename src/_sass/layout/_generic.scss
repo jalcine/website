@@ -53,6 +53,8 @@ img {
 footer.main {
   padding: 1.5rem 0rem;
   font-size: 1.25rem;
+  text-align: center;
+  flex-direction: column;
 }
 
 aside.main {
@@ -100,6 +102,7 @@ section.parent-wrapper {
   width: 100%;
   margin: 0 auto;
   padding: 0rem;
+  min-height: 80vh;
 
   img {
     max-width: 100%;
