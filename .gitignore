@@ -7,26 +7,27 @@ tags
 gems.tags
 .env
 **/*/.directory
-.capistrano
+    .capistrano
 # Created by https://www.gitignore.io
 
 ### Vim ###
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-*~
+   *.un~
+   Session.vim
+   .netrwhist
+   *~
 
 # Created by https://www.gitignore.io/api/vim
 
 ### Vim ###
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-*~
+   *.un~
+   Session.vim
+   .netrwhist
+   *~
 
-bower_components/
-build/
+   bower_components/
+   build/
+   bin/
