@@ -23,12 +23,12 @@ environments designed to be erected for stability. I got to use Docker
 in a production environment which, personally, made me ditch Vagrant
 for the most part.
 
-I got to a lot of things outside of work as well. I hear that's a requirement
+I got to learn a lot of things outside of work as well. I hear that's a requirement
 for a healthy work/life balance :wink:! I got to learn about the Black Panthers
 (who I legit thought started in Harlem[^1]), the [ABC][], and many other sectors
 of people and movements by people of the neighboring cities of Oakland. It's
 definitely a culture  and climate shift coming from Brooklyn; a city whose
-tendencies haven't worn off yet. It's definitely provoked me to invest in one
+tendencies haven't worn off yet. It's provoked me to invest in myself in a new 
 way: buying up loads of literature. My apartment is swelling with Black focused,
 liberation centered and equality rearing literature and I don't know if I'll
 have the time to read it all! I have a lot of people to thank for even

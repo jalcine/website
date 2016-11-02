@@ -5,7 +5,7 @@ install:
 	@bundle install --binstubs
 
 build:
-	@bundle exec rake build
+	bundle exec rake build
 
 serve: build
 	@bundle exec guard start
