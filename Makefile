@@ -8,7 +8,7 @@ build:
 	@bundle exec rake build
 
 serve: build
-	@bundle exec rake serve
+	@bundle exec guard start
 
 deploy: clean build
 	@bundle exec rake deploy

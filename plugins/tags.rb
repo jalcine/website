@@ -1,5 +1,5 @@
 require_relative '../lib/liquid/filters'
-require_relative '../lib/liquid/tags/youtube'
+require_relative '../lib/liquid/tags'
 
 TAGS_TO_ADD =
 {

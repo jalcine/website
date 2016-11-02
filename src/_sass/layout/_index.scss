@@ -1,6 +1,9 @@
 $clr-headerBg: $gray;
 $clr-headerFg: $black;
 $header-bgImageSize: 60%;
+$clr-roleWork: #5747ff;
+$clr-roleMusic: #4793ff;
+$clr-roleWeblog: #B81000;
 
 header[role=index] {
   background-image: url(/images/brand/splash.jpg);
@@ -35,9 +38,10 @@ header[role=index] {
 
   @media #{$tablet-up} {
     background-size: $header-bgImageSize;
-    background-position: 3% 19%;
+    background-position: 3% 0%;
     border: 1rem solid $white;
     border-width: 1rem 0rem;
+    max-height: 50rem;
   }
 }
 
@@ -69,6 +73,7 @@ div.index-wrapper {
     color: $black;
     height: 100%;
     width: 40%;
+    max-height: 50rem;
     margin: 0;
     position: absolute;
     right: 0;
@@ -156,8 +161,6 @@ section.region {
     }
   }
 
-  // h1 { font-size: 2rem; }
-
   @media #{$mobile-up} {
     text-align: left;
   }
@@ -166,7 +169,15 @@ section.region {
     h1 { font-size: 3rem; }
   }
 
-  &[role=work]   { background-color: #1B4263; }
-  &[role=music]  { background-color: #7F3D41; }
-  &[role=weblog] { background-color: #3B2015; };
+  &[role=alert] {
+    display: flex;
+    justify-content: center;
+    background-color: $black;
+    color: $white;
+    font-size: 225%;
+  }
+
+  &[role=work]   { background-color: $clr-roleWork; }
+  &[role=music]  { background-color: $clr-roleMusic; }
+  &[role=weblog] { background-color: $clr-roleWeblog; };
 }

@@ -1,7 +1,6 @@
-# vim:set ft=ruby:
+# vim :set ft=ruby:
 
 clearing :off
-notification :tmux, display_message: false
 
 # Automatically install gems when I add some to my gem list.
 guard :bundler do

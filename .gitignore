@@ -5,7 +5,7 @@ tags
 *.gist_cache
 *.tweet-cache
 gems.tags
-.env
+.env*
 **/*/.directory
 .capistrano
 # Created by https://www.gitignore.io
@@ -31,3 +31,4 @@ Session.vim
 bower_components/
 build/
 bin/
+_deploy/
