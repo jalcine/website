@@ -94,8 +94,6 @@ GEM
       jekyll
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
-    jekyll-compose (0.4.1)
-      jekyll (>= 2.5.0)
     jekyll-contentblocks (1.2.0)
       jekyll
     jekyll-gist (1.4.0)
@@ -234,7 +232,6 @@ DEPENDENCIES
   haml
   jekyll
   jekyll-auto-image (= 1.0.2)
-  jekyll-compose
   jekyll-contentblocks
   jekyll-gist
   jekyll-git_metadata
@@ -260,4 +257,4 @@ DEPENDENCIES
   susy
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
