@@ -1,0 +1,22 @@
+{
+  "name": "jacky.wtf",
+  "version": "2016.11.5",
+  "description": "This repository holds the sources to the statically generated website belonging to Jacky Alciné. With input from a few friends, reading up on modern Web performance and learning about my anonymous users' reading flows; I've decided to rebuild the site in a new light.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jalcine/website.git"
+  },
+  "author": "Jacky Alciné <yo@jacky.wtf> (https://jacky.wtf/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jalcine/website/issues"
+  },
+  "homepage": "https://github.com/jalcine/website#readme"
+}
