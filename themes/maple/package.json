@@ -1,0 +1,32 @@
+{
+  "name": "maple-jekyll-theme",
+  "version": "0.0.1",
+  "description": "The frontend theming and logic and assets for jacky.wtf",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalcine/website-jekyll-theme.git"
+  },
+  "author": "Jacky Alciné <yo@jacky.wtf> (https://jacky.wtf/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jalcine/website-jekyll-theme/issues"
+  },
+  "homepage": "https://github.com/jalcine/website-jekyll-theme#readme",
+  "dependencies": {
+    "webpack": "1.13.3"
+  },
+  "devDependencies": {
+    "babel-core": "6.18.2",
+    "babel-loader": "6.2.7",
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "react": "15.4.0",
+    "react-addons-update": "15.4.0",
+    "react-dom": "15.4.0",
+    "webpack": "1.13.3"
+  }
+}

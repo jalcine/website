@@ -1,34 +1,6 @@
+.jekyll-metadata
+.sass-cache
 _site
-tags
-.bundle
-*.sass-cache
-*.gist_cache
-*.tweet-cache
-gems.tags
-.env*
-**/*/.directory
-.capistrano
-# Created by https://www.gitignore.io
-
-### Vim ###
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-*~
-
-# Created by https://www.gitignore.io/api/vim
-
-### Vim ###
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
-Session.vim
-.netrwhist
-*~
-
-bower_components/
-build/
-bin/
-_deploy/
+node_modules
+public
+src/assets/bundle.js

@@ -1,0 +1,32 @@
+title: Jacky Alciné
+email: yo@jacky.wtf
+description: >
+  A young Black male from Brooklyn, New York in Oakland, California learning
+  more about the world and now working to help make it way more secure for the
+  people who live in it. So much to learn and yet so little time!
+baseurl: ""
+url: "https://jacky.wtf"
+
+# Build settings
+markdown: kramdown
+theme: maple
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+source: src
+destination: public
+
+twitter:
+  username: jackyalcine
+
+social:
+  name: Jacky Alciné
+  links:
+    - https://github.com/jalcine
+    - https://keybase.io/jackyalcine
+    - https://twitter.com/jackyalcine
