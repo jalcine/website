@@ -4,3 +4,4 @@ _site
 node_modules
 public
 src/assets/bundle.js
+.env*
