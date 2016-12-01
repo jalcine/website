@@ -14,12 +14,3 @@ body {
     width: 100%;
   }
 }
-
-@import 'layout/generic';
-@import 'layout/index';
-@import 'layout/post';
-
-body:not(.index) {
-  border: 1rem solid $black;
-  border-width: 0 1rem;
-}
