@@ -94,8 +94,6 @@ GEM
       jekyll
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
-    jekyll-compose (0.4.1)
-      jekyll (>= 2.5.0)
     jekyll-contentblocks (1.2.0)
       jekyll
     jekyll-gist (1.4.0)
@@ -112,8 +110,6 @@ GEM
       sass (>= 3.0.0)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
-    jekyll-tagging (1.0.1)
-      ruby-nuggets
     jekyll-timeago (0.9.1)
     jekyll-twitter-plugin (1.3.1)
       twitter (~> 5.11)
@@ -150,7 +146,6 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    nuggets (1.0.0)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
     octopress-quote-tag (1.0.4)
@@ -183,8 +178,6 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     redcarpet (3.3.4)
-    ruby-nuggets (1.0.0)
-      nuggets (= 1.0.0)
     rubypants (0.5.0)
     safe_yaml (1.0.4)
     sass (3.4.22)
@@ -234,14 +227,12 @@ DEPENDENCIES
   haml
   jekyll
   jekyll-auto-image (= 1.0.2)
-  jekyll-compose
   jekyll-contentblocks
   jekyll-gist
   jekyll-git_metadata
   jekyll-haml
   jekyll-paginate
   jekyll-sass
-  jekyll-tagging
   jekyll-timeago
   jekyll-twitter-plugin
   jemoji
@@ -260,4 +251,4 @@ DEPENDENCIES
   susy
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
