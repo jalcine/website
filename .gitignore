@@ -32,3 +32,5 @@ bower_components/
 build/
 bin/
 _deploy/
+
+node_modules/

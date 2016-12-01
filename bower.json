@@ -1,5 +1,5 @@
 {
-  "name": "jalcine-website",
+  "name": "jacky.wtf",
   "version": "2015.09.12.1",
   "authors": [
     "Jacky Alciné"
@@ -12,9 +12,12 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "src/_assets/bower"
   ],
   "dependencies": {
     "pen": "~0.2.2"
-  }
+  },
+  "main": "",
+  "private": true
 }
