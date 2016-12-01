@@ -17,8 +17,7 @@ task :upload do
   ssh "mkdir -p #{deploy_to}/tmp-scp"
   scp_upload("-v #{Dir.pwd}/_deploy/*", "#{deploy_to}/tmp-scp",
              recursively: true,
-             verbose: true,
-             identity_file: '~/.ssh/keys/jalcine.pem.pub')
+             verbose: true)
   queue "cp -vr #{deploy_to}/tmp-scp/* ."
 end
 

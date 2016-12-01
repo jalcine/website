@@ -8,6 +8,10 @@ task :clean do
 end
 
 task :build do
+  system 'bin/jekyll build --verbose'
+end
+
+task :'build:deploy' do
   system 'bin/jekyll build --verbose -d _deploy'
 end
 
