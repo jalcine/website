@@ -1,4 +1,6 @@
-.PHONY: help
+.PHONY: all help install build serve deploy clean
+
+all: help
 
 install:
 	@pip install -r requirements.txt
@@ -22,4 +24,3 @@ help:
 	@echo "serve  - Spins up a local Web server serving the built site."
 	@echo "deploy - Sends the site to my Web server."
 	@echo "clean  - Wipes up the local development environment."
-
