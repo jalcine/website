@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "Development packages for jacky.wtf",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jalcine/website.git"
@@ -17,6 +14,7 @@
   },
   "homepage": "https://github.com/jalcine/website#readme",
   "devDependencies": {
-    "bower": "1.8.0"
+    "bower": "1.8.0",
+    "tachyons-sass": "4.5.6"
   }
 }

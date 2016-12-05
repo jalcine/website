@@ -8,24 +8,26 @@ gem 'rake-jekyll'
 # }}}
 
 group :jekyll do
-  gem 'jekyll'
+  gem 'jekyll', '~> 3.0.0'
   gem 'kramdown'
   gem 'rb-gsl'
+  gem 'sprockets-es6'
+  gem 'autoprefixer-rails'
+  gem 'mini_magick'
 end
 
 group :jekyll_plugins do
-  gem 'jemoji'
-  gem 'jekyll-gist'
-  gem 'jekyll-sass'
-  gem 'jekyll-haml'
-  gem 'jekyll-paginate'
-  gem 'jekyll-timeago'
+  gem 'jekyll-assets'
   gem 'jekyll-contentblocks'
-  gem 'jekyll-git_metadata'
+  gem 'jekyll-gist'
+  gem 'jekyll-haml'
+  gem 'jekyll-sass-converter'
+  gem 'jekyll-timeago'
   gem 'jekyll-twitter-plugin'
-  gem 'jekyll-auto-image', '1.0.2'
+  gem 'jemoji'
   gem 'octopress-quote-tag'
-  gem 'octopress-video-tag'
+  gem 'octopress-video-tag', git: 'https://github.com/anarchivist/octopress-video-tag',
+    branch: 'loosen-gemspec'
 end
 
 # {{{ Development
@@ -51,5 +53,6 @@ group :guard do
   gem 'guard-rack', require: false
   gem 'guard-bundler', require: false
   gem 'guard-livereload', require: false
+  gem 'guard-npm', require: false
 end
 # }}}

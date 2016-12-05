@@ -34,3 +34,5 @@ bin/
 _deploy/
 
 node_modules/
+src/.asset-cache
+src/_assets/bower/

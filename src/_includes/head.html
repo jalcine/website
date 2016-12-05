@@ -15,15 +15,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <!-- Styling -->
-<link href="/css/page.css" rel="stylesheet" type="text/css" media="all" />
-{% for src in page.styles %}
-  <link href="{{ src }}" rel="stylesheet" type="text/css" media="all" />
-{% endfor %}
+{% css page %}
 
 <link href="/images/me.jpeg" rel="shortcut icon" />
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="/feeds/articles.xml" />
 
-<meta name="viewport" content="width=device-width,height=device-height">
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1">
 
 <!-- Apple Support -->
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -59,6 +56,7 @@
 <meta name="msapplication-TileColor" content="#F7F7F7"/>
 <meta name="theme-color" content="#F7F7F7"/>
 <meta name="msapplication-square70x70logo" content="/images/me-76.png" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <!-- Microsoft Support -->
 
 <!-- Google Authorship -->

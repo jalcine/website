@@ -27,3 +27,8 @@ guard 'jekyll-plus', serve: false, future: true, drafts: true,
   watch(/^plugins/)
   watch('_config.yml')
 end
+
+# Check on the npm packages we pull in.
+guard :npm do
+  watch('package.json')
+end
