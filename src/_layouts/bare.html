@@ -3,11 +3,9 @@
   <head>
     {% include head.html title=page.title %}
   </head>
-  <body class="pa3-l normal">
-    {% include header.html %}
-    <main class="pa3-l normal">
-      {{ content }}
-    </main>
-    {% include footer.html %}
+  <body>
+    {% unless page.components.header == false %}{% include header.html %}{% endunless %}
+    <main>{{ content }}</main>
+    {% unless page.components.footer == false %}{% include footer.html %}{% endunless %}
   </body>
 </html>

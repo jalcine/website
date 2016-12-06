@@ -1,12 +1,21 @@
 ---
 layout: bare
 title: "Jacky Alciné is a budding software engineer."
+components:
+  header: false
 ---
-
-<h1 class="ph1 pv0 f3-s lh-title tracked-tight code">@jackyalcine</h1>
-<h2 class="ph1 pv0 f4-s tracked">I'm not Iron Man.</h2>
-<p class="ph2 f3 f4-s lh-copy measure">
-  I'm an Oakland based software engineer that focuses on ease of access for user
-  security on the Web as well as digital literacy for silicon based consumer
-  networked electronics (or "tech").
-</p>
+<section class="cover bg-center pa3-l dib w-100 min-h-100"
+  style="background-image: url(/assets/{{ assets["masthead.jpg"].logical_path }});">
+  <div class="bg-black-80 pa2 mw-twothirds fl w-100 w-two-thirds-l">
+    <h1 class="white tc tl-l f3 f1-ns lh-solid code">@jackyalcine</h1>
+    <h2 class="white tc tl-l f4 f2-ns lh-solid">Black. Ayisien. Autodidact. Comic junkie.</h2>
+    <p class="white f6 f3-ns lh-copy measure">
+      I'm an Oakland based software engineer that focuses on ease of access for user
+      security on the Web as well as digital literacy for silicon based consumer
+      networked electronics (or "tech"). My mission is to carry out the objective of
+      my parents and that of my ancestors: to focus on the liberation of my people
+      and the restoration of the descendants of the African Diaspora.
+    </p>
+  </div>
+</section>
+{% include header.html %}

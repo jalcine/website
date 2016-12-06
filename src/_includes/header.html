@@ -1,9 +1,15 @@
-<header class="pv2 ph3-l normal-l center">
-  <ul class="dib list ma0 pa0">
-    <li class="dib mr1-ns"><a href="/weblog/">Blog</a></li>
-    <li class="dib mr1-ns"><a href="/gear/">Gear</a></li>
-    <li class="dib mr1-ns"><a href="/work/">Work</a></li>
-    <li class="dib mr1-ns"><a href="/gpg/">GPG</a></li>
-    <li class="dib mr1-ns"><a href="/press/">Press</a></li>
+<header>
+  <ul>
+    {% for link in site.navigation.links %}
+      <li>
+        <a href="{{ link.uri }}">
+          {{ link.name }}
+        </a>
+      </li>
+    {% endfor %}
   </ul>
+  <p>
+    &ldquo;Not everything that is faced can be changed. But nothing can be changed
+    until it is faced.&rdquo; &mdash; <strong>Baldwin</strong>
+  </p>
 </header>

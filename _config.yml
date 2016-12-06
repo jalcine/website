@@ -71,3 +71,16 @@ assets:
     - _assets/fonts
     - _assets/img
     - _assets/js
+
+navigation:
+  links:
+    - name: Weblog
+      uri: /weblog/
+    - name: Gear
+      uri: /gear/
+    - name: Work
+      uri: /work/
+    - name: Crypto
+      uri: /crypto/
+    - name: Press
+      uri: /press/
