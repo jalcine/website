@@ -17,6 +17,7 @@ deploy: clean build
 
 clean:
 	@bundle exec rake clean
+	@bundle exec jekyll clean
 
 help:
 	@echo "Tasks for my site:"
