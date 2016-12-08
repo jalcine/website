@@ -1,14 +1,22 @@
-<header>
-  <ul>
+<header class="dt w-100 pa2 center mw9 near-black bg-white">
+  <ul class="db center fl-l list w-90 w-50-l mv4-l pa0 pl1-l f4 tc tl-l">
+    {% unless include.minimal == true %}
+      <li class="dib center">
+        <a class="link code pa1 bg-animate pa2-ns bg-dark-pink hover-bg-white
+          hover-dark-pink" href="/">
+          @jackyalcine
+        </a>
+      </li>
+    {% endunless %}
     {% for link in site.navigation.links %}
-      <li>
-        <a href="{{ link.uri }}">
+      <li class="dib center">
+        <a class="link pa1 pa2-ns underline-hover gray hover-black" href="{{ link.uri }}">
           {{ link.name }}
         </a>
       </li>
     {% endfor %}
   </ul>
-  <p>
+  <p class="fr-l w-100 w-50-l pa2 mt3 f6 f5-l tl tc-m tr-l near-black">
     &ldquo;Not everything that is faced can be changed. But nothing can be changed
     until it is faced.&rdquo; &mdash; <strong>Baldwin</strong>
   </p>

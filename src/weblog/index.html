@@ -1,35 +1,28 @@
 ---
-layout: default
+layout: bare
 title: Weblog
-class: pagination
 excerpt: >
   A listing of all of the posts Jacky has written on his website.
 ---
-
-<section class="parent-wrapper" role="entries" itemscope itemtype='http://schema.org/Blog'>
-  <p>
+<section class="db pa2 center w-100 w-80-l " itemscope itemtype='http://schema.org/Blog'>
+  <h1 class="f1 f-headline-l ttu">Weblog</h1>
+  <p class="lh-copy measure">
     John Barger coined the term <strong>weblog</strong> at the end of 1997 but
     still to this day, we use it as a means of representing the digital long
     form text people use to encapsulate thoughts, moments and experiences over
     time. This is where I hold mine. So for, I've written
     {{ site.posts | size }} posts here since 2012 on this site. I have older
-    entries on <a href="https://blogger.com" target="_blank">Blogger</a>
-    from 2009 on but  that's another lifetime ago.
+    entries on <a class="orange" href="https://blogger.com" target="_blank">Blogger</a>
+    from 2009 on but that's another (digital) lifetime ago.
   </p>
 
-  <h3>Entries</h3>
-  <ul>
+  <h2>Entries</h2>
+  <ul class="list pl0 mw-80 db">
     {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        {% if post.tagline %}
-          <h6>{{ post.tagline }}</h6>
-        {% endif %}
-        <time datetime="{{ post.date }}">{{ post.date | date: "%b %d %y" }}</time>
-        {% if post.category %}
-          <small><strong>{{ post.category }}</strong></small>
-        {% endif %}
-        {% if post.excerpt %}<p>{{ post.excerpt | strip_html | strip_newlines | truncate: 250 }}</p>{% endif %}
+      <li class="db w-100">
+        <a class="dim underline-hover navy" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        <time class="ttu f6 gray bold" datetime="{{ post.date }}">{{ post.date | date: "%d %b %Y" }}</time>
+        {% if post.excerpt %}<p class="lh-solid measure b--gray bl-ns bw1-ns ml1-ns gray pl2 pv1">{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>{% endif %}
       </li>
     {% endfor %}
   </ul>

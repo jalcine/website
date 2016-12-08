@@ -6,11 +6,11 @@ components:
 ---
 <section class="cover bg-center pa3-l dib w-100 min-h-100"
   style="background-image: url(/assets/{{ assets["masthead.jpg"].logical_path }});">
-  <div class="bg-black-80 pa2 mw-twothirds fl w-100 w-two-thirds-l">
-    <h1 class="white tc tl-l f3 f1-ns lh-solid code">@jackyalcine</h1>
-    <h2 class="white tc tl-l f4 f2-ns lh-solid">Black. Ayisien. Autodidact. Comic junkie.</h2>
-    <p class="white f6 f3-ns lh-copy measure">
-      I'm an Oakland based software engineer that focuses on ease of access for user
+  <div class="db bg-black-90 pa2 pa3-l mw-twothirds w-100 w-80-l mh2-m w-60-m center-m">
+    <h1 class="white tc tl-ns f3 f-headline-l lh-solid code">@jackyalcine</h1>
+    <h2 class="white tc tl-ns f4 f2-l lh-solid">Black. Ayisyen. Autodidact. Comic junkie.</h2>
+    <p class="white f5 f3-l lh-copy measure">
+      I'm a software engineer that focuses on ease of access for user
       security on the Web as well as digital literacy for silicon based consumer
       networked electronics (or "tech"). My mission is to carry out the objective of
       my parents and that of my ancestors: to focus on the liberation of my people
@@ -18,4 +18,50 @@ components:
     </p>
   </div>
 </section>
-{% include header.html %}
+{% include header.html minimal=true %}
+<section class="bg-near-black dark-pink db min-h-100-l pa2 pa3-m pa4-l tl-l">
+  <h2 class="f-headline-l lh-title tracked-tight">Media Aficionado</h2>
+  <p class="f3-l measure lh-copy">
+    I like movies and television, especially ones that focus on comics,
+    Blackness or the intersection of the two. You can check out what I'm
+    watching on <a class="dark-pink bold dim" href="https://trakt.tv/users/jackyalcine"
+      target="_blank">Trakt.tv</a> or <a class="dark-pink bold dim"
+      href="http://www.tvshowtime.com/en/user/7412918/profile">TVShow Time</a>.
+  </p>
+</section>
+<section class="bg-near-white navy db min-h-100-l pa2 pa3-m pa4-l">
+  <h2 class="f-subheadline-l lh-title tracked-tight">
+    Liberation for Oppressed People
+  </h2>
+  <p class="f3-l measure lh-copy">
+    Growing in a country with centuries of bloodstain history against a myriad
+    of people, I had to understand that it's irresponsible for me to not ensure
+    equitable places when presented the opportunity to do so.
+  </p>
+  <h3 class="lh-solid tracked-mega ttu">All Power to The People</h3>
+  <p class="f4-l measure lh-copy">
+    My focus is to provide people with tools to combat oppressive regimes that
+    aim to exterminate their freedom and revoke their human rights. I'm not
+    working alone, learn more about <a href="#" class="navy bold dim" target="_blank">
+      organizations aiming to right these wrongs</a>.
+  </p>
+</section>
+<section class="bg-near-black near-white min-h-100-l pa2 pa3-m pa4-l">
+  <h2 class="f-subheadline-l lh-title">
+    <strong class="cf cl-s cr-s fr f6 f5-m f4-l tracked ma2 pa2 bg-yellow navy">new!</strong>
+    <span class="tracked-tight">Looking for Work</a>
+  </h2>
+  <p class="measure-narrow lh-copy f6 fr">
+    <strong>Considering taking me on?</strong> Check out <a href="#">my
+      workplace values</a> then <a href="#">send me information about your
+      position</a>.
+  </p>
+  <p class="f3-l measure lh-copy">
+    <strong>Let's face it</strong>. Thanks to capitalism, in order to live in
+    a socially "acceptable" lifestyle, you need a job, although it seems like
+    even <a href="https://archive.is/aERgA" target="_blank">that might be not a solution</a>.
+  </p>
+  <p class="f3-l measure">
+    <a href="{% post_url 2016-11-02-back-on-the-market %}">I wrote a bit about my career change.</a>
+  </p>
+</section>

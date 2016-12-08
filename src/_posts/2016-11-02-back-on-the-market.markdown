@@ -2,7 +2,7 @@
 layout: post
 title: "Back on the Market!"
 image: /images/rdj-im3-haul-suit.gif
-description:
+excerpt:
   After an amazing year of growth in my career, I'm excited to announce that
   I'm now looking for opportunities in the <strike>Yay</strike> Bay Area.
 category: life

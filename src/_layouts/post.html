@@ -1,6 +1,36 @@
 ---
 layout: bare
-page_class: post
 ---
-
-{{ content }}
+{% if page.image and page.image != 'none' %}
+  <header class="avenir tc-l ph3 ph4-ns pt4 pt5-ns">
+    <h1 class="f3 f2-m f-subheadline-l measure lh-title fw1 mt0">{{ page.title }}</h1>
+    {% if page.byline %}<h2 class="f4 f3-l fw1 gray">{{ page.byline }}</h3>{% endif %}
+    <time class="f6 mh2 ttu db">{{ page.date | date_to_rfc822}}{% if page.revised %}, updated <strong>{{ page.revised | date_to_rfc822 }}</strong>{% endif %}</time>
+    <img class="w-100 dib measure f3" src="{{ page.image }}" />
+  </header>
+{% else %}
+  <header class="db center mw-90 pa2 pa4-l tc tl-l">
+    <h1 class="f2 f-headline-l fw1 near-black">{{ page.title }}</h1>
+    {% if page.byline %}<h3 class="f4 f3-l fw1 gray">{{ page.byline }}</h3>{% endif %}
+    <cite class="f6 ttu tracked fs-normal">{{ site.author }}</cite>
+    &mdash;
+    <time class="f6 ttu">{{ page.date | date_to_rfc822}}{% if page.revised %}, updated <strong>{{ page.revised | date_to_rfc822 }}</strong>{% endif %}</time>
+  </header>
+{% endif %}
+<p class="f6 f5-l pa2 pa4-l mw8 w-80 center db gray tl">
+  A {{ page.category }} post{% if page.tags %}, tagged under {{ page.tags | linkify_tags }}{% endif %}.
+</p>
+{% if page.excerpt %}
+  <blockquote class="ph0 f4 f1-ns measure-narrow center">
+    <p class="fw9 lh-copy lh-title-ns">{{ page.excerpt | markdownify }}</p>
+  </blockquote>
+  <p class="tc moon-gray">&sect;</p>
+{% endif %}
+<main id="entry" class="w-100 lh-copy normal sans near-black db">
+  {{ content }}
+</main>
+<footer role="post">
+  Send your thoughts, ideas and suggestions to this post to
+  <a href="mailto:{{ site.email }}" title="My email">my email address</a>.
+  {{ page.previous }}
+</footer>
