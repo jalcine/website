@@ -8,7 +8,7 @@ excerpt: >
   It doesn't take much to get past SMS-based 2FA (two factor authentication).
   Here I speak on ideas around how to move past SMS-based 2FA (and passwords).
 date: 2016-06-12 22:40:30 PDT
-image: /images/hacking-password.jpg
+image: hacking-password.jpg
 tags:
   - response
   - thoughts

@@ -2,11 +2,11 @@
 layout: bare
 ---
 {% if page.image and page.image != 'none' %}
-  <header class="avenir tc-l ph3 ph4-ns pt4 pt5-ns">
-    <h1 class="f3 f2-m f-subheadline-l measure lh-title fw1 mt0">{{ page.title }}</h1>
-    {% if page.byline %}<h2 class="f4 f3-l fw1 gray">{{ page.byline }}</h3>{% endif %}
+  <header class="avenir ph3 ph4-ns pt4 pt5-ns">
+    {% img "{{ page.image }}" class:"w-100 mw9-l dib measure ma1 fr-l" %}
+    <h1 class="f3 f2-m f-headline-l measure lh-title fw1 mv1">{{ page.title }}</h1>
+    {% if page.byline %}<h2 class="f4 fw1 gray">{{ page.byline }}</h3>{% endif %}
     <time class="f6 mh2 ttu db">{{ page.date | date_to_rfc822}}{% if page.revised %}, updated <strong>{{ page.revised | date_to_rfc822 }}</strong>{% endif %}</time>
-    <img class="w-100 dib measure f3" src="{{ page.image }}" />
   </header>
 {% else %}
   <header class="db center mw-90 pa2 pa4-l tc tl-l">
@@ -26,11 +26,11 @@ layout: bare
   </blockquote>
   <p class="tc moon-gray">&sect;</p>
 {% endif %}
-<main id="entry" class="w-100 lh-copy normal sans near-black db">
+<main id="entry" class="w-100 lh-copy normal sans near-black db f5">
   {{ content }}
 </main>
 <footer role="post">
   Send your thoughts, ideas and suggestions to this post to
   <a href="mailto:{{ site.email }}" title="My email">my email address</a>.
-  {{ page.previous }}
+  {{ page.previous.uri }}
 </footer>

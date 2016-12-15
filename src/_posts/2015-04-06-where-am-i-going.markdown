@@ -1,12 +1,15 @@
 ---
-layout: "post"
-title: "Where Am I Going?"
+
+layout: post
+title: Where Am I Going?
 date: 2015-04-06 17:48:44 EDT
+revised: 2016-12-14 18:25:24 PST
 category: thoughts
 tags:
   - opinions
   - future
-image: https://farm8.staticflickr.com/7636/16881743421_02a9b35e39_z.jpg
+image: posts/where-am-i-going.jpg
+
 ---
 
 Someone asked me a really good question a month ago; one that I thought I had

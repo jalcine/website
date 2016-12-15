@@ -29,6 +29,7 @@ markdown: kramdown
 
 exclude:
   - _site
+  - .asset_cache
 
 # {{{ Markdown renderer options
 kramdown:
@@ -54,23 +55,24 @@ defaults:
         footer: true
 
 assets:
+  debug: true
+  autowrite: true
   compress:
     css: true
     js: true
-  autowrite: true
-  cache_type: memory
+  prefix: "/assets"
   asset:
     - "*.png"
     - "*.jpg"
+    - "*.jpeg"
     - "bundle.css"
   sources:
     - _assets/css
     - _assets/images
-    - _assets/javascripts
-    - _assets/stylesheets
-    - _assets/fonts
     - _assets/img
     - _assets/js
+  features:
+    liquid: true
 
 navigation:
   links:

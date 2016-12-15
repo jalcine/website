@@ -12,11 +12,11 @@ task :build do
 end
 
 task :'build:deploy' do
-  system 'bin/jekyll build --verbose -d _deploy'
+  system 'bin/jekyll build --verbose -d _deploy --incremental'
 end
 
 task :'build:drafts' do
-  system 'bin/jekyll build --drafts --future --verbose'
+  system 'bin/jekyll build --drafts --future --verbose --incremental'
 end
 
 task :serve do

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "First Starts: A Reboot"
-date: 2012-10-30 14:34
+date: 2012-10-30 14:34 -0500
 comments: true
 category: personal
 tags:

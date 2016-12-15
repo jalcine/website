@@ -101,7 +101,7 @@ since <http://www.howoftendoyoutweet.com/> is down, but I know that I do it too
 often and it's mostly manually[^7]. Another site did provide me with some
 interesting graphs for the month of September:
 
-![Man](/images/snapshot397.png)
+{% img "snapshot397.png" %}
 
 I tweet a lot. That's a bit over 25 tweets in an hour if I did in a 8 hour
 window.

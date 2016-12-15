@@ -7,7 +7,7 @@ tags:
   - clef
   - work
   - life
-image: /images/snapshot421.png
+image: snapshot421.png
 excerpt: |
   Man, oh man, do I have some news for you! I wasn’t ready for this announcement
   myself to be honest, but once I dropped it, woooooo.
