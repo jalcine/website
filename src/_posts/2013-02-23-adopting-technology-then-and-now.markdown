@@ -5,6 +5,7 @@ date: 2013-02-23T23:44:19-05:00
 comments: true
 tags: nfc google-glass google-now agumented-reality
 category: review
+excerpt: Technology’s moving to an odd place; are we ready?
 
 ---
 
@@ -25,7 +26,7 @@ headphones that I use when I'm using my tablet or laptop out of the house,
 a wireless mouse; [the list goes on](/).
 
 ## NFC: Near Field Awesomeness 
-![From a poster in the street, you can download music, coupons, tickets...](images/posts/nfc_samsung_galaxy_s3.jpg)
+{% img "{{ 'posts/nfc_samsung_galaxy_s3.jpg' | asset_path }}" alt:"From a poster in the street, you can download music, coupons, tickets..." %}
 
 [NFC](http://idea.imano.com/2011/05/nfc-for-dummies/) is the beginning of
 awesome, contactless technology. Think of it of wireless data bursts flying
@@ -38,7 +39,7 @@ phone to your computer with no cables but only transferring a small document
 > But this is stupid. A little charge between my phone? How is this any better 
 > than using [QR codes](http://en.wikipedia.org/wiki/QR_codes)?
 
-![QR Code](http://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Wikipedia_mobile_en.svg/220px-Wikipedia_mobile_en.svg.png)
+{% img "http://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Wikipedia_mobile_en.svg/220px-Wikipedia_mobile_en.svg.png" alt:"QR Code" %}
 
 Using QR (Quick Response) codes is tersely similar to this process. With 
 a higher density of squares, you could, of course, store a lot of data. But 

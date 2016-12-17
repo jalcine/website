@@ -1,4 +1,5 @@
 ---
+
 layout: post
 title: "Static Web Pages + Git = Awesome Deployment"
 date: 2013-01-26 04:09 UTC-0500
@@ -8,6 +9,9 @@ tags:
   - octopress
   - sites
 category: development
+excerpt:
+  Push to deploy. Like a touch-to-start car, but like for static Web pages.
+
 ---
 
 I've been having lots of fun working with [Octopress][] and working with it

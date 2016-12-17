@@ -8,6 +8,9 @@ tags:
   - vim
   - neovim
   - omg
+excerpt: |
+  You know me. I really dig Vim and since then, I’ve moved to Neovim. But son,
+  check out the features and things going down with Neovim 0.1.0.
 
 ---
 
@@ -80,7 +83,7 @@ files, auto completion, path expansion and other features that could handle
 development. This function [`cmake#targets#cache`][10] handles all of that
 initial state building:
 
-{% highlight vim %}
+{% highlight vim linenos %}
 func! cmake#targets#cache()
   for aTarget in cmake#targets#list()
     let files = cmake#targets#files(aTarget)

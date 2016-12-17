@@ -86,3 +86,6 @@ navigation:
       uri: /crypto/
     - name: Press
       uri: /press/
+
+gpg:
+  fingerprint: "0x4DEFFC9FF82E8908"

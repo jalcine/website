@@ -2,7 +2,9 @@
 layout: post
 title: "First Starts: A Reboot"
 date: 2012-10-30 14:34 -0500
-comments: true
+revised: 2016-12-16 09:36:05 PST
+excerpt:
+  The first post made on Octopress. Oh joy!
 category: personal
 tags:
   - first

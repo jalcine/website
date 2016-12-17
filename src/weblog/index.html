@@ -4,21 +4,20 @@ title: Weblog
 excerpt: >
   A listing of all of the posts Jacky has written on his website.
 ---
-<section class="db pa2 center w-100 w-80-l " itemscope itemtype='http://schema.org/Blog'>
-  {% img "{{ 'jacky-portfolio-snow-roof.jpg' | image_path }}" class:"db center ma1 fr-l vh-50 vh-100-l" width:"auto" height:"auto" %}
-  <h1 class="f1 f-headline-l ttu">Weblog</h1>
-  <p class="lh-copy measure">
-    John Barger coined the term <strong>weblog</strong> at the end of 1997 but
-    still to this day, we use it as a means of representing the digital long
-    form text people use to encapsulate thoughts, moments and experiences over
-    time. This is where I hold mine. So for, I've written
-    {{ site.posts | size }} posts here since 2012 on this site. I have older
-    entries on <a class="orange" href="https://blogger.com" target="_blank">Blogger</a>
-    from 2009 on but that's another (digital) lifetime ago.
+<section class="db center mw9 w-100 pa2 w-80-l" itemscope itemtype='http://schema.org/Blog'>
+  {% img "{{ 'jacky-portfolio-snow-roof.jpg' | image_path }}"
+         class:"db center w-100 mw8 h-auto ma2" width:"auto" height:"auto" %}
+  <h1 class="f1 tc f-headline-l ttu fl-l">Weblog</h1>
+  <p class="f4 f3-l lh-copy measure-l pa2-l fr-l">
+    I like using the Internet a lot. I think I spend at least four hours each
+    day interacting with it with various devices. This and the experiences
+    I have in my life I capture here in my <strong>weblog</strong>. Some people
+    call them <em>blogs</em>, <em>web journals</em> or just <em>sites</em>. This
+    is my blog. It has {{ site.posts | size }} posts since {{ site.posts.last.date | date: "%Y" }}.
   </p>
 
-  <h2>Entries</h2>
-  <ul class="list pl0 mw-80 db">
+  <h2 class="f2 tracked-tight ttu pa2-l cb-l">Entries</h2>
+  <ul class="f5 f4-l list pl0 mw-80 db pa2-l">
     {% for post in site.posts %}
       <li class="db w-100">
         <a class="dim underline-hover navy" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>

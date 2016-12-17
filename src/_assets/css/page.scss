@@ -40,6 +40,12 @@ main#entry {
     @extend .bg-near-black;
     @extend .dark-pink;
   }
+
+  img.present {
+    @extend .center;
+    @extend .db;
+    @extend .cb;
+  }
 }
 
 a {

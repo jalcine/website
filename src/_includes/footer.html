@@ -1,2 +1,13 @@
-<footer class="db w-100 pa2 ph4-l center bg-near-black moon-gray">
+<footer class="db w-100 pa2 ph3-l pv4-l center bg-near-black moon-gray">
+  <ul class="db fr-l mr3-l list">
+    {% for link in site.navigation.links %}
+      <li class="ma1">
+        <a title="{{ link.name }}" class="link pa1 pa2-ns underline-hover gray hover-black" href="{{ link.uri }}">
+          {{ link.name }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <h4 class="f4 ttu tracked-tight moon-gray">{{ site.name }}</h4>
+  <p class="f5 measure-narrow">{{ site.description }}</p>
 </footer>
