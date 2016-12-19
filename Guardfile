@@ -21,7 +21,8 @@ guard :rack,
 end
 
 # Monitor the files for Jekyll and include in a special development mode.
-guard 'jekyll-plus', serve: false, silent: false do
+guard 'jekyll-plus', serve: false, silent: false, drafts: true,
+        config: ['_config.yml'] do
   watch(/^src/)
   watch(/^plugins/)
   watch('_config.yml')

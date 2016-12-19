@@ -1,7 +1,7 @@
 require 'mina/scp'
 require 'dotenv'
 
-Dotenv.load
+Dotenv.load '.envrc'
 
 set :domain, ENV['JALCINE_DEPLOY_DOMAIN']
 set :deploy_to, ENV['JALCINE_DEPLOY_PATH']

@@ -8,10 +8,14 @@ tags:
   - chai
   - testing
 date: 2015-09-07 22:39:34 EDT
+revised: 2016-12-16 17:23:29 PST
+excerpt:
+  Hapi? :fire:. Testing routes? Not so much.
+
 ---
 
 I'm working on a personal project that makes uses of [Hapi][] for its API layer.
-I've managed to go about in a mostly test-driven fashion and worked from the
+I've managed to go about in a mostly test driven fashion and worked from the
 bottom up (from data modeling up to the route definition). Whilst working on
 the ability to test the response states of routes, I noticed a few problems when
 using the [Chai][] plugin for HTTP testing, [`chai-http`][chai-http]. For
@@ -144,5 +148,5 @@ in my project).
 [server.inject]: http://hapijs.com/api#serverinjectoptions-callback
 [mocha]: http://mochajs.org/
 [1]: https://jacky.wtf
-[^1]: I make use of ES6 keywords a lot _and_ I don't use semi-colons, we don't need them.
+[^1]: I make use of ES6 keywords a lot _and_ I don't use semicolons, we don't need them.
 [^2]: For reference, this failed with node 0.12.0 and io.js 3.0.0 as well.

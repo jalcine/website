@@ -12,7 +12,7 @@ task :build do
 end
 
 task :'build:deploy' do
-  system 'bin/jekyll build --verbose -d _deploy --incremental'
+  system 'ENV=production bin/jekyll build --verbose -d _deploy'
 end
 
 task :'build:drafts' do

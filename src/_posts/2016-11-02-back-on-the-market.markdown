@@ -41,7 +41,9 @@ If you're interested in reaching out to me about me working at your company or
 working for you as a consultant, feel free to email me at `damn.you@black.af` or
 `yo@jacky.wtf`. I'll send copies of my resume upon request. Like Power Man said:
 
-{% img "luke-cage-im-just-getting-started.gif" class:"present" alt:"Luke Cage saying to Cottonmouth, ‘I’m just getting started.’" %}
+{% img "luke-cage-im-just-getting-started.gif" class:"present" alt:"Luke Cage
+saying to Cottonmouth, ‘I’m just getting started.’" width:”auto” height:”auto”
+%}
 
 [1]: {% post_url 2015-11-01-new-job-who-this %}
 [^1]: Fund public schools.

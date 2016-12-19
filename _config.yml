@@ -22,7 +22,7 @@ encoding: 'utf-8'
 
 permalink: "/weblog/:title/"
 show_drafts: false
-lsi: false
+lsi: true
 future: false
 relative_permalinks: false
 markdown: kramdown

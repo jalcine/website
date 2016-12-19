@@ -8,6 +8,7 @@ tags:
   - testing
   - opinion
 date: 2016-06-09 13:37:49 EDT
+excerpt: ""
 ---
 
 > I wrote a bit about [moving over to neovim][1] and it got a bit of good

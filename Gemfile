@@ -11,7 +11,6 @@ group :jekyll do
   gem 'jekyll'
   gem 'kramdown'
   gem 'rb-gsl'
-  gem 'sprockets-es6'
   gem 'autoprefixer-rails'
   gem 'mini_magick'
   gem 'jekyll-tagging-related_posts'
@@ -27,7 +26,7 @@ group :jekyll_plugins do
   gem 'octopress-video-tag', git: 'https://github.com/anarchivist/octopress-video-tag',
     branch: 'loosen-gemspec'
   gem 'jekyll-assets', github: 'jekyll/jekyll-assets'
-  gem 'jekyll-sitemap', github: 'jekyll/jekyll-sitemap'
+  # gem 'jekyll-sitemap', github: 'jekyll/jekyll-sitemap'
 end
 
 # {{{ Development
@@ -42,7 +41,7 @@ group :web do
 end
 
 group :deployment do
-  gem 'mina'
+  gem 'mina', '< 1.0.0'
   gem 'mina-scp'
 end
 

@@ -99,7 +99,7 @@ version in my sources. It also comes with a snapshotting command so that once
 I feel comfortable with the interoperability of the plugins I have currently,
 I can lock them into place :100:. I mean, look at it.
 
-[{% img "https://raw.githubusercontent.com/junegunn/i/master/vim-plug/installer.gif" alt:"vim-plug in action" %}][vim-plug]
+![Plug for vim in action](https://raw.githubusercontent.com/junegunn/i/master/vim-plug/installer.gif){: .present}
 
 Start up time for neovim is below ten milliseconds with vim-plug and all of my
 plugins, currently over ~50 or so (it's inevitable).

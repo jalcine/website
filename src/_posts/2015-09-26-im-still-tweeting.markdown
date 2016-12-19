@@ -1,8 +1,11 @@
 ---
 layout: post
+date: 2015-09-25 00:00:00 PST
+revised: 2016-12-16 17:47:08 PST
 title: "I'm Still Tweeting Though. Why?"
 byline: "Didn't I just say I'd stop tweeting?"
 image: none
+excerpt: false
 category: thoughts
 tags:
   - twitter
@@ -28,7 +31,7 @@ Of course, there's a difference in perhaps the quality of content provided as
 well as the detail that could be provided (unless it's accompanied by video,
 which is something I do _rarely_ here). Twitter makes it easy to break up a
 thought into a series of thoughts (which is what most of my blog posts have
-essentially been, no matter how confusing or jumbled up that might be.
+essentially been), no matter how confusing or jumbled up that might be.
 
 There's always the idea of starting a thread of sorts, but not divulging deeply
 into your thoughts on Twitter. The rest of the thread (and perhaps a rehashing
@@ -48,10 +51,10 @@ for inline commenting via its product [Carnival][2]. It looks pretty compelling
 of a means to provide inline commenting[^4] (sans the lack of love for Firefox
 on Linux :sob:):
 
-{% video /images/snapshot396.png /videos/carnival_preview.webm 800 600 preload:metadata %}
+{% video "{{ 'snapshot396.png' | image_path }}" /videos/carnival_preview.webm 800 600 preload:metadata %}{: .present}
 
 One of the values that inline commenting provides is the ability to reply in a
-condensed, tweet-sized response. Of course, if it has to be longer, there's the
+condensed, tweet sized response. Of course, if it has to be longer, there's the
 whole "write a post as an reply" stance, which is something Medium leverages.
 Medium obviously has the advantage of this working well since every 'blog' is
 contained to its platform; any extra functionality can be added to these blogs
@@ -79,11 +82,11 @@ but it doesn't fare too well when you make tangents in conversations. Those
 tangents tend to be a means of expanding on that point.
 
 This led to the whole idea of hammering Carnival to allow for comments made as
-tweet-able comments as well, provided that they are of an acceptable size.
+tweetable comments as well, provided that they are of an acceptable size.
 Again, this is a deviation from the original thought of this post: how can I
 feel less guilty of tweeting whilst still writing on my own blog?
 
-![The baggage of the world...](/images/rdj-im3-haul-suit.gif)
+{% img "{{ 'rdj-im3-haul-suit.gif' | image_path }}" alt:"The baggage of the world..." class:"present" %}
 
 ### Separation of Topics
 
@@ -101,12 +104,12 @@ since <http://www.howoftendoyoutweet.com/> is down, but I know that I do it too
 often and it's mostly manually[^7]. Another site did provide me with some
 interesting graphs for the month of September:
 
-{% img "snapshot397.png" %}
+{% img "{{ 'snapshot397.png' | image_path }}" class:"present" %}
 
 I tweet a lot. That's a bit over 25 tweets in an hour if I did in a 8 hour
 window.
 
-![Man](/images/snapshot398.png)
+{% img "{{ 'snapshot398.png' | image_path }}" class:"present" %}
 
 This graph is the one I wanted the most: how often I tweeted in relation to
 other days. It also exposes my non-conventional sleeping cycle. I take longer
@@ -139,7 +142,7 @@ as I tweet:
 [^1]: By now, I think you've noticed that all of the linked tweet are part of a thread :grin:.
 [^2]: Or more-so, their 'loyal' content distributors.
 [^3]: Be it on your own installation of Wordpress, Blogger, Tumblr or what have you.
-[^4]: One could go as far as to provide as a means for hooking in tweet-replies here. That would be a compelling feature in itself.
+[^4]: One could go as far as to provide as a means for hooking in tweet replies here. That would be a compelling feature in itself.
 [^5]: Tumblr, when used for long form text, rocks.
 [^6]: This is off the top of my head, not an accurate measure.
 [^7]: I did find this site, <http://www.tweetstats.com/status/jackyalcine>
