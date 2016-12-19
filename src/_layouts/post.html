@@ -1,14 +1,49 @@
 ---
-layout: default
-class: post
+layout: bare
 ---
-
-<section class="parent-wrapper">
-  {% include post_header.html title=page.title %}
-
-  <main role='post' itemscope itemtype='http://schema.org/BlogPosting'>
-    {{ content }}
-  </main>
-
-  {% include post_footer.html %}
-</section>
+{% if page.image and page.image != 'none' %}
+  <header class="ph3 ph4-ns pt4 pt5-ns">
+    {% img "{{ page.image }}" class:"w-auto dib ma1 center h-auto-l w-50-l fr-l" %}
+    <h1 class="baskerville f2 f1-m f-headline-l measure lh-title fw1 mv1 ma2-l">{{ page.title }}</h1>
+    {% if page.byline %}<h2 class="f3 fw1 pa1 gray">{{ page.byline }}</h2>{% endif %}
+    {% if page.date %}<time class="f6 mh2 ttu db gray">{{ page.date |
+        date_to_rfc822}}{% if page.revised %}, updated <strong>{{ page.revised |
+            date_to_rfc822 }}</strong>{% endif %}</time>{% endif %}
+  </header>
+{% else %}
+  <header class="db center mw-90 pa2 pa4-l tc tl-l">
+    <h1 class="baskerville f2 f-headline-l fw1 near-black">{{ page.title }}</h1>
+    {% if page.byline %}<h3 class="f4 f3-l fw1 gray">{{ page.byline }}</h3>{% endif %}
+    <cite class="f6 ttu tracked fs-normal">{{ site.author }}</cite>
+    &mdash;
+    {% if page.date %}<time class="f6 ttu">{{ page.date | date_to_rfc822}}{% if
+          page.revised %}, updated <strong>{{ page.revised | date_to_rfc822
+            }}</strong>{% endif %}</time>{% endif %}
+  </header>
+{% endif %}
+<p class="f6 f5-l pa2 pa4-l mw8 w-80 center db gray tl">
+  A {{ page.category }} post{% if page.tags %}, tagged under {{ page.tags | linkify_tags }}{% endif %}.
+</p>
+{% if page.excerpt != false or page.excerpt != '' %}
+  <blockquote class="pa2 gray f3 f1-ns measure-narrow center cb">
+    <div class="lh-copy lh-title-ns">
+      {{ page.excerpt | markdownify }}
+    </div>
+  </blockquote>
+  <p class="tc moon-gray">&sect;</p>
+{% endif %}
+<main id="entry" class="w-100 lh-copy normal sans near-black db f4">
+  {{ content }}
+</main>
+<footer role="post" class="pa2 b--dotted bw2 bn bb center w-100 moon-gray bg-near-black pa4-l">
+  <div class="center tc db mw5 w-100-l">
+    {% if page.previous %}<a class="mv2 center pa2 dib" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>{% endif %}
+    {% if page.next %}<a class="mv2 center pa2 dib" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>{% endif %}
+  </div>
+  <p class="cb f6 center tc pa1">
+    Thoughts? Comments? Suggestions? Rage posts? Send all of that to either my
+    <a href="https://twitter.com/jackyalcine">Twitter handle</a> or <a
+      href="mailto:yo@jacky.wtf">my email address</a> and I'll get back to you
+    as soon as feasibly possible.
+  </p>
+</footer>

@@ -1,8 +1,12 @@
 ---
+
 layout: post
 title: "My Blog's Centennial"
 date: "2016-08-12 08:22:55 -0700"
 byline: "I didn't expect it but my blog has 100 posts now!"
+excerpt:
+  I wrote one hundred blog posts. And now here’s another.
+
 ---
 
 I was finishing up a morning entry[^1] and about to begin packing my bag for the

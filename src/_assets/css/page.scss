@@ -1,0 +1,98 @@
+@import "../../../node_modules/tachyons-sass/tachyons";
+@import "_syntax";
+
+.fg-light  { @extend .near-white; }
+.fg-dark   { @extend .near-black; }
+.fg-accent { @extend .dark-pink;  }
+
+.footnotes {
+  @extend .mw9;
+  @extend .center;
+  @extend .f6;
+
+  > ol {
+    a.reversefootnote {
+      @extend .gray;
+    }
+  }
+}
+
+main#entry {
+  ul > li { list-style: square; }
+
+  h1, h2, h3, h4, h5, h6 {
+    @extend .w-70-l;
+    @extend .center;
+  }
+
+  h4, h5, h6 {
+    @extend .ttu
+  }
+
+  > p, ul, ol, blockquote {
+    @extend .w-two-thirds-l;
+    @extend .center;
+    @extend .pa3;
+    @extend .pa4-ns;
+  }
+
+  blockquote {
+    @extend .b--gray;
+    @extend .ma1;
+    @extend .bw1;
+    @extend .bg-near-black;
+    @extend .light-pink;
+  }
+
+  img.present {
+    @extend .center;
+    @extend .db;
+    @extend .cb;
+  }
+}
+
+a {
+  @extend .link;
+  @extend .dark-pink;
+  @extend .hover-pink;
+  text-decoration: none;
+
+  &:visited {
+    @extend .pink;
+  }
+}
+
+ul {
+  @extend .pl1;
+}
+
+figure {
+  @extend .ma0, .pa0;
+
+  code[data-lang] {
+    @extend .center;
+    @extend .w-80;
+    @extend .mw8;
+    @extend .db;
+    @extend .pa3;
+    @extend .pre;
+    overflow: auto;
+  }
+}
+
+.instagram-media {
+  @extend .center;
+  @extend .dt;
+  @extend .w-auto;
+  @extend .vh-75;
+}
+
+blockquote.twitter-tweet {
+  @extend .bg-lightest-blue;
+  @extend .near-black;
+}
+
+div.jekyll-twitter-plugin {
+  @extend .center;
+  @extend .dt;
+}

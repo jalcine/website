@@ -5,6 +5,8 @@ date: 2013-01-23 22:45
 comments: true 
 tags: xorg ubuntu packages projects tablet android
 category: projects
+excerpt:
+  Use that Android tablet of yours as a drawing pad!
 
 ---
 

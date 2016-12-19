@@ -1,8 +1,9 @@
 # vim: set nospell:
 source: 'src'
 destination: '_site'
-layouts: 'src/_layouts'
-plugins: 'plugins'
+layouts_dir: 'src/_layouts'
+plugins_dir: 'plugins'
+filter_entries: []
 
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
@@ -21,23 +22,14 @@ encoding: 'utf-8'
 
 permalink: "/weblog/:title/"
 show_drafts: false
-lsi: false
+lsi: true
 future: false
 relative_permalinks: false
 markdown: kramdown
-highlighter: pygments
 
-# Loading in the gems used by Jekyll. I really hate having to updating this
-# list but it is what it is. 
-gems:
-  - jemoji
-  - jekyll-gist
-  - jekyll-sass
-  - jekyll-haml
-  - jekyll-timeago
-  - jekyll-twitter-plugin
-  - jekyll-auto-image
-  - jekyll-paginate
+exclude:
+  - _site
+  - .asset_cache
 
 # {{{ Markdown renderer options
 kramdown:
@@ -62,6 +54,38 @@ defaults:
         header: true
         footer: true
 
-tag_page_layout: tag_page
-tag_page_dir: weblog/tag/
-tag_permalink_style: pretty
+assets:
+  debug: true
+  autowrite: true
+  compress:
+    css: true
+    js: true
+  prefix: "/assets"
+  asset:
+    - "*.png"
+    - "*.jpg"
+    - "*.jpeg"
+    - "bundle.css"
+  sources:
+    - _assets/css
+    - _assets/images
+    - _assets/img
+    - _assets/js
+  features:
+    liquid: true
+
+navigation:
+  links:
+    - name: Weblog
+      uri: /weblog/
+    - name: Gear
+      uri: /gear/
+    - name: Work
+      uri: /work/
+    - name: Crypto
+      uri: /crypto/
+    - name: Press
+      uri: /press/
+
+gpg:
+  fingerprint: "0x4DEFFC9FF82E8908"

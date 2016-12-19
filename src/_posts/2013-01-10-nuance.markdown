@@ -8,6 +8,9 @@ tags:
   - sii
   - speechcontrol
 category: rant
+excerpt:
+  Something like this is bound to happen with small projects. We’re ants near to
+  a hyena.
 
 ---
 

@@ -1,13 +1,16 @@
 ---
 
-image: "https://farm6.staticflickr.com/5612/15610731560_8b05de2e56_k.jpg"
-layout: "post"
-title: "Ending 2014 with a (Minor) Bang, Embracing 2015 with Open Arms"
-location: "Brooklyn, NY"
+image: posts/ending-2014-welcome-2015.jpg
+layout: post
+title: Ending 2014 with a (Minor) Bang, Embracing 2015 with Open Arms
+location: Brooklyn, New York
 date: 2014-12-01 23:53:51 EST
+revised: 2016-12-14 18:24:17 PST
+tags:
+  - reflection
+  - 2014
 categories:
   - annual
-  - opinion
 
 ---
 

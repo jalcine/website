@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Things I Read in the Week of 2015-09-11"
+title: "Things I Read in the Week of 2015-09-12"
 date: 2015-09-12 04:03:37 EDT
+revised: 2016-12-16 17:31:29 PST
 image: none
+excerpt: ""
 category: review
 tags:
   - read-this-week
   - review
-javascripts:
-  - https://platform.instagram.com/en_US/embeds.js
-
 ---
+
+<script src="https://platform.instagram.com/en_US/embeds.js"></script>
 
 > This blog post is the first in a series of posts I'll be attempting to make
 > every week to help me reflect on the things I've read this week. You can
@@ -29,7 +30,7 @@ not a report.
 one that I have bookmarked and revisit often. [Yak shaving][1] is amazingly well
 depicted by that GIF he uses from Malcolm in the Middle:
 
-![Hal, can you change the lightbulb?](http://i.minus.com/ibaDjk7AeIcvxv.gif)
+![Hal, can you change the lightbulb?](http://i.minus.com/ibaDjk7AeIcvxv.gif){: .present}
 
 ### [Blavity’s August Review: Curls, podcasts and #BlackGirlMagic][link:2]
 

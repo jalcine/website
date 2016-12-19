@@ -5,9 +5,10 @@ title: 2015 - The Close
 date: 2015-12-25 09:29:13 PST
 tags:
   - reflection
+  - annual
 category: opinion
+excerpt: ""
 byline: Another year in the playbook.
-
 ---
 
 ### Twenty fifteen.

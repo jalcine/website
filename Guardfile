@@ -9,7 +9,7 @@ end
 
 # Handle the act of live reloading changes to the browser (hard refreshes)
 guard :livereload do
-  watch(/^_site*.(html|css|js)/) { |m| "/#{m[0]}" }
+  watch(/^_site*.(?!asset-cache)*(html|css|js)/) { |m| "/#{m[0]}" }
 end
 
 # Load a Rack server to handle the local serving of the site.
@@ -21,9 +21,14 @@ guard :rack,
 end
 
 # Monitor the files for Jekyll and include in a special development mode.
-guard 'jekyll-plus', serve: false, future: true, drafts: true,
-                     silent: true, config: ['_config.yml'] do
+guard 'jekyll-plus', serve: false, silent: false, drafts: true,
+        config: ['_config.yml'] do
   watch(/^src/)
   watch(/^plugins/)
   watch('_config.yml')
+end
+
+# Check on the npm packages we pull in.
+guard :npm do
+  watch('package.json')
 end

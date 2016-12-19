@@ -8,15 +8,18 @@ tags:
   - vim
   - neovim
   - omg
+excerpt: |
+  You know me. I really dig Vim and since then, I’ve moved to Neovim. But son,
+  check out the features and things going down with Neovim 0.1.0.
 
 ---
 
 So [it happened][1]. Neovim 0.1.0 is out. It’s the first minor version of
 Neovim since it began a while back as [a fork of the fork of Vi][2]. To be
-honest, I played with the idea of it when I first saw the announcement in March
-2015. I’ve used it passively for quite some time and didn’t really realize how
-awesome the shift was until [someone mentioned it to me][3][^1]. There’s a few
-things about neovim that I like a lot and some things I wish I saw sooner.
+honest, I played with the idea of it when I first saw the alert in March 2015.
+I’ve used it passively for quite some time and didn’t really realize how awesome
+the shift was until [someone mentioned it to me][3][^1]. There’s a few things
+about neovim that I like a lot and some things I wish I saw sooner.
 
 ## The Configuration MOVED
 
@@ -80,7 +83,7 @@ files, auto completion, path expansion and other features that could handle
 development. This function [`cmake#targets#cache`][10] handles all of that
 initial state building:
 
-{% highlight vim %}
+{% highlight vim linenos %}
 func! cmake#targets#cache()
   for aTarget in cmake#targets#list()
     let files = cmake#targets#files(aTarget)

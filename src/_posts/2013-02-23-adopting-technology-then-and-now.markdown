@@ -2,9 +2,11 @@
 layout: post
 title: "Adopting Technology: Then and Now"
 date: 2013-02-23T23:44:19-05:00
+revised: 2016-12-16 16:50:37 PST
 comments: true
 tags: nfc google-glass google-now agumented-reality
 category: review
+excerpt: Technology’s moving to an odd place; are we ready?
 
 ---
 
@@ -25,8 +27,6 @@ headphones that I use when I'm using my tablet or laptop out of the house,
 a wireless mouse; [the list goes on](/).
 
 ## NFC: Near Field Awesomeness 
-![From a poster in the street, you can download music, coupons, tickets...](images/posts/nfc_samsung_galaxy_s3.jpg)
-
 [NFC](http://idea.imano.com/2011/05/nfc-for-dummies/) is the beginning of
 awesome, contactless technology. Think of it of wireless data bursts flying
 faster than we can see. The technology is something quite simple, it uses 
@@ -38,18 +38,16 @@ phone to your computer with no cables but only transferring a small document
 > But this is stupid. A little charge between my phone? How is this any better 
 > than using [QR codes](http://en.wikipedia.org/wiki/QR_codes)?
 
-![QR Code](http://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Wikipedia_mobile_en.svg/220px-Wikipedia_mobile_en.svg.png)
-
 Using QR (Quick Response) codes is tersely similar to this process. With 
 a higher density of squares, you could, of course, store a lot of data. But 
-QR codes have proven to be very intrustive when it comes to decor. The 
+QR codes have proven to be very intrusive when it comes to decor. The 
 practice would require adopting the image into design, a burden not needed. 
 NFC tags remove this burden by having wires instead being placed under or 
 within materials and design so patrons of it can interact with head-on. So 
 from a design aspect, it's quite useful.
 
-For hardware manufactors, no effort is required. If anything, it's up to the 
-manufactors to provide cameras with no delay in capture. Since QR codes are purely 
+For hardware manufactures, no effort is required. If anything, it's up to the 
+manufactures to provide cameras with no delay in capture. Since QR codes are purely 
 a software implementation and depiction of data, it's merely up to having 
 a standard means of interpreting said data and building a quick and easy 
 library for developers to tie in such a function into the application. There's 
@@ -59,7 +57,7 @@ and [Fandango](https://play.google.com/store/apps/details?id=com.fandango)
 that make heavy use of QR codes in current use but could be greatly improved
 in its effectiveness if NFC technology were used in place of it.
 
-## Augumented Reality
+## Augmented Reality
 
 This concept of merging computer graphics and reality is something done a LOT,
 and we take it for granted. Most films created make heavy use of
@@ -76,15 +74,15 @@ better each and every day. Personally, I'd love to have it, but it'd be more
 of a toy then anything else. Unless you're a constant hitchhiker, travelling
 the world and what not, it'd be perfect for you. Translate would be your best
 friend. It also has the best implications for news journalists who happen to
-be on site and wish to collect data as they go. Self-documentation became a
+be on site and wish to collect data as they go. Self documentation became a
 LOT easier.
 
 The use case of this is quite limited but it can expand as the world itself
-grows to more of a technologically-connected planet. For example, shopping for
+grows to more of a technologically connected planet. For example, shopping for
 clothes, food, or anything in general would become a lot simpler. Picking up
 an item and scanning the barcode with glass would allow you to potentially
 purchase it then and there. You could skip the entire line by just producing a
-digital certificate representing your purchase; it could potentially re-invent
+digital certificate representing your purchase; it could potentially reinvent
 shopping.
 
 ### Physically
@@ -99,7 +97,7 @@ leave the comfort of home. This allows for a whole new level of interaction
 for the desktop (and larger!) systems, but it's very young.
 
 This is something that could be extremely useful in medical places, if a
-doctor had a full-body scan of a human being, they could easily spin, zoom and
+doctor had a full body scan of a human being, they could easily spin, zoom and
 manipulate the body without having to do it on the actual person for
 simulation purposes. This could also lead to better video games that promote
 one's wellness and stability. In short, the Leap Motion is the ticket to
@@ -120,7 +118,7 @@ searches in the Knowledge Graph), then Google Now becomes your very best
 friend. I've actually gotten so attached, I check it in the morning, lunch,
 dinner and before I knock out for sleep. It tells me what I'd like to know at
 a very balanced level. It's Google's way to understanding what you'd like to
-know before you know, thus curating to your pre-born needs. [Inception,
+know before you know, thus curating to your pre born needs. [Inception,
 much?](http://www.youtube.com/watch?v=V3-a58Wt2tk).
 
 ### Siri

@@ -1,6 +1,7 @@
 ---
 layout: post
 date: 2016-09-12 21:21:56 PDT
+revised: 2016-12-06 16:38:44 PST
 title: "Why I'm a Black Haitian and not an African American"
 byline: "Don't get me wrong, I'm Black as hell. I'm just a first-gen."
 tags:
@@ -8,9 +9,11 @@ tags:
   - identity
   - heritage
 category: thoughts
+excerpt: >
+  Doing some homework on my ancestory, heritage and culture made me realize it
+  was due time to update my background on LinkedIn. Would you mind connecting
+  with me?
 ---
-
-> I've been sitting on this blog post for a while.
 
 I've decided to classify myself as a **Black Afro-Haitian** individual as 
 opposed to being an African American. I initially challenged this idea early

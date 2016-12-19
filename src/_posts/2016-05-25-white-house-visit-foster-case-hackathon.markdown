@@ -3,6 +3,11 @@ layout: post
 title: "White House Visit - Foster Case &amp; Technology Hackathon"
 date: 2016-05-24 23:57:28 PDT
 category: announcements
+excerpt: ""
+tags:
+  - white house
+  - hackathon
+
 ---
 
 I'm a bit late to the announcement party but I'll be attending the first ever

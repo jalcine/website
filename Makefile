@@ -7,16 +7,23 @@ install:
 	@bundle install --binstubs
 
 build:
-	bundle exec rake build
+	@bundle exec rake build
+
+build-deploy:
+	@bundle exec rake build:deploy
 
 serve: build
 	@bundle exec guard start
 
-deploy: clean build
+deploy: clean-deploy build-deploy
 	@bundle exec rake deploy
 
 clean:
 	@bundle exec rake clean
+	@bundle exec jekyll clean
+
+clean-deploy: clean
+	@rm -rf _deploy
 
 help:
 	@echo "Tasks for my site:"

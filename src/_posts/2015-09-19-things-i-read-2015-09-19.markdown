@@ -3,9 +3,10 @@ layout: post
 title: "Things I Read in the Week of 2015-09-19"
 date: 2015-09-19 03:08:05 EDT
 category: review
+excerpt: false
 image: none
 tags:
-  - reviewing
+  - read-this-week
   - reading
 
 ---

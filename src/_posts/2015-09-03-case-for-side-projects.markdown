@@ -2,7 +2,15 @@
 layout: post
 title: "The Case for Side Projects"
 date: 2015-09-03 02:50:42 EDT
+revised: 2016-12-16 17:21:54 PST
 category: thoughts
+tags:
+  - side projects
+  - rambling
+excerpt:
+  Side projects are a fickle topic. Yeah, they’re dope to bring something into
+  the world. Even wilder when they can generate revenue. Do they have an impact
+  on your growth as a developer, though?
 
 ---
 
@@ -54,21 +62,21 @@ tinkering with it.
 
 If I'm saying at all, working on side projects can assist with your rationale
 when approaching new projects; especially if you happen to be a person who jumps
-from contracting roles to self-directed freelancing work[^3]. It's very easy to
+from contracting roles to self directed freelancing work[^3]. It's very easy to
 just get stuck with a particular mindset of programming approaches which is
 another reason why pairing up with a friend to work on a project helps a lot. It
 doesn't have to be a huge part of it, it could be just getting feedback on a
 particular class or view if it's been conventionally implemented[^4].
 
 The one important thing I think that helps a lot with the development of said
-project[^5] is the act of self-review. This is done either by checking over the
+project[^5] is the act of self review. This is done either by checking over the
 tests, confirming that the project's brief aligns with the goals you've set out
 of the project and also blogging about your process of development as well.
 
 Blogging on the process of your project's growth is probably the most important
 thing I'd want you as a reader to take away from. And this transcends the class
 of project you're working on -- be it a software, hardware or just a
-non-tech project. Talk about your project. Make it your own experience and learn
+non tech project. Talk about your project. Make it your own experience and learn
 from it.
 
 [1]: /projects/
@@ -78,5 +86,5 @@ from it.
 [^1]: The intent is to use this to make it easier to get paid work.
 [^2]: It's worth it. I need work. Work gets me money. Money keeps this site up.
 [^3]: THIS GUY DOES THAT!
-[^4]: If you're a designer, feel free to swap out for more design-orientated lingo here.
+[^4]: If you're a designer, feel free to swap out for more design orientated lingo here.
 [^5]: Coming from someone with one failed, one funky and a barely popular project, haha.
