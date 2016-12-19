@@ -1,0 +1,74 @@
+---
+# vim: set ft=liquid : #
+layout: bare
+title: My Gear
+---
+
+<section class="w-80-l w-100 mw9 center db pa2">
+  {% img "{{ 'brand/gear-masthead.jpg' | image_path }}"
+  class:"db center w-100 mw8 h-auto ma2" width:"auto" height:"auto" %}
+  <h1 class="f1 f-headline-l ttu">My Gear</h1>
+  <p class="f4 f3-l lh-copy measure pa2-l">
+    Here lies a page that's meant to label the things that I own and use to do the
+    stuff that I like doing like writing software or take pictures. I don't take
+    <em>as many</em> pictures as I'd like for display. That's a simple fix:
+    <strong>take the camera with me</strong>!
+  </p>
+
+  <h2 class="f2 tracked-tight ttu cb-l">
+    <a class="black" name: "hardware">Hardware</a>
+  </h2>
+  <address>Updated March 4, 2015</address>
+
+  <h3>
+    <a class="black" name="laptop">My Laptop</a>
+  </h3>
+  {% img "{{ 'dell-xps-14-keyboard-amzn.jpg' | image_path }}" width:"auto" height:"auto" class:"dbi w-50 fr" alt:"Overhead shot of the Dell XPS 14 laptop, keyboard in focus" %}
+  <p class="lh-copy f5 f4-l">My laptop of choice is the <a href="http://amzn.com/B00HK8V4PU">Dell XPS 14</a> with 500 GB of disk space, 32 GB SSD and a <a href="http://ark.intel.com/products/72054/Intel-Core-i7-3537U-Processor-4M-Cache-up-to-3_10-GHz">Intel i7-3537U core</a>. With 8 GB SDDRAM3 @ 1.6 GHz, it's relatively fast and gets the job done. Bluetooth's in there as well and it has a backlit keyboard which really helps at night. It has a shoddy web camera though, only 2 megapixels. The speakers, however, are amazing (before I messed them up). They really boom despite them behind under the laptop. And they're practically invisible. A nugget of gold about this laptop? Under the bottom left corner of the keyboard, a button lights up to five LEDs, letting you know how much power's left. More useful then it should be!</p>
+
+  <h3><a name="camera">My Cameras</a></h3>
+  <p class="lh-copy f5 f4-l">
+    Most of the shots I've taken come from my nifty <a href="http://amzn.com/B00HQ4W3X0">Nikon L830</a> since it's mostly automatic when it comes to handling. I really just tweak ISO, white balance and focus with this camera. However, the <a href="http://amzn.com/B009OAOG9S">Nikon D3200</a> handles a lot better, takes way better shots but requires me to fiddle with it a bit more. This might be me handling it incorrectly; we'll find out.
+  </p>
+
+  <h3><a name="mouse">Mouse</a></h3>
+  <address>Update 2016-06-06</address>
+
+  <p class="lh-copy f5 f4-l">
+    The cool kids are using track pads and what not. I not only like sticking to my mouse, I use it on the left side. I've done this for a long time (about 3 years now) and I noticed that I tend to place drinks and food to the right side and having a moving target over there was dangerous. So I invested in the <a href="http://amzn.com/B00HK8V4PU">Logitech M150</a>. Best investment EVAH!
+  </p>
+
+  <address class="f6">Updated 2016-06-06 11:12:32 EDT</address>
+  <p class="lh-copy f5 f4-l">
+    So I gave that mouse away and instead went up a few models and got the
+    <a href="http://amzn.com/B004YAVF8I">Logitech M185</a> in a bundle with a wireless keyboard - I had complications with my onboard keyboard and needed this until I was able to replace it.
+  </p>
+
+  <h2><a name="software">Software</a></h2>
+  <address>Updated 2015-01-10</address>
+  <p clas="lh-copy f5 f4-l">
+    Most of the files for replicating my environment is over on Github for the
+    <a href="https://github.com/jalcine/dotfiles">shell</a> and
+    <a href="https://github.com/jalcine/kderc">KDE</a> repositories.
+  </p>
+
+  <h3>Terminal Emulator</h3>
+  <p class="lh-copy f4 f5-l">
+    I spend too much time in <a href="https://konsole.kde.org/">Konsole</a> after trying out things like <a href="http://finalterm.org/">FinalTerm</a> and <a href="https://wiki.gnome.org/Apps/Terminal">GNOME Terminal</a> on Linux machines.
+    Konsole supports more colors and is very flexible with glyph rendering.
+    I use the <a href="https://github.com/chriskempson/base16/blob/master/scheme-previews/base16-ocean.svg">Base 16 Bright</a> color scheme for the emulator.
+    It's not completely black in the background, but it's dark enough to be a backdrop of sorts.
+    The typeface used is <a href="https://github.com/madmalik/monoOne">monoOne</a> and it works really well at size 9 <em>and</em> comes with Powerline symbol support.
+
+    {% img "{{ 'konsole.png' | image_path }}" class="dib w-80 center" %}
+  </p>
+
+  <h3>Shell</h3>
+  <p class="lh-copy f4 f5-l">
+    I use <a href="https://www.gnu.org/software/bash/">Bash</a> as my default shell.
+    I use <a href="https://github.com/andsens/homeshick">homeshick</a> to set up a system of shell configuration files for <a href="https://github.com/jalcine/vimrc">neovim</a>,
+        <a href="https://github.com/jalcine/gitrc">git</a>, <a href="https://github.com/jalcine/tmuxrc">tmux</a> and
+        <a href="https://github.com/jalcine/dotfiles">anything else</a> that isn't big enough to pull out into a separate repository.
+    I use Vim as my primary text editor and like using <a href="http://kde.org">KDE</a> software due to its synergy.
+  </p>
+</section>

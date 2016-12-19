@@ -1,9 +1,14 @@
 ---
 layout: post
 title: "Protesting in the Streets in the Age of Adaptive Mapping"
+date: 2016-07-20 15:00:44 PDT
+revised: 2016-12-15 23:12:55 PST
 byline: >
   How highway shutdowns might be not as highly troubling as we once
   thought due to the rise of adaptive, crowd sourced mapping technology.
+excerpt:
+  Protesting in cities and highways have really taken a turn to a different
+  world.
 tags:
   - liberation
   - technology

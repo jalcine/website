@@ -3,20 +3,24 @@ title: "Defining All of the Things"
 layout: post
 category: thoughts
 date: 2015-08-30 11:41:28 EST
+category: tinkering
 tags:
-  - home-automation
+  - home automation
   - wintermute
+excerpt:
+  It’s nice to have friends to talk AI about. But like spec’ing out how your
+  custom home “butler” works? Man.
 
 ---
 
 Whilst chatting in this new [Slack][] room [@bossjones][] set up for [home automation
 and robotics][], I thought about how interactions with more laymen devices could
 go down from a programmatic standpoint. It's kind of amazing how similar to
-having a service-orientated architecture that all of this is. Depending on how
+having a service orientated architecture that all of this is. Depending on how
 it's designed, each service could represent one or many instances of a class of
 devices, be it a light bulb, a IR transceiver or ever your phone. I think that I
 might be mildly biased in this thinking since that's a lot of what I was touching
-on at my last full-time role[^1]. It's exciting nonetheless to be able to think
+on at my last fulltime role[^1]. It's exciting nonetheless to be able to think
 of every day objects as a suite of objects that have properties and methods
 (when reduced to the closest and crudest forms of objects). For example, this
 is what I think what the definition of a sink could have:

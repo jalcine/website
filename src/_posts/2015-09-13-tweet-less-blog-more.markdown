@@ -1,10 +1,14 @@
 ---
 layout: post
 title: "Blogging More, Tweet Less"
+date: 2015-09-13 00:00:00 PST
+revised: 2016-12-16 17:41:15 PST
 category: thoughts
 tags:
   - blogging
   - thoughts
+excerpt:
+  The social networks are eating us up!
 
 ---
 

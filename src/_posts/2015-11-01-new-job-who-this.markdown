@@ -7,7 +7,7 @@ tags:
   - clef
   - work
   - life
-image: /images/snapshot421.png
+image: snapshot421.png
 excerpt: |
   Man, oh man, do I have some news for you! I wasn’t ready for this announcement
   myself to be honest, but once I dropped it, woooooo.
@@ -53,7 +53,7 @@ It took a while to reason out the emotions here but it was just me being
 about this and there’s one thing that they wanted me to be over anything
 (outside of remaining in constant contact):
 
-[![Be happy.](/images/IMG_20150926_180029.jpg)][4]
+[{% img "{{ 'IMG_20150926_180029.jpg' | image_path }}" alt:"Be happy" width:"auto" height:"auto" class:"present" %}][4]
 
 They wanted me to **be happy**. My dad wanted me to be a doctor :needle:, my mom
 to stop being smart :stuck_out_tongue_winking_eye:[^3]. Neither got what they

@@ -3,6 +3,8 @@ layout: post
 title: "Returning to Freelance (Softly)"
 category: thoughts
 date: 2015-09-19 07:11:35 EDT
+revised: 2016-12-16 17:44:38 PST
+excerpt: Freelancing is fun, but full-time work, tho...
 tags:
   - freelance
   - thoughts
@@ -25,7 +27,7 @@ was that I didn't have enough experience. I don't advertise myself as a
 senior developer[^2] and I bluntly admit if I don't know something.
 
 Surprisingly enough, that 'lack of knowledge' of something conventionally
-hyper-specific to a company is something I'm supposed to somehow know without
+hyper specific to a company is something I'm supposed to somehow know without
 actually working in most of these places. Speaking with some of the hiring
 managers about things that could have been improved, it's generally fallen in one
 of the following statements.
@@ -75,7 +77,7 @@ about job interviews really tears down one's psyche. For those wishing to refer
 me to prospective clients, send them to <https://jacky.wtf/work/freelance>.
 
 This post isn't a reflection of companies that I'm currently interviewing with
-at the moment (some **amazing** ones), moreso with ones I've interviewed at in the
+at the moment (some **amazing** ones), more so with ones I've interviewed at in the
 past (up to with confirmed 'no' on August 29th, 2015).
 
 ---

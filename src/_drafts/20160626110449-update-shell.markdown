@@ -2,7 +2,7 @@
 layout: post
 title: Updating My Shell Configuration
 date: 2016-06-26 11:06:26 PDT
-image: /images/snapshot455.png
+image: snapshot455.png
 excerpt: >
   I use the terminal a lot. I also use different operating systems a lot.
   Here I talk about how I've managed to handle these shifts and how I'm
