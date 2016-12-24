@@ -15,8 +15,7 @@ build-deploy:
 serve: build
 	@bundle exec guard start
 
-deploy: clean-deploy build-deploy
-	@bundle exec rake deploy
+deploy: clean-deploy build-deploy upload-deploy
 
 clean:
 	@bundle exec rake clean
@@ -24,6 +23,9 @@ clean:
 
 clean-deploy: clean
 	@rm -rf _deploy
+
+upload-deploy:
+	@bundle exec rake deploy
 
 help:
 	@echo "Tasks for my site:"
