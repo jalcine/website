@@ -4,17 +4,17 @@ layout: bare
 {% if page.image and page.image != 'none' %}
   <header class="ph3 ph4-ns pt4 pt5-ns">
     {% img "{{ page.image }}" class:"w-auto dib ma1 center h-auto-l w-50-l fr-l" %}
-    <h1 class="baskerville f2 f1-m f-headline-l measure lh-title fw1 mv1 ma2-l">{{ page.title }}</h1>
+    <h1 class="baskerville f2 f1-m f-headline-l measure lh-title fw1 pa4 mv1 ma2-l">{{ page.title }}</h1>
     {% if page.byline %}<h2 class="f3 fw1 pa1 gray">{{ page.byline }}</h2>{% endif %}
     {% if page.date %}<time class="f6 mh2 ttu db gray">{{ page.date |
         date_to_rfc822}}{% if page.revised %}, updated <strong>{{ page.revised |
             date_to_rfc822 }}</strong>{% endif %}</time>{% endif %}
   </header>
 {% else %}
-  <header class="db center mw-90 pa2 pa4-l tc tl-l">
-    <h1 class="baskerville f2 f-headline-l fw1 near-black">{{ page.title }}</h1>
-    {% if page.byline %}<h3 class="f4 f3-l fw1 gray">{{ page.byline }}</h3>{% endif %}
-    <cite class="f6 ttu tracked fs-normal">{{ site.author }}</cite>
+  <header class="db center mw-90 pa4 tc tl-l">
+    <h1 class="pa4 mv0 mb2 baskerville f2 f1-m f-headline-l fw1 near-black">{{ page.title }}</h1>
+    {% if page.byline %}<h3 class="pa4 f3 fw1 gray">{{ page.byline }}</h3>{% endif %}
+    <cite class="mv2 f6 ttu tracked fs-normal">{{ site.author }}</cite>
     &mdash;
     {% if page.date %}<time class="f6 ttu">{{ page.date | date_to_rfc822}}{% if
           page.revised %}, updated <strong>{{ page.revised | date_to_rfc822

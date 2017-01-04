@@ -11,6 +11,7 @@ set :keep_releases, 30
 set :shared_paths, ['images']
 
 set :user, ENV['JALCINE_DEPLOY_USER']
+set :group, ENV['JALCINE_DEPLOY_GROUP']
 set :forward_agent, false 
 
 task :upload do
@@ -25,5 +26,8 @@ desc 'Deploys the current version to the server.'
 task deploy: :environment do
   deploy do
     invoke :upload
+    to :launch do
+      queue "chown :#{group} -fR #{deploy_to}"
+    end
   end
 end

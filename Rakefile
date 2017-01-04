@@ -24,5 +24,5 @@ task :serve do
 end
 
 task :deploy do
-  system 'bin/mina deploy'
+  system 'bin/mina deploy --verbose --trace'
 end
