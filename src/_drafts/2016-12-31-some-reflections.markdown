@@ -2,6 +2,7 @@
 layout: post
 title: Some Reflections
 date: 2016-12-31 16:01:53 PST
+updated: 2017-01-04 07:09:01 PST
 category: thoughts
 tags:
   - end of year
@@ -31,7 +32,7 @@ a team, we are friends! I missed the last [Clef Cooks][] event due to
 a small gathering in New York City for [Good for POC][] -- planning on making it
 to the next one! I recently had a personal change of scenery - a lot more
 sunlight (even my desk is naturally lit now) and I have more space to do things
-I typically went out (and paid money :sick:) to do.
+I typically went out (and paid money :mask:) to do.
 
 I read a _lot_. I try to keep progress in my [Goodreads][] account but that’s
 becoming more and more arduous as the books go by. One book of note was Malcolm
@@ -41,7 +42,7 @@ saying `#NotAllWhitePeople`. The book _never_ says that about America. But
 I digress.
 
 I start work (for real this time, I just signed my offer [in the last post][1])
-with [Lyft][] on January 2, 2017. I’ll be sure to seriously keep you in tune
+with [Lyft][] on January 3, 2017. I’ll be sure to seriously keep you in tune
 with the things I learn[^1] at my time at Lyft. One thing that I also did like
 is hearing about peoples’ times at companies and understanding how growth and
 the ilk worked there. Lyft already has a lot of information around
@@ -55,7 +56,7 @@ be one hell of a year.
 
 
 [clef]: https://getclef.com
-[clef cooks]: https://facebook.com/clef-cooks
+[clef cooks]: https://www.facebook.com/groups/328257974034321/506209856239131/
 [good for poc]: http://goodforpocin.tech
 [goodreads]: https://goodreads.com/jalcine
 [lyft]: https://lyft.com
