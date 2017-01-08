@@ -1,0 +1,18 @@
+---
+layout: post
+title: Focusing On My Content
+date: 2017-01-05 07:03:59 PST
+category: thoughts
+tags:
+  - digital soverginity
+  - website
+---
+
+I made a post on Goodreads about wanting to take a lot of my content in house
+and tend share it outwards to these social networks in lieu of making myself
+that authoritative source of reference when it comes to me. I’m not a celebrity in
+any form nor do I fully trust any service that I don’t directly work on to
+remain completely in the favor of its users (or in more cases, its products).
+
+
+[POSSE]: https://indieweb.org/POSSE
