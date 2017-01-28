@@ -54,15 +54,12 @@ post when I do. For now, we’ll leave this as is.
 ## Building the Image
 I began looking around to see if anyone’s already gotten some headway into
 getting this going. I also kept examining the documentation regarding the
-deployment of applications via Dockerfiles. It looks like that taking that
-approach might actually put me at a disadvantage with regards to all of the
-features that buildpack-powered applications may gain. I decided to put my need
-to have them launched in such a fashion due to the acceptance that Dokku is
-really just a Docker container manager - mapping host names and ports to
-processes running on the server.
+deployment of applications via Dockerfiles. To be honest, this is the route
+I want to _always_ take with Dokku; building my applications using Docker. That
+said, it is interesting to have the sources for a project and deploy them as
+a Docker project versus the buildpack route (this is in reference to my private
+API project for this site).
 
-That rationale led me to the path of just cloning and pushing versions of code
-to Dokku itself.
 
 [1]: {% post_url 2017-01-08-pulling-thangs-in-haus %}
 [2]: http://magic.com
