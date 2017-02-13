@@ -14,7 +14,7 @@ excerpt: |
   something that comes with great difficulty for me. The end of the last
   relationship I was in allowed me to see how toxic of a person I really am and
   what I need to do in order to fix myself. This, however, came at a price; the
-  harm of an amazing womyn.
+  harm of an amazing womban.
 
 ---
 
@@ -36,10 +36,10 @@ nothing was happening.
 
 {% img "{{'posts/hiking-with-shay.jpg'|image_path}}" width:"auto" height:"auto" class:"db w-80-l center" %}
 
-I’ve hurt a Black Womyn capable of and currently doing incredible things.
-I tarnished her name, potentially damaging her professional and personal
-ambitions. I attacked her character when no reason of any sort was ever given.
-I casted her as a villain and monster to my friends and family in an attempt to
+I’ve hurt a Black Womban capable of and currently doing incredible things. I
+tarnished her name, potentially damaging her professional and personal
+ambitions. I attacked her character when no reason of any sort was ever given. I
+casted her as a villain and monster to my friends and family in an attempt to
 mask my own actions. I gave her no air to breathe. I trapped her. I invaded her
 privacy time and time again, imploying tactics that I learned to *protect*
 people. I disabled her from working. I made her friends uncomfortable.
