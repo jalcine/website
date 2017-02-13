@@ -5,6 +5,32 @@
 .fg-dark   { @extend .near-black; }
 .fg-accent { @extend .dark-pink;  }
 
+header#pageHeader {
+  @extend .dt;
+  @extend .w-100;
+  @extend .pa2;
+  @extend .center;
+  @extend .mw9;
+  @extend .near-black;
+  @extend .bg-white;
+}
+
+ul#pageNavigator {
+  @extend .db;
+  @extend .center;
+  @extend .list;
+  @extend .w-100;
+  @extend .pa0;
+  @extend .f4;
+  @extend .tc;
+  @extend .cb;
+
+  > li {
+    @extend .dib;
+    @extend .ma2;
+  }
+}
+
 .footnotes {
   @extend .mw9;
   @extend .center;
