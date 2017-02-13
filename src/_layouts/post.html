@@ -4,7 +4,7 @@ layout: bare
 {% if page.image and page.image != 'none' %}
   <header class="ph3 ph4-ns pt4 pt5-ns">
     {% img "{{ page.image }}" class:"w-auto dib ma1 center h-auto w-100 w-50-l fr-l" %}
-    <h1 class="baskerville f2 f1-m f-headline measure lh-title fw1 pa2 ma3 ">{{ page.title }}</h1>
+    <h1 class="baskerville f2 f1-m f-headline-l measure lh-title fw1 pa2 ma3 ">{{ page.title }}</h1>
     {% if page.byline %}<h2 class="f3 fw1 pa1 gray">{{ page.byline }}</h2>{% endif %}
     {% if page.date %}<time class="f6 mh2 ttu db gray">{{ page.date |
         date_to_rfc822}}{% if page.revised %}, updated <strong>{{ page.revised |
