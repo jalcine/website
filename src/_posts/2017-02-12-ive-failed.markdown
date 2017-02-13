@@ -40,10 +40,9 @@ I’ve hurt a Black Womyn capable of and currently doing incredible things.
 I tarnished her name, potentially damaging her professional and personal
 ambitions. I attacked her character when no reason of any sort was ever given.
 I casted her as a villain and monster to my friends and family in an attempt to
-mask my own actions. I got her arrested. I gave her no air to breathe. I trapped
-her. I invaded her privacy time and time again, imploying tactics that I learned
-to *protect* people. I disabled her from working. I made her friends
-uncomfortable.
+mask my own actions. I gave her no air to breathe. I trapped her. I invaded her
+privacy time and time again, imploying tactics that I learned to *protect*
+people. I disabled her from working. I made her friends uncomfortable.
 
 I exuded many forms of [misogynoir][1]; the one thing I aimed to stop performing
 acts of in my life. I weakly, if ever, attributed her to the many things I’ve
