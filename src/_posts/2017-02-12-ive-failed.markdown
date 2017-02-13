@@ -1,0 +1,99 @@
+---
+layout: post
+title: I’m Not Who I Seem to Be, I’ve Failed At Being a Man
+date: 2017-02-12 12:56:40 PST
+tags:
+  - reflection
+  - apology
+  - confession
+category: thoughts
+excerpt: |
+  This is an apology to Shay. Being accountable and deeply reflective is
+  something that comes with great difficulty for me. The end of the last
+  relationship I was in allowed me to see how toxic of a person I really am and
+  what I need to do in order to fix myself. This, however, came at a price; the
+  harm of an amazing womyn.
+
+---
+
+At the time of writing, I’m beginning to process the end of a relationship that
+was toxic, deceitful and grew to be borderline dangerous. The abuser lied about
+interactions they had with other people. They downplayed a great deal of the
+emotional calls for help that their partner was signaling for. They couldn’t
+grasp the idea or acknowledge the calls for the other party to take space on
+their own, to invoke their autonomy and went as far as to stalk them to “ensure”
+nothing was happening.
+
+**The abuser is _me_**.
+
+> I will repeat: this is not easy to write. I don’t know what might happen when
+> this hits the Web. I do know this; my mental state will be a lot more clearer
+> and therapy will become much easier once I’ve published this.
+
+{% img "{{'posts/hiking-with-shay.jpg'|image_path}}" width:"auto" height:"auto" class:"db w-80-l center" %}
+
+I’ve hurt a Black Womyn capable of and currently doing incredible things.
+I tarnished her name, potentially damaging her professional and personal
+ambitions. I attacked her character when no reason of any sort was ever given.
+I casted her as a villain and monster to my friends and family in an attempt to
+mask my own actions. I got her arrested. I gave her no air to breathe. I trapped
+her.
+
+I exuded many forms of [misogynoir][1]; the one thing I aimed to stop performing
+acts of in my life. I weakly, if ever, attributed her to the many things I’ve
+recently learned over the past year; presenting it as if it were my own
+discoveries. I made it difficult for her to truly enjoy a space; always scraping
+and looking for reasons to complain. I wanted ownernship over the experiences we
+had together; being the “first” to do something with her. I kept seeking for
+a sign of importance and recognition that I could associate with myself and
+myself alone. I couldn’t take her word seriously - always felt that it was an
+attack on my character. I was (and still am) carrying a very fragile ego; one
+that I’ve begun to shed.
+
+I’m more than humbled and blessed to even have had the opportunity to speak to
+someone like her. I don’t expect anything but greatness to walk by her feet.
+She’s an amazing friend to have and one of the best comrades I’ve rode with in
+protests, rallies, community organizing and couch squatting. Because of me being
+the toxic individual that I am, I’ve damaged the trust that she extended to me,
+time and time again. I kept pushing her to drop her guard and go against her
+stances for the sake of a “healthy relationship”. I can only hope that over
+time, I’d be blessed with the chance to be friends once more. Until then, I have
+growing, healing and damage control to work on.
+
+{% img "{{'posts/dining-with-shay.jpg'|image_path}}" width:"auto" height:"auto" class:"db w-80-l center" %}
+
+Black womyn hold their lips [*tightly*][2] for the sake of protection against
+men’s inherently violent nature. She did this for me but didn’t stand for it any
+longer. She’s protected me from people who were willing to tear me apart for the
+things I’ve done to her and that, in itself, is an example of how I’ve failed
+her and myself as a man.
+
+{% twitter https://twitter.com/theAfroLegalise/status/676258784646336513 %}
+
+I write this to both apologize to her publicly and to inform men who are
+currently exhibiting behaviors similar to me as a warning sign. *Listen* to
+womyn, don’t read this and stop. Learn to let go. Take up yoga if you’re easily
+irritated (it helps me, hopefully it can for you as well). Ensure that you’re
+truly living a life of individuality and that you aren’t looking for someone to
+validate you. Do not use false love as a tool of oppression.
+
+Learn from womyn. Stop reading this and go speak to the womyn you spend the most
+time with, whose energy you sap for your pride. Acknowledge space when it’s
+requested. Comprehend what it means to be alone. Trust fully and truly.
+Understand that vulnerability does NOT make you lesser of a man. Go to
+therapy[^1]. [Understand that healing is not a milestone, but a river of
+flow][3].
+
+{% twitter https://twitter.com/ForRevolution/status/798253605430104065 %}
+
+{% img "{{'posts/beach-with-shay.jpg'|image_path}}" width:"auto" height:"auto" class:"db w-80-l center" %}
+
+---
+
+I’m sorry Shay. May the Orisha spirits guide me to a better state and continue
+to uplift you. I have to talk with Oduduwa very soon. **I love you**.
+
+[1]:http://www.gradientlair.com/post/84107309247/define-misogynoir-anti-black-misogyny-moya-bailey-coined
+[2]: https://twitter.com/theAfroLegalise/status/676258784646336513
+[3]: https://twitter.com/ForRevolution/status/798253605430104065
+[^1]: I understand that therapy is inaccessible for many (because of finanical, geographically and regionality issues). Reach out to me if you want to work on this.
