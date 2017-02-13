@@ -1,6 +1,7 @@
 ---
 layout: post
 title: I’m Not Who I Seem to Be, I’ve Failed At Being a Man
+image: posts/banner-shay.jpg
 date: 2017-02-12 12:56:40 PST
 tags:
   - reflection
@@ -15,6 +16,8 @@ excerpt: |
   harm of an amazing womyn.
 
 ---
+
+{% img "{{'posts/serenity-shay.jpg'|image_path}}" width:"auto" height:"auto" class:"db w-80-l center" %}
 
 At the time of writing, I’m beginning to process the end of a relationship that
 was toxic, deceitful and grew to be borderline dangerous. The abuser lied about
@@ -43,7 +46,7 @@ I exuded many forms of [misogynoir][1]; the one thing I aimed to stop performing
 acts of in my life. I weakly, if ever, attributed her to the many things I’ve
 recently learned over the past year; presenting it as if it were my own
 discoveries. I made it difficult for her to truly enjoy a space; always scraping
-and looking for reasons to complain. I wanted ownernship over the experiences we
+and looking for reasons to complain. I wanted ownership over the experiences we
 had together; being the “first” to do something with her. I kept seeking for
 a sign of importance and recognition that I could associate with myself and
 myself alone. I couldn’t take her word seriously - always felt that it was an
