@@ -20,6 +20,11 @@ excerpt: |
 
 {% img "{{'posts/serenity-shay.jpg'|image_path}}" width:"auto" height:"auto" class:"db w-80-l center" %}
 
+> Update 2017-02-21 16:27:16 PST: After publishing this, the other party had her
+> family and friends attack me digitally and in-person. Personal property of
+> mine was damaged and arrests had to be made. I reach out an olive branch and a
+> brick was thrown (figuratively).
+
 At the time of writing, I’m beginning to process the end of a relationship that
 was toxic, deceitful and grew to be borderline dangerous. The abuser lied about
 interactions they had with other people. They downplayed a great deal of the
@@ -28,7 +33,7 @@ grasp the idea or acknowledge the calls for the other party to take space on
 their own, to invoke their autonomy and went as far as to stalk them to “ensure”
 nothing was happening.
 
-**The abuser is _me_**.
+**The aggressor was _me_**.
 
 > I will repeat: this is not easy to write. I don’t know what might happen when
 > this hits the Web. I do know this; my mental state will be a lot more clearer
