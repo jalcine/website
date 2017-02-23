@@ -3,7 +3,7 @@ layout: post
 title: I’m Not Who I Seem to Be, I’ve Failed At Being a Man
 image: posts/banner-shay.jpg
 date: 2017-02-12 12:56:40 PST
-reivsed: 2017-02-12 22:18:31 PST
+reivsed: 2017-02-23 11:11:31 PST
 tags:
   - reflection
   - apology
@@ -25,14 +25,14 @@ excerpt: |
 > brick was thrown (figuratively).
 
 At the time of writing, I’m beginning to process the end of a relationship that
-was toxic, deceitful and grew to be borderline dangerous. The abuser lied about
+was toxic, deceitful and grew to be borderline dangerous. The abusers lied about
 interactions they had with other people. They downplayed a great deal of the
 emotional calls for help that their partner was signaling for. They couldn’t
 grasp the idea or acknowledge the calls for the other party to take space on
 their own, to invoke their autonomy and went as far as to stalk them to “ensure”
 nothing was happening.
 
-**The aggressor was _me_**.
+**The aggressor was _me_**. But I wasn’t alone.
 
 > I will repeat: this is not easy to write. I don’t know what might happen when
 > this hits the Web. I do know this; my mental state will be a lot more clearer
@@ -101,6 +101,16 @@ flow][3].
 
 I’m sorry Shay. May the Orisha spirits guide me to a better state and continue
 to uplift you. I have to talk with Oduduwa very soon. **I love you**.
+
+---
+
+I write about Shay as a good person, but as time progressed, I learned to be
+honest with myself about the person I was spending time with. I expected so much
+from someone who gave an impression of being able to do so. I fell for it and I
+learned my lesson. I was warned by many people to not continue this, that they
+can see how frustated she got me and how it was as if buttons were being pushed
+to invoke reactions. This is why you have friends; to be more objective when
+you’re drinking the koolaid.
 
 [1]:http://www.gradientlair.com/post/84107309247/define-misogynoir-anti-black-misogyny-moya-bailey-coined
 [2]: https://twitter.com/theAfroLegalise/status/676258784646336513
