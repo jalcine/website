@@ -10,11 +10,10 @@ tags:
   - confession
 category: thoughts
 excerpt: |
-  This is an apology to Shay. Being accountable and deeply reflective is
+  This was an apology to Shay. Being accountable and deeply reflective is
   something that comes with great difficulty for me. The end of the last
-  relationship I was in allowed me to see how toxic of a person I really am and
-  what I need to do in order to fix myself. This, however, came at a price; the
-  harm of an amazing womban.
+  relationship I was in allowed me to see how toxic of a person we both are
+  and what we both need to do in order to grow as people.
 
 ---
 
