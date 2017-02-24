@@ -8,6 +8,7 @@ tags:
   - apps
   - instant apps
   - web assembly
+excerpt: I’m really about this WebASM tho!
 ---
 
 Reviewing [Recode's post on app installs][1], I totally understand the author
