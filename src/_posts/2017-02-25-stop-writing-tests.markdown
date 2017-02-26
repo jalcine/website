@@ -28,7 +28,7 @@ even _sure_ that what I was testing was even going to affect the user!
 
 No more, I say! No MORE!
 
-[iheanyi]: https://iheanyi.com
+[iheanyi]: http://iheanyi.com
 [reggie]: https://twitter.com/itsnotreggie
 [^1]: This is also the true moral of this post.
 [1]: http://www.twch.at/
