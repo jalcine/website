@@ -2,6 +2,11 @@
 layout: post
 title: Stop Writing Tests For MVPs
 date: 2017-02-25 23:42:30 PST
+category: rants
+tags:
+  - testing
+  - mvp
+  - side project
 excerpt: |
   I’ve attempted to work on a few side projects for close to a year now. The
   biggest roadblocks weren’t prototyping interfaces or hammering out user
