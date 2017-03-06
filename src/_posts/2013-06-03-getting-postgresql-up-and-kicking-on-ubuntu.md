@@ -56,11 +56,11 @@ postgres=#
 > directory to the directory you're working from. That's a permission issue 
 > since your user account isn't in the `postgres` group.
 
-Hit `Ctrl+D` ande nter the following commands to get Postgres to recognize you 
+Hit `Ctrl+D` and enter the following commands to get Postgres to recognize you
 as a user.
 
 {% highlight bash %}
-# Tell Postgres to create a new user with our username.
+# Tell Postgres to create a new user with our user name.
 sudo -u postgres createuser --superuser $USER
 # Open up the PostgreSQL shell.
 sudo -u postgres psql
@@ -75,7 +75,7 @@ postgres=# \password $USER
 {% endhighlight %}
 
 Typically, when an application connects to Postgres on Ubuntu, it'd try to 
-find a user AND database with the username that's currently logged in. This'll 
+find a user AND database with the user name that's currently logged in. This'll 
 also help with making the starting of `psql` easier too so by running the 
 following you should be able to do so:
 
