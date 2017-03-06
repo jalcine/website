@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android Isn't That Open"
+title: Android Isn't That Open
 date: 2013-10-22 07:09:13 EDT
 category: android
 ---
@@ -9,8 +9,8 @@ It sucks to say this but it wasn't *un*expected. After reading this [lengthy
 article from Ars Technica][androidars], it's clear that Google is finishing
 up what it intended; to firmly place its software and enhancements ahead of
 the community and completely rejecting its initial stance of providing a
-state-of-the-art AOSP code-base. Technically, the code for most projects as
-mentioned in the link have gone to **abandonware** state, which is enough to
+state of the art AOSP code base. Technically, the code for most projects as
+mentioned in the link have gone to **abandon ware** state, which is enough to
 make one wonder if using "stock" Android is going to be a viable thing
 nowadays. Unknowingly, we've become subject to a similar walled garden issue
 that most iOS and OS X users (willingly) subject themselves to. The image from
@@ -26,7 +26,7 @@ devices that are powered by Google Play. However, devices like Samsung's
 future release of the Galaxy line and other vendors that aren't part of the
 Open Handset Alliance (aka Google's little handset kingdom) aren't going to
 be able to provide users with these niceties and thus have to resort to
-either hand-building applications from AOSP or moving to another platform.
+either hand building applications from AOSP or moving to another platform.
 
 This is where things like [Ubuntu Touch][ubuntu] and [Plasma Active][pls] come
 into play. These are purely open operating systems for mobile devices and
