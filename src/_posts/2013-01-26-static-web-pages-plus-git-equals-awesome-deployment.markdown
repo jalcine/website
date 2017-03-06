@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: "Static Web Pages + Git = Awesome Deployment"
 date: 2013-01-26 04:09 UTC-0500
@@ -14,13 +13,12 @@ excerpt:
 
 ---
 
-I've been having lots of fun working with [Octopress][] and working with it
-to make it as simple for me to use as possible. Fortunately, this hasn't
-been much of a challenge. With a bit of trial and error, I've even managed
-to abstract the act of static web page deployment without too much help! Now,
-it's near possible to implement "Heroku-like" deployment. Towards the end,
-I even throw in a tip on how to do something similar to how Heroku might
-have deployment done as well!
+> I've been having a lot of fun working with [Octopress][]; working with it to
+> make it as simple for me to use. Fortunately, this hasn't been much of
+> a challenge. With a bit of trial and error, I've even managed to abstract the
+> act of static web page deployment without too much help! It's possible to
+> implement "Heroku-like" deployment. Towards the end, I even throw in a tip on
+> how to do something similar to how Heroku might have deployment done as well!
 
 # Prerequisties
 

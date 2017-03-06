@@ -10,7 +10,6 @@ tags:
   - projects
 
 ---
-
 There's something I've wanted for quite some time and I didn't know why it was
 so hard for me to get off my ass to get it done. I kept seeing it whilst
 looping Iron Man scenes on my second monitor and it was a personal _digital_
@@ -19,13 +18,14 @@ fashion where I think I work even better because of said modifications. I have
 yet to document said changes but it works (for me, quite well). [Github][] is a
 really popular place to store code, but outside of _really mainstream_
 projects and for ease of collaboration, I don't see the point of me hosting
-code _there_ when I can do it myself. Don't get me wrong, if it's something
-that I think that can be worth publishing out to the public then I'd do it.
+code _there_ when I can do it myself. Don't get me wrong, if it's something that
+I think that can be worth publishing out to the public then I'll do it. But
+y’all don’t need to see _all_ of my magic.
 
 ![He's crawling out!](/images/cat_scratch_snow.gif){:style="width: 400px; margin: 0rem auto; display: flex"}
 
 Before I really start, I had to understand what it was that I wanted a few
-things from the following. No reason to build shit all willy-nilly.
+things from the following. No reason to build shit all willy nilly.
 
 ## Git Repositories {#private-git}
 In an attempt to remain organized, I throw all of the projects that I've
