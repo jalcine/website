@@ -47,7 +47,10 @@ I wouldn't want to make it too hard for said people to comment on the blog
 however so comments, it is. Pretty sure I [broke a rule somewhere][atwood1].
 I have to admit, the enabling of said comments will be very sparingly since
 most posts tend to be affirmations and confirmations of sorts, not really
-a open-ended story.
+a open-ended story. I do, however, like the idea of having discourse on shared
+ideas on this blog (and others). The ecosystem for POSSE (post on [your] site,
+share everywhere) feels better for one’s brand and authencity to grow.
+Unfortunately, our social gardens are making that harder and harder.
 
 ### Data Storage {#data-storage}
 [Dropbox][] and [Google Drive][gdrv] are some dope ass products. Like amazing.
