@@ -34,7 +34,7 @@ while (1) {
   // Buy a new unicorn.
   // End scope.
 }
-{% endhiglight %}
+{% endhighlight %}
 
 .. just looks wrong to me, but that's C. I'm way too used to event driven programming paradigms and object
 orientated ones and to do this in my C++ code scared me to no end. Since I'm using Qt, I figured
