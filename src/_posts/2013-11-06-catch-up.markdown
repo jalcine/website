@@ -1,7 +1,12 @@
 ---
+title: “Catching Up With Thoughts”
 layout: post
 date: 2013-11-06 00:19:32 EST
-categories: personal
+category: personal
+tags:
+  - tizen
+  - mobile
+  - random
 ---
 
 Recording your thoughts, opinions and ideas is helpful for everyone. It helps

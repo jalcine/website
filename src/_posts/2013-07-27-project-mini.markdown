@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Project Minimal"
-byline: "Do you really need that?"
-date:   2013-07-27 21:52:09 -0500
+title: Project Minimal
+byline: Do you really need that?
+date: 2013-07-27 21:52:09 -0500
 category: projects
 excerpt: Let’s make things a bit lighter.
 tags:

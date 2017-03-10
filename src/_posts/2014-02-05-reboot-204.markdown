@@ -1,8 +1,11 @@
 ---
 layout: post
-title: "A New Look for 2014"
-categories: personal
+title: A New Look for 2014
+excerpt: I released a new design for my site in lieu of the start of 2014.
+categories: projects
 date: 2014-02-05 04:31:07 EST
+tags:
+  - redesign
 ---
 
 Like the new look? It's the first in a major revamping I'm doing of my
