@@ -64,7 +64,7 @@ quickly especially if you don't want to slow down potential network speeds.
 KDE does have an way of incorporating this, but so far it seems to be
 only with Samba, for the moment.
 
-{% img "{{‘posts/sharing-public-folder.png’|image_path}}" alt:"Sharing a public folder" %}
+{% img "{{'posts/sharing-public-folder.png'|image_path}}" alt:"Sharing a public folder" %}
 
 I'm working to bring other remote document storage solutions like Dropbox and
 Google Drive natively into KDE using KIO so it's something to look forward
@@ -78,8 +78,9 @@ for UFW (uncomplicated firewall) is a straight forward tool to setting up and
 getting ufw on your system. I have to admit, though, it isn't really friendly
 for novice users; it could make do with some template profiles and I've
 considered patching it for just this purpose. But outside of that, I can
-provide the profile I [use for those interested](/files/kcm_ufw_default.ufw).
+provide the profile I [use for those interested][4].
 
+{% img "{{'posts/kcm-ufw-shot.png'|image_path}}" alt:"KDE and UFW" %}
 ![KDE and UFW](/images/kcm-ufw-shot.png)
 
 It's a old wife's tale about Linux not getting viruses and trojans but it
@@ -96,5 +97,6 @@ Samba only further enhances that.
 [1]: http://kde.org
 [2]: http://zeroconf.org
 [3]: http://telepathy.kde.org
+[4]: /files/kcm_ufw_default.ufw
 [^1]: XP SP2 and greater, I think, and specifically a wireless network, I haven't tried Ethernet connections
 [^2]: To my knowledge. I try to harden my personal machine as much as I can, but YMMV.
