@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "What's There to Build (Anymore)?"
+title: What's There to Build (Anymore)?
 date: 2014-03-20 08:38:47 EDT
-categories:
-  - thoughts
-  - development
+category: thoughts
 ---
 
 I've recently got a copy of this book called Hackers[^1] and so far, it's a
@@ -12,17 +10,17 @@ I've recently got a copy of this book called Hackers[^1] and so far, it's a
 Last Hacker). I haven't read more than ten pages when I came upon the
 realization that there isn't that much anymore to build. Yes, there's a
 (partly disgusting) craze to build "the next Facebook" or the "Twitter for
-babies" but that isn't something that requires thought. Like legitimate
-turmoil, brain busting or work. Sure, there's developers writing code,
-designers modelling and designing, sales selling and stuff, but who benefits?
-If you're not a direct beneficiary, or rather if the people benefits from
-your work way more than you do, that's **progress** in my book. Do we have
-any of that anymore, in the computer science world? I might be speaking very
-ignorantly since again, I haven't finished the book yet nor am I a super-duper
-"rockstar", but the point's made.
+babies" but that isn't something that requires thought. Like legitimate turmoil,
+brain busting levels of work. Sure, there's developers writing code, designers
+modelling and designing, sales selling, but who benefits? If you're not a direct
+beneficiary, or rather, the people benefits from your work way more than you do,
+that's **progress** in my book. Do we really have any of that kind of creativity
+anymore in the computer science world? I might be speaking very ignorantly
+since again, I haven't finished the book yet nor am I a super-duper "rockstar",
+but the point's made.
 
-> I do want to help, but 70% of the time I have absolutely *no idea* what 
-> one might be referring to and I feel bad for that. It's no one's fault.
+> I do want to help with peoples’ ambitions, but 70% of the time I have
+> absolutely *no idea* what one might be referring to and I feel bad for that.
 
 # Education
 

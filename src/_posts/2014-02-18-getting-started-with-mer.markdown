@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Getting Started With Mer"
+title: Getting Started With Mer
 date: 2014-02-18 15:50:32 EST
-categories:
+category: review
+tags:
   - mer
   - code
 ---
@@ -11,7 +12,7 @@ categories:
 planned for use for [Plasma Active][plasma_active], the OS I'd like to get
 running on my Nexus 4. I've decided to take a dive into building an image for
 my phone in hopes of tinkering and writing apps for the device. Let me tell
-you; this was *not* easy, at least starting off. Getting the **Platform SDK**,
+you; this was *not* easy, at least starting off wasn’t. Getting the **Platform SDK**,
 the SDK required to build the sources of Mer itself, is a bit tricky and isn't
 that straightforward IMHO. Note that [there's two SDKs][mer_sdks], get
 acquainted to this; it really threw me off at first. In my opinion, it should

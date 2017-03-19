@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "The Other Side of Being a Young Developer"
+title: The Other Side of Being a Young Developer
 date: 2013-09-20 14:47:50 EDT
 category: personal
+excerpt: |
+  Keep all of your friends. Don't change yourself, your routines
+  and whatever you do, do *not* make your tech your best friend. It'll `rm
+  -rvf /dev/life*` if you do.
 ---
-
-> **TL;DR**: Keep all of your friends. Don't change yourself, your routines
-> and whatever you do, do *not* make your tech your best friend. It'll `rm
-> -rvf /dev/life*` if you do.
 
 ## The Decline
 
@@ -15,7 +15,7 @@ I started programming as a hobby around 2006 when my dad gave me the chance to
 learn C++99 from a college textbook of his. From then, I kept learning from
 manuals, random hackings and the opportunities provided to me in recent days.
 Over time, I left teams in high school like track and the step team to spend
-more time on-line in chat rooms dedicated to coding and technology alike. I
+more time on line in chat rooms dedicated to coding and technology alike. I
 slowly yet harshly severed what it meant to be a "typical" teenager living in
 New York and instead traded my Friday nights partying or even studying for
 class for 80-char tmux windows on an old Dell laptop I snagged from school.
@@ -27,7 +27,7 @@ school. She asked me what I was doing because my mother told her that I spent
 my time at home in my room. I told her I was on the computer. "Doing what?
 Playing games? That won't get you a future," I remember. That stuck. Around
 this time, I was beginning my work on the Wintermute project of mine and I
-thought I was close to finishing (hah!) it.
+thought I was close to finishing (ha!) it.
 
 It was October and I wasn't doing too well in the romance department either. I
 didn't tell people my standings with school but it wasn't that easy to hide,
@@ -59,9 +59,9 @@ do. I didn't think much of it, money didn't mean much and I try not to want
 too much (once you start, you can't stop!) but my mom was on my neck about
 getting a job if I wasn't going to apply for college. So I caved in.
 
-My first semi-legit job was working at a seemingly established startup. So
+My first semi legit job was working at a seemingly established startup. So
 much information wasn't mentioned up front but it didn't matter to me. My main
-concern at the time was just learning how people code in real-life
+concern at the time was just learning how people code in real life
 environments. I never worked on something of the scale outside of the (few)
 contributions I made in Ubuntu and other hunks of open source software so it
 was new.
@@ -94,18 +94,18 @@ places that made no sense but took it anyhow. I couldn't fully grasp how
 people could live so far from places to eat or hang out, that's the Brooklyn
 in me.
 
-I attended a education-related conference with the biggest names in education
+I attended a education related conference with the biggest names in education
 technology there. People like Geoffry Canada and the like were there. Getting
 to speak to them and have lunch was something that didn't register right to
 me. To top it off, I was meeting people that other people were getting degrees
 in hopes of meeting. Definitely worth (internally) exclaiming about.
 
 After that, I got to spend about two weeks in Hawaii to attend Aloha Ruby, a
-Ruby conference in paradise. It was for me, haha. I didn't pack much since I
+Ruby conference in paradise. It was for me, at least. I didn't pack much since I
 planned to be on my toes. When I landed though, I was lost and without a place
 to stay. Being my first time, I didn't fully plan how I was going to do this.
 
-I traded my chances of going to an ivy league school and being nose-deep in
+I traded my chances of going to an ivy league school and being nose deep in
 books at the time to shuffling between coffee houses and scratching around for
 a job. I like this risk mainly because I can only do it now. I can do whatever
 I want and literally create things from thin air. That's like magic. Who

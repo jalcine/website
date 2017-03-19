@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Age Will Betray You"
+title: Age Will Betray You
 date: 2014-03-25 22:49:56 EDT
-categories: opinion
+category: opinion
 ---
 
 Let's start this off a bit imaginative. You've been a car accident and you're

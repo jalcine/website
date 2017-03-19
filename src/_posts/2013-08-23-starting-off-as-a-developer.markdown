@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Starting Off As A Developer"
-subheading: "my (new) opinions on becoming more of a social coder"
+byline: "my (new) opinions on becoming more of a social coder"
 date: 2013-08-23 03:41:46 EDT
 comments: true
 category: opinion
@@ -19,7 +19,7 @@ absolutely required then.
 [Ben][1] wrote a [very light post][2] about getting a first job as a Rails
 developer. Of course, the details of the post can be applied to most other
 languages and practices, be it Android, iOS, web design or even C++, have you!
-But it'd have to be proven for that to be fact. Nonetheless, it did get me
+But it'd have to be proved for that to be fact. Nonetheless, it did get me
 thinking; I have this blog and I occasionally post about little things that
 don't really show my current situations with code. I've decided to write a
 post at least twice a week about my current code projects and things I've
