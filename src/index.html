@@ -7,15 +7,9 @@ components:
 <section class="cover bg-center pa3-l dib w-100 min-h-100"
   style="background-image: url({% asset_path 'masthead.jpg' %});">
   <div class="db bg-black-90 pa2 pa3-l mw-twothirds w-100 w-80-l mh2-m w-60-m center-m">
-    <h1 class="white tc tl-ns f3 f1-l lh-solid code">@jackyalcine</h1>
-    <h2 class="white tc tl-ns f4 f3-l lh-solid">Black. Ayisyen. Autodidact. Comic junkie.</h2>
-    <p class="white f5 f3-l lh-copy measure">
-      I'm a software engineer that focuses on ease of access for user
-      security on the Web as well as digital literacy for silicon based consumer
-      networked electronics (or "tech"). My mission is to carry out the objective of
-      my parents and that of my ancestors: to focus on the liberation of my people
-      and the restoration of the descendants of the African Diaspora.
-    </p>
+    <h1 class="white tc tl-ns f2 f-headline-l lh-solid">{{ site.name }}</h1>
+    <h2 class="white tc tl-ns f4 f3-l lh-solid">Black. Ayisyen. Latinx. Autodidact. Comic junkie. Historian</h2>
+    <p class="white f5 f3-l lh-copy measure">{{ site.blurb }}</p>
     <p class="gray f6 f4-l lh-copy measure-narrow">
       <strong class="ttu">Read:</strong>
       <a href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a>
@@ -23,56 +17,3 @@ components:
   </div>
 </section>
 {% include header.html minimal=true %}
-<section class="bg-near-black dark-pink db min-h-100-l pa2 pa3-m pa4-l tl-l">
-  <h2 class="f3 lh-title tracked-tight">Media Aficionado</h2>
-  <p class="f4 measure lh-copy">
-    I like movies and television, especially ones that focus on comics,
-    Blackness or the intersection of the two. You can check out what I'm
-    watching on <a class="dark-pink bold dim" href="https://trakt.tv/users/jackyalcine"
-      target="_blank">Trakt.tv</a> or <a class="dark-pink bold dim"
-      href="http://www.tvshowtime.com/en/user/7412918/profile">TVShow Time</a>.
-  </p>
-</section>
-<section class="bg-near-white navy db min-h-100-l pa2 pa3-m pa4-l">
-  <h2 class="f3 lh-title tracked-tight">
-    Liberation for Oppressed People
-  </h2>
-  <p class="f4 measure lh-copy">
-    Growing in a country with centuries of bloodstain history against a myriad
-    of people, I had to understand that it's irresponsible for me to not ensure
-    equitable places when presented the opportunity to do so.
-  </p>
-  <h3 class="lh-solid tracked-mega ttu">All Power to The People</h3>
-  <p class="f4 measure lh-copy">
-    My focus is to provide people with tools to combat oppressive regimes that
-    aim to exterminate their freedom and revoke their human rights.
-  </p>
-</section>
-<section class="bg-near-black near-white min-h-100-l pa2 pa3-m pa4-l">
-  <h2 class="f3 lh-title">
-    <span class="tracked-tight">(Not) Looking for Work</a>
-  </h2>
-  <p class="measure-narrow lh-copy f6 fr-l">
-    <strong class="yellow f5">I'm currently not looking for full-time work.</strong><br />
-    <strong>Considering taking me on for client work?</strong> Check out 
-    <a href="/work/">my workplace values</a> then <a
-      href="mailto:yo@jacky.wtf?subject=Yo,+So+I'm+Tryna+Work+Witchu">send me information
-      about your position</a>.
-  </p>
-  <p class="f4 measure lh-copy">
-    <strong>Let's face it</strong>. Thanks to capitalism, in order to live in
-    a socially "acceptable" lifestyle, you need a job, although it seems like
-    even <a href="https://archive.is/aERgA" target="_blank">that might be not a solution</a>.
-  </p>
-  <p class="f4 measure">
-    <strike>
-      I wrote about
-      <a href="{% post_url 2016-11-02-back-on-the-market %}">
-        my career progression
-      </a>
-      in the software development industry.
-    </strike>
-    <br />
-    I currently work at <a href="{% post_url 2016-12-19-catching-that-ride %}">Lyft</a>.
-  </p>
-</section>
