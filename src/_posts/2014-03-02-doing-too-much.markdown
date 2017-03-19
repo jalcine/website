@@ -1,23 +1,24 @@
 ---
 layout: post
-title: "On Doing Too Much"
+title: On Doing Too Much
 date: 2014-03-02 01:10:55 EST
-categories:
+category: reflection
+tags:
   - thoughts
   - opinion
 ---
 
-I'm a web developer by trade. More sharply, I tend to be a full stack web
+I'm a web developer by trade. Astutely, I work as a full stack web
 developer that has an acquired sense of modern design and a working
 understanding of how the unicorns and tigers that run inside remote machines
 that make our web applications work. I've been using that to pay bills and put
-food on the table; but in recent day, I feel as if my attention is being
+food on the table. But in recent days, I feel as if my attention is being
 sliced into too many slices of salami. Before, it was hefty chunks of
 hamburger but now, a breeze could pop a hole in a slice of my thought process.
 
 I've been giving more and more attention to the [Wintermute][1] project of
 mine and I'm eager to get a working instance of it before the close of 2014,
-if not before my twenty-second birthday. It'd be fantastic! But the knowledge
+if not before my 22nd birthday. It'd be fantastic! But the knowledge
 I need for it by then is really vast if I want it to be perfect. Not saying
 I'm a perfectionist, since I tend to aim for perfection but settle if I'm four
 points off from it. I just have to have a good reason for it.
@@ -34,7 +35,7 @@ classical desktop applications. Okay, sure, it'd be a challenge to go
 "cross-platform" for desktop now. But that's been eliminated with the Web. I
 don't know if it's a bad thing. Building an application for Windows and hoping
 to deploy it to OS X or Linux (if you fancy that, like yours truly) isn't
-really a requirement but depends heavily on your market. And that's what I
+really a requirement dependingly heavily on your market. And that's what I
 seem to be forgetting.
 
 I forgot what market I initially was trying to address when I started working

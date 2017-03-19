@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "KDE and Networking - Thoughts"
+title: KDE and Networking - Thoughts
 date: 2014-02-15 07:46:34 EST
 comments: true
 category: research

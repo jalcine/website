@@ -1,24 +1,24 @@
 ---
 layout: post
-title: "My Blog on Blogs and Myself"
+title: My Blog on Blogs and Myself
 date: 2014-03-02 01:10:03 EST
-categories:
-  - opinion
+category: opinion
 ---
 
-I had this weird thought about web logs (or blogs); that they had to have these
-long-winded and magical entries about whatever one might think them to be
-about; be it on fashion, technology or what have you. I looked to older blogs
-and noticed that they served more as a note keeper for one's thoughts and
-helps the act of validation. So, I think I'd use this blog for more of that
-than me attempting to increase my vanity quota.
+I had this particular perspective about web journals (or blogs). I always
+figured that they had to have these long-winded and magical entries about
+whatever one might think them to be about; be it on fashion, technology or what
+have you. I looked to older blogs and noticed that they served more as a note
+keeper for one's thoughts and helps the act of validation. So, I think I'd use
+this blog for more of that than me attempting to increase my vanity quota.
 
 I've been in a bit of a need to see my thoughts before actually attempting to
 implement some ideas or just thoughts in general. There's the risk of having
 this blog out in the open and since social media makes the discovery of
 information a bit more possible that I would have to "mind my manners". I
-might, but good chance I won't. I can't see a good reason to censor or dilute
-my thoughts and opinions for the sake of vanity.
+might, but good chance I won't. I can't see a good reason to censor or dilute my
+thoughts and opinions for the sake of vanity or the act of protecting an
+“image”.
 
 The biggest things on my mind right now are personal projects and finding
 permanent employment and moving out of the gig lifestyle. I've fully resisted
