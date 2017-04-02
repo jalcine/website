@@ -23,3 +23,5 @@ it'll be easier to view from a Web browser versus your email clients (if they
 aren't in a Web browser, that is).
 
 I'm excited to try this out - hope you'll join me over the new months!
+
+[1]: /newsletter/
