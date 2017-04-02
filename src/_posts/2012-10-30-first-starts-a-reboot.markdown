@@ -2,7 +2,7 @@
 layout: post
 title: "First Starts: A Reboot"
 date: 2012-10-30 14:34 -0500
-revised: 2016-12-16 09:36:05 PST
+revised: 2017-02-06 09:35:23 PST
 excerpt:
   The first post made on Octopress. Oh joy!
 category: personal
@@ -12,20 +12,19 @@ tags:
 
 ---
 
-> Well, this is nice. This is my first blog post using [OctoPress][]
-> and I have to say, I really don't need any other blogging platform
-> besides this one. When they say that this is the hacker's blog, they
-> weren't kidding. I've literally edited and installed everything from
-> the console with no real hassle.
+Well, this is nice. This is my first blog post using [OctoPress][] and I have to
+say, I really don't need any other blogging platform besides this one. When they
+say that this is the hacker's blog, they weren't kidding. I've literally edited
+and installed everything from the console with no real hassle.
 
 <!-- more -->
+
 ## About Myself
 
-I might as well begin this blog with a bit of detail about myself. I'm
-__Jacky Alcine__, a software engineer and avid fact checker (when I can be)
-living in New York City. I spend lots of time of social networks like
-[Twitter][] but I try to spend more time on
-[StackOverflow][] or [Github][].
+I might as well begin this blog with a bit about myself. I'm *Jacky Alcine*,
+a software engineer and avid fact checker (when I can be) living in New York
+City. I spend lots of time of social networks like [Twitter][] but I try to
+spend more time on [StackOverflow][] or [Github][].
 
 I do a bit of open source work but not as much as I'd like. Right now, I'm
 working with a tech startup here in New York, so time's tied up even more
@@ -36,17 +35,18 @@ stop me from contributing to the community.
 
 I didn't know if this was necessary to mention, but I'm including it anyways.
 I'm a big fan of C++, it being the first programming language I wrote serious
-code with and it taking me to whole new playing fields. This language taught
-me the ins and outs of object orientated programming and it made working with
-the language a tad bit easier. From there, I dabbled a bit with C, since
+code with and it taking me to whole new playing fields. This language taught me
+the ins and outs of object orientated programming. That concept made working
+with the language a tad bit easier. From there, I dabbled a bit with C, since
 everything manages to be related to that language one way or another. I guess
-you can call C the binding language or the kernel language. After this, I
-picked up a bit of C# and Java from experimentation and studying online PDFs
-about the language. I learned Perl from a book borrowed at the library and
-picked up Python as a beginner's language into [Ubuntu][]. Now, I got about
-6 languages under my belt and I'm eager to learn more.
+you can call C the binding language or the kernel language. After this, I picked
+up a bit of C# and Java from experimentation and studying online PDFs about the
+language. I learned Perl from a book borrowed at the library and picked up
+Python as a beginner's language into [Ubuntu][]. Now, I got about 6 languages
+under my belt and I'm eager to learn more.
 
 ### Bugzilla: Nice but not Complete ###
+
 I'm quite a fan of [Bugzilla](http://www.bugzilla.org). It has an incredible
 amount of potential and the next few projects I have in mind should definitely
 bring the attention required to light. The first thing about it that kills me
@@ -65,15 +65,15 @@ near future. This is probably due to the lack of a nice framework being used
 commonly in Perl. [Mojolicious](http://mojolicio.us/) is getting close,
 though.
 
-As a bug tracker, Bugzilla __really__ follows the Unix principle well. But
-nowadays, awesome software tends to be extensible. That's why this section of
-the post came to be. I wonder how working with testing servers like
-Hudson/Jenkins and Travis CI could help with Bugzilla's functionality.
-Specific tests could be referencing to a bug and provide contextual
-information for that bug. That would help me out a lot if I knew that a
-specific bug was being tested on constantly, a bit reassuring actually.
+As a bug tracker, Bugzilla __really__ follows the Unix principle well. Nowadays,
+awesome software tends to be extensible. That's why this section of the post
+came to be. I wonder how working with testing servers like Hudson/Jenkins and
+Travis CI could help with Bugzilla's functionality. Specific tests could be
+referencing to a bug and provide contextual information for that bug. That would
+help me out a lot if I knew that a specific bug was being tested on constantly.
+A bit reassuring actually.
 
-So, as a recap, Bugzilla should have the following (as separate extensions):
+So, as a recap, Bugzilla could do with the following (as separate extensions):
 
   * OpenID support.
   * OAuth support.
@@ -93,6 +93,12 @@ Might give those developers over there a jump-start in the right direction
 I'll definitely will be doing my best to communicate over the blog as
 often as I can, since it's so easy to do so. Thanks for reading, hope to
 procure more content for you in the near future.
+
+---
+
+*Update* 2017-02-06 09:37:32 PST: I have _not_ worked on anything related to
+Bugzilla in a very long time. I’m willing to do it on a paid basis but it’s not
+in my immediate foray of thought at the time of this update.
 
 [octopress]: http://octopress.org
 [twitter]: https://twitter.com/jackyalcine

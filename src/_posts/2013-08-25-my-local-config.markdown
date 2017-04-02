@@ -3,17 +3,22 @@ layout: post
 title: "My Local Configuration"
 date: 2013-08-25 6:33:02 EDT
 comments: true
-tags: bash config
+tags:
+  - bash
+  - configuration
+excerpt: |
+  It’s always good to keep track how your personal environment plays out.
+
 ---
 
 If there's one thing you can do right, it's setting up your local console
 environment. Casual users typically don't have to replace their computers
 every few years; but developers tend to upgrade every year and half or so (if
-budget permits). There's other reasons for versioning your shell environment; 
-in my case, for using it in virtual machines, remote serves or if you nuke
-your system.
+budget permits). There's other reasons for placing your shell environment under
+version shell; in my case, for using it in virtual machines, remote serves or if
+you nuke your system.
 
-# My Setup
+## My Setup
 
 I use quite a lot of junk, to be honest. For example, whenever I go somewhere
 new and connect to their network, I rename the network to someone more
@@ -50,7 +55,7 @@ Let's take a closer look at what's going on here.
 
 ![Closer shot of Konsole](/images/closer_shot_konsole.png)
 
-From that extra-zoomed shot of my Konsole session, you can tell the following:
+From that extra zoomed shot of my Konsole session, you can tell the following:
 
   * I'm running as user "jacky" on machine "neuromancer" (my laptop). This is
     useful when I switch local users on my machine from `jacky` to 
@@ -61,36 +66,32 @@ From that extra-zoomed shot of my Konsole session, you can tell the following:
 
   * I'm in my `$HOME` directory (as noted by `~`).
 
-  * The last process run exitted successfully (as noted by ` ☷ `).
+  * The last process run exited successfully (as noted by ` ☷ `).
 
 > This Bash-it theme is available in [my fork of bash-it][12], it'd require
-> another tool for version control, [vcprompt][13] to be available in your $PATH.
+> another tool for version control, [`vcprompt`][13] to be available in your $PATH.
 Now, let's say I wanted to start hacking on [Wintermute][14]. This is what I'd
 do:
-
-**TODO: Add a GIF here**
 
 Some of the actions may not be visible there, but I was able to quickly 'jump'
 from `~` to the location of my copy of the sources of Wintermute (about three
 folders deep) with less than 10 ten keystrokes thanks to [fasd][15]. Also,
 with a bit of editing to my [~/.inputrc][16], past commands I've executed for
-opening Vim were available just by pressing up; time-saving.
+opening Vim were available just by pressing up; time saving.
 
 # Pick your Rodeo
 
-The tool I'd recommend for such an endeavour is [homeshick][1]. It's a
-Bash-implementation of the Ruby gem [homesick][2]. It does take a bit more
+The tool I'd recommend for such an endeavor is [`homeshick`][1]. It's a
+Bash implementation of the Ruby gem [homesick][2]. It does take a bit more
 time to set up than its Ruby counterpart, but consider this: if you have to
 install Ruby on a new system, install `homesick` and then use a local tool for
-versioning Ruby like [rbenv][3] or [rvm][4], then why bother installing
+handling Ruby versions like [rbenv][3] or [rvm][4], then why bother installing
 system Ruby? It looks like a chicken and egg (or rather rooster and hen)
-situation. Install this tool to your local system by executing the following
-(or by following the [official instructions][5]):
+situation. Install this tool to your local system by executing the following (or
+by following the [official instructions][5]):
 
 {% highlight bash %}
-# Download the cute lil' guy.
-git clone git://github.com/andsens/homeshick.git \
-  $HOME/.homesick/repos/homeshick
+$ git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
 
 # Add `homeshick` as an alias to the command. Don't worry, you can also edit
 # this out later (you might have to).

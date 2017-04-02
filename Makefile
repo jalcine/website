@@ -9,23 +9,26 @@ install:
 build:
 	@bundle exec rake build
 
-build-deploy:
-	@bundle exec rake build:deploy
-
 serve: build
 	@bundle exec guard start
-
-deploy: clean-deploy build-deploy upload-deploy
 
 clean:
 	@bundle exec rake clean
 	@bundle exec jekyll clean
+
+deploy: clean-deploy build-deploy upload-deploy
+
+build-deploy:
+	@bundle exec rake build:deploy
 
 clean-deploy: clean
 	@rm -rf _deploy
 
 upload-deploy:
 	@bundle exec rake deploy
+
+setup-deploy:
+	@bundle exec mina setup
 
 help:
 	@echo "Tasks for my site:"

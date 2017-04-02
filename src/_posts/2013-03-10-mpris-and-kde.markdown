@@ -2,7 +2,8 @@
 layout: post
 title: "MPRIS and KDE Playing Nice"
 date: 2014-03-10 06:42:51 EDT
-categories:
+category: thoughts
+tags:
   - kde
   - mpris
   - code
@@ -14,7 +15,7 @@ not playing). For example, I might have [Amarok][] open when I'm offline to
 play my offline collection of music and listen to podcasts as well; but 
 switch to [Spotify][] when I get reconnected to play the tracks I have 
 in my Spotify collection[^1]. The only issue here is that my media control keys
-are currently hard-wired to work with Spotify (since I spend quite a bit of
+are currently hardwired to work with Spotify (since I spend quite a bit of
 time online). That's changed and I've been spending more time offline 
 in order to encourage me to go online when necessary. Thus, came the idea of
 creating a sort of multiplexer for all of the `org.mpris.MediaPlayer2`
@@ -53,7 +54,7 @@ Welcome to PulseAudio! Use "help" for usage information.
   ....
 {% endhighlight %}
 
-It actually returns the running PID, running language(!), and user of the media 
+It actually returns the running process ID, running language(!), and user of the media 
 process so that earlier thought of lack of information is thrown out of the
 window. This is probably how KMix is able to show icon and name information for
 streams.
@@ -116,5 +117,5 @@ to work on this in the near future. Good chance I'll tweet when I start.
 [kmix]: http://kmix.kde.org
 [amarok]: http://amarok.kde.org
 [spotify]: http://spotify.com
-[^1]: Since the time of writing, I've changed it back to work with Amarok (since I've picked up podcasting listening).
-[^2]: Make 'interface' into a pointer; freaking Markdown highlightling in Vim.
+[^1]: Since the time of writing, I've changed it back to work with Amarok (since I've picked up podcast listening).
+[^2]: Make 'interface' into a pointer; freaking Markdown highlighting in Vim.

@@ -1,29 +1,30 @@
 ---
 layout: post
-title: "KDE and Networking - Thoughts"
+title: KDE and Networking - Thoughts
 date: 2014-02-15 07:46:34 EST
 comments: true
-categories: 
+category: research
+tags:
   - kde
+  - networking
   - thoughts
 ---
 
-If you haven't noticed from previous screen shots in my weblog, I use [KDE][1] as
-my desktop environment of choice. Aside from Chrome, I use mostly KDE software
-for my desktop work. It has a really great way of not only working out of the
-box, but the feedback and updates (every month!) are great too. I might also
-like it a lot too since a lot of the code base is written with C++.
+If you haven't noticed from previous screen shots in my weblog, I use [KDE][1]
+as my desktop environment on my Ubuntu desktop. Aside from a few bits of
+software, I use mostly KDE software for my desktop work. It has a really great
+way of not only working out of the box, but the feedback and updates (every
+month!) are great too. I might also like it a lot too since a lot of the code
+base is written with C++.
 
 ## Peer Discovery
 
-Whenever you connect to a new network on Windows (XP SP2 and greater, I think,
-and specifically a wireless network, I haven't tried Ethernet connections),
-it asks for the network type. Now, some might disregard this window,
-but this determines the amount of information that the platform should
-expose the new network. If you're a casual Linux user with no real tinkering,
-not much about your system is ever visible over the network. However, software
-like Samba, ZeroConf/Avahi and others can eventually a bit of a hassle to constantly
-switch on and off.
+Whenever you connect to a new network on Windows[^1], it asks for the network
+type. Now, some might disregard this window, but this determines the amount of
+information that the platform should expose the new network. If you're a casual
+Linux user with no real tinkering, not much about your system is ever visible
+over the network[^2]. However, software like Samba, ZeroConf/Avahi and others
+can eventually a bit of a hassle to constantly switch on and off.
 
 Using Avahi to look at my local network over ZeroConf, I get a bit of
 interesting information:
@@ -63,7 +64,7 @@ quickly especially if you don't want to slow down potential network speeds.
 KDE does have an way of incorporating this, but so far it seems to be
 only with Samba, for the moment.
 
-![Sharing Public Folder](/images/sharing-public-folder.png)
+{% img "{{'posts/sharing-public-folder.png'|image_path}}" alt:"Sharing a public folder" %}
 
 I'm working to bring other remote document storage solutions like Dropbox and
 Google Drive natively into KDE using KIO so it's something to look forward
@@ -77,8 +78,9 @@ for UFW (uncomplicated firewall) is a straight forward tool to setting up and
 getting ufw on your system. I have to admit, though, it isn't really friendly
 for novice users; it could make do with some template profiles and I've
 considered patching it for just this purpose. But outside of that, I can
-provide the profile I [use for those interested](/files/kcm_ufw_default.ufw).
+provide the profile I [use for those interested][4].
 
+{% img "{{'posts/kcm-ufw-shot.png'|image_path}}" alt:"KDE and UFW" %}
 ![KDE and UFW](/images/kcm-ufw-shot.png)
 
 It's a old wife's tale about Linux not getting viruses and trojans but it
@@ -95,3 +97,6 @@ Samba only further enhances that.
 [1]: http://kde.org
 [2]: http://zeroconf.org
 [3]: http://telepathy.kde.org
+[4]: /files/kcm_ufw_default.ufw
+[^1]: XP SP2 and greater, I think, and specifically a wireless network, I haven't tried Ethernet connections
+[^2]: To my knowledge. I try to harden my personal machine as much as I can, but YMMV.

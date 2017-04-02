@@ -1,0 +1,23 @@
+---
+layout: bare
+title: Subscribe to Jacky Alciné's Newsletter
+---
+
+<section class="db center mw9 w-60 pa2 w-80-l">
+  {% img "{{ 'posts/where-am-i-going.jpg' | image_path }}"
+         class:"db center w-100 mw8 h-auto ma2" width:"auto" height:"auto" %}
+  <h1 class="f1 lh-title f-headline-l">Newsletter</h1>
+  <p class="f4 f3-l measure lh-copy dib">
+    My newsletter is a bimonthly curation of thoughts collected over time,
+    things too short for a blog post and too useful for Twitter. I'd also
+    add a few other fun things into them. You can expect my first issue
+    to be out by <strong>April 7th, 2017</strong>.
+  </p>
+  <form class="f5 dib ml3-l pb3-l" action="https://tinyletter.com/jacky-wtf" method="post" target="popupwindow"
+    onsubmit="window.open('https://tinyletter.com/jacky-wtf', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+    <p><label for="tlemail">Enter your email address</label></p>
+    <p><input type="email" class="ba b--moon-gray near-black bw1 pa2" name="email" id="tlemail" placeholder="your.dope@email.address"/></p>
+    <input type="hidden" value="1" name="embed" />
+    <button type="submit" class="moon-gray bg-near-black bn pa2">Subscribe</button>
+  </form>
+</section>

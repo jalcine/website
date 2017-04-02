@@ -4,33 +4,39 @@ title: "Adopting Technology: Then and Now"
 date: 2013-02-23T23:44:19-05:00
 revised: 2016-12-16 16:50:37 PST
 comments: true
-tags: nfc google-glass google-now agumented-reality
+tags:
+  - nfc
+  - google-glass
+  - google-now
+  - augmented-reality
 category: review
 excerpt: Technology’s moving to an odd place; are we ready?
 
 ---
 
 This is 2013. We have some awesome technology out here in the wild, like
-Google Glass, Vuzix and some other awesome guys working into the field. I'm a
-very big fan of tech, being a developer and all. But it's not that welcoming
+Google Glass, Vuzix and some other awesome guys working into the field. I'm
+a very big fan of tech, being a developer and all. But it's not that welcoming
 to people who don't understand it. But before I get all crazy about it, I have
 to explain what I want to appreciate.
 
-Technology is beginning to move faster than most people can adopt to. We're 
-producing more phones, laptops, and other devices each quarter than even 
-before. I currently own a [ASUS laptop](http://www.asus.com/Notebooks_Ultrabooks/K53e),
-a [Google tablet](https://play.google.com/store/devices/details?id=nexus_7_16gb), and an
-[LG Android phone](http://www.metropcs.com/metro/detail/LG+Motion%E2%84%A2+4G/LGMS770).
-Realistically, this is enough for one person. But I also own a personal 
-television rigged to switch to my PC input when used, a pair of Bluetooth 
-headphones that I use when I'm using my tablet or laptop out of the house, 
+Technology is beginning to move faster than most people can adopt to. We're
+producing more phones, laptops, and other devices each quarter than even before.
+I currently own a [ASUS laptop](http://www.asus.com/Notebooks_Ultrabooks/K53e),
+a [Google
+tablet](https://play.google.com/store/devices/details?id=nexus_7_16gb), and an
+[LG Android
+phone](http://www.metropcs.com/metro/detail/LG+Motion%E2%84%A2+4G/LGMS770).
+Realistically, this is enough for one person. But I also own a personal
+television rigged to switch to my PC input when used, a pair of Bluetooth
+headphones that I use when I'm using my tablet or laptop out of the house,
 a wireless mouse; [the list goes on](/).
 
 ## NFC: Near Field Awesomeness 
 [NFC](http://idea.imano.com/2011/05/nfc-for-dummies/) is the beginning of
 awesome, contactless technology. Think of it of wireless data bursts flying
 faster than we can see. The technology is something quite simple, it uses 
-[magentic induction](http://en.wikipedia.org/wiki/Magnetic_induction) to 
+[magnetic induction](http://en.wikipedia.org/wiki/Magnetic_induction) to 
 implement a means of immediate data transfers. Think of it as plugging your 
 phone to your computer with no cables but only transferring a small document 
 (kilobytes) as opposed to a audio file (megabytes).
@@ -40,10 +46,10 @@ phone to your computer with no cables but only transferring a small document
 
 Using QR (Quick Response) codes is tersely similar to this process. With 
 a higher density of squares, you could, of course, store a lot of data. But 
-QR codes have proven to be very intrusive when it comes to decor. The 
+QR codes have proved to be very intrusive when it comes to decor. The 
 practice would require adopting the image into design, a burden not needed. 
 NFC tags remove this burden by having wires instead being placed under or 
-within materials and design so patrons of it can interact with head-on. So 
+within materials and design so patrons of it can interact with head on. So 
 from a design aspect, it's quite useful.
 
 For hardware manufactures, no effort is required. If anything, it's up to the 
@@ -63,7 +69,7 @@ This concept of merging computer graphics and reality is something done a LOT,
 and we take it for granted. Most films created make heavy use of
 [CGI](http://en.wikipedia.org/wiki/Computer-generated_imagery) to add some of
 those amazing fangs, wings and flight scenes we adore in film. Well, a lot of
-techies out there figured it to be an awesome idea. 
+tech users out there figured it to be an awesome idea. 
 
 ## Visually
 {% youtube v1uyQZNg2vE %}
@@ -113,9 +119,9 @@ Below is [Google Mobile](http://www.youtube.com/user/GoogleMobile?feature=watch)
 {% youtube pPqliPzHYyc %}
 
 [Google Now](http://www.google.com/now) is fucking awesome, but only if you're
-a Googler. If you store your contacts, e-mails, calendar, news (via Reader and
-searches in the Knowledge Graph), then Google Now becomes your very best
-friend. I've actually gotten so attached, I check it in the morning, lunch,
+a heavy Google user. If you store your contacts, e-mails, calendar, news (via
+Reader and searches in the Knowledge Graph), then Google Now becomes your very
+best friend. I've actually gotten so attached, I check it in the morning, lunch,
 dinner and before I knock out for sleep. It tells me what I'd like to know at
 a very balanced level. It's Google's way to understanding what you'd like to
 know before you know, thus curating to your pre born needs. [Inception,

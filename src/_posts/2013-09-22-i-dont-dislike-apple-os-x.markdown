@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I Don't Dislike Apple OS X"
+title: I Don't Dislike Apple OS X
 date: 2013-09-22 18:06:12 EDT
 category: opinion
 
@@ -24,13 +24,13 @@ and a desktop machine wouldn't make sense in that light.
 
 ## Where I Landed
 
-That indirectly led me to [Ubuntu][1] and the whole conglomerate of open-source
+That indirectly led me to [Ubuntu][1] and the whole conglomerate of open source
 desktop environments and distributions out there. There's *a lot* of them out
 there. However, the breaking thing of a distributions would be its support. It
 doesn't matter if it's insanely fast or robust; if it has shit support, you'll
 have a shit time using it. That was (and still is) the story of open source
 software. Ubuntu and its Unity interface is meant to be a light yet powerful
-solution for novice, intermediate and pro-users alike. In theory and in
+solution for novice, intermediate and pro users alike. In theory and in
 practice, it works. But people are extremely hostile to change in the open
 source community and with good reason. Too much "rapid change" makes it
 difficult for users (and developers, translators and the like) to adopt and
@@ -44,7 +44,7 @@ application management dock. KDE comes with KRunner which is similar to the
 productivity application [Alfred for Mac][3]. But all of this cost just **$0.00**. Of
 course, there's the whole application portability issue. Applications and
 libraries built using Apple's Cocoa framework and otherwise on top of the
-Objective-C language will not work "out-of-the-box" on a Linux machine. So I
+Objective-C language will not work "out of the box" on a Linux machine. So I
 "lose out" on software exclusively built for OS X. In today's day and age,
 this isn't so much of a problem since we aren't forced to use Facebook via a
 desktop application[^1], or LinkedIn with an desktop application. But we do
@@ -53,14 +53,14 @@ lose (or at least currently lack) a strong synchronization function.
 ### Synchronizing Your Information
 
 To mention another operating system, Windows 8 for the matter, introduced a
-very service-heavy concept of information syncing in its core applications
+very service heavy concept of information syncing in its core applications
 like People, Mail and Calendar. This provides the ultimate convenience for the
-end-user if their desired service is supported like Google's, AOL's or
+end user if their desired service is supported like Google's, AOL's or
 Yahoo's. From what I know of OS X today, Mail.app knows the typical settings
 for GMail, Google Apps, Hotmail / Windows Live, and AOL so it'd be trivial for
 a user to set up their accounts and get going. Also with account
 synchronization within their account, it makes it trivial to get function like
-sending an e-mail to a contact you've recently saved on your mobile device on
+sending an email to a contact you've recently saved on your mobile device on
 the computer at a later time. Awesome, no? You'd see why someone would want to
 have OS X now. It's even better if you have an iPhone, notifications and
 messages are synced between the two (or more) devices, making management a
@@ -81,16 +81,16 @@ the themes (tweaked to my liking). For me to discard that is like throwing out
 my bed with all of my sheets and pillows and resort to sleeping in a hotel
 because I want to pay premium.[^2]
 
-Outside of my now-quasi-native nature with a Linux machine, the niceties of
+Outside of my now quasi native nature with a Linux machine, the niceties of
 getting my life on OS X would be a pain. For starters, I'm not a big fan of
 "constantly" connected services. My current mail client, [KMail][4], does an
-amazing job of caching all of my e-mail to my local machine, handling PGP and
+amazing job of caching all of my email to my local machine, handling PGP and
 S/MIME security options, and best of it, *it's open*. I could work to write an
 extension for KMail that allows me to synchronize text messages from my mobile
-device and it would look like plain e-mail messages in KMail! Of course, one
+device and it would look like plain email messages in KMail! Of course, one
 could easily say:
 
-> But why would you want your SMS and MMS to be just like e-mail? iMessage is
+> But why would you want your SMS and MMS to be just like email? iMessage is
 > so much better here.
 
 That's a valid response and a strongly personal one to have. I personally like
