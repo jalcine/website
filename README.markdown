@@ -1,15 +1,7 @@
 # Jacky Alciné
 
-This repository holds the sources for the statically generated site hosted at
-<https://jacky.wtf>. The goal of this site is to provide the following:
+This repository holds the [Jekyll][] sources for my site hosted at
+<https://jacky.wtf>.
 
-  * blog
-  * static pages
-    * gear
-    * changelog
-    * press
-    * gpg info
-    * about
-      * pairwithme
-      * contact
-    * projects
+
+[jekyll]: https://jekyllrb.com/
