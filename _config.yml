@@ -94,6 +94,9 @@ navigation:
       uri: /crypto/
     - name: Press
       uri: /press/
+  links_extra:
+    - name: Newsletter
+      uri: /newsletter/
 
 gpg:
   fingerprint: "0x4DEFFC9FF82E8908"

@@ -7,6 +7,13 @@
         </a>
       </li>
     {% endfor %}
+    {% for link in site.navigation.links_extra %}
+      <li class="ma1">
+        <a title="{{ link.name }}" class="link pa1 pa2-ns underline-hover gray hover-white" href="{{ link.uri }}">
+          {{ link.name }}
+        </a>
+      </li>
+    {% endfor %}
   </ul>
   <h4 class="f4 ttu tracked-tight moon-gray">{{ site.name }}</h4>
   <p class="f5 measure-narrow">{{ site.description }}</p>
