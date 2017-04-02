@@ -19,11 +19,6 @@ excerpt: |
 
 {% img "{{'posts/serenity-shay.jpg'|image_path}}" width:"auto" height:"auto" class:"db w-80-l center" %}
 
-> Update 2017-02-21 16:27:16 PST: After publishing this, the other party had her
-> family and friends attack me digitally and in-person. Personal property of
-> mine was damaged and arrests had to be made. I reach out an olive branch and a
-> brick was thrown (figuratively).
-
 At the time of writing, I’m beginning to process the end of a relationship that
 was toxic, deceitful and grew to be borderline dangerous. The abusers lied about
 interactions they had with other people. They downplayed a great deal of the
@@ -101,16 +96,6 @@ flow][3].
 
 I’m sorry Shay. May the Orisha spirits guide me to a better state and continue
 to uplift you. I have to talk with Oduduwa very soon. **I love you**.
-
----
-
-I write about Shay as a good person, but as time progressed, I learned to be
-honest with myself about the person I was spending time with. I expected so much
-from someone who gave an impression of being able to do so. I fell for it and I
-learned my lesson. I was warned by many people to not continue this, that they
-can see how frustated she got me and how it was as if buttons were being pushed
-to invoke reactions. This is why you have friends; to be more objective when
-you’re drinking the koolaid.
 
 [1]:http://www.gradientlair.com/post/84107309247/define-misogynoir-anti-black-misogyny-moya-bailey-coined
 [2]: https://twitter.com/theAfroLegalise/status/676258784646336513
