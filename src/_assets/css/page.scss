@@ -1,9 +1,16 @@
 @import "../../../node_modules/tachyons-sass/tachyons";
 @import "_syntax";
 
-.fg-light  { @extend .near-white; }
-.fg-dark   { @extend .near-black; }
-.fg-accent { @extend .dark-pink;  }
+/// {{{ Color Scheme
+.bg-light { @extend .white; }
+.bg-dark  { @extend .near-white; }
+.fg-light  { @extend .near-black; }
+.fg-dark   { @extend .black; }
+.fg-accent { @extend .dark-blue;  }
+.fg-accent-hover { @extend .dark-blue-hover;  }
+
+/// }}}
+
 
 header#pageHeader {
   @extend .dt;
