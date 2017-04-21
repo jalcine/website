@@ -5,15 +5,15 @@ layout: bare
   <header class="ph3 ph4-ns pt4 pt5-ns">
     {% img "{{ page.image }}" class:"w-auto dib ma1 center h-auto w-100 w-50-l fr-l" %}
     <h1 class="baskerville f2 f1-m f-headline-l measure lh-title fw1 pa2 ma3 ">{{ page.title }}</h1>
-    {% if page.byline %}<h2 class="f3 fw1 pa1 gray">{{ page.byline }}</h2>{% endif %}
-    {% if page.date %}<time class="f6 mh2 ttu db gray">{{ page.date |
+    {% if page.byline %}<h2 class="f3 fw1 pa1 fg-light">{{ page.byline }}</h2>{% endif %}
+    {% if page.date %}<time class="f6 mh2 ttu db fg-light">{{ page.date |
         date_to_rfc822}}{% if page.revised %}, updated <strong>{{ page.revised |
             date_to_rfc822 }}</strong>{% endif %}</time>{% endif %}
   </header>
 {% else %}
   <header class="db center mw-90 pa4 tc tl-l">
-    <h1 class="pa4 mv0 mb2 baskerville f2 f1-m f-headline-l fw1 near-black">{{ page.title }}</h1>
-    {% if page.byline %}<h3 class="pa4 f3 fw1 gray">{{ page.byline }}</h3>{% endif %}
+    <h1 class="pa4 mv0 mb2 baskerville f2 f1-m f-headline-l fw1 fg">{{ page.title }}</h1>
+    {% if page.byline %}<h3 class="pa4 f3 fw1 fg-light">{{ page.byline }}</h3>{% endif %}
     <cite class="mv2 f6 ttu tracked fs-normal">{{ site.author }}</cite>
     &mdash;
     {% if page.date %}<time class="f6 ttu">{{ page.date | date_to_rfc822}}{% if
@@ -21,21 +21,21 @@ layout: bare
             }}</strong>{% endif %}</time>{% endif %}
   </header>
 {% endif %}
-<p class="f6 f5-l pa2 pa4-l mw8 w-80 center db gray tl">
+<p class="f6 f5-l pa2 pa4-l mw8 w-80 center db fg-light tl">
   A {{ page.category }} post{% if page.tags %}, tagged under {{ page.tags | linkify_tags }}{% endif %}.
 </p>
 {% if page.excerpt != false or page.excerpt != '' %}
-  <blockquote class="pa2 gray f3 f2-l measure-narrow center cb">
+  <blockquote class="pa2 f3 f2-l measure-narrow center cb fg-light">
     <div class="lh-copy lh-title-ns">
       {{ page.excerpt | markdownify }}
     </div>
   </blockquote>
   <p class="tc moon-gray">&sect;</p>
 {% endif %}
-<main id="entry" class="w-100 lh-copy normal sans near-black db f4">
+<main id="entry" class="w-100 lh-copy normal sans fg db f4">
   {{ content }}
 </main>
-<footer role="post" class="pa2 b--dotted bw2 bn bb center w-100 moon-gray bg-near-black pa4-l">
+<footer role="post" class="pa2 b--dotted bw2 bn bb center w-100 fg-light bg-dark pa4-l">
   <div class="center tc db mw5 w-100-l">
     {% if page.previous %}<a class="mv2 center pa2 dib" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>{% endif %}
     {% if page.next %}<a class="mv2 center pa2 dib" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>{% endif %}

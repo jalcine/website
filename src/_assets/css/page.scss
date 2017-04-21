@@ -1,15 +1,23 @@
 @import "../../../node_modules/tachyons-sass/tachyons";
 @import "_syntax";
 
-/// {{{ Color Scheme
-.bg-light { @extend .white; }
-.bg-dark  { @extend .near-white; }
-.fg-light  { @extend .near-black; }
-.fg-dark   { @extend .black; }
-.fg-accent { @extend .dark-blue;  }
-.fg-accent-hover { @extend .dark-blue-hover;  }
+.fg { @extend .near-black; }
+.fg-light { @extend .gray; }
+.fg-dark { @extend .black; }
+.fg-accent { @extend .pink; }
+.fg-accent-dark { @extend .dark-pink; }
+.fg-accent-light { @extend .light-pink; }
 
-/// }}}
+.bg { @extend .bg-light-gray; };
+.bg-light { @extend .bg-near-white; }
+.bg-dark { @extend .bg-moon-gray; }
+.bg-accent { @extend .bg-pink; }
+.bg-accent-dark { @extend .bg-dark-pink; }
+.bg-accent-light { @extend .bg-light-pink; }
+
+body {
+  @extend .sans-serif;
+}
 
 
 header#pageHeader {
@@ -18,8 +26,10 @@ header#pageHeader {
   @extend .pa2;
   @extend .center;
   @extend .mw9;
-  @extend .near-black;
-  @extend .bg-white;
+  @extend .fg-dark;
+  @extend .bg-light;
+  // @extend .near-black;
+  // @extend .bg-white;
 }
 
 ul#pageNavigator {
@@ -45,7 +55,7 @@ ul#pageNavigator {
 
   > ol {
     a.reversefootnote {
-      @extend .gray;
+      @extend .fg-light;
     }
   }
 }
@@ -73,8 +83,8 @@ main#entry {
     @extend .b--gray;
     @extend .ma1;
     @extend .bw1;
-    @extend .bg-near-black;
-    @extend .light-pink;
+    @extend .bg-accent-dark;
+    @extend .fg-light;
   }
 
   img.present {
@@ -86,12 +96,12 @@ main#entry {
 
 a {
   @extend .link;
-  @extend .dark-pink;
-  @extend .hover-pink;
+  @extend .fg-accent;
+  @extend .fg-accent-hover;
   text-decoration: none;
 
   &:visited {
-    @extend .pink;
+    @extend .fg-accent;
   }
 }
 
