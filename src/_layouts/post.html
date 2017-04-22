@@ -35,12 +35,12 @@ layout: bare
 <main id="entry" class="w-100 lh-copy normal sans fg db f4">
   {{ content }}
 </main>
-<footer role="post" class="pa2 b--dotted bw2 bn bb center w-100 fg-light bg-dark pa4-l">
+<footer role="post" class="pa2 center w-100 fg-light bg-dark">
   <div class="center tc db mw5 w-100-l">
-    {% if page.previous %}<a class="mv2 center pa2 dib" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>{% endif %}
-    {% if page.next %}<a class="mv2 center pa2 dib" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>{% endif %}
+    {% if page.previous %}<a class="fl-l mv2 center pa2 dib" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>{% endif %}
+    {% if page.next %}<a class="fr-l mv2 center pa2 dib" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>{% endif %}
   </div>
-  <p class="cb f6 center tc pa1">
+  <p class="f6 w5 center pa1 cb">
     Thoughts? Comments? Suggestions? Rage posts? Send all of that to either my
     <a href="https://twitter.com/jackyalcine">Twitter handle</a> or <a
       href="mailto:yo@jacky.wtf">my email address</a> and I'll get back to you
