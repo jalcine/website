@@ -19,6 +19,8 @@
 
 body {
   @extend .sans-serif;
+  @extend .fg;
+  @extend .bg;
 }
 
 
