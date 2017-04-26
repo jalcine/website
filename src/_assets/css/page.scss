@@ -2,6 +2,7 @@
 @import "_syntax";
 
 .fg { @extend .near-black; }
+.fg-white { @extend .white; }
 .fg-light { @extend .gray; }
 .fg-dark { @extend .black; }
 .fg-accent { @extend .pink; }
@@ -73,7 +74,8 @@ main#entry {
   }
 
   h4, h5, h6 {
-    @extend .ttu
+    @extend .ttu;
+    @extend .fg-light;
   }
 
   > p, ul, ol, blockquote {
@@ -88,7 +90,7 @@ main#entry {
     @extend .ma1;
     @extend .bw1;
     @extend .bg-accent-dark;
-    @extend .fg-light;
+    @extend .fg-white;
   }
 
   img.present {
@@ -135,8 +137,8 @@ figure {
 }
 
 blockquote.twitter-tweet {
-  @extend .bg-lightest-blue;
-  @extend .near-black;
+  @extend .bg-accent-dark;
+  @extend .fg-dark;
 }
 
 div.jekyll-twitter-plugin {
