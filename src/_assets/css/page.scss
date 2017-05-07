@@ -1,29 +1,13 @@
 @import "../../../node_modules/tachyons-sass/tachyons";
 @import "_syntax";
+@import "_colors";
 
-.fg { @extend .near-black; }
-.fg-white { @extend .white; }
-.fg-light { @extend .gray; }
-.fg-dark { @extend .black; }
-.fg-accent { @extend .pink; }
-.fg-accent-hover { @extend .hover-pink; }
-.fg-accent-dark { @extend .dark-pink; }
-.fg-accent-light { @extend .light-pink; }
-
-.bg { @extend .bg-light-gray; };
-.bg-light { @extend .bg-near-white; }
-.bg-dark { @extend .bg-near-black; }
-.bg-accent { @extend .bg-pink; }
-.bg-accent-hover { @extend .hover-bg-pink; }
-.bg-accent-dark { @extend .bg-dark-pink; }
-.bg-accent-light { @extend .bg-light-pink; }
 
 body {
   @extend .sans-serif;
   @extend .fg;
   @extend .bg;
 }
-
 
 header#pageHeader {
   @extend .dt;
@@ -33,8 +17,6 @@ header#pageHeader {
   @extend .mw9;
   @extend .fg-dark;
   @extend .bg-light;
-  // @extend .near-black;
-  // @extend .bg-white;
 }
 
 ul#pageNavigator {
