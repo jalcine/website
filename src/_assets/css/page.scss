@@ -1,28 +1,13 @@
 @import "../../../node_modules/tachyons-sass/tachyons";
 @import "_syntax";
+@import "_colors";
 
-.fg { @extend .near-black; }
-.fg-light { @extend .gray; }
-.fg-dark { @extend .black; }
-.fg-accent { @extend .pink; }
-.fg-accent-hover { @extend .hover-pink; }
-.fg-accent-dark { @extend .dark-pink; }
-.fg-accent-light { @extend .light-pink; }
-
-.bg { @extend .bg-light-gray; };
-.bg-light { @extend .bg-near-white; }
-.bg-dark { @extend .bg-near-black; }
-.bg-accent { @extend .bg-pink; }
-.bg-accent-hover { @extend .hover-bg-pink; }
-.bg-accent-dark { @extend .bg-dark-pink; }
-.bg-accent-light { @extend .bg-light-pink; }
 
 body {
   @extend .sans-serif;
   @extend .fg;
   @extend .bg;
 }
-
 
 header#pageHeader {
   @extend .dt;
@@ -32,8 +17,6 @@ header#pageHeader {
   @extend .mw9;
   @extend .fg-dark;
   @extend .bg-light;
-  // @extend .near-black;
-  // @extend .bg-white;
 }
 
 ul#pageNavigator {
@@ -73,7 +56,8 @@ main#entry {
   }
 
   h4, h5, h6 {
-    @extend .ttu
+    @extend .ttu;
+    @extend .fg-light;
   }
 
   > p, ul, ol, blockquote {
@@ -88,7 +72,7 @@ main#entry {
     @extend .ma1;
     @extend .bw1;
     @extend .bg-accent-dark;
-    @extend .fg-light;
+    @extend .fg-white;
   }
 
   img.present {
@@ -135,8 +119,8 @@ figure {
 }
 
 blockquote.twitter-tweet {
-  @extend .bg-lightest-blue;
-  @extend .near-black;
+  @extend .bg-accent-dark;
+  @extend .fg-dark;
 }
 
 div.jekyll-twitter-plugin {
