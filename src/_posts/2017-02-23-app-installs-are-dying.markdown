@@ -11,8 +11,8 @@ tags:
 excerpt: I’m really about this WebASM tho!
 ---
 
-Reviewing [Recode's post on app installs][1], I totally understand the author
-would even bother to write this. What's the point of installing a new
+Reviewing [Recode's post on app installs][1], I totally understand why the
+author would even bother to write this. What's the point of installing a new
 mobile application to your phone if everything you need is _already there_? It's
 funny how this is pushed _so much_, the idea of the "end of the app" and the
 "rise of chat applications" and yet we continue to spend so much time invested
