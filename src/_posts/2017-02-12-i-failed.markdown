@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I’m Not Who I Seem to Be, I’ve Failed At Being a Man
+title: I’ve Failed At Being a Man
 image: posts/banner-shay.jpg
 date: 2017-02-12 12:56:40 PST
 reivsed: 2017-02-23 11:11:31 PST
