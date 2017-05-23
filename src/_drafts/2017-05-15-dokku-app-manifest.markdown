@@ -41,6 +41,9 @@ apps:
       commit:  master
 {% endhighlight %}
 
+I got a little demo working over on my [personal Git server][1]. Once I get it
+into a decent state, I'll clone it over to Github for more people to toy with.
+
 [dokku]: https://dokku.io
 [`dokku-manifest`]: https://jacky.wtf/projects/dokku-manifest/
 [docker compose]: https://docs.docker.com/compose/
