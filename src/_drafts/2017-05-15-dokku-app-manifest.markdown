@@ -33,16 +33,52 @@ configuration looks a bit like:
 # Let's add comments to the site.
 ---
 version: 1
-host: magic.host
+host:
+  name: a.test.host
+  user: dokku
 apps:
-  comments:
+  rubby:
     vcs:
-      path: https://github.com/posativ/issos
-      commit:  master
+      path: git@github.com:heroku/ruby-rails-sample.git
+      sha: master
+    commands:
+      pre:
+        - dokku postgres:create rubby
+      post:
+        - dokku postgres:link rubby $APP_NAME
+  comments:
+    docker:
+      image: wonderfall/isso
+      tag: latest
+    commands:
+      pre:
+        - dokku postgres:create comments
+      post:
+        - dokku postgres:link rubby $APP_NAME
 {% endhighlight %}
 
-I got a little demo working over on my [personal Git server][1]. Once I get it
-into a decent state, I'll clone it over to Github for more people to toy with.
+This would do the work of deploying a Docker container running Isso for
+self-hosted comments and the sample Ruby on Rails application provided by
+Heroku.
+
+## Why Build This?
+
+I'm moving to a place where I'd want to build an environment for application
+projects that require a lot of repeating of setup. My goal with this is to allow
+for immediate deployment of applications to one's instance of Dokku with no
+hassle.
+
+## What Are Some Things On The Roadmap?
+
+There's quite a bit one could do with this. Some of the things include:
+
+  * Application deployment chaining: ensuring that in order to deploy A and B,
+    C has to be deployed on Dokku first. This could be handy if you wanted to
+    ensure that your instance of Piwik is up before you deploy any other
+    applications.
+
+
+Visit the [project page][`dokku-manifest`] for more information.
 
 [dokku]: https://dokku.io
 [`dokku-manifest`]: https://jacky.wtf/projects/dokku-manifest/
