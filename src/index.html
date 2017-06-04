@@ -18,10 +18,12 @@ components:
       Aspiring educator and historian.
     </h2>
     <p class="white f5 f3-l lh-copy measure">{{ site.blurb }}</p>
-    <p class="gray f6 f4-l lh-copy measure-narrow">
-      <strong class="ttu">Read:</strong>
-      <a href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a>
-    </p>
+    <div class="gray f6 f4-l lh-copy measure-narrow">
+      <p>
+        <strong class="ttu">Read:</strong>
+        <a href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a>
+      </p>
+    </div>
   </div>
 </section>
 {% include header.html minimal=true %}
