@@ -81,7 +81,10 @@ There's quite a bit one could do with this. Some of the things include:
     needing to conditionally trigger a deploy of an application. Still ironing
     that one out.
 
+Dokku handles a lot of stuff automatically like health checks and the like so
+this doesn't need to do a post-deploy check of sorts.
 
+---
 Visit the [project page][`dokku-app-manifest`] for more information.
 
 [dokku]: https://dokku.io
