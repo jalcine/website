@@ -19,7 +19,7 @@ If you're reading this, you probably peeped that moment when [@deray][]'s
 account tweeted out how he was allegedly supporting Donald Trump :skull: :mask:.
 Deray [responded after deleting said tweet][1]:
 
-{% twitter oembed https://twitter.com/deray/status/741355511224913920 %}
+{% twitter https://twitter.com/deray/status/741355511224913920 %}
 
 Whenever something happens on the Internet, people tend to write :pencil:
 about it. Like [Wired][] or [Buzzfeed][]. Buzzfeed was useful here and did
@@ -47,7 +47,7 @@ insecurely (if it's not encrypted somewhere, you ain't keeping it safe, b) by
 the consumer. This still doesn't address the fact that SMS is very weak in 
 terms of message security with  the correct tooling.
 
-{% twitter oembed https://twitter.com/jackyalcine/status/741679286315188224 %}
+{% twitter https://twitter.com/jackyalcine/status/741679286315188224 %}
 
 ## If You Can't See It, Chances Are You Can't Control It
 When it comes to SMS 2FA, social engineering is _the_ way to break it.
@@ -65,7 +65,7 @@ that can provide the following (and more):
   * generates a signed message with a stored private key.
   * presents a challenge and valid response for authorization.
 
-{% twitter oembed https://twitter.com/jackyalcine/status/741679789715529728 %}
+{% twitter https://twitter.com/jackyalcine/status/741679789715529728 %}
 
 > One time passwords can also be sent via SMS, but for the
 > simple reason that you aren't the **origin of generation** of said one-time
@@ -191,7 +191,7 @@ be protected using Clef.
 
 It's also on this premise here that I suggest Clef as an answer:
 
-{% twitter oembed https://twitter.com/EricaJoy/status/741294065841360896 %}
+{% twitter https://twitter.com/EricaJoy/status/741294065841360896 %}
 
 Passwords are the **zombies of user security**. They _should_ be dead, but due to a
 myriad of reasons (low prioritizing as a concern by companies, users finding

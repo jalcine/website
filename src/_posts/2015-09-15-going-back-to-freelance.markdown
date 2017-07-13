@@ -15,7 +15,7 @@ tags:
 Two months ago, I've posted a tweet about me leaving freelance and openly
 searching for full-time work:
 
-{% twitter oembed https://twitter.com/jackyalcine/status/622631537322950656 %}
+{% twitter https://twitter.com/jackyalcine/status/622631537322950656 %}
 
 I posted that tweet with hopes of landing a position within _two months_. From the
 second week of July to August 29th, I've interviewed at 13 different

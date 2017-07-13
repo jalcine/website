@@ -16,7 +16,7 @@ Scott's a frequent blogger and had an entry recently about [blogs as
 the cog of an online community][1]; I pulled this quote from the
 post and posted it on Twitter:
 
-{% twitter oembed https://twitter.com/jackyalcine/status/633130781464989696 %}
+{% twitter https://twitter.com/jackyalcine/status/633130781464989696 %}
 
 It's a simple statement but it made me really think. As opposed to just shooting
 off random thoughts on a platform you don't necessarily own; there's the option

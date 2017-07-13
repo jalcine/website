@@ -14,7 +14,7 @@ tags:
 A while back, I mentioned the idea of using [Soundcloud][] as a storage backend for
 podcasts to a friend on Twitter (hi Bo!):
 
-{% twitter oembed https://twitter.com/jackyalcine/status/601051053296066561 %}
+{% twitter https://twitter.com/jackyalcine/status/601051053296066561 %}
 
 Now, if you don't already have a service for podcasting and you don't mind
 spending $12 a month for the service, I know quite a few people who use
