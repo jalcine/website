@@ -11,7 +11,7 @@ gem 'rake-jekyll'
 
 group :jekyll do
   gem 'autoprefixer-rails'
-  gem 'jekyll'
+  gem 'jekyll', '3.5.0'
   gem 'jekyll-tagging-related_posts'
   gem 'kramdown'
   gem 'mini_magick'
@@ -25,8 +25,10 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', git: 'https://github.com/jekyll/jekyll-sitemap'
   gem 'jekyll-timeago'
   gem 'jekyll-twitter-plugin'
+  gem 'jekyll-textile-converter'
   gem 'jemoji'
-  gem 'octopress-quote-tag'
+  gem 'octopress-quote-tag', git: 'https://github.com/octopress/quote-tag',
+                             branch: 'master'
   gem 'octopress-video-tag', git: 'https://github.com/anarchivist/octopress-video-tag',
                              branch: 'loosen-gemspec'
 end
