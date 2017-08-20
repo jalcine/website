@@ -2,29 +2,26 @@
 # Options used in the navigation bar.
 navigation:
   -
+    title: "Home"
+    link: "/"
+  -
+    title: "Newsletter"
+    link: "/newsletter/"
+  -
     title: "Weblog"
     link: "/weblog/"
-    icon: "blog"
-  -
-    title: "About"
-    link: "/about/"
-    icon: "home"
   -
     title: "Gear"
     link: "/gear/"
-    icon: "stats"
   -
     title: "Projects"
     link: "/projects/"
-    icon: "book"
   -
-    title: "GPG"
-    link: "/gpg/"
-    icon: "key"
+    title: "Crypto"
+    link: "/crypto/"
   -
     title: "Work"
     link: "/work/"
-    icon: "stackoverflow"
 
 # Social links I have.
 social:

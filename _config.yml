@@ -81,21 +81,5 @@ assets:
   features:
     liquid: true
 
-navigation:
-  links:
-    - name: Weblog
-      uri: /weblog/
-    - name: Gear
-      uri: /gear/
-    - name: Work
-      uri: /work/
-    - name: Crypto
-      uri: /crypto/
-    - name: Press
-      uri: /press/
-  links_extra:
-    - name: Newsletter
-      uri: /newsletter/
-
 gpg:
   fingerprint: "0x4DEFFC9FF82E8908"

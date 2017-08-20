@@ -1,23 +1,8 @@
-<header id="pageHeader">
-  <ul id="pageNavigator">
-    {% unless include.minimal == true %}
-      <li>
-        <a class="link code pa1 bg-animate pa2-ns bg-dark-pink hover-bg-white
-          hover-dark-pink" href="/">
-          @jackyalcine
-        </a>
-      </li>
-    {% endunless %}
-    {% for link in site.navigation.links %}
-      <li>
-        <a class="link pa1 underline-hover gray hover-black w-auto-ns w-50" href="{{ link.uri }}">
-          {{ link.name }}
-        </a>
-      </li>
+<header class="bg-washed-blue fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l mb6">
+  <h2 class="ma0 fr-ns cb-s tracked-tight">@jackyalcine</h2>
+  <nav class="ma2 f6 fw6 ttu tracked">
+    {% for link in site.data.links.navigation %}
+      <a class="link dib mr3" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
     {% endfor %}
-  </ul>
-  <p class="w-100 pa2 mt3 f6 tc near-black cb">
-    &ldquo;Not everything that is faced can be changed. But nothing can be changed
-    until it is faced.&rdquo; &mdash; <strong>Baldwin</strong>
-  </p>
+  </nav>
 </header>

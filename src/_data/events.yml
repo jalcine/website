@@ -1,0 +1,49 @@
+- image:
+    src: "events/yes-we-code.jpeg"
+    title: "Yes We Code Education Panel"
+  name: "Yes We Code"
+  href: https://www.yeswecode.org/
+  description:
+    A panel discussion about the impact of technology and how it can accelerate
+    learning in Oakland public school systems.
+- image:
+    src: "events/bayareablackdesigners.png"
+    title: Bay Area Black Designers Panel
+  name: Bay Area Black Designers
+  href: http://www.bayareablackdesigners.com/
+  description:
+    A monthly meetup led by talented Black designers in the Bay Area aiming to
+    build solidarity, skill sharing and a tight-knit community.
+- image:
+    src: "events/white-house.jpeg"
+    title: White House Foster Case Hackathon
+  name: White House Foster Case Hackathon
+  href: https://obamawhitehouse.archives.gov/the-press-office/2016/05/26/fact-sheet-first-ever-white-house-foster-care-technology-hackathon
+  description:
+    Invited to participate in a hackathon at the White House aimed to change the
+    face of foster case with a technology lens.
+- image:
+    src: "events/techqueria.jpg"
+    title: Techqueria
+  href: "https://www.youtube.com/watch?v=iCLNxSGWSTM"
+  name: Techqueria
+  description:
+    A talk about the need for 2FA in the hardware space to be used more often in
+    companion to software tools to mitigate attacks against online accounts. The
+    slides are available [here](http://slides.com/jackyalcine-1/sms-2fa-takedown).
+- image:
+    src: "events/sxsw.jpg"
+    title: SXSW 2016
+  name: SXSW 2016 Panel
+  href: http://schedule.sxsw.com/2016/events/event_PP53497
+  description:
+    Invited to participate in a hackathon at the White House aimed to change the
+    face of foster case with a technology lens.
+- image:
+    src: "events/goodforpoc.png"
+    title: "GoodForPoc West Coast launch"
+  name: "GoodForPoc West"
+  href: http://goodforpocin.tech
+  description:
+    An inaugural event held at GitHub SF for the launch of GoodForPoc in the
+    West Coast.

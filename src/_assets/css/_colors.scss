@@ -2,16 +2,15 @@
 .fg-white { @extend .white; }
 .fg-light { @extend .gray; }
 .fg-dark { @extend .black; }
-.fg-accent { @extend .pink; }
-.fg-accent-hover { @extend .hover-pink; }
-.fg-accent-dark { @extend .dark-pink; }
-.fg-accent-light { @extend .light-pink; }
+.fg-accent { @extend .navy; }
+.fg-accent-hover { @extend .hover-blue; }
+.fg-accent-dark { @extend .navy; }
+.fg-accent-light { @extend .dark-blue; }
 
 .bg { @extend .bg-light-gray; };
 .bg-light { @extend .bg-near-white; }
 .bg-dark { @extend .bg-near-black; }
-.bg-accent { @extend .bg-pink; }
-.bg-accent-hover { @extend .hover-bg-pink; }
-.bg-accent-dark { @extend .bg-dark-pink; }
-.bg-accent-light { @extend .bg-light-pink; }
-
+.bg-accent { @extend .bg-blue; }
+.bg-accent-hover { @extend .hover-bg-blue; }
+.bg-accent-dark { @extend .bg-navy; }
+.bg-accent-light { @extend .bg-dark-blue; }

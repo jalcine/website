@@ -2,37 +2,14 @@
 @import "_syntax";
 @import "_colors";
 
-
 body {
   @extend .sans-serif;
   @extend .fg;
   @extend .bg;
 }
 
-header#pageHeader {
-  @extend .dt;
-  @extend .w-100;
-  @extend .pa2;
-  @extend .center;
-  @extend .mw9;
-  @extend .fg-dark;
-  @extend .bg-light;
-}
-
-ul#pageNavigator {
-  @extend .db;
-  @extend .center;
-  @extend .list;
-  @extend .w-100;
-  @extend .pa0;
-  @extend .f4;
-  @extend .tc;
-  @extend .cb;
-
-  > li {
-    @extend .dib;
-    @extend .ma2;
-  }
+header.fixed + main {
+  @extend .pt6;
 }
 
 .footnotes {
@@ -84,12 +61,13 @@ main#entry {
 
 a {
   @extend .link;
-  @extend .fg-accent;
+  @extend .underline;
+  @extend .fg-accent-light;
   @extend .fg-accent-hover;
   text-decoration: none;
 
   &:visited {
-    @extend .fg-accent;
+    @extend .fg-accent-light;
   }
 }
 
