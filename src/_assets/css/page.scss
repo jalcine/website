@@ -24,41 +24,6 @@ header.fixed + main {
   }
 }
 
-main#entry {
-  ul > li { list-style: square; }
-
-  h1, h2, h3, h4, h5, h6 {
-    @extend .w-70-l;
-    @extend .center;
-  }
-
-  h4, h5, h6 {
-    @extend .ttu;
-    @extend .fg-light;
-  }
-
-  > p, ul, ol, blockquote {
-    @extend .w-two-thirds-l;
-    @extend .center;
-    @extend .pa3;
-    @extend .pa4-ns;
-  }
-
-  blockquote {
-    @extend .b--gray;
-    @extend .ma1;
-    @extend .bw1;
-    @extend .bg-accent-dark;
-    @extend .fg-white;
-  }
-
-  img.present {
-    @extend .center;
-    @extend .db;
-    @extend .cb;
-  }
-}
-
 a {
   @extend .link;
   @extend .underline;
