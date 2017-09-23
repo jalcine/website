@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'mina/scp'
 require 'dotenv'
 
@@ -12,14 +14,14 @@ set :shared_paths, ['images']
 
 set :user, ENV['JALCINE_DEPLOY_USER']
 set :group, ENV['JALCINE_DEPLOY_GROUP']
-set :forward_agent, false 
+set :forward_agent, false
 
 task :upload do
   ssh "mkdir -p #{deploy_to}/tmp-scp"
-  scp_upload("-v #{Dir.pwd}/_deploy/*", "#{deploy_to}/tmp-scp",
+  scp_upload("#{Dir.pwd}/_deploy/*", "#{deploy_to}/tmp-scp",
              recursively: true,
-             verbose: true)
-  queue "cp -vr #{deploy_to}/tmp-scp/* ."
+             verbose: false)
+  queue "cp -r #{deploy_to}/tmp-scp/* ."
 end
 
 desc 'Deploys the current version to the server.'

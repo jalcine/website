@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Things I Read in the Week of 2015-09-12"
+title: Things I Read in the Week of 2015-09-12
 date: 2015-09-12 04:03:37 EDT
 revised: 2016-12-16 17:31:29 PST
 image: none
-excerpt: ""
+excerpt: A synposis of things I've read this week.
 category: review
 tags:
   - read-this-week

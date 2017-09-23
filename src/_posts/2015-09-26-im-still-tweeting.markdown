@@ -65,7 +65,7 @@ out for the latter[^5].
 This begs the question of whether or not you'd want to be that social butterfly
 with your blog. If so, Medium is your best bet:
 
-{% twitter oembed https://twitter.com/jackyalcine/status/647865764159078400 %}
+{% twitter https://twitter.com/jackyalcine/status/647865764159078400 %}
 
 My particular use case is different. I write my posts in [Markdown][] and then
 generate the static version of this site using [Jekyll][]. So how would I

@@ -1,22 +1,6 @@
 @import "../../../node_modules/tachyons-sass/tachyons";
 @import "_syntax";
-
-.fg { @extend .near-black; }
-.fg-white { @extend .white; }
-.fg-light { @extend .gray; }
-.fg-dark { @extend .black; }
-.fg-accent { @extend .pink; }
-.fg-accent-hover { @extend .hover-pink; }
-.fg-accent-dark { @extend .dark-pink; }
-.fg-accent-light { @extend .light-pink; }
-
-.bg { @extend .bg-light-gray; };
-.bg-light { @extend .bg-near-white; }
-.bg-dark { @extend .bg-near-black; }
-.bg-accent { @extend .bg-pink; }
-.bg-accent-hover { @extend .hover-bg-pink; }
-.bg-accent-dark { @extend .bg-dark-pink; }
-.bg-accent-light { @extend .bg-light-pink; }
+@import "_colors";
 
 body {
   @extend .sans-serif;
@@ -24,33 +8,8 @@ body {
   @extend .bg;
 }
 
-
-header#pageHeader {
-  @extend .dt;
-  @extend .w-100;
-  @extend .pa2;
-  @extend .center;
-  @extend .mw9;
-  @extend .fg-dark;
-  @extend .bg-light;
-  // @extend .near-black;
-  // @extend .bg-white;
-}
-
-ul#pageNavigator {
-  @extend .db;
-  @extend .center;
-  @extend .list;
-  @extend .w-100;
-  @extend .pa0;
-  @extend .f4;
-  @extend .tc;
-  @extend .cb;
-
-  > li {
-    @extend .dib;
-    @extend .ma2;
-  }
+header.fixed + main {
+  @extend .pt6;
 }
 
 .footnotes {
@@ -65,49 +24,15 @@ ul#pageNavigator {
   }
 }
 
-main#entry {
-  ul > li { list-style: square; }
-
-  h1, h2, h3, h4, h5, h6 {
-    @extend .w-70-l;
-    @extend .center;
-  }
-
-  h4, h5, h6 {
-    @extend .ttu;
-    @extend .fg-light;
-  }
-
-  > p, ul, ol, blockquote {
-    @extend .w-two-thirds-l;
-    @extend .center;
-    @extend .pa3;
-    @extend .pa4-ns;
-  }
-
-  blockquote {
-    @extend .b--gray;
-    @extend .ma1;
-    @extend .bw1;
-    @extend .bg-accent-dark;
-    @extend .fg-white;
-  }
-
-  img.present {
-    @extend .center;
-    @extend .db;
-    @extend .cb;
-  }
-}
-
 a {
   @extend .link;
-  @extend .fg-accent;
+  @extend .underline;
+  @extend .fg-accent-light;
   @extend .fg-accent-hover;
   text-decoration: none;
 
   &:visited {
-    @extend .fg-accent;
+    @extend .fg-accent-light;
   }
 }
 

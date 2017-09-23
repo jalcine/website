@@ -1,4 +1,6 @@
-# vim:set fdl=-1 nospell:
+# vim:set fdl=1 nospell:
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 # {{{ Core Utilities
@@ -8,35 +10,37 @@ gem 'rake-jekyll'
 # }}}
 
 group :jekyll do
-  gem 'jekyll'
-  gem 'kramdown'
-  gem 'rb-gsl'
   gem 'autoprefixer-rails'
-  gem 'mini_magick'
+  gem 'jekyll', '3.5.0'
   gem 'jekyll-tagging-related_posts'
+  gem 'kramdown'
+  gem 'mini_magick'
+  gem 'rb-gsl'
 end
 
 group :jekyll_plugins do
+  gem 'jekyll-assets', git: 'https://github.com/jekyll/jekyll-assets'
   gem 'jekyll-gist'
-  # gem 'jekyll-sass-converter'
-  # gem 'jekyll-timeago'
+  gem 'jekyll-sass-converter'
+  gem 'jekyll-sitemap', git: 'https://github.com/jekyll/jekyll-sitemap'
+  gem 'jekyll-timeago'
   gem 'jekyll-twitter-plugin'
+  gem 'jekyll-textile-converter'
   gem 'jemoji'
-  gem 'octopress-quote-tag'
+  gem 'octopress-quote-tag', git: 'https://github.com/octopress/quote-tag',
+                             branch: 'master'
   gem 'octopress-video-tag', git: 'https://github.com/anarchivist/octopress-video-tag',
-    branch: 'loosen-gemspec'
-  gem 'jekyll-assets', github: 'jekyll/jekyll-assets'
-  # gem 'jekyll-sitemap', github: 'jekyll/jekyll-sitemap'
+                             branch: 'loosen-gemspec'
 end
 
 # {{{ Development
 # Local web server
 group :web do
-  gem 'rack'
+  gem 'haml'
   gem 'puma'
+  gem 'rack'
   gem 'rack-livereload', require: 'rack/livereload'
   gem 'sass'
-  gem 'haml'
   gem 'susy'
 end
 
@@ -48,10 +52,11 @@ end
 # Automation
 group :guard do
   gem 'guard'
-  gem 'guard-jekyll-plus', require: false, github: 'imathis/guard-jekyll-plus'
-  gem 'guard-rack', require: false
   gem 'guard-bundler', require: false
+  gem 'guard-jekyll-plus', git: 'https://github.com/imathis/guard-jekyll-plus',
+                           require: false
   gem 'guard-livereload', require: false
   gem 'guard-npm', require: false
+  gem 'guard-rack', require: false
 end
 # }}}
