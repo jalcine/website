@@ -8,7 +8,7 @@ excerpt: >
   {% img "{{ 'jacky-portfolio-snow-roof.jpg' | image_path }}"
          class:"db center w-100 mw8 h-auto ma2" width:"auto" height:"auto" %}
   <h1 class="f1 f-headline-l">Weblog</h1>
-  <p class="f4 f3-l lh-copy measure-l pa2-l">
+  <p class="f4 lh-copy measure">
     I like using the Internet a lot. I think I spend at least four hours each
     day interacting with it with various devices. This and the experiences
     I have in my life I capture here in my <strong>weblog</strong>. Some people
@@ -16,13 +16,12 @@ excerpt: >
     is my blog. It has {{ site.posts | size }} posts since {{ site.posts.last.date | date: "%Y" }}.
   </p>
 
-  <h2 class="f2 tracked-tight ttu pa2-l cb-l">Entries</h2>
-  <ul class="f5 f4-l list pl0 mw-80 db pa2-l">
+  <h2 class="f2 tracked-tight ttu">Entries</h2>
+  <ul class="f4 list mw-80">
     {% for post in site.posts %}
-      <li class="db w-100">
-        <a class="dim underline-hover navy" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-        <time class="ttu f6 gray bold" datetime="{{ post.date }}">{{ post.date | date: "%d %b %Y" }}</time>
-        {% if post.excerpt != '' or post.excerpt != false %}<p class="lh-solid measure b--gray bl-ns bw1-ns ml1-ns gray pl2 pv1">{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>{% endif %}
+      <li>
+        <time class="ttu f6 bold mr1 dib w4" datetime="{{ post.date }}">{{ post.date | date: "%d %b %Y" }}</time>
+        <a class="dim underline-hover" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>

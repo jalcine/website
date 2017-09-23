@@ -19,6 +19,12 @@ navigation:
   -
     title: "Work"
     link: "/work/"
+  -
+    title: "Contact"
+    link: "/contact/"
+  -
+    title: "Projects"
+    link: "/projects/"
 
 # Social links I have.
 social:

@@ -4,85 +4,19 @@ title: "Jacky Alciné is an educator, software engineer, and Black as hell."
 components:
   header: false
 ---
-<section class="pa2 pa4-l ma1-l ma0 db bg-near-black white">
-  <h1 class="f1 f-subheadline-l sans-serif lh-title ml1">Jacky Alciné.</h1>
-  <p class="db f4-l f6 tj fr-l w-30-l ma2-l mr2-l ml1 lh-copy">
-    <strong>As a forewarning</strong>: The lives of those oppressed by the current
-    power structure that exist today and have existed for centuries are the ones
-    I curate my content on this site for primarily. The lives of <em>all</em>
-    Black and Brown lives matter on this platform. They will
-    <strong>always</strong>. Asè.
-  </p>
-  <h2 class="f2 ml1 sans-serif measure-narrow lh-solid">{{ site.byline }}</h2>
-  <p class="f6 f5-l baskerville serif ml1 measure-wide lh-copy w-70-l">
-    {{ site.blurb }}
-  </p>
-  <nav class="bg-washed-red dib-l pa2 red w-100-s">
-    <strong class="navy ttu tracked pa1 ma1">Visit</strong>
-    {% for link in site.data.links.navigation %}
-      <a href="{{ link.link }}">{{ link.title }}</a>
-      {% if forloop.last != true %} // {% endif %}
-    {% endfor %}
-  </nav>
-</section>
-<section class="f5 pa2 pa4-l ma1-l db black cb">
-  <h2 class="f1 sans-serif lh-subtitle pa2 ma2 ml1 bg-yellow w-100 w-30-l dib-s fl cb">Writings</h2>
-  <div class="ml1 fl-l w-60-l w-100 db">
-    {% img "{{ 'brand/landing.jpg' | image_path }}" class:"db w-100 center-s
-    mw5-l fr-l cb-l mv2 mh3-l" width:"auto" height:"auto" %}
-    <p class="baskerville serif ml1 measure-wide lh-copy mt1">
-      I keep a <a href="/weblog/">weblog</a> largely focused on technology but 
-      now introducing more essays on things I should have written if I went to
-      school. The last thing I've written was <a href="{{ site.posts[0].url }}"
-        title="{{ site.posts[0].title }}">{{ site.posts[0].title }}</a>.
+<section class="h-100 bg-near-black near-white w-100 db">
+  <div class="w-90 w-60-l center pa3-l pa1">
+    <h1 class="f1 f-headline-l lh-title avenir tracked-tight">jackyalciné</h1>
+    <p class="f3 lh-copy roboto fw3 measure">
+      {{ site.blurb }}
     </p>
-    <p class="baskerville serif ml1 measure-wide lh-copy">
-      I also maintain a mailing list. <a href="/newsletter/"
-        target="_blank"><strong>Subscribe here</strong></a>.
+    <p class="f3 lh-copy roboto fw3 measure">
+      I write often on my blog. The last thing I wrote was <a href="{{
+      site.posts[0].url }}">{{ site.posts[0].title }}</a>. Learn more about
+    <a href="/work/">where I work</a>, <a href="/press/">how to write about
+      me</a> and how to <a href="/contact/">contact me</a>.
     </p>
   </div>
-</section>
-<section class="pa2 pa4-l ma1-l db near-black cb">
-  <h2 class="f1 sans-serif lh-subtitle pa2 dib ma2-l fl w-100 w-30-l cb bg-blue white ml1">Press</h2>
-  <div class="ml1 fl-l w-100 w-60-l db">
-    <h4 class="ttu tracked gray mt1">Publications</h4>
-    <p class="f5 baskerville serif measure-wide lh-copy">
-      Below are a few articles in which I've been quoted and/or referenced that
-      are noteworthy to me:
-      <ul class="list pl1">
-        {% for a_link in site.data.articles %}
-          <li class="pv2">
-            <a href="{{ a_link.href }}" title="{{ a_link.title }}">
-              {{ a_link.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </p>
-    <h4 class="ttu tracked gray mt1">Talks</h4>
-    <p class="f5 baskerville serif measure-wide lh-copy">
-      I've given talks and presentations at <strong>SXSW</strong>,
-      <strong>WaffleJS</strong> and on behalf of <strong>YesWeCode</strong>.
-      {% for a_event in site.data.events %}
-        <article class="dark-gray pv5-l pv1 ph2 w-100 w-50-l mw6-l fl-l dib cr-l">
-          {% img "{{ a_event.image.src | image_path }}" class:"db w-100"
-          height:"auto" width:"auto" alt:"{{ a_event.image.title }}" title:"{{ a_event.image.title }}" %}
-          <div class="pa2 ph3-l pb3-l">
-            <div class="dt w-100 mt1">
-              <div class="dtc">
-                <h1 class="f5 f4-l mv0 tracked ttu">
-                  <a href="{{ a_event.href }}" title="{{ a_event.name }}">
-                    {{ a_event.name }}
-                  </a>
-                </h1>
-              </div>
-            </div>
-            <p class="f6 lh-copy measure mt2 mid-gray">
-              {{ a_event.description | markdownify }}
-            </p>
-          </div>
-        </article>
-      {% endfor %}
-    </p>
-  </div>
+  {% img "{{ 'brand/masthead.jpg' | image_path }}"
+         class:"db center w-100 h-auto" width:"auto" height:"auto" %}
 </section>

@@ -1,8 +1,9 @@
-<footer class="bg-black white-80 pv5 pv6-l ph3 ph4-l cb db">
-  <p class="f4 f6-s"><span class="dib mr4 db-ns">{{ site.name }}</span>
+<footer class="bg-near-white near-black pv5 pv6-l ph3 ph4-l cb db">
+  <p class="f4 f6-s">
+    <span class="dib mr4 db-ns">{{ site.name }}</span>
     {% for link in site.data.links.navigation %}
       <a class="link dib mv1" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
-      <span class="dib gray">{% if forloop.last != true %} // {% endif %}</span>
+      <span class="dib">{% if forloop.last != true %} // {% endif %}</span>
     {% endfor %}
   </p>
 </footer>
