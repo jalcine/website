@@ -7,7 +7,7 @@ Dotenv.load '.envrc'
 
 set :domain, ENV['JALCINE_DEPLOY_DOMAIN']
 set :deploy_to, ENV['JALCINE_DEPLOY_PATH']
-set :verbose, true
+set :verbose, 'vvvvv'
 set :keep_releases, 30
 
 set :shared_paths, ['images']
