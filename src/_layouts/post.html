@@ -14,25 +14,21 @@ layout: bare
   <header class="db center mw-90 pa4 tc tl-l">
     <h1 class="pa4 mv0 mb2 baskerville f2 f1-m f-headline-l fw1 fg">{{ page.title }}</h1>
     {% if page.byline %}<h3 class="pa4 f3 fw1 fg-light">{{ page.byline }}</h3>{% endif %}
-    <cite class="mv2 f6 ttu tracked fs-normal">{{ site.author }}</cite>
-    &mdash;
     {% if page.date %}<time class="f6 ttu">{{ page.date | date_to_rfc822}}{% if
           page.revised %}, updated <strong>{{ page.revised | date_to_rfc822
             }}</strong>{% endif %}</time>{% endif %}
   </header>
 {% endif %}
-<p class="f6 f5-l pa2 pa4-l mw8 w-80 center db fg-light tl">
+<p class="f6 f5-l pa2 pa4-l mw8 w-80 db fg-light tl">
   A {{ page.category }} post{% if page.tags %}, tagged under {{ page.tags | linkify_tags }}{% endif %}.
 </p>
 {% if page.excerpt != false or page.excerpt != '' %}
-  <blockquote class="pa2 f3 f2-l measure-narrow center cb fg-light">
-    <div class="lh-copy lh-title-ns">
-      {{ page.excerpt | markdownify }}
-    </div>
+  <blockquote class="pa2 f3 f2-l measure-narrow center cb fg-light lh-title">
+    {{ page.excerpt | markdownify }}
   </blockquote>
-  <p class="tc moon-gray">&sect;</p>
+  <p class="tc moon-near-black">&sect;</p>
 {% endif %}
-<main class="w-100 mw8 center lh-copy normal sans-serif fg db f4">
+<main role="post">
   {{ content }}
 </main>
 <footer role="post" class="pa2 center">

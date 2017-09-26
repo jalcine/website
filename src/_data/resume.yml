@@ -1,0 +1,141 @@
+---
+bio: |
+  Jacky works as a skilled **software developer** focused on Web technologies.
+  He also has experience working on the Android mobile operating system. He
+  favors working in an environment that encourages mentors as well as other code
+  practices that allow for highly efficient and excellent products to be
+  released.
+  
+roles:
+  -
+    anchor: lyft
+    name: Lyft
+    uri: https://lyft.com/
+    role: SWE (Server), Communications Platform
+    time:
+      start: Janaury 2017
+      end: September 2017
+    blurb: |
+      I worked on the **Notifications** team (now known as the
+      **Communications Platform**) that handled all of the incoming and
+      outgoing forms of messaging that users of the Lyft platform dealt with.
+      This ranged from telephony software that routed calls from drivers to
+      passengers as well as communications to passengers from Lyft about states
+      of their account. I introduced the base of template tools that would be
+      used to handle semantically relevant content to users.
+
+      I also sat as a co-lead on the Lyft Black ERG, **Uplyft Forward**. I
+      introduced two community building events around media, pop culture and
+      social interactions that allow fellow Black employees of any organization
+      within Lyft to find a sense of community amongst one another. I also
+      facilitated an internal teaching around the genesis and prevalence of
+      Juneteenth, allowing allies and identifying members alike to learn about
+      the importance of said event.
+  -
+    anchor: clef
+    name: Clef
+    uri: https://getclef.com/
+    role: SWE (Server, Web, Android)
+    time:
+      start: November 2015
+      end: November 2016
+    blurb: |
+      In my year at Clef, I was given the opportunity to work on all aspects 
+      of the platform. This ranged from the Android platform where I was tasked
+      to incorporate new features that aligned the emerging device support of
+      newer Android versions as well as adding feature parity for discovering
+      new applications Clef supported. I had a hand in moving from on-the-metal
+      development to the VM-based systems which gave way to the Docker-based
+      infrastructure Clef runs today. 
+
+      As part of my initial work on Android for Clef, I wrote out the SDK used
+      for another product Clef launched called [Instant 2FA][1]. It was designed
+      to be a drop-in module using RxJava and other libraries for high
+      performance and an elegant user experience.
+
+      [1]: https://twitter.com/Instant2FA
+  -
+    anchor: wyl
+    name: Whose Your Landlord
+    uri: https://www.whoseyourlandlord.com/
+    role: SWE (Server, Web)
+    time:
+      start: June 2015
+      end: October 2015
+    blurb: |
+      Notable Points:
+      - Introduced new listing aggregation tool levering current asynchronous
+        architecture.
+      - Implemented foundation for testing around listing discovery.
+
+      **Technologies:** Ruby, Rails, RSpec.
+  -
+    anchor: freelance-2015
+    name: Freelancing
+    uri: #
+    role: SWE (Server, Web)
+    time:
+      start: January 2015
+      end: July 2015
+    blurb: |
+      Notable Points:
+      - Implement reproducible, custom solutions powered by Ruby web servers
+        and single page applications to deliver unique platforms for customers.
+
+      **Technologies:** Heroku, Ruby, Sinatra, Express, Backbone.js 
+  -
+    anchor: shutterstock
+    name: Shutterstock
+    uri: https://shutterstock.com/
+    role: SWE (Server, Web)
+    time:
+      start: April 2014
+      end: December 2014
+    blurb: |
+      Notable Points:
+      - Built an acceptance suite for the Contributor web application.
+      - Created a bridge a caching layer, a CMS and the view layer for low-load
+        view updates for product.
+      - Worked on the decomposition of the monolithic structure of the
+        Contributor layer to provide compartmentalized applications where
+        deemed fit.
+
+      **Technologies:** Perl, Dancer, Ruby, Cucumber, Express, Memcached, Puppet
+  -
+    anchor: freelance-2013
+    name: Freelancing
+    uri: https://aquent.com/
+    role: SWE (Server, Web)
+    time:
+      start: March 2013
+      end: November 2013
+    blurb: |
+      While freelancing for [Aquent][], I worked on a plethora of projects for
+      different companies like [Bareburger][], [Paddle8][] and [Horizon
+      Media][].
+
+      Notable Points (at Bareburger):
+      - Introduced flexible tool for adding new restaurant listings to Web
+        for Wordpress.
+      - Provided a means to aggregate statistics collected from local chains
+        to central hub for viewing.
+
+      [aquent]: https://aquent.com
+      [bareburger]: https://bareburger.com/
+      [paddle8]: https://paddle8.com/
+      [horizon_media]: http://www.horizonmedia.com/
+  -
+    anchor: viridis
+    name: Viridis Learning
+    uri: https://www.viridislearning.com/
+    role: SWE (Server, Web)
+    time:
+      start: June 2012
+      end: Jan 2013
+    blurb: |
+      At Viridis, I wrote out the foundation - API, client side interactions,
+      you name it. I also created an ingestion tool that took content and made
+      it compliant with the TinCan specification for educator software.
+
+      **Technologies:** Heroku, Ruby, Sinatra, Express, Backbone.js, Ruby on Rails,
+                    MySQL

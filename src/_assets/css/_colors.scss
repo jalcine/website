@@ -1,7 +1,7 @@
 .fg { @extend .near-black; }
 .fg-white { @extend .white; }
 .fg-light { @extend .gray; }
-.fg-dark { @extend .black; }
+.fg-dark { @extend .near-black; }
 .fg-accent { @extend .navy; }
 .fg-accent-hover { @extend .hover-blue; }
 .fg-accent-dark { @extend .navy; }
