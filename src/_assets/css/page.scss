@@ -62,11 +62,49 @@ figure {
 }
 
 blockquote.twitter-tweet {
-  @extend .bg-accent-dark;
-  @extend .fg-dark;
+  @extend .bg-washed-blue;
+  @extend .gray;
 }
 
 div.jekyll-twitter-plugin {
   @extend .center;
   @extend .dt;
+}
+
+hr {
+  @extend .mv3;
+  @extend .black;
+}
+
+main[role=post] {
+  @extend .w-100;
+  @extend .mw8;
+  @extend .center;
+  @extend .normal;
+  @extend .fg;
+  @extend .db;
+  @extend .f3;
+
+  > p {
+    @extend .lh-copy;
+    text-align: justify;
+    text-align-last: left;
+    @extend .baskerville;
+    @extend .serif;
+    @extend .f4;
+  }
+
+  > h1, h2, h3, h4, h5, h6  {
+    @extend .tracked-tight;
+    @extend .lh-title;
+    @extend .sans-serif;
+  }
+
+  // TODO: Clean this up.
+  > h1{ @extend .f1; }
+  > h2{ @extend .f2; }
+  > h3{ @extend .f3; }
+  > h4{ @extend .f4; }
+  > h5{ @extend .f5; }
+  > h6{ @extend .f6; }
 }
