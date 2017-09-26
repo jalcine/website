@@ -64,6 +64,7 @@ figure {
 blockquote.twitter-tweet {
   @extend .bg-washed-blue;
   @extend .gray;
+  @extend .pa2;
 }
 
 div.jekyll-twitter-plugin {
@@ -91,7 +92,7 @@ main[role=post] {
     text-align-last: left;
     @extend .baskerville;
     @extend .serif;
-    @extend .f4;
+    @extend .f3;
   }
 
   > h1, h2, h3, h4, h5, h6  {
