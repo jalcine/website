@@ -1,0 +1,40 @@
+---
+layout: bare
+title: Resume
+components:
+  header: false
+---
+
+<section role="header" class="w-100 w-90-m w-75-l center">
+  <h1 class="f1 f-headline-l lh-title tracked-tight fg-accent serif baskerville">{{ site.author }}</h1>
+  <p class="cb tr mb4">
+    <a href="mailto:yo@jacky.wtf">yo@jacky.wtf</a>
+    <span class="pv1 fg">//</span>
+    <a href="{{ site.url }}" target="_blank">{{ site.url }}</a>
+  </p>
+  <h3 class="fl w-20 pv3 ph2 ma0 mt1 bg-accent fg-white avenir sans-serif ttu tr">Summary</h3>
+  <div class="f4 pa2 fl w-80 pl2 ma0 lh-copy measure">
+    {{ site.data.resume.bio | strip | markdownify | remove: '<p>' | remove: '</p>'}}
+  </div>
+</section>
+<main role="body" class="w-100 w-90-m w-75-l center cb sans-serif">
+  <h3 class="fl w-20 pv3 ph2 bg-accent fg-white avenir sans-serif ttu ma0 mt1 tr">Roles</h3>
+  <div class="fl w-80 pa2">
+    {% for position in site.data.resume.roles %}
+      <div class="pb4">
+        <h4 class="mv0 f4 garamond serif">
+          <em class="fw3 gray">{{ position.role }},</em> <a href="{{ position.uri }}" target="_blank" name="{{ position.anchor }}" class="near-black">
+            <strong>{{ position.name }}</strong>
+          </a>
+        </h4>
+        <p class="gray f5 mv1">
+          From <em class="near-black">{{ position.time.start }}</em> until
+          <em class="near-black">{{ position.time.end }}</em>
+        </p>
+        <div class="lh-copy f5 measure">
+          {{ position.blurb | strip | markdownify }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</main>
