@@ -3,6 +3,7 @@ layout: post
 title: Rebranding and Rebuilding
 date: 2017-10-06 22:25:14 PDT
 category: site-update
+excerpt: Rebuilding my website from the ground up.
 tags:
   - design
   - process
@@ -10,6 +11,8 @@ tags:
   - rebrand
   - branding
 ---
+
+{:toc}
 
 I mentioned to @kwuchu a while back about how I keep redesigning this website. 
 I've held this site in this constant flow of redesigning [for about five years now][1]. 
@@ -42,8 +45,8 @@ of separating the _look_ of the site from the _data_ on it.
 The theme, *[Alpha Shard][5]* pays homage to the team of ONI soliders and the
 retired Spartan solider who saved humanity from attack of a bioweapon[^1]
 
-[1]: {% post_url 2012-10-30-first-starts-a-reboot %}
-[2]: {% post_url 2013-07-20-welcome-to-jekyll %}
+[1]: {{ site.baseurl }}
+[2]: {{ site.baseurl }}
 [3]: {{ site.url }}/projects/
 [4]: {{ site.url }}/gear/
 [5]: {{ site.url }}/projects/alpha-shard

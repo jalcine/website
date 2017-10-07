@@ -4,17 +4,18 @@ title: "Jacky Alciné is an educator, software engineer, and Black as hell."
 components:
   header: false
 ---
+{% assign clean_blurb = site.blurb | strip_tags: '<p></p>' %}  
 
-<section class="cf bg-near-black fg-white pv2 ph3">
-  <h1 class="f-headline-l f1 lh-title">
-    jackyalciné
-  </h1>
-  {% img "{{ 'brand/self.jpeg' | image_path }}"
-         class:"db fr w-auto mw8 vh-50 ma2"
-         width:"auto"
-         height:"auto"
-   %}
-  <p class="measure lh-copy">
-     {{ site.blurb | strip_tags: '<p></p>'}}
-  </p>
+<section class="bg-near-black white">
+  <div class="w-90 center db cf v-mid">
+    {% img "{{ 'brand/self.jpeg' | image_path }}"
+          class:"v-mid w-auto vh-50 dib fl"
+          width:"auto"
+          height:"auto"
+    %}
+    <div class="dib pv4 w-50 fl">
+      <h1 class="f-headline-l f1 lh-title">jackyalciné</h1>
+      <p class="measure lh-copy">{{ clean_blurb }}</p>
+    </div>
+  </div>
 </section>

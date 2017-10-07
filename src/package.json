@@ -14,9 +14,7 @@
   },
   "homepage": "https://github.com/jalcine/website#readme",
   "devDependencies": {
-    "tachyons-sass": "4.7.4"
-  },
-  "peerDependencies": {
-    "bower": "1.8.0"
+    "tachyons-sass": "4.7.4",
+    "webfontloader": "1.6.28"
   }
 }

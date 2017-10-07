@@ -11,10 +11,12 @@ gem 'rake-jekyll'
 
 group :jekyll do
   gem 'autoprefixer-rails'
+  gem 'classifier-reborn'
   gem 'jekyll', '3.6.0'
   gem 'kramdown'
   gem 'mini_magick'
   gem 'rb-gsl'
+  gem 'rouge'
   gem 'sprockets-es6'
   gem 'twitter_web_intents'
 end
@@ -68,5 +70,6 @@ group :guard do
   gem 'guard-livereload', require: false
   gem 'guard-npm', require: false
   gem 'guard-rack', require: false
+  gem 'libnotify'
 end
 # }}}

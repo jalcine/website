@@ -1,0 +1,15 @@
+.btn,
+.btn:link,
+.btn:visited {
+  @extend .br2;
+  @extend .b--solid;
+  @extend .bw1;
+  @extend .dib;
+  @extend .sans-serif;
+  @extend .tracked;
+  @extend .mb1;
+  @extend .pv1;
+  @extend .ph2;
+  @extend .ttu;
+  @extend .bg-animate;
+}
