@@ -84,6 +84,10 @@ assets:
     - _assets/js
   features:
     liquid: true
-
+jekyll-mentions: https://twitter.com
 gpg:
   fingerprint: "0x4DEFFC9FF82E8908"
+responsive_image:
+  template: _includes/responsive-image.html
+  default_quality: 90
+  auto_rotate: true

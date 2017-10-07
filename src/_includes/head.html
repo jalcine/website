@@ -10,8 +10,8 @@
   {% assign blurb = site.description %}
 {% endif %}
 
-{% if page.image %}
-	{% assign image = asset_path page.image %}
+{% if page.image.startswith? 'http' %}
+	{% assign image = page.image %}
 {% else %}
 	{% assign image = asset_path 'favicon/android-chrome-192x192.png' %}
 {% endif %}

@@ -36,4 +36,21 @@ module Jekyll
   end
 end
 
+
+module Jekyll
+  class StubBlock < Liquid::Block
+    def render(context)
+      'TODO: Fix this block'
+    end
+  end
+
+  class StubTag < Liquid::Tag
+    def render(context)
+      'TODO: Fix this tag'
+    end
+  end
+end
+
 Liquid::Template.register_tag('youtube', Jekyll::Youtube)
+Liquid::Template.register_tag('quote', Jekyll::StubBlock)
+Liquid::Template.register_tag('video', Jekyll::StubTag)
