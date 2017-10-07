@@ -16,6 +16,7 @@ group :jekyll do
   gem 'kramdown'
   gem 'mini_magick'
   gem 'rb-gsl'
+  gem 'sprockets-es6'
 end
 
 group :jekyll_plugins do

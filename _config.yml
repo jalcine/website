@@ -17,7 +17,6 @@ blurb: |
   networked electronics (or "tech"). My mission is to carry out the objective
   of my ancestors and elders: to focus on the liberation of my people and the
   restoration of the legacy of the descendants of the Afrikan Diaspora.
- 
 description: |
   Jacky is a New Yorker in Oakland that continues to aim to make change in the
   world via technology and education.
@@ -62,8 +61,13 @@ defaults:
         footer: true
 
 assets:
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
   debug: true
   autowrite: true
+  digest: true
   compress:
     css: true
     js: true
@@ -76,7 +80,7 @@ assets:
   sources:
     - _assets/css
     - _assets/images
-    - _assets/img
+    - _assets/favicon
     - _assets/js
   features:
     liquid: true

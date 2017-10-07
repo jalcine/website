@@ -4,24 +4,17 @@ title: "Jacky Alciné is an educator, software engineer, and Black as hell."
 components:
   header: false
 ---
-<section class="h-100 bg-near-black near-white w-100 db">
-  <div class="w-90 w-60-l center pa3-l pa1">
-    <h1 class="f1 f-headline-l lh-title avenir tracked-tight">jackyalciné</h1>
-    <p class="f3 lh-copy roboto fw3 measure">
-      {{ site.blurb }}
-    </p>
-    <p class="f3 lh-copy roboto fw3 measure">
-      I write often on my blog. The last thing I wrote was <a href="{{
-        site.posts[0].url }}" class="fw5">{{ site.posts[0].title }}</a>.
-      Learn more about <a href="/work/">where I work</a>,
-      <a href="/press/">how to write about
-      me</a> and how to <a href="/contact/">contact me</a>.
-    </p>
-    <p class="f3 lh-copy roboto fw3 measure pv2 ph1 bg-washed-yellow near-black">
-      I'm open to new contract and part-time clients.
-      <a href="/work/freelance/">Learn more</a>.
-    </p>
-  </div>
-  {% img "{{ 'brand/masthead.jpg' | image_path }}"
-         class:"db center w-100 h-auto" width:"auto" height:"auto" %}
+
+<section class="cf bg-near-black fg-white pv2 ph3">
+  <h1 class="f-headline-l f1 lh-title">
+    jackyalciné
+  </h1>
+  {% img "{{ 'brand/self.jpeg' | image_path }}"
+         class:"db fr w-auto mw8 vh-50 ma2"
+         width:"auto"
+         height:"auto"
+   %}
+  <p class="measure lh-copy">
+     {{ site.blurb | strip_tags: '<p></p>'}}
+  </p>
 </section>
