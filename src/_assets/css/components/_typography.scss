@@ -32,7 +32,7 @@ p.lead {
   @extend .lh-copy;
 }
 
-p:first-line {
+p:first-of-type:first-line {
   @extend .fw3;
   font-size: 125%;
 }

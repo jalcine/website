@@ -6,17 +6,16 @@ layout: bare
 {% else %}
   {% include post_header.html %}
 {% endif %}
-<address role="document">
+<address role="document" class="post">
   <span>:book: {{ page.category }}</span>
-  <span>:tag: {{ page.tags | linkify_tags }}</span>
-  <span>:clock: <time>{{ page.date | date_to_rfc822}}</time></span>
-  <span>:clock: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>
+  <span>:bookmark: {{ page.tags | linkify_tags }}</span>
+  <span>:clock1: <time>{{ page.date | date_to_rfc822}}</time></span>
+  {% if page.revised %}<span>:clock7: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
 </address>
 {% if page.excerpt != false or page.excerpt != '' %}
-  <blockquote class="pa2 f3 f2-l measure-narrow center cb fg-light lh-title">
-    {{ page.excerpt | markdownify }}
+  <blockquote class="excerpt">
+    {{ page.excerpt | markdownify | strip_tags: '<p></p>' }}
   </blockquote>
-  <p class="tc moon-near-black">&sect;</p>
 {% endif %}
 <main role="post">
   {{ content }}

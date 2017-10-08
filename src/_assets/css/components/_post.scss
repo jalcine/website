@@ -1,3 +1,49 @@
-address[role=document] {
-  @extend .f6, .pa2, .mw8, .w-80, .db, .fw1, .tl;
+address[role=document].post {
+  @extend .f6, .pa2, .w-80, .db, .fw1, .ph4-l, .ph1;
+
+  > span {
+    @extend .db;
+    @extend .pv1;
+  }
+}
+
+header[role=post] {
+  @extend .w-90, .w-80-l;
+  
+  &.masthead {
+    @extend .w-100, .w-100-l;
+
+    > h1 {
+      @extend .tc;
+      @extend .f-headline-l;
+      @extend .f1;
+    }
+  }
+}
+
+blockquote.excerpt {
+  @extend .pa2, .fw7, .f3, .f2-l, .measure-narrow, .cb, .gray, .lh-copy;
+  margin-before: 0rem;
+  margin-after: 0rem;
+  margin-start: 0rem;
+  margin-end: 0rem;
+}
+
+main[role=post] {
+  @extend .w-100;
+
+  p {
+    @extend .f4;
+    @extend .lh-copy;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    @extend .w-90, .w-80-l, .mw8, .ph4-l, .ph1;
+  }
+
+  .jekyll-twitter-plugin, .twitter-tweet {
+    @extend .ma0;
+  }
+  
+  // TODO: Tweak image rendering in Jekyll to remove <p> + <img>
 }
