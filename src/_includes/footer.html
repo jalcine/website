@@ -1,6 +1,6 @@
 <footer role="group">
-  <h2>{{ site.name }}</h2>
-  <p class="f4 f6-s">
+  <h2 class="f2 mv1">{{ site.name }}</h2>
+  <p class="f6">
     {% for link in site.data.links.navigation %}
       <a class="link dib mv1" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
       <span class="dib">{% if forloop.last != true %} // {% endif %}</span>
