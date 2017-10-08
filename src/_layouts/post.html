@@ -9,8 +9,8 @@ layout: bare
 <address role="document" class="post">
   <span>:book: {{ page.category }}</span>
   <span>:bookmark: {{ page.tags | linkify_tags }}</span>
-  <span>:clock1: <time>{{ page.date | date_to_rfc822}}</time></span>
-  {% if page.revised %}<span>:clock7: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
+  <span>:clock7: <time>{{ page.date | date_to_rfc822}}</time></span>
+  {% if page.revised %}<span>:clock10: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
 </address>
 {% if page.excerpt != false or page.excerpt != '' %}
   <blockquote class="excerpt">

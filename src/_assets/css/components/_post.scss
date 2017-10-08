@@ -36,13 +36,48 @@ main[role=post] {
     @extend .f4;
     @extend .lh-copy;
   }
+
+  ul {
+    @extend .ml4;
+    @extend ul.arrows;
+    
+    > li {
+      @extend .lh-copy;
+      
+      &:before {
+        @extend .ph2;
+      }
+    }
+  }
   
-  h1, h2, h3, h4, h5, h6, p {
+  h1, h2, h3, h4, h5, h6, p, blockquote {
     @extend .w-90, .w-80-l, .mw8, .ph4-l, .ph1;
   }
 
   .jekyll-twitter-plugin, .twitter-tweet {
     @extend .ma0;
+  }
+
+  blockquote {
+    @extend .gray, .mh3;
+    margin-before: 0rem;
+    margin-after: 0rem;
+    margin-block-end: 0rem;
+    margin-block-start: 0rem;
+    margin-inline-start: 0rem;
+    margin-inline-end: 0rem;
+  }
+
+  hr {
+    @extend .w-60;
+    @extend .fl;
+    @extend .ml3;
+  }
+
+  .footnotes {
+    @extend .f5;
+    ol {
+    }
   }
   
   // TODO: Tweak image rendering in Jekyll to remove <p> + <img>

@@ -41,6 +41,8 @@ ul {
   @extend .list;
   padding-inline-start: 0rem;
   padding-inline-end: 0rem;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
 
   &.arrows {
     li:before {
