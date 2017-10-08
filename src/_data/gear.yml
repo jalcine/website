@@ -42,7 +42,9 @@ categories:
         last_updated: 2017-10-08 10:54:43 PDT
         image: gear/logitech-m705-amzn.jpeg
         bio: |
-          TODO -> Write about getting M705.
+          Nothing too fantastic here. I got this because it was a bit more
+          friendly to left-handed mouse users (one of the few!) thus making it
+          worthwhile. It doubles as my road mouse as well.
   -
     anchor: software
     name: Software
@@ -55,8 +57,14 @@ categories:
         image: gear/os-desktop.png
         bio: |
           I'm one of those Linux purists you might have heard of. I use Android
-          on my phone and run Linux as a desktop machine. People might call me
+          on my phone and run Linux on my laptop machine. People might call me
           wild, I enjoy it. I run [KDE Plasma 5][1] on my desktop machine with
           the latest kernel additions (always stay up-to-date).
+
+          ### Software
+          I try to use as much KDE tools as possible. That means me making use
+          of the whole Akondai suite and what not. Granted, the one application
+          I probably use the most is Konsole. After that, neovim is a tight
+          contender.
 
           [1]: https://www.kde.org/plasma-desktop

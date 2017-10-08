@@ -29,9 +29,11 @@ title: My Gear
             <a name="{{item.anchor}}">{{ item.name }}</a>
           </h3>
           {% if item.image %}
-            {% img "{{ item.image | image_path }}" class:"w-100 dib mb2 fr mw6-ns mw5-ns mh2" width:auto height:auto %}
+            {% img "{{ item.image | image_path }}"
+                   class:"w-100 mw6 db mh2 center mh0-l fr-l"
+                   width:auto height:auto %}
           {% endif %}
-          <div class="f5 lh-copy measure">
+          <div class="f5 lh-copy center measure-l">
             {{ item.bio | strip_tags: '<p></p>' | markdownify }}
           </div>
         </section>
