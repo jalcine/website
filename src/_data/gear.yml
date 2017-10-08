@@ -1,0 +1,62 @@
+---
+categories:
+  -
+    anchor: hardware
+    name: Hardware
+    last_updated: 2017-10-08 00:28:14 PDT
+    components:
+      -
+        anchor: laptop
+        name: My Primary Laptop
+        last_updated: 2017-10-08 00:28:40 PDT
+        image: gear/dell-xps-14-keyboard-amzn.jpeg
+        bio: |
+          My laptop of choice is the [Dell XPS 14][1] with 500 GB of disk space,
+          32 GB SSD and a [Intel i7-3537U][2] core. With 8 GB SDDRAM3 @ 1.6 GHz,
+          a moderately decent set of cores &mdash; gets the job done.
+          Bluetooth is in there as well and it has a backlit keyboard which
+          really helps at night. A nugget of gold about this laptop? Under the
+          bottom left corner of the keyboard, a button lights up to five LEDs,
+          letting you know how much power is left.
+
+          [1]: http://amzn.com/B00HK8V4PU
+          [2]: http://ark.intel.com/products/72054
+      -
+        anchor: camera
+        name: My Cameras
+        last_updated: 2017-10-08 10:48:47 PDT
+        image: gear/nikon-l830-amzn.jpeg
+        bio: |
+          Most of the shots I have taken come from my nifty [Nikon L830][1]
+          since it's mostly automatic when it comes to handling. I really just
+          tweak ISO, white balance and focus with this camera. However, the
+          [Nikon D3200][2] handles a lot better, takes way better shots but
+          requires me to fiddle with it a bit more. This might be me handling
+          it incorrectly; we'll find out.
+
+          [1]: http://amzn.com/B00HQ4W3X0
+          [2]: http://amzn.com/B009OAOG9S
+      -
+        anchor: mouse
+        name: My Mouse
+        last_updated: 2017-10-08 10:54:43 PDT
+        image: gear/logitech-m705-amzn.jpeg
+        bio: |
+          TODO -> Write about getting M705.
+  -
+    anchor: software
+    name: Software
+    last_updated: 2017-10-08 10:58:13 PDT
+    components:
+      -
+        anchor: operating-system
+        name: Operating System
+        last_updated: 2017-10-08 10:58:55 PDT
+        image: gear/os-desktop.png
+        bio: |
+          I'm one of those Linux purists you might have heard of. I use Android
+          on my phone and run Linux as a desktop machine. People might call me
+          wild, I enjoy it. I run [KDE Plasma 5][1] on my desktop machine with
+          the latest kernel additions (always stay up-to-date).
+
+          [1]: https://www.kde.org/plasma-desktop

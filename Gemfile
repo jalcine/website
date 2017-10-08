@@ -22,7 +22,7 @@ group :jekyll do
 end
 
 group :jekyll_plugins do
-  gem 'amp-jekyll'
+  # gem 'amp-jekyll'
   gem 'jekyll-analytics'
   gem 'jekyll-asciinema'
   gem 'jekyll-assets'

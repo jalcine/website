@@ -1,10 +1,15 @@
+//= require webfontloader/webfontloader.js
+
 // Configure WebFontLoader.
 var WebFontConfig = {
   google: {
     families: [
-      'Lato:100,300,500,700,italic:latin' // Default page font
+      'Open+Sans:100,300,500,700,italic:latin', // Default page font
+      'Alegreya:100,300,500,700,italic:latin' // Default page font
     ]
   }
 };
 
-//= require webfontloader/webfontloader.js
+(function () {
+  WebFont.load(WebFontConfig);
+})(document);

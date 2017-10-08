@@ -5,17 +5,44 @@ components:
   header: false
 ---
 {% assign clean_blurb = site.blurb | strip_tags: '<p></p>' %}  
+{% assign brand_landing_image_path = 'brand/self.jpeg' | image_path %}
 
-<section class="bg-near-black white">
-  <div class="w-90 center db cf v-mid">
-    {% img "{{ 'brand/self.jpeg' | image_path }}"
-          class:"v-mid w-auto vh-50 dib fl"
-          width:"auto"
-          height:"auto"
-    %}
-    <div class="dib pv4 w-50 fl">
-      <h1 class="f-headline-l f1 lh-title">jackyalciné</h1>
-      <p class="measure lh-copy">{{ clean_blurb }}</p>
+<section class="section--dark" role="main">
+  <div class="w-100 w-80-l center-l db cf v-mid">
+    <div class="dib-l fl-l w-50-l center w-auto h-70">
+      {% img "{{ brand_landing_image_path }}"
+            class:"w-100-l h-auto mv2 db center mw6-m w-auto"
+            draggable:"false"
+            alt:"Jacky looking to the right at Interact 2017."
+      %}
+      <p class="lh-solid gray tc tr-l ttu f7 mt0-l">
+        :camera: credit goes to <a href="https://thedanigrant.com">@thedanigrant</a>
+      </p>
+    </div>
+    <div class="dib-l fl-l w-50-l ph3 w-100 tl">
+      <h1 class="f1 f-headline-l tracked-tight mv3 tc tl-l">jackyalciné</h1>
+      <p class="measure-l lh-copy">{{ clean_blurb }}</p>
+      <ul>
+        {% for entry in site.data.links.landing %}
+        <li class="lh-solid v-mid pv1">
+          :{{ entry.emoji }}: {{ entry.action }}
+          <a href="{{ entry.link.uri }}" title="{{ entry.link.title }}">
+            {{ entry.link.text }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </div>
 </section>
+<div class="w-100 pv2 ph4 w-80-l center-l db cf v-mid bg-yellow near-black fw3">
+  I'm open to new long-term contracts and positions.
+  <a href="/work/freelance/" class="navy fw7">Learn more</a>
+  about how we can work &amp; build on your app idea.
+</div>
+
+
+
+
+
+

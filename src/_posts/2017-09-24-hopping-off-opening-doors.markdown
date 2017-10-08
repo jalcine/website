@@ -68,7 +68,7 @@ I thank _everyone_ who's been here on my pretty rapid journey. Mentors, friends
 (new and old) and anyone who's lent a hand.
 
 [1]: http://goodforpocin.tech
-[2]: {% post_url 2016-12-19-catching_that_ride %}
+[2]: {% post_url 2016-12-19-catching-that-ride %}
 [3]: https://github.com/goodforpoc
 [4]: {% post_url 2017-02-25-stop-writing-tests %}
 [5]: http://tinyletter.com/jacky-wtf/letters/hopping-off-a-ride-opening-doors

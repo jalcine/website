@@ -1,4 +1,3 @@
-// TODO: Define netural colors here.
 @import "tachyons-sass/scss/_colors.scss";
 
 $accent-color: $navy;
@@ -7,3 +6,8 @@ $success-color: $green;
 $warning-color: $orange;
 $danger-color: $red;
 $info-color: $blue;
+
+body, html {
+  background-color: $white;
+  color: $near-black;
+}

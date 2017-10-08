@@ -16,10 +16,6 @@ GEM
       multi_json (~> 1.0)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    amp-jekyll (1.0.2)
-      fastimage (>= 1.8.0)
-      jekyll (~> 3.0)
-      nokogiri (>= 1.6.0)
     autoprefixer-rails (7.1.5)
       execjs
     babel-source (5.8.35)
@@ -226,7 +222,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  amp-jekyll
   autoprefixer-rails
   classifier-reborn
   dotenv

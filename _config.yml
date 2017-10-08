@@ -4,7 +4,6 @@ destination: '_site'
 layouts_dir: 'src/_layouts'
 plugins_dir: 'plugins'
 filter_entries: []
-incremental: true
 strict_front_matter: false
 
 # Metadata about the site that we'd use very very often.
@@ -73,8 +72,8 @@ assets:
   autowrite: true
   digest: false
   compress:
-    css: true
-    js: true
+    css: false
+    js: false
   prefix: "/assets"
   asset:
     - "*.png"
@@ -87,13 +86,16 @@ assets:
     - _assets/favicon
     - _assets/js
     - node_modules
-    - node_modules
-  features:
-    liquid: true
 jekyll-mentions: https://twitter.com
+incremental: true
 gpg:
   fingerprint: "0x4DEFFC9FF82E8908"
 responsive_image:
   template: _includes/responsive-image.html
   default_quality: 90
   auto_rotate: true
+
+jekyll_analytics:
+  Piwik:
+    url: lighthouse.jacky.wtf
+    siteId: "1234"

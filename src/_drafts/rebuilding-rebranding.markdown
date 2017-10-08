@@ -42,8 +42,9 @@ started a [new theme][5] for this site; this time as a separate gem. The choice
 of separating the _look_ of the site from the _data_ on it. 
 
 ### Building Alpha Shard
-The theme, *[Alpha Shard][5]* pays homage to the team of ONI soliders and the
-retired Spartan solider who saved humanity from attack of a bioweapon[^1]
+The theme, *[Alpha Shard][5]* pays homage to the team of ONI soldiers and the
+retired Spartan solider who saved humanity from attack of a bio-weapon[^1]. Some
+scary :poop:.
 
 [1]: {{ site.baseurl }}
 [2]: {{ site.baseurl }}
