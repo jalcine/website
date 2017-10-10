@@ -58,8 +58,7 @@ blockquote.excerpt {
 }
 
 main[role=group].post {
-  @include post-spacing;
-  @extend .w-100, .mw8;
+  @extend .w-100, .mw8, .pa3;
 
   > p,
   > ol > li,
@@ -73,6 +72,12 @@ main[role=group].post {
 
   p, blockquote {
     @extend .lh-copy;
+    margin-before: 0;
+    margin-after: 0;
+  }
+
+  p {
+    @extend .w-100;
   }
 
   ul {
@@ -109,8 +114,7 @@ main[role=group].post {
   }
 
   hr {
-    @extend .w-100;
-    @extend .center;
+    @extend .mw7;
   }
 
   .footnotes {
