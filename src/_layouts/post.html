@@ -15,9 +15,9 @@ excerpt: none
 </blockquote>
 {% endif %}
 <address role="group" class="post">
-  <span>:book: {{ page.category }}</span>
-  <span>:bookmark: {{ page.tags | linkify_tags }}</span>
-  <span>:clock7: <time>{{ page.date | date_to_rfc822}}</time></span>
+  {% if page.category %}<span>:book: {{ page.category }}</span>{% endif %}
+  {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
+  {% if page.date %}<span>:clock7: <time>{{ page.date | date_to_rfc822 }}</time></span>{% endif %}
   {% if page.revised %}<span>:clock10: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
 </address>
 <main role="group" class="post">

@@ -40,6 +40,11 @@ header[role=group].post {
       @extend .tc;
       @extend .f-headline-l;
     }
+
+    > h1 + h2 {
+      @extend .mh4;
+      @extend .f2;
+    }
   }
 }
 
@@ -68,6 +73,10 @@ main[role=group].post {
 
   p, blockquote {
     @extend .lh-copy;
+  }
+
+  ul {
+    @extend ul.arrows;
   }
 
   ol > li {

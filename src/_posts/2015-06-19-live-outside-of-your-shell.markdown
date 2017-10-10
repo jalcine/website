@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Live Outside of Your Shell
+excerpt: |
+  Thinking about how I grow as a developer.
 date: 2015-06-19 02:57:37 EDT
 tags:
   - life

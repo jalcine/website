@@ -2,6 +2,13 @@
 layout: post
 title: "My New Rolling Resume"
 date: 2015-05-18 10:15:53 EDT
+excerpt: |
+  No. More. PDFs.
+category: work
+tags:
+  - resume
+  - work
+  - updates
 ---
 
 Resumes are people's way of saying that they've said they've done _X, Y or Z_.

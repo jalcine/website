@@ -47,6 +47,11 @@ ul {
   &.arrows {
     li:before {
       content: "\2192";
+      @extend .pa1;
     }
+  }
+
+  li {
+    @extend .pa1;
   }
 }
