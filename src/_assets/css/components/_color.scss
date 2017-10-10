@@ -11,3 +11,13 @@ body, html {
   background-color: $white;
   color: $near-black;
 }
+
+a {
+  &, &:visited {
+    color: $blue;
+  }
+
+  &:hover, &:visited:hover {
+    color: $dark-blue;
+  }
+}

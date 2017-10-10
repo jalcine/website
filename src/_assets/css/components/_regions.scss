@@ -44,4 +44,12 @@ section[role=document] {
 
 header[role=document] {
   @extend .bg-near-white, .w-100, .pa2;
+ 
+  a {
+    @extend .navy;
+
+    &:hover {
+      @extend .blue;
+    }
+  }
 }
