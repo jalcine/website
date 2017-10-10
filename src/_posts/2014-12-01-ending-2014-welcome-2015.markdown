@@ -1,15 +1,15 @@
 ---
-
 image: posts/ending-2014-welcome-2015.jpg
 layout: post
 title: Ending 2014 with a (Minor) Bang, Embracing 2015 with Open Arms
-location: Brooklyn, New York
 date: 2014-12-01 23:53:51 EST
 revised: 2016-12-14 18:24:17 PST
+excerpt: |
+  A bit of a recap.
 tags:
   - reflection
   - 2014
-categories:
+category:
   - annual
 
 ---
@@ -21,7 +21,8 @@ taken time this month to reflect on the places I've been this year and see how
 I can get even more done in the upcoming year.
 
 ## Personal Projects
-![Damn it, forgot to use my Yubikey][imhud]
+{% img "{{ 'iron-man-hud-2014.jpg' | image_path }}" width:"auto" height:"auto" %}
+
 If you haven't known by yet, I'm quite obsessed with the concept of home
 automation, artificial intelligence and very specifically, the replication and
 building of an architecture similar to that of [J.A.R.V.I.S][jarvis], the
@@ -36,7 +37,6 @@ It's my means of permanently increasing my breadth of knowledge, if
 you may.
 
 ## Traveling
-![Palm trees in Silver Lake, Los Angeles][flickr-travel]
 I've been always one to take photos of places I've gone and attempt to capture
 my environment. Although (I think) Flickr didn't announce it in 2014, their
 encouraging (and quite generous) one TB of image space lit a micro fire under
@@ -59,7 +59,8 @@ comic][imc] and [The Pragmatic Programmer][tpp]. Diverse enough of a topic set,
 but all relating to things I value and enjoy.
 
 # Into 2015
-![Squad.][dis]
+{% img "{{ 'destiny-squad.gif' | image_path }}" width:"auto" height:"auto "%}
+
 It's probably not a good idea for me to plan too sternly into 2015, since even
 I'm not too sure on what it might happen, but there's a few things I'd like to
 get done. 2014 was my first year as a legal adult[^2], so having a full year
@@ -67,7 +68,8 @@ to rampage across the world should be enlightening. Apologies for rampaging in
 your part of the world in advance[^3].
 
 ## First Minor Release of Wintermute
-![Image of Wintermute's "old-master" branch, for history's sake.][wntrimg1]
+{% img "{{ 'wintermute-old-master.png' | image_path}}" width:"auto" height:"auto" %}
+
 Wintermute's a pretty old project for me. It's about four years old with no
 release binaries at all. A few reasons for this include school, work and the
 unpredictable nature of life. I have to admit though, a *lot* has changed with
@@ -110,11 +112,6 @@ goal for this month. Until next year! &#x1f44b;
 [imc]: https://www.goodreads.com/book/show/18359958-iron-man-volume-2
 [tpp]: https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer
 [fmrc-wntr]: https://github.com/jalcine/wintermute/milestones/v0.1.x
-
-[flickr-travel]: https://farm8.staticflickr.com/7491/15176127133_3b5968da7d_k.jpg
-[imhud]: /images/iron-man-hud-2014.jpg
-[wntrimg1]: /images/wintermute-old-master.png
-[dis]: /images/destiny-squad.gif
 
 [^1]: This trip to Los Angeles was my first one to Southern California! Boy, was it great!
 [^2]: That should _mean_ something here, but (from what I hear) Europeans get it good.

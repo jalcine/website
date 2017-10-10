@@ -2,6 +2,8 @@
 layout: post
 title: "2015"
 date: 2015-01-05 21:35:29 EST
+excerpt: |
+  Reflection on 2015.
 category: opinion
 tags:
   - short-reads

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "On Schools and Technology"
+excerpt: |
+  Thoughts on how schooling needs to adapt to technology as a whole.
 category: thoughts
 date: 2015-01-29 14:32:42 EST
 tags:
@@ -18,7 +20,6 @@ etc. Memories of my childhood played back too quickly in my mind, and I could
 tell my sister had the same moment when she asked me if I felt it too. I did.
 
 # Reflecting Then
-
 I remember in the 6th grade heading over to Mr. Hobbes' room for computer
 class. That's what it was called, "Computer", very direct and to the point. I
 don't even remember _exactly_ what we did; but I do remember having classes on
@@ -53,7 +54,6 @@ the resident "experts" at the machine.
 > blergh.
 
 # Reflecting Now
-
 I step into the office of the new head Dean of my junior high school and he
 greets my sister and I very warmly as all of the teachers who remembered us
 do[^4]. We had a chance to speak quickly on the reason of the visit and then
@@ -108,7 +108,6 @@ are **makers** and not only consumers of the tools of tomorrow. That isn't too
 much to ask at all; it's our calling.
 
 ## Action Items
-
 Of course, I can't make some claims like this without having something that
 can be acted up. There's a lot of smart people out there and I'm confident
 that with their help that some of the following would be possible:

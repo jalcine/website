@@ -16,6 +16,8 @@ GEM
       multi_json (~> 1.0)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    archive-zip (0.7.0)
+      io-like (~> 0.3.0)
     autoprefixer-rails (7.1.5)
       execjs
     babel-source (5.8.35)
@@ -23,11 +25,33 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     bigdecimal (1.3.2)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    capybara (2.15.4)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    capybara-accessible (0.2.1)
+      capybara (~> 2.0)
+    capybara-puma (1.0.1)
+      capybara
+      puma
+    capybara-screenshot (1.0.17)
+      capybara (>= 1.0, < 3)
+      launchy
+    chromedriver-helper (1.1.0)
+      archive-zip (~> 0.7.0)
+      nokogiri (~> 1.6)
     classifier-reborn (2.1.0)
       fast-stemmer (~> 1.0)
     coderay (1.1.2)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
+    debug_inspector (0.0.3)
+    diff-lcs (1.3)
     dotenv (2.2.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
@@ -70,6 +94,10 @@ GEM
       ffi
       guard (~> 2.3)
       spoon
+    guard-rspec (4.7.3)
+      guard (~> 2.1)
+      guard-compat (~> 1.1)
+      rspec (>= 2.99.0, < 4.0)
     haml (5.0.3)
       temple (>= 0.8.0)
       tilt
@@ -78,6 +106,8 @@ GEM
       nokogiri (>= 1.4)
     http_parser.rb (0.6.0)
     i18n (0.8.6)
+    interception (0.5)
+    io-like (0.3.0)
     jekyll (3.6.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -141,6 +171,8 @@ GEM
       html-pipeline (~> 2.2)
       jekyll (>= 3.0)
     kramdown (1.15.0)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     libnotify (0.9.3)
       ffi (>= 1.0.11)
     liquid (4.0.0)
@@ -155,6 +187,7 @@ GEM
       rake
     mina-scp (0.1.2)
     mini_magick (4.8.0)
+    mini_mime (0.1.4)
     mini_portile2 (2.3.0)
     money (6.9.0)
       i18n (>= 0.6.4, < 0.9)
@@ -175,11 +208,19 @@ GEM
     pry (0.11.1)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    pry-rescue (1.4.5)
+      interception (>= 0.5)
+      pry
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     public_suffix (3.0.0)
     puma (3.10.0)
     rack (1.6.8)
     rack-livereload (0.3.16)
       rack
+    rack-test (0.7.0)
+      rack (>= 1.0, < 3)
     rake (10.5.0)
     rake-jekyll (1.1.0)
       rake (~> 10.0)
@@ -191,6 +232,19 @@ GEM
     rinku (1.7.3)
     rmagick (2.16.0)
     rouge (2.2.1)
+    rspec (3.6.0)
+      rspec-core (~> 3.6.0)
+      rspec-expectations (~> 3.6.0)
+      rspec-mocks (~> 3.6.0)
+    rspec-core (3.6.0)
+      rspec-support (~> 3.6.0)
+    rspec-expectations (3.6.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.6.0)
+    rspec-mocks (3.6.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.6.0)
+    rspec-support (3.6.0)
     rubypants (0.6.0)
     safe_yaml (1.0.4)
     sass (3.4.25)
@@ -217,12 +271,19 @@ GEM
       activesupport (~> 3.0)
     typogruby (1.0.18)
       rubypants
+    xpath (2.1.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   autoprefixer-rails
+  capybara
+  capybara-accessible
+  capybara-puma
+  capybara-screenshot
+  chromedriver-helper
   classifier-reborn
   dotenv
   guard
@@ -231,6 +292,7 @@ DEPENDENCIES
   guard-livereload
   guard-npm
   guard-rack
+  guard-rspec
   haml
   jekyll (= 3.6.0)
   jekyll-analytics
@@ -257,6 +319,8 @@ DEPENDENCIES
   mina (< 1.0.0)
   mina-scp
   mini_magick
+  pry-rescue
+  pry-stack_explorer
   puma
   rack
   rack-livereload
@@ -264,6 +328,7 @@ DEPENDENCIES
   rake-jekyll
   rb-gsl
   rouge
+  rspec
   sass
   sprockets-es6
   susy

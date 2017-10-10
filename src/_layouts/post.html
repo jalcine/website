@@ -14,16 +14,16 @@ excerpt: none
   {{ page.excerpt | markdownify | strip_tags: '<p></p>' }}
 </blockquote>
 {% endif %}
-<address role="document" class="post">
+<address role="group" class="post">
   <span>:book: {{ page.category }}</span>
   <span>:bookmark: {{ page.tags | linkify_tags }}</span>
   <span>:clock7: <time>{{ page.date | date_to_rfc822}}</time></span>
   {% if page.revised %}<span>:clock10: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
 </address>
-<main role="document" class="post">
+<main role="group" class="post">
   {{ content }}
 </main>
-<footer role="document" class="post">
+<footer role="group" class="post">
   <nav>
     {% if page.previous %}<a class="fl-l mv2 center pa2 dib" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>{% endif %}
     {% if page.next %}<a class="fr-l mv2 center pa2 dib" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>{% endif %}

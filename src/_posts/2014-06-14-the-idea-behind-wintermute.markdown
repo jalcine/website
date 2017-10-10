@@ -2,23 +2,23 @@
 layout: post
 date: 2014-06-14 22:14:51 EDT
 title: "The Idea Behind Wintermute"
-categories:
+excerpt: |
+  Giving some hindsight as to why I built Wintermute.
+category: wintermute
+tags:
   - wintermute
   - thoughts
 ---
 
-<p class='lead'>
-  <strong>WINTERMUTE</strong> is the software project that propelled my
-  knowledge of simpler programming paradigms like inheritance, polymorphisms
-  and the likes over the last few years. I've taken the liberty of at times,
-  blowing away the entire commit history just to start anew. Wintermute
-  had a proper and here, I plan to expand on that.
-</p>
+**WINTERMUTE** is the software project that propelled my
+knowledge of simpler programming paradigms like inheritance, polymorphisms
+and the likes over the last few years. I've taken the liberty of at times,
+blowing away the entire commit history just to start anew. Wintermute
+had a proper and here, I plan to expand on that.
 
 Wintermute, when described to someone outside of the grinding gears of the tech
 multiverse, is an ambition to implement a computer network and interface
-similar to that of Iron Man's
-<b title='Just A Really Very Intelligent System'>J.A.R.V.I.S</b>. The
+similar to that of Iron Man's **J.A.R.V.I.S**. The
 omnipresence, vast amount of semantic knowledge it holds and its ability to
 use both of those to provide context-relevant, if not crucial, information
 about the current scenario is the core essence of what's to be captured by the

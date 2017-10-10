@@ -2,7 +2,7 @@
   @extend .ma4, .ma2-l, .pa2;
 }
 
-address[role=document].post {
+address[role=group].post {
   @include post-spacing;
   @extend .f6, .w-80, .db;
 
@@ -12,21 +12,20 @@ address[role=document].post {
   }
 }
 
-header[role=document].post {
+header[role=group].post {
   @extend .w-90, .w-80-l;
   @include post-spacing;
 
-  h1 {
+  > h1 {
     @extend .pl1;
     @extend .tracked-tight;
     @extend .pa4, .pl1;
     @extend .baskerville, .serif;
-    @extend .f-headline-l, .f1;
-    @extend .fw3;
+    @extend .fw5, .f1;
     @extend .near-black;
   }
 
-  h3 {
+  > h3 {
     @extend .pa2;
     @extend .f3;
     @extend .fw1;
@@ -40,7 +39,6 @@ header[role=document].post {
     > h1 {
       @extend .tc;
       @extend .f-headline-l;
-      @extend .f1;
     }
   }
 }
@@ -54,7 +52,7 @@ blockquote.excerpt {
   margin-end: 0;
 }
 
-main[role=document].post {
+main[role=group].post {
   @include post-spacing;
   @extend .w-100, .mw8;
 
@@ -102,9 +100,8 @@ main[role=document].post {
   }
 
   hr {
-    @extend .w-60;
-    @extend .fl;
-    @extend .ml3;
+    @extend .w-100;
+    @extend .center;
   }
 
   .footnotes {
@@ -112,7 +109,7 @@ main[role=document].post {
   }
 }
 
-footer[role=document].post {
+footer[role=group].post {
   @extend .w-90, .w-80-l, .mw8;
   @include post-spacing;
 

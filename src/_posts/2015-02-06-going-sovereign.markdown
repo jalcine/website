@@ -1,9 +1,11 @@
 ---
-
 layout: post
 title: "Going Sovereign: Reclaiming my Digital Independence"
+excerpt: |
+  Learning how to be independent.
 category: development
 date: 2015-02-06 10:53:15 EST
+category: setup
 tags:
   - goals
   - development
@@ -22,12 +24,12 @@ code _there_ when I can do it myself. Don't get me wrong, if it's something that
 I think that can be worth publishing out to the public then I'll do it. But
 y’all don’t need to see _all_ of my magic.
 
-![He's crawling out!](/images/cat_scratch_snow.gif){:style="width: 400px; margin: 0rem auto; display: flex"}
+{% img "{{ 'cat_scratch_snow.gif' | image_path }}" width:"auto" height:"auto" %}
 
 Before I really start, I had to understand what it was that I wanted a few
 things from the following. No reason to build shit all willy nilly.
 
-## Git Repositories {#private-git}
+## Git Repositories
 In an attempt to remain organized, I throw all of the projects that I've
 checked out using any VCS and threw it into a single folder. With a little
 `wc`, that made a rough count of about 190 projects I have checked out at
@@ -37,7 +39,7 @@ see the light of day, like my laptop's configuration setup or the Git
 index of my digital book collection. Having hosted Git repositories would
 allow me to push all of the things as my own private backup service. :dizzy:
 
-## Re-enabling Comments {#comments}
+## Re-enabling Comments
 I've been sitting on this for quite some time, to set up my own instance of
 a commenting platform for use with my site. Having this pre-configured and
 ready to roll would make quite a few things easier. The tool in question

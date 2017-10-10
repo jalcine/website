@@ -70,6 +70,18 @@ group :guard do
   gem 'guard-livereload', require: false
   gem 'guard-npm', require: false
   gem 'guard-rack', require: false
+  gem 'guard-rspec', require: true
   gem 'libnotify'
 end
 # }}}
+
+group :test do
+  gem 'rspec'
+  gem 'capybara'
+  gem 'capybara-screenshot'
+  gem 'capybara-puma'
+  gem 'capybara-accessible'
+  gem 'chromedriver-helper'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
+end
