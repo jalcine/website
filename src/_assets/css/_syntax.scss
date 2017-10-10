@@ -1,4 +1,16 @@
 .highlight {
+  margin: 0;
+  padding: 0;
+
+  > pre {
+    @extend .pa3;
+  }
+
+  > pre > code {
+    @extend .mw8;
+    @extend .db;
+  }
+
   code, pre {
     color:#fdce93;
     background-color:#3f3f3f;

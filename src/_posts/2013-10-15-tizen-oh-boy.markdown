@@ -2,8 +2,15 @@
 layout: post
 title: Tizen, Oh Boy
 date: 2013-10-13 16:25:25 EDT
+revised: 2017-10-08 15:36:32 PDT
 category: tech
-tags: tizen
+tags:
+  - tizen
+  - reviews
+  - operating systems
+  - samsung
+excerpt: |
+  Son. Tizen. Samsung, what did you do?
 ---
 
 [Tizen][]. It's an operating system currently targeting the mobile landscape

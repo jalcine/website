@@ -2,7 +2,10 @@
 layout: post
 title: My Blog on Blogs and Myself
 date: 2014-03-02 01:10:03 EST
+revised: 2017-10-08 16:31:41 PDT
 category: opinion
+excerpt: |
+  Trying to understand what blogs are.
 ---
 
 I had this particular perspective about web journals (or blogs). I always

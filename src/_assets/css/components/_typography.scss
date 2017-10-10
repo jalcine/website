@@ -1,0 +1,57 @@
+@mixin expected-sans-serif-fonts {
+  @extend .sans-serif;
+  
+  @at-root {
+    html.wf-active & {
+      font-family: "Open Sans";
+    }
+  }
+}
+@mixin expected-serif-fonts {
+  @extend .serif;
+  
+  @at-root {
+    html.wf-active & {
+      font-family: "Alegreya";
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6, blockquote {
+  @include expected-serif-fonts;
+}
+
+p, body, div, li {
+  @include expected-sans-serif-fonts;
+  @extend .f5;
+}
+
+p.lead {
+  @extend .f4;
+  @extend .measure;
+  @extend .lh-copy;
+}
+
+p:first-of-type:first-line {
+  @extend .fw3;
+  font-size: 125%;
+}
+
+ul {
+  @extend .list;
+  padding-inline-start: 0rem;
+  padding-inline-end: 0rem;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+
+  &.arrows {
+    li:before {
+      content: "\2192";
+      @extend .pa1;
+    }
+  }
+
+  li {
+    @extend .pa1;
+  }
+}

@@ -2,7 +2,7 @@
 layout: post
 title: "Commits Hunks in Git"
 date: 2014-04-26 17:11:21 EDT
-categories:
+tags:
   - git
   - development
   - tips
@@ -17,7 +17,7 @@ would have to go to [`git-add(1)` in the "Interactive Mode" section][gitaddinm]
 to learn more about it. It mentions using `git add` to handle interactive mode
 as shown:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 # Snatched from http://git-scm.com/book/en/Git-Tools-Interactive-Staging
 $ git add -i
            staged     unstaged path
@@ -35,7 +35,7 @@ It shows you a diff of the changes made to a particular file and allows you to
 continue working from where you left off; definitely helped out quite a few
 times. I actually have an alias in my dotfiles just for this, a là `gci`.
 
-{% highlight bash linenos %}
+{% highlight bash %}
 alias gci='git commit --interactive'
 {% endhighlight %}
 

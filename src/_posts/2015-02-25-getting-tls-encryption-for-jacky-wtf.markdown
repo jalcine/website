@@ -8,6 +8,8 @@ tags:
   - security
 title: "Getting TLS Encryption For jacky.wtf"
 date: 2015-02-25 22:31:33 EST
+excerpt: |
+  TLS certificate set up for <https://jacky.wtf>.
 
 ---
 

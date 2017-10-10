@@ -2,6 +2,8 @@
 layout: post
 date: 2015-01-30 21:37:30 EST
 title: "Freelancing in 2015"
+excerpt: |
+  Me transitioning into freelancing.
 category: thoughts
 tags:
   - life

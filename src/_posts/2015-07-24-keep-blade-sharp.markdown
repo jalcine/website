@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Keep That Blade Sharp
-byline: A coding journal, written in code.
+excerpt: A coding journal, written in code.
 category: thoughts
-javascripts:
- - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 tags:
   - personal
   - development
 ---
+
+<script async defer src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 In lieu of the new languages that sprout out ever so often, I've created a
 [little repository][1] of source code that'd allow me to take well formed

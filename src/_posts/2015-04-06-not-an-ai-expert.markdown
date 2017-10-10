@@ -2,6 +2,8 @@
 layout: post
 title: "I'm Not an AI Expert"
 date: 2015-04-06 17:14:55 EDT
+excerpt: |
+  Some thoughts about AI, Wintermute and me.
 category: thoughts
 tags:
   - wintermute

@@ -1,0 +1,23 @@
+@import "tachyons-sass/scss/_colors.scss";
+
+$accent-color: $navy;
+$primary-color: $black;
+$success-color: $green;
+$warning-color: $orange;
+$danger-color: $red;
+$info-color: $blue;
+
+body, html {
+  background-color: $white;
+  color: $near-black;
+}
+
+a {
+  &, &:visited {
+    color: $blue;
+  }
+
+  &:hover, &:visited:hover {
+    color: $dark-blue;
+  }
+}

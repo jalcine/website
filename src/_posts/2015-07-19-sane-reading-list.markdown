@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maintaining a Sane Reading List
-byline: "Who Is Dewey?"
+excerpt: "Who Is Dewey?"
 date: 2015-07-20 10:40:50 EDT
 tags:
   - reading

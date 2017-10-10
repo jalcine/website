@@ -2,7 +2,10 @@
 layout: post
 title: Unit Testing Wintermute
 date: 2014-05-08 23:24:06 EDT
-categories:
+excerpt: |
+  Some thoughts on handling Wintermute and unit testing.
+category: wintermute
+tags:
   - wintermute
   - testing
   - development

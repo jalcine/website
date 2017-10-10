@@ -1,12 +1,4 @@
 GIT
-  remote: https://github.com/anarchivist/octopress-video-tag
-  revision: 7452399be9e164914fdd1e2facaf91a769b6fc23
-  branch: loosen-gemspec
-  specs:
-    octopress-video-tag (1.1.1)
-      jekyll (>= 2.0)
-
-GIT
   remote: https://github.com/imathis/guard-jekyll-plus
   revision: 26e1426fb0972613d80dd5f0acf38ffcc1046a2c
   specs:
@@ -15,66 +7,67 @@ GIT
       guard-compat (~> 1.1)
       jekyll (>= 1.0.0)
 
-GIT
-  remote: https://github.com/jekyll/jekyll-assets
-  revision: 7e32498762c4aa977e0ab727792bf8c69a92bedc
-  specs:
-    jekyll-assets (2.3.2)
-      concurrent-ruby (~> 1.0)
-      extras (~> 0.2)
-      fastimage (~> 2.0, >= 1.8)
-      jekyll (~> 3.1, >= 3.0)
-      pathutil (>= 0.8)
-      rack (~> 1.6)
-      sprockets (~> 3.3, < 3.8)
-
-GIT
-  remote: https://github.com/jekyll/jekyll-sitemap
-  revision: 7deddaeb343637575937896b2e244f5a763f7fe9
-  specs:
-    jekyll-sitemap (1.1.1)
-      jekyll (~> 3.3)
-
-GIT
-  remote: https://github.com/octopress/quote-tag
-  revision: f64b01f29ebbf4c94c93cf4bc51612c5e3bfc009
-  branch: master
-  specs:
-    octopress-quote-tag (1.0.4)
-      jekyll
-      rubypants
-
 GEM
   remote: https://rubygems.org/
   specs:
     RedCloth (4.3.2)
-    activesupport (4.2.9)
-      i18n (~> 0.7)
-      minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
-      tzinfo (~> 1.1)
-    addressable (2.5.1)
-      public_suffix (~> 2.0, >= 2.0.2)
-    autoprefixer-rails (7.1.2.2)
+    activesupport (3.2.22.5)
+      i18n (~> 0.6, >= 0.6.4)
+      multi_json (~> 1.0)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    archive-zip (0.7.0)
+      io-like (~> 0.3.0)
+    autoprefixer-rails (7.1.5)
       execjs
-    coderay (1.1.1)
+    babel-source (5.8.35)
+    babel-transpiler (0.7.0)
+      babel-source (>= 4.0, < 6)
+      execjs (~> 2.0)
+    bigdecimal (1.3.2)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
+    capybara (2.15.4)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    capybara-accessible (0.2.1)
+      capybara (~> 2.0)
+    capybara-puma (1.0.1)
+      capybara
+      puma
+    capybara-screenshot (1.0.17)
+      capybara (>= 1.0, < 3)
+      launchy
+    chromedriver-helper (1.1.0)
+      archive-zip (~> 0.7.0)
+      nokogiri (~> 1.6)
+    classifier-reborn (2.1.0)
+      fast-stemmer (~> 1.0)
+    coderay (1.1.2)
     colorator (1.1.0)
     concurrent-ruby (1.0.5)
+    debug_inspector (0.0.3)
+    diff-lcs (1.3)
     dotenv (2.2.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    eventmachine (1.2.3)
+    eventmachine (1.2.5)
     execjs (2.7.0)
     extras (0.3.0)
       forwardable-extended (~> 2.5)
-    faraday (0.12.1)
+    faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
+    fast-stemmer (1.0.2)
     fastimage (2.1.0)
     ffi (1.9.18)
     formatador (0.2.5)
     forwardable-extended (2.6.0)
-    gemoji (3.0.0)
+    gemoji (2.1.0)
     gsl (2.1.0.3)
     guard (2.14.1)
       formatador (>= 0.2.4)
@@ -101,29 +94,63 @@ GEM
       ffi
       guard (~> 2.3)
       spoon
-    haml (5.0.1)
+    guard-rspec (4.7.3)
+      guard (~> 2.1)
+      guard-compat (~> 1.1)
+      rspec (>= 2.99.0, < 4.0)
+    haml (5.0.3)
       temple (>= 0.8.0)
       tilt
-    html-pipeline (2.6.0)
+    html-pipeline (2.7.1)
       activesupport (>= 2)
       nokogiri (>= 1.4)
     http_parser.rb (0.6.0)
     i18n (0.8.6)
-    jekyll (3.5.0)
+    interception (0.5)
+    io-like (0.3.0)
+    jekyll (3.6.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
-      kramdown (~> 1.3)
+      kramdown (~> 1.14)
       liquid (~> 4.0)
       mercenary (~> 0.3.3)
       pathutil (~> 0.9)
-      rouge (~> 1.7)
+      rouge (>= 1.7, < 3)
       safe_yaml (~> 1.0)
+    jekyll-analytics (0.1.4)
+    jekyll-asciinema (0.2.0)
+      jekyll (>= 2.0)
+    jekyll-assets (2.4.0)
+      concurrent-ruby (~> 1.0)
+      extras (~> 0.2)
+      fastimage (~> 2.0, >= 1.8)
+      jekyll (~> 3.1, >= 3.0)
+      pathutil (>= 0.8)
+      rack (~> 1.6)
+      sprockets (~> 3.3, < 3.8)
+    jekyll-autolink_email (0.1.0)
+      jekyll (~> 3.0)
+      rinku (~> 1.7.0)
+    jekyll-email-protect (1.0.3)
+    jekyll-feed (0.9.2)
+      jekyll (~> 3.3)
     jekyll-gist (1.4.1)
       octokit (~> 4.2)
+    jekyll-money (0.1.1)
+      bigdecimal (~> 1.3)
+      jekyll (~> 3.3)
+      money (~> 6.8)
+    jekyll-redirect-from (0.12.1)
+      jekyll (~> 3.3)
+    jekyll-responsive-image (1.4.0)
+      jekyll (>= 2.0, < 4.0)
+      rmagick (>= 2.0, < 3.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
+    jekyll-sitemap (1.1.1)
+      jekyll (~> 3.3)
     jekyll-tagging (1.1.0)
       nuggets
     jekyll-tagging-related_posts (1.0.0)
@@ -133,33 +160,42 @@ GEM
       RedCloth (~> 4.0)
     jekyll-timeago (0.9.2)
     jekyll-twitter-plugin (2.0.0)
+    jekyll-typogrify (0.3.2)
+      titlecase
+      typogruby
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
-    jemoji (0.8.0)
-      activesupport (~> 4.0)
-      gemoji (~> 3.0)
+    jekyll_version_plugin (2.0.0)
+    jemoji (0.6.2)
+      gemoji (~> 2.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0)
-    kramdown (1.14.0)
+    kramdown (1.15.0)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    libnotify (0.9.3)
+      ffi (>= 1.0.11)
     liquid (4.0.0)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     lumberjack (1.0.12)
     mercenary (0.3.6)
-    method_source (0.8.2)
+    method_source (0.9.0)
     mina (0.3.8)
       open4 (~> 1.3.4)
       rake
     mina-scp (0.1.2)
     mini_magick (4.8.0)
-    mini_portile2 (2.2.0)
-    minitest (5.10.2)
-    multi_json (1.12.1)
+    mini_mime (0.1.4)
+    mini_portile2 (2.3.0)
+    money (6.9.0)
+      i18n (>= 0.6.4, < 0.9)
+    multi_json (1.12.2)
     multipart-post (2.0.0)
     nenv (0.3.0)
-    nokogiri (1.8.0)
-      mini_portile2 (~> 2.2.0)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
@@ -167,17 +203,24 @@ GEM
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     open4 (1.3.4)
-    pathutil (0.14.0)
+    pathutil (0.16.0)
       forwardable-extended (~> 2.6)
-    pry (0.10.4)
+    pry (0.11.1)
       coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
-    public_suffix (2.0.5)
-    puma (3.9.1)
+      method_source (~> 0.9.0)
+    pry-rescue (1.4.5)
+      interception (>= 0.5)
+      pry
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
+    public_suffix (3.0.0)
+    puma (3.10.0)
     rack (1.6.8)
     rack-livereload (0.3.16)
       rack
+    rack-test (0.7.0)
+      rack (>= 1.0, < 3)
     rake (10.5.0)
     rake-jekyll (1.1.0)
       rake (~> 10.0)
@@ -186,7 +229,22 @@ GEM
       gsl
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
-    rouge (1.11.1)
+    rinku (1.7.3)
+    rmagick (2.16.0)
+    rouge (2.2.1)
+    rspec (3.6.0)
+      rspec-core (~> 3.6.0)
+      rspec-expectations (~> 3.6.0)
+      rspec-mocks (~> 3.6.0)
+    rspec-core (3.6.0)
+      rspec-support (~> 3.6.0)
+    rspec-expectations (3.6.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.6.0)
+    rspec-mocks (3.6.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.6.0)
+    rspec-support (3.6.0)
     rubypants (0.6.0)
     safe_yaml (1.0.4)
     sass (3.4.25)
@@ -194,26 +252,39 @@ GEM
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
     shellany (0.0.1)
-    slop (3.6.0)
     spoon (0.0.6)
       ffi
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
+    sprockets-es6 (0.9.2)
+      babel-source (>= 5.8.11)
+      babel-transpiler
+      sprockets (>= 3.0.0)
     susy (2.2.12)
       sass (>= 3.3.0, < 3.5)
     temple (0.8.0)
-    thor (0.19.4)
-    thread_safe (0.3.6)
-    tilt (2.0.7)
-    tzinfo (1.2.3)
-      thread_safe (~> 0.1)
+    thor (0.20.0)
+    tilt (2.0.8)
+    titlecase (0.1.1)
+    twitter_web_intents (0.0.2)
+      activesupport (~> 3.0)
+    typogruby (1.0.18)
+      rubypants
+    xpath (2.1.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   autoprefixer-rails
+  capybara
+  capybara-accessible
+  capybara-puma
+  capybara-screenshot
+  chromedriver-helper
+  classifier-reborn
   dotenv
   guard
   guard-bundler
@@ -221,31 +292,47 @@ DEPENDENCIES
   guard-livereload
   guard-npm
   guard-rack
+  guard-rspec
   haml
-  jekyll (= 3.5.0)
-  jekyll-assets!
+  jekyll (= 3.6.0)
+  jekyll-analytics
+  jekyll-asciinema
+  jekyll-assets
+  jekyll-autolink_email
+  jekyll-email-protect
+  jekyll-feed
   jekyll-gist
+  jekyll-money
+  jekyll-redirect-from
+  jekyll-responsive-image
   jekyll-sass-converter
-  jekyll-sitemap!
+  jekyll-sitemap
   jekyll-tagging-related_posts
   jekyll-textile-converter
   jekyll-timeago
   jekyll-twitter-plugin
+  jekyll-typogrify
+  jekyll_version_plugin
   jemoji
   kramdown
+  libnotify
   mina (< 1.0.0)
   mina-scp
   mini_magick
-  octopress-quote-tag!
-  octopress-video-tag!
+  pry-rescue
+  pry-stack_explorer
   puma
   rack
   rack-livereload
   rake
   rake-jekyll
   rb-gsl
+  rouge
+  rspec
   sass
+  sprockets-es6
   susy
+  twitter_web_intents
 
 BUNDLED WITH
-   1.15.1
+   1.15.4

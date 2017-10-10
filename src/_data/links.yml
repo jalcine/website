@@ -80,3 +80,40 @@ social:
     title: "Vim.org"
     icon: "vim"
     link: "http://www.vim.org/account/profile.php?user_id=62285"
+
+landing:
+  -
+    emoji: "book"
+    action: "Read my latest entry"
+    link:
+      uri: "/weblog/"
+      title: "Jump to weblog"
+      text: "of my weblog"
+  -
+    emoji: "love_letter"
+    action: "Join fellow subscribers"
+    link:
+      uri: "/newsletter/"
+      title: "Learn more about what I email"
+      text: "on my newsletter"
+  -
+    emoji: "hammer"
+    action: "See what I work on"
+    link:
+      uri: "/projects/"
+      title: "Learn about projects I contribute"
+      text: "my project listing"
+  -
+    emoji: "briefcase"
+    action: "See where I work professionally"
+    link:
+      uri: "/work/"
+      title: "Learn abut what I work on"
+      text: "on my work log"
+  -
+    emoji: "8ball"
+    action: "Utilize my skills by"
+    link:
+      uri: "/work/freelance/"
+      title: "Begin a contracting position"
+      text: "hiring me for contract work"

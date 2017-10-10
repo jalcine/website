@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "My First Week at Shutterstock"
+title: My First Week at Shutterstock
 date: 2014-04-26 14:49:24 EDT
-categories:
+category: reflections
+tags:
   - thoughts
   - work
   - shutterstock
@@ -13,7 +14,7 @@ been great! If there's one thing I was anticipating (and had my hands crossed
 for), it was the lack of using a specific language to do everything. One thing
 I've noticed over my last few meet ups here in NYC and what I've gathered from
 people who work in larger tech companies is typically that whichever language
-has the best paradigms and tools to solve a particular problem *efficently*
+has the best paradigms and tools to solve a particular problem *efficiently*
 would most likely be the first one used. Of course; until someone builds one
 in-house. Shutterstock embraces a lot of technology as mentioned on their [open
 source technologies][ostsstk] page and it's done in a variety of languages for

@@ -3,6 +3,10 @@ layout: post
 title: Age Will Betray You
 date: 2014-03-25 22:49:56 EDT
 category: opinion
+tags:
+  - ageism
+  - bias
+  - expectation
 ---
 
 Let's start this off a bit imaginative. You've been a car accident and you're

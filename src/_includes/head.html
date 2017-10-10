@@ -1,3 +1,4 @@
+{% capture excess %}
 {% if page.title %}
   {% capture correct_title %}{{site.name}} &mdash; {{page.title}}{% endcapture %}
 {% else %}
@@ -8,64 +9,55 @@
 {% else %}
   {% assign blurb = site.description %}
 {% endif %}
-
+{% if page.image.startswith? 'http' %}
+	{% assign image = page.image %}
+{% else %}
+	{% assign image = asset_path 'favicon/android-chrome-192x192.png' %}
+{% endif %}
+{% assign full_page_uri = site.url + page.url %}
+{% endcapture %}
 <title>{{ correct_title }}</title>
-<!-- Set Data Encoding and Content-Type -->
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<!-- Styling -->
 {% css page %}
 
-<link href="{{ 'brand/favicon.jpeg' | asset_path }}" rel="shortcut icon" />
-<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="/feeds/articles.xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="{% asset_path 'favicon/apple-touch-icon.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% asset_path 'favicon/favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="194x194" href="{% asset_path 'favicon/favicon-194x194.png' %}">
+<link rel="icon" type="image/png" sizes="192x192" href="{% asset_path 'favicon/android-chrome-192x192.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% asset_path 'favicon/favicon-16x16.png' %}">
+<link rel="manifest" href="{% asset_path 'manifest.json' %}">
+<link rel="mask-icon" href="{% asset_path 'favicon/safari-pinned-tab.svg' %}" color="#121212">
+<link rel="shortcut icon" href="{% asset_path 'favicon/favicon.ico' %}">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="msapplication-TileImage" content="{% asset_path 'favicon/mstile-144x144.png' %}">
+<meta name="msapplication-config" content="{% asset_path 'browserconfig.xml' %}">
+<meta name="theme-color" content="#121212">
 
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="/feeds/articles.xml" />
 <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1">
 
-<!-- Apple Support -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#F7F7F7">
-
-<!-- Classic Metadata -->
 <meta itemprop="name" content="{{ correct_title }}">
 <meta itemprop="description" content="{{ blurb }}">
 
-<!-- Facebook Open Graph -->
 <meta property="og:title" content="{{ correct_title }}">
 <meta property="og:description" content="{{ blurb }}">
+<meta property="og:url"  content="{{ full_page_uri }}">
+<meta property="og:image" content="{{ image }}" />
 
-<meta property="og:url"  content="{{ site.url }}{{ page.url }}">
-{% if page.image %}<meta property="og:image" content="{{ site.url | append: page.image }}"/>
-{%else%}<meta name="og:image" content="{{site.url | append: '/favicon.jpg'}}"/>
-{%endif%}
-<!-- Twitter Card Support -->
-<meta name="twitter:url" content="{{page.url | prepend: site.url }}">
-<meta name="twitter:creator" content="@jackyalcine">
-<meta name="twitter:site" content="@jackyalcine">
-<meta name="twitter:title" content="{{ correct_title }}">
-<meta name="twitter:domain" content="{{site.url}}">
-<meta name="twitter:description" content="{{ blurb }}">
-{% if page.image %}<meta name="twitter:image:src" content="{{site.url | append: page.image }}"/>
-<meta name="twitter:card" content="summary_large_image">
-{%else%}<meta name="twitter:image:src" content="{{site.url | append: '/favicon.jpg'}}"/>
-<meta name="twitter:card" content="summary">
-{%endif%}<!-- End Twitter Card Support -->
+<meta name="twitter:url" content="{{ full_page_uri }}" />
+<meta name="twitter:creator" content="@jackyalcine" />
+<meta name="twitter:site" content="@jackyalcine" />
+<meta name="twitter:title" content="{{ correct_title }}" />
+<meta name="twitter:domain" content="{{site.url}}" />
+<meta name="twitter:description" content="{{ blurb }}" />
+<meta name="twitter:image:src" content="{{ image }}" />
+<meta name="twitter:card" content="summary_large_image" />
 
-<!-- Microsoft Support -->
-<meta name="application-name" content="{{ correct_title }}"/>
-<meta name="msapplication-TileColor" content="#F7F7F7"/>
-<meta name="theme-color" content="#F7F7F7"/>
-<meta name="msapplication-square70x70logo" content="/images/me-76.png" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-<!-- Microsoft Support -->
-
-<!-- Google Authorship -->
 <link rel="author" href="https://plus.google.com/118415769922038925979/posts" />
 
-<!-- Icons -->
-<link rel="apple-touch-icon" sizes="64x64" href="/images/me-64.jpeg" />
-<link rel="icon" sizes="64x64" href="/images/me-64.png" />
-
-<!-- IndieAuth -->
 <link href="https://github.com/jalcine" rel="me" />
 <link href="https://twitter.com/jackyalcine" rel="me" />

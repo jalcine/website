@@ -4,11 +4,10 @@ title: Weblog
 excerpt: >
   A listing of all of the posts Jacky has written on his website.
 ---
-<section class="db center mw9 w-100 pa2 w-80-l" itemscope itemtype='http://schema.org/Blog'>
-  {% img "{{ 'jacky-portfolio-snow-roof.jpg' | image_path }}"
-         class:"db center w-100 mw8 h-auto ma2" width:"auto" height:"auto" %}
-  <h1 class="f1 f-headline-l">Weblog</h1>
-  <p class="f4 lh-copy measure">
+{% img "{{ 'pages/weblog.jpeg' | image_path }}" class:"masthead" width:"100%" height:"auto" %}
+<section role="document">
+  <h1 class="f-headline-l lh-title">Weblog</h1>
+  <p class="lead">
     I like using the Internet a lot. I think I spend at least four hours each
     day interacting with it with various devices. This and the experiences
     I have in my life I capture here in my <strong>weblog</strong>. Some people
@@ -16,12 +15,15 @@ excerpt: >
     is my blog. It has {{ site.posts | size }} posts since {{ site.posts.last.date | date: "%Y" }}.
   </p>
 
-  <h2 class="f2 tracked-tight ttu">Entries</h2>
-  <ul class="f4 list mw-80">
+  <h2 class="tracked-tight ttu">Entries</h2>
+  <ul class="mw-80">
     {% for post in site.posts %}
-      <li>
+      <li class="lh-copy">
         <time class="ttu f6 bold mr1 dib w4" datetime="{{ post.date }}">{{ post.date | date: "%d %b %Y" }}</time>
-        <a class="dim underline-hover" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        <a class="dim underline-hover"
+          href="{{ post.url }}"
+          title="{{ post.title }}">{{ post.title }}
+        </a>
       </li>
     {% endfor %}
   </ul>
