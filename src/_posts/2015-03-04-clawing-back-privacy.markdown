@@ -2,6 +2,10 @@
 title: "Clawing Back Privacy, One Piece at a Time"
 date: 2015-03-04 03:18:57 EST
 layout: post
+excerpt: |
+  Federation (or the act of self-hosting software) is getting more and more
+  simpler with provisioning tools. Here, I mentioned some things I've set up
+  for my personal server.
 category: sovereign
 tags:
   - git

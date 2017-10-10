@@ -4,7 +4,7 @@ title: Weblog
 excerpt: >
   A listing of all of the posts Jacky has written on his website.
 ---
-{% img "{{ 'pages/weblog.jpeg' | image_path }}" class:"masthead" width:"auto" height:"auto" %}
+{% img "{{ 'pages/weblog.jpeg' | image_path }}" class:"masthead" width:"100%" height:"auto" %}
 <section role="document">
   <h1 class="f-headline-l lh-title">Weblog</h1>
   <p class="lead">
@@ -20,7 +20,10 @@ excerpt: >
     {% for post in site.posts %}
       <li class="lh-copy">
         <time class="ttu f6 bold mr1 dib w4" datetime="{{ post.date }}">{{ post.date | date: "%d %b %Y" }}</time>
-        <a class="dim underline-hover" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+        <a class="dim underline-hover"
+          href="{{ post.url }}"
+          title="{{ post.title }}">{{ post.title }}
+        </a>
       </li>
     {% endfor %}
   </ul>

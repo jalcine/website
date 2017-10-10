@@ -2,11 +2,15 @@
 layout: post
 title: "MPRIS and KDE Playing Nice"
 date: 2014-03-10 06:42:51 EDT
+excerpt: |
+  Learning about how KDE (and OpenDesktop-compliant) environments interact with
+  media players.
 category: thoughts
 tags:
   - kde
   - mpris
   - code
+  - pulseaudio
 ---
 
 I use [KDE][] and I have a collection of music playing as well as video

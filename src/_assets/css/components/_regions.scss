@@ -42,10 +42,6 @@ section[role=document] {
   }
 }
 
-header[role=group], header[role=document] {
-  @include expected-serif-fonts;
-}
-
 header[role=document] {
   @extend .bg-near-white, .w-100, .pa2;
 }

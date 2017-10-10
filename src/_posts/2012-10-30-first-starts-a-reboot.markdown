@@ -2,7 +2,7 @@
 layout: post
 title: "First Starts: A Reboot"
 date: 2012-10-30 14:34 -0500
-revised: 2017-02-06 09:35:23 PST
+revised: 2017-10-08 15:25:06 PDT
 excerpt:
   The first post made on Octopress. Oh joy!
 category: personal
@@ -31,7 +31,7 @@ working with a tech startup here in New York, so time's tied up even more
 preventing me from giving 100% to open source. That, however, still doesn't
 stop me from contributing to the community.
 
-### Language Background ###
+### Language Background
 
 I didn't know if this was necessary to mention, but I'm including it anyways.
 I'm a big fan of C++, it being the first programming language I wrote serious
@@ -45,7 +45,7 @@ language. I learned Perl from a book borrowed at the library and picked up
 Python as a beginner's language into [Ubuntu][]. Now, I got about 6 languages
 under my belt and I'm eager to learn more.
 
-### Bugzilla: Nice but not Complete ###
+### Bugzilla: Nice but not Complete
 
 I'm quite a fan of [Bugzilla](http://www.bugzilla.org). It has an incredible
 amount of potential and the next few projects I have in mind should definitely

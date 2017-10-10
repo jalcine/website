@@ -1,10 +1,18 @@
 ---
 layout: bare
+image: none
+excerpt: none
 ---
+
 {% if page.image and page.image != 'none' %}
   {% include masthead_post_header.html %}
 {% else %}
   {% include post_header.html %}
+{% endif %}
+{% if page.excerpt and page.excerpt != 'none' %}
+<blockquote class="excerpt">
+  {{ page.excerpt | markdownify | strip_tags: '<p></p>' }}
+</blockquote>
 {% endif %}
 <address role="document" class="post">
   <span>:book: {{ page.category }}</span>
@@ -12,23 +20,18 @@ layout: bare
   <span>:clock7: <time>{{ page.date | date_to_rfc822}}</time></span>
   {% if page.revised %}<span>:clock10: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
 </address>
-{% if page.excerpt != false or page.excerpt != '' %}
-  <blockquote class="excerpt">
-    {{ page.excerpt | markdownify | strip_tags: '<p></p>' }}
-  </blockquote>
-{% endif %}
-<main role="post">
+<main role="document" class="post">
   {{ content }}
 </main>
-<footer role="post" class="pa2 center">
-  <div class="center tc db mw8 w-100-l">
+<footer role="document" class="post">
+  <nav>
     {% if page.previous %}<a class="fl-l mv2 center pa2 dib" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>{% endif %}
     {% if page.next %}<a class="fr-l mv2 center pa2 dib" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>{% endif %}
-  </div>
-  <p class="f6 f5-ns mw6 center pa1 cb">
-    Thoughts? Comments? Suggestions? Rage posts? Send all of that to either my
-    <a href="https://twitter.com/jackyalcine">Twitter handle</a> or <a
-      href="mailto:yo@jacky.wtf">my email address</a> and I'll get back to you
-    as soon as feasibly possible.
+  </nav>
+  <p class="measure-narrow">
+    Thoughts? Comments? Suggestions? Rage posts?<br />
+    Send all of that to either
+    <a href="https://twitter.com/jackyalcine">@jackyalcine</a> or 
+    <a href="mailto:blog@jacky.wtf">e-mail</a>.
   </p>
 </footer>

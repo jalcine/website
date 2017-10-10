@@ -1,5 +1,10 @@
+@mixin post-spacing {
+  @extend .ma4, .ma2-l, .pa2;
+}
+
 address[role=document].post {
-  @extend .f6, .pa2, .w-80, .db, .fw1, .ph4-l, .ph1;
+  @include post-spacing;
+  @extend .f6, .w-80, .db;
 
   > span {
     @extend .db;
@@ -7,11 +12,30 @@ address[role=document].post {
   }
 }
 
-header[role=post] {
+header[role=document].post {
   @extend .w-90, .w-80-l;
+  @include post-spacing;
+
+  h1 {
+    @extend .pl1;
+    @extend .tracked-tight;
+    @extend .pa4, .pl1;
+    @extend .baskerville, .serif;
+    @extend .f-headline-l, .f1;
+    @extend .fw3;
+    @extend .near-black;
+  }
+
+  h3 {
+    @extend .pa2;
+    @extend .f3;
+    @extend .fw1;
+    @extend .gray;
+  }
   
   &.masthead {
     @extend .w-100, .w-100-l;
+    @extend .ma0, .pa0;
 
     > h1 {
       @extend .tc;
@@ -23,35 +47,44 @@ header[role=post] {
 
 blockquote.excerpt {
   @extend .pa2, .fw7, .f3, .f2-l, .measure-narrow, .cb, .gray, .lh-copy;
-  margin-before: 0rem;
-  margin-after: 0rem;
-  margin-start: 0rem;
-  margin-end: 0rem;
+  @include post-spacing;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0;
 }
 
-main[role=post] {
-  @extend .w-100;
+main[role=document].post {
+  @include post-spacing;
+  @extend .w-100, .mw8;
 
-  p {
+  > p,
+  > ol > li,
+  > ul > li
+  {
     @extend .f4;
+    @extend .db;
+    text-align: justify;
+    text-align-last: left;
+  }
+
+  p, blockquote {
     @extend .lh-copy;
   }
 
-  ul {
-    @extend .ml4;
-    @extend ul.arrows;
-    
-    > li {
-      @extend .lh-copy;
-      
-      &:before {
-        @extend .ph2;
+  ol > li {
+    > p {
+      &:first-line { 
+        font-size: inherit;
+        font-weight: inherit;
       }
     }
   }
-  
-  h1, h2, h3, h4, h5, h6, p, blockquote {
-    @extend .w-90, .w-80-l, .mw8, .ph4-l, .ph1;
+ 
+  h1, h2, h3, h4, h5, h6,
+  p, blockquote,
+  ul, ol {
+    @extend .w-90, .w-80-l;
   }
 
   .jekyll-twitter-plugin, .twitter-tweet {
@@ -59,13 +92,13 @@ main[role=post] {
   }
 
   blockquote {
-    @extend .gray, .mh3;
-    margin-before: 0rem;
-    margin-after: 0rem;
-    margin-block-end: 0rem;
-    margin-block-start: 0rem;
-    margin-inline-start: 0rem;
-    margin-inline-end: 0rem;
+    @extend .gray, .mh3, .pv5;
+    margin-before: 0;
+    margin-after: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
   }
 
   hr {
@@ -75,10 +108,23 @@ main[role=post] {
   }
 
   .footnotes {
-    @extend .f5;
-    ol {
+    @extend .ml3;
+  }
+}
+
+footer[role=document].post {
+  @extend .w-90, .w-80-l, .mw8;
+  @include post-spacing;
+
+  > nav {
+    @extend .center, .db, .cb, .w-100, .fl;
+
+    > a {
+      @extend .mv2, .pa2, .dib;
     }
   }
-  
-  // TODO: Tweak image rendering in Jekyll to remove <p> + <img>
+
+  > p:first-child {
+    @extend .f6, .mw6, .center, .pa1, .cb;
+  }
 }
