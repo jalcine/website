@@ -53,3 +53,7 @@ header[role=document] {
     }
   }
 }
+
+img.emoji {
+  @extend .ma1;
+}

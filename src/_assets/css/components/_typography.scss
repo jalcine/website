@@ -32,11 +32,6 @@ p.lead {
   @extend .lh-copy;
 }
 
-p:first-of-type:first-line {
-  @extend .fw3;
-  font-size: 125%;
-}
-
 ul {
   @extend .list;
   padding-inline-start: 0rem;

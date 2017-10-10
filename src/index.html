@@ -7,8 +7,12 @@ components:
 ---
 {% assign clean_blurb = site.blurb | strip_tags: '<p></p>' %}  
 {% assign brand_landing_image_path = 'brand/self.jpeg' | image_path %}
-
-<section class="section--dark" role="main">
+<div class="w-100 pa3 tc db cf v-mid bg-yellow near-black fw3">
+  I'm open to new long-term contracts and positions.
+  <a href="/work/freelance/" class="navy fw7">Learn more</a>
+  about how we can work &amp; build on your app idea.
+</div>
+<section class="section--dark vh-100" role="main">
   <div class="w-100 w-80-l center-l db cf v-mid">
     <div class="dib-l fl-l w-50-l center w-auto h-70">
       {% img "{{ brand_landing_image_path }}"
@@ -20,7 +24,7 @@ components:
         :camera: credit goes to <a href="https://thedanigrant.com">@thedanigrant</a>
       </p>
     </div>
-    <div class="dib-l fl-l w-50-l ph3 w-100 tl">
+    <div class="dib-l fl-l w-50-l pl3-m pl5-l ph3 w-100 tl">
       <h1 class="f1 f-headline-l tracked-tight mv3 tc tl-l">jackyalciné</h1>
       <p class="measure-l lh-copy">{{ clean_blurb }}</p>
       <ul>
@@ -36,14 +40,3 @@ components:
     </div>
   </div>
 </section>
-<div class="w-100 pv2 ph4 w-80-l center-l db cf v-mid bg-yellow near-black fw3">
-  I'm open to new long-term contracts and positions.
-  <a href="/work/freelance/" class="navy fw7">Learn more</a>
-  about how we can work &amp; build on your app idea.
-</div>
-
-
-
-
-
-
