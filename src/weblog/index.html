@@ -18,9 +18,9 @@ excerpt: >
   <h2 class="tracked-tight ttu">Entries</h2>
   <ul class="mw-80">
     {% for post in site.posts %}
-      <li class="lh-copy">
-        <time class="ttu f6 bold mr1 dib w4" datetime="{{ post.date }}">{{ post.date | date: "%d %b %Y" }}</time>
-        <a class="dim underline-hover"
+      <li class="lh-copy mv2">
+        <time class="ttu f6 bold mr1 cb dib-l db w4" datetime="{{ post.date }}">{{ post.date | date: "%d %b %Y" }}</time>
+        <a class="dib-l db dim underline-hover"
           href="{{ post.url }}"
           title="{{ post.title }}">{{ post.title }}
         </a>
