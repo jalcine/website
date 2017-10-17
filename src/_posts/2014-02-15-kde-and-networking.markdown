@@ -2,7 +2,10 @@
 layout: post
 title: KDE and Networking - Thoughts
 date: 2014-02-15 07:46:34 EST
+revised: 2017-10-08 16:19:36 PDT
 comments: true
+excerpt: |
+  KDE and networking is an interesting space. I try to get into it here.
 category: research
 tags:
   - kde

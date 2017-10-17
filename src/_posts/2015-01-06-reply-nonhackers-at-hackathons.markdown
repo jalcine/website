@@ -1,13 +1,14 @@
 ---
 date: 2015-01-06 07:54:17 EST
-layout: response
-link:
-  title: "Why you shouldn't bring new programmers to a hackathon"
-  src: http://simplyian.com/2015/01/04/Why-you-shouldnt-bring-new-programmers-to-a-hackathon/
-  author:
-    link: "http://ian.pw"
-    name: "Ian Macalinao"
+layout: post
+title: "On 'Hackathons Don't Create New Hackers'"
+category: reply
+tags:
+  - reply
+  - hackathons
 ---
+
+This post is a response to [Ian's post][src] .
 
 > Hackathons don't create new hackers.
 
@@ -65,3 +66,5 @@ The resonating point of Ian's post lies here:
 > hackers with potential.
 
 Couldn't agree more.
+
+[src]: http://simplyian.com/2015/01/04/Why-you-shouldnt-bring-new-programmers-to-a-hackathon/

@@ -2,6 +2,8 @@
 layout: post
 title: "Recovering My Primary Machine"
 date: 2015-05-04 04:41:57 EDT
+excerpt: |
+  Me dialoguing how I fixed my laptop.
 category: thoughts
 tags:
   - recovery
@@ -32,7 +34,6 @@ space for me since I don't really save much locally[^2] outside of books and
 source code.
 
 ## Problems I Have Now (And Potential Solutions)
-
 A problem I'm having now is to prevent myself from allowing my machine to be up
 for so long without really shutting down. Typically, with `neuromancer`, I made
 use of hibernation to just save all of my current activities so it's less of a
@@ -54,7 +55,6 @@ environments but using KDE, I'd want to synchronize my desktop settings
 accordingly.
 
 ## Tips
-
 **Always** make a backup. The only excuse for not making a backup of your files
 is that you wish to have a ephemeral file system. There's quite a few good tools
 for those who can host their own setup for backups like [Sparkleshare][] and even

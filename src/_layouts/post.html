@@ -1,45 +1,37 @@
 ---
 layout: bare
+image: none
+excerpt: none
 ---
+
 {% if page.image and page.image != 'none' %}
-  <header class="ph3 ph4-ns pt4 pt5-ns">
-    {% img "{{ page.image }}" class:"w-auto dib ma1 center h-auto w-100 w-50-l fr-l" %}
-    <h1 class="baskerville f2 f1-m f-headline-l measure lh-title fw1 pa2 ma3 ">{{ page.title }}</h1>
-    {% if page.byline %}<h2 class="f3 fw1 pa1 fg-light">{{ page.byline }}</h2>{% endif %}
-    {% if page.date %}<time class="f6 mh2 ttu db fg-light">{{ page.date |
-        date_to_rfc822}}{% if page.revised %}, updated <strong>{{ page.revised |
-            date_to_rfc822 }}</strong>{% endif %}</time>{% endif %}
-  </header>
+  {% include masthead_post_header.html %}
 {% else %}
-  <header class="db center mw-90 pa4 tc tl-l">
-    <h1 class="pa4 mv0 mb2 baskerville f2 f1-m f-headline-l fw1 fg">{{ page.title }}</h1>
-    {% if page.byline %}<h3 class="pa4 f3 fw1 fg-light">{{ page.byline }}</h3>{% endif %}
-    {% if page.date %}<time class="f6 ttu">{{ page.date | date_to_rfc822}}{% if
-          page.revised %}, updated <strong>{{ page.revised | date_to_rfc822
-            }}</strong>{% endif %}</time>{% endif %}
-  </header>
+  {% include post_header.html %}
 {% endif %}
-<p class="f6 f5-l pa2 pa4-l mw8 w-80 db fg-light tl">
-  A {{ page.category }} post{% if page.tags %}, tagged under {{ page.tags | linkify_tags }}{% endif %}.
-</p>
-{% if page.excerpt != false or page.excerpt != '' %}
-  <blockquote class="pa2 f3 f2-l measure-narrow center cb fg-light lh-title">
-    {{ page.excerpt | markdownify }}
-  </blockquote>
-  <p class="tc moon-near-black">&sect;</p>
+{% if page.excerpt and page.excerpt != 'none' %}
+<blockquote class="excerpt">
+  {{ page.excerpt | markdownify | strip_tags: '<p></p>' }}
+</blockquote>
 {% endif %}
-<main role="post">
+<address role="group" class="post">
+  {% if page.category %}<span>:book: {{ page.category }}</span>{% endif %}
+  {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
+  {% if page.date %}<span>:clock7: <time>{{ page.date | date_to_rfc822 }}</time></span>{% endif %}
+  {% if page.revised %}<span>:clock10: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
+</address>
+<main role="group" class="post">
   {{ content }}
 </main>
-<footer role="post" class="pa2 center">
-  <div class="center tc db mw8 w-100-l">
+<footer role="group" class="post">
+  <nav>
     {% if page.previous %}<a class="fl-l mv2 center pa2 dib" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>{% endif %}
     {% if page.next %}<a class="fr-l mv2 center pa2 dib" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>{% endif %}
-  </div>
-  <p class="f6 f5-ns mw6 center pa1 cb">
-    Thoughts? Comments? Suggestions? Rage posts? Send all of that to either my
-    <a href="https://twitter.com/jackyalcine">Twitter handle</a> or <a
-      href="mailto:yo@jacky.wtf">my email address</a> and I'll get back to you
-    as soon as feasibly possible.
+  </nav>
+  <p class="measure lh-copy dark-gray">
+    Thoughts? Comments? Suggestions? Rage posts?<br />
+    Send all of that to either
+    <a href="https://twitter.com/jackyalcine">@jackyalcine</a> or 
+    <a href="mailto:blog@jacky.wtf">e-mail</a>.
   </p>
 </footer>

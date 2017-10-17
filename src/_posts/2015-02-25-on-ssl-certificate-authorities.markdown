@@ -2,6 +2,9 @@
 layout: post
 title: "On SSL Certificate Authorities"
 date: 2015-02-25 22:29:54 EST
+revised: 2017-10-08 16:33:41 PDT
+excerpt: |
+  Thoughts on CAs. If you know me...
 category: security
 tags:
   - thoughts

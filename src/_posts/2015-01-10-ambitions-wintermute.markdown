@@ -2,6 +2,8 @@
 layout: post
 title: "Ambitions for Wintermute"
 date: 2015-01-10 04:36:20 EST
+excerpt: |
+  Explaining my ambitions for Wintermute.
 category: wintermute
 tags:
   - long-reads

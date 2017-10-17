@@ -2,7 +2,10 @@
 layout: post
 title: "cmake.vim 0.4.x - A New Plugin"
 date: 2014-05-05 20:17:24 EDT
-categories:
+category: vim
+excerpt: |
+  Just letting y'all know what's up with cmake 0.4.1.
+tags:
   - vim
   - cmake
   - announcement

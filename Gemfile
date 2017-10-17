@@ -11,26 +11,38 @@ gem 'rake-jekyll'
 
 group :jekyll do
   gem 'autoprefixer-rails'
-  gem 'jekyll', '3.5.0'
-  gem 'jekyll-tagging-related_posts'
+  gem 'classifier-reborn'
+  gem 'jekyll', '3.6.0'
   gem 'kramdown'
   gem 'mini_magick'
   gem 'rb-gsl'
+  gem 'rouge'
+  gem 'sprockets-es6'
+  gem 'twitter_web_intents'
 end
 
 group :jekyll_plugins do
-  gem 'jekyll-assets', git: 'https://github.com/jekyll/jekyll-assets'
+  gem 'amp-jekyll'
+  gem 'jekyll-analytics'
+  gem 'jekyll-asciinema'
+  gem 'jekyll-assets'
+  gem 'jekyll-autolink_email'
+  gem 'jekyll-email-protect'
+  gem 'jekyll-feed'
   gem 'jekyll-gist'
+  gem 'jekyll-money'
+  gem 'jekyll-redirect-from'
+  gem 'jekyll-responsive-image'
   gem 'jekyll-sass-converter'
-  gem 'jekyll-sitemap', git: 'https://github.com/jekyll/jekyll-sitemap'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-tagging-related_posts'
+  gem 'jekyll-textile-converter'
   gem 'jekyll-timeago'
   gem 'jekyll-twitter-plugin'
-  gem 'jekyll-textile-converter'
+  gem 'jekyll-typogrify'
+  # gem 'jekyll-webmention_io'
+  gem 'jekyll_version_plugin'
   gem 'jemoji'
-  gem 'octopress-quote-tag', git: 'https://github.com/octopress/quote-tag',
-                             branch: 'master'
-  gem 'octopress-video-tag', git: 'https://github.com/anarchivist/octopress-video-tag',
-                             branch: 'loosen-gemspec'
 end
 
 # {{{ Development
@@ -58,5 +70,18 @@ group :guard do
   gem 'guard-livereload', require: false
   gem 'guard-npm', require: false
   gem 'guard-rack', require: false
+  gem 'guard-rspec', require: true
+  gem 'libnotify'
 end
 # }}}
+
+group :test do
+  gem 'rspec'
+  gem 'capybara'
+  gem 'capybara-screenshot'
+  gem 'capybara-puma'
+  gem 'capybara-accessible'
+  gem 'chromedriver-helper'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
+end

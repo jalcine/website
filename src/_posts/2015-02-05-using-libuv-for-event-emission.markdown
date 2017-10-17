@@ -1,6 +1,8 @@
 ---
 title: "Using libuv for Event Subscription & Invoking in Wintermute"
 date: 2015-02-05 01:41:54 EST
+excerpt: |
+  libuv is amazing. Now to use it for events!
 category: development
 layout: post
 tags:
@@ -61,7 +63,6 @@ system. Looks like Wintermute's going to have a fat singleton [like the good ol'
 days][singleold].
 
 ## Building the Event Loop
-
 Cracking some knuckles and running my hand through my hair, I began to write
 out the C++11-ish version of `uvemitter` into Wintermute. The issue with
 `uv-emitter` that I had is constant breaking of Wintermute's linting and how

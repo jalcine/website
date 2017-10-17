@@ -2,7 +2,10 @@
 layout: post
 title: "Moving Around Vim"
 date: 2014-04-24 23:27:07 EDT
-categories:
+excerpt: |
+  A little anchor into how I can move around in Vim.
+category: vim
+tags:
   - vim
   - self-reference
 ---

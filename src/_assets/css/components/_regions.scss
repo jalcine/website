@@ -1,0 +1,59 @@
+.section--dark {
+  @extend .bg-near-black;
+  @extend .white;
+  
+  a {
+    @extend .blue;
+
+    &:hover {
+      @extend .washed-blue;
+    }
+  }
+}
+
+main {
+  @extend .cf, .db;
+}
+
+footer[role=group] {
+  @extend .near-black;
+  @extend .ph2;
+  @extend .ph4-l;
+  @extend .pv4;
+  @extend .pv6-l;
+  @extend .cb;
+  @extend .db;
+  @extend .f5;
+  
+  a {
+    @extend .navy;
+
+    &:hover {
+      @extend .blue;
+    }
+  }
+}
+  
+section[role=document] {
+  @extend .w-80-l, .w-100, .mw9, .center, .db, .pa4, .mv4, .cf;
+
+  > img.masthead {
+    @extend .db, .center, .w-100, .h-auto, .cb, .fl;
+  }
+}
+
+header[role=document] {
+  @extend .bg-near-white, .w-100, .pa2;
+ 
+  a {
+    @extend .navy;
+
+    &:hover {
+      @extend .blue;
+    }
+  }
+}
+
+img.emoji {
+  @extend .ma1;
+}

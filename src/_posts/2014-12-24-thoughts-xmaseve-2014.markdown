@@ -2,10 +2,13 @@
 layout: post
 date: 2014-12-24 19:50:53 EST
 title: "Christmas Eve Thoughts"
+excerpt: |
+  Reflections on Christmas Eve.
 category: opinion
 tags:
   - thoughts
   - damn
+  - christmas eve
 ---
 
 It's been a very rough three months for me. Three months of hair pulling and
@@ -26,7 +29,7 @@ things I love doing and my slow distancing from people I care about.
 It's Christmas Eve and my family doesn't really Christmas like that, despite
 some unspoken mantra that we should be more giggly this time of
 year. I wake up, wrestle, eat with and sleep on top of these people for the
-last twenty years of my life. Any closer and all of the Alcinés would become a
+last twenty years of my life. Any closer and all of the Alciné would become a
 hivemind! It's not good, even my brother's mentioned he doesn't see me anymore.
 I'm going to fix this by doing what I've done before, when I was a bit more
 ignorant in 2011. I'm going to spend large portions of time with my family

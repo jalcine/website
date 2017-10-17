@@ -8,7 +8,7 @@ Dotenv.load '.envrc'
 set :domain, ENV['JALCINE_DEPLOY_DOMAIN']
 set :deploy_to, ENV['JALCINE_DEPLOY_PATH']
 set :verbose, true
-set :keep_releases, 30
+set :keep_releases, 5
 
 set :shared_paths, ['images']
 
@@ -20,7 +20,7 @@ task :upload do
   ssh "mkdir -p #{deploy_to}/tmp-scp"
   scp_upload("#{Dir.pwd}/_deploy/*", "#{deploy_to}/tmp-scp",
              recursively: true,
-             verbose: false)
+             verbose: true)
   queue "cp -r #{deploy_to}/tmp-scp/* ."
 end
 

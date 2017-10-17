@@ -1,7 +1,9 @@
 ---
 layout: post
 title: The Blur Between The Sense of Technology and People
-byline: My response to the Google Photos incidient and then some
+byline: My response to the Google Photos incident and then some.
+excerpt: |
+  After the incident, I had some words to share.
 date: 2015-07-16 21:12:16 EDT
 revised: 2015-07-18 22:54:20 EDT
 category: response
@@ -40,7 +42,6 @@ What will be addressed here are the issues that led to this problem and maybe
 the providing of solutions for free.
 
 ## Having a Diverse & Inclusive Quality Assurance Team
-
 Having a strong QA (quality assurance) team allows developers and product
 managers work with comfort knowing that products are working to the expectations
 that they both can agree on. There's no question that Google has the such[^2].
@@ -67,13 +68,12 @@ wouldn't have allowed what I've experienced from happening to them? Were lower
 quality images (like in the range of two mega pixels) used? Did the tests include
 personal content or were they purely stock level imagery?
 
-![Obama's questioning this as well.](/images/obama-wtf.gif)
+{% img "{{ 'obama-wtf.gif' | image_path }}" width:"auto" height:"auto" alt:"Obama's questioning this as well."%}
 
 ## Higher Quality === Better Matching?
-
 For those curious, here's the details on one of the pictures from that collection:
 
-![Details on image with matching issues.](/images/snapshot249.png)
+{% img "{{ 'snapshot249.png' | image_path }}" width:"auto" height:"auto" alt:"Details on image with matching issues." %}
 
 All of the shots were taken on a [Nexus 4][10] using the front-facing camera.
 The phone is still in my possession after these few years. Tech pundits are
@@ -96,7 +96,6 @@ difference was that we were facing the sun and not putting our backs to it.
 > with her; so don't ask for said images.
 
 ## So What? We Taking Group Photos?
-
 One can only assume how much of a deal this might be to Google. The chief
 architect didn't think it was a good thing. My tweet following is one a _LOT_ of
 people somehow over looked; at least the first sentence.

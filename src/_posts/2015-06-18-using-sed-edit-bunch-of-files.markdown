@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Using Sed to Edit A Bunch of Files At Once
+excerpt: |
+  Real talk, I wrote this so I could remember _how_ to do this.
 date: 2015-06-18 15:53:00 EDT
 category: tips
 tags:

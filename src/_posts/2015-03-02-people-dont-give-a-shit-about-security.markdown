@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "Regular People Don't Give a Shit About Their Digital Security"
-category: thought
+excerpt: |
+  Regular is a loaded term. However, it stands to say that the general public
+  could care less if your site is using TLS, HSTS, HPKP, etc.
 date: 2015-03-02 23:18:29 EST
+category: thought
 tags:
   - world
   - security

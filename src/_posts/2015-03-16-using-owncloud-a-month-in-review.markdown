@@ -1,6 +1,8 @@
 ---
 layout: post
-title: "Using Owncloud: A Month In Review + Extra"
+title: "Using ownCloud: A Month In Review + Extra"
+excerpt: |
+  My thoughts on using ownCloud for one month. And then some.
 category: sovereignty
 tags:
  - owncloud
@@ -13,7 +15,12 @@ I've been using :cloud: [ownCloud][] to handle my contacts and calendars recentl
 contact purposes. So far, it's been working out pretty well. I have quite a
 few applications installed on my instance handling files and RSS as well! :smile:
 
-![ownCloud's file page](/images/owncloud-landing.png)
+{% img "{{ 'posts/owncloud-landing.png' | image_path }}"
+class:"post"
+alt:"ownCloud's landing page."
+width:"auto"
+height:"auto"
+%}
 
 The nifty thing is that it has a Android client for file synchronization so I can
 take a picture or video on my phone and it syncs over to ownCloud and gets on
@@ -32,8 +39,12 @@ default theme is mobile Web friendly. So far, most of the applications for
 ownCloud seem to take advantage of the responsive nature (or ownCloud does a
 decent job of chopping up UI elements for applications).
 
-![ownCloud's activity stream on mobile view](/images/owncloud-activity-mobile.png)
-{:style=>"height: 300px"}
+{% img "{{ 'posts/owncloud-activity-mobile.png' | image_path }}"
+class:"post"
+alt:"ownCloud's activity stream on mobile view."
+width:"auto"
+height:"auto"
+%}
 
 It's also empowering to know that you can really take back a lot of these
 services you like (or need) to use and even enhance the tools to work in your

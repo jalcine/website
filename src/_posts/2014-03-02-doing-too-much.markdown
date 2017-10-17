@@ -3,6 +3,8 @@ layout: post
 title: On Doing Too Much
 date: 2014-03-02 01:10:55 EST
 category: reflection
+excerpt: |
+  Had to keep it one hunnid.
 tags:
   - thoughts
   - opinion

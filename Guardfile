@@ -1,6 +1,7 @@
 # vim :set ft=ruby:
 
 clearing :off
+notification :tmux, display_message: false
 
 # Automatically install gems when I add some to my gem list.
 guard :bundler do
@@ -21,7 +22,7 @@ guard :rack,
 end
 
 # Monitor the files for Jekyll and include in a special development mode.
-guard 'jekyll-plus', serve: false, silent: false, drafts: true,
+guard 'jekyll-plus', serve: false, silent: true, drafts: true,
         config: ['_config.yml'] do
   watch(/^src/)
   watch(/^plugins/)
@@ -30,5 +31,5 @@ end
 
 # Check on the npm packages we pull in.
 guard :npm do
-  watch('package.json')
+  watch('src/package.json')
 end

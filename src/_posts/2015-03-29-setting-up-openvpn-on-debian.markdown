@@ -2,6 +2,8 @@
 layout: post
 title: "Setting Up OpenVPN on Debian Wheezy"
 date: 2015-03-29 21:32:41 EDT
+excerpt: |
+  Set it up! Set it up!
 category: security
 tags:
   - openvpn
@@ -195,9 +197,11 @@ From here, you can do a few things:
 
   1. Experiment with different ciphers and authorizations!
      Try out `AES-256-CBC`, the one commonly used for higher grade encryption.
-  2. Enable **client-to-client** in your server so you can chat with other devices
+
+  1. Enable **client-to-client** in your server so you can chat with other devices
      on the network. Useful for making private Web services avaiable on only VPN
      users.
+
 [openvpn]: http://openvpn.net/
 [oa]: http://git.jacky.wtf/oa
 [1]: https://wiki.debian.org/OpenVPN#Static-Key_VPN

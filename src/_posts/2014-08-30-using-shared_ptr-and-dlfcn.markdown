@@ -2,7 +2,10 @@
 layout: post
 title: "Using `shared_ptr` to manage `dlfcn.h`"
 date: 2014-08-30 23:20:15 EDT
-categories:
+excerpt: |
+  Trying to wrangle with using shared_ptr in dlfcn.h.
+category: development
+tags:
   - development
   - c++
   - libraries

@@ -3,20 +3,40 @@ layout: bare
 title: "Jacky Alciné is an educator, software engineer, and Black as hell."
 components:
   header: false
+  footer: false
 ---
-<section class="h-100 bg-near-black near-white w-100 db">
-  <div class="w-90 w-60-l center pa3-l pa1">
-    <h1 class="f1 f-headline-l lh-title avenir tracked-tight">jackyalciné</h1>
-    <p class="f3 lh-copy roboto fw3 measure">
-      {{ site.blurb }}
-    </p>
-    <p class="f3 lh-copy roboto fw3 measure">
-      I write often on my blog. The last thing I wrote was <a href="{{
-      site.posts[0].url }}">{{ site.posts[0].title }}</a>. Learn more about
-    <a href="/work/">where I work</a>, <a href="/press/">how to write about
-      me</a> and how to <a href="/contact/">contact me</a>.
-    </p>
+{% assign clean_blurb = site.blurb | strip_tags: '<p></p>' %}  
+{% assign brand_landing_image_path = 'brand/self.jpeg' | image_path %}
+<section class="section--dark min-vh-100" role="main">
+  <div class="w-100 pa3 tc db cf v-mid bg-yellow near-black fw3">
+    I'm open to new long-term contracts and positions.
+    <a href="/work/freelance/" class="navy fw7">Learn more</a>
+    about how we can work &amp; build on your app idea.
   </div>
-  {% img "{{ 'brand/masthead.jpg' | image_path }}"
-         class:"db center w-100 h-auto" width:"auto" height:"auto" %}
+  <div class="w-100 w-80-l center-l db cf v-mid">
+    <div class="dib-l fl-l w-40-l center w-auto h-70">
+      {% img "{{ brand_landing_image_path }}"
+            class:"w-100-l h-auto mv2 db center mw6-m w-auto"
+            draggable:"false"
+            alt:"Jacky looking to the right at Dara who's not in frame at Interact 2017."
+      %}
+      <p class="lh-solid gray tc tr-l ttu f7 mt0-l">
+        :camera: credit goes to <a href="https://thedanigrant.com">@thedanigrant</a>
+      </p>
+    </div>
+    <div class="dib-l fl-l w-60-l pl3-m pl5-l ph3 w-100 tl">
+      <h1 class="f1 f-headline-l tracked-tight mv3 tc tl-l">jackyalciné</h1>
+      <p class="measure-l lh-copy">{{ clean_blurb }}</p>
+      <ul>
+        {% for entry in site.data.links.landing %}
+        <li class="lh-solid v-mid pv1">
+          :{{ entry.emoji }}: {{ entry.action }}
+          <a href="{{ entry.link.uri }}" title="{{ entry.link.title }}">
+            {{ entry.link.text }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </section>

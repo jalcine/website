@@ -2,7 +2,15 @@
 layout: post
 title: What's There to Build (Anymore)?
 date: 2014-03-20 08:38:47 EDT
+excerpt: |
+  A bit of a rant about what's worth building anymore.
 category: thoughts
+tags:
+  - education
+  - growth
+  - product development
+  - ideation
+  - road block
 ---
 
 I've recently got a copy of this book called Hackers[^1] and so far, it's a

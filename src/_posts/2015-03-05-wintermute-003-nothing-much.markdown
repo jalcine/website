@@ -2,6 +2,8 @@
 layout: post
 title: "Wintermute 0.0.3; Nothing Much"
 date: 2015-03-05 17:34:18 EST
+excerpt: |
+  Release updates and reflection about Wintermute 0.0.3.
 category: wintermute
 tags:
   - progress

@@ -2,6 +2,8 @@
 layout: post
 title: Getting Started With Mer
 date: 2014-02-18 15:50:32 EST
+excerpt: |
+  Mer's a compelling bit of tech that I begin to explore in this post.
 category: review
 tags:
   - mer
