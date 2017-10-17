@@ -137,5 +137,5 @@ roles:
       you name it. I also created an ingestion tool that took content and made
       it compliant with the TinCan specification for educator software.
 
-      **Technologies:** Heroku, Ruby, Sinatra, Express, Backbone.js, Ruby on Rails,
-                    MySQL
+      **Technologies:** Heroku, Ruby, Sinatra, Express, Backbone.js,
+      Ruby on Rails, MySQL

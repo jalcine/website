@@ -14,21 +14,6 @@ title: My Gear
     </p>
   </div>
   <div class="fl dib w-100 w-40-l pa1">
-    <form class="mw7 center pa3" action="https://tinyletter.com/jacky-wtf" method="post" target="popupwindow"
-    onsubmit="window.open('https://tinyletter.com/jacky-wtf', 'popupwindow',
-    'scrollbars=yes,width=800,height=600');return true">
-      <fieldset class="cf bn ma0 pa0">
-        <legend class="pa0 f5 f4-ns mb3 black-80">Subcribe to my newsletter</legend>
-        <input type="hidden" value="1" name="embed" />
-        <div class="cf">
-          <label class="clip" for="tlemail">Email Address</label>
-          <input class="f6 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid w-100" placeholder="Your Email Address" type="text" name="email" value="" id="tlemail">
-          <input class="f6 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer w-100" type="submit" value="Subscribe">
-        </div>
-        <p class="f6 tc">
-          <a class="near-black" href="http://tinyletter.com/jacky-wtf/archive">View Archives</a>
-        </p>
-      </fieldset>
-    </form>
+    {% include newsletter.html %}
   </div>
 </section>
