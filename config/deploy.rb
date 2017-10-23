@@ -14,7 +14,7 @@ set :shared_paths, ['images']
 
 set :user, ENV['JALCINE_DEPLOY_USER']
 set :group, ENV['JALCINE_DEPLOY_GROUP']
-set :forward_agent, false
+set :forward_agent, true
 
 task :upload do
   ssh "mkdir -p #{deploy_to}/tmp-scp"
