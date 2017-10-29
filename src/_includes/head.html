@@ -15,13 +15,17 @@
 	{% assign image = asset_path 'favicon/android-chrome-192x192.png' %}
 {% endif %}
 {% assign full_page_uri = site.url + page.url %}
+{% if page.redirect %}
+  {% assign full_page_uri = page.redirect.to %}
+{% endif %}
 {% endcapture %}
 <title>{{ correct_title }}</title>
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+{% if page.redirect %}
+  <meta http-equiv="refresh" content="2; url={{ page.redirect.to }}">
+{% endif %}
 {% css page %}
-
 <link rel="apple-touch-icon" sizes="180x180" href="{% asset_path 'favicon/apple-touch-icon.png' %}">
 <link rel="icon" type="image/png" sizes="32x32" href="{% asset_path 'favicon/favicon-32x32.png' %}">
 <link rel="icon" type="image/png" sizes="194x194" href="{% asset_path 'favicon/favicon-194x194.png' %}">
@@ -62,5 +66,6 @@
 <link href="https://github.com/jalcine" rel="me" />
 <link href="https://twitter.com/jackyalcine" rel="me" />
 {% if page.path contains '_posts' %}
-  <link rel="amphtml" href="{{ page.id | prepend: site.ampdir | prepend: site.baseurl | prepend: site.url }}">
+<link rel="amphtml" href="{{ page.id | prepend: site.ampdir | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
+<link rel="canonical" href="{{ full_page_uri }}">

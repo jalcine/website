@@ -5,8 +5,9 @@ navigation:
     title: "Home"
     link: "/"
   -
-    title: "Newsletter"
-    link: "/newsletter/"
+    title: "Subscribe"
+    link: "/subscribe/"
+    classes: "selected"
   -
     title: "Weblog"
     link: "/weblog/"

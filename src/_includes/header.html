@@ -2,7 +2,7 @@
   <h2 class="ma0 sans-serif fr-ns ttu cb-s tracked-tight">@jackyalcine</h2>
   <nav class="ma1 f6 fw6 ttu tracked">
     {% for link in site.data.links.navigation %}
-      <a class="link dib mv1" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
+      <a {% if link.classes %}class="{{ link.classes }}"{%endif%} href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
       <span class="dib gray">{% if forloop.last != true %} // {% endif %}</span>
     {% endfor %}
   </nav>
