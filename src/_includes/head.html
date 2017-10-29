@@ -69,3 +69,5 @@
 <link rel="amphtml" href="{{ page.id | prepend: site.ampdir | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
 <link rel="canonical" href="{{ full_page_uri }}">
+
+{% webmentions_head %}

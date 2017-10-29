@@ -34,7 +34,7 @@ future: false
 relative_permalinks: false
 markdown: kramdown
 ampdir: "/amp"
-tag_page_layout: tag_page
+tag_page_layout: tags
 tag_page_dir: tag
 tag_feed_layout: tag_feed
 tag_feed_dir: tag
@@ -96,12 +96,22 @@ jekyll-mentions: https://twitter.com
 incremental: true
 gpg:
   fingerprint: "0x4DEFFC9FF82E8908"
-responsive_image:
-  template: _includes/responsive-image.html
-  default_quality: 90
-  auto_rotate: true
 
 jekyll_analytics:
   Piwik:
     url: lighthouse.jacky.wtf
     siteId: "1234"
+
+webmentions:
+  pause_lookups: false
+  username: jackyalcine
+  cache_folder: .cache/webmention
+  cache_bad_uris_for: 10
+  legacy_domains:
+    - http://jalcine.me
+    - http://www.jalcine.me
+  throttle_lookups:
+    last_week: daily
+    last_month: weekly
+    last_year: every 2 weeks
+    older: monthly
