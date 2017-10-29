@@ -34,10 +34,14 @@ future: false
 relative_permalinks: false
 markdown: kramdown
 ampdir: "/amp"
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_feed_layout: tag_feed
+tag_feed_dir: tag
 
 exclude:
-- _site
-- .asset_cache
+  - _site
+  - .asset_cache
 
 # {{{ Markdown renderer options
 kramdown:

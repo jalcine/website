@@ -35,6 +35,7 @@ group :jekyll_plugins do
   gem 'jekyll-responsive-image'
   gem 'jekyll-sass-converter'
   gem 'jekyll-sitemap'
+  gem 'jekyll-tagging'
   gem 'jekyll-tagging-related_posts'
   gem 'jekyll-textile-converter'
   gem 'jekyll-timeago'

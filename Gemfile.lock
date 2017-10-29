@@ -312,6 +312,7 @@ DEPENDENCIES
   jekyll-responsive-image
   jekyll-sass-converter
   jekyll-sitemap
+  jekyll-tagging
   jekyll-tagging-related_posts
   jekyll-textile-converter
   jekyll-timeago

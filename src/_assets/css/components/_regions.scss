@@ -35,7 +35,7 @@ footer[role=group] {
 }
   
 section[role=document] {
-  @extend .w-80-l, .w-100, .mw9, .center, .db, .pa4, .mv4, .cf;
+  @extend .mw8, .w-100, .mw9, .db, .pa4, .mv4, .cf;
 
   > img.masthead {
     @extend .db, .center, .w-100, .h-auto, .cb, .fl;
@@ -43,10 +43,14 @@ section[role=document] {
 }
 
 header[role=document] {
-  @extend .bg-near-white, .w-100, .pa2;
+  @extend .bg-near-white, .w-100, .pa1;
  
   a {
-    @extend .navy;
+    @extend .navy, .dib, .link, .mv1, .pa2-l;
+
+    &.selected {
+      @extend .bg-yellow;
+    }
 
     &:hover {
       @extend .blue;
