@@ -1,5 +1,5 @@
 <footer role="group" class="post">
-  <div class="bg-washed-blue b--navy bw1 b--dotted pa2 center mw7">
+  <div class="bg-washed-blue b--navy bw1 b--dotted pa2 mw7">
     <p class="lh-copy">
       <strong>Did you find this interesting?</strong>
       I recommend subscribing to my newsletter for more content and alerts
@@ -10,6 +10,7 @@
       <a href="/work/freelance/">Learn more</a>.
     </p>
   </div>
+  {% webmentions %}
   <p class="measure lh-copy dark-gray">
     Thoughts? Comments? Suggestions? Rage posts?<br />
     Send all of that to either
@@ -21,3 +22,4 @@
   </nav>
   </p>
 </footer>
+{% webmentions_js %}

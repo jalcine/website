@@ -23,7 +23,7 @@ end
 
 # Monitor the files for Jekyll and include in a special development mode.
 guard 'jekyll-plus', serve: false, silent: true, drafts: true,
-  config: ['_config.yml', '_config.dev.yml'] do
+        config: ['_config.yml'] do
   watch(/^src/)
   watch(/^plugins/)
   watch('_config.yml')
