@@ -4,8 +4,9 @@
 var WebFontConfig = {
   google: {
     families: [
-      'Open+Sans:100,300,500,700,italic:latin', // Default page font
-      'Alegreya:100,300,500,700,italic:latin' // Default page font
+      'Noto+Sans:400,700,italic:latin', // Default page font
+      'Lora:400,700,italic:latin', // Default page font
+      'Inconsolata:100,300,500,700,italic:latin', // Default page font
     ]
   }
 };

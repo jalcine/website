@@ -6,7 +6,7 @@ excerpt: >
 ---
 {% img "{{ 'pages/weblog.jpeg' | image_path }}" class:"masthead" width:"100%" height:"auto" %}
 <section role="document">
-  <h1 class="f-headline-l lh-title">Weblog</h1>
+  <h1 class="f1 f-headline-l lh-title">Weblog</h1>
   <p class="lead">
     I like using the Internet a lot. I think I spend at least four hours each
     day interacting with it with various devices. This and the experiences
@@ -16,6 +16,7 @@ excerpt: >
   </p>
 
   <h2 class="tracked-tight ttu">Entries</h2>
+  {% include post_listing.html posts=site.posts %}
   <ul class="mw-80">
     {% for post in site.posts %}
       <li class="lh-copy mv2">

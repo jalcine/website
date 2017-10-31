@@ -1,7 +1,6 @@
 .section--dark {
   @extend .bg-near-black;
   @extend .white;
-  
   a {
     @extend .blue;
 
@@ -24,7 +23,7 @@ footer[role=group] {
   @extend .cb;
   @extend .db;
   @extend .f5;
-  
+
   a {
     @extend .navy;
 
@@ -33,7 +32,7 @@ footer[role=group] {
     }
   }
 }
-  
+
 section[role=document] {
   @extend .mw8, .w-100, .mw9, .db, .pa4, .mv4, .cf;
 
@@ -44,12 +43,14 @@ section[role=document] {
 
 header[role=document] {
   @extend .bg-near-white, .w-100, .pa1;
- 
+
   a {
-    @extend .navy, .dib, .link, .mv1, .pa2-l;
+    @extend .navy, .dib, .link, .mv1, .pv2, .pv1;
 
     &.selected {
       @extend .bg-yellow;
+      @extend .bw2;
+      @extend .b--yellow;
     }
 
     &:hover {

@@ -2,15 +2,14 @@
 layout: bare
 ext: html
 ---
-
-<div class="post">
-  <h1>Tag: {{ page.tag }}</h1>
-  <ul>
-    {% for post in site.tags[page.tag] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-        {{ post.description }}
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-<hr>
+<section role="document">
+  <h1 class="lh-title f-headline-l">Posts Tagged "{{ page.tag }}"</h1>
+  <p class="lh-copy lead">
+    Here's a list of posts with the tag "{{ page.tag }}". You can subscribe to
+    these posts by visiting
+    <a href="/{{site.tag_feed_dir}}{{page.tag}}.xml">this page</a>.
+  </p>
+  {% assign tag_posts = site.tags[page.tag] %}
+  {{ tag_posts }}
+  {% include post_listing.html posts=tag_posts %}
+</section>

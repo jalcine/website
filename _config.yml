@@ -35,9 +35,9 @@ relative_permalinks: false
 markdown: kramdown
 ampdir: "/amp"
 tag_page_layout: tags
-tag_page_dir: tag
+tag_page_dir: weblog/tag/
 tag_feed_layout: tag_feed
-tag_feed_dir: tag
+tag_feed_dir: feeds/tags/
 
 exclude:
   - _site
@@ -103,7 +103,6 @@ jekyll_analytics:
     siteId: "1234"
 
 webmentions:
-  pause_lookups: false
   username: jackyalcine
   cache_folder: .cache/webmention
   cache_bad_uris_for: 10
@@ -115,3 +114,8 @@ webmentions:
     last_month: weekly
     last_year: every 2 weeks
     older: monthly
+
+autolink_email:
+  link_attr: class='email-link' # attributes to add to the link
+  skip_tags: ['pre', 'code']            # tags to skip
+  escape: true
