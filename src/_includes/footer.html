@@ -1,9 +1,14 @@
-<footer role="group" class="post">
+<footer role="group">
   <h2 class="f2 mv1">{{ site.name }}</h2>
   <div class="cf db w-100">
     <div class="f6 w-100 w-70-l fl-l">
       <span class="gray">Been at this since 2010.</span><br />
       <p class="f6 lh-copy measure-narrow">{{ site.description }}</p>
+      <p class="f6 lh-copy measure-narrow">
+        This site is an undergoing experiment to join the
+        <a href="" title="" target="_blank">IndieWeb</a>.
+        <a href="" target="_blank">Learn more</a>.
+      </p>
       <nav class="tc-s tj-ns">
         {% for link in site.data.links.navigation %}
           <a class="link dib mv1" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>

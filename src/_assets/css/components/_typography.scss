@@ -3,16 +3,27 @@
   
   @at-root {
     html.wf-active & {
-      font-family: "Open Sans";
+      font-family: "Noto Sans";
     }
   }
 }
+
 @mixin expected-serif-fonts {
   @extend .serif;
   
   @at-root {
     html.wf-active & {
-      font-family: "Alegreya";
+      font-family: "Lora";
+    }
+  }
+}
+
+@mixin expected-monospace-fonts {
+  @extend .code;
+  
+  @at-root {
+    html.wf-active & {
+      font-family: "Inconsolata";
     }
   }
 }
@@ -24,6 +35,10 @@ h1, h2, h3, h4, h5, h6, blockquote {
 p, body, div, li {
   @include expected-sans-serif-fonts;
   @extend .f5;
+}
+
+pre, code, kbd {
+  @include expected-monospace-fonts;
 }
 
 p.lead {

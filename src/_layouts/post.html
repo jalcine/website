@@ -19,6 +19,7 @@ excerpt: none
   {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
   {% if page.date %}<span>:clock7: <time>{{ page.date | date_to_rfc822 }}</time></span>{% endif %}
   {% if page.revised %}<span>:clock10: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
+  <span>:clock3: {{ content | reading_time }}</span>
 </address>
 <main role="group" class="post">
   {{ content }}
