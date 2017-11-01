@@ -14,9 +14,11 @@ navigation:
   -
     title: "Gear"
     link: "/gear/"
+    in: footer
   -
     title: "Crypto"
     link: "/crypto/"
+    in: footer
   -
     title: "Work"
     link: "/work/"
@@ -26,95 +28,82 @@ navigation:
   -
     title: "Projects"
     link: "/projects/"
+    in: footer
+  -
+    title: "Licensing"
+    link: "/licensing/"
+    in: footer
 
 # Social links I have.
 social:
   -
     title: "Twitter"
-    icon: "twitter"
     link: "https://twitter.com/jackyalcine"
   -
     title: "Github"
-    icon: "github"
     link: "https://github.com/jalcine"
   -
     title: "Reddit"
-    icon: "reddit"
-    link: "https://reddit.com/user/jackyalcine"
+    link: "https://reddit.com/user/jackyalcine_"
   -
     title: "LinkedIn"
-    icon: "linkedin"
     link: "https://linkedin.com/in/jackyalcine"
   -
     title: "Keybase"
-    icon: "lock"
     link: "https://keybase.io/jackyalcine"
   -
-    title: "GPG"
-    icon: "key"
-    link: "/gpg/"
-  -
     title: "Stack Overflow"
-    icon: "stackoverflow"
     link: "https://stackoverflow.com/users/602588/jackyalcine"
   -
     title: "Last.FM"
-    icon: "lastfm"
     link: "https://last.fm/user/jackyalcine"
   -
     title: "Goodreads"
-    icon: "book"
     link: "https://www.goodreads.com/jalcine"
   -
     title: "Flickr"
-    icon: "flickr"
     link: "https://www.flickr.com/photos/jackyalcine"
   -
     title: "Steam"
-    icon: "game"
     link: "http://steamcommunity.com/id/jackyalcine/"
   -
     title: "Reading"
-    icon: "reading"
     link: "https://www.reading.am/jackyalcine"
   -
     title: "Vim.org"
-    icon: "vim"
     link: "http://www.vim.org/account/profile.php?user_id=62285"
 
 landing:
   -
-    emoji: "book"
-    action: "Read my latest entry"
+    title: Work with You? Sure!
+    color: blue
+    description: |
+      Have a Web application that you've been meaning to hash out? Need to do
+      some performance tweaks to your blog? Feel like your SEO game isn't up to
+      par because of your site's code? I got you.
     link:
-      uri: "/weblog/"
-      title: "Jump to weblog"
-      text: "of my weblog"
+      text: Let's Work Together
+      uri: /work/freelance/
   -
-    emoji: "love_letter"
-    action: "Join fellow subscribers"
+    title: Keep Up to Date
+    color: yellow
+    description: |
+      I keep myself busy - idle mind, as the saying goes. It's not all work for
+      me though. Find out more about my moves and how they relate to you and
+      your endeavors by subscribing.
+
+      It's also an *excellent* way to get perks on projects, events and other
+      things colleagues and I are working on.
     link:
-      uri: "/newsletter/"
-      title: "Learn more about what I email"
-      text: "on my newsletter"
+      text: Stay In Sync
+      uri: /subscribe/
   -
-    emoji: "hammer"
-    action: "See what I work on"
+    title: Peep My Progress
+    color: black
+    description: |
+      As well in my subscriptions, I've been working to keep my projects all in
+      sync and in check. Things like [twch.at](http://app.twch.at) and
+      [goodforpoc](http://goodforpocin.tech) are all in there.
     link:
-      uri: "/projects/"
-      title: "Learn about projects I contribute"
-      text: "my project listing"
-  -
-    emoji: "briefcase"
-    action: "See where I work professionally"
-    link:
-      uri: "/work/"
-      title: "Learn abut what I work on"
-      text: "on my work log"
-  -
-    emoji: "8ball"
-    action: "Utilize my skills by"
-    link:
-      uri: "/work/freelance/"
-      title: "Begin a contracting position"
-      text: "hiring me for contract work"
+      text: See Current Activity
+      uri: /projects/

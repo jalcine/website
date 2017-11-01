@@ -13,11 +13,26 @@ body, html {
 }
 
 a {
-  &, &:visited {
-    color: $blue;
+  color: $blue;
+
+  &:visited {
+    color: $light-purple;
   }
 
-  &:hover, &:visited:hover {
+  &:hover {
     color: $dark-blue;
+  }
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  color: inherit;
+
+  &:hover, &:visited {
+    color: inherit;
   }
 }

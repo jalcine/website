@@ -10,6 +10,48 @@
   }
 }
 
+.section--well {
+  @extend .pa2;
+  @extend .w-100;
+  @extend .ph2, .ph3-ns, .pv3, .pv4-ns;
+
+  p {
+    @extend .measure;
+    @extend .lh-copy;
+  }
+
+  &.section--blue {
+    @extend .bg-dark-blue;
+    @extend .white;
+  }
+
+  &.section--yellow {
+    @extend .bg-yellow;
+    @extend .near-black;
+  }
+
+  &.section--black {
+    @extend .bg-near-black;
+    @extend .white;
+  }
+
+  a.cta {
+    @extend .pa2;
+    @extend .bw2;
+    @extend .b--solid;
+    @extend .link;
+    @extend .dib;
+    @extend .mv2;
+    @extend .ttu;
+    @extend .f4;
+    @extend .grow;
+    @extend .bg-black-40;
+    @extend .b--black-40;
+    @extend .white;
+    @extend .hover-white;
+  }
+}
+
 main {
   @extend .cf, .db;
 }

@@ -37,7 +37,7 @@ group :jekyll_plugins do
   # gem 'jekyll-timeago'
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
-  gem 'jekyll-webmention_io'
+  # gem 'jekyll-webmention_io'
   # gem 'jekyll_version_plugin'
   gem 'jemoji'
 end
