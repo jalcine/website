@@ -2,8 +2,8 @@
   <h2 class="f2 mv2 mv0-l sans-serif tracked-tight fr-l tc tl-l lh-solid">@jackyalcine</h2>
   <nav class="ma1 f6 fw6 ttu tracked tc tl-l">
     {% for link in site.data.links.navigation %}
+      {% if link.in contains 'footer' %}{% continue %}{% endif %}
       <a {% if link.classes %}class="{{ link.classes }}"{%endif%} href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
-      {% if forloop.last != true %}<span class="dib gray">&mdash;</span>{% endif %}
     {% endfor %}
   </nav>
 </header>
