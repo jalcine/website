@@ -21,8 +21,3 @@ guard :rack,
   watch 'config.ru'
   watch(/^_config(.*)\.yml/)
 end
-
-guard :rake, task: 'build', run_on_all: false do
-  watch(/^src/)
-  watch(/^plugins/)
-end
