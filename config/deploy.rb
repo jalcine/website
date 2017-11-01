@@ -1,9 +1,6 @@
 # frozen_string_literal: true
 
 require 'mina/scp'
-require 'dotenv'
-
-Dotenv.load '.envrc'
 
 set :domain, ENV['JALCINE_DEPLOY_DOMAIN']
 set :deploy_to, ENV['JALCINE_DEPLOY_PATH']
@@ -29,7 +26,7 @@ task deploy: :environment do
   deploy do
     invoke :upload
     to :launch do
-      queue "chown :#{group} -fR #{deploy_to}"
+      queue "chown :#{group} -Rc #{deploy_to}"
     end
   end
 end

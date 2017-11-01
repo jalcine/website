@@ -19,17 +19,10 @@ guard :rack,
       host: '0.0.0.0', cmd: 'bin/rackup' do
   watch 'Gemfile.lock'
   watch 'config.ru'
-end
-
-# Monitor the files for Jekyll and include in a special development mode.
-guard 'jekyll-plus', serve: false, silent: true, drafts: true,
-  config: ['_config.dev.yml', '_config.yml'] do
-  watch(/^src/)
-  watch(/^plugins/)
   watch(/^_config(.*)\.yml/)
 end
 
-# Check on the npm packages we pull in.
-guard :npm do
-  watch('src/package.json')
+guard :rake, task: 'build', run_on_all: false do
+  watch(/^src/)
+  watch(/^plugins/)
 end

@@ -3,3 +3,11 @@ show_drafts: true
 url: 'http://localhost:1993'
 webmentions:
   pause_lookups: true
+incremental: true
+
+assets:
+  debug: true
+  autowrite: true
+  strict: true
+  digest: false
+  integrity: false

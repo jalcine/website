@@ -12,4 +12,5 @@ use Rack::Static,
     root: File.expand_path('../_site', __FILE__),
     urls: [%r{\/*}],
     index: 'index.html'
+
 run Rack::File.new('_site')

@@ -38,6 +38,7 @@ section[role=document] {
 
   > img.masthead {
     @extend .db, .center, .w-100, .h-auto, .cb, .fl;
+    max-height: 25vh;
   }
 }
 
@@ -60,5 +61,5 @@ header[role=document] {
 }
 
 img.emoji {
-  @extend .ma1;
+  @extend .v-mid;
 }
