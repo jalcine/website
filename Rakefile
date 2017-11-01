@@ -15,21 +15,23 @@ def run_jekyll(args=[])
 end
 
 def run_jekyll_in_dev(args=[])
-  run_jekyll(args + ['--verbose', '--trace', '--config', '_config.yml,_config.dev.yml'])
+  run_jekyll(args + ['--trace', '--config', '_config.yml,_config.dev.yml'])
 end
 
 def run_jekyll_in_prod(args=[])
   run_jekyll(args + ['-d', '_deploy'])
 end
 
+namespace :build do
+  task :watch do
+    run_jekyll_in_dev(['build', '--incremental', '--watch'])
+  end
 
-task :build do
-  run_jekyll_in_dev(['build', '--incremental'])
+  task :deploy do
+    run_jekyll_in_prod(['build', '--verbose'])
+  end
 end
 
-task :'build:deploy' do
-  run_jekyll_in_prod(['build', '--verbose'])
-end
 
 task :dev do
   Dotenv.load('.envrc.local')
