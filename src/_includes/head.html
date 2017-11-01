@@ -1,3 +1,4 @@
+{% capture _garbage_ %}
 {% if page.title %}
   {% capture correct_title %}{{site.name}} &mdash; {{page.title}}{% endcapture %}
 {% else %}
@@ -6,17 +7,18 @@
 {% if page.excerpt %}
   {% assign blurb = page.excerpt | strip_html | strip_newlines | truncate: 200 %}
 {% else %}
-  {% assign blurb = site.description %}
+  {% assign blurb = site.description | strip_newlines %}
 {% endif %}
-{% if page.image.startswith? 'http' %}
+{% if page.image contains 'http://' or page.image contains 'https://' %}
 	{% assign image = page.image %}
 {% else %}
-	{% assign image = asset_path 'favicon/android-chrome-192x192.png' %}
+	{% assign image = 'favicon/android-chrome-192x192.png' %}
 {% endif %}
-{% assign full_page_uri = (site.url + page.path) %}
+{% assign full_page_uri = page.path | prepend: '/' | prepend: site.url %}
 {% if page.redirect %}
   {% assign full_page_uri = page.redirect.to %}
 {% endif %}
+{% endcapture %}
 <title>{{ correct_title }}</title>
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -54,7 +56,7 @@
 <meta name="twitter:creator" content="@jackyalcine" />
 <meta name="twitter:site" content="@jackyalcine" />
 <meta name="twitter:title" content="{{ correct_title }}" />
-<meta name="twitter:domain" content="{{site.url}}" />
+<meta name="twitter:domain" content="{{ site.url }}" />
 <meta name="twitter:description" content="{{ blurb }}" />
 <meta name="twitter:image:src" content="{{ image }}" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -64,9 +66,4 @@
 
 <link href="https://github.com/jalcine" rel="me" />
 <link href="https://twitter.com/jackyalcine" rel="me" />
-{% if page.path contains '_posts' %}
-<link rel="amphtml" href="{{ page.id | prepend: site.ampdir | prepend: site.baseurl | prepend: site.url }}">
-{% endif %}
 <link rel="canonical" href="{{ full_page_uri }}">
-
-{% webmentions_head %}

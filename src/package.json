@@ -15,6 +15,7 @@
   "homepage": "https://github.com/jalcine/website#readme",
   "devDependencies": {
     "tachyons-sass": "4.7.4",
-    "webfontloader": "1.6.28"
+    "webfontloader": "1.6.28",
+    "picturefill": "3.0.2"
   }
 }

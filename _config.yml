@@ -1,16 +1,18 @@
 # vim: set nospell:
-source: 'src'
-destination: '_site'
-layouts_dir: 'src/_layouts'
-plugins_dir: 'plugins'
+source: src
+destination: _site
+layouts_dir: src/_layouts
+plugins_dir: plugins
 filter_entries: []
 strict_front_matter: false
+include:
+  - _pages
 
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
-name: 'Jacky Alciné'
-author: 'Jacky Alciné'
-url: 'https://jacky.wtf'
+name: Jacky Alciné
+author: Jacky Alciné
+url: https://jacky.wtf
 byline: Jacky Alciné is a developer and educator.
 blurb: |
   Jacky is a software developer that focuses on the ease of access of user
@@ -24,16 +26,15 @@ description: |
 # }}}
 
 # Time & encoding.
-timezone: 'America/Los_Angeles'
-encoding: 'utf-8'
+timezone: America/Los_Angeles
+encoding: utf-8
 
-permalink: "/weblog/:title/"
+permalink: /weblog/:title/
 show_drafts: false
 lsi: true
 future: false
 relative_permalinks: false
 markdown: kramdown
-ampdir: "/amp"
 tag_page_layout: tags
 tag_page_dir: weblog/tag/
 tag_feed_layout: tag_feed
@@ -45,20 +46,20 @@ exclude:
 
 # {{{ Markdown renderer options
 kramdown:
-syntax_highlighter: rouge
-toc_levels: 1..3
-auto_ids: true
-transparent: true
-extensions:
-  - footnotes
-  - autolink
-  - space_after_headers
-  - highlight
-  - fenced_code_blocks
-  - disabled_indented_code_blocks
-  - underline
-  - with_toc_data
-  - prettify
+  syntax_highlighter: rouge
+  toc_levels: 1..3
+  auto_ids: true
+  transparent: true
+  extensions:
+    - footnotes
+    - autolink
+    - space_after_headers
+    - highlight
+    - fenced_code_blocks
+    - disabled_indented_code_blocks
+    - underline
+    - with_toc_data
+    - prettify
 # }}}
 defaults:
   -
@@ -69,33 +70,45 @@ defaults:
         header: true
         footer: true
 
+# collections:
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path/
+#     title: Portfolio
+
 assets:
   autoprefixer:
     browsers:
-      - "last 2 versions"
-      - "IE > 9"
-  debug: true
+      - last 2 versions
+      - IE > 10
+  debug: false
   autowrite: true
   digest: true
-  compress:
-    css: true
-    js: true
-  prefix: "/assets"
+  strict: true
+  integrity: true
+  plugins:
+    compression:
+      css:
+        enabled: true
+      js:
+        enabled: true
+  prefix: /assets
   asset:
-    - "*.png"
-    - "*.jpg"
-    - "*.jpeg"
-    - "bundle.css"
+    - '*.png'
+    - '*.jpg'
+    - '*.jpeg'
+    - '*.gif'
+    - bundle.css
   sources:
     - _assets/css
     - _assets/images
     - _assets/favicon
     - _assets/js
     - node_modules
+
 jekyll-mentions: https://twitter.com
-incremental: true
 gpg:
-  fingerprint: "0x4DEFFC9FF82E8908"
+  fingerprint: 0x4DEFFC9FF82E8908
 
 jekyll_analytics:
   Piwik:
@@ -103,6 +116,7 @@ jekyll_analytics:
     siteId: "1234"
 
 webmentions:
+  pause_lookups: false
   username: jackyalcine
   cache_folder: .cache/webmention
   cache_bad_uris_for: 10
@@ -116,6 +130,19 @@ webmentions:
     older: monthly
 
 autolink_email:
-  link_attr: class='email-link' # attributes to add to the link
-  skip_tags: ['pre', 'code']            # tags to skip
+  link_attr: class="email-link" # attributes to add to the link
+  skip_tags: ["pre", "code"]            # tags to skip
   escape: true
+
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: /:year/
+    month: /:year/:month/
+    day: /:year/:month/:day/
+    tag: /tag/:name/
+    category: /category/:name/
+
+liquid:
+  error_mode: strict

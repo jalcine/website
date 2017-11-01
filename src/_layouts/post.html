@@ -22,6 +22,6 @@ excerpt: none
   <span>:clock3: {{ content | reading_time }}</span>
 </address>
 <main role="group" class="post">
-  {{ content }}
+  {{ content | improve | letter_spacing }}
 </main>
 {% include post_footer.html %}
