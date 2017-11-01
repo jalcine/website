@@ -6,42 +6,39 @@ source 'https://rubygems.org'
 # {{{ Core Utilities
 gem 'dotenv'
 gem 'rake'
-gem 'rake-jekyll'
 # }}}
 
 group :jekyll do
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
-  gem 'jekyll', '3.6.0'
+  gem 'jekyll', '~> 3.5'
   gem 'kramdown'
   gem 'mini_magick'
   gem 'rb-gsl'
   gem 'rouge'
-  gem 'sprockets-es6'
-  gem 'twitter_web_intents'
+  gem 'rack-jekyll'
+  gem 'sprockets', '~> 3.7'
+  gem 'activesupport'
 end
 
 group :jekyll_plugins do
-  gem 'amp-jekyll'
   gem 'jekyll-analytics'
-  gem 'jekyll-asciinema'
-  gem 'jekyll-assets'
+  gem 'jekyll-assets', '~> 2.4.0'
   gem 'jekyll-autolink_email'
   gem 'jekyll-email-protect'
   gem 'jekyll-feed'
   gem 'jekyll-gist'
-  gem 'jekyll-money'
+  # gem 'jekyll-picture-tag'
   gem 'jekyll-redirect-from'
-  gem 'jekyll-sass-converter'
+  # gem 'jekyll-sass-converter'
   gem 'jekyll-sitemap'
   gem 'jekyll-tagging'
   gem 'jekyll-tagging-related_posts'
-  gem 'jekyll-textile-converter'
-  gem 'jekyll-timeago'
+  # gem 'jekyll-timeago'
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
-  gem 'jekyll_version_plugin'
+  # gem 'jekyll_version_plugin'
   gem 'jemoji'
 end
 
@@ -52,8 +49,6 @@ group :web do
   gem 'puma'
   gem 'rack'
   gem 'rack-livereload', require: 'rack/livereload'
-  gem 'sass'
-  gem 'susy'
 end
 
 group :deployment do
@@ -65,23 +60,22 @@ end
 group :guard do
   gem 'guard'
   gem 'guard-bundler', require: false
-  gem 'guard-jekyll-plus', git: 'https://github.com/imathis/guard-jekyll-plus',
-                           require: false
   gem 'guard-livereload', require: false
-  gem 'guard-npm', require: false
   gem 'guard-rack', require: false
-  gem 'guard-rspec', require: true
+  gem 'guard-rake', require: false
+  gem 'guard-rspec', require: false
   gem 'libnotify'
 end
 # }}}
 
 group :test do
-  gem 'rspec'
   gem 'capybara'
-  gem 'capybara-screenshot'
+  # gem 'capybara-accessible'
   gem 'capybara-puma'
-  gem 'capybara-accessible'
+  gem 'capybara-screenshot'
   gem 'chromedriver-helper'
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
+  gem 'rspec'
+  gem 'html-proofer'
 end
