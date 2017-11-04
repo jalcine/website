@@ -33,6 +33,10 @@ navigation:
     title: "Licensing"
     link: "/licensing/"
     in: footer
+  -
+    title: "Press"
+    link: "/press/"
+    in: footer
 
 # Social links I have.
 social:

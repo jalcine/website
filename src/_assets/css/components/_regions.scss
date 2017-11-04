@@ -75,7 +75,8 @@ footer[role=group] {
   }
 }
 
-section[role=document] {
+section[role=document],
+section.section__region {
   @extend .mw8, .w-100, .mw9, .db, .pa4, .mv4, .cf;
 
   > img.masthead {
@@ -104,4 +105,13 @@ header[role=document] {
 
 img.emoji {
   @extend .v-mid;
+}
+
+section.project__list {
+  @extend .w-100;
+
+  > p {
+    @extend .measure;
+    @extend .f4;
+  }
 }

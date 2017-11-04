@@ -12,7 +12,7 @@
       <nav class="tc-s tj-ns">
         {% for link in site.data.links.navigation %}
           <a class="link dib mv1" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
-          <span class="dib">{% if forloop.last != true %} // {% endif %}</span>
+          <span class="dib">{% if forloop.last != true %} &mdash; {% endif %}</span>
         {% endfor %}
       </nav>
     </div>

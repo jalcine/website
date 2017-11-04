@@ -29,4 +29,44 @@ title: "Press"
     decolonization of the information presented to our youth currently to ensure
     a healthy Pan-Afrikanist approach to mental development is available.
   </p>
+
+  <h2 class="f2 ttu lh-title">Publications</h2>
+  <p class="measure lh-copy">
+    Below are a few articles in which I've been quoted and/or referenced that
+    are noteworthy to me:
+    <ul>
+      {% for a_link in site.data.articles %}
+        <li>
+          <a href="{{ a_link.href }}" title="{{ a_link.title }}" target="_blank">
+            {{ a_link.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </p>
+
+  <h2 class="f2 ttu lh-title">Talks</h2>
+  <p class="measure-wide lh-copy">
+    I've given talks and presentations at <strong>SXSW</strong>,
+    <strong>WaffleJS</strong> and on behalf of <strong>YesWeCode</strong>.
+  </p>
+
+  <div class="w-100 mw8-l">
+    {% for a_event in site.data.events %}
+      <article class="pa1 w-100 w-50-l db cf fl">
+        {% img "{{ a_event.image.src | image_path }}" class:"db w-100 h-auto"
+                height:"auto" width:"auto"
+                alt:"{{ a_event.image.title }}"
+                title:"{{ a_event.image.title }}" %}
+        <h3 class="f3 tracked ttu">
+          <a href="{{ a_event.href }}" title="{{ a_event.name }}">
+            {{ a_event.name | improve }}
+          </a>
+        </h3>
+        <p class="lh-copy measure">
+          {{ a_event.description | improve | markdownify }}
+        </p>
+      </article>
+    {% endfor %}
+    </div>
 </section>
