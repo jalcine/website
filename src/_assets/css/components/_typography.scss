@@ -3,7 +3,7 @@
   
   @at-root {
     html.wf-active & {
-      font-family: "Noto Sans";
+      font-family: "Open Sans";
     }
   }
 }
@@ -13,7 +13,7 @@
   
   @at-root {
     html.wf-active & {
-      font-family: "Lora";
+      font-family: "Slabo";
     }
   }
 }
@@ -24,6 +24,15 @@
   @at-root {
     html.wf-active & {
       font-family: "Inconsolata";
+    }
+  }
+}
+
+@mixin expected-display-fonts {
+  @at-root {
+    html.wf-active & {
+      font-family: "Megrim";
+      font-weight: 400;
     }
   }
 }
@@ -64,4 +73,8 @@ ul {
   li {
     @extend .pa1;
   }
+}
+
+.fontFamily__special {
+  @include expected-display-fonts;
 }
