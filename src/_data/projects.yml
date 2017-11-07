@@ -8,3 +8,15 @@
     networks.
 
     It is currently in a _private alpha_ right now.
+-
+  title: Good For People of Color in Tech
+  uri: http://goodforpocin.tech/
+  description: |
+    A platform aimed to help people of color find companies that take diversity
+    seriously.
+
+    The platform is open source, the [client][1] and [API][2] are being actively
+    worked on. Feel free to hop in if you have an idea for the platform.
+
+    [1]: https://github.com/goodforpoc/goodforpoc
+    [1]: https://github.com/goodforpoc/goodforpoc-api
