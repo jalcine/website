@@ -5,6 +5,13 @@ title: "Press"
 ---
 <section role="document">
   <h1 class="f1 lh-title">Press</h1>
+  <h2 class="f2">Talks &amp; Speaking Engagements</h2>
+  <p class="lead">
+    I've given numerous <a href="/press/events/">talks</a> in the past and aiming
+    to do more in the upcoming future. Learn more about
+    <a href="/press/events/request/">having me speak at your event</a>.
+  </p>
+  <h2 class="f2">Bylines &amp; Background</h2>
   <p class="lead">
     The following information is provided as a <em>cut and paste</em> resource
     for media professionals and other interested parties. Please feel free to
@@ -44,29 +51,4 @@ title: "Press"
       {% endfor %}
     </ul>
   </p>
-
-  <h2 class="f2 ttu lh-title">Talks</h2>
-  <p class="measure-wide lh-copy">
-    I've given talks and presentations at <strong>SXSW</strong>,
-    <strong>WaffleJS</strong> and on behalf of <strong>YesWeCode</strong>.
-  </p>
-
-  <div class="w-100 mw8-l">
-    {% for a_event in site.data.events %}
-      <article class="pa1 w-100 w-50-l db cf fl">
-        {% img "{{ a_event.image.src | image_path }}" class:"db w-100 h-auto"
-                height:"auto" width:"auto"
-                alt:"{{ a_event.image.title }}"
-                title:"{{ a_event.image.title }}" %}
-        <h3 class="f3 tracked ttu">
-          <a href="{{ a_event.href }}" title="{{ a_event.name }}">
-            {{ a_event.name | improve }}
-          </a>
-        </h3>
-        <p class="lh-copy measure">
-          {{ a_event.description | improve | markdownify }}
-        </p>
-      </article>
-    {% endfor %}
-    </div>
 </section>

@@ -1,5 +1,4 @@
 # vim:set nospell:
-# Options used in the navigation bar.
 navigation:
   -
     title: "Home"
@@ -12,14 +11,6 @@ navigation:
     title: "Weblog"
     link: "/weblog/"
   -
-    title: "Gear"
-    link: "/gear/"
-    in: footer
-  -
-    title: "Crypto"
-    link: "/crypto/"
-    in: footer
-  -
     title: "Work"
     link: "/work/"
   -
@@ -28,17 +19,10 @@ navigation:
   -
     title: "Projects"
     link: "/projects/"
-    in: footer
-  -
-    title: "Licensing"
-    link: "/licensing/"
-    in: footer
   -
     title: "Press"
     link: "/press/"
-    in: footer
 
-# Social links I have.
 social:
   -
     title: "Twitter"

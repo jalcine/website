@@ -1,0 +1,21 @@
+---
+layout: bare
+permalink: /faq/
+title: "Frequently Asked Questions"
+---
+
+<section role="document">
+  <h1 class="f1 lh-title">Frequently Asked Questions</h1>
+  <p class="lead">
+    I have this thing where I can't repeat myself too often. I try not to do it
+    with code and now I'm making it into a public practice. I've collected
+    questions I've been asked before and have answered numerous times into one
+    place.
+  </p>
+  {% for qa in site.data.faq %}
+  <h3 class="f3">
+    <a name="{{ qa.anchor }}">{{ qa.question }}</a>
+  </h3>
+  {{ qa.answer | improve | markdownify }}
+  {% endfor %}
+</section>

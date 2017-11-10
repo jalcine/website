@@ -2,14 +2,14 @@
 layout: bare
 ext: html
 ---
+{% assign tag_posts = site.tags[page.tag] %}
+{% assign rss_feed = site.tag_feed_dir | append: page.tag | append: '.xml' %}
 <section role="document">
   <h1 class="lh-title f-headline-l">Posts Tagged "{{ page.tag }}"</h1>
   <p class="lh-copy lead">
-    Here's a list of posts with the tag "{{ page.tag }}". You can subscribe to
-    these posts by visiting
-    <a href="/{{site.tag_feed_dir}}{{page.tag}}.xml">this page</a>.
+    Here's a list of posts tagged <em>{{ page.tag }}</em>. You can subscribe to
+    these posts by visiting <a href="/{{ rss_feed }}">this RSS/ATOM feed</a>.
   </p>
-  {% assign tag_posts = site.tags[page.tag] %}
   {{ tag_posts }}
   {% include post_listing.html posts=tag_posts %}
 </section>

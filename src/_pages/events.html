@@ -1,0 +1,52 @@
+---
+layout: bare
+permalink: /press/talks/
+title: "Talks"
+---
+<section role="document">
+  <h1 class="f1 lh-title">Talks</h1>
+  <p class="lead">
+    I <em>really</em> enjoy showing people things that I'm passionate about.
+    One medium I found that allows for an immediate feedback loop is via
+    <strong>talks</strong>!
+  </p>
+  <h2 class="f2 ttu lh-title">Upcoming Talks</h2>
+  {% if size(site.data.events.upcoming) >= 1 %}
+    <p class="measure-wide lh-copy">
+      Below ar
+    </p>
+    <div class="w-100 mw8-l">
+      {% for event in site.data.events.upcoming %}
+        {% include event.html event=event %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="measure-wide lh-copy">
+      I don't have any upcoming talks at the moment. Let's 
+      <a href="/contact/">talk more</a> if you're organizing or have one in
+      mind.
+    </p>
+  {% endif %}
+  <h2 class="f2 ttu lh-title">Talks</h2>
+  <p class="measure-wide lh-copy">
+    I've given talks and presentations at <strong>SXSW</strong>,
+    <strong>WaffleJS</strong> and on behalf of <strong>YesWeCode</strong>. So
+    far, I'm clocking at {{ size(site.data.events.past) }} events.
+  </p>
+  {% if site.data.events.available %}
+    <p class="alert alert--success">
+      I'm open for speaking engagements.Feel free to <a
+        href="/contact/">contact me</a> if you have any questions.
+    </p>
+  {% else %}
+    <p class="alert">
+      I'm currently not available for new speaking engagements. Feel free to
+      <a href="/contact/">contact me</a> if you have any questions.
+    </p>
+  {% endif %}
+  <div class="w-100 mw8-l">
+    {% for event in site.data.events.past %}
+      {% include event.html event=event %}
+    {% endfor %}
+  </div>
+</section>

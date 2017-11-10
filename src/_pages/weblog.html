@@ -1,5 +1,8 @@
 ---
 layout: bare
+permalink: /weblog/
+redirect_from:
+  - /blog/
 title: Weblog
 excerpt: >
   A listing of all of the posts Jacky has written on his website.
@@ -12,20 +15,9 @@ excerpt: >
     day interacting with it with various devices. This and the experiences
     I have in my life I capture here in my <strong>weblog</strong>. Some people
     call them <em>blogs</em>, <em>web journals</em> or just <em>sites</em>. This
-    is my blog. It has {{ site.posts | size }} posts since {{ site.posts.last.date | date: "%Y" }}.
+    is my blog. It has {{ site.posts.size }} posts since {{ site.posts.last.date | date: "%Y" }}.
   </p>
 
   <h2 class="tracked-tight ttu">Entries</h2>
   {% include post_listing.html posts=site.posts %}
-  <ul class="mw-80">
-    {% for post in site.posts %}
-      <li class="lh-copy mv2">
-        <time class="ttu f6 bold mr1 cb dib-l db w4" datetime="{{ post.date }}">{{ post.date | date: "%d %b %Y" }}</time>
-        <a class="dib-l db dim underline-hover"
-          href="{{ post.url }}"
-          title="{{ post.title }}">{{ post.title }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
 </section>
