@@ -70,12 +70,6 @@ defaults:
         header: true
         footer: true
 
-# collections:
-#   portfolio:
-#     output: true
-#     permalink: /:collection/:path/
-#     title: Portfolio
-
 assets:
   autoprefixer:
     browsers:
