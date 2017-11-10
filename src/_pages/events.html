@@ -11,7 +11,7 @@ title: "Talks"
     <strong>talks</strong>!
   </p>
   <h2 class="f2 ttu lh-title">Upcoming Talks</h2>
-  {% if size(site.data.events.upcoming) >= 1 %}
+  {% if site.data.events.upcoming.size >= 1 %}
     <p class="measure-wide lh-copy">
       Below ar
     </p>
@@ -31,7 +31,7 @@ title: "Talks"
   <p class="measure-wide lh-copy">
     I've given talks and presentations at <strong>SXSW</strong>,
     <strong>WaffleJS</strong> and on behalf of <strong>YesWeCode</strong>. So
-    far, I'm clocking at {{ size(site.data.events.past) }} events.
+    far, I'm clocking at {{ site.data.events.past.size }} events.
   </p>
   {% if site.data.events.available %}
     <p class="alert alert--success">

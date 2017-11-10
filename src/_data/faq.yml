@@ -1,0 +1,52 @@
+- anchor: work
+  question: Where do you work?
+  answer: |
+    I keep information about my work history and activities on my [work page][1].
+
+    [1]: /work/
+- anchor: hobbies
+  question: What do you like doing?
+  answer: |
+    It revolves around [reading][1], cooking or just centering myself. That
+    act of centering takes form through exercise, meditation or any other activity
+    that forces me to connect with my body more.
+
+    I also look for ways to expand my knowledge of software tools available for
+    independent creators and the consumers alike. Like <http://indieweb.org>.
+
+    [1]: https://www.goodreads.com/jalcine
+
+- anchor: now
+  question: What are you working on now?
+  answer: |
+    I keep my active projects updated on here on the [Projects][1] page.
+
+    [1]: /projects/
+
+- anchor: contract
+  question: Can I hire you for contracting work?
+  answer: |
+    I think so. Just to be sure, check out my [contracting][1] page and see
+    if we are in tune.
+
+    [1]: /work/freelance/
+
+- anchor: building-website
+  question: How did you make your website?
+  answer: |
+    I used a few services and tools.
+
+    * [DigitalOcean][] for hosting.
+    * [DNSimple][] for my domain name.
+    * [Jekyll][] for building the site.
+    * [GitHub][] to host the [source code of my site][src].
+    * [Neovim][] to edit the sources.
+    * All of these [Ruby gems][gems] and [Node packages][pkg].
+
+    [digitalocean]: https://m.do.co/c/0d64aebbf668
+    [dnsimple]: https://dnsimple.com/r/2131c39d72a26d
+    [jekyll]: http://jekyllrb.com/
+    [github]: https://github.com/
+    [src]: https://github.com/jalcine/website
+    [gems]: https://github.com/jalcine/website/blob/develop/Gemfile
+    [pkg]: https://github.com/jalcine/website/blob/develop/src/package.json

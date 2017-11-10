@@ -11,17 +11,14 @@ navigation:
     title: "Weblog"
     link: "/weblog/"
   -
-    title: "Work"
-    link: "/work/"
-  -
     title: "Contact"
     link: "/contact/"
   -
     title: "Projects"
     link: "/projects/"
   -
-    title: "Press"
-    link: "/press/"
+    title: "FAQ"
+    link: "/faq/"
 
 social:
   -

@@ -12,10 +12,17 @@ title: "Frequently Asked Questions"
     questions I've been asked before and have answered numerous times into one
     place.
   </p>
+  <ul class="arrows">
+    {% for qa in site.data.faq %}
+      <li><a href="#{{ qa.anchor }}">{{ qa.question }}</a></li>
+    {% endfor %}
+  </ul>
   {% for qa in site.data.faq %}
   <h3 class="f3">
     <a name="{{ qa.anchor }}">{{ qa.question }}</a>
   </h3>
-  {{ qa.answer | improve | markdownify }}
+  <div class="measure-l">
+    {{ qa.answer | improve | markdownify }}
+  </div>
   {% endfor %}
 </section>
