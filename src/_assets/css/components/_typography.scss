@@ -82,3 +82,10 @@ a {
 .fontFamily__special {
   @include expected-display-fonts;
 }
+
+blockquote {
+  @extend .gray;
+  @extend .measure-narrow;
+  @extend .lh-copy;
+  @extend .mh4;
+}

@@ -1,4 +1,5 @@
 ---
+layout: faq
 title: What kind of hobbies do you keep?
 date: 2017-11-10 19:03:24 PST
 ---

@@ -8,9 +8,10 @@ filter_entries: []
 strict_front_matter: false
 include:
   - _pages
-  - collections
+  - _faq
+  - _events
 
-name: Jacky Alciné
+name: jackyalciné
 author: Jacky Alciné
 url: https://jacky.wtf
 byline: Jacky Alciné is a developer and educator.
@@ -35,8 +36,8 @@ relative_permalinks: false
 markdown: kramdown
 
 tag_page_layout: tags
-tag_page_dir: weblog/tag/
 tag_feed_layout: tag_feed
+tag_page_dir: weblog/tag/
 tag_feed_dir: feeds/tags/
 
 exclude:
@@ -70,13 +71,15 @@ defaults:
         footer: true
   -
     scope:
-      path: ""
       type: faq
     values:
-      output: true
+      layout: faq
 
 collections:
-  - faq
+  faq:
+    output: true
+    layout: faq
+    permalink: /:collection/:name/
 
 assets:
   autoprefixer:
@@ -108,19 +111,15 @@ assets:
     - _assets/js
     - node_modules
 
-
-
 jekyll-mentions: https://twitter.com
 
 gpg:
   fingerprint: 0x4DEFFC9FF82E8908
 
-
 jekyll_analytics:
   Piwik:
     url: lighthouse.jacky.wtf
     siteId: "1234"
-
 
 webmentions:
   pause_lookups: false
@@ -141,7 +140,6 @@ autolink_email:
   link_attr: class="email-link" # attributes to add to the link
   skip_tags: ["pre", "code"]            # tags to skip
   escape: true
-
 
 jekyll-archives:
   enabled: all
