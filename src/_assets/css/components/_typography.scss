@@ -75,6 +75,10 @@ ul {
   }
 }
 
+a {
+  @extend .link;
+}
+
 .fontFamily__special {
   @include expected-display-fonts;
 }

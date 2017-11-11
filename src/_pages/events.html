@@ -1,7 +1,7 @@
 ---
 layout: bare
-permalink: /press/talks/
-title: "Talks"
+permalink: /events/
+title: "Events"
 ---
 <section role="document">
   <h1 class="f1 lh-title">Talks</h1>
@@ -13,13 +13,13 @@ title: "Talks"
   <h2 class="f2 ttu lh-title">Upcoming Talks</h2>
   {% if site.data.events.upcoming.size >= 1 %}
     <p class="measure-wide lh-copy">
-      Below ar
+      Below are upcoming talks that I'll be giving that you should check out!
     </p>
-    <div class="w-100 mw8-l">
-      {% for event in site.data.events.upcoming %}
-        {% include event.html event=event %}
+    <ul class="arrows">
+      {% for event in site.upcoming_events %}
+        <li><a href="{{ event.url}}">{{ event.title }}</a></li>
       {% endfor %}
-    </div>
+    </ul>
   {% else %}
     <p class="measure-wide lh-copy">
       I don't have any upcoming talks at the moment. Let's 
@@ -35,8 +35,8 @@ title: "Talks"
   </p>
   {% if site.data.events.available %}
     <p class="alert alert--success">
-      I'm open for speaking engagements.Feel free to <a
-        href="/contact/">contact me</a> if you have any questions.
+      I'm open for speaking engagements. Want me to speak at your next event?
+      <a href="/faq/request-for-events">Learn how</a>.
     </p>
   {% else %}
     <p class="alert">
@@ -44,9 +44,9 @@ title: "Talks"
       <a href="/contact/">contact me</a> if you have any questions.
     </p>
   {% endif %}
-  <div class="w-100 mw8-l">
-    {% for event in site.data.events.past %}
-      {% include event.html event=event %}
+  <ul class="arrows">
+    {% for event in site.upcoming_events %}
+      <li><a href="{{ event.url}}">{{ event.title }}</a></li>
     {% endfor %}
-  </div>
+  </ul>
 </section>

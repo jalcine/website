@@ -30,6 +30,10 @@ namespace :build do
   task :deploy do
     run_jekyll_in_prod(['build', '--verbose'])
   end
+
+  task :dev do
+    run_jekyll_in_dev(['build'])
+  end
 end
 
 

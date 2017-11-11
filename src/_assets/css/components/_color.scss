@@ -36,3 +36,8 @@ h6 > a {
     color: inherit;
   }
 }
+
+mark {
+  @extend .ph1;
+  @extend .bg-yellow;
+}

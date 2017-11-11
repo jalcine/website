@@ -10,8 +10,8 @@ components:
 ---
 {% assign clean_blurb = site.blurb | strip_tags: '<p></p>' | strip_newlines | improve %}  
 {% assign brand_landing_image_path = 'brand/self.jpeg' | image_path %}
+{% include notice.html %}
 <section class="section--dark" role="main">
-  {% include notices.html %}
   <div class="w-100 w-80-l center-l db cf v-mid">
     <div class="dib-l fl-l w-40-l center w-auto h-70">
       {% img "{{ brand_landing_image_path }}"

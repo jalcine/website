@@ -1,28 +1,35 @@
 ---
 layout: bare
 permalink: /faq/
+redirect_from:
+  - /questions/
 title: "Frequently Asked Questions"
 ---
-
 <section role="document">
   <h1 class="f1 lh-title">Frequently Asked Questions</h1>
   <p class="lead">
-    I have this thing where I can't repeat myself too often. I try not to do it
-    with code and now I'm making it into a public practice. I've collected
-    questions I've been asked before and have answered numerous times into one
-    place.
+    I try to keep my code <a target="_blank"
+      href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">
+      DRY</a>. However, when it comes to answering questions, I either answer
+    them incorrectly or don't give a good enough answer. This page serves as a
+    place to centralize all of those questions and answers. So, we got {{
+    site.faq | size }} questions that you can explore!
   </p>
+  <p>
+    <strong>Note</strong>: You can always <mark>ask me a question</mark>
+    <a href="/contact/">directly</a>. With your permission, I'll post it on
+    my website with your attribution.
+  </p>
+  <h3 class="f3 lh-subtitle">Questions</h3>
   <ul class="arrows">
-    {% for qa in site.data.faq %}
-      <li><a href="#{{ qa.anchor }}">{{ qa.question }}</a></li>
+    {% for item in site.faq %}
+      <li>
+        <a title="{{ item.title | improve }}" href="{{ item.url }}">
+          {{ item.title | improve }}
+        </a>
+      </li>
     {% endfor %}
   </ul>
-  {% for qa in site.data.faq %}
-  <h3 class="f3">
-    <a name="{{ qa.anchor }}">{{ qa.question }}</a>
-  </h3>
-  <div class="measure-l">
-    {{ qa.answer | improve | markdownify }}
-  </div>
-  {% endfor %}
 </section>
+{{ site.faq.output }}
+{{ site.faq.permalink }}
