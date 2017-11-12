@@ -86,7 +86,7 @@ section.section__region {
 }
 
 header[role=document] {
-  @extend .bg-near-white, .w-100, .pa1, .dib;
+  @extend .bg-near-white, .w-100, .dib;
 
   > h2 {
     @extend .fontFamily__special;
@@ -96,13 +96,16 @@ header[role=document] {
     @extend .ma1;
     @extend .fr-l;
     @extend .tc;
+    @extend .pa1;
   }
 
   > nav {
     @extend .fl-l;
+    @extend .pa1;
+    @extend .mt2;
 
     a {
-      @extend .navy, .dib, .link, .mv1, .pv2-l, .pa1;
+      @extend .navy, .dib, .link, .pa1;
 
       &.selected {
         @extend .bg-yellow;
@@ -135,7 +138,7 @@ section.project__list {
 
 .alert {
   @extend .mw7;
-  @extend .b--solid;
+  @extend .b--dotted;
   @extend .pa3;
   @extend .bw1;
   @extend .bg-washed-blue;
@@ -144,11 +147,10 @@ section.project__list {
   &.alert--success {
     @extend .bg-light-green;
     @extend .near-black;
-    
+    @extend .b--green;
+
     > a {
-      @extend .b--green;
-      @extend .white;
-      @extend .hover-green;
+      @extend .green;
     }
   }
 }

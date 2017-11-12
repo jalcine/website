@@ -8,16 +8,16 @@ navigation:
     link: "/subscribe/"
     classes: "selected"
   -
-    title: ":book: Blog"
+    title: ":books: Blog"
     link: "/weblog/"
   -
-    title: "Contact"
+    title: ":mailbox_with_mail: Contact"
     link: "/contact/"
   -
-    title: "Projects"
+    title: ":rotating_light: Projects"
     link: "/projects/"
   -
-    title: "FAQ"
+    title: ":question: FAQ"
     link: "/faq/"
 
 social:

@@ -3,38 +3,38 @@ layout: bare
 permalink: /events/
 title: "Events"
 ---
-{% assign upcoming_events = site.events | where: 'date', 'date > site.date' %}
-{% assign past_events = site.events | where: 'date', 'date <= site.date' %}
+{% assign upcoming_events = site.events | where_exp: "event", "event.date > site.time" %}
+{% assign past_events = site.events | where_exp: "event", "event.date <= site.time" %}
 <section role="document">
-  <h1 class="f1 lh-title">Events</h1>
+  <h1 class="f1 f-headline-l lh-title">Events</h1>
   <p class="lead">
     I <em>really</em> enjoy showing people things that I'm passionate about.
     One medium I found that allows for an immediate feedback loop is via
     <strong>talks</strong>. I also attend events as a key participant, panelist
     or some role of that nature.
   </p>
-  <h2 class="f2 ttu lh-title">Upcoming Events</h2>
-  {% if site.upcoming_events.size >= 1 %}
+  <h2 class="f2 ttu lh-title">Upcoming</h2>
+  {% if upcoming_events.size >= 1 %}
     <p class="measure-wide lh-copy">
       Below are upcoming talks that I'll be giving that you should check out!
     </p>
     <ul class="arrows">
-      {% for event in site.upcoming_events %}
+      {% for event in upcoming_events %}
         <li><a href="{{ event.url }}">{{ event.title }}</a></li>
       {% endfor %}
     </ul>
   {% else %}
-    <p class="measure-wide lh-copy">
+    <p class="alert alert--success">
       I don't have any upcoming talks at the moment. Let's 
       <a href="/contact/">talk more</a> if you're organizing or have one in
       mind.
     </p>
   {% endif %}
-  <h2 class="f2 ttu lh-title">Events</h2>
+  <h2 class="f2 ttu lh-title">Past</h2>
   <p class="measure-wide lh-copy">
     I've given presentations at <strong>SXSW</strong> and <strong>WaffleJS</strong>
     and attended panels on behalf of <strong>YesWeCode</strong>. So
-    far, I'm clocking at {{ site.past_events.size }} events that I've been a 
+    far, I'm clocking at {{ past_events.size }} events that I've been a 
     part of.
   </p>
   {% if site.data.events.available %}
@@ -48,9 +48,10 @@ title: "Events"
       <a href="/contact/">contact me</a> if you have any questions.
     </p>
   {% endif %}
-  <ul class="arrows">
-    {% for event in site.past_events %}
-      <li><a href="{{ event.url }}">{{ event.title }}</a></li>
+  <dl>
+    {% for event in past_events %}
+      <dt><a href="{{ event.url }}">{{ event.title }}</a></dt>
+      <dd>{{ event.description | improve }}</dd>
     {% endfor %}
-  </ul>
+  </dl>
 </section>

@@ -65,15 +65,11 @@ defaults:
     scope:
       path: ""
     values:
+      output: true
       layout: bare
       components:
         header: true
         footer: true
-  -
-    scope:
-      type: faq
-    values:
-      layout: faq
 
 collections:
   faq:
@@ -137,7 +133,6 @@ webmentions:
     last_year: every 2 weeks
     older: monthly
 
-
 autolink_email:
   link_attr: class="email-link" # attributes to add to the link
   skip_tags: ["pre", "code"]            # tags to skip
@@ -152,7 +147,6 @@ jekyll-archives:
     day: /:year/:month/:day/
     tag: /tag/:name/
     category: /category/:name/
-
 
 liquid:
   error_mode: strict

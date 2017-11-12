@@ -3,7 +3,7 @@
   <nav>
     {% for link in site.data.links.navigation %}
       <a {% if link.classes %}class="{{ link.classes }}"{% endif %} href="{{ link.link }}" title="{{ link.title }}">
-        {{ link.title | markdownify }}
+        {{ link.title }}
       </a>
     {% endfor %}
   </nav>

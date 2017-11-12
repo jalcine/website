@@ -1,33 +1,33 @@
 ---
 layout: bare
-
+masthead: none
 ---
+{% if page.masthead %}
+  {% img "{{ page.masthead | image_path }}" class:"w-100 db center" width:"auto" height:"auto" %}
+{% endif %}
 <section role="document">
   <h2 class="f2 lh-title">{{ page.title }}</h2>
   <a href="/events/">&laquo; Back to events listing</a>
   <main role="group">
-    {{ content | improve | letter_spacing }}
-    <aside class="fr-l mw4-l b--dotted b--black bg-washed-blue">
-      <dl>
-        <dt>Date</dt>
-        <dd>{{ page.date }}</dd>
-        <dt>Location</dt>
-        <dd>{{ page.location }}</dd>
-        <dt>Hosted By</dt>
-        <dd>{{ page.host }}</dd>
-        <dt>Slides</dt>
-        <dd>{{ page.slides }}</dd>
-      </dl>
-      <h4>Links</h4>
-      <ul class="arrows">
-        {% for link in page.links %}
-          <li>
-            <a href="{{ link.uri }}" target="_blank">
-              {{ link.name }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+    <aside class="fr-l mw5 pa2">
+      {% if page.location %}<div>{{ page.location }}</div>{% endif %}
+      {% if page.host %}<div>{{ page.host }}</div>{% endif %}
+      {% if page.slides %}
+        <a href="{{ page.slides}}">Slides</a>
+      {% endif %}
+      {% if page.links.size > 0 %}
+        <h4 class="mh1">Links</h4>
+        <ul class="arrows">
+          {% for link in page.links %}
+            <li>
+              <a href="{{ link.uri }}" target="_blank">
+                {{ link.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
     </aside>
+    {{ content | improve | letter_spacing | markdownify }}
   </main>
 </section>

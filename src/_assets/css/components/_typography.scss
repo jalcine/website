@@ -69,7 +69,7 @@ ul {
   &.arrows {
     li:before {
       content: "\2192";
-      @extend .pv2;
+      @extend .pa2;
     }
   }
 
@@ -96,4 +96,8 @@ blockquote {
 mark {
   white-space: nowrap;
   line-height: 1.5;
+}
+
+dt + dd {
+  @extend .mb2;
 }
