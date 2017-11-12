@@ -1,14 +1,14 @@
 # vim:set nospell:
 navigation:
   -
-    title: "Home"
+    title: ":house:"
     link: "/"
   -
-    title: "Subscribe"
+    title: ":link: Subscribe"
     link: "/subscribe/"
     classes: "selected"
   -
-    title: "Weblog"
+    title: ":book: Blog"
     link: "/weblog/"
   -
     title: "Contact"

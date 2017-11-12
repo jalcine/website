@@ -79,7 +79,9 @@ collections:
   faq:
     output: true
     layout: faq
-    permalink: /:collection/:name/
+  events:
+    output: true
+    layout: event
 
 assets:
   autoprefixer:

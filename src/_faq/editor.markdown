@@ -8,6 +8,8 @@ If you know me, or rather, if you've watched me begin to type text; you'll note
 that my fingers _hover_ over the ["home row"][1]. This is an indicator of
 a [Vim][] user. I actually moved to [Neovim][] for a [few reasons][2].
 
+{% img "{{ 'gear/vim.png' | asset_path }}" width:"auto" height:"auto" %}
+
 [1]: https://www.computerhope.com/jargon/h/hrk.htm
 [vim]: http://vim.org
 [neovim]: https://neovim.io

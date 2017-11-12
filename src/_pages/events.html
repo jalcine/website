@@ -3,21 +3,24 @@ layout: bare
 permalink: /events/
 title: "Events"
 ---
+{% assign upcoming_events = site.events | where: 'date', 'date > site.date' %}
+{% assign past_events = site.events | where: 'date', 'date <= site.date' %}
 <section role="document">
-  <h1 class="f1 lh-title">Talks</h1>
+  <h1 class="f1 lh-title">Events</h1>
   <p class="lead">
     I <em>really</em> enjoy showing people things that I'm passionate about.
     One medium I found that allows for an immediate feedback loop is via
-    <strong>talks</strong>!
+    <strong>talks</strong>. I also attend events as a key participant, panelist
+    or some role of that nature.
   </p>
-  <h2 class="f2 ttu lh-title">Upcoming Talks</h2>
-  {% if site.data.events.upcoming.size >= 1 %}
+  <h2 class="f2 ttu lh-title">Upcoming Events</h2>
+  {% if site.upcoming_events.size >= 1 %}
     <p class="measure-wide lh-copy">
       Below are upcoming talks that I'll be giving that you should check out!
     </p>
     <ul class="arrows">
       {% for event in site.upcoming_events %}
-        <li><a href="{{ event.url}}">{{ event.title }}</a></li>
+        <li><a href="{{ event.url }}">{{ event.title }}</a></li>
       {% endfor %}
     </ul>
   {% else %}
@@ -27,26 +30,27 @@ title: "Events"
       mind.
     </p>
   {% endif %}
-  <h2 class="f2 ttu lh-title">Talks</h2>
+  <h2 class="f2 ttu lh-title">Events</h2>
   <p class="measure-wide lh-copy">
-    I've given talks and presentations at <strong>SXSW</strong>,
-    <strong>WaffleJS</strong> and on behalf of <strong>YesWeCode</strong>. So
-    far, I'm clocking at {{ site.data.events.past.size }} events.
+    I've given presentations at <strong>SXSW</strong> and <strong>WaffleJS</strong>
+    and attended panels on behalf of <strong>YesWeCode</strong>. So
+    far, I'm clocking at {{ site.past_events.size }} events that I've been a 
+    part of.
   </p>
   {% if site.data.events.available %}
     <p class="alert alert--success">
-      I'm open for speaking engagements. Want me to speak at your next event?
+      I'm open for engagements. Want me at your next event?
       <a href="/faq/request-for-events">Learn how</a>.
     </p>
   {% else %}
     <p class="alert">
-      I'm currently not available for new speaking engagements. Feel free to
+      I'm currently not available for new engagements. Feel free to
       <a href="/contact/">contact me</a> if you have any questions.
     </p>
   {% endif %}
   <ul class="arrows">
-    {% for event in site.upcoming_events %}
-      <li><a href="{{ event.url}}">{{ event.title }}</a></li>
+    {% for event in site.past_events %}
+      <li><a href="{{ event.url }}">{{ event.title }}</a></li>
     {% endfor %}
   </ul>
 </section>
