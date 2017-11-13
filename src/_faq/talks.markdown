@@ -12,4 +12,4 @@ or [Vim][3].
 
 [1]: /events/
 [2]: /events/techquiera-2fa/
-[3]: /events/wafflejs-vim/
+[3]: /events/waffle-js/2017/vim-gawd/

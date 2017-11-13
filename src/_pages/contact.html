@@ -7,10 +7,49 @@ description: |
 ---
 {% img "{{ 'pages/contact.jpeg' | image_path }}" class:"masthead" width:"100%" height:"auto" %}
 <section role="document">
-  <h1 class="f1 lh-title f-headline-l">Contact</h1>
+  <h1 class="f1 lh-title f-headline-l">Contact {{ site.author }}</h1>
   <p class="lead">
     I'm readily open to communications on most topics. Use the form below to send
     me a message or schedule some time on my calendar to talk. 
   </p>
-  {% include contact_form.html %}
-</div>
+  <p class="alert">
+    Trying to schedule time with me? Want some feedback? Mentorship?<br />
+    Check out my <a href="/faq/how-to-contact/">FAQ about that</a>
+    <strong>first</strong>.
+  </p>
+  <p class="f4 lh-copy measure-narrow">
+  </p>
+  <form class="measure"
+        action="https://formspree.io/yo@jacky.wtf"
+        method="POST">
+    <input type="hidden" name="_next" value="https://jacky.wtf/contact/thank-you/">
+    <input type="hidden" name="_format" value="html">
+    <fieldset id="contact" class="ba b--transparent ph0 mh0">
+      <legend class="f3 fw6 ph0 mh0">Contact</legend>
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="email-address">Email</label>
+        <input required class="pa2 input-reset w-100 ba b--black-20 border-box" type="email" name="email-address">
+      </div>
+      <div class="mv3">
+        <label class="db fw6 lh-copy f6" for="first_name">First Name</label>
+        <input required class="pa2 input-reset w-100 ba b--black-20 border-box" type="text" name="first_name">
+      </div>
+      <div class="mv3">
+        <label class="db fw6 lh-copy f6" for="intent">Intent</label>
+        <select required class="pa2 w-100 ba b--black-20 border-box" name="intent">
+          {% for intent in site.data.contact.intents %}
+            <option value="{{ intent.value }}">{{ intent.title }}</option>
+          {% endfor %}
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="mv3">
+        <label class="db fw6 lh-copy f6" for="body">Message</label>
+        <textarea required class="db border-box hover-black w-100 measure ba b--black-20
+          pa2 br2 mb2 h4" name="body" />
+      </div>
+    </fieldset>
+    <input class="ph3 pv2 input-reset ba b--black bg-transparent grow
+      pointer f6 dib" type="submit" value="Send Message" />
+  </form>
+</section>
