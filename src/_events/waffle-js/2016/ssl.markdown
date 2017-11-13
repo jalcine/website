@@ -1,6 +1,7 @@
 ---
 layout: event
 title: SSL, We Used to Know You
+image: events/wafflejs-ssl.jpeg
 date: 2016-02-03
 description: A quick recap into the history of SSL and its evolution into TLS.
 slides: http://slides.com/jackyalcine-1/ssl-we-used-to-know-you#/
