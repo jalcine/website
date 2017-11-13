@@ -2,7 +2,7 @@
 layout: event
 date: 2017-11-11 23:33:32 PST
 title: SXSW 2016 - Algorithm Bias
-image: events/sxsw.jpg
+masthead: events/sxsw.jpg
 host: Fusion
 location: Austin, Texas, US
 links:
