@@ -1,9 +1,6 @@
 # frozen_string_literal: true
 
 require 'mina/scp'
-require 'dotenv'
-
-Dotenv.load '.envrc'
 
 set :domain, ENV['JALCINE_DEPLOY_DOMAIN']
 set :deploy_to, ENV['JALCINE_DEPLOY_PATH']
@@ -14,7 +11,7 @@ set :shared_paths, ['images']
 
 set :user, ENV['JALCINE_DEPLOY_USER']
 set :group, ENV['JALCINE_DEPLOY_GROUP']
-set :forward_agent, false
+set :forward_agent, true
 
 task :upload do
   ssh "mkdir -p #{deploy_to}/tmp-scp"
@@ -29,7 +26,7 @@ task deploy: :environment do
   deploy do
     invoke :upload
     to :launch do
-      queue "chown :#{group} -fR #{deploy_to}"
+      queue "chown :#{group} -Rc #{deploy_to}"
     end
   end
 end

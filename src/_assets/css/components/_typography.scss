@@ -7,12 +7,32 @@
     }
   }
 }
+
 @mixin expected-serif-fonts {
   @extend .serif;
   
   @at-root {
     html.wf-active & {
-      font-family: "Alegreya";
+      font-family: "Merriweather";
+    }
+  }
+}
+
+@mixin expected-monospace-fonts {
+  @extend .code;
+  
+  @at-root {
+    html.wf-active & {
+      font-family: "Inconsolata";
+    }
+  }
+}
+
+@mixin expected-display-fonts {
+  @at-root {
+    html.wf-active & {
+      font-family: "Megrim";
+      font-weight: 400;
     }
   }
 }
@@ -26,10 +46,17 @@ p, body, div, li {
   @extend .f5;
 }
 
+pre, code, kbd {
+  @include expected-monospace-fonts;
+}
+
+main[role=group] > p:first-child,
 p.lead {
   @extend .f4;
   @extend .measure;
   @extend .lh-copy;
+  text-align: justify;
+  text-align-last: left;
 }
 
 ul {
@@ -42,11 +69,35 @@ ul {
   &.arrows {
     li:before {
       content: "\2192";
-      @extend .pa1;
+      @extend .pa2;
     }
   }
 
   li {
     @extend .pa1;
   }
+}
+
+a {
+  @extend .link;
+}
+
+.fontFamily__special {
+  @include expected-display-fonts;
+}
+
+blockquote {
+  @extend .gray;
+  @extend .measure-narrow;
+  @extend .lh-copy;
+  @extend .mh4;
+}
+
+mark {
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+dt + dd {
+  @extend .mb2;
 }

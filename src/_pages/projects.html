@@ -1,0 +1,17 @@
+---
+layout: bare
+title: Projects
+permalink: /projects/
+description: |
+  To keep my wheel house busy, I work on a few projects to keep my blades and
+  mind sharp.
+---
+{% img "{{ 'pages/projects.jpeg' | image_path }}" class:"masthead" width:"100%" height:"auto" %}
+<section role="document">
+  <h1 class="f1 lh-title f-headline-l">Projects</h1>
+  <p class="lead">{{ page.description | improve }}</p>
+  <p>You should see what I do <a href="/work/">during the day</a>.</p>
+</section>
+{% for project in site.projects %}
+  {% include listing/project.html project=project %}
+{% endfor %}

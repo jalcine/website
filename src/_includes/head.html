@@ -1,27 +1,41 @@
-{% capture excess %}
+{% capture _garbage_ %}
 {% if page.title %}
-  {% capture correct_title %}{{site.name}} &mdash; {{page.title}}{% endcapture %}
+  {% capture correct_title %}{{page.title}} &mdash; {{site.name}}{% endcapture %}
 {% else %}
   {% assign correct_title = site.name %}
 {% endif %}
 {% if page.excerpt %}
   {% assign blurb = page.excerpt | strip_html | strip_newlines | truncate: 200 %}
 {% else %}
-  {% assign blurb = site.description %}
+  {% assign blurb = site.description | strip_newlines %}
 {% endif %}
-{% if page.image.startswith? 'http' %}
+{% if page.image contains 'http://' or page.image contains 'https://' %}
 	{% assign image = page.image %}
 {% else %}
-	{% assign image = asset_path 'favicon/android-chrome-192x192.png' %}
+	{% assign image = 'favicon/android-chrome-192x192.png' | asset_path %}
 {% endif %}
-{% assign full_page_uri = site.url + page.url %}
+{% assign full_page_uri = page.url | prepend: '/' | prepend: site.url %}
+{% if page.redirect %}
+  {% assign full_page_uri = page.redirect.to %}
+{% endif %}
 {% endcapture %}
 <title>{{ correct_title }}</title>
 <meta charset="utf-8">
+{% if page.updated_at %}
+<meta name="revised" content="{{ page.updated_at }}">
+{% endif %}
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
+{% if page.redirect %}
+  <meta http-equiv="refresh" content="2; url={{ page.redirect.to }}">
+{% endif %}
+<meta name='revisit-after' content='7 days'>
+{% if page.date %}
+  <meta name="date" content="{{ page.date}}">
+{% endif %}
+<meta http-equiv='Expires' content='0'>
 {% css page %}
-
+<link rel='help' title='FAQ' href='{{ site.uri }}/faq/'>
+<link rel='index' title='{{ site.name }}' href='{{ site.uri }}'>
 <link rel="apple-touch-icon" sizes="180x180" href="{% asset_path 'favicon/apple-touch-icon.png' %}">
 <link rel="icon" type="image/png" sizes="32x32" href="{% asset_path 'favicon/favicon-32x32.png' %}">
 <link rel="icon" type="image/png" sizes="194x194" href="{% asset_path 'favicon/favicon-194x194.png' %}">
@@ -37,7 +51,8 @@
 
 
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="/feeds/articles.xml" />
-<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Recent" href="/feeds/recent.xml" />
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 
 <meta itemprop="name" content="{{ correct_title }}">
 <meta itemprop="description" content="{{ blurb }}">
@@ -51,7 +66,7 @@
 <meta name="twitter:creator" content="@jackyalcine" />
 <meta name="twitter:site" content="@jackyalcine" />
 <meta name="twitter:title" content="{{ correct_title }}" />
-<meta name="twitter:domain" content="{{site.url}}" />
+<meta name="twitter:domain" content="{{ site.url }}" />
 <meta name="twitter:description" content="{{ blurb }}" />
 <meta name="twitter:image:src" content="{{ image }}" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -61,6 +76,4 @@
 
 <link href="https://github.com/jalcine" rel="me" />
 <link href="https://twitter.com/jackyalcine" rel="me" />
-{% if page.path contains '_posts' %}
-  <link rel="amphtml" href="{{ page.id | prepend: site.ampdir | prepend: site.baseurl | prepend: site.url }}">
-{% endif %}
+<link rel="canonical" href="{{ full_page_uri }}">

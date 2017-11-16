@@ -1,15 +1,14 @@
 ---
 layout: bare
+ext: html
 ---
-
-<div class="post">
-  <h1>Tag: {{ page.tag }}</h1>
-  <ul>
-    {% for post in site.tags[page.tag] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-        {{ post.description }}
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-<hr>
+{% assign rss_feed = site.tag_feed_dir | append: page.tag | append: '.xml' %}
+<section role="document">
+  <h1 class="lh-title f-headline-l">Posts Tagged "{{ page.tag }}"</h1>
+  <p class="lh-copy lead">
+    Here's a list of posts tagged <em>{{ page.tag }}</em>. You can subscribe to
+    these posts by visiting <a href="/{{ rss_feed }}">this RSS/ATOM feed</a>.
+  </p>
+  {{ tag_posts }}
+  {% include post_listing.html posts=page.posts %}
+</section>

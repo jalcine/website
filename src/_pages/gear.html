@@ -1,0 +1,43 @@
+---
+layout: bare
+title: My Gear
+permalink: /gear/
+---
+{% img "{{ 'pages/gear.jpeg' | image_path }}" class:"masthead" width:"100%" height:"auto" %}
+<section role="document">
+  <h1 class="f1 f-headline-l lh-title">Gear</h1>
+  <p class="lead">
+    This page reflects a listing of the tools I use for my every day activity.
+    This ranges from my <a href="#cameras">cameras</a> to <a
+      href="#shell">terminal shell of choice</a>. Good chance that you've
+    learned here out of curiousity or because I pointed you to it. Quite
+    frankly, this page serves as a point of reference for me whenever I have to
+    discuss what I use on my day-to-day with people.
+  </p>
+
+  {% for category in site.data.gear.categories %}
+    <section class="cf db cb mv2 mw8">
+      <h2 class="f2 lh-solid mb1">
+        <a name="{{category.anchor}}">{{ category.name }}</a>
+      </h2>
+      <address class="gray f6 i">
+        :hourglass: Updated <time>{{ category.last_updated }}</time>
+      </address>
+      {% for item in category.components %}
+        <section role="group" class="cf db cb">
+          <h3 class="f3 lh-solid">
+            <a name="{{item.anchor}}">{{ item.name }}</a>
+          </h3>
+          {% if item.image %}
+            {% img "{{ item.image | image_path }}"
+                  class:"w-auto h-auto mw6 db ma2 center-s vh-25 fr"
+                  width:auto height:auto %}
+          {% endif %}
+          <div class="f5 lh-copy center-s fl-l measure-narrow-l">
+            {{ item.bio | strip_tags: '<p></p>' | markdownify }}
+          </div>
+        </section>
+      {% endfor %}
+    </section>
+  {% endfor %}
+</section>

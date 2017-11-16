@@ -19,19 +19,9 @@ excerpt: none
   {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
   {% if page.date %}<span>:clock7: <time>{{ page.date | date_to_rfc822 }}</time></span>{% endif %}
   {% if page.revised %}<span>:clock10: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
+  <span>:clock3: {{ content | reading_time }}</span>
 </address>
 <main role="group" class="post">
-  {{ content }}
+  {{ content | improve | letter_spacing }}
 </main>
-<footer role="group" class="post">
-  <nav>
-    {% if page.previous %}<a class="fl-l mv2 center pa2 dib" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>{% endif %}
-    {% if page.next %}<a class="fr-l mv2 center pa2 dib" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>{% endif %}
-  </nav>
-  <p class="measure lh-copy dark-gray">
-    Thoughts? Comments? Suggestions? Rage posts?<br />
-    Send all of that to either
-    <a href="https://twitter.com/jackyalcine">@jackyalcine</a> or 
-    <a href="mailto:blog@jacky.wtf">e-mail</a>.
-  </p>
-</footer>
+{% include post_footer.html %}

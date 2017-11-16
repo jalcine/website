@@ -1,13 +1,55 @@
 .section--dark {
   @extend .bg-near-black;
   @extend .white;
-  
+
   a {
     @extend .blue;
 
     &:hover {
       @extend .washed-blue;
     }
+  }
+}
+
+.section--well {
+  @extend .pa2;
+  @extend .w-100;
+  @extend .ph2, .ph3-ns, .pv3, .pv4-ns;
+
+  p {
+    @extend .measure;
+    @extend .lh-copy;
+  }
+
+  &.section--blue {
+    @extend .bg-dark-blue;
+    @extend .white;
+  }
+
+  &.section--yellow {
+    @extend .bg-yellow;
+    @extend .near-black;
+  }
+
+  &.section--black {
+    @extend .bg-near-black;
+    @extend .white;
+  }
+
+  a.cta {
+    @extend .pa2;
+    @extend .bw2;
+    @extend .b--solid;
+    @extend .link;
+    @extend .dib;
+    @extend .mv2;
+    @extend .ttu;
+    @extend .f4;
+    @extend .grow;
+    @extend .bg-black-40;
+    @extend .b--black-40;
+    @extend .white;
+    @extend .hover-white;
   }
 }
 
@@ -24,7 +66,7 @@ footer[role=group] {
   @extend .cb;
   @extend .db;
   @extend .f5;
-  
+
   a {
     @extend .navy;
 
@@ -33,27 +75,90 @@ footer[role=group] {
     }
   }
 }
-  
-section[role=document] {
-  @extend .w-80-l, .w-100, .mw9, .center, .db, .pa4, .mv4, .cf;
+
+section[role=document],
+section.section__region {
+  @extend .mw8, .w-100, .mw9, .db, .pa4, .mv4, .cf;
 
   > img.masthead {
     @extend .db, .center, .w-100, .h-auto, .cb, .fl;
+    max-height: 25vh;
   }
 }
 
 header[role=document] {
-  @extend .bg-near-white, .w-100, .pa2;
- 
-  a {
-    @extend .navy;
+  @extend .bg-near-white, .w-100, .pa1, .cb, .cf;
 
-    &:hover {
-      @extend .blue;
+  a {
+    @extend .navy, .dib, .link, .mv1, .pv2, .pv1;
+
+    &.selected {
+      @extend .bg-yellow;
+      @extend .bw2;
+      @extend .b--yellow;
+    }
+  }
+
+  > h2 {
+    @extend .fontFamily__special;
+    @extend .tracked-tight;
+    @extend .lh-solid;
+    @extend .f2;
+    @extend .ma1;
+    @extend .fr-l;
+    @extend .tc;
+    @extend .pa1;
+  }
+
+  > nav {
+    @extend .fl-l;
+    @extend .pa1;
+    @extend .mt1;
+
+    a {
+      @extend .navy, .dib, .link, .pa1;
+
+      &.selected {
+        @extend .bg-yellow;
+        @extend .bw2;
+        @extend .b--yellow;
+      }
+
+      &:hover {
+        @extend .blue;
+      }
     }
   }
 }
 
 img.emoji {
-  @extend .ma1;
+  @extend .v-mid;
+}
+
+section.project__list {
+  @extend .w-100;
+
+  > p {
+    @extend .measure;
+    @extend .f4;
+  }
+}
+
+.alert {
+  @extend .mw7;
+  @extend .b--dotted;
+  @extend .pa3;
+  @extend .bw1;
+  @extend .bg-washed-blue;
+  @extend .near-black;
+
+  &.alert--success {
+    @extend .bg-light-green;
+    @extend .near-black;
+    @extend .b--green;
+
+    > a {
+      @extend .green;
+    }
+  }
 }
