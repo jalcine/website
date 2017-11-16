@@ -1,6 +1,7 @@
 .section--dark {
   @extend .bg-near-black;
   @extend .white;
+
   a {
     @extend .blue;
 
@@ -86,7 +87,7 @@ section.section__region {
 }
 
 header[role=document] {
-  @extend .bg-near-white, .w-100, .pa1;
+  @extend .bg-near-white, .w-100, .pa1, .cb, .cf;
 
   a {
     @extend .navy, .dib, .link, .mv1, .pv2, .pv1;
