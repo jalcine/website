@@ -5,7 +5,7 @@ require 'dotenv'
 task default: %w[clean build:dev]
 
 task :clean do
-  FileUtils.rmdir('deploy', verbose: true)
+  FileUtils.rmdir('_deploy', verbose: true)
   FileUtils.rmdir('_site', verbose: true)
 end
 
@@ -99,5 +99,5 @@ namespace :notify do
   end
 end
 
-task deploy: %i[clean prod build:deploy upload:setup upload:deploy]
+task deploy: %i[clean prod build:deploy upload:setup upload:deploy notify]
 task 'deploy:dev': %i[clean dev build:deploy upload:setup upload:deploy]
