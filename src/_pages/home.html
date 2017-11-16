@@ -1,32 +1,40 @@
 ---
 layout: bare
-permalink: /
+permalink: /index.html
+redirect_from:
+  - /home/
 title: "Jacky Alciné is an educator, software engineer, and Black as hell."
 components:
   header: false
   footer: true
 ---
-{% assign clean_blurb = site.blurb | strip_tags: '<p></p>' | strip_newlines | improve %}  
+{% assign clean_blurb = site.blurb | improve %}  
 {% assign brand_landing_image_path = 'brand/self.jpeg' | image_path %}
+{% include notice.html %}
 <section class="section--dark" role="main">
-  {% include notices.html %}
-  <div class="w-100 w-80-l center-l db cf v-mid">
-    <div class="dib-l fl-l w-40-l center w-auto h-70">
+  <div class="w-100 db cf">
+    <aside class="dib-l fl-ns w-60-ns center w-auto h-70">
       {% img "{{ brand_landing_image_path }}"
-            class:"w-100 mw6-m h-auto mv2 db center"
+            class:"w-100 mw7 h-auto mv2 db fr-ns center cb"
             draggable:"false"
             width:"auto"
             height:"auto"
             alt:"Jacky looking to the right at Dara who's not in frame at Interact 2017."
       %}
-      <p class="lh-solid gray tc tr-l ttu f7 mt0-l">
-        :camera: credit goes to <a target="_blank" href="https://thedanigrant.com">@thedanigrant</a>
+      <p class="lh-solid gray tc ttu f7 cb tr-ns">
+        :camera: <a target="_blank" href="https://thedanigrant.com">@thedanigrant</a>
       </p>
-    </div>
-    <div class="dib-l fl-l w-60-l pl3-m pl5-l ph3 w-100">
-      <h1 class="f1 f-headline-l tracked-tight mv3 tc tl-l fontFamily__special">jackyalciné</h1>
-      <p class="measure-l lh-copy tj">{{ clean_blurb }}</p>
-    </div>
+    </aside>
+    <main role="group" class="dib-l fr-ns w-40-ns pl3-ns ph3 w-100">
+      <h1 class="f1 tracked mv3 tc tl-l fontFamily__special">jackyalciné</h1>
+      <p class="lead">
+        {{ clean_blurb }}
+      </p>
+      <p class="lh-copy">
+        Most questions you have may be already answered <a href="/faq/">on my FAQ</a>.
+        If not; <a href="/contact/">send me a message</a>.
+      </p>
+    </main>
   </div>
 </section>
 {% for entry in site.data.links.landing %}

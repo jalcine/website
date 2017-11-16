@@ -96,9 +96,36 @@ header[role=document] {
       @extend .bw2;
       @extend .b--yellow;
     }
+  }
 
-    &:hover {
-      @extend .blue;
+  > h2 {
+    @extend .fontFamily__special;
+    @extend .tracked-tight;
+    @extend .lh-solid;
+    @extend .f2;
+    @extend .ma1;
+    @extend .fr-l;
+    @extend .tc;
+    @extend .pa1;
+  }
+
+  > nav {
+    @extend .fl-l;
+    @extend .pa1;
+    @extend .mt2;
+
+    a {
+      @extend .navy, .dib, .link, .pa1;
+
+      &.selected {
+        @extend .bg-yellow;
+        @extend .bw2;
+        @extend .b--yellow;
+      }
+
+      &:hover {
+        @extend .blue;
+      }
     }
   }
 }
@@ -113,5 +140,24 @@ section.project__list {
   > p {
     @extend .measure;
     @extend .f4;
+  }
+}
+
+.alert {
+  @extend .mw7;
+  @extend .b--dotted;
+  @extend .pa3;
+  @extend .bw1;
+  @extend .bg-washed-blue;
+  @extend .near-black;
+
+  &.alert--success {
+    @extend .bg-light-green;
+    @extend .near-black;
+    @extend .b--green;
+
+    > a {
+      @extend .green;
+    }
   }
 }

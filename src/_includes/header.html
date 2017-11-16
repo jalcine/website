@@ -1,10 +1,12 @@
 <header role="document">
-  <h2 class="fontFamily__special f2 mv2 mv0-l tracked-tight fr-l tc tl-l lh-solid">@jackyalcine</h2>
-  <nav class="ma1 f6 fw6 ttu tracked tc tl-l">
+  <h2>{{ site.name }}</h2>
+  <nav>
     {% for link in site.data.links.navigation %}
-      {% if link.in contains 'footer' %}{% continue %}{% endif %}
-      <a {% if link.classes %}class="{{ link.classes }}"{%endif%} href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
+      <a {% if link.classes %}class="{{ link.classes }}"{% endif %} href="{{ link.link }}" title="{{ link.title }}">
+        {{ link.title }}
+      </a>
     {% endfor %}
   </nav>
+  {% include notice.html %}
 </header>
 {% include notices.html %}

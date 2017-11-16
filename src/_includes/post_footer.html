@@ -1,13 +1,18 @@
 <footer role="group" class="post">
   <section class="bg-washed-blue b--navy bw1 b--dotted pa2 mw7">
     <p class="lh-copy">
-      <strong>Did you find this interesting?</strong>
-      I recommend subscribing to my newsletter for more content and alerts
-      when I publish more information. <a href="/newsletter">Learn how</a>.
+      Did you find "{{ post.title }}" <strong>interesting</strong>? Want more?
       <br />
-      <strong>Have a project idea?</strong>
-      Let's work on it. I'm available for contract work.
-      <a href="/work/freelance/">Learn more</a>.
+      I recommend <em>subscribing to my newsletter</em> for more content and alerts
+      when I publish more information.
+      <a href="/subscribe/#newsletter">Get to the top of line</a>.
+      <br />
+    </p>
+    <p class="lh-copy">
+      Have a product idea? Need some code written?<br />
+      <strong>Let's work on it</strong>.
+      I'm available for contract work with Ruby, Python and
+      Elixir projects. <a href="/faq/contracting/">Let's get started</a>.
     </p>
   </section>
   {% if site.related_posts.size >= 1 %}

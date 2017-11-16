@@ -1,0 +1,10 @@
+---
+intents:
+  - value: work:contract
+    title: Inquiry For Contract Work
+  - value: work:ideation
+    title: Prototype Building
+  - value: press
+    title: General Press Questions
+  - value: press:release
+    title: Request for Press Release

@@ -1,0 +1,17 @@
+---
+layout: bare
+image: none
+---
+{% if page.image %}
+  {% img "{{ page.image | image_path }}" class:"w-100" width:"100%" height:"auto" %}
+{% endif %}
+<section role="document">
+  <h2 class="f2 lh-title">
+    <a href="{{ page.website }}">{{ page.title }}</a>
+  </h2>
+  <h4 class="f4 lh-subtitle">{{ page.description }}</h4>
+  <a href="/portfolio/">&laquo; Back to portfolio index</a>
+  <main role="group">
+    {{ content | improve | letter_spacing | markdownify }}
+  </main>
+</section>

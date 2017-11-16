@@ -1,6 +1,6 @@
 {% capture _garbage_ %}
 {% if page.title %}
-  {% capture correct_title %}{{site.name}} &mdash; {{page.title}}{% endcapture %}
+  {% capture correct_title %}{{page.title}} &mdash; {{site.name}}{% endcapture %}
 {% else %}
   {% assign correct_title = site.name %}
 {% endif %}
@@ -12,9 +12,9 @@
 {% if page.image contains 'http://' or page.image contains 'https://' %}
 	{% assign image = page.image %}
 {% else %}
-	{% assign image = 'favicon/android-chrome-192x192.png' %}
+	{% assign image = 'favicon/android-chrome-192x192.png' | asset_path %}
 {% endif %}
-{% assign full_page_uri = page.path | prepend: '/' | prepend: site.url %}
+{% assign full_page_uri = page.url | prepend: '/' | prepend: site.url %}
 {% if page.redirect %}
   {% assign full_page_uri = page.redirect.to %}
 {% endif %}

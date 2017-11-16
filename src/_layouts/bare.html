@@ -1,5 +1,4 @@
 ---
-skip_amp: false
 ---
 <!DOCTYPE HTML>
 <html lang="en">
@@ -8,7 +7,10 @@ skip_amp: false
   </head>
   <body>
     {% unless page.components.header == false %}{% include header.html %}{% endunless %}
-    <main>{{ content }}</main>
+    <main>
+      {% include breadcrumb.html %}
+      {{ content }}
+    </main>
     {% unless page.components.footer == false %}{% include footer.html %}{% endunless %}
     {% js page async:true defer:true %}
   </body>

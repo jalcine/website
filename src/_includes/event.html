@@ -1,0 +1,12 @@
+<article class="pa1 w-100 w-50-l db cf fl">
+  {% img "{{ event.image.src | image_path }}" class:"db w-100 h-auto"
+          height:"auto" width:"auto"
+          alt:"{{ event.image.title }}"
+          title:"{{ event.image.title }}" %}
+  <h3 class="f3 tracked ttu">
+    <a href="{{ event.href }}" title="{{ event.name }}">
+      {{ event.name | improve }}
+    </a>
+  </h3>
+  {{ event.description | improve | markdownify }}
+</article>

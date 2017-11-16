@@ -2,7 +2,7 @@ require 'rake'
 require 'fileutils'
 require 'dotenv'
 
-task default: %w[clean build:drafts serve]
+task default: %w[clean build:dev]
 
 task :clean do
   FileUtils.rmdir('deploy', verbose: true)
@@ -11,7 +11,7 @@ end
 
 def run_jekyll(args=[])
   command = 'bin/jekyll ' + args.join(' ')
-  system(command)
+  puts system(command)
 end
 
 def run_jekyll_in_dev(args=[])
@@ -22,6 +22,9 @@ def run_jekyll_in_prod(args=[])
   run_jekyll(args + ['-d', '_deploy'])
 end
 
+task :serve do
+  system 'bin/jekyll serve'
+
 namespace :build do
   task :watch do
     run_jekyll_in_dev(['build', '--incremental', '--watch'])
@@ -30,8 +33,11 @@ namespace :build do
   task :deploy do
     run_jekyll_in_prod(['build', '--verbose'])
   end
-end
 
+  task :dev do
+    run_jekyll_in_dev(['build'])
+  end
+end
 
 task :dev do
   Dotenv.load('.envrc.local')

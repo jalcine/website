@@ -9,16 +9,16 @@ gem 'rake'
 # }}}
 
 group :jekyll do
+  gem 'activesupport'
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
   gem 'jekyll', '~> 3.5'
   gem 'kramdown'
   gem 'mini_magick'
+  gem 'rack-jekyll'
   gem 'rb-gsl'
   gem 'rouge'
-  gem 'rack-jekyll'
   gem 'sprockets', '~> 3.7'
-  gem 'activesupport'
 end
 
 group :jekyll_plugins do
@@ -28,17 +28,14 @@ group :jekyll_plugins do
   gem 'jekyll-email-protect'
   gem 'jekyll-feed'
   gem 'jekyll-gist'
-  # gem 'jekyll-picture-tag'
   gem 'jekyll-redirect-from'
-  # gem 'jekyll-sass-converter'
   gem 'jekyll-sitemap'
   gem 'jekyll-tagging'
   gem 'jekyll-tagging-related_posts'
-  # gem 'jekyll-timeago'
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
-  # gem 'jekyll-webmention_io'
-  # gem 'jekyll_version_plugin'
+  gem 'jekyll-webmention_io'
+  gem 'jekyll_version_plugin'
   gem 'jemoji'
 end
 
@@ -67,15 +64,3 @@ group :guard do
   gem 'libnotify'
 end
 # }}}
-
-group :test do
-  gem 'capybara'
-  # gem 'capybara-accessible'
-  gem 'capybara-puma'
-  gem 'capybara-screenshot'
-  gem 'chromedriver-helper'
-  gem 'pry-rescue'
-  gem 'pry-stack_explorer'
-  gem 'rspec'
-  gem 'html-proofer'
-end
