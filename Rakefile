@@ -24,6 +24,7 @@ end
 
 task :serve do
   system 'bin/jekyll serve'
+end
 
 namespace :build do
   task :watch do
