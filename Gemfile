@@ -65,15 +65,3 @@ group :guard do
   gem 'libnotify'
 end
 # }}}
-
-group :test do
-  gem 'capybara'
-  # gem 'capybara-accessible'
-  gem 'capybara-puma'
-  gem 'capybara-screenshot'
-  gem 'chromedriver-helper'
-  gem 'pry-rescue'
-  gem 'pry-stack_explorer'
-  gem 'rspec'
-  gem 'html-proofer'
-end

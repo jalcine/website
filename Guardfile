@@ -13,7 +13,7 @@ end
 # Load a Rack server to handle the local serving of the site.
 guard :rack,
       port: 1993, server: :puma, force_run: true, daemon: true,
-      host: '0.0.0.0', cmd: 'bin/rackup' do
+      host: '0.0.0.0' do
   watch 'Gemfile.lock'
   watch 'config.ru'
   watch(/^_config(.*)\.yml/)

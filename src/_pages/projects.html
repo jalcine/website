@@ -9,18 +9,9 @@ description: |
 {% img "{{ 'pages/projects.jpeg' | image_path }}" class:"masthead" width:"100%" height:"auto" %}
 <section role="document">
   <h1 class="f1 lh-title f-headline-l">Projects</h1>
-  <p class="lead">{{ page.description }}</p>
+  <p class="lead">{{ page.description | improve }}</p>
+  <p>You should see what I do <a href="/work/">during the day</a>.</p>
 </section>
-{% for project in site.data.projects %}
-  <section class="project__listing section__region">
-    {% if project.image %}
-      {% img "{{ project.image | image_path }}" class:"masthead" width:"100%" height:"auto" %}
-    {% endif %}
-    <h2 class="f2 lh-title tracked-tight">
-      <a href="{{ project.uri }}" target="_blank">
-        {{ project.title }}
-      </a>
-    </h2>
-    {{ project.description | improve | markdownify }}
-  </section>
+{% for project in site.projects %}
+  {% include listing/project.html project=project %}
 {% endfor %}

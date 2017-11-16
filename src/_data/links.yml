@@ -14,8 +14,8 @@ navigation:
     title: ":mailbox_with_mail: Contact"
     link: "/contact/"
   -
-    title: ":rotating_light: Projects"
-    link: "/projects/"
+    title: ":breifcase: Work"
+    link: "/work/"
   -
     title: ":question: FAQ"
     link: "/faq/"
@@ -73,9 +73,8 @@ landing:
     title: Keep Up to Date
     color: yellow
     description: |
-      I keep myself busy - idle mind, as the saying goes. It's not all work for
-      me though. Find out more about my moves and how they relate to you and
-      your endeavors by subscribing.
+      I keep myself busy - idle mind, as the saying goes. Find out more about
+      my moves and how they relate to you and your endeavors by subscribing.
 
       It's also an *excellent* way to get perks on projects, events and other
       things colleagues and I are working on.
@@ -86,9 +85,8 @@ landing:
     title: Peep My Progress
     color: black
     description: |
-      As well in my subscriptions, I've been working to keep my projects all in
-      sync and in check. Things like [twch.at](http://app.twch.at) and
-      [goodforpoc](http://goodforpocin.tech) are all in there.
+      As well in my subscriptions, I work on side projects to help keep my eyes
+      peeled on different aspects of the industry.
     link:
       text: See Current Activity
       uri: /projects/

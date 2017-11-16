@@ -10,6 +10,8 @@ include:
   - _pages
   - _faq
   - _events
+  - _projects
+  - _portfolio
 
 name: jackyalciné
 author: Jacky Alciné
@@ -65,11 +67,25 @@ defaults:
     scope:
       path: ""
     values:
-      output: true
-      layout: bare
-      components:
-        header: true
-        footer: true
+      layout: base
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      image: none
+  -
+    scope:
+      path: "_portfolio"
+      type: portfolios
+    values:
+      layout: portfolio
+  -
+    scope:
+      path: "_projects"
+    values:
+      layout: project
 
 collections:
   faq:
@@ -78,6 +94,12 @@ collections:
   events:
     output: true
     layout: event
+  projects:
+    output: true
+    layout: project
+  portfolio:
+    output: true
+    layout: portfolio
 
 assets:
   autoprefixer:
