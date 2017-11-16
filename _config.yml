@@ -113,7 +113,6 @@ assets:
   autoprefixer:
     browsers:
       - last 2 versions
-      - IE > 10
   debug: false
   autowrite: true
   digest: true
@@ -131,7 +130,6 @@ assets:
     - '*.jpg'
     - '*.jpeg'
     - '*.gif'
-    - bundle.css
   sources:
     - _assets/css
     - _assets/images
@@ -156,8 +154,10 @@ webmentions:
   cache_folder: .cache/webmention
   cache_bad_uris_for: 10
   legacy_domains:
-    - http://jalcine.me
-    - http://www.jalcine.me
+    - "http://jalcine.me"
+    - "http://www.jalcine.me"
+    - "https://jalcine.me"
+    - "https://www.jalcine.me"
   throttle_lookups:
     last_week: daily
     last_month: weekly
