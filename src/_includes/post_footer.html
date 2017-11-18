@@ -1,7 +1,7 @@
 <footer role="group" class="post">
   <section class="bg-washed-blue b--navy bw1 b--dotted pa2 mw7">
     <p class="lh-copy">
-      Did you find "{{ post.title }}" <strong>interesting</strong>? Want more?
+      Did you find "{{ page.title }}" <strong>interesting</strong>? Want more?
       <br />
       I recommend <em>subscribing to my newsletter</em> for more content and alerts
       when I publish more information.
@@ -16,7 +16,7 @@
     </p>
   </section>
   {% if site.related_posts.size >= 1 %}
-  <section class="mv7 pa2">
+  <section class="pa2">
     <h3 class="f3 lh-title tracked-tight">Related Posts</h3>
     <ul>
     {% for related_post in site.related_posts limit: 5 %}

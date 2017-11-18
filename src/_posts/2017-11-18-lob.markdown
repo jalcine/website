@@ -1,0 +1,27 @@
+---
+layout: post
+title: Lobbed a Letter Your Way
+date: 2017-11-18 12:10:05 PST
+excerpt: |
+  I'm now a senior software engineer at Lob.
+category: job
+tags:
+  - lob
+  - transition
+---
+
+I got a real knack for making super corny weblog posts where I start somewhere
+new[^1] [^2]. This title was the best I could do, might be losing the juice!
+I'm starting as a senior software engineer over at [Lob][]. Lob focuses on making
+the act of delivering letters, checks, postcards and the ilk as simple as sending
+a `POST` request. [Check it out][1] and send yourself something. It's _that_
+easy.
+
+That's it, to be frank. I'm _really_ excited about this role and the impact that
+Lob currently provides and plans on providing.
+
+[^1]: {% post_url 2016-12-19-catching-that-ride %}
+[^2]: {% post_url 2015-11-01-new-job-who-this %}
+[^3]: I moved probably max 15 feet upwards :grinning:.
+[lob]: https://lob.com
+[1]: https://dashboard.lob.com/#/register

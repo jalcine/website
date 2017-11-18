@@ -48,7 +48,7 @@ header[role=group].post {
 }
 
 blockquote.excerpt {
-  @extend .pa2, .fw7, .f3, .f2-l, .measure-narrow, .cb, .gray, .lh-copy;
+  @extend .pa2, .fw7, .f3, .f2-l, .measure, .cb, .gray, .lh-copy;
   @include post-spacing;
   margin-before: 0;
   margin-after: 0;
