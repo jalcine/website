@@ -1,18 +1,19 @@
 <footer role="group" class="post">
-  <section class="bg-washed-blue b--navy bw1 b--dotted pa2 mw7">
+  <section class="bg-washed-blue b--navy bw1 b--dashed mw7 ph4-ns ph2">
     <p class="lh-copy">
       Did you find "{{ page.title }}" <strong>interesting</strong>? Want more?
       <br />
       I recommend <em>subscribing to my newsletter</em> for more content and alerts
       when I publish more information.
-      <a href="/subscribe/#newsletter">Get to the top of line</a>.
+      <a href="/subscribe/#newsletter"><strong>Get to the top of line</strong></a>.
       <br />
     </p>
     <p class="lh-copy">
       Have a product idea? Need some code written?<br />
       <strong>Let's work on it</strong>.
       I'm available for contract work with Ruby, Python and
-      Elixir projects. <a href="/faq/contracting/">Let's get started</a>.
+      Elixir projects.
+      <a href="/faq/contracting/"><strong>Let's get started</strong></a>.
     </p>
   </section>
   {% if site.related_posts.size >= 1 %}
@@ -28,11 +29,11 @@
   <p class="measure lh-copy dark-gray">
     Thoughts? Comments? Suggestions? Rage posts?<br />
     Send all of that to either
-    <a href="https://twitter.com/jackyalcine">@jackyalcine</a> or 
-    <a href="mailto:blog@jacky.wtf">e-mail</a>.
+    <a href="https://twitter.com/jackyalcine"><strong>@jackyalcine</strong></a> or 
+    <a href="mailto://blog@jacky.wtf"><strong>e-mail</strong></a>.
   <nav>
-    {% if page.previous %}<a class="fl-l mv2 center pa2 dib" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>{% endif %}
-    {% if page.next %}<a class="fr-l mv2 center pa2 dib" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>{% endif %}
+    {% if page.previous %}<a class="mv2 center pa2 dib" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>{% endif %}
+    {% if page.next %}<a class="mv2 center pa2 dib" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>{% endif %}
   </nav>
   </p>
 </footer>
