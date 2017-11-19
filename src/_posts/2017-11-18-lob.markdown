@@ -2,6 +2,7 @@
 layout: post
 title: Lobbed a Letter Your Way
 date: 2017-11-18 12:10:05 PST
+image: posts/lob-job.png
 excerpt: |
   I'm now a senior software engineer at Lob.
 category: job
@@ -18,10 +19,12 @@ a `POST` request. [Check it out][1] and send yourself something. It's _that_
 easy.
 
 That's it, to be frank. I'm _really_ excited about this role and the impact that
-Lob currently provides and plans on providing.
+Lob currently provides and plans on providing. I'll be sure to speak more on the
+things that the company's working on - you can get a glimpse at [their blog][2].
 
-[^1]: {% post_url 2016-12-19-catching-that-ride %}
-[^2]: {% post_url 2015-11-01-new-job-who-this %}
+[^1]: <{{ site.url }}/{% post_url 2016-12-19-catching-that-ride %}>
+[^2]: <{{ site.url }}/{% post_url 2015-11-01-new-job-who-this %}>
 [^3]: I moved probably max 15 feet upwards :grinning:.
 [lob]: https://lob.com
 [1]: https://dashboard.lob.com/#/register
+[2]: https://lob.com/blog
