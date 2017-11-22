@@ -2,7 +2,6 @@
 layout: post
 image: posts/deep-dive-into-maru.jpeg
 title: A Deep Dive into Maru
-date: 2017-10-24 13:12:25 PDT
 excerpt: |
   A quick guide into using maru 0.12.5 for API building.
 category: tutorial
