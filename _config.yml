@@ -1,9 +1,10 @@
-# vim: set nospell foldenable foldlevel=1 :
+﻿---
+---
 
-source: src
-destination: _site
-layouts_dir: src/_layouts
-plugins_dir: plugins
+destination: _site/
+source: src/
+layouts_dir: src/_layouts/
+plugins_dir: plugins/
 filter_entries: []
 strict_front_matter: false
 include:
@@ -31,6 +32,7 @@ description: |
 
 timezone: America/Los_Angeles
 encoding: utf-8
+incremental: true
 
 permalink: /weblog/:title/
 show_drafts: false
@@ -138,7 +140,6 @@ assets:
     - node_modules
 
 jekyll-mentions: https://twitter.com
-incremental: true
 
 gpg:
   fingerprint: 0x4DEFFC9FF82E8908
@@ -166,7 +167,7 @@ webmentions:
 
 autolink_email:
   link_attr: class="email-link" # attributes to add to the link
-  skip_tags: ["pre", "code"]            # tags to skip
+  skip_tags: ["pre", "code"]    # tags to skip
   escape: true
 
 jekyll-archives:
