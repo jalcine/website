@@ -1,4 +1,4 @@
-# Jacky Alciné
+## Jacky Alciné
 
 **I'm open for contract work. [Learn more on my site][3]**.
 
