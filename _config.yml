@@ -33,6 +33,7 @@ description: |
 timezone: America/Los_Angeles
 encoding: utf-8
 incremental: true
+source: ./src/
 
 permalink: /weblog/:title/
 show_drafts: false
@@ -48,6 +49,7 @@ tag_feed_dir: feeds/tags/
 
 exclude:
   - _site
+  - _deploy
   - .asset_cache
 
 kramdown:

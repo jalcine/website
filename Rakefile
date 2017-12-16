@@ -1,3 +1,5 @@
+# frozen_literal_string: true
+
 require 'rake'
 require 'fileutils'
 require 'dotenv'
@@ -10,7 +12,7 @@ task :clean do
 end
 
 def run_jekyll(args = [])
-  command = 'bin/jekyll ' + args.join(' ')
+  command = 'bin/jekyll' + ' ' + args.join(' ')
   puts system(command)
 end
 
@@ -18,7 +20,7 @@ def run_jekyll_in_dev(args = [])
   run_jekyll(args + ['--config', '_config.yml,_config.dev.yml'])
 end
 
-def run_jekyll_in_prod(args = []) 
+def run_jekyll_in_prod(args = [])
   run_jekyll(args + ['-d', '_deploy'])
 end
 
@@ -79,10 +81,10 @@ namespace :notify do
     begin
       require 'net/http'
       require 'uri'
-      puts "* Notifying Google that the site has updated"
+      puts '* Notifying Google that the site has updated'
       Net::HTTP.get('www.google.com', '/webmasters/tools/ping?sitemap=' + URI.escape('//jacky.wtf/sitemap.xml'))
     rescue LoadError
-      puts "! Could not ping Google about our sitemap, because Net::HTTP or URI could not be found."
+      puts '! Could not ping Google about our sitemap, because Net::HTTP or URI could not be found.'
     end
   end
 
@@ -94,7 +96,7 @@ namespace :notify do
       puts '* Notifying Bing that the site has updated'
       Net::HTTP.get('www.bing.com', '/webmaster/ping.aspx?siteMap=' + CGI.escape('//jacky.wtf/sitemap.xml'))
     rescue LoadError
-      puts "! Could not ping Bing about our sitemap, because Net::HTTP or URI could not be found."
+      puts '! Could not ping Bing about our sitemap, because Net::HTTP or URI could not be found.'
     end
   end
 end
