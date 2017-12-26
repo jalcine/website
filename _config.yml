@@ -1,6 +1,4 @@
 ﻿---
----
-
 destination: _site/
 source: src/
 layouts_dir: src/_layouts/

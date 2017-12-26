@@ -5,7 +5,6 @@ TAGS_TO_ADD =
 {
   'tweet'         => TwitterJekyll::TwitterTag,
   'tweetnocache'  => TwitterJekyll::TwitterTagNoCache,
-  'youtube'       => Jekyll::Youtube
 }
 
 def apply_tag(name, klass)

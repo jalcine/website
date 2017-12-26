@@ -1,56 +1,19 @@
-# Jekyll - Easy Youtube Embed
-#
-# Katie Harron - https://github.com/pibby
-#
-#   Input:
-#     {% youtube Al9FOtZcadQ %}
-#   Output:
-#   <div class="video">
-#     <figure>
-#       <iframe width="640" height="480" src="//www.youtube.com/embed/Al9FOtZcadQ" allowfullscreen></iframe>
-#     </figure>
-#   </div>
+# frozen_string_literal: true
 
-module Jekyll
-  class Youtube < Liquid::Tag
-    @url = nil
-
-    VIDEO_URL = /(\S+)/i
-
-    def initialize(tag_name, markup, tokens)
-      super
-
-      if markup =~ VIDEO_URL
-        @url = $1
-      end
-    end
-
-    def render(context)
-      source = "<div class=\"video\">"
-      source += "<figure>"
-      source += "<iframe width=\"640\" height=\"480\" src=\"//www.youtube.com/embed/#{@url}\" frameborder=\"0\" allowfullscreen></iframe>"
-      source += "</figure>"
-      source += "</div>"
-      source
-    end
-  end
-end
-
-
-module Jekyll
+module JackyWtf
   class StubBlock < Liquid::Block
-    def render(context)
+    def render(_context)
       'TODO: Fix this block'
     end
   end
 
   class StubTag < Liquid::Tag
-    def render(context)
+    def render(_context)
       'TODO: Fix this tag'
     end
   end
 end
 
-Liquid::Template.register_tag('youtube', Jekyll::Youtube)
-Liquid::Template.register_tag('quote', Jekyll::StubBlock)
-Liquid::Template.register_tag('video', Jekyll::StubTag)
+Liquid::Template.register_tag('quote', JackyWtf::StubBlock)
+Liquid::Template.register_tag('video', JackyWtf::StubTag)
+Liquid::Template.register_tag('youtube', JackyWtf::StubTag)
