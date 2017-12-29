@@ -1,8 +1,11 @@
-<header role="document">
-  <h2>{{ site.name }}</h2>
-  <nav>
+<header role="document" class="bg-near-white w-100 pa1 cb cf">
+  <h2 class="fontFamily__special tracked-tight lh-solid f2 ma1 tc pa1">
+    {{ site.name }}
+  </h2>
+  <nav class="tc cf cb center">
     {% for link in site.data.links.navigation %}
-      <a {% if link.classes %}class="{{ link.classes }}"{% endif %} href="{{ link.link }}" title="{{ link.title }}">
+      <a class="{{ link.classes }} navy db dib-l fl fn-l link mh0 pa1 mv1 mh2-l w-third w-auto-l hover-blue"
+         href="{{ link.link }}" title="{{ link.title }}">
         {{ link.title }}
       </a>
     {% endfor %}

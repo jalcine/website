@@ -43,11 +43,11 @@ namespace :build do
 end
 
 task :dev do
-  Dotenv.load('.envrc.local')
+  Dotenv.overload('.envrc.local')
 end
 
 task :prod do
-  Dotenv.load('.envrc')
+  Dotenv.overload('.envrc')
 end
 
 namespace :upload do

@@ -87,45 +87,17 @@ section.section__region {
 }
 
 header[role=document] {
-  @extend .bg-near-white, .w-100, .pa1, .cb, .cf;
-
-  a {
-    @extend .navy, .dib, .link, .mv1, .pv2, .pv1;
-
-    &.selected {
-      @extend .bg-yellow;
-      @extend .bw2;
-      @extend .b--yellow;
-    }
-  }
-
-  > h2 {
-    @extend .fontFamily__special;
-    @extend .tracked-tight;
-    @extend .lh-solid;
-    @extend .f2;
-    @extend .ma1;
-    @extend .fr-l;
-    @extend .tc;
-    @extend .pa1;
-  }
-
   > nav {
-    @extend .fl-l;
-    @extend .pa1;
-    @extend .mt1;
-
     a {
-      @extend .navy, .dib, .link, .pa1;
-
       &.selected {
-        @extend .bg-yellow;
         @extend .bw2;
         @extend .b--yellow;
+        background-color: $yellow;
+        color: $black;
       }
 
-      &:hover {
-        @extend .blue;
+      &:visited {
+        color: $navy;
       }
     }
   }
