@@ -6,7 +6,7 @@
     {{ page.excerpt | markdownify | strip_tags: '<p>' }}
   </blockquote>
   {% endif %}
-  <address role="group" class="post">
+  <address role="group" class="post center">
     {% if page.category %}<span>:book: {{ page.category }}</span>{% endif %}
     {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
     {% if page.date %}<span>:clock7: <time>{{ page.date | date_to_rfc822 }}</time></span>{% endif %}

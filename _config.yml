@@ -96,6 +96,11 @@ defaults:
       path: "_pages"
     values:
       layout: page
+  -
+    scope:
+      path: "_faq"
+    values:
+      layout: faq
 
 collections:
   faq:

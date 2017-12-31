@@ -8,6 +8,15 @@ bio: |
   
 roles:
   -
+    anchor: lob
+    name: Lob
+    uri: https://lob.com
+    role: Senior SWE, Platform
+    time:
+      start: December 2017
+    blurb: |
+      I am here.
+  -
     anchor: lyft
     name: Lyft
     uri: https://lyft.com/

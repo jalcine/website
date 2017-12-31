@@ -45,6 +45,10 @@ address[role=group].post {
   }
 }
 
+.footnotes > p:first-line {
+  text-transform: initial;
+}
+
 main[role=group].post {
   @extend .w-100, .mw8, .ph3, .pa2-l, .center;
 

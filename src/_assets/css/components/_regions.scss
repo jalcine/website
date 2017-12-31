@@ -57,25 +57,6 @@ main {
   @extend .cf, .db;
 }
 
-footer[role=group] {
-  @extend .near-black;
-  @extend .ph2;
-  @extend .ph4-l;
-  @extend .pv4;
-  @extend .pv6-l;
-  @extend .cb;
-  @extend .db;
-  @extend .f5;
-
-  a {
-    @extend .navy;
-
-    &:hover {
-      @extend .blue;
-    }
-  }
-}
-
 section[role=document],
 section.section__region {
   @extend .mw8, .w-100, .mw9, .db, .pa4, .mv4, .cf;
