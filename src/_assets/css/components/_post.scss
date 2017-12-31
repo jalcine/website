@@ -45,10 +45,6 @@ address[role=group].post {
   }
 }
 
-.footnotes > p:first-line {
-  text-transform: initial;
-}
-
 main[role=group].post {
   @extend .w-100, .mw8, .ph3, .pa2-l, .center;
 
@@ -71,7 +67,7 @@ main[role=group].post {
   p {
     @extend .w-100;
 
-    &:first-line {
+    &:first-child:first-line {
       text-transform: uppercase;
       text-align: justify;
     }
@@ -91,7 +87,16 @@ main[role=group].post {
   }
 
   .jekyll-twitter-plugin, .twitter-tweet {
-    @extend .ma0;
+    @extend .center;
+  }
+
+  blockquote.twitter-tweet {
+    @extend .pv4;
+    @extend .ba;
+    @extend .bw1;
+    @extend .b--washed-blue;
+    @extend .bg-washed-blue;
+    @extend .black-90;
   }
 
   blockquote {
