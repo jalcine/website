@@ -11,6 +11,7 @@ include:
   - _events
   - _projects
   - _portfolio
+  - _reviews
 
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
@@ -90,6 +91,11 @@ defaults:
       path: "_projects"
     values:
       layout: project
+  -
+    scope:
+      path: "_pages"
+    values:
+      layout: page
 
 collections:
   faq:
@@ -104,12 +110,18 @@ collections:
   portfolio:
     output: true
     layout: portfolio
-
-# collections:
-#   portfolio:
-#     output: true
-#     permalink: /:collection/:path/
-#     title: Portfolio
+  reviews_books:
+    output: true
+    layout: reviews
+    permalink: /reviews/books/:name
+  reviews_movies:
+    output: true
+    layout: reviews
+    permalink: /reviews/movies/:name
+  reviews_television_show:
+    output: true
+    layout: reviews
+    permalink: /reviews/television-shows/:name
 
 assets:
   autoprefixer:

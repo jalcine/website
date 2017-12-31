@@ -1,27 +1,12 @@
-@mixin post-spacing {
-  @extend .ma4, .ma2-l, .pa2;
-}
-
-address[role=group].post {
-  @include post-spacing;
-  @extend .f6, .w-80, .db;
-
-  > span {
-    @extend .db;
-    @extend .pv1;
-  }
-}
-
 header[role=group].post {
-  @extend .w-90, .w-80-l;
-  @include post-spacing;
+  @extend .pa1, .mw7-l, .center;
 
   > h1 {
-    @extend .pl1;
     @extend .tracked-tight;
-    @extend .pa4, .pl1;
-    @extend .fw5, .f1;
+    @extend .pa1;
+    @extend .fw7, .f1;
     @extend .near-black;
+    @extend .tc;
   }
 
   > h3 {
@@ -32,32 +17,36 @@ header[role=group].post {
   }
   
   &.masthead {
-    @extend .w-100, .w-100-l;
+    @extend .w-100, .mw-none;
     @extend .ma0, .pa0;
 
     > h1 {
-      @extend .tc;
       @extend .f-headline-l;
     }
 
     > h1 + h2 {
       @extend .mh4;
       @extend .f2;
+      @extend .tc;
+    }
+    
+    > address[role=group].post {
+      @extend .center, .mw7;
     }
   }
 }
 
-blockquote.excerpt {
-  @extend .pa2, .fw7, .f3, .f2-l, .measure, .cb, .gray, .lh-copy;
-  @include post-spacing;
-  margin-before: 0;
-  margin-after: 0;
-  margin-start: 0;
-  margin-end: 0;
+address[role=group].post {
+  @extend .f6, .w-80, .db;
+
+  > span {
+    @extend .db;
+    @extend .pv1;
+  }
 }
 
 main[role=group].post {
-  @extend .w-100, .mw8, .pa3;
+  @extend .w-100, .mw8, .ph3, .pa2-l, .center;
 
   > p,
   > ol > li,
@@ -77,6 +66,11 @@ main[role=group].post {
 
   p {
     @extend .w-100;
+
+    &:first-line {
+      text-transform: uppercase;
+      text-align: justify;
+    }
   }
 
   ul {
@@ -90,12 +84,6 @@ main[role=group].post {
         font-weight: inherit;
       }
     }
-  }
- 
-  h1, h2, h3, h4, h5, h6,
-  p, blockquote,
-  ul, ol {
-    @extend .w-90, .w-80-l;
   }
 
   .jekyll-twitter-plugin, .twitter-tweet {
@@ -114,25 +102,5 @@ main[role=group].post {
 
   hr {
     @extend .mw7;
-  }
-
-  .footnotes {
-    @extend .ml3;
-  }
-}
-
-footer[role=group].post {
-  @extend .w-90, .w-80-l, .mw8;
-
-  > nav {
-    @extend .center, .db, .cb, .w-100, .fl;
-
-    > a {
-      @extend .mv2, .pa2, .dib;
-    }
-  }
-
-  > p:first-child {
-    @extend .f6, .mw6, .center, .pa1, .cb;
   }
 }

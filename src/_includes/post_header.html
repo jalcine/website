@@ -1,4 +1,16 @@
 <header role="group" class="post">
   <h1>{{ page.title | improve }}</h1>
   {% if page.byline %}<h3>{{ page.byline | improve }}</h3>{% endif %}
+  {% if page.excerpt and page.excerpt != 'none' %}
+    <blockquote class="excerpt tc">
+    {{ page.excerpt | markdownify | strip_tags: '<p>' }}
+  </blockquote>
+  {% endif %}
+  <address role="group" class="post">
+    {% if page.category %}<span>:book: {{ page.category }}</span>{% endif %}
+    {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
+    {% if page.date %}<span>:clock7: <time>{{ page.date | date_to_rfc822 }}</time></span>{% endif %}
+    {% if page.revised %}<span>:clock10: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
+    <span>:clock3: {{ content | reading_time }}</span>
+  </address>
 </header>
