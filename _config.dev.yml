@@ -1,6 +1,4 @@
 ﻿---
----
-
 build_drafts: true
 show_drafts: true
 url: 'http://localhost:1993'
@@ -9,6 +7,15 @@ incremental: true
 assets:
   debug: true
   autowrite: true
-  strict: true
+  strict: false
   digest: false
   integrity: false
+  plugins:
+    compression:
+      css:
+        enabled: false
+      js:
+        enabled: false
+
+webmentions:
+  pause_lookups: true

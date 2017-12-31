@@ -1,4 +1,4 @@
-# frozen_literal_string: true
+# frozen_string_literal: true
 
 require 'rake'
 require 'fileutils'
@@ -43,11 +43,11 @@ namespace :build do
 end
 
 task :dev do
-  Dotenv.load('.envrc.local')
+  Dotenv.overload('.envrc.local')
 end
 
 task :prod do
-  Dotenv.load('.envrc')
+  Dotenv.overload('.envrc')
 end
 
 namespace :upload do

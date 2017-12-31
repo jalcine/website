@@ -1,23 +1,23 @@
 # vim:set nospell:
 navigation:
   -
-    title: ":house:"
+    title: "Home"
     link: "/"
   -
-    title: ":link: Subscribe"
+    title: "Subscribe"
     link: "/subscribe/"
     classes: "selected"
   -
-    title: ":books: Blog"
+    title: "Blog"
     link: "/weblog/"
   -
-    title: ":mailbox_with_mail: Contact"
+    title: "Contact"
     link: "/contact/"
   -
-    title: ":briefcase: Work"
+    title: "Work"
     link: "/work/"
   -
-    title: ":question: FAQ"
+    title: "FAQ"
     link: "/faq/"
 
 social:

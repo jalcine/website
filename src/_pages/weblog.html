@@ -1,23 +1,20 @@
 ---
-layout: bare
 permalink: /weblog/
 redirect_from:
   - /blog/
 title: Weblog
 excerpt: >
   A listing of all of the posts Jacky has written on his website.
+masthead:
+  image: pages/weblog.jpeg
 ---
-{% img "{{ 'pages/weblog.jpeg' | image_path }}" class:"masthead" width:"100%" height:"auto" %}
-<section role="document">
-  <h1 class="f1 f-headline-l lh-title">Weblog</h1>
-  <p class="lead">
-    I like using the Internet a lot. I think I spend at least four hours each
-    day interacting with it with various devices. This and the experiences
-    I have in my life I capture here in my <strong>weblog</strong>. Some people
-    call them <em>blogs</em>, <em>web journals</em> or just <em>sites</em>. This
-    is my blog. It has {{ site.posts.size }} posts since {{ site.posts.last.date | date: "%Y" }}.
-  </p>
+<p class="lead">
+  I like using the Internet a lot. I think I spend at least four hours each
+  day interacting with it with various devices. This and the experiences
+  I have in my life I capture here in my <strong>weblog</strong>. Some people
+  call them <em>blogs</em>, <em>web journals</em> or just <em>sites</em>. This
+  is my blog. It has {{ site.posts.size }} posts since {{ site.posts.last.date | date: "%Y" }}.
+</p>
 
-  <h2 class="tracked-tight ttu">Entries</h2>
-  {% include post_listing.html posts=site.posts %}
-</section>
+<h2 class="tracked-tight ttu">Entries</h2>
+{% include post_listing.html posts=site.posts %}

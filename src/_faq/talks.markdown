@@ -1,5 +1,4 @@
 ---
-layout: faq
 title: Do you speak publicly?
 date: 2017-11-10 19:13:47 PST
 ---

@@ -3,48 +3,38 @@ layout: bare
 permalink: /
 redirect_from:
   - /home/
-title: "Jacky Alciné is an educator, software engineer, and Black as hell."
+title: "Jacky Alciné is an educator, software engineer and Black as hell."
 components:
   header: false
-  footer: true
 ---
-{% assign clean_blurb = site.blurb | improve %}  
-{% assign brand_landing_image_path = 'brand/self.jpeg' | image_path %}
-{% include notice.html %}
-<section class="section--dark" role="main">
-  <div class="w-100 db cf">
-    <aside class="dib-l fl-ns w-60-ns center w-auto h-70">
-      {% img "{{ brand_landing_image_path }}"
-            class:"w-100 mw7 h-auto mv2 db fr-ns center cb"
-            draggable:"false"
-            width:"auto"
-            height:"auto"
-            alt:"Jacky looking to the right at Dara who's not in frame at Interact 2017."
-      %}
-      <p class="lh-solid gray tc ttu f7 cb tr-ns">
-        :camera: <a target="_blank" href="https://thedanigrant.com">@thedanigrant</a>
-      </p>
-    </aside>
-    <main role="group" class="dib-l fr-ns w-40-ns pl3-ns ph3 w-100">
-      <h1 class="f1 tracked mv3 tc tl-l fontFamily__special">jackyalciné</h1>
-      <p class="lead tl">
-        {{ clean_blurb }}
-      </p>
-      <p class="lh-copy">
-        Most questions you have may be already answered <a href="/faq/">on my FAQ</a>.
-        If not; <a href="/contact/">send me a message</a>.
-      </p>
-    </main>
-  </div>
-</section>
-{% for entry in site.data.links.landing %}
-  <section class="section--well section--{{ entry.color }}">
-    <div class="mw7 center">
-      <h2 class="f2 tracked-tight mv2">{{ entry.title | improve }}</h2>
-      {{ entry.description | markdownify | improve }}
-      <a class="cta" href="{{ entry.link.uri }}" title="{{ entry.link.title }}">
-        {{ entry.link.text }} &raquo;
-      </a>
-    </div>
-  </section>
-{% endfor %}
+<h1 class="f-headline tracked-tight tc lh-title fontFamily__special">
+  Hey. I'm Jacky.
+</h1>
+<p class="ph1 ph3-m ph0-l f3 lh-copy mw7 center">
+  I <a href="/work/">work at <strong color="blue">Lob</strong></a>.
+  I like <a href="/subscribe/">using the Web</a> a lot.
+  I'm a <a href="{% post_url 2016-09-12-haitian-not-african-american %}" target="_blank">
+    Black Haitian-American</a> that aggressively stands for and defends the
+  lives of <strong>marginalized</strong> and <strong>oppressed</strong> people.
+</p>
+<p class="ph1 ph3-m ph0-l lh-copy mw7 center">
+  Sometimes, I look like the following image.
+</p>
+
+{% img "{{ 'brand/self.jpeg' | image_path }}" class:"mv3 center h-50 w-auto mw-100 mw7-l db" %}
+<p class="ph1 ph3-m ph0-l lh-copy mw7 center">
+  However, I've taken a look akin to the following.
+</p>
+
+{% img "{{ 'brand/new-self.png' | image_path }}" class:"mv3 center h-50 w-auto mw-100 mw7-l db" %}
+
+<p class="ph1 ph3-m ph0-l f4 lh-copy mw7 center dark-gray">
+  My last blog post was <a href="{{ site.posts[0].url }}">{{ site.posts[0].title
+    }}</a>, written on {{ site.posts[0].date | date_to_long_string }}. You can
+  view the rest of those entries <a href="/weblog/">here</a>.
+</p>
+
+<p class="ph1 ph3-m ph0-l f4 lh-copy mw7 center dark-gray">
+  Who am I? <a href="/faq/who-are-you/"><strong>Glad</strong> you asked</a>.
+</p>
+{% include notices.html %}

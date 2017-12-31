@@ -1,23 +1,17 @@
-<footer role="group">
-  <h2 class="f2 mv1 fontFamily__special">{{ site.name }}</h2>
-  <section class="cf db w-100">
-    <div class="f6 w-100 w-70-l fl-l">
-      <span class="gray">Been at this since 2010.</span><br />
+<footer role="group" class="bg-near-white near-black bt bb bw3 b--black-50 ph2 ph4-l pv3 pv4-l">
+  <h2 class="f2 lh-title tc navy fw5 fontFamily__special">{{ site.name }}</h2>
+  <section class="cf db w-100 color-inherit">
+    <div class="f6 w-100 w-50-l fl-l">
+      <span>Been at this since 2010.</span><br />
       <p class="f6 lh-copy measure-narrow">{{ site.description | improve }}</p>
-      <p class="f6 lh-copy measure-narrow">
-        This site is an undergoing experiment to join the
-        <a href="" title="" target="_blank">IndieWeb</a>.
-        <a href="" target="_blank">Learn more</a>. Before copying content,
-        check out the <a href="/licensing/">licensing</a> policy.
-      </p>
-      <nav class="tc-s tj-ns mw5-l">
+      <nav class="tc-s tj-ns w-100 white">
         {% for link in site.data.links.navigation %}
-          <a class="link dib mv1" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
-          <span class="dib">{% if forloop.last != true %} &mdash; {% endif %}</span>
+          <a class="link dib white dim fw5" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
+          <span class="dib blue">{% if forloop.last != true %} &mdash; {% endif %}</span>
         {% endfor %}
       </nav>
     </div>
-    <aside class="w-100 mt5 w-30-l fr-l mt0-ns">
+    <aside class="db w-100 mt5 w-50-l fr-l mt0-l color-inherit">
       {% include newsletter_inline.html %}
     </aside>
   </section>

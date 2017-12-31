@@ -53,7 +53,6 @@ pre, code, kbd {
 main[role=group] > p:first-child,
 p.lead {
   @extend .f4;
-  @extend .measure;
   @extend .lh-copy;
   text-align: justify;
   text-align-last: left;
