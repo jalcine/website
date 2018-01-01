@@ -110,7 +110,7 @@ main[role=group].post {
   }
 
   blockquote {
-    @extend .gray, .mh3, .pv5;
+    @extend .gray, .mh3-s, .pv5;
     margin-before: 0;
     margin-after: 0;
     margin-block-end: 0;
