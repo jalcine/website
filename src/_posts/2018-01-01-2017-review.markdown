@@ -1,0 +1,102 @@
+---
+title: 2017
+category: reflection
+date: 2018-01-01 11:38:04 PST
+image: posts/2017-office.jpeg
+excerpt: Hold the henny, please.
+tags:
+  - 2017
+  - year-in-review
+---
+
+A lot happened this year. Granted, we had 365.25 days to do a lot of stuff.
+I can _try_ to go over everything but [ain't nobody got time for that][1]. What
+I will say is that everything I set my mind to has happened, despite it taking
+a different form from what I expected.
+
+# Music in Living Color
+
+{% oembed https://www.instagram.com/p/BYSRvnsDfTi %}
+
+[Afropunk][]'s the first music festival that I've attended in my life. It was
+pretty exciting to see so many people I've only really seen via video. I also
+ran into some many people that I knew from the Web but never had the honor of
+meeting in person.
+
+{% oembed https://www.instagram.com/p/BaYJrYSDvXJ/ %}
+
+> Definitely check out and support [The Fan Bros][] pod cast while you're here.
+
+# Hiking with New Friends
+
+{% img "{{ 'posts/2017-pam-hike.jpeg' | image_path }}" width:"100%" height:"100%" x-bleed %}
+<small class="dark-gray tc mw6 db center">
+  [Pamela][] marvelling at seeing the sunrise over the East Bay.
+</small>
+
+[Pamela][] was in the East Bay and we randomly [got up super early][4] and [took
+a hike][3]. It was one of the many awesome experiences I had of meeting people
+online and then again in the real world. I forgot why she was in town - I think
+it was in relation to a conference. Granted, I couldn't let Pamela marvel in
+this by herself:
+
+{% img "{{ 'posts/2017-pam-hike-self.jpeg' | image_path }}" width:"100%" height:"100%" x-bleed %}
+<small class="dark-gray tc mw6 db center">
+  When the camera man turns the lens to himself.
+</small>
+
+# Working More
+I began getting more serious about working on my freelancing sector of my life.
+It's something I've done on-and-off to get my feet wet but it's now become
+something I think I'll invest more into in 2018. 2017 led to me working with
+products like [ResumeLife][] among others.
+
+> Let me know if you [wanna cook up something nice][2]. My calendar's closing
+> up.
+
+{% img "{{ 'posts/2017-office.jpeg' | image_path }}" width:"100%" height:"100%" x-bleed %}
+
+My want to experiment more with freelancing is to increase my footing in my
+portfolio's breadth. I don't keep a "portfolio" in the classical sense since
+most of my work has been more non-presentational and more infrastructural,
+although that won't hold for work done at companies like [Clef][].
+
+## Solidifying my Home
+Despite a rough (but necessary) split earlier this year, I've managed to make
+a space initially guided for two into a place comfortable for many.
+Understanding the balance in empty space and non-negative books[^1].
+
+My home wasn't the only thing that got cemented for me. The last Clef cooks really tore me up.
+
+{% oembed https://www.instagram.com/p/BR99cODjil3 %}
+
+[Clef][] introduced me to the Bay's landscape of tech; something I'll always
+thank the family for doing. I also rekindled and built relationships within [Interact][]
+and within it, something I'm also looking for:
+
+{% oembed https://www.instagram.com/p/BU91gjKjoRQ %}
+
+I built a family in the Bay over the last two years equivalent to that of what I
+feel when I land in JFK. That bond now anchors me to the Bay. 2018's the year I
+begin to honor that anchor and grow with it.
+
+# Looking Forward
+With all of that said and done, I'm aiming to give back more than I received.
+Last year, I was given _so much_. It made me feel so empowered but also weird -  
+I didn't understand what I did to deserve all of the wealth I received. It
+took me some time to understand that it's not about being _worthy_ but
+understanding that this is what the world should be more like. A loving, warm
+place. We have a _long_ way to go before that's the case - since this question
+is still up for debate: [Do Black lives matter?](/faq/blm).
+
+[^1]: Books, plants and the ilk. I don't know if this is the correct term for it.
+[1]: https://www.youtube.com/watch?v=zGxwbhkDjZM
+[2]: /work/contract/
+[3]: https://www.instagram.com/p/BRJQ9uJj9L-
+[4]: https://www.instagram.com/p/BRL-TwjjaPX
+[clef]: {% post_url 2015-10-29-new-job-who-this %}
+[interact]: https://joininteract.com/
+[afropunk]: http://afropunkfest.com/brooklyn/
+[pamela]: https://www.linkedin.com/in/pamela-assogba-b8b69b6a/
+[resumelife]: http://resumelifenow.com/
+[the fan bros]: https://fanbros.com/

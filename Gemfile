@@ -37,6 +37,7 @@ group :jekyll_plugins do
   gem 'jekyll-webmention_io'
   gem 'jekyll_version_plugin'
   gem 'jemoji'
+  gem 'ruby-oembed'
 end
 
 # {{{ Development

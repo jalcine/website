@@ -12,6 +12,16 @@ var WebFontConfig = {
   }
 };
 
+// Do some tweaks on images.
+function stretchOutImages () {
+  var images = document.querySelectorAll("p > img[x-bleed]");
+  images.forEach(function stretchImage(image) {
+    var parentElement = image.parentElement;
+    parentElement.style.maxWidth = "none";
+  });
+};
+
 (function () {
   WebFont.load(WebFontConfig);
+  stretchOutImages();
 })(document);

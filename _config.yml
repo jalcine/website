@@ -50,22 +50,11 @@ exclude:
   - _site
   - _deploy
   - .asset_cache
+  - node_modules
 
 kramdown:
   syntax_highlighter: rouge
-  toc_levels: 1..5
   auto_ids: true
-  transparent: true
-  extensions:
-    - footnotes
-    - autolink
-    - space_after_headers
-    - highlight
-    - fenced_code_blocks
-    - disabled_indented_code_blocks
-    - underline
-    - with_toc_data
-    - prettify
 
 defaults:
   -

@@ -46,8 +46,18 @@ address[role=group].post {
 }
 
 main[role=group].post {
-  @extend .w-100, .mw8, .ph3, .pa2-l, .center;
+  @extend .w-100, .pa2, .pa0-l;
 
+  p,
+  blockquote,
+  ul,
+  li,
+  h1, h2, h3, h4, h5, h6
+  {
+    @extend .w-100, .mw7-l;
+    @extend .center-l;
+  }
+  
   > p,
   > ol > li,
   > ul > li
