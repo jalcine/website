@@ -51,11 +51,11 @@ main[role=group].post {
   p,
   blockquote,
   ul,
-  li,
+  ol,
   h1, h2, h3, h4, h5, h6
   {
     @extend .w-100, .mw7-l;
-    @extend .center-l;
+    @extend .center;
   }
   
   > p,
@@ -70,8 +70,6 @@ main[role=group].post {
 
   p, blockquote {
     @extend .lh-copy;
-    margin-before: 0;
-    margin-after: 0;
   }
 
   p {
@@ -94,29 +92,6 @@ main[role=group].post {
         font-weight: inherit;
       }
     }
-  }
-
-  .jekyll-twitter-plugin, .twitter-tweet {
-    @extend .center;
-  }
-
-  blockquote.twitter-tweet {
-    @extend .pv4;
-    @extend .ba;
-    @extend .bw1;
-    @extend .b--washed-blue;
-    @extend .bg-washed-blue;
-    @extend .black-90;
-  }
-
-  blockquote {
-    @extend .gray, .mh3-s, .pv5;
-    margin-before: 0;
-    margin-after: 0;
-    margin-block-end: 0;
-    margin-block-start: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
   }
 
   hr {
