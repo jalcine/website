@@ -1,9 +1,8 @@
-# vim: set nospell foldenable foldlevel=1 :
-
-source: src
-destination: _site
-layouts_dir: src/_layouts
-plugins_dir: plugins
+﻿---
+destination: _site/
+source: src/
+layouts_dir: src/_layouts/
+plugins_dir: plugins/
 filter_entries: []
 strict_front_matter: false
 include:
@@ -12,6 +11,7 @@ include:
   - _events
   - _projects
   - _portfolio
+  - _reviews
 
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
@@ -31,6 +31,8 @@ description: |
 
 timezone: America/Los_Angeles
 encoding: utf-8
+incremental: true
+source: ./src/
 
 permalink: /weblog/:title/
 show_drafts: false
@@ -46,23 +48,13 @@ tag_feed_dir: feeds/tags/
 
 exclude:
   - _site
+  - _deploy
   - .asset_cache
+  - node_modules
 
 kramdown:
   syntax_highlighter: rouge
-  toc_levels: 1..5
   auto_ids: true
-  transparent: true
-  extensions:
-    - footnotes
-    - autolink
-    - space_after_headers
-    - highlight
-    - fenced_code_blocks
-    - disabled_indented_code_blocks
-    - underline
-    - with_toc_data
-    - prettify
 
 defaults:
   -
@@ -88,6 +80,16 @@ defaults:
       path: "_projects"
     values:
       layout: project
+  -
+    scope:
+      path: "_pages"
+    values:
+      layout: page
+  -
+    scope:
+      path: "_faq"
+    values:
+      layout: faq
 
 collections:
   faq:
@@ -102,12 +104,18 @@ collections:
   portfolio:
     output: true
     layout: portfolio
-
-# collections:
-#   portfolio:
-#     output: true
-#     permalink: /:collection/:path/
-#     title: Portfolio
+  reviews_books:
+    output: true
+    layout: reviews
+    permalink: /reviews/books/:name
+  reviews_movies:
+    output: true
+    layout: reviews
+    permalink: /reviews/movies/:name
+  reviews_television_show:
+    output: true
+    layout: reviews
+    permalink: /reviews/television-shows/:name
 
 assets:
   autoprefixer:
@@ -138,7 +146,6 @@ assets:
     - node_modules
 
 jekyll-mentions: https://twitter.com
-incremental: true
 
 gpg:
   fingerprint: 0x4DEFFC9FF82E8908
@@ -166,7 +173,7 @@ webmentions:
 
 autolink_email:
   link_attr: class="email-link" # attributes to add to the link
-  skip_tags: ["pre", "code"]            # tags to skip
+  skip_tags: ["pre", "code"]    # tags to skip
   escape: true
 
 jekyll-archives:

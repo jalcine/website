@@ -45,7 +45,7 @@ balancing load with capability. This is why I've decided to open up a leads
 section in my [newsletter][7] to help people who are subscribed to find more
 work. It's how I get my start, it's only right to do the same.
 
-[1]: {% post_url src/_posts/2017-09-24-hopping-off-opening-doors %}
+[1]: {% post_url 2017-09-24-hopping-off-opening-doors %}
 [2]: https://www.rescuetime.com/ref/1204677
 [3]: https://toggl.com
 [4]: http://try.hrv.st/1-884419

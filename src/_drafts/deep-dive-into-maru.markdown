@@ -2,7 +2,6 @@
 layout: post
 image: posts/deep-dive-into-maru.jpeg
 title: A Deep Dive into Maru
-date: 2017-10-24 13:12:25 PDT
 excerpt: |
   A quick guide into using maru 0.12.5 for API building.
 category: tutorial
@@ -35,7 +34,7 @@ repository][1] to get started. Our Mix project file would look something like
 this:
 
 {% highlight elixir linenos %}
-defmodule MaruExample.Mixfile do
+defmodule ExampleMaru.Mixfile do
   use Mix.Project
 
   def project() do
@@ -65,9 +64,18 @@ defmodule MaruExample.Mixfile do
 end
 {% endhighlight %}
 
+From here, we can run `mix deps.get`, provided that you've properly installed [Mix][] on your machine.
+
+### Defining The Startup
+
+We'll define an `Application` with a single supervisor for now tha
+
+
 [twch.at]: http://app.twch.at/
 [maru]: https://maru.readme.io/
 [`grape`]: http://www.ruby-grape.org/
+[exunit]: https://hexdocs.pm/ex_unit/ExUnit.html#summary
+[mix]: https://elixir-lang.org/install.html
 [1]: https://github.com/jalcine/deep-dive-into-maru-examples
 [2]: {% post_url 2017-10-22-why-no-phoenix-in-twchat %}
-[exunit]: https://hexdocs.pm/ex_unit/ExUnit.html#summary
+[3]: 

@@ -12,7 +12,7 @@ group :jekyll do
   gem 'activesupport'
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
-  gem 'jekyll', '~> 3.5'
+  gem 'jekyll', '3.5.2'
   gem 'kramdown'
   gem 'mini_magick'
   gem 'rack-jekyll'
@@ -37,6 +37,7 @@ group :jekyll_plugins do
   gem 'jekyll-webmention_io'
   gem 'jekyll_version_plugin'
   gem 'jemoji'
+  gem 'ruby-oembed'
 end
 
 # {{{ Development

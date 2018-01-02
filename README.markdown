@@ -1,6 +1,6 @@
-# Jacky Alciné
+## Jacky Alciné
 
-**I'm actively looking for work. [Learn more on my site][3]**.
+**I'm open for contract work. [Learn more on my site][3]**.
 
 > My last update was 2017-10-16 19:38:40 PDT.
 
@@ -15,7 +15,7 @@ is largely a static listing about me. The [things I keep in my bag][1], the
 places I like to go to, [how I want to be represented][2] and the like.
 
 [jekyll]: https://jekyllrb.com/
-[github]: https://github.com/jalcine/my-website
+[github]: https://github.com/jalcine/website
 [1]: https://jacky.wtf/gear/
 [2]: https://jacky.wtf/press/
 [work]: https://jacky.wtf/work/

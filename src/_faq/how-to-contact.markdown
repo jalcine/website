@@ -1,6 +1,6 @@
 ---
 layout: faq
-title: "How to Communicate With Me"
+title: How do I get in touch with you?
 ---
 
 There's a few things that tend to land in my inbox a lot. To help future

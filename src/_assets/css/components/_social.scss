@@ -3,10 +3,8 @@
   @extend .tc;
 }
 
-.twitter-tweet {
-  @extend .center;
-}
-
-iframe.instagram-media {
-  @extend .ma4;
+.twitter-tweet,
+div.embed,
+div.embed > iframe {
+  margin: 0rem auto!important;
 }
