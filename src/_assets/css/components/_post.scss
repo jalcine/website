@@ -46,34 +46,53 @@ address[role=group].post {
 }
 
 main[role=group].post {
-  @extend .w-100, .pa2, .pa0-l;
+  @extend .w-100;
 
   p,
   blockquote,
-  ul,
-  ol,
+  ul, ol,
   h1, h2, h3, h4, h5, h6
   {
-    @extend .w-100, .mw7-l;
+    @extend .w-auto, .mw7-l;
     @extend .center;
+    @extend .lh-copy;
+    @extend .pa2, .mh2;
+  }
+  
+  h1, h2, h3, h4, h5, h6
+  {
+    @extend .ph1, .pv2;
+  }
+
+  blockquote
+  {
+    @extend .tc, .f3;
+    @extend .mw-none-l;
+    @extend .bg-dark-gray, .white;
+
+    > p
+    {
+      font-size: inherit;
+      @extend .center;
+      @extend .pa2;
+
+      &:first-child { @extend .pt0; }
+    }
   }
   
   > p,
   > ol > li,
   > ul > li
   {
+    @extend .w-auto;
     @extend .f4;
-    @extend .db;
+    @extend .db, .pa2;
     text-align: justify;
     text-align-last: left;
   }
 
-  p, blockquote {
-    @extend .lh-copy;
-  }
-
   p {
-    @extend .w-100;
+    @extend .w-auto;
 
     &:first-child:first-line {
       text-transform: uppercase;
