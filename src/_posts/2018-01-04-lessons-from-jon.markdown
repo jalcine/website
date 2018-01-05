@@ -1,6 +1,5 @@
 ---
-masthead:
-  image: posts/2017-lessons.jpeg
+image: posts/2017-lessons.jpeg
 title: 2017 Lessons from Jonathon Jackson
 date: 2018-01-04 22:37:16 PST
 excerpt: |

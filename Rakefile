@@ -21,7 +21,7 @@ def run_jekyll_in_dev(args = [])
 end
 
 def run_jekyll_in_prod(args = [])
-  run_jekyll(args + ['-d', '_deploy'])
+  run_jekyll(args + ['--destination', './_deploy'])
 end
 
 task :serve do
