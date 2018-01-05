@@ -1,10 +1,9 @@
 ---
-image: posts/2017-lessons.jpeg
 title: 2017 Lessons from Jonathon Jackson
-date: 2018-01-04 22:37:16 PST
-excerpt: |
-  Jonathon's dropped some gems for us at the opening at 2018.
 category: feedback
+date: 2018-01-04 22:37:16 PST
+image: posts/2017-lessons.jpeg
+excerpt: Jonathon's dropped some gems for us at the opening at 2018.
 tags:
   - blavity
   - friends
