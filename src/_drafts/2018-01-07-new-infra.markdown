@@ -1,0 +1,11 @@
+---
+category: system
+tags:
+  - infrastructure
+  - provision
+---
+
+I've been toying around with a new system setup for my personal server. I named
+the original one Krypton and it's hit that point where I needed to send data
+elsewhere. I wasn’t sure what was stored on there and over time, disk space
+became next to 0.
