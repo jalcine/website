@@ -79,6 +79,12 @@ ul {
 
 a {
   @extend .link;
+  @extend .blue;
+
+  &:visited {
+    @extend .link;
+    @extend .blue;
+  }
 }
 
 .fontFamily__special {

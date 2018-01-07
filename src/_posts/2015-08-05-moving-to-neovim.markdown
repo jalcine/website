@@ -1,8 +1,6 @@
 ---
-layout: post
 title: "Moving to Neovim from Vim"
 byline: To asynchronous modal editing and BEYOND!
-image: none
 date: 2015-08-05 13:46:30 EDT
 category: vim
 tags:
