@@ -6,8 +6,7 @@ FROM node:9-alpine as node-builder
 RUN mkdir -p /app/src
 ADD src/package* /app/src/
 WORKDIR /app/src
-VOLUME /app/src/node_modules
-RUN npm install
+RUN npm install --verbose
 
 # }}}
 
@@ -25,18 +24,13 @@ RUN apk add -U \
 
 ADD Gemfile* /app/
 
-VOLUME /app/vendor
-
 RUN gem install --update bundler execjs && \
-    bundle install --deployment --binstubs
+    bundle install --binstubs
 
 ADD . /app
-COPY --from=node-builder /app/src/node_modules ./src/node_modules
+COPY --from=node-builder /app/src/node_modules/ /app/src/node_modules
 
-RUN ["bin/rake", "build:deploy"]
-
-RUN rm -rvf /app/src/node_modules/
-
+RUN bin/rake build:deploy
 # }}}
 # {{{
 FROM nginx:stable-alpine
