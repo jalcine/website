@@ -37,5 +37,7 @@ FROM nginx:stable-alpine
 
 COPY --from=jekyll-builder /app/_deploy /usr/share/nginx/html
 
+EXPOSE 80
+
 RUN ["nginx"]
 # }}}
