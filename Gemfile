@@ -19,12 +19,12 @@ group :jekyll do
   gem 'rb-gsl'
   gem 'rouge'
   gem 'sprockets', '~> 3.7'
+  gem 'execjs'
 end
 
 group :jekyll_plugins do
   gem 'jekyll-analytics'
   gem 'jekyll-assets', '~> 2.4.0'
-  gem 'jekyll-autolink_email'
   gem 'jekyll-email-protect'
   gem 'jekyll-feed'
   gem 'jekyll-gist'

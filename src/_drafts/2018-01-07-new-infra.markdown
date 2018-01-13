@@ -3,9 +3,31 @@ category: system
 tags:
   - infrastructure
   - provision
+excerpt: |
+  I completely nuked jacky.wtf from low-orbit.
 ---
 
 I've been toying around with a new system setup for my personal server. I named
 the original one Krypton and it's hit that point where I needed to send data
 elsewhere. I wasn’t sure what was stored on there and over time, disk space
-became next to 0.
+became next to 0. I actually took the entire server off-line for a few days[^1]
+
+## The Vision
+
+I'm aiming to get more into the world of [POSSE][] and the [Indie Web][]
+in general. Despite being someone who works at a [PDaaS company][1],
+I still believe that the producer of data is the only true owner of
+it[^2]. This, unexpectedly, made me realize that there's a _LOT_ of things
+that one can do when they own and host their own systems. You have a lot
+more control over who gets to it and how accurate it has to be. I also can
+feel a lot more comfortable dumping more information in there.
+
+### Personal Website
+
+https://jacky.wtf itself is hosted on DigitalOcean, by way of nginx &amp;
+jekyll (to name a few tools). The new version of this site, well, is the
+same.
+
+[^1]: I put it back up because it unintentionally broke a bunch of links.
+[^2]: At the time of writing, my place of employment aligns with this idea too.
+[1]: /work/
