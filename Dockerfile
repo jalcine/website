@@ -6,6 +6,7 @@ FROM node:9-alpine as node-builder
 RUN mkdir -p /app/src
 ADD src/package* /app/src/
 WORKDIR /app/src
+VOLUME /app/src/node_modules
 RUN npm install
 
 # }}}
@@ -24,13 +25,15 @@ RUN apk add -U \
 
 ADD Gemfile* /app/
 
+VOLUME /app/vendor
+
 RUN gem install --update bundler execjs && \
-    bundle install --deployment
+    bundle install --deployment --binstubs
 
 ADD . /app
 COPY --from=node-builder /app/src/node_modules ./src/node_modules
 
-RUN ["bundle", "exec", "jekyll", "build", "--verbose", "--trace"]
+RUN ["bin/rake", "build:deploy"]
 
 RUN rm -rvf /app/src/node_modules/
 
@@ -38,7 +41,7 @@ RUN rm -rvf /app/src/node_modules/
 # {{{
 FROM nginx:stable-alpine
 
-COPY --from=jekyll-builder /app/_site /usr/share/nginx/html
+COPY --from=jekyll-builder /app/_deploy /usr/share/nginx/html
 
 RUN ["nginx"]
 # }}}
