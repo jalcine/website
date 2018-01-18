@@ -1,5 +1,7 @@
 ---
 category: system
+image: posts/new-infra.jpeg
+date: 2018-01-18 12:16:05 PST
 tags:
   - infrastructure
   - provision
@@ -71,6 +73,25 @@ To be honest, I wasn't going to consider this until I ran across a blog post
 that mentioned how Docker supported [multi-stage builds][3]. That changed
 everything for me :laughing:.
 
+## Next Steps
+
+There's a quite of bit of software I want to have up and running on this
+server. There's also the idea of me even making this blog not static anymore.
+Who knows? Some things I'm definitely entertaining are the following:
+
+  * *Commenting*: It's nice to get feedback from people on my own platform
+    versus waiting for it on other places like Hacker News or Twitter.
+  * *Liking*: I'm debating making a pet project that just serves as a
+    way to collect 'likes' or upvotes for arbitrary bits of data. This
+    might be a glorified stats service but we'll see.
+  * *Personalization*: So I _do_ hope to have an API for this site to
+    push bits of data to the site that I think might be interesting. I'll
+    write more about that in the future.
+
+Do you have suggestions for applications and/or services one should look into using for
+a [POSSE][]-focused, decentralized system? Is there an application you want to
+see in Dokku? [Let me know][contact].
+
 [^1]: I put it back up because it unintentionally broke a bunch of links.
 [^2]: At the time of writing, my place of employment aligns with this idea too.
 [1]: /work/
@@ -80,3 +101,4 @@ everything for me :laughing:.
 [indie web]: http://indieweb.org/
 [mina]: https://github.com/mina-deploy/mina
 [dokku]: http://dokku.viewdocs.io/dokku/
+[contact]: /contact/
