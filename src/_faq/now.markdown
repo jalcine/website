@@ -6,7 +6,8 @@ date: 2018-01-21 19:02:54 UTC
 ---
 
 > Inspired by Derek Siver's ["Now Page" movement][1], this page serves as a way
-> for visitors to see what I'm working on at the moment.
+> for visitors to see what I'm working on at the moment. I updated this page
+> on **{{ page.date | date: '"%-d %B %Y" }}**.
 
 I'm hanging out in [Brooklyn, New York City][2].
 
