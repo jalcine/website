@@ -150,7 +150,7 @@ gpg:
   fingerprint: 0x4DEFFC9FF82E8908
 
 jekyll_analytics:
-  Piwik:
+  Matomo:
     url: analytics.jacky.wtf
     siteId: 1
 
