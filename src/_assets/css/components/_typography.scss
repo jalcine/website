@@ -78,10 +78,11 @@ ul {
 }
 
 a {
-  @extend .link;
-  @extend .blue;
-
-  &:visited {
+  &, 
+  &:visited,
+  &:hover,
+  &:visited:hover
+  {
     @extend .link;
     @extend .blue;
   }
