@@ -84,7 +84,7 @@ a {
   &:visited:hover
   {
     @extend .link;
-    @extend .blue;
+    color: $blue!important;
   }
 }
 
