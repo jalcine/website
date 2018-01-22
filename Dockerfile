@@ -30,7 +30,7 @@ RUN gem install --update bundler execjs && \
 ADD . /app
 COPY --from=node-builder /app/src/node_modules/ /app/src/node_modules
 
-RUN bin/rake build:deploy
+RUN bin/rake build:deploy notify
 # }}}
 # {{{
 FROM nginx:stable-alpine
