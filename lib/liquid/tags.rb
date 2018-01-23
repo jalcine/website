@@ -35,12 +35,16 @@ module Jekyll
       url = Liquid::Template.parse(@text).render context
 
       # oembed look up
-      result = ::OEmbed::Providers.get(url.strip!)
-      
-      # Odd: slideshare uses provider-name instead of provider_name
-      provider = result.fields['provider_name'] || result.fields['provider-name'] || 'unknown'
+      begin
+        result = ::OEmbed::Providers.get(url.strip!)
+        
+        # Odd: slideshare uses provider-name instead of provider_name
+        provider = result.fields['provider_name'] || result.fields['provider-name'] || 'unknown'
 
-      "<div class=\"embed #{result.type} #{provider}\">#{result.html}</div>"
+        "<div class=\"embed #{result.type} #{provider}\">#{result.html}</div>"
+      rescue
+        # Do nothing.
+      end
     end
   end
 end
