@@ -190,10 +190,10 @@ liquid:
 
 compress_html:
   clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
+  comments: []
+  endings: []
   ignore:
-    envs: [local]
+    envs: []
   blanklines: false
   profile: false
-  startings: [html, head, body]
+  startings: []
