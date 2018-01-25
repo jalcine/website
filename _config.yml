@@ -187,13 +187,3 @@ jekyll-archives:
 
 liquid:
   error_mode: strict
-
-compress_html:
-  clippings: all
-  comments: []
-  endings: []
-  ignore:
-    envs: []
-  blanklines: false
-  profile: false
-  startings: []

@@ -46,8 +46,6 @@ address[role=group].post {
 }
 
 main[role=group].post {
-  @extend .w-100, .ph3;
-
   p,
   blockquote,
   ul, ol,
@@ -94,6 +92,7 @@ main[role=group].post {
 
   p {
     @extend .w-auto;
+    @extend .mh2;
 
     &:first-child:first-line {
       text-transform: uppercase;
@@ -115,6 +114,9 @@ main[role=group].post {
 
   ol > li {
     > p {
+      @extend .ma0;
+      @extend .di;
+
       &:first-line { 
         font-size: inherit;
         font-weight: inherit;
