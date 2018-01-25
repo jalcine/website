@@ -12,6 +12,7 @@ group :jekyll do
   gem 'activesupport'
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
+  gem 'execjs'
   gem 'jekyll', '3.5.2'
   gem 'kramdown'
   gem 'mini_magick'
@@ -19,20 +20,17 @@ group :jekyll do
   gem 'rb-gsl'
   gem 'rouge'
   gem 'sprockets', '~> 3.7'
-  gem 'execjs'
 end
 
 group :jekyll_plugins do
   gem 'jekyll-analytics'
   gem 'jekyll-assets', '~> 2.4.0'
-  gem 'jekyll-email-protect'
   gem 'jekyll-feed'
   gem 'jekyll-gist'
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
   gem 'jekyll-tagging'
   gem 'jekyll-tagging-related_posts'
-  gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
   gem 'jekyll_version_plugin'

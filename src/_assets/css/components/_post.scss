@@ -46,7 +46,7 @@ address[role=group].post {
 }
 
 main[role=group].post {
-  @extend .w-100;
+  @extend .w-100, .ph3;
 
   p,
   blockquote,
@@ -98,6 +98,14 @@ main[role=group].post {
     &:first-child:first-line {
       text-transform: uppercase;
       text-align: left;
+    }
+  }
+
+  div.footnotes {
+    @extend .ml4;
+
+    li:first-line {
+      text-transform: initial;
     }
   }
 
