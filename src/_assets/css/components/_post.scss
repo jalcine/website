@@ -93,18 +93,10 @@ main[role=group].post {
   p {
     @extend .w-auto;
     @extend .mh2;
-
-    &:first-child:first-line {
-      text-transform: uppercase;
-      text-align: left;
-    }
   }
 
   div.footnotes {
     @extend .ml4;
-
-    li:first-line {
-      text-transform: initial;
     }
   }
 
@@ -116,11 +108,6 @@ main[role=group].post {
     > p {
       @extend .ma0;
       @extend .di;
-
-      &:first-line { 
-        font-size: inherit;
-        font-weight: inherit;
-      }
     }
   }
 
