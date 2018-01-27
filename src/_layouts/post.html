@@ -9,7 +9,7 @@ toc: true
 {% else %}
   {% include post_header.html %}
 {% endif %}
-<main role="group" class="post">
+<main role="group" class="post" data-track-content>
   {{ content | improve | letter_spacing | toc }}
 </main>
 {% include post_footer.html %}
