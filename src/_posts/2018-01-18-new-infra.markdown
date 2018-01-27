@@ -32,7 +32,7 @@ the rolling releases. The last time I checked before I nuked the server, it was
 at 143 releases. Not too shabby. Now, I deploy it by pushing up to my [Dokku][]
 instance using [a `Dockerfile` that looks like this][2]:
 
-{% highlight dockerfile linenos %}
+{% highlight dockerfile %}
 FROM node:9-alpine as node-builder
 
 RUN mkdir -p /app/src

@@ -32,7 +32,7 @@ representing arbitrary forms of data[^1]. From their [features][2] page,
 All cool stuff. There's a [Docker image][3] ready to use that they provide too
 so you can do something like:
 
-{% highlight shell linenos %}
+{% highlight shell %}
 $ docker pull minio/minio
 $ docker run -p 9000:9000 minio/minio server /data
 {% endhighlight %}

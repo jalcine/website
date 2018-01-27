@@ -83,7 +83,7 @@ files, auto completion, path expansion and other features that could handle
 development. This function [`cmake#targets#cache`][10] handles all of that
 initial state building:
 
-{% highlight vim linenos %}
+{% highlight vim %}
 func! cmake#targets#cache()
   for aTarget in cmake#targets#list()
     let files = cmake#targets#files(aTarget)

@@ -9,7 +9,15 @@
     </ul>
   </section>
   {% endif %}
-  <section class="bg-washed-blue b--navy bw1 b--dashed ph4-ns ph2">
+  <nav class="center dib mv2 cb cf w-100">
+    {% if page.previous %}
+      <a class="fl link dim" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>
+    {% endif %}
+    {% if page.next %}
+      <a class="fr link dim" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>
+    {% endif %}
+  </nav>
+  <section class="bg-washed-blue b--navy bw1 b--dashed ph4-ns ph2 cb ">
     <p class="lh-copy f4">
       Did you find this post <strong>useful</strong>? Want more?
       I recommend <em>subscribing to my newsletter</em> for more content and alerts
@@ -23,17 +31,8 @@
       <a href="/faq/contracting/"><strong>Let's get started</strong></a>.
     </p>
   </section>
-  <p class="center tc measure lh-copy dark-gray">
-    Thoughts? Comments? Suggestions? Rage posts? Send all of that to either
-    <a href="https://twitter.com/jackyalcine"><strong>@jackyalcine</strong></a> or 
-    <a href="mailto://blog@jacky.wtf"><strong>e-mail</strong></a>.
-  <nav class="center db cb w-100">
-    {% if page.previous %}
-      <a class="fl link dim" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>
-    {% endif %}
-    {% if page.next %}
-      <a class="fr link dim" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>
-    {% endif %}
-  </nav>
+  <p class="center tc lh-copy dark-gray">
+    Thoughts? Comments? Suggestions? Rage posts?
+    <a href="/contact/">Let me know personally</a>.
   </p>
 </footer>
