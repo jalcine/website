@@ -8,8 +8,22 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    archive-zip (0.11.0)
+      io-like (~> 0.3.0)
     autoprefixer-rails (8.3.0)
       execjs
+    capybara (3.0.2)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (~> 1.8)
+      rack (>= 1.6.0)
+      rack-test (>= 0.6.3)
+      xpath (~> 3.0)
+    childprocess (0.9.0)
+      ffi (~> 1.0, >= 1.0.11)
+    chromedriver-helper (1.2.0)
+      archive-zip (~> 0.10)
+      nokogiri (~> 1.8)
     classifier-reborn (2.2.0)
       fast-stemmer (~> 1.0)
     coderay (1.1.2)
@@ -85,6 +99,7 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
+    io-like (0.3.0)
     jekyll (3.8.0)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -171,6 +186,7 @@ GEM
     mercenary (0.3.6)
     method_source (0.9.0)
     mini_magick (4.8.0)
+    mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
@@ -200,6 +216,8 @@ GEM
       rack (~> 1.5)
     rack-livereload (0.3.17)
       rack
+    rack-test (1.0.0)
+      rack (>= 1.0, < 3)
     rake (12.3.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
@@ -221,6 +239,7 @@ GEM
     ruby-oembed (0.12.0)
     ruby_dep (1.5.0)
     rubypants (0.7.0)
+    rubyzip (1.2.1)
     safe_yaml (1.0.4)
     sass (3.5.6)
       sass-listen (~> 4.0.0)
@@ -230,6 +249,9 @@ GEM
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
+    selenium-webdriver (3.11.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.2)
     shellany (0.0.1)
     spoon (0.0.6)
       ffi
@@ -257,6 +279,8 @@ GEM
       link_header (~> 0.0.8)
       nokogiri
     xmlrpc (0.3.0)
+    xpath (3.0.0)
+      nokogiri (~> 1.8)
 
 PLATFORMS
   ruby
@@ -265,6 +289,8 @@ DEPENDENCIES
   activesupport
   autoprefixer-rails
   bundler (= 1.16.0)
+  capybara
+  chromedriver-helper
   classifier-reborn
   dotenv
   execjs
@@ -300,7 +326,9 @@ DEPENDENCIES
   rack-livereload
   rake
   rouge
+  rspec
   ruby-oembed
+  selenium-webdriver
   sprockets (~> 4.0.beta)
   uglifier
   xmlrpc

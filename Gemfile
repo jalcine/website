@@ -65,4 +65,11 @@ group :development do
   gem 'guard-rspec', require: false
   gem 'libnotify'
 end
+
+group :test do
+  gem 'capybara'
+  gem 'chromedriver-helper'
+  gem 'rspec'
+  gem 'selenium-webdriver'
+end
 # }}}
