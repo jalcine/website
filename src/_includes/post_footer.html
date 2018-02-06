@@ -31,9 +31,29 @@
       <a href="/faq/contracting/"><strong>Let's get started</strong></a>.
     </p>
   </section>
-  <p class="center tc lh-copy dark-gray">
-    Thoughts? Comments? Suggestions? Rage posts?
-    <a href="/contact/">Let me know personally</a>.
+  <a href="#isso-thread">Comments</a>
+  <script data-isso="//comments.jacky.wtf/"
+          data-isso-css="true"
+          data-isso-lang="en"
+          data-isso-reply-to-self="true"
+          data-isso-require-author="true"
+          data-isso-require-email="true"
+          data-isso-max-comments-top="10"
+          data-isso-max-comments-nested="5"
+          data-isso-reveal-on-click="5"
+          data-isso-avatar="true"
+          data-isso-vote="true"
+          src="//comments.jacky.wtf/js/embed.min.js"></script>
+  <section id="isso-thread" data-title="{{ page.title }}"></section>
+  <p class="center tc measure lh-copy dark-gray">
+    <nav class="center db cb w-100">
+      {% if page.previous %}
+        <a class="fl link dim" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>
+      {% endif %}
+      {% if page.next %}
+        <a class="fr link dim" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>
+      {% endif %}
+    </nav>
   </p>
   {% webmentions %}
 </footer>
