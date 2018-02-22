@@ -15,7 +15,7 @@ include:
 
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
-name: "@jackyalciné"
+name: jackyalcine
 author: Jacky Alciné
 url: https://jacky.wtf
 byline: Jacky Alciné is a developer and educator.
@@ -137,10 +137,12 @@ assets:
     - '*.jpg'
     - '*.jpeg'
     - '*.gif'
+    - '*.otf'
   sources:
     - _assets/css
     - _assets/images
     - _assets/favicon
+    - _assets/fonts
     - _assets/js
     - node_modules
 

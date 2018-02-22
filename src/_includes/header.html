@@ -1,12 +1,12 @@
-<header role="document" class="bg-near-white w-100 pa1 cb cf bw3 b--black-50 bb">
+<header role="document" class="bg-near-black near-white w-100 pa1 cb cf bw3 b--black-50 bb">
   <h2 class="fontFamily__special tracked-tight lh-solid f2 ma1 tc pa1">
     <img src="{{ 'brand/self.jpeg' | asset_path }}"
-    class="v-mid br-100 bg-black-80 b--black-80 ba h3">
+    class="v-mid br-100 bg-white-80 b--white-80 ba h4">
     {{ site.name }}
   </h2>
   <nav class="tc cf cb center">
     {% for link in site.data.links.navigation %}
-      <a class="{{ link.classes }} navy db dib-l fl fn-l link mh0 pa1 pa3-l mv1 dim mh1-l w-third w-auto-l grow"
+      <a class="{{ link.classes }} light-blue db dib-l fl fn-l link mh0 pa1 pa3-l mv1 dim mh1-l w-third w-auto-l grow"
          href="{{ link.link }}" title="{{ link.title }}">
         {{ link.title }}
       </a>

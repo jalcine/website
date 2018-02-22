@@ -1,3 +1,8 @@
+@font-face {
+  font-family: beyno;
+  src: asset_url("beyno.otf");
+};
+
 @mixin expected-sans-serif-fonts {
   @extend .sans-serif;
   
@@ -31,7 +36,7 @@
 @mixin expected-display-fonts {
   @at-root {
     html.wf-active & {
-      font-family: "Megrim";
+      font-family: beyno;
       font-weight: 400;
     }
   }
