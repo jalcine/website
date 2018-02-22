@@ -4,8 +4,8 @@
 var WebFontConfig = {
   google: {
     families: [
-      'Open+Sans:400,700,italic:latin', // Default page font
-      'Merriweather:400,700:latin', // Default page font
+      'Lato:400,700,italic:latin', // Default page font
+      'Titillium+Web:400,700:latin', // Default page font
       'Inconsolata:100,300,500,700,italic:latin', // Default page font
     ]
   }
