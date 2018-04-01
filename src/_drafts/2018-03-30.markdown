@@ -1,0 +1,83 @@
+---
+title: My Federated Set of Docker Images
+excerpt: The beginning of the move is here.
+date: 2018-03-30 18:58:07 PDT
+tags:
+  - federation
+  - dokku
+  - nextcloud
+  - isso
+---
+
+I'm working on moving over to this thing called the [IndieWeb][]. It's
+a weird concept for most, especially if you've always used the Internet
+via a centralized service like Facebook, Google or Twitter. The first few
+steps to get to this point required me to capture services I use a lot and
+then port them over to a server (or set of servers for that matter) that
+I could directly access and then control.
+
+## Extracting Things I _Want_
+
+There's things I _need_ to have in my day-to-day that allow me to interact
+with dozens of people on a regular basis. The only thing I really need to
+have up and going is [Nextcloud][]. It allows me to store files, DAV[^1]
+information and other bits of personal information in a centralized (for
+me) fashion and in a way I can maintain it.
+
+### Why do you want to maintain it though?
+
+Frankly, despite the whole :poop: :tornado: that Facebook is getting[^2],
+there's not much I can do to prevent _future_ data collection if I _still_
+use those platforms. The act of my extraction is solely for controlling
+and extraction. However, There's definitely hundreds of documents I've
+never placed on these services and have only lived on 'removed' storage or
+in remote places I've sent using end-to-end encryption.
+
+The act of me "pulling out" affords me the future luxury of not having to
+worry too much about if my files or data is being sent over to some remote
+party without consent. There's, of course, the issue of people still
+gaining access to information I leak out. At least, with this, I can get
+a better idea as to _who_ looked at _what_ and ideally for what reason.
+
+## Going with Dokku
+
+I've decided to use [Dokku][] to handle the act of running my own
+"platform-as-a-service" framework. You can read a bit more about it [on
+their site][1]. I have a whole set of Ansible playbooks for my personal
+server, one of them namely sets up Dokku, storage and plugins for Dokku in
+an idempotent fashion. This makes it easy for me to add and remove plugins
+without worrying if anything'll be broken.
+
+Dokku also provides a _lot_ of tools to make your own infrastructure from
+the bottom up. This might not work for everyone - I get that. I personally
+enjoy molding application systems by hand and playing with new
+configuration. This also gives me a lot of experience with safely rolling
+out new bits of features and tweaks without inducing down time. This _is_
+managing most of my life (potentially), after all.
+
+## Getting Nextcloud to Play Nice
+
+Now, getting Nextcloud up and running has been made _super_ simple using
+Docker thanks to [wonderfall's][2] image for [Nextcloud][3]. It flies
+thanks to it being based on Alpine and using nginx as its Web server[^3].
+I've based [my image of Nextcloud][2] off that image with some tweaks for
+Dokku. This enables:
+
+  * Setting up of `config.php` with values from `$DATABASE_URI`, `$REDIS_URI` et al.
+  * Application installation from a defined list (in environment variables).
+
+These have been personal pain points as things I've wanted my images to
+automatically handle when I've set them up. The image itself is available in
+the Docker Store under `jalcine/dokku-nextcloud`.
+
+---
+
+[^1]: WebDAV is a protocol that provides a framework for users to manipulate files on a server.
+[^2]: Have people even _looked_ at Google and Amazon? It's more about usage and exposure, I guess.
+[^3]: I _am_ tempted, however, to make it into a purely FPM package and add the static asset serving up to Dokku. There's no point (in my head) to have nginx serve up nginx. Feels super repetitive. Might be another project for another day!
+
+[1]: http://dokku.viewdocs.io/dokku/getting-started/installation/#what-is-dokku
+[2]: https://hub.docker.com/r/wonderfall/nextcloud/
+
+[dokku]: http://dokku.viewdocs.io/dokku/
+[nextcloud]: https://nextcloud.org
