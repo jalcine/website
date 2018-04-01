@@ -99,6 +99,11 @@ namespace :notify do
       puts '! Could not ping Bing about our sitemap, because Net::HTTP or URI could not be found.'
     end
   end
+
+  desc 'Notify the IndieWeb'
+  task :webmention do
+    `bin/jekyll webmention`
+  end
 end
 
 task deploy: %i[clean prod build:deploy upload:setup upload:deploy notify]

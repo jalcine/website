@@ -157,15 +157,19 @@ jekyll_analytics:
     siteId: 1
 
 webmentions:
+  pages: true
+  collections: true
   pause_lookups: false
-  username: jackyalcine
+  username: jacky.wtf
   cache_folder: .cache/webmention
-  cache_bad_uris_for: 10
+  cache_bad_uris_for: 5
   legacy_domains:
     - "http://jalcine.me"
     - "http://www.jalcine.me"
     - "https://jalcine.me"
     - "https://www.jalcine.me"
+    - "http://jacky.wtf"
+    - "https://www.jacky.wtf"
   throttle_lookups:
     last_week: daily
     last_month: weekly

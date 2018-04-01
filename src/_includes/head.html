@@ -76,15 +76,16 @@
 
 <link href="https://github.com/jalcine" rel="me" />
 <link href="https://twitter.com/jackyalcine" rel="me" />
+<link href="https://instagram.com/jackyalcine" rel="me" />
 <link rel="canonical" href="{{ full_page_uri }}">
 
+
 <script type="text/javascript">
-  var _paq = _paq || new Array();
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  var _paq = _paq || [];
   _paq.push(["setDomains", ["*.jacky.wtf"]]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
-  _paq.push(['trackVisibleContentImpressions'])
+  _paq.push(['trackVisibleContentImpressions']);
   (function() {
     var u="//analytics.jacky.wtf/";
     _paq.push(['setTrackerUrl', u+'piwik.php']);
@@ -93,7 +94,6 @@
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><img
-  src="//analytics.jacky.wtf/piwik.php?idsite=1&rec=1&action_name={{ page.title
-  | url_param_escape }}" style="border:0;" alt="" /></noscript>
+<noscript><img src="//analytics.jacky.wtf/piwik.php?idsite=1&rec=1&action_name={{ page.title | url_param_escape }}" style="border:0;" alt="" /></noscript>
 
+{% webmentions_head %}
