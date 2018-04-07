@@ -64,11 +64,16 @@ namespace :upload do
   end
 end
 
-task notify: ['notify:pingomatic', 'notify:google', 'notify:bing']
+task :notify do
+  if ENV['JEKYLL_ENV'] == 'production'
+    ['notify:pingomatic', 'notify:google', 'notify:bing', 'notify:webmention'].each do |task|
+      Rake::Task[task].invoke
+    end
+  end
+end
 
 desc 'Notify various services that the site has been updated'
 namespace :notify do
-
   desc 'Notify Ping-O-Matic'
   task :pingomatic do
     begin
