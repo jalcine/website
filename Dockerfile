@@ -17,10 +17,14 @@ RUN mkdir -p /app/.cache
 WORKDIR /app
 
 RUN apk add -U \
-  git make gcc python-dev \
-  linux-headers musl-dev \
-  gsl-dev imagemagick-dev \
-  build-base nodejs
+  git make gcc \
+  python-dev \
+  linux-headers \
+  musl-dev \
+  gsl gsl-dev \
+  imagemagick-dev \
+  build-base \
+  nodejs
 
 ADD Gemfile* /app/
 

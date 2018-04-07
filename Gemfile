@@ -13,7 +13,7 @@ group :jekyll do
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
   gem 'execjs'
-  gem 'gsl'
+  gem 'gsl', '1.16.0.6'
   gem 'jekyll', '3.5.2'
   gem 'kramdown'
   gem 'mini_magick'
