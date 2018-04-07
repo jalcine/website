@@ -36,7 +36,6 @@ group :jekyll_plugins do
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
-  gem 'jekyll_version_plugin'
   gem 'jemoji'
   gem 'ruby-oembed'
 end

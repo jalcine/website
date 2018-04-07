@@ -12,5 +12,6 @@
     {% if page.date %}<span>:clock7: <time>{{ page.date | date_to_rfc822 }}</time></span>{% endif %}
     {% if page.revised %}<span>:clock10: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
     <span>:clock3: {{ content | reading_time }}</span>
+    <span>:clock4: {% webmention_count page.url %}</span>
   </address>
 </header>
