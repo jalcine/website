@@ -34,11 +34,7 @@ namespace :build do
   end
 
   task :deploy do
-    if ENV['JEKYLL_ENV'] == 'development'
-      run_jekyll_in_dev(['build', '--verbose', '--destination', './_deploy'])
-    else
-      run_jekyll_in_dev(['build', '--verbose'])
-    end
+    run_jekyll_in_dev(['build', '--verbose'])
   end
 
   task :dev do
@@ -111,6 +107,7 @@ namespace :notify do
 
   desc 'Notify the IndieWeb'
   task :webmention do
+    puts '* Notifying webmention.io'
     puts `bin/jekyll webmention`
   end
 end
