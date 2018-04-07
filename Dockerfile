@@ -13,6 +13,8 @@ RUN npm install --verbose
 FROM ruby:2.4.0-alpine as jekyll-builder
 # {{{
 
+ENV JEKYLL_ENV=${JEKYLL_ENV:-production}
+
 RUN mkdir -p /app/.cache
 WORKDIR /app
 
