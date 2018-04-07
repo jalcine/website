@@ -257,7 +257,7 @@ DEPENDENCIES
   classifier-reborn
   dotenv
   execjs
-  gsl
+  gsl (> 2.0.0)
   guard
   guard-bundler
   guard-livereload
