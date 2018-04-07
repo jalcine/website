@@ -203,4 +203,4 @@ liquid:
   error_mode: strict
 
 isso:
-  domain: comments.jacky.wtf
+  domain: comments.jacky.vagrant.test
