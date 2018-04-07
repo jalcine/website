@@ -157,7 +157,7 @@ gpg:
 jekyll_analytics:
   Matomo:
     url: analytics.jacky.wtf
-    siteId: 1
+    siteId: "1"
 
 webmentions:
   pages: true
@@ -168,12 +168,12 @@ webmentions:
   cache_folder: .cache/webmention
   cache_bad_uris_for: 5
   legacy_domains:
+    - "http://jacky.wtf"
     - "http://jalcine.me"
     - "http://www.jalcine.me"
     - "https://jalcine.me"
-    - "https://www.jalcine.me"
-    - "http://jacky.wtf"
     - "https://www.jacky.wtf"
+    - "https://www.jalcine.me"
   throttle_lookups:
     last_week: daily
     last_month: weekly
