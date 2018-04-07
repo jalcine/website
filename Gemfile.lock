@@ -160,10 +160,6 @@ GEM
     lumberjack (1.0.12)
     mercenary (0.3.6)
     method_source (0.9.0)
-    mina (0.3.8)
-      open4 (~> 1.3.4)
-      rake
-    mina-scp (0.1.2)
     mini_magick (4.8.0)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
@@ -179,7 +175,6 @@ GEM
     nuggets (1.5.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    open4 (1.3.4)
     openssl (2.0.6)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
@@ -287,8 +282,6 @@ DEPENDENCIES
   jemoji
   kramdown
   libnotify
-  mina (< 1.0.0)
-  mina-scp
   mini_magick
   puma
   rack
