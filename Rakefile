@@ -34,11 +34,11 @@ namespace :build do
   end
 
   task :deploy do
-    run_jekyll_in_prod(['build', '--verbose'])
-  end
-
-  task :dev do
-    run_jekyll_in_dev(['build', '--verbose', '--trace'])
+    if ENV['JEKYLL_ENV'] == 'development'
+      run_jekyll_in_dev(['build', '--verbose'])
+    else
+      run_jekyll_in_prod(['build', '--verbose'])
+    end
   end
 end
 

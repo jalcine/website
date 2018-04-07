@@ -20,6 +20,7 @@ group :jekyll do
   gem 'rb-gsl'
   gem 'rouge'
   gem 'sprockets', '~> 3.7'
+  gem 'xmlrpc'
 end
 
 group :jekyll_plugins do

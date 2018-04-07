@@ -25,7 +25,7 @@ RUN apk add -U \
 ADD Gemfile* /app/
 
 RUN gem install --update bundler execjs && \
-    bundle install --binstubs
+    bundle install --binstubs --deployment
 
 ADD . /app
 COPY --from=node-builder /app/src/node_modules/ /app/src/node_modules
