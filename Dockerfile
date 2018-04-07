@@ -13,8 +13,6 @@ RUN npm install --verbose
 FROM ruby:2.4.0-alpine as jekyll-builder
 # {{{
 
-ENV JEKYLL_ENV=${JEKYLL_ENV:-production}
-
 RUN mkdir -p /app/.cache
 WORKDIR /app
 
@@ -32,7 +30,7 @@ RUN gem install --update bundler execjs && \
 ADD . /app
 COPY --from=node-builder /app/src/node_modules/ /app/src/node_modules
 
-RUN bin/rake build:deploy notify
+RUN bin/rake build:prod notify
 # }}}
 # {{{
 FROM nginx:stable-alpine

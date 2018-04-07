@@ -197,8 +197,6 @@ GEM
       rack
     rake (12.3.0)
     rb-fsevent (0.10.2)
-    rb-gsl (1.16.0.6)
-      gsl
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rouge (1.11.1)
@@ -264,6 +262,7 @@ DEPENDENCIES
   classifier-reborn
   dotenv
   execjs
+  gsl
   guard
   guard-bundler
   guard-livereload
@@ -296,7 +295,6 @@ DEPENDENCIES
   rack-jekyll
   rack-livereload
   rake
-  rb-gsl
   rouge
   ruby-oembed
   sprockets (~> 3.7)

@@ -33,8 +33,8 @@ namespace :build do
     run_jekyll_in_dev(['build', '--incremental', '--watch'])
   end
 
-  task :deploy do
-    run_jekyll_in_dev(['build', '--verbose'])
+  task :prod do
+    run_jekyll_in_prod(['build', '--verbose'])
   end
 
   task :dev do
