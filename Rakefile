@@ -111,7 +111,7 @@ namespace :notify do
 
   desc 'Notify the IndieWeb'
   task :webmention do
-    `bin/jekyll webmention`
+    puts `bin/jekyll webmention`
   end
 end
 
