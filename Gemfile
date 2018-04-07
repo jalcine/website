@@ -50,11 +50,6 @@ group :web do
   gem 'rack-livereload', require: 'rack/livereload'
 end
 
-group :deployment do
-  gem 'mina', '< 1.0.0'
-  gem 'mina-scp'
-end
-
 # Automation
 group :guard do
   gem 'guard'

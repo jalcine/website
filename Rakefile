@@ -34,7 +34,7 @@ namespace :build do
   end
 
   task :prod do
-    run_jekyll_in_prod(['build', '--verbose'])
+    run_jekyll_in_prod(['build'])
   end
 
   task :dev do
@@ -48,16 +48,6 @@ end
 
 task :prod do
   Dotenv.overload('.envrc')
-end
-
-namespace :upload do
-  task :setup do
-    system 'bin/mina setup --verbose --trace'
-  end
-
-  task :deploy do
-    system 'bin/mina deploy --verbose --trace'
-  end
 end
 
 task :notify do
