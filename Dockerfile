@@ -10,7 +10,7 @@ RUN npm install --verbose
 
 # }}}
 
-FROM ruby:2.4.0-alpine as jekyll-builder
+FROM ruby:2.5.1-alpine as jekyll-builder
 # {{{
 
 RUN mkdir -p /app/.cache
