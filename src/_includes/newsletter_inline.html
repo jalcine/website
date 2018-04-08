@@ -2,6 +2,7 @@
   method="post"
   target="popupwindow"
   data-track-content
+  data-content-name="newsletter-subscribe-inline"
   onsubmit="window.open('https://buttondown.email/jackyalcine', 'popupwindow')">
   <fieldset class="cf bn ma0 pa0">
     <legend class="center pa0 f6 f5-ns tc mb3">
@@ -10,9 +11,9 @@
     <input type="hidden" value="1" name="embed" />
     <div class="cf">
       <label class="clip" for="tlemail">Email Address</label>
-      <input class="f6 w-80 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid"
+      <input data-track-content class="f6 w-80 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid"
              placeholder="Your Email Address" type="text" name="email">
-      <input class="f6 w-20 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer" type="submit" value="Join">
+      <input data-track-content data-content-piece="newsletter-subscribe-button" class="f6 w-20 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer" type="submit" value="Join">
     </div>
   </fieldset>
 </form>
