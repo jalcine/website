@@ -34,7 +34,6 @@ GEM
     formatador (0.2.5)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
-    gsl (2.1.0.3)
     guard (2.14.1)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -257,7 +256,6 @@ DEPENDENCIES
   classifier-reborn
   dotenv
   execjs
-  gsl (~> 2.1.0)
   guard
   guard-bundler
   guard-livereload
