@@ -4,7 +4,12 @@
     {% include post_related.html %}
     <section class="mv2" id="isso-thread" data-title="{{ page.title }}">
       <noscript class="bg-washed-blue b--navy bw1 b--dashed ph4-ns ph2 cb">
-        Please enable JavaScript to view the <a href="http://posativ.org/isso/">comments powered by Isso.</a>
+        By enabling JavaScript, you'll be able to <a
+          href="/faq/classic-comments">view and post traditional
+          comments</a> on this post. However, I'd encourage you to make use of
+        <a href="/faq/indieweb#webmentions">WebMentions</a> if you have a
+        longer-form post to make and still want to have full control of the
+        content.
       </noscript>
     </section>
     {% include post_navigation.html %}
@@ -12,7 +17,7 @@
   {% include post_lead.html %}
 </footer>
 {% webmentions_js %}
-<script data-isso="//comments.jacky.vagrant.test/"
+<script data-isso="//{{ site.isso_host }}/"
         data-isso-css="true"
         data-isso-lang="en"
         data-isso-reply-to-self="true"
@@ -22,5 +27,4 @@
         data-isso-max-comments-nested="3"
         data-isso-reveal-on-click="3"
         data-isso-avatar="true"
-        data-isso-vote="true"
-        src="//comments.jacky.vagrant.test/js/embed.min.js"></script>
+        data-isso-vote="true" src="//{{ site.isso_host }}/js/embed.min.js"></script>

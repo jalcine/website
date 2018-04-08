@@ -20,5 +20,4 @@ assets:
 webmentions:
   pause_lookups: true
 
-isso:
-  domain: comments.jacky.vagrant.test
+isso_host: comments.jacky.vagrant.test

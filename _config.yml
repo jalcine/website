@@ -201,3 +201,5 @@ jekyll-archives:
 
 liquid:
   error_mode: strict
+
+isso_host: comments.jacky.wtf
