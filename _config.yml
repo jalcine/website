@@ -181,8 +181,8 @@ webmentions:
     older: monthly
   js:
     destination: _javascript
-    uglify: false
-    deploy: false
+    uglify: true
+    deploy: true
 
 autolink_email:
   link_attr: class="email-link" # attributes to add to the link

@@ -10,7 +10,7 @@ date: 2018-04-07 23:01:57 PDT
 > on **{{ page.date | date: "%-d %B %Y" }}**.
 
 I'm currently in Oakland, CA. I've been enjoying embracing new [life-style
-habits][1] that are encouraging me to be more healthy and work more efficiently.
+habits][lsh] that are encouraging me to be more healthy and work more efficiently.
 
 ## Hacking Constantly
 
@@ -33,5 +33,6 @@ a particular question answered.
 [contact]: /contact/
 [1]: /weblog/new-infra/
 [2]: /weblog/tracking-you/
-[3]: /weblog/speak-to-me/
+[3]: {% post_url 2018-04-07-comments-are-back %}
+[lsh]: {% post_url 2018-01-27-a-different-january %}
 [4]: /projects/
