@@ -4,7 +4,9 @@ layout: bare
 {% if page.masthead and page.masthead.image %}
   {% img "{{ page.masthead.image | image_path }}" class:"w-100 mw9 center db mb1" width:"100%" height:"auto" title:"{{ masthead.title }}"%}
 {% endif %}
-<section role="document" class="mw8 center">
+<section role="document" class="mw8 center" data-track-content
+  data-content-name="page"
+  data-content-piece="{{ page.title }}">
   <h1 class="f1 lh-title f-headline-l">{{ page.title }}</h1>
   {{ content }}
   {% webmentions %}
