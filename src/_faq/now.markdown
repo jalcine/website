@@ -2,7 +2,7 @@
 layout: faq
 title: What are you up to now?
 permalink: /now/
-date: 2018-01-23 04:45:48 UTC
+date: 2018-04-07 23:01:57 PDT
 ---
 
 > Inspired by Derek Siver's ["Now Page" movement][1], this page serves as a way
@@ -10,9 +10,16 @@ date: 2018-01-23 04:45:48 UTC
 > on **{{ page.date | date: "%-d %B %Y" }}**.
 
 I'm currently in Oakland, CA. I've been enjoying embracing new [life-style
-habits][1] that are encouraging me to be more healthy and wo
+habits][1] that are encouraging me to be more healthy and work more efficiently.
 
 ## Hacking Constantly
+
+I've rebuilt [my personal infrastructure][1], [adding some tracking][2] and
+[reintroduced comments][3].
+
+I got a few new projects in the pipeline. I'm working on re-vamping the
+[projects page][4] to give more detail into that - I'll be telling my
+[subscribers][sub] about it first.
 
 ## That's it!
 
@@ -24,3 +31,7 @@ a particular question answered.
 [nowff]: https://sivers.org/nowff/
 [sub]: /subscribe/
 [contact]: /contact/
+[1]: /weblog/new-infra/
+[2]: /weblog/tracking-you/
+[3]: /weblog/speak-to-me/
+[4]: /projects/

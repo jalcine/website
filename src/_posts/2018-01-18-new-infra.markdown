@@ -1,5 +1,6 @@
 ---
 category: system
+title: Introducing Kandor, My New Pet Server Infrastructure
 image: posts/new-infra.jpeg
 date: 2018-01-18 12:16:05 PST
 tags:
