@@ -53,8 +53,10 @@ end
 task :notify do
   if ENV['JEKYLL_ENV'] == 'production'
     ['notify:pingomatic', 'notify:google', 'notify:bing', 'notify:webmention'].each do |task|
-      Rake::Task[task].invoke
+      puts Rake::Task[task].invoke
     end
+  else
+    puts '* In non-production mode, will not send notifications.'
   end
 end
 
