@@ -14,7 +14,9 @@
         {% if page.revised %}- revised <time>{{ page.revised | date_to_rfc822 }}</time>>{% endif %}
       </span>{% endif %}
     <span>:eyeglasses: {{ content | reading_time }}</span>
-    <span>:link: <a href="#isso-thread">Comments</a> - {% webmention_count
-      page.url %} <a href="/faq/indieweb#webmentions">mention(s)</a></span>
+    <span>
+      :link: <a href="#isso-thread">Comments</a> -
+      {% webmention_count page.url %} <a href="/faq/indieweb#webmentions">mention(s)</a>
+    </span>
   </address>
 </header>
