@@ -2,7 +2,7 @@
   <h2 class="f2 tc navy fw5 fontFamily__special">{{ site.name }}</h2>
   <section class="cf db w-100 color-inherit">
     <div class="f6 w-100 w-50-l fl-l">
-      <p>Been at this since 2010. Version {% project_version tag long %}</p>
+      <p>Been at this since 2010.</p>
       <p class="f6 lh-copy measure-narrow">{{ site.description | improve }}</p>
       <p><a href="/now/" target="_blank">See what I'm currently up to.</a></p>
       <nav class="tc-s tj-ns w-100 white">
@@ -17,3 +17,15 @@
     </aside>
   </section>
 </footer>
+{% webmentions_js %}
+<script data-isso="//{{ site.isso_host }}/"
+        data-isso-css="true"
+        data-isso-lang="en"
+        data-isso-reply-to-self="true"
+        data-isso-require-author="true"
+        data-isso-require-email="true"
+        data-isso-max-comments-top="10"
+        data-isso-max-comments-nested="3"
+        data-isso-reveal-on-click="3"
+        data-isso-avatar="true"
+        data-isso-vote="true" src="//{{ site.isso_host }}/js/embed.min.js"></script>

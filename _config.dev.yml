@@ -19,3 +19,5 @@ assets:
 
 webmentions:
   pause_lookups: true
+
+isso_host: comments.jacky.vagrant.test

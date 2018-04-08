@@ -5,11 +5,13 @@
 
   > pre {
     @extend .db;
+    @extend .ma0;
+    @extend .pa0;
   }
 
   > pre > code {
-    @extend .db;
-    @extend .pa2;
+    @extend .dib;
+    @extend .pa3;
   }
 
   code, pre {

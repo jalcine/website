@@ -1,5 +1,5 @@
 header[role=group].post {
-  @extend .pa1, .mw7-l, .center;
+  @extend .pa1, .mw7, .center;
 
   > h1 {
     @extend .tracked-tight;
@@ -51,7 +51,7 @@ main[role=group].post {
   ul, ol,
   h1, h2, h3, h4, h5, h6
   {
-    @extend .w-auto, .mw7-l;
+    @extend .w-auto, .mw7;
     @extend .center;
     @extend .lh-copy;
     @extend .pa2, .mh2;
@@ -76,6 +76,10 @@ main[role=group].post {
       @extend .pa2;
 
       &:first-child { @extend .pt0; }
+    }
+
+    a {
+      @extend .light-blue;
     }
   }
   

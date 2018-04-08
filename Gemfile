@@ -17,9 +17,9 @@ group :jekyll do
   gem 'kramdown'
   gem 'mini_magick'
   gem 'rack-jekyll'
-  gem 'rb-gsl'
   gem 'rouge'
   gem 'sprockets', '~> 3.7'
+  gem 'xmlrpc'
 end
 
 group :jekyll_plugins do
@@ -36,7 +36,6 @@ group :jekyll_plugins do
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
-  gem 'jekyll_version_plugin'
   gem 'jemoji'
   gem 'ruby-oembed'
 end
@@ -48,11 +47,6 @@ group :web do
   gem 'puma'
   gem 'rack'
   gem 'rack-livereload', require: 'rack/livereload'
-end
-
-group :deployment do
-  gem 'mina', '< 1.0.0'
-  gem 'mina-scp'
 end
 
 # Automation

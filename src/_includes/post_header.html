@@ -9,8 +9,12 @@
   <address role="group" class="post center">
     {% if page.category %}<span>:book: {{ page.category }}</span>{% endif %}
     {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
-    {% if page.date %}<span>:clock7: <time>{{ page.date | date_to_rfc822 }}</time></span>{% endif %}
-    {% if page.revised %}<span>:clock10: updated <time>{{ page.revised | date_to_rfc822 }}</time></span>{% endif %}
-    <span>:clock3: {{ content | reading_time }}</span>
+    {% if page.date %}<span>
+        :clock7: written <time>{{ page.date | date:'%B %-d %Y' }}</time>
+        {% if page.revised %}- revised <time>{{ page.revised | date_to_rfc822 }}</time>>{% endif %}
+      </span>{% endif %}
+    <span>:eyeglasses: {{ content | reading_time }}</span>
+    <span>:link: <a href="#isso-thread">Comments</a> - {% webmention_count
+      page.url %} <a href="/faq/indieweb#webmentions">mention(s)</a></span>
   </address>
 </header>

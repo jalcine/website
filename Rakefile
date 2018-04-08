@@ -33,8 +33,8 @@ namespace :build do
     run_jekyll_in_dev(['build', '--incremental', '--watch'])
   end
 
-  task :deploy do
-    run_jekyll_in_prod(['build', '--verbose'])
+  task :prod do
+    run_jekyll_in_prod(['build'])
   end
 
   task :dev do
@@ -50,21 +50,16 @@ task :prod do
   Dotenv.overload('.envrc')
 end
 
-namespace :upload do
-  task :setup do
-    system 'bin/mina setup --verbose --trace'
-  end
-
-  task :deploy do
-    system 'bin/mina deploy --verbose --trace'
+task :notify do
+  if ENV['JEKYLL_ENV'] == 'production'
+    ['notify:pingomatic', 'notify:google', 'notify:bing', 'notify:webmention'].each do |task|
+      Rake::Task[task].invoke
+    end
   end
 end
 
-task notify: ['notify:pingomatic', 'notify:google', 'notify:bing']
-
 desc 'Notify various services that the site has been updated'
 namespace :notify do
-
   desc 'Notify Ping-O-Matic'
   task :pingomatic do
     begin
@@ -102,7 +97,8 @@ namespace :notify do
 
   desc 'Notify the IndieWeb'
   task :webmention do
-    `bin/jekyll webmention`
+    puts '* Notifying webmention.io'
+    puts `bin/jekyll webmention`
   end
 end
 

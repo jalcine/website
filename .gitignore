@@ -37,3 +37,4 @@ node_modules/
 src/.asset-cache
 src/_assets/bower/
 src/.jekyll-metadata
+src/_javascript

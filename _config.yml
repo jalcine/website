@@ -119,7 +119,10 @@ collections:
 assets:
   autoprefixer:
     browsers:
-      - last 2 versions
+      - "ff > 40"
+      - "IE > 8"
+      - "last 4 versions"
+      - "> 50%"
   debug: false
   autowrite: true
   digest: true
@@ -154,27 +157,32 @@ gpg:
 jekyll_analytics:
   Matomo:
     url: analytics.jacky.wtf
-    siteId: 1
+    siteId: "1"
 
 webmentions:
   pages: true
+  debug: true
   collections: true
   pause_lookups: false
   username: jacky.wtf
   cache_folder: .cache/webmention
   cache_bad_uris_for: 5
   legacy_domains:
+    - "http://jacky.wtf"
     - "http://jalcine.me"
     - "http://www.jalcine.me"
     - "https://jalcine.me"
-    - "https://www.jalcine.me"
-    - "http://jacky.wtf"
     - "https://www.jacky.wtf"
+    - "https://www.jalcine.me"
   throttle_lookups:
     last_week: daily
     last_month: weekly
     last_year: every 2 weeks
     older: monthly
+  js:
+    destination: _javascript
+    uglify: false
+    deploy: false
 
 autolink_email:
   link_attr: class="email-link" # attributes to add to the link
@@ -193,3 +201,5 @@ jekyll-archives:
 
 liquid:
   error_mode: strict
+
+isso_host: comments.jacky.wtf
