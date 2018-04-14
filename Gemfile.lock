@@ -105,10 +105,14 @@ GEM
       pathutil (>= 0.8)
       rack (~> 1.6)
       sprockets (~> 3.3, < 3.8)
+    jekyll-category-pages (1.0.0)
+      jekyll (~> 3.5)
+      jekyll-paginate (~> 1.1, >= 1.0.0)
     jekyll-feed (0.9.2)
       jekyll (~> 3.3)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.13.0)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.1)
@@ -266,8 +270,10 @@ DEPENDENCIES
   jekyll (= 3.5.2)
   jekyll-analytics
   jekyll-assets (~> 2.4.0)
+  jekyll-category-pages
   jekyll-feed
   jekyll-gist
+  jekyll-paginate
   jekyll-redirect-from
   jekyll-sitemap
   jekyll-tagging

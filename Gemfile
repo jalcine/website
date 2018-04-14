@@ -36,6 +36,8 @@ group :jekyll_plugins do
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
+  gem 'jekyll-category-pages'
+  gem 'jekyll-paginate'
   gem 'jemoji'
   gem 'ruby-oembed'
 end
