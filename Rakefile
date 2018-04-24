@@ -83,24 +83,25 @@ namespace :notify do
   end
 end
 
-unless ENV['ENV'] == 'production'
+if ENV['ENV'] == 'test'
   require 'rspec/core/rake_task'
+  require 'html-proofer'
+
   RSpec::Core::RakeTask.new(:spec) do |t|
     t.pattern = Dir.glob('spec/**/*_spec.rb')
     t.rspec_opts = '--format doc'
   end
-end
 
-task :html_proofer do
-  require 'html-proofer'
-  HTMLProofer.check_directory('./_site',
-    parallel: {
-      in_processes: 4
-    },
-    cache: {
-      timeframe: '30d'
-    }
-  ).run
+  task :html_proofer do
+    HTMLProofer.check_directory('./_site',
+      parallel: {
+        in_processes: 4
+      },
+      cache: {
+        timeframe: '30d'
+      }
+    ).run
+  end
 end
 
 task default: %w[spec build:deploy notify]
