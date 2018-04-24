@@ -1,8 +1,6 @@
 # frozen_string_literal: True
 
 require 'rspec'
-require 'jekyll'
-require 'liquid'
 require 'capybara/rspec'
 require 'capybara-screenshot/rspec'
 require 'rack/test'
