@@ -3,7 +3,7 @@
   
   @at-root {
     html.wf-active & {
-      font-family: "Open Sans";
+      font-family: "Lato";
     }
   }
 }
@@ -13,7 +13,7 @@
   
   @at-root {
     html.wf-active & {
-      font-family: "Merriweather";
+      font-family: "Titillium Web";
     }
   }
 }
@@ -31,17 +31,17 @@
 @mixin expected-display-fonts {
   @at-root {
     html.wf-active & {
-      font-family: "Megrim";
+      font-family: beyno;
       font-weight: 400;
     }
   }
 }
 
-h1, h2, h3, h4, h5, h6, blockquote {
+h1, h2, h3, h4, h5, h6 {
   @include expected-serif-fonts;
 }
 
-p, body, div, li {
+p, body, div, li, blockquote {
   @include expected-sans-serif-fonts;
   @extend .f5;
 }
@@ -78,11 +78,22 @@ ul {
 }
 
 a {
-  @extend .link;
+  &, 
+  &:visited,
+  &:hover,
+  &:visited:hover
+  {
+    @extend .link;
+    color: $blue!important;
+  }
 }
 
 .fontFamily__special {
-  @include expected-display-fonts;
+  @at-root {
+    html.wf-active & {
+      @include expected-display-fonts;
+    }
+  }
 }
 
 blockquote {

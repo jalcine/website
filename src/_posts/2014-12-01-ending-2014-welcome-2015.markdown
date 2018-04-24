@@ -21,7 +21,7 @@ taken time this month to reflect on the places I've been this year and see how
 I can get even more done in the upcoming year.
 
 ## Personal Projects
-{% img "{{ 'iron-man-hud-2014.jpg' | image_path }}" width:"auto" height:"auto" %}
+{% asset iron-man-hud-2014.jpg width=auto height=auto %}
 
 If you haven't known by yet, I'm quite obsessed with the concept of home
 automation, artificial intelligence and very specifically, the replication and
@@ -59,7 +59,7 @@ comic][imc] and [The Pragmatic Programmer][tpp]. Diverse enough of a topic set,
 but all relating to things I value and enjoy.
 
 # Into 2015
-{% img "{{ 'destiny-squad.gif' | image_path }}" width:"auto" height:"auto "%}
+{% asset destiny-squad.gif width=auto height=auto %}
 
 It's probably not a good idea for me to plan too sternly into 2015, since even
 I'm not too sure on what it might happen, but there's a few things I'd like to
@@ -68,7 +68,7 @@ to rampage across the world should be enlightening. Apologies for rampaging in
 your part of the world in advance[^3].
 
 ## First Minor Release of Wintermute
-{% img "{{ 'wintermute-old-master.png' | image_path}}" width:"auto" height:"auto" %}
+{% asset wintermute-old-master.png width=auto height=auto %}
 
 Wintermute's a pretty old project for me. It's about four years old with no
 release binaries at all. A few reasons for this include school, work and the
@@ -96,7 +96,7 @@ of them publicly facing, might do a compilation shot of sorts. The underlying
 purpose of the face capturing is actually part of a larger project (that
 has ties to Wintermute).
 
-# Ad Contraho
+# Ad Contra
 2014 is _done_ in my book, to be honest. This month is going to be spent cleaning
 up things I should have whilst doing other things (like living). Getting my
 cameras tided up as well prepping hardware for the next year is largely the

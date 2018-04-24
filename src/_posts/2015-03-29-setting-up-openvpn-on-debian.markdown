@@ -57,7 +57,7 @@ After that, you're going to want to update the variables files that'd be used
 for the generation of the certificates and the likes. That file would be located
 at `/etc/openvpn/rsa/vars`.[^4]
 
-{% highlight bash linenos %}
+{% highlight bash %}
 export EASY_RSA=/etc/openvpn/easyrsa
 
 export CA_EXPIRE=100
@@ -93,7 +93,7 @@ VPN server now. Here's a sample configuration. Encryption and the likes are
 disabled so that you can slowly upgrade the ciphers and authentication for other
 devices you might want to support.
 
-{% highlight bash linenos %}
+{% highlight bash %}
 port 1194
 proto udp
 dev tun

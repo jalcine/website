@@ -2,22 +2,37 @@
 layout: faq
 title: What are you up to now?
 permalink: /now/
-date: 2017-11-10 19:04:03 PST
+date: 2018-04-07 23:01:57 PDT
 ---
 
 > Inspired by Derek Siver's ["Now Page" movement][1], this page serves as a way
-> for visitors to see what I'm working on at the moment.
+> for visitors to see what I'm up to at the moment. I updated this page
+> on **{{ page.date | date: "%-d %B %Y" }}**.
 
-I'm home in [Oakland, California][2].
+I'm currently in Oakland, CA. I've been enjoying embracing new [life-style
+habits][lsh] that are encouraging me to be more healthy and work more efficiently.
 
-I started a new job in November with [Lob][].
+## Hacking Constantly
 
-I've begun working more on [twch.at][].
+I've rebuilt [my personal infrastructure][1], [adding some tracking][2] and
+[reintroduced comments][3].
 
-I am open to [part-time contracting][3].
+I got a few new projects in the pipeline. I'm working on re-vamping the
+[projects page][4] to give more detail into that - I'll be telling my
+[subscribers][sub] about it first.
 
-[1]: https://sivers.org/nowff/
-[2]: https://en.wikipedia.org/wiki/Oakland%2C_California
-[3]: /faq/contracting/
-[lob]: https://lob.com/
-[twch.at]: http://ap.twch.at/
+## That's it!
+
+This page serves to tell you what [I've been up to][nowff]. If you want
+announcement-like updates, [subscribing to my blog or mailing list][sub] will
+give you just that. Otherwise, feel free to [reach out][contact] if you want
+a particular question answered.
+
+[nowff]: https://sivers.org/nowff/
+[sub]: /subscribe/
+[contact]: /contact/
+[1]: /weblog/new-infra/
+[2]: /weblog/tracking-you/
+[3]: {% post_url 2018-04-07-comments-are-back %}
+[lsh]: {% post_url 2018-01-27-a-different-january %}
+[4]: /projects/

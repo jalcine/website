@@ -33,7 +33,7 @@ make sure we're doing what we expect. Feel free to either [clone the example
 repository][1] to get started. Our Mix project file would look something like
 this:
 
-{% highlight elixir linenos %}
+{% highlight elixir %}
 defmodule ExampleMaru.Mixfile do
   use Mix.Project
 

@@ -31,7 +31,7 @@ thing so far about CTest is that for the most decent test, you have to call
 gimmick that's unavoidable for now. Right now, Wintermute's
 `test/unit/CMakeLists.txt` looks like the following sans the licensing:
 
-{% highlight cmake linenos %}
+{% highlight cmake %}
 wintermute_test_render ( TARGET arguments SOURCES arguments.cpp )
 wintermute_test_render ( TARGET event_filter SOURCES Events/message_filter.cpp )
 wintermute_test_render ( TARGET event_message SOURCES Events/message.cpp )
@@ -66,7 +66,7 @@ and all that jazz *n times easier* for me, I wrote the following to automate
 that process each time I called the method. The logic for the
 `wintermute_test_render(TARGET SOURCES)` macro I used is as follows:
 
-{% highlight cmake linenos %}
+{% highlight cmake %}
 macro(wintermute_test_render)
   set(_singleArgs )
   set(_oneArgs   TARGET)
@@ -102,7 +102,7 @@ defined above and made it easier to one-click (or command) to test every
 target. When I run my suite for tests a là `make test`; I get the following
 as output:
 
-{% highlight bash linenos %}
+{% highlight bash %}
 application feature/build-unit-tests/4f3bdc4 $ make -C build test
 make: Entering directory `/home/jacky/Development/Projects/Wintermute/application/build'
 Running tests...

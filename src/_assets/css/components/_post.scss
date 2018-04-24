@@ -1,12 +1,11 @@
 header[role=group].post {
-  @extend .pa1, .mw7-l, .center;
+  @extend .pa1, .mw7;
 
   > h1 {
     @extend .tracked-tight;
     @extend .pa1;
     @extend .fw7, .f1;
     @extend .near-black;
-    @extend .tc;
   }
 
   > h3 {
@@ -27,11 +26,10 @@ header[role=group].post {
     > h1 + h2 {
       @extend .mh4;
       @extend .f2;
-      @extend .tc;
     }
     
     > address[role=group].post {
-      @extend .center, .mw7;
+      @extend .w-100;
     }
   }
 }
@@ -46,51 +44,67 @@ address[role=group].post {
 }
 
 main[role=group].post {
-  @extend .w-100, .pa2, .pa0-l;
-
   p,
   blockquote,
-  ul,
-  ol,
+  ul, ol,
   h1, h2, h3, h4, h5, h6
   {
-    @extend .w-100, .mw7-l;
-    @extend .center;
+    @extend .w-auto, .mw7;
+    @extend .lh-copy;
+    @extend .pa3, .mh2;
+  }
+  
+  h1, h2, h3, h4, h5, h6
+  {
+    @extend .pv2;
+  }
+
+  blockquote
+  {
+    @extend .f3;
+    @extend .mw-none-l;
+    @extend .bg-dark-gray, .white;
+
+    > p
+    {
+      font-size: inherit;
+      @extend .pa2;
+
+      &:first-child { @extend .pt0; }
+    }
+
+    a {
+      @extend .light-blue;
+    }
   }
   
   > p,
   > ol > li,
   > ul > li
   {
+    @extend .w-auto;
     @extend .f4;
     @extend .db;
     text-align: justify;
     text-align-last: left;
   }
 
-  p, blockquote {
-    @extend .lh-copy;
+  p {
+    @extend .w-auto;
   }
 
-  p {
-    @extend .w-100;
-
-    &:first-child:first-line {
-      text-transform: uppercase;
-      text-align: justify;
-    }
+  div.footnotes {
+    @extend .ml4;
   }
 
   ul {
-    @extend ul.arrows;
+    @extend .arrows;
   }
 
   ol > li {
     > p {
-      &:first-line { 
-        font-size: inherit;
-        font-weight: inherit;
-      }
+      @extend .ma0;
+      @extend .di;
     }
   }
 

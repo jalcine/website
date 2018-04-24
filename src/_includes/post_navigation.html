@@ -1,0 +1,8 @@
+<nav class="db cb w-100 mw7 cf">
+  {% if page.previous %}
+    <a class="fl link dim pl2" href="{{ page.previous.url }}" title="{{ page.previous.name }}">&laquo; Previous</a>
+  {% endif %}
+  {% if page.next %}
+    <a class="fr link dim pr2" href="{{ page.next.url }}" title="{{ page.next.name }}">Next &raquo;</a>
+  {% endif %}
+</nav>

@@ -2,7 +2,7 @@
 layout: post
 title: "Starting With a Flash: My New Job"
 date: 2014-04-19 00:52:12 EDT
-category: job
+category: work
 tags:
   - transition
   - job
@@ -16,7 +16,7 @@ change of scenery for me since I've been nose-deep in Ruby and C++ work. At
 Shutterstock, I'd be using these languages and more to help build the best
 technology there is when it comes to selling royalty-free images.
 
-{% img "{{ 'work/shutterstock.png' | image_path }}" alt:"Shutterstock" width:"auto" height:"auto" %}
+{% asset work/shutterstock.png alt=Shutterstock width=auto height=auto %}
 
 I'll probably document my time and what I learn there every two weeks or so,
 you guys would be here all the way (just with no work, haha). One thing I had

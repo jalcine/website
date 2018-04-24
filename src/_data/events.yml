@@ -1,5 +1,16 @@
-available: true
+available: false
 upcoming:
+  - name: "Afrotectopia"
+    href: http://afrotectopia.com/
+    description:
+      The most impactful forms of messaging that’s come to fame on the Web is
+      the “meme”. It’s a short, usually succulent, way of capturing a message
+      that can be used in a myriad of situations; the true embodiment of an
+      image capturing a thousand words. However, today, in a lot of on-line
+      circles, memes of Black persons, namely Black women, have been used
+      without true context. That coupled with the hundreds of racial undertones
+      in other communities, like that of the gaming and art tech scenes, leads
+      us to a whole different conversations about dense messaging via images.
 past:
   - image:
       src: "events/yes-we-code.jpeg"

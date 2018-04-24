@@ -12,7 +12,6 @@ tags:
   - networking
   - thoughts
 ---
-
 If you haven't noticed from previous screen shots in my weblog, I use [KDE][1]
 as my desktop environment on my Ubuntu desktop. Aside from a few bits of
 software, I use mostly KDE software for my desktop work. It has a really great
@@ -21,7 +20,6 @@ month!) are great too. I might also like it a lot too since a lot of the code
 base is written with C++.
 
 ## Peer Discovery
-
 Whenever you connect to a new network on Windows[^1], it asks for the network
 type. Now, some might disregard this window, but this determines the amount of
 information that the platform should expose the new network. If you're a casual
@@ -67,7 +65,7 @@ quickly especially if you don't want to slow down potential network speeds.
 KDE does have an way of incorporating this, but so far it seems to be
 only with Samba, for the moment.
 
-{% img "{{'posts/sharing-public-folder.png'|image_path}}" alt:"Sharing a public folder" %}
+{% asset posts/sharing-public-folder.png alt="Sharing a public folder" %}
 
 I'm working to bring other remote document storage solutions like Dropbox and
 Google Drive natively into KDE using KIO so it's something to look forward
@@ -83,13 +81,12 @@ for novice users; it could make do with some template profiles and I've
 considered patching it for just this purpose. But outside of that, I can
 provide the profile I [use for those interested][4].
 
-{% img "{{'posts/kcm-ufw-shot.png'|image_path}}" alt:"KDE and UFW" %}
-![KDE and UFW](/images/kcm-ufw-shot.png)
+{% asset posts/kcm-ufw-shot.png alt="KDE and UFW" %}
 
 It's a old wife's tale about Linux not getting viruses and trojans but it
-doesn't happen enough to the casual desktop user of Linux or BSD (given our growing
-size) to not be safe. With `clamav`, one can stay relatively secure and
-prevent their systems from known infection streams.
+doesn't happen enough to the casual desktop user of Linux or BSD 
+(given our growing size) to not be safe. With `clamav`, one can stay
+relatively secure and prevent their systems from known infection streams.
 
 ---
 

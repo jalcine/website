@@ -3,7 +3,7 @@ layout: bare
 image: none
 ---
 {% if page.image %}
-  {% img "{{ page.image | image_path }}" class:"w-100" width:"100%" height:"auto" %}
+  {% asset "{{ page.image }}" class="w-100" width="100%" height="auto" %}
 {% endif %}
 <section role="document">
   <h2 class="f2 lh-title">

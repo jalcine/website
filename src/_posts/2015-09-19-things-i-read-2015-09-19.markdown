@@ -58,7 +58,7 @@ WHAT?
 
 Bruh. In short:
 
-{% img "{{ 'bomb.gif' | image_path }}" width:auto height:auto %}
+{% asset "{{ 'bomb.gif' }}" width=auto height=auto %}
 
 To be honest, this is an interesting view point with the whole explosion of
 micro-services nowadays. I figure that people would store the logic in separate
@@ -94,7 +94,7 @@ I didn't read **any physical books** this week :sob:! It has been solely an
 web article and podcast heavy week. I'm going to have to skip some episodes
 of upcoming ones and stick my head back into books from last week.
 
-{% img "{{ 'im2-i-did-okay.gif' | image_path}}" width:auto height:auto %}
+{% asset "{{ 'im2-i-did-okay.gif'}}" width=auto height=auto %}
 
 ---
 

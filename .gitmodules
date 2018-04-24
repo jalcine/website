@@ -1,0 +1,6 @@
+[submodule "src/vendor/tachyons-sass"]
+	path = src/vendor/tachyons-sass
+	url = https://github.com/tachyons-css/tachyons-sass
+[submodule "src/vendor/webfontloader"]
+	path = src/vendor/webfontloader
+	url = https://github.com/typekit/webfontloader

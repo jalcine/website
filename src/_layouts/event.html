@@ -3,9 +3,9 @@ layout: bare
 masthead: none
 ---
 {% if page.masthead %}
-  {% img "{{ page.masthead | image_path }}"
-          class:"w-100 dib ma1-l mw7-l h-75-l fr-l"
-          width:"auto" height:"auto" %}
+  {% asset "{{ page.masthead }}"
+      class="w-100 dib ma1-l mw7-l h-75-l fr-l"
+      width=auto height=auto %}
 {% endif %}
 <section role="document">
   <h2 class="f2 lh-title">{{ page.title }}</h2>

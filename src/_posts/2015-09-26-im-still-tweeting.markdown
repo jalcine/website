@@ -51,7 +51,7 @@ for inline commenting via its product [Carnival][2]. It looks pretty compelling
 of a means to provide inline commenting[^4] (sans the lack of love for Firefox
 on Linux :sob:):
 
-{% video "{{ 'snapshot396.png' | image_path }}" /videos/carnival_preview.webm 800 600 preload:metadata %}{: .present}
+{% video "{{ 'snapshot396.png' }}" /videos/carnival_preview.webm 800 600 preload:metadata %}{: .present}
 
 One of the values that inline commenting provides is the ability to reply in a
 condensed, tweet sized response. Of course, if it has to be longer, there's the
@@ -86,7 +86,7 @@ tweetable comments as well, provided that they are of an acceptable size.
 Again, this is a deviation from the original thought of this post: how can I
 feel less guilty of tweeting whilst still writing on my own blog?
 
-{% img "{{ 'rdj-im3-haul-suit.gif' | image_path }}" alt:"The baggage of the world..." class:"present" %}
+{% asset "{{ 'rdj-im3-haul-suit.gif' }}" alt="The baggage of the world..." class="present" %}
 
 ### Separation of Topics
 
@@ -104,12 +104,12 @@ since <http://www.howoftendoyoutweet.com/> is down, but I know that I do it too
 often and it's mostly manually[^7]. Another site did provide me with some
 interesting graphs for the month of September:
 
-{% img "{{ 'snapshot397.png' | image_path }}" class:"present" %}
+{% asset "{{ 'snapshot397.png' }}" class="present" %}
 
 I tweet a lot. That's a bit over 25 tweets in an hour if I did in a 8 hour
 window.
 
-{% img "{{ 'snapshot398.png' | image_path }}" class:"present" %}
+{% asset "{{ 'snapshot398.png' }}" class="present" %}
 
 This graph is the one I wanted the most: how often I tweeted in relation to
 other days. It also exposes my non-conventional sleeping cycle. I take longer

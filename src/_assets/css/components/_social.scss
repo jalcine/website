@@ -1,10 +1,30 @@
 .jekyll-twitter-plugin {
   @extend .w-80;
-  @extend .tc;
+  @extend .pa4;
 }
 
 .twitter-tweet,
-div.embed,
 div.embed > iframe {
   margin: 0rem auto!important;
+  text-align: left!important;
+}
+
+
+div.embed.Twitter
+{
+  @extend .mv2;
+
+  > blockquote.twitter-tweet
+  {
+    font-size: inherit;
+    @extend .mw-none;
+    @extend .bt, .bb;
+    @extend .bg-washed-blue, .b--blue;
+    @extend .navy;
+  }
+
+  p {
+    @extend .tl;
+    @extend .pa0, .mh0;
+  }
 }

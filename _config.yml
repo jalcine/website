@@ -3,19 +3,11 @@ destination: _site/
 source: src/
 layouts_dir: src/_layouts/
 plugins_dir: plugins/
-filter_entries: []
-strict_front_matter: false
-include:
-  - _pages
-  - _faq
-  - _events
-  - _projects
-  - _portfolio
-  - _reviews
+strict_front_matter: true
 
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
-name: "@jackyalciné"
+name: jackyalcine
 author: Jacky Alciné
 url: https://jacky.wtf
 byline: Jacky Alciné is a developer and educator.
@@ -40,6 +32,14 @@ lsi: true
 future: false
 relative_permalinks: false
 markdown: kramdown
+pagination:
+  enabled: true
+  debug: false
+  per_page: 5
+  permalink: '/page/:num/'
+  limit: 5
+  sort_reverse: true
+  sort_field: 'date'
 
 tag_page_layout: tags
 tag_feed_layout: tag_feed
@@ -47,10 +47,8 @@ tag_page_dir: weblog/tag/
 tag_feed_dir: feeds/tags/
 
 exclude:
-  - _site
-  - _deploy
-  - .asset_cache
-  - node_modules
+  - _assets
+  - .*
 
 kramdown:
   syntax_highlighter: rouge
@@ -59,39 +57,21 @@ kramdown:
 defaults:
   -
     scope:
-      path: ""
-    values:
-      layout: base
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      image: none
-  -
-    scope:
-      path: "_portfolio"
-      type: portfolios
-    values:
-      layout: portfolio
-  -
-    scope:
-      path: "_projects"
-    values:
-      layout: project
-  -
-    scope:
       path: "_pages"
+      type: "pages"
     values:
-      layout: page
+      layout: "page"
   -
     scope:
       path: "_faq"
+      type: "faq"
     values:
-      layout: faq
+      layout: "faq"
 
 collections:
+  pages:
+    output: true
+    layout: page
   faq:
     output: true
     layout: faq
@@ -104,72 +84,74 @@ collections:
   portfolio:
     output: true
     layout: portfolio
-  reviews_books:
-    output: true
-    layout: reviews
-    permalink: /reviews/books/:name
-  reviews_movies:
-    output: true
-    layout: reviews
-    permalink: /reviews/movies/:name
-  reviews_television_show:
-    output: true
-    layout: reviews
-    permalink: /reviews/television-shows/:name
 
 assets:
-  autoprefixer:
-    browsers:
-      - last 2 versions
-  debug: false
-  autowrite: true
-  digest: true
-  strict: true
-  integrity: true
-  plugins:
-    compression:
-      css:
-        enabled: true
-      js:
-        enabled: true
-  prefix: /assets
-  asset:
-    - '*.png'
-    - '*.jpg'
-    - '*.jpeg'
-    - '*.gif'
+  destination: '/assets'
+  compression: true
+  gzip: true
+  cdn:
+    baseurl: true
+  defaults:
+    js:
+      integrity: true
+      prefetch: true
+    css:
+      integrity: true
+      prefetch: true
+    img:
+      integrity: true
+      prefetch: true
+  caching:
+    path: '.cache/assets'
+    type: file
+    enabled: true
+  raw_precompile:
+    - page.js
+    - page.css
   sources:
-    - _assets/css
-    - _assets/images
+    - ../node_modules
+    - _assets/files
     - _assets/favicon
-    - _assets/js
-    - node_modules
+  plugins:
+    css:
+      autoprefixer:
+        browsers:
+          - "last 2 versions"
+          - "IE > 9"
 
 jekyll-mentions: https://twitter.com
 
 gpg:
   fingerprint: 0x4DEFFC9FF82E8908
 
-jekyll_analytics:
-  Piwik:
-    url: lighthouse.jacky.wtf
-    siteId: "1234"
+analytics:
+  host: analytics.jacky.wtf
+  site_id: 1
 
 webmentions:
+  debug: false
+  pages: true
+  collections: true
   pause_lookups: false
-  username: jackyalcine
+  username: jacky.wtf
   cache_folder: .cache/webmention
-  cache_bad_uris_for: 10
+  cache_bad_uris_for: 1
   legacy_domains:
+    - "http://jacky.wtf"
     - "http://jalcine.me"
     - "http://www.jalcine.me"
     - "https://jalcine.me"
+    - "https://www.jacky.wtf"
     - "https://www.jalcine.me"
   throttle_lookups:
     last_week: daily
     last_month: weekly
     last_year: every 2 weeks
     older: monthly
+  js:
+    uglify: true
+    deploy: true
+    destination: assets
 
 autolink_email:
   link_attr: class="email-link" # attributes to add to the link
@@ -188,3 +170,7 @@ jekyll-archives:
 
 liquid:
   error_mode: strict
+
+isso_host: comments.jacky.wtf
+
+category_path: weblog/categories/

@@ -1,0 +1,105 @@
+---
+category: system
+title: Introducing Kandor, My New Pet Server Infrastructure
+image: posts/new-infra.jpeg
+date: 2018-01-18 12:16:05 PST
+tags:
+  - infrastructure
+  - provision
+excerpt: |
+  I completely nuked jacky.wtf from low-orbit.
+---
+
+I've been toying around with a new system setup for my personal server. I named
+the original one Krypton and it's hit that point where I needed to send data
+elsewhere. I wasn’t sure what was stored on there and over time, disk space
+became next to 0. I actually took the entire server off-line for a few days[^1].
+
+## The Vision
+I'm aiming to get more into the world of [POSSE][] and the [Indie Web][]
+in general. Despite being someone who works at a [PDaaS company][1],
+I still believe that the producer of data is the only true owner of
+it[^2]. This, unexpectedly, made me realize that there's a _LOT_ of things
+that one can do when they own and host their own systems. You have a lot
+more control over who gets to it and how accurate it has to be. I also can
+feel a lot more comfortable dumping more information in there.
+
+### Personal Website
+<https://jacky.wtf> itself is hosted on DigitalOcean, by way of nginx &amp;
+jekyll (to name a few tools). The new version of this site, well, is the
+same. The _deployment_ of the site is different though. I used to use [Mina][]
+to do all of the work. It'd be `scp`'d up to my server and it'd handle all of
+the rolling releases. The last time I checked before I nuked the server, it was
+at 143 releases. Not too shabby. Now, I deploy it by pushing up to my [Dokku][]
+instance using [a `Dockerfile` that looks like this][2]:
+
+{% highlight dockerfile %}
+FROM node:9-alpine as node-builder
+
+RUN mkdir -p /app/src
+ADD src/package* /app/src/
+WORKDIR /app/src
+RUN npm install --verbose
+
+FROM ruby:2.4.0-alpine as jekyll-builder
+
+RUN mkdir -p /app/.cache
+WORKDIR /app
+
+RUN apk add -U \
+  git make gcc python-dev \
+  linux-headers musl-dev \
+  gsl-dev imagemagick-dev \
+  build-base nodejs
+
+ADD Gemfile* /app/
+
+RUN gem install --update bundler execjs && \
+    bundle install --binstubs
+
+ADD . /app
+COPY --from=node-builder /app/src/node_modules/ /app/src/node_modules
+
+RUN bin/rake build:deploy
+FROM nginx:stable-alpine
+
+COPY --from=jekyll-builder /app/_deploy /usr/share/nginx/html
+
+EXPOSE 80
+
+RUN ["nginx"]
+{% endhighlight %}
+
+To be honest, I wasn't going to consider this until I ran across a blog post
+that mentioned how Docker supported [multi-stage builds][3]. That changed
+everything for me :laughing:.
+
+## Next Steps
+
+There's a quite of bit of software I want to have up and running on this
+server. There's also the idea of me even making this blog not static anymore.
+Who knows? Some things I'm definitely entertaining are the following:
+
+  * *Commenting*: It's nice to get feedback from people on my own platform
+    versus waiting for it on other places like Hacker News or Twitter.
+  * *Liking*: I'm debating making a pet project that just serves as a
+    way to collect 'likes' or upvotes for arbitrary bits of data. This
+    might be a glorified stats service but we'll see.
+  * *Personalization*: So I _do_ hope to have an API for this site to
+    push bits of data to the site that I think might be interesting. I'll
+    write more about that in the future.
+
+Do you have suggestions for applications and/or services one should look into using for
+a [POSSE][]-focused, decentralized system? Is there an application you want to
+see in Dokku? [Let me know][contact].
+
+[^1]: I put it back up because it unintentionally broke a bunch of links.
+[^2]: At the time of writing, my place of employment aligns with this idea too.
+[1]: /work/
+[2]: https://raw.githubusercontent.com/jalcine/website/develop/Dockerfile
+[3]: https://blog.alexellis.io/mutli-stage-docker-builds/
+[posse]: https://indieweb.org/POSSE
+[indie web]: http://indieweb.org/
+[mina]: https://github.com/mina-deploy/mina
+[dokku]: http://dokku.viewdocs.io/dokku/
+[contact]: /contact/

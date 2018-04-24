@@ -1,9 +1,12 @@
 # vim:set fdl=1 nospell:
 # frozen_string_literal: true
 
+ruby '2.4.1'
+
 source 'https://rubygems.org'
 
 # {{{ Core Utilities
+gem 'bundler', '1.16.0'
 gem 'dotenv'
 gem 'rake'
 # }}}
@@ -12,30 +15,33 @@ group :jekyll do
   gem 'activesupport'
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
-  gem 'jekyll', '3.5.2'
+  gem 'execjs'
+  gem 'image_optim'
+  gem 'jekyll', '~> 3.5.0'
   gem 'kramdown'
   gem 'mini_magick'
-  gem 'rack-jekyll'
-  gem 'rb-gsl'
+  gem 'parallel'
   gem 'rouge'
-  gem 'sprockets', '~> 3.7'
+  gem 'sprockets', '~> 4.0.beta'
+  gem 'uglifier'
+  gem 'xmlrpc'
 end
 
 group :jekyll_plugins do
   gem 'jekyll-analytics'
-  gem 'jekyll-assets', '~> 2.4.0'
-  gem 'jekyll-autolink_email'
-  gem 'jekyll-email-protect'
+  gem 'jekyll-assets'
   gem 'jekyll-feed'
   gem 'jekyll-gist'
+  gem 'jekyll-paginate-v2'
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
   gem 'jekyll-tagging'
   gem 'jekyll-tagging-related_posts'
+  gem 'jekyll-tidy'
+  gem 'jekyll-toc'
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
-  gem 'jekyll_version_plugin'
   gem 'jemoji'
   gem 'ruby-oembed'
 end
@@ -46,16 +52,11 @@ group :web do
   gem 'haml'
   gem 'puma'
   gem 'rack'
-  gem 'rack-livereload', require: 'rack/livereload'
-end
-
-group :deployment do
-  gem 'mina', '< 1.0.0'
-  gem 'mina-scp'
+  gem 'rack-livereload', require: 'rack/livereload', group: :development
 end
 
 # Automation
-group :guard do
+group :development do
   gem 'guard'
   gem 'guard-bundler', require: false
   gem 'guard-livereload', require: false
@@ -63,5 +64,14 @@ group :guard do
   gem 'guard-rake', require: false
   gem 'guard-rspec', require: false
   gem 'libnotify'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'capybara-screenshot'
+  gem 'chromedriver-helper'
+  gem 'rspec'
+  gem 'html-proofer'
+  gem 'selenium-webdriver'
 end
 # }}}

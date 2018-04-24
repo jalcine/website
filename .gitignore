@@ -34,6 +34,7 @@ bin/
 _deploy/
 
 node_modules/
-src/.asset-cache
-src/_assets/bower/
 src/.jekyll-metadata
+.bundle
+src/assets/JekyllWebmentionIO.js
+spec/examples.txt

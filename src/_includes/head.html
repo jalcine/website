@@ -10,9 +10,9 @@
   {% assign blurb = site.description | strip_newlines %}
 {% endif %}
 {% if page.image contains 'http://' or page.image contains 'https://' %}
-	{% assign image = page.image %}
+  {% assign image = page.image %}
 {% else %}
-	{% assign image = 'favicon/android-chrome-192x192.png' | asset_path %}
+  {% assign image = 'favicon/android-chrome-192x192.png' | asset_path %}
 {% endif %}
 {% assign full_page_uri = page.url | prepend: '/' | prepend: site.url %}
 {% if page.redirect %}
@@ -30,30 +30,20 @@
 {% endif %}
 <meta name='revisit-after' content='7 days'>
 {% if page.date %}
-  <meta name="date" content="{{ page.date}}">
+  <meta name="date" content="{{ page.date }}">
 {% endif %}
-<meta http-equiv='Expires' content='0'>
-{% css page %}
-<link rel='help' title='FAQ' href='{{ site.uri }}/faq/'>
-<link rel='index' title='{{ site.name }}' href='{{ site.uri }}'>
-<link rel="apple-touch-icon" sizes="180x180" href="{% asset_path 'favicon/apple-touch-icon.png' %}">
-<link rel="icon" type="image/png" sizes="32x32" href="{% asset_path 'favicon/favicon-32x32.png' %}">
-<link rel="icon" type="image/png" sizes="194x194" href="{% asset_path 'favicon/favicon-194x194.png' %}">
-<link rel="icon" type="image/png" sizes="192x192" href="{% asset_path 'favicon/android-chrome-192x192.png' %}">
-<link rel="icon" type="image/png" sizes="16x16" href="{% asset_path 'favicon/favicon-16x16.png' %}">
-<link rel="manifest" href="{% asset_path 'manifest.json' %}">
-<link rel="mask-icon" href="{% asset_path 'favicon/safari-pinned-tab.svg' %}" color="#121212">
-<link rel="shortcut icon" href="{% asset_path 'favicon/favicon.ico' %}">
-<meta name="msapplication-TileColor" content="#603cba">
-<meta name="msapplication-TileImage" content="{% asset_path 'favicon/mstile-144x144.png' %}">
-<meta name="msapplication-config" content="{% asset_path 'browserconfig.xml' %}">
-<meta name="theme-color" content="#121212">
 
+{% asset page.css !integrity %}
+
+<link rel='help' title='FAQ' href='{{ site.uri }}/faq/'>
+<link rel='index' title='{{ site.name }}' href='{{ site.url }}'>
+<link rel='shortcut icon' href="{% asset favicon/favicon.ico @path %}">
 
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="/feeds/articles.xml" />
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Recent" href="/feeds/recent.xml" />
-<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+<meta http-equiv='Expires' content='0'>
 <meta itemprop="name" content="{{ correct_title }}">
 <meta itemprop="description" content="{{ blurb }}">
 
@@ -76,4 +66,28 @@
 
 <link href="https://github.com/jalcine" rel="me" />
 <link href="https://twitter.com/jackyalcine" rel="me" />
+<link href="https://instagram.com/jackyalcine" rel="me" />
+<link href="{{ site.url }}/pgp.asc" rel="pgpkey" />
 <link rel="canonical" href="{{ full_page_uri }}">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="micropub" href="https://pub.jacky.wtf/micropub">
+<link rel="token_endpoint" href="https://pub.jacky.wtf/token">
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['setDomains', ['*.jacky.wtf']]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  _paq.push(['trackVisibleContentImpressions']);
+
+  (function() {
+    var u="https://{{ site.analytics.host }}/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '{{ site.analytics.site_id }}']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><img src="//{{ site.analytics.host }}/piwik.php?idsite={{ site.analyitcs.site_id }}&rec=1&action_name={{ page.title | url_param_escape }}" style="border:0;" alt="" /></noscript>
+
+{% webmentions_head %}

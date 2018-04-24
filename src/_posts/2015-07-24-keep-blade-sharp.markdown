@@ -39,7 +39,7 @@ Simple, no? We'll make use of the benchmarking library in Ruby so that we can
 generate timestamps for every high-level execution of the Fibonacci function.
 The code for this would look like the following:
 
-{% highlight ruby linenos %}
+{% highlight ruby %}
 require 'benchmark'
 
 def fib(n)
