@@ -89,4 +89,16 @@ RSpec::Core::RakeTask.new(:spec) do |t|
   t.rspec_opts = '--format doc'
 end
 
+task :html_proofer do
+  require 'html-proofer'
+  HTMLProofer.check_directory('./_site',
+    parallel: {
+      in_processes: 4
+    },
+    cache: {
+      timeframe: '30d'
+    }
+  ).run
+end
+
 task default: %w[spec build:deploy notify]

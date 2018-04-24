@@ -20,6 +20,7 @@ group :jekyll do
   gem 'jekyll', '~> 3.5.0'
   gem 'kramdown'
   gem 'mini_magick'
+  gem 'parallel'
   gem 'rouge'
   gem 'sprockets', '~> 4.0.beta'
   gem 'uglifier'
@@ -70,7 +71,7 @@ group :test do
   gem 'capybara-screenshot'
   gem 'chromedriver-helper'
   gem 'rspec'
-  gem 'rack-jekyll'
+  gem 'html-proofer'
   gem 'selenium-webdriver'
 end
 # }}}
