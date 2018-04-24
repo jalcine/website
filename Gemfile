@@ -16,7 +16,7 @@ group :jekyll do
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
   gem 'execjs'
-  # gem 'image_optim'
+  gem 'image_optim'
   gem 'jekyll'
   gem 'kramdown'
   gem 'mini_magick'
@@ -68,8 +68,10 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'capybara-screenshot'
   gem 'chromedriver-helper'
   gem 'rspec'
+  gem 'rack-jekyll'
   gem 'selenium-webdriver'
 end
 # }}}

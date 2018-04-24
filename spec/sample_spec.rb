@@ -1,5 +1,7 @@
-describe "sample", type: :feature, js: true do
-  it "has the page title" do
+require 'spec_helper'
+
+describe 'sample', type: :feature, js: false do
+  it 'has the page title' do
     visit '/'
     # `binding.pry` is useful for crafting the right selector
     # or checking the actual state of the page
