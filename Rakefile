@@ -3,7 +3,6 @@
 require 'rake'
 require 'fileutils'
 require 'dotenv'
-require 'rspec/core/rake_task'
 
 def run_jekyll(args = [])
   command = 'bundle exec jekyll' + ' ' + args.join(' ')
@@ -84,9 +83,12 @@ namespace :notify do
   end
 end
 
-RSpec::Core::RakeTask.new(:spec) do |t|
-  t.pattern = Dir.glob('spec/**/*_spec.rb')
-  t.rspec_opts = '--format doc'
+unless ENV['ENV'] == 'production'
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask.new(:spec) do |t|
+    t.pattern = Dir.glob('spec/**/*_spec.rb')
+    t.rspec_opts = '--format doc'
+  end
 end
 
 task :html_proofer do

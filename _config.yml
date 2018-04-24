@@ -57,6 +57,13 @@ kramdown:
 defaults:
   -
     scope:
+      path: ""
+    values:
+      components:
+        header: true
+        footer: true
+  -
+    scope:
       path: "_pages"
       type: "pages"
     values:
@@ -69,9 +76,11 @@ defaults:
       layout: "faq"
   -
     scope:
-      path: "_posts"
+      path: ""
+      type: posts
     values:
-      layout: "post"
+      layout: post
+      image: none
 
 collections:
   pages:
