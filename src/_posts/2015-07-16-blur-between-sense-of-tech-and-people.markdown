@@ -68,12 +68,12 @@ wouldn't have allowed what I've experienced from happening to them? Were lower
 quality images (like in the range of two mega pixels) used? Did the tests include
 personal content or were they purely stock level imagery?
 
-{% img "{{ 'obama-wtf.gif' | image_path }}" width:"auto" height:"auto" alt:"Obama's questioning this as well."%}
+{% asset "{{ 'obama-wtf.gif' }}" width="auto" height="auto" alt="Obama's questioning this as well."%}
 
 ## Higher Quality === Better Matching?
 For those curious, here's the details on one of the pictures from that collection:
 
-{% img "{{ 'snapshot249.png' | image_path }}" width:"auto" height:"auto" alt:"Details on image with matching issues." %}
+{% asset "{{ 'snapshot249.png' }}" width="auto" height="auto" alt="Details on image with matching issues." %}
 
 All of the shots were taken on a [Nexus 4][10] using the front-facing camera.
 The phone is still in my possession after these few years. Tech pundits are

@@ -1,6 +1,6 @@
 <section class="section__region">
   {% if include.project.image %}
-    {% img "{{ include.project.image | image_path }}" class:"w-80 center" width:"100%" height:"auto" %}
+    {% asset "{{ include.project.image }}" class="w-80 center" width="100%" height="auto" %}
   {% endif %}
   <h2 class="f2 lh-title tracked-tight">
     <a href="{{ include.project.url }}" target="_blank">

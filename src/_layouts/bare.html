@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
@@ -12,6 +10,6 @@
       {{ content }}
     </main>
     {% unless page.components.footer == false %}{% include footer.html %}{% endunless %}
-    {% js page async:true defer:true %}
+    {% asset page.js async=true defer=true %}
   </body>
 </html>

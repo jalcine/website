@@ -1,9 +1,9 @@
 <header role="document" class="bg-near-black near-white w-100 ph1 pv4 cb cf bw3 b--black-50 bb">
-  <h2 class="fontFamily__special tracked-tight lh-solid f1 ma1 tc pa1">
-    <img src="{{ 'brand/self.jpeg' | asset_path }}" class="v-mid br-100 bg-black-80 b--black-80 ba h3">
+  <h1 class="fontFamily__special tracked-tight lh-title f1 ma1 pa1">
+    {% asset brand/self.jpeg class='v-mid br-100 bg-black-80 b--black-80 ba h3 mb3 ma1-ns' alt='{{ site.name }}' width=auto height=auto %}
     {{ site.name }}
-  </h2>
-  <nav class="tc cf cb center">
+  </h1>
+  <nav class="cf cb">
     {% for link in site.data.links.navigation %}
       <a class="{{ link.classes }} db dib-l fl fn-l link mh0 pa1 pa3-l mv1 dim mh1-l w-third w-auto-l"
          href="{{ link.link }}" title="{{ link.title }}">
@@ -11,5 +11,6 @@
       </a>
     {% endfor %}
   </nav>
+  {% include search.html %}
 </header>
 {% include notices.html %}

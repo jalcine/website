@@ -3,6 +3,10 @@ permalink: /faq/
 redirect_from:
   - /questions/
 title: "Frequently Asked Questions"
+pagination:
+  enabled: true
+  collection: 'faq'
+  title: 'Frequently Asked Questions - Page :num of :max'
 ---
 <p class="lead measure">
   I try to keep my code <a target="_blank"
@@ -19,10 +23,10 @@ title: "Frequently Asked Questions"
 </p>
 <h3 class="f3 lh-subtitle">Questions</h3>
 <ul class="arrows">
-  {% for item in site.faq %}
+  {% for entry in paginator.posts %}
     <li>
-      <a title="{{ item.title | improve }}" href="{{ item.url }}">
-        {{ item.title | improve }}
+      <a title="{{ entry.title | improve }}" href="{{ entry.url }}">
+        {{ entry.title | improve }}
       </a>
     </li>
   {% endfor %}

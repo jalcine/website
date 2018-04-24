@@ -27,7 +27,7 @@ That can get harder to do depending on what's communicating with that
 (Arduino to laptop, Raspberry Pi to Spark, etc). Going back to the
 talk, the structure of ZOCP looks a bit like this:
 
-{% img "zocp-plumbing.png" alt:"Plumbing of ZOCP." width:"auto" height:"auto" %}
+{% asset "zocp-plumbing.png" alt="Plumbing of ZOCP." width="auto" height="auto" %}
 
 I have to admit, looking at this got me a bit confused. Sure, I understood the
 _capability_ exchange aspect of things (hey buddy, I can do "X", "Y" and "Z"!) but

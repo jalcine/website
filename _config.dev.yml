@@ -5,19 +5,30 @@ url: 'http://localhost:1993'
 incremental: true
 
 assets:
-  debug: true
-  autowrite: true
-  strict: false
-  digest: false
-  integrity: false
-  plugins:
-    compression:
-      css:
-        enabled: false
-      js:
-        enabled: false
+  compression: false
+  gzip: false
+  caching:
+    enabled: true
+  defaults:
+    js:
+      integrity: false
+      prefetch: false
+    css:
+      integrity: false
+      prefetch: false
+    img:
+      integrity: false
+      prefetch: false
 
 webmentions:
+  debug: true
   pause_lookups: true
 
 isso_host: comments.jacky.vagrant.test
+
+pagination:
+  debug: true
+
+analytics:
+  host: analytics.jacky.vagrant.test
+  site_id: 1

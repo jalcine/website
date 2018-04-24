@@ -1,9 +1,12 @@
 # vim:set fdl=1 nospell:
 # frozen_string_literal: true
 
+ruby '2.4.1'
+
 source 'https://rubygems.org'
 
 # {{{ Core Utilities
+gem 'bundler', '1.16.0'
 gem 'dotenv'
 gem 'rake'
 # }}}
@@ -13,20 +16,23 @@ group :jekyll do
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
   gem 'execjs'
-  gem 'jekyll', '3.5.2'
+  # gem 'image_optim'
+  gem 'jekyll'
   gem 'kramdown'
   gem 'mini_magick'
   gem 'rack-jekyll'
   gem 'rouge'
-  gem 'sprockets', '~> 3.7'
+  gem 'sprockets', '~> 4.0.beta'
+  gem 'uglifier'
   gem 'xmlrpc'
 end
 
 group :jekyll_plugins do
   gem 'jekyll-analytics'
-  gem 'jekyll-assets', '~> 2.4.0'
+  gem 'jekyll-assets'
   gem 'jekyll-feed'
   gem 'jekyll-gist'
+  gem 'jekyll-paginate-v2'
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
   gem 'jekyll-tagging'
@@ -36,8 +42,6 @@ group :jekyll_plugins do
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
-  gem 'jekyll-category-pages'
-  gem 'jekyll-paginate'
   gem 'jemoji'
   gem 'ruby-oembed'
 end
@@ -48,11 +52,11 @@ group :web do
   gem 'haml'
   gem 'puma'
   gem 'rack'
-  gem 'rack-livereload', require: 'rack/livereload'
+  gem 'rack-livereload', require: 'rack/livereload', group: :development
 end
 
 # Automation
-group :guard do
+group :development do
   gem 'guard'
   gem 'guard-bundler', require: false
   gem 'guard-livereload', require: false

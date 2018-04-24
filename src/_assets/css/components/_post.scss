@@ -1,12 +1,11 @@
 header[role=group].post {
-  @extend .pa1, .mw7, .center;
+  @extend .pa1, .mw7;
 
   > h1 {
     @extend .tracked-tight;
     @extend .pa1;
     @extend .fw7, .f1;
     @extend .near-black;
-    @extend .tc;
   }
 
   > h3 {
@@ -14,7 +13,6 @@ header[role=group].post {
     @extend .f3;
     @extend .fw1;
     @extend .gray;
-    @extend .tc;
   }
   
   &.masthead {
@@ -31,7 +29,7 @@ header[role=group].post {
     }
     
     > address[role=group].post {
-      @extend .center, .w-100;
+      @extend .w-100;
     }
   }
 }
@@ -52,27 +50,24 @@ main[role=group].post {
   h1, h2, h3, h4, h5, h6
   {
     @extend .w-auto, .mw7;
-    @extend .center;
     @extend .lh-copy;
-    @extend .pa2, .mh2;
+    @extend .pa3, .mh2;
   }
   
   h1, h2, h3, h4, h5, h6
   {
-    @extend .ph1, .pv2;
+    @extend .pv2;
   }
 
   blockquote
   {
     @extend .f3;
-    // @extend .tc;
     @extend .mw-none-l;
     @extend .bg-dark-gray, .white;
 
     > p
     {
       font-size: inherit;
-      @extend .center;
       @extend .pa2;
 
       &:first-child { @extend .pt0; }
@@ -89,14 +84,13 @@ main[role=group].post {
   {
     @extend .w-auto;
     @extend .f4;
-    @extend .db, .pa2;
+    @extend .db;
     text-align: justify;
     text-align-last: left;
   }
 
   p {
     @extend .w-auto;
-    @extend .mh2;
   }
 
   div.footnotes {
@@ -104,7 +98,7 @@ main[role=group].post {
   }
 
   ul {
-    @extend ul.arrows;
+    @extend .arrows;
   }
 
   ol > li {

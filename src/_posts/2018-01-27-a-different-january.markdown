@@ -16,8 +16,8 @@ read _X_ books or write _Z_ entries on this site. Granted, I didn't accomplish
 everything I set myself out to do - which is okay. The one thing I'm excited
 that I did do is was record my achievements.
 
-{% img "{{'posts/2018-jan-miles.png'|image_path}}" width:"auto" height:"auto" class:"db w-80-l center" %}
-{% img "{{'posts/2018-jan-sleep.png'|image_path}}" width:"auto" height:"auto" class:"db w-80-l center" %}
+{% asset "{{'posts/2018-jan-miles.png'|image_path}}" width="auto" height="auto" class="db w-80-l center" %}
+{% asset "{{'posts/2018-jan-sleep.png'|image_path}}" width="auto" height="auto" class="db w-80-l center" %}
 
 Despite me missing some days of sleep (I did sleep - just didn't properly
 record it), the target for about six hours of sleep. And I did a wish-washy job

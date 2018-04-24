@@ -1,0 +1,26 @@
+{
+  "name": "jacky-wtf",
+  "version": "2018.4.23",
+  "description": "jacky.wtf",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalcine/website.git"
+  },
+  "author": "Jacky Alciné <yo@jacky.wtf> (https://jacky.wtf/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jalcine/website/issues"
+  },
+  "homepage": "https://github.com/jalcine/website#readme",
+  "dependencies": {
+    "tachyons-sass": "4.7.4",
+    "webfontloader": "1.6.28",
+    "picturefill": "3.0.2"
+  },
+  "engines": {
+    "npm": "*",
+    "yarn": "*",
+    "node": "9.8.0"
+  }
+}

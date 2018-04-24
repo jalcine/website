@@ -40,7 +40,7 @@ $ docker run -p 9000:9000 minio/minio server /data
 Then visit <http://localhost:9000> in your browser to see something like the
 following:
 
-{% img "{{ 'posts/minio-browser-twchat.png' | image_path }}" width:"auto" height:"auto" %}
+{% asset "{{ 'posts/minio-browser-twchat.png' }}" width="auto" height="auto" %}
 
 ## Getting Set Up
 

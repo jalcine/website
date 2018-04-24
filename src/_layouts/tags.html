@@ -10,5 +10,5 @@ ext: html
     these posts by visiting <a href="/{{ rss_feed }}">this RSS/ATOM feed</a>.
   </p>
   {{ tag_posts }}
-  {% include post_listing.html posts=page.posts %}
+  {% include post_listing.html posts=paginator.posts %}
 </section>

@@ -2,16 +2,15 @@
 layout: post
 title: Introducing Dokku Application Manifest
 date: 2017-05-15 11:27:31 PDT
-category: project
+category: projects
 tags:
   - dokku
   - docker
-  - dokku application manifest
   - side project
   - announcement
 excerpt: |
   Dokku is excellent for side projects or client work alike. If
-  you're the kind of person who finds themself constantly re-installing
+  you're the kind of person who finds themselves constantly re-installing
   and building the same system or want a more deterministic approach to
   building your Dokku systems, look no further.
 ---

@@ -5,8 +5,11 @@ description: |
   I work on an assortment of projects. Here, I outline what they are.
 masthead:
   image: pages/work-portfolio.jpeg
+pagination:
+  enabled: true
+  collection: 'portfolio'
+  title: 'Portfolio - Page :num of :max'
 ---
-<h1 class="lh-title f-headline-l">Portfolio</h1>
 <p class="lead lh-copy">
   As mentioned on <a href="/work/resume/">my resume</a>, I work as a
   full-stack software developer; ranging from client-side mobile applications
@@ -16,6 +19,6 @@ masthead:
   Sounds interesting? <a href="/work/freelance/">Let's get to work</a>. I'd
   love to hear what ideas you got brewing!
 </p>
-{% for product in site.portfolio %}
-  {% include listing/project.html project=product %}
+{% for entry in paginator.posts %}
+  {% include listing/project.html project=entry %}
 {% endfor %}

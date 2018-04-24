@@ -1,31 +1,34 @@
-<footer role="group" class="bg-near-white black bt bw3 b--black ph2 ph4-l pt2 pb3 pb4-l mt3-l" data-track-content>
-  <h2 class="f2 tc navy fw5 fontFamily__special">{{ site.name }}</h2>
-  <section class="cf db mw7 center color-inherit">
-    <div class="f6 w-100 w-50-l fl-l">
+<footer role="group" class="bg-near-black near-white bt bw3 b--near-black pa4" data-track-content>
+  <h1 class="f1 washed-blue fw5 ma0 pa0 fontFamily__special">{{ site.name }}</h1>
+  <section class="cf db mw7 color-inherit">
+    <div class="f6 w-50-l">
       <p>Been at this since 2010.</p>
       <p class="f6 lh-copy measure-narrow">{{ site.description | improve }}</p>
       <p><a href="/now/" target="_blank">See what I'm currently up to.</a></p>
-      <nav class="tc-s tj-ns w-100 white">
+      <nav class="w-100 white">
         {% for link in site.data.links.navigation %}
           <a class="link dib white dim fw5" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
           <span class="dib blue">{% if forloop.last != true %} &mdash; {% endif %}</span>
         {% endfor %}
       </nav>
     </div>
-    <aside class="db w-100 mt5 w-50-l fr-l mt0-l color-inherit">
+    <aside class="db w-100 mt5 w-50-l color-inherit">
       {% include newsletter_inline.html %}
     </aside>
   </section>
+  {% include search.html %}
 </footer>
 {% webmentions_js %}
 <script data-isso="//{{ site.isso_host }}/"
-        data-isso-css="true"
-        data-isso-lang="en"
-        data-isso-reply-to-self="true"
-        data-isso-require-author="true"
-        data-isso-require-email="true"
-        data-isso-max-comments-top="10"
-        data-isso-max-comments-nested="3"
-        data-isso-reveal-on-click="3"
-        data-isso-avatar="true"
-        data-isso-vote="true" src="//{{ site.isso_host }}/js/embed.min.js"></script>
+  data-isso-css="true"
+  data-isso-lang="en"
+  data-isso-reply-to-self="true"
+  data-isso-require-author="true"
+  data-isso-require-email="true"
+  data-isso-max-comments-top="10"
+  data-isso-max-comments-nested="3"
+  data-isso-reveal-on-click="3"
+  data-isso-avatar="true"
+  data-isso-vote="true" src="//{{ site.isso_host }}/js/embed.min.js"
+  async=true defer=true
+></script>

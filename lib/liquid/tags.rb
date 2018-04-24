@@ -17,7 +17,7 @@ module JackyWtf
 end
 
 # register all default OEmbed providers
-::OEmbed::Providers.register_all()
+::OEmbed::Providers.register_all
 # since register_all does not register all default providers, we need to do this here. See https://github.com/judofyr/ruby-oembed/issues/18
 ::OEmbed::Providers.register(::OEmbed::Providers::Instagram, ::OEmbed::Providers::Slideshare, ::OEmbed::Providers::Yfrog, ::OEmbed::Providers::MlgTv)
 ::OEmbed::Providers.register_fallback(::OEmbed::ProviderDiscovery, ::OEmbed::Providers::Embedly, ::OEmbed::Providers::OohEmbed)

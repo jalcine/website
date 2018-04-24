@@ -24,7 +24,7 @@ code _there_ when I can do it myself. Don't get me wrong, if it's something that
 I think that can be worth publishing out to the public then I'll do it. But
 y’all don’t need to see _all_ of my magic.
 
-{% img "{{ 'cat_scratch_snow.gif' | image_path }}" width:"auto" height:"auto" %}
+{% asset cat_scratch_snow.gif width=auto height=auto %}
 
 Before I really start, I had to understand what it was that I wanted a few
 things from the following. No reason to build shit all willy nilly.

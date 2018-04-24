@@ -172,7 +172,7 @@ let g:syntastic_java_javac_options = "-g:none -source 8 -Xmaxerrs 5 -Xmaswarns 5
 One can make the argument that I turned on a _lot_ of the checkers in Syntastic,
 potentially leading to it slowing down. To that, I'd say:
 
-{% img "bey-cant-deal.gif" alt:"Beyonce can't handle you right now." %}
+{% asset "bey-cant-deal.gif" alt="Beyonce can't handle you right now." %}
 
 **I NEEDZ THEM!** _*cough*_
 

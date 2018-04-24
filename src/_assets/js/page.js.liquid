@@ -1,0 +1,34 @@
+//= require webfontloader/webfontloader.js
+// vim: set ft=javascript.liquid :
+
+// Configure WebFontLoader.
+// TODO: Move to make all of these fonts self-hosted.
+var WebFontConfig = {
+  custom: {
+    families: [
+      'beyno'
+    ],
+    urls: ["asset_path('beyno.otf')"]
+  },
+  google: {
+    families: [
+      'Lato:400,700,italic:latin', // Default page font
+      'Titillium+Web:400,700:latin', // Default page font
+      'Inconsolata:400,700,italic:latin', // Default page font
+    ]
+  }
+};
+
+// Do some tweaks on images.
+function stretchOutImages () {
+  var images = document.querySelectorAll("p > img[x-bleed]");
+  images.forEach(function stretchImage(image) {
+    var parentElement = image.parentElement;
+    parentElement.style.maxWidth = "none";
+  });
+};
+
+(function () {
+  WebFont.load(WebFontConfig);
+  stretchOutImages();
+})(document);
