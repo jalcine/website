@@ -20,7 +20,6 @@ blurb: |
 description: |
   Jacky is a New Yorker in Oakland that continues to aim to make change in the
   world via technology and education.
-
 timezone: America/Los_Angeles
 encoding: utf-8
 incremental: true
@@ -98,6 +97,9 @@ collections:
   portfolio:
     output: true
     layout: portfolio
+  posts:
+    output: true
+    layout: post
 
 assets:
   destination: '/assets'
