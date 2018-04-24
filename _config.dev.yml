@@ -6,6 +6,8 @@ incremental: true
 
 assets:
   compression: false
+  debug: false
+  verbose: false
   gzip: false
   caching:
     enabled: true
