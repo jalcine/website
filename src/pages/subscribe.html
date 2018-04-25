@@ -21,8 +21,7 @@ masthead:
     <p class="lh-copy measure">
       My newsletter is a bimonthly curation of thoughts collected over time,
       things too short for a blog post and too useful for Twitter. I'd also
-      add a few other fun things into them. There's over 150 subscribers
-      currently following along.
+      add a few other fun things into them. <strong>Join along today</strong>.
     </p>
   </div>
   <div class="fl dib w-100 w-40-l pa1">
@@ -43,16 +42,14 @@ masthead:
       <li>
         <a href="/feeds/articles.xml">
           Articles Feed
+        </a> &mdash;
+        <a href="/feeds/recent.xml">
+          Most Recent (Shorter) Articles Feed
         </a>
       </li>
       <li>
         <a href="https://www.reading.am/jackyalcine/list.rss">
           Web Reading List (external)
-        </a>
-      </li>
-      <li>
-        <a href="https://www.gpodder.net/user/jalcine/subscriptions/rss/">
-          Podcasts (external)
         </a>
       </li>
     </ul>
@@ -73,7 +70,7 @@ masthead:
     <ul>
       {% for link in site.data.links.social %}
       <li>
-        <a href="{{ link.link}}" target="_blank">
+        <a href="{{ link.link }}" target="_blank">
           {{ link.title }}
         </a>
       </li>

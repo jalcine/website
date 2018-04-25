@@ -77,6 +77,13 @@ defaults:
     values:
       layout: post
       image: none
+  -
+    scope:
+      path: "_drafts"
+      type: "drafts"
+    values:
+      layout: post
+      image: none
 
 collections:
   events:
@@ -92,6 +99,9 @@ collections:
     output: true
     layout: portfolio
   posts:
+    output: true
+    layout: post
+  drafts:
     output: true
     layout: post
   projects:

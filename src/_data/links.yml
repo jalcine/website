@@ -22,6 +22,9 @@ navigation:
 
 social:
   -
+    title: "Mastodon (Preferred)"
+    link: "https://mastodon.xyz/@jackyalcine"
+  -
     title: "Twitter"
     link: "https://twitter.com/jackyalcine"
   -
@@ -57,36 +60,3 @@ social:
   -
     title: "Vim.org"
     link: "http://www.vim.org/account/profile.php?user_id=62285"
-
-landing:
-  -
-    title: Work with You? Sure!
-    color: blue
-    description: |
-      Have a Web application that you've been meaning to hash out? Need to do
-      some performance tweaks to your blog? Feel like your SEO game isn't up to
-      par because of your site's code? I got you.
-    link:
-      text: Let's Work Together
-      uri: /work/freelance/
-  -
-    title: Keep Up to Date
-    color: yellow
-    description: |
-      I keep myself busy - idle mind, as the saying goes. Find out more about
-      my moves and how they relate to you and your endeavors by subscribing.
-
-      It's also an *excellent* way to get perks on projects, events and other
-      things colleagues and I are working on.
-    link:
-      text: Stay In Sync
-      uri: /subscribe/
-  -
-    title: Peep My Progress
-    color: black
-    description: |
-      As well in my subscriptions, I work on side projects to help keep my eyes
-      peeled on different aspects of the industry.
-    link:
-      text: See Current Activity
-      uri: /projects/
