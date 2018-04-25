@@ -29,6 +29,7 @@ webmentions:
 isso_host: comments.jacky.vagrant.test
 
 pagination:
+  enabled: true
   debug: true
 
 analytics:
