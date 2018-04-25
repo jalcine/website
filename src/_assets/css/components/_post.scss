@@ -14,7 +14,7 @@ header[role=group].post {
     @extend .fw1;
     @extend .gray;
   }
-  
+
   &.masthead {
     @extend .w-100, .mw-none;
     @extend .ma0, .pa0;
@@ -27,7 +27,7 @@ header[role=group].post {
       @extend .mh4;
       @extend .f2;
     }
-    
+
     > address[role=group].post {
       @extend .w-100;
     }
@@ -54,7 +54,7 @@ main[role=group].post {
     @extend .lh-copy;
     @extend .ph4, .pv3, .mh2;
   }
-  
+
   h1, h2, h3, h4, h5, h6
   {
     @extend .ph4, .pv3;
@@ -78,7 +78,7 @@ main[role=group].post {
       @extend .light-blue;
     }
   }
-  
+
   > p,
   > ol > li,
   > ul > li
@@ -112,4 +112,8 @@ main[role=group].post {
   hr {
     @extend .mw7;
   }
+}
+
+footer[role=group].post {
+  @extend .mt1, .cb, .cf;
 }
