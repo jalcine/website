@@ -60,6 +60,7 @@ defaults:
     scope:
       path: ""
     values:
+      layout: page
       components:
         header: true
         footer: true
@@ -69,12 +70,6 @@ defaults:
       type: "faq"
     values:
       layout: "faq"
-  -
-    scope:
-      path: "_pages"
-      type: "pages"
-    values:
-      layout: "page"
   -
     scope:
       path: "_posts"
