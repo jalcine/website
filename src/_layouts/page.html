@@ -3,13 +3,13 @@ layout: bare
 ---
 <div class="bg-near-black washed-yellow w-100">
   {% if page.masthead and page.masthead.image %}
-    {% asset "{{ page.masthead.image }}" class="w-100 center db" width="100%" height="auto" title="{{ masthead.title }}" %}
+    {% asset "{{ page.masthead.image }}" class="w-100 center db" width="auto" height="auto" title="{{ masthead.title }}" %}
   {% endif %}
-  <h1 class="mw7 f2 f1-l lh-title ttu ma0 pa2 ph4-ns">
+  <h1 class="mw7 f2 f1-l lh-title ttu ma0 pa3 ph4-ns">
     {{ page.title }}
   </h1>
 </div>
-<section role="document" class="mw8" data-track-content
+<section role="document" class="mw8 pv4 pv2" data-track-content
   data-content-name="page"
   data-content-piece="{{ page.title }}">
   {{ content }}

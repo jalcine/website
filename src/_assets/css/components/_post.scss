@@ -1,5 +1,5 @@
 header[role=group].post {
-  @extend .pa1, .mw7;
+  @extend .ph4, .pv2, .mw7;
 
   > h1 {
     @extend .tracked-tight;
@@ -36,6 +36,7 @@ header[role=group].post {
 
 address[role=group].post {
   @extend .f6, .w-80, .db;
+  @extend .ml4;
 
   > span {
     @extend .db;
@@ -51,12 +52,12 @@ main[role=group].post {
   {
     @extend .w-auto, .mw7;
     @extend .lh-copy;
-    @extend .pa3, .mh2;
+    @extend .ph4, .pv3, .mh2;
   }
   
   h1, h2, h3, h4, h5, h6
   {
-    @extend .pv2;
+    @extend .ph4, .pv3;
   }
 
   blockquote
