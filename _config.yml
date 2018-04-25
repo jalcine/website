@@ -181,15 +181,15 @@ autolink_email:
   skip_tags: ["pre", "code"]    # tags to skip
   escape: true
 
-jekyll-archives:
+archives:
   enabled: all
   layout: archive
   permalinks:
-    year: /:year/
-    month: /:year/:month/
-    day: /:year/:month/:day/
-    tag: /tag/:name/
-    category: /category/:name/
+    year: /weblog/archives/:year/
+    month: /weblog/archives/:year/:month/
+    day: /weblog/archvies/:year/:month/:day/
+    tag: /weblog/archives/tag/:name/
+    category: /weblog/archives/category/:name/
 
 liquid:
   error_mode: strict
