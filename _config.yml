@@ -36,7 +36,7 @@ pagination:
   enabled: true
   debug: false
   collection: posts
-  per_page: 10
+  per_page: 12
   permalink: '/page/:num/'
   limit: 5
   sort_reverse: true
