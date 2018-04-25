@@ -1,4 +1,5 @@
 ---
+layout: post
 title: The Blur Between The Sense of Technology and People
 byline: My response to the Google Photos incident and then some.
 excerpt: |
@@ -12,8 +13,6 @@ tags:
   - ai
   - bias
 ---
-{:toc}
-
 Some of us out there, myself included, believe that one day, we'll live in a
 world where computers will have a hand in every aspect of life; from driving to
 creating food and probably making our beds for us. But for now, we'll have to deal
