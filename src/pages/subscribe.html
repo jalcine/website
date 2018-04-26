@@ -11,70 +11,74 @@ masthead:
 ---
 <p class="lead measure">
   I keep a few ways for those interested in my updates to stay in tune with
-  my activities. My <a href="#newsletter">newsletter</a> is the best way, as
-  it also gives you a direct line of communication with me.
+  my activities. My <a href="#newsletter">newsletter</a> is currently the best 
+  way, as it also gives you a direct line of communication with me with context
+  to my latest adventures.
 </p>
 
-<div class="mv4 cb cf">
-  <div class="fl dib w-100 w-40-l pa1-l">
-    <h2 class="f2 lh-title"><a name="newsletter">Newsletter</a></h2>
-    <p class="lh-copy measure">
-      My newsletter is a bimonthly curation of thoughts collected over time,
-      things too short for a blog post and too useful for Twitter. I'd also
-      add a few other fun things into them. <strong>Join along today</strong>.
-    </p>
-  </div>
-  <div class="fl dib w-100 w-40-l pa1">
-    {% include newsletter.html %}
-  </div>
+<h2 class="f2 cb cf lh-title"><a name="newsletter">Newsletter</a></h2>
+<div class="fl dib cf w-100 w-60-l pa1-l">
+  <p class="lh-copy measure">
+    My newsletter is a <strike>bimonthly</strike> now weekly curation of
+    thoughts collected over time, things too short for a blog post and 
+    too useful for Twitter. I'd also add a few other fun things into 
+    them. <strong>Join along today</strong>.
+  </p>
+</div>
+<div class="fl dib cf w-100 w-40-l pa1">
+  {% include newsletter.html %}
 </div>
 
-<div class="mv4 cb cf">
-  <div class="fl dib w-100 w-40-l pa1-l">
-    <h2 class="f2 lh-title"><a name="feeds">Feeds</a></h2>
-    <p class="measure lh-copy">
-      I keep RSS feeds of things I write on my <a href="/weblog/">weblog</a> so
-      you don't have to keep coming here to check it out. I also keep a list of
-      the podcasts I've recently listened to as well as links I've noted across
-      the Web.
-    </p>
-    <ul>
-      <li>
-        <a href="/feeds/articles.xml">
-          Articles Feed
-        </a> &mdash;
-        <a href="/feeds/recent.xml">
-          Most Recent (Shorter) Articles Feed
-        </a>
-      </li>
-      <li>
-        <a href="https://www.reading.am/jackyalcine/list.rss">
-          Web Reading List (external)
-        </a>
-      </li>
-    </ul>
-  </div>  
+<h2 class="f2 cb cf lh-title"><a name="feeds">Feeds</a></h2>
+<div class="fl dib cf w-100 w-60-l pa1-l">
+  <p class="measure lh-copy">
+    I keep RSS feeds of things I write on my <a href="/weblog/">weblog</a> so
+    you don't have to keep coming here to check it out. I also keep a list of
+    the podcasts I've recently listened to as well as links I've noted across
+    the Web.
+  </p>
 </div>
+<div class="fl dib cf w-100 w-40-l pa1 tl">
+  <ul class="arrows">
+    <li>
+      <a href="/feeds/articles.xml">
+        Articles Feed
+      </a>
+    </li>
+    <li>
+      <a href="/feeds/recent.xml">
+        Most Recent (Shorter) Articles Feed
+      </a>
+    </li>
+    <li>
+      <a href="https://www.reading.am/jackyalcine/list.rss">
+        Web Reading List (external)
+      </a>
+    </li>
+  </ul>
+</div>  
 
-<div class="mv4 cb cf">
-  <div class="fl dib w-100 w-40-l pa1-l">
-    <h2 class="f2 lh-title"><a name="social-media">Social Media</a></h2>
-    <p class="measure lh-copy">
-      There's also these services that people use to keep in touch and stay
-      "tuned in". I'm on there (a bit too much, to be frank). If you end up
-      following me on Twitter, I <em>strongly recommend</em> turning off my
-      retweets. I don't have a quarter million tweets for nothing.
-    </p>
-  </div>
-  <div class="fl dib w-100 w-40-l pa1">
-    <ul>
-      {% for link in site.data.links.social %}
-      <li>
-        <a href="{{ link.link }}" target="_blank">
-          {{ link.title }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+<h2 class="f2 cb cf lh-title"><a name="social-media">Social Media</a></h2>
+<div class="fl dib cf w-100 w-60-l pa1-l">
+  <p class="measure lh-copy">
+    There's also these services that people use to keep in touch and stay
+    "tuned in". I'm on there (a bit too much, to be frank). If you end up
+    following me on Twitter, I <em>strongly recommend</em> turning off my
+    retweets. I don't have a quarter million tweets for nothing.
+  </p>
+  <p class="measure lh-copy">
+    I'm making more moves into the <a href="/faq/indieweb">IndieWeb</a> so
+    despite having high amounts of content on <a href="/">
+  </p>
+</div>
+<div class="fl dib cf w-100 w-40-l pa1 tl">
+  <ul>
+    {% for link in site.data.links.social %}
+    <li>
+      <a href="{{ link.link }}" target="_blank">
+        {{ link.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
