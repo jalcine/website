@@ -15,7 +15,9 @@ roles:
     time:
       start: December 2017
     blurb: |
-      I am here.
+      I work on the **Platform** team that aims to maintain nothing but an
+      excellent user experience for our self-serving customers as well as
+      keeping our API performance to the highest of standards in the industry.
   -
     anchor: lyft
     name: Lyft

@@ -1,9 +1,9 @@
 header[role=group].post {
-  @extend .pa1, .mw7;
+  @extend .ph4, .pv2, .mw7;
 
   > h1 {
     @extend .tracked-tight;
-    @extend .pa1;
+    @extend .pa1, .ph4;
     @extend .fw7, .f1;
     @extend .near-black;
   }
@@ -14,10 +14,14 @@ header[role=group].post {
     @extend .fw1;
     @extend .gray;
   }
-  
+
   &.masthead {
     @extend .w-100, .mw-none;
     @extend .ma0, .pa0;
+
+    > img {
+      @extend .w-100, .db;
+    }
 
     > h1 {
       @extend .f-headline-l;
@@ -27,15 +31,16 @@ header[role=group].post {
       @extend .mh4;
       @extend .f2;
     }
-    
+
     > address[role=group].post {
-      @extend .w-100;
+      @extend .w-100, .mw7-ns;
     }
   }
 }
 
 address[role=group].post {
   @extend .f6, .w-80, .db;
+  @extend .ml4;
 
   > span {
     @extend .db;
@@ -51,12 +56,12 @@ main[role=group].post {
   {
     @extend .w-auto, .mw7;
     @extend .lh-copy;
-    @extend .pa3, .mh2;
+    @extend .ph4, .pv3, .mh2;
   }
-  
+
   h1, h2, h3, h4, h5, h6
   {
-    @extend .pv2;
+    @extend .ph4, .pv3;
   }
 
   blockquote
@@ -77,7 +82,7 @@ main[role=group].post {
       @extend .light-blue;
     }
   }
-  
+
   > p,
   > ol > li,
   > ul > li
@@ -105,10 +110,16 @@ main[role=group].post {
     > p {
       @extend .ma0;
       @extend .di;
+      @extend .pa0;
     }
   }
 
   hr {
     @extend .mw7;
+    @extend .mh0;
   }
+}
+
+footer[role=group].post {
+  @extend .mt1, .cb, .cf;
 }

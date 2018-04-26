@@ -1,4 +1,4 @@
-<form class="db w-100 mw7 center pa1" action="https://buttondown.email/api/emails/embed-subscribe/jackyalcine"
+<form class="db w-100 mw7 center" action="https://buttondown.email/api/emails/embed-subscribe/jackyalcine"
   method="post"
   target="popupwindow"
   data-track-content
@@ -7,13 +7,18 @@
   <fieldset class="cf bn ma0 pa0">
     <legend class="center pa0 f6 f5-ns tc mb3">
       <span class="ttu">Subscribe today!</span>
+      <small class="fr pv2">
+        Powered by <a href="https://buttondown.email">Buttondown</a>.
+        <a href="{% post_url 2018-01-06-moving-to-buttondown %}">Why This?</a>
+      </small>
     </legend>
     <input type="hidden" value="1" name="embed" />
     <div class="cf">
       <label class="clip" for="tlemail">Email Address</label>
-      <input data-track-content class="f6 w-80 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid"
+      <input data-track-content class="f6 w-75 f5-l input-reset bn fl black-80 bg-white pa3 lh-solid"
              placeholder="Your Email Address" type="text" name="email">
-      <input data-track-content data-content-piece="newsletter-subscribe-button" class="f6 w-20 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer" type="submit" value="Join">
+      <input data-track-content data-content-piece="newsletter-subscribe-button"
+      class="f6 w-25 f5-l button-reset fl pv3 tc bn bg-animate bg-black-70 hover-bg-black white pointer" type="submit" value="Join">
     </div>
   </fieldset>
 </form>

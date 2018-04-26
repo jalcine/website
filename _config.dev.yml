@@ -6,6 +6,8 @@ incremental: true
 
 assets:
   compression: false
+  debug: false
+  verbose: false
   gzip: false
   caching:
     enabled: true
@@ -27,6 +29,7 @@ webmentions:
 isso_host: comments.jacky.vagrant.test
 
 pagination:
+  enabled: true
   debug: true
 
 analytics:

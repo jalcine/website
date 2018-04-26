@@ -3,11 +3,11 @@ destination: _site/
 source: src/
 layouts_dir: src/_layouts/
 plugins_dir: plugins/
-strict_front_matter: true
+strict_front_matter: false
 
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
-name: jackyalcine
+name: jackyalciné
 author: Jacky Alciné
 url: https://jacky.wtf
 byline: Jacky Alciné is a developer and educator.
@@ -20,7 +20,6 @@ blurb: |
 description: |
   Jacky is a New Yorker in Oakland that continues to aim to make change in the
   world via technology and education.
-
 timezone: America/Los_Angeles
 encoding: utf-8
 incremental: true
@@ -32,19 +31,21 @@ lsi: true
 future: false
 relative_permalinks: false
 markdown: kramdown
+
 pagination:
   enabled: true
   debug: false
-  per_page: 5
+  collection: posts
+  per_page: 12
   permalink: '/page/:num/'
   limit: 5
   sort_reverse: true
   sort_field: 'date'
 
-tag_page_layout: tags
+tag_feed_dir: feeds/tags/
 tag_feed_layout: tag_feed
 tag_page_dir: weblog/tag/
-tag_feed_dir: feeds/tags/
+tag_page_layout: tags
 
 exclude:
   - _assets
@@ -57,33 +58,55 @@ kramdown:
 defaults:
   -
     scope:
-      path: "_pages"
-      type: "pages"
+      path: ""
     values:
-      layout: "page"
+      layout: page
+      components:
+        header: true
+        footer: true
   -
     scope:
       path: "_faq"
       type: "faq"
     values:
       layout: "faq"
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      image: none
+  -
+    scope:
+      path: "_drafts"
+      type: "posts"
+    values:
+      layout: post
+      image: none
 
 collections:
-  pages:
-    output: true
-    layout: page
-  faq:
-    output: true
-    layout: faq
   events:
     output: true
     layout: event
-  projects:
+  faq:
     output: true
-    layout: project
+    layout: faq
+  pages:
+    output: true
+    layout: page
   portfolio:
     output: true
     layout: portfolio
+  posts:
+    output: true
+    layout: post
+  drafts:
+    output: true
+    layout: post
+  projects:
+    output: true
+    layout: project
 
 assets:
   destination: '/assets'
@@ -158,15 +181,15 @@ autolink_email:
   skip_tags: ["pre", "code"]    # tags to skip
   escape: true
 
-jekyll-archives:
+archives:
   enabled: all
   layout: archive
   permalinks:
-    year: /:year/
-    month: /:year/:month/
-    day: /:year/:month/:day/
-    tag: /tag/:name/
-    category: /category/:name/
+    year: /weblog/archives/:year/
+    month: /weblog/archives/:year/:month/
+    day: /weblog/archvies/:year/:month/:day/
+    tag: /weblog/archives/tag/:name/
+    category: /weblog/archives/category/:name/
 
 liquid:
   error_mode: strict

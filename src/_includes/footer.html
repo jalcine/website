@@ -12,11 +12,13 @@
         {% endfor %}
       </nav>
     </div>
-    <aside class="db w-100 mt5 w-50-l color-inherit">
+    <aside class="db w-100 mt3 w-50-l color-inherit">
       {% include newsletter_inline.html %}
     </aside>
+    <div class="db w-100 mt2 w-50-l color-inherit">
+      {% include search.html %}
+    </div>
   </section>
-  {% include search.html %}
 </footer>
 {% webmentions_js %}
 <script data-isso="//{{ site.isso_host }}/"

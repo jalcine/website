@@ -29,7 +29,7 @@ meeting in person.
 
 # Hiking with New Friends
 
-{% asset "{{ 'posts/2017-pam-hike.jpeg' }}" width="100%" height="100%" x-bleed %}
+{% asset "{{ 'posts/2017-pam-hike.jpeg' }}" width="100%" height="100%" class="x-bleed" %}
 <small class="dark-gray tc mw6 db center">
   [Pamela][] marvelling at seeing the sunrise over the East Bay.
 </small>
@@ -40,7 +40,7 @@ online and then again in the real world. I forgot why she was in town - I think
 it was in relation to a conference. Granted, I couldn't let Pamela marvel in
 this by herself:
 
-{% asset "{{ 'posts/2017-pam-hike-self.jpeg' }}" width="100%" height="100%" x-bleed %}
+{% asset "{{ 'posts/2017-pam-hike-self.jpeg' }}" width="100%" height="100%" class="x-bleed" %}
 <small class="dark-gray tc mw6 db center">
   When the camera man turns the lens to himself.
 </small>
@@ -54,7 +54,7 @@ products like [ResumeLife][] among others.
 > Let me know if you [wanna cook up something nice][2]. My calendar's closing
 > up.
 
-{% asset "{{ 'posts/2017-office.jpeg' }}" width="100%" height="100%" x-bleed %}
+{% asset "{{ 'posts/2017-office.jpeg' }}" width="100%" height="100%" class="x-bleed" %}
 
 My want to experiment more with freelancing is to increase my footing in my
 portfolio's breadth. I don't keep a "portfolio" in the classical sense since

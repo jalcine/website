@@ -6,14 +6,13 @@ excerpt: |
   After the incident, I had some words to share.
 date: 2015-07-16 21:12:16 EDT
 revised: 2015-07-18 22:54:20 EDT
-category: response
+category: thoughts
 image: none
 tags:
-  - google
+  - response
   - ai
-  - twitter
+  - bias
 ---
-
 Some of us out there, myself included, believe that one day, we'll live in a
 world where computers will have a hand in every aspect of life; from driving to
 creating food and probably making our beds for us. But for now, we'll have to deal

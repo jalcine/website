@@ -3,7 +3,6 @@
 require 'rake'
 require 'fileutils'
 require 'dotenv'
-require 'rspec/core/rake_task'
 
 def run_jekyll(args = [])
   command = 'bundle exec jekyll' + ' ' + args.join(' ')
@@ -84,21 +83,25 @@ namespace :notify do
   end
 end
 
-RSpec::Core::RakeTask.new(:spec) do |t|
-  t.pattern = Dir.glob('spec/**/*_spec.rb')
-  t.rspec_opts = '--format doc'
-end
-
-task :html_proofer do
+if ENV['ENV'] == 'test'
+  require 'rspec/core/rake_task'
   require 'html-proofer'
-  HTMLProofer.check_directory('./_site',
-    parallel: {
-      in_processes: 4
-    },
-    cache: {
-      timeframe: '30d'
-    }
-  ).run
+
+  RSpec::Core::RakeTask.new(:spec) do |t|
+    t.pattern = Dir.glob('spec/**/*_spec.rb')
+    t.rspec_opts = '--format doc'
+  end
+
+  task :html_proofer do
+    HTMLProofer.check_directory('./_site',
+      parallel: {
+        in_processes: 4
+      },
+      cache: {
+        timeframe: '30d'
+      }
+    ).run
+  end
 end
 
 task default: %w[spec build:deploy notify]
