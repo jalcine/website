@@ -104,4 +104,4 @@ if ENV['ENV'] == 'test'
   end
 end
 
-task default: %w[spec build:deploy notify]
+task default: %w[spec build:watch]
