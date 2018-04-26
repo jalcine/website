@@ -17,7 +17,7 @@ group :jekyll do
   gem 'classifier-reborn'
   gem 'execjs'
   gem 'image_optim'
-  gem 'jekyll', '~> 3.5.0'
+  gem 'jekyll'
   gem 'kramdown'
   gem 'mini_magick'
   gem 'parallel'
