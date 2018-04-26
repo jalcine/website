@@ -3,7 +3,7 @@ header[role=group].post {
 
   > h1 {
     @extend .tracked-tight;
-    @extend .pa1;
+    @extend .pa1, .ph4;
     @extend .fw7, .f1;
     @extend .near-black;
   }
@@ -19,6 +19,10 @@ header[role=group].post {
     @extend .w-100, .mw-none;
     @extend .ma0, .pa0;
 
+    > img {
+      @extend .w-100, .db;
+    }
+
     > h1 {
       @extend .f-headline-l;
     }
@@ -29,7 +33,7 @@ header[role=group].post {
     }
 
     > address[role=group].post {
-      @extend .w-100;
+      @extend .w-100, .mw7-ns;
     }
   }
 }
@@ -106,11 +110,13 @@ main[role=group].post {
     > p {
       @extend .ma0;
       @extend .di;
+      @extend .pa0;
     }
   }
 
   hr {
     @extend .mw7;
+    @extend .mh0;
   }
 }
 

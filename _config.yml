@@ -80,7 +80,7 @@ defaults:
   -
     scope:
       path: "_drafts"
-      type: "drafts"
+      type: "posts"
     values:
       layout: post
       image: none

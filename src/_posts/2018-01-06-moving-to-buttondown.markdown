@@ -1,4 +1,5 @@
 ---
+layout: post
 category: update
 title: I've Moved My Newsletter to Buttondown from TinyLetter. Here's Why.
 excerpt: | 

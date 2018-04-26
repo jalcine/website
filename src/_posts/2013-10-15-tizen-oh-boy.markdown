@@ -3,14 +3,12 @@ layout: post
 title: Tizen, Oh Boy
 date: 2013-10-13 16:25:25 EDT
 revised: 2017-10-08 15:36:32 PDT
-category: tech
-tags:
-  - tizen
-  - reviews
-  - operating systems
-  - samsung
+category: reviews
 excerpt: |
   Son. Tizen. Samsung, what did you do?
+tags:
+  - software
+  - phone
 ---
 
 [Tizen][]. It's an operating system currently targeting the mobile landscape
@@ -30,12 +28,12 @@ dedicated to building applications for the Tizen operating system. The issues
 and problems my team and I ran into were insane. I, for one, was the only pure
 Linux developer there that I could find. Others were running in a virtual
 machine but none really had the issue (that I was aware) that I had. Off the
-back, the ["Tizen IDE"][tizen_ide] was a prepackaged solution of Eclipse[^1].
+back, the ["Tizen IDE"][tizen_ide] was a prepackaged solution of [Eclipse][^1].
 I wanted to so badly run out of the place yelling "The British are Coming!"
 but my team was too cool for me to leave.
 
 I broke in and started playing with the SDK after a few failed attempts to
-manually install plug ins into a local installation of Eclipse[^2]. Writing
+manually install plug ins into a local installation of [Eclipse][^2]. Writing
 the application was *quite* straightforward; we used the jQuery mobile boilerplate
 that they provided. Then we wanted to use our own JavaScript files hosted
 remotely from a CDN. Just getting the device on line was a struggle that
@@ -52,7 +50,7 @@ looking presently by the time the sixth team went up. Tizen core developers,
 make life easier!
 
 ## About the SDK
-So the [Tizen SDK][] is **not** as open[^3] as the [Android SDK][], but it
+So the [Tizen SDK][] is **not** as [open][^3] as the [Android SDK][], but it
 comes with a few binaries that you need to use to play with Tizen. `sdb` is
 definitely the equivalent of Android's `adb`; it even has TCP debugging (less
 cables!) but it's a bit of black magic to set up. When it comes to things like
@@ -62,7 +60,7 @@ intended with it. Nonetheless, it's nice to see how it works with NFC when I
 share files and what not over the logging output.
 
 I'm personally going out of my way to *not* use Eclipse as my IDE and instead
-attempt to use other solutions like perhaps Qt for Tizen[^4] or just building
+attempt to use other solutions like perhaps Qt for [Tizen][^4] or just building
 and installing from the command line. I'm too used to using Vim for web
 application (READ: not web design) development so this would (hopefully) be
 received openly.
@@ -82,10 +80,6 @@ designers and developers would be more than encouraged to develop web
 applications "mobile first" so that the application works as necessary across
 the view ports it happens to appear on.
 
----
-
-Food for thought. Thoughts? Leave it on Twitter. Ciao.
-
 [tizen]: http://tizen.org
 [ubuntu]: http://ubuntu.com
 [kde]: http://kde.org
@@ -96,11 +90,6 @@ Food for thought. Thoughts? Leave it on Twitter. Ciao.
 [Tizen SDK]: https://developer.tizen.org/downloads/tizen-sdk
 [Android SDK]: https://developer.android.com/sdk/
 [^1]: [I reacted as any sane person would](http://nooooooooooooooo.com/).
-[^2]: Seriously, though. If you guys are using Eclipse, why not just provide a
-update site that I can just drop in? I'd love to know what was so impossible
-about doing that. I'll be looking into this.
-[^3]: Like Android's SDK is released under the OSI-approved Apache 2 license
-whereas (I think) the Tizen SDK is opened under the [Flora license](floralicense.org/license).
-It's a new one to me too.
-[^4]: I'm way more familiar to C++ than to what black magic Tizen's SDK works
-with (haven't checked it yet).
+[^2]: Seriously, though. If you guys are using Eclipse, why not just provide a update site that I can just drop in? I'd love to know what was so impossible about doing that. I'll be looking into this.
+[^3]: Like Android's SDK is released under the OSI-approved Apache 2 license whereas (I think) the Tizen SDK is opened under the [Flora license](floralicense.org/license). It's a new one to me too.
+[^4]: I'm way more familiar to C++ than to what black magic Tizen's SDK works with (haven't checked it yet).

@@ -3,6 +3,8 @@ layout: post
 title: Introducing CMake for Vim
 date: 2013-09-26 15:39:35 EDT
 category: projects
+tags:
+ - vim
 ---
 
 Earlier today, I patched up the code base for [`cmake.vim`][cmake.vim] and
