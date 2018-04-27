@@ -1,19 +1,5 @@
 //= require webfontloader/webfontloader.js
-// vim: set ft=javascript.liquid :
-
-// Configure WebFontLoader.
-// TODO: Move to make all of these fonts self-hosted.
-var WebFontConfig = {
-  custom: {
-    families: [
-      'beyno',
-      'Open Sans',
-      'Arvo',
-      'Inconsolata'
-    ],
-    urls: ["{% asset fonts.css @path %}"]
-  }
-};
+//= require _fonts.js
 
 // Do some tweaks on images.
 function stretchOutImages () {
@@ -29,3 +15,5 @@ function stretchOutImages () {
   WebFont.load(WebFontConfig);
   stretchOutImages();
 })(document);
+
+// vim: set ft=javascript.liquid :

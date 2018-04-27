@@ -128,9 +128,6 @@ assets:
     path: '.cache/assets'
     type: file
     enabled: true
-  raw_precompile:
-    - page.js
-    - page.css
   sources:
     - ../node_modules
     - _assets/files
