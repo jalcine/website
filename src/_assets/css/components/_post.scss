@@ -69,6 +69,7 @@ main[role=group].post {
     @extend .f3;
     @extend .mw-none-l;
     @extend .bg-dark-gray, .white;
+    @extend .mh0;
 
     > p
     {

@@ -1,7 +1,4 @@
-// TODO: Move all fonts to be in here.
-@font-face {
-  font-family: "beyno";
-  font-style: normal;
-  font-weight: normal;
-  src: asset_url('beyno.otf') format('otf');
-}
+@import "fonts/_beyno";
+@import "fonts/_open-sans";
+@import "fonts/_oxygen";
+@import "fonts/_inconsolata";
