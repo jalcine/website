@@ -58,7 +58,7 @@ kramdown:
 defaults:
   -
     scope:
-      path: ""
+      path: "pages"
     values:
       layout: page
       components:

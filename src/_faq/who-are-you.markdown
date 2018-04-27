@@ -11,7 +11,8 @@ a few different answers here.
 I'm a [software engineer][2] by trade. It's a [hobby-turned-skill][1] of mine
 and it's something I'm extremely passionate about.
 
-## On A Metaphysical Note
+## Broadly
+
 I wrote (scruffily) about how I got into [programming][1]. Granted, that's not
 _who_ I am. That tells you about _one_ of the things I do. I don't know that for
 certain just yet, but I am aware of things I am good at that seems to align to

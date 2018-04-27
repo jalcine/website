@@ -11,12 +11,6 @@ var WebFontConfig = {
       'Arvo',
       'Inconsolata'
     ],
-    testStrings: {
-      'beyno': 'jackyalcine',
-      'Open Sans': 'jackyalcineè',
-      'Arvo': 'jackyalcineè',
-      'Inconsolata': 'opensource'
-    },
     urls: ["{% asset fonts.css @path %}"]
   }
 };
