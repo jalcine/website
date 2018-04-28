@@ -27,6 +27,7 @@ incremental: true
 source: ./src/
 
 permalink: /weblog/:title/
+build_drafts: false
 show_drafts: false
 lsi: true
 future: false
