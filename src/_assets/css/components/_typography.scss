@@ -2,7 +2,7 @@
   @extend .sans-serif;
   
   @at-root {
-    html.wf-active & {
+    html.wf-sourcesanspro-n4-active & {
       font-family: "Source Sans Pro";
     }
   }
@@ -12,7 +12,7 @@
   @extend .serif;
   
   @at-root {
-    html.wf-active & {
+    html.wf-sourceserifpro-n4-active & {
       font-family: "Source Serif Pro";
     }
   }
@@ -22,26 +22,24 @@
   @extend .code;
   
   @at-root {
-    html.wf-active & {
+    html.wf-sourcecodepro-n4-active & {
       font-family: "Source Code Pro";
     }
   }
 }
 
 @mixin expected-display-fonts {
+  @extend .serif;
+
   @at-root {
-    html.wf-active & {
+    html.wf-beyno-n4-active & {
       font-family: "BEYNO";
     }
   }
 }
 
 .fontFamily__special {
-  @at-root {
-    html.wf-active & {
-      @include expected-display-fonts;
-    }
-  }
+  @include expected-display-fonts;
 }
 
 h1, h2, h3, h4, h5, h6 {
