@@ -17,12 +17,12 @@ group :jekyll do
   gem 'classifier-reborn'
   gem 'execjs'
   gem 'image_optim'
-  gem 'jekyll', '~> 3.5.0'
+  gem 'jekyll'
   gem 'kramdown'
   gem 'mini_magick'
   gem 'parallel'
   gem 'rouge'
-  gem 'sprockets', '~> 4.0.beta'
+  gem 'sprockets', '~> 4.0.0.beta7'
   gem 'uglifier'
   gem 'xmlrpc'
 end
@@ -38,7 +38,6 @@ group :jekyll_plugins do
   gem 'jekyll-tagging'
   gem 'jekyll-tagging-related_posts'
   gem 'jekyll-tidy'
-  gem 'jekyll-toc'
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
@@ -70,8 +69,8 @@ group :test do
   gem 'capybara'
   gem 'capybara-screenshot'
   gem 'chromedriver-helper'
-  gem 'rspec'
   gem 'html-proofer'
+  gem 'rspec'
   gem 'selenium-webdriver'
 end
 # }}}

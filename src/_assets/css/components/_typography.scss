@@ -2,8 +2,8 @@
   @extend .sans-serif;
   
   @at-root {
-    html.wf-active & {
-      font-family: "Lato";
+    html.wf-sourcesanspro-n4-active & {
+      font-family: "Source Sans Pro";
     }
   }
 }
@@ -12,8 +12,8 @@
   @extend .serif;
   
   @at-root {
-    html.wf-active & {
-      font-family: "Titillium Web";
+    html.wf-sourceserifpro-n4-active & {
+      font-family: "Source Serif Pro";
     }
   }
 }
@@ -22,28 +22,35 @@
   @extend .code;
   
   @at-root {
-    html.wf-active & {
-      font-family: "Inconsolata";
+    html.wf-sourcecodepro-n4-active & {
+      font-family: "Source Code Pro";
     }
   }
 }
 
 @mixin expected-display-fonts {
+  @extend .serif;
+
   @at-root {
-    html.wf-active & {
-      font-family: beyno;
-      font-weight: 400;
+    html.wf-beyno-n4-active & {
+      font-family: "Beyno";
     }
   }
 }
 
+.fontFamily__special {
+  @include expected-display-fonts;
+}
+
 h1, h2, h3, h4, h5, h6 {
   @include expected-serif-fonts;
+  word-wrap: break-word;
 }
 
 p, body, div, li, blockquote {
   @include expected-sans-serif-fonts;
   @extend .f5;
+  word-wrap: break-word;
 }
 
 pre, code, kbd {
@@ -85,14 +92,6 @@ a {
   {
     @extend .link;
     color: $blue!important;
-  }
-}
-
-.fontFamily__special {
-  @at-root {
-    html.wf-active & {
-      @include expected-display-fonts;
-    }
   }
 }
 

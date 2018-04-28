@@ -2,25 +2,12 @@
 build_drafts: true
 show_drafts: true
 url: 'http://localhost:1993'
-incremental: true
 
 assets:
   compression: false
   debug: false
   verbose: false
   gzip: false
-  caching:
-    enabled: true
-  defaults:
-    js:
-      integrity: false
-      prefetch: false
-    css:
-      integrity: false
-      prefetch: false
-    img:
-      integrity: false
-      prefetch: false
 
 webmentions:
   debug: true
@@ -29,7 +16,6 @@ webmentions:
 isso_host: comments.jacky.vagrant.test
 
 pagination:
-  enabled: true
   debug: true
 
 analytics:

@@ -14,7 +14,7 @@ def run_jekyll_in_dev(args = [])
 end
 
 def run_jekyll_in_prod(args = [])
-  run_jekyll(args + ['--destination', './_deploy'])
+  run_jekyll(args + ['--destination', './_deploy', '--trace', '--verbose'])
 end
 
 task :serve do
@@ -78,6 +78,7 @@ namespace :notify do
 
   desc 'Notify the IndieWeb'
   task :webmention do
+    FileUtils.mkdir_p "#{ENV['PWD']}.cache/webmention"
     puts '* Notifying webmention.io'
     puts `bundle exec jekyll webmention`
   end
@@ -104,4 +105,4 @@ if ENV['ENV'] == 'test'
   end
 end
 
-task default: %w[spec build:deploy notify]
+task default: %w[spec build:watch]

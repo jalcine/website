@@ -11,5 +11,19 @@
     </main>
     {% unless page.components.footer == false %}{% include footer.html %}{% endunless %}
     {% asset page.js async=true defer=true %}
+    {% webmentions_js %}
+    <script data-isso="//{{ site.isso_host }}/"
+      data-isso-css="true"
+      data-isso-lang="en"
+      data-isso-reply-to-self="true"
+      data-isso-require-author="true"
+      data-isso-require-email="true"
+      data-isso-max-comments-top="10"
+      data-isso-max-comments-nested="3"
+      data-isso-reveal-on-click="3"
+      data-isso-avatar="true"
+      data-isso-vote="true" src="//{{ site.isso_host }}/js/embed.min.js"
+      async=true defer=true
+    ></script>
   </body>
 </html>

@@ -8,6 +8,7 @@ strict_front_matter: false
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
 name: jackyalciné
+name_safe: jackyalcine
 author: Jacky Alciné
 url: https://jacky.wtf
 byline: Jacky Alciné is a developer and educator.
@@ -26,6 +27,7 @@ incremental: true
 source: ./src/
 
 permalink: /weblog/:title/
+build_drafts: false
 show_drafts: false
 lsi: true
 future: false
@@ -58,7 +60,7 @@ kramdown:
 defaults:
   -
     scope:
-      path: ""
+      path: "pages"
     values:
       layout: page
       components:
@@ -128,9 +130,6 @@ assets:
     path: '.cache/assets'
     type: file
     enabled: true
-  raw_precompile:
-    - page.js
-    - page.css
   sources:
     - ../node_modules
     - _assets/files
@@ -153,9 +152,9 @@ analytics:
 
 webmentions:
   debug: false
-  pages: true
+  pages: false
   collections: true
-  pause_lookups: false
+  pause_lookups: true
   username: jacky.wtf
   cache_folder: .cache/webmention
   cache_bad_uris_for: 1

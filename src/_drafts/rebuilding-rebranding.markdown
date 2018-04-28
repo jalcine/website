@@ -11,8 +11,6 @@ tags:
   - branding
 ---
 
-{:toc}
-
 I mentioned to [Iheanyi][11] a while back about how I keep redesigning this website. 
 I've held this site in this constant flow of redesigning for about five years now. 
 However, I haven't spent a lot of time focusing on making this into my "portal";
