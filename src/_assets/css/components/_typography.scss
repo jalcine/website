@@ -47,11 +47,13 @@
 
 h1, h2, h3, h4, h5, h6 {
   @include expected-serif-fonts;
+  word-wrap: break-word;
 }
 
 p, body, div, li, blockquote {
   @include expected-sans-serif-fonts;
   @extend .f5;
+  word-wrap: break-word;
 }
 
 pre, code, kbd {

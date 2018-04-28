@@ -22,7 +22,7 @@ group :jekyll do
   gem 'mini_magick'
   gem 'parallel'
   gem 'rouge'
-  gem 'sprockets'
+  gem 'sprockets', '~> 4.0.0.beta7'
   gem 'uglifier'
   gem 'xmlrpc'
 end

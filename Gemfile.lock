@@ -10,7 +10,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     archive-zip (0.11.0)
       io-like (~> 0.3.0)
-    autoprefixer-rails (8.3.0.1)
+    autoprefixer-rails (8.4.0)
       execjs
     capybara (3.0.2)
       addressable
@@ -278,7 +278,7 @@ GEM
     shellany (0.0.1)
     spoon (0.0.6)
       ffi
-    sprockets (3.7.1)
+    sprockets (4.0.0.beta7)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     string_inflection (0.1.2)
@@ -357,7 +357,7 @@ DEPENDENCIES
   rspec
   ruby-oembed
   selenium-webdriver
-  sprockets
+  sprockets (~> 4.0.0.beta7)
   uglifier
   xmlrpc
 
