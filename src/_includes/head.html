@@ -20,7 +20,6 @@
 {% endif %}
 {% endcapture %}
 <title>{{ correct_title }}</title>
-<meta charset="utf-8">
 {% if page.updated_at %}
 <meta name="revised" content="{{ page.updated_at }}">
 {% endif %}
@@ -35,10 +34,11 @@
 
 {% asset page.css %}
 
-<link rel='help' title='FAQ' href='{{ site.url }}/faq/'>
-<link rel='index' title='{{ site.name }}' href='{{ site.url }}'>
-<link rel='shortcut icon' href="{% asset favicon/favicon.ico @path %}">
+<link rel="help" title="FAQ" href="{{ site.url }}/faq/">
+<link rel="index" title="{{ site.name }}" href="{{ site.url }}">
+<link rel="shortcut icon" href="{% asset favicon/favicon.ico @data %}">
 
+<!-- Feeds -->
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="/feeds/articles.xml" />
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Recent" href="/feeds/recent.xml" />
 

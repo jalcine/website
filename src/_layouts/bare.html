@@ -11,5 +11,6 @@
     </main>
     {% unless page.components.footer == false %}{% include footer.html %}{% endunless %}
     {% asset page.js async=true defer=true %}
+    {% webmentions_js %}
   </body>
 </html>

@@ -256,4 +256,4 @@ module Jekyll
 
 end
 
-#Liquid::Template.register_filter(Jekyll::Humanize)
+Liquid::Template.register_filter(Jekyll::Humanize)

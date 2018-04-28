@@ -38,7 +38,6 @@ group :jekyll_plugins do
   gem 'jekyll-tagging'
   gem 'jekyll-tagging-related_posts'
   gem 'jekyll-tidy'
-  gem 'jekyll-toc'
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
@@ -70,8 +69,8 @@ group :test do
   gem 'capybara'
   gem 'capybara-screenshot'
   gem 'chromedriver-helper'
-  gem 'rspec'
   gem 'html-proofer'
+  gem 'rspec'
   gem 'selenium-webdriver'
 end
 # }}}

@@ -9,15 +9,12 @@ category: personal
 tags:
   - first
   - intros
-
 ---
 
 Well, this is nice. This is my first blog post using [OctoPress][] and I have to
 say, I really don't need any other blogging platform besides this one. When they
 say that this is the hacker's blog, they weren't kidding. I've literally edited
 and installed everything from the console with no real hassle.
-
-<!-- more -->
 
 ## About Myself
 
@@ -62,8 +59,7 @@ applications of any kind with an external dependency for authentication is a
 pain. I know this and thank God for the magic gems in Ruby that made my life
 easier. Perl doesn't have such a lucky layout and this should be fixed in the
 near future. This is probably due to the lack of a nice framework being used
-commonly in Perl. [Mojolicious](http://mojolicio.us/) is getting close,
-though.
+commonly in Perl. [Mojolicious](http://mojolicio.us/) is getting close, though.
 
 As a bug tracker, Bugzilla __really__ follows the Unix principle well. Nowadays,
 awesome software tends to be extensible. That's why this section of the post
