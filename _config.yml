@@ -152,9 +152,9 @@ analytics:
 
 webmentions:
   debug: false
-  pages: true
+  pages: false
   collections: true
-  pause_lookups: false
+  pause_lookups: true
   username: jacky.wtf
   cache_folder: .cache/webmention
   cache_bad_uris_for: 1
