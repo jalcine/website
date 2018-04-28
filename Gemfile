@@ -28,7 +28,6 @@ group :jekyll do
 end
 
 group :jekyll_plugins do
-  gem 'jekyll-analytics'
   gem 'jekyll-assets'
   gem 'jekyll-feed'
   gem 'jekyll-gist'
