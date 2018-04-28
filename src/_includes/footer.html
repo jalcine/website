@@ -1,20 +1,20 @@
 <footer role="group" class="bg-near-black near-white bt bw3 b--near-black pa4" data-track-content>
   <div class="mv6-l mv4-m mv3">
     <h1 class="f1 f-headline-l lh-title-l washed-blue tc tracked-tight fw5 ma0 pa0 fontFamily__special">
-      {{ site.name }}.
+      {{ site.name_safe }}.
     </h1>
     <h2 class="f3 gray tc tracked-tight fw3">This is who I be.</h2>
-    <nav class="f5 w-100 white tc center">
+    <nav class="f4 w-100 white tc center">
       {% for link in site.data.links.navigation %}
         <a class="link white hover-blue dim fw5" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
         {% if forloop.last != true %}<span class="white">&mdash;</span>{% endif %}
       {% endfor %}
     </nav>
   </div>
-  <section class="cf db center mw7 color-inherit">
-    <div class="f6 w-50-l fl-l tc tl-l">
+  <section class="w-100 center cb cf db mw7 color-inherit">
+    <div class="f3 w-50-l fl-l tc tl-l">
       <p>Been at this since 2010.</p>
-      <p class="f6 lh-copy measure-narrow-l">{{ site.description | improve }}</p>
+      <p class="f5 lh-copy measure-narrow-l">{{ site.description | improve }}</p>
       <p><a href="/now/" target="_blank">See what I'm up to right now.</a></p>
     </div>
     <div class="db w-100 mt5 mt3-ns fl-l w-50-l color-inherit">

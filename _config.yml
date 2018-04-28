@@ -8,6 +8,7 @@ strict_front_matter: false
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
 name: jackyalciné
+name_safe: jackyalcine
 author: Jacky Alciné
 url: https://jacky.wtf
 byline: Jacky Alciné is a developer and educator.
