@@ -13,7 +13,7 @@
   
   @at-root {
     html.wf-active & {
-      font-family: "Arvo";
+      font-family: "Taviraj";
     }
   }
 }
@@ -33,6 +33,14 @@
     html.wf-active & {
       font-family: beyno;
       font-weight: 400;
+    }
+  }
+}
+
+.fontFamily__special {
+  @at-root {
+    html.wf-active & {
+      @include expected-display-fonts;
     }
   }
 }
@@ -85,14 +93,6 @@ a {
   {
     @extend .link;
     color: $blue!important;
-  }
-}
-
-.fontFamily__special {
-  @at-root {
-    html.wf-active & {
-      @include expected-display-fonts;
-    }
   }
 }
 

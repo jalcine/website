@@ -1,6 +1,17 @@
 @font-face {
-  font-family: "beyno";
+  font-family: "BEYNO";
   font-style: normal;
-  font-weight: normal;
-  src: asset_url('beyno.otf') format('otf');
+  font-weight: 400;
+  src: local('BEYNO'),
+       asset_url('BEYNO.otf') format('opentype'),
+       asset_url('BEYNO.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "BEYNO Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local('BEYNO'),
+       asset_url('BEYNO.otf') format('opentype'),
+       asset_url('BEYNO.ttf') format('truetype');
 }

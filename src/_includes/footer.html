@@ -1,21 +1,22 @@
 <footer role="group" class="bg-near-black near-white bt bw3 b--near-black pa4" data-track-content>
-  <h1 class="f1 washed-blue fw5 ma0 pa0 fontFamily__special">{{ site.name }}</h1>
-  <section class="cf db mw7 color-inherit">
-    <div class="f6 w-50-l">
+  <div class="mv6">
+    <h1 class="f1 f-headline-l lh-title-l washed-blue tc tracked-tight fw5 ma0 pa0 fontFamily__special">{{ site.name }}</h1>
+    <h2 class="f3 gray tc tracked-tight fw3">This is who I be.</h2>
+    <nav class="f5 w-100 white tc center">
+      {% for link in site.data.links.navigation %}
+        <a class="link dib white hover-blue dim fw5" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
+        <span class="dib blue">{% if forloop.last != true %} &mdash; {% endif %}</span>
+      {% endfor %}
+    </nav>
+  </div>
+  <section class="cf db center mw7 color-inherit">
+    <div class="f6 w-50-l fl-l">
       <p>Been at this since 2010.</p>
       <p class="f6 lh-copy measure-narrow">{{ site.description | improve }}</p>
       <p><a href="/now/" target="_blank">See what I'm currently up to.</a></p>
-      <nav class="w-100 white">
-        {% for link in site.data.links.navigation %}
-          <a class="link dib white dim fw5" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
-          <span class="dib blue">{% if forloop.last != true %} &mdash; {% endif %}</span>
-        {% endfor %}
-      </nav>
     </div>
-    <aside class="db w-100 mt3 w-50-l color-inherit">
+    <div class="db w-100 mt3 fl-l w-50-l color-inherit">
       {% include newsletter_inline.html %}
-    </aside>
-    <div class="db w-100 mt2 w-50-l color-inherit">
       {% include search.html %}
     </div>
   </section>
