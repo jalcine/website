@@ -3,7 +3,7 @@
   
   @at-root {
     html.wf-active & {
-      font-family: "Open Sans";
+      font-family: "Source Sans Pro";
     }
   }
 }
@@ -13,7 +13,7 @@
   
   @at-root {
     html.wf-active & {
-      font-family: "Taviraj";
+      font-family: "Source Serif Pro";
     }
   }
 }
@@ -23,7 +23,7 @@
   
   @at-root {
     html.wf-active & {
-      font-family: "Inconsolata";
+      font-family: "Source Code Pro";
     }
   }
 }
@@ -31,7 +31,7 @@
 @mixin expected-display-fonts {
   @at-root {
     html.wf-active & {
-      font-family: beyno;
+      font-family: "beyno";
       font-weight: 400;
     }
   }
