@@ -5,11 +5,10 @@
 function stretchOutImages () {
   var images = document.querySelectorAll("img.x-bleed");
   images.forEach(function stretchImage(image) {
-    alert(image);
     var parentElement = image.parentElement;
     parentElement.style.maxWidth = "none";
-    parentElement.style.margin = "none";
-    parentElement.style.padding = "none";
+    parentElement.style.margin = "0rem";
+    parentElement.style.padding = "0rem";
   });
 };
 
