@@ -3,11 +3,13 @@
 
 // Do some tweaks on images.
 function stretchOutImages () {
-  var images = document.querySelectorAll("img[x-bleed]");
+  var images = document.querySelectorAll("img.x-bleed");
   images.forEach(function stretchImage(image) {
     alert(image);
     var parentElement = image.parentElement;
     parentElement.style.maxWidth = "none";
+    parentElement.style.margin = "none";
+    parentElement.style.padding = "none";
   });
 };
 
