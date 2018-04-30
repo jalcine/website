@@ -1,4 +1,4 @@
 https://github.com/heroku/heroku-buildpack-ruby
 https://github.com/heroku/heroku-buildpack-nodejs
-https://git.jacky.wtf/me/dokku-buildpack-jekyll
+https://git.jacky.wtf/me/dokku-buildpack-jekyll#master
 https://github.com/dokku/buildpack-nginx
