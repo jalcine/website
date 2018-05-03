@@ -319,7 +319,6 @@ DEPENDENCIES
   chromedriver-helper
   classifier-reborn
   dotenv
-  execjs
   guard
   guard-bundler
   guard-livereload
