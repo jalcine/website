@@ -13,7 +13,6 @@ group :jekyll do
   gem 'activesupport'
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
-  gem 'execjs'
   gem 'image_optim'
   gem 'jekyll'
   gem 'kramdown'
