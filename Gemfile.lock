@@ -319,6 +319,7 @@ DEPENDENCIES
   chromedriver-helper
   classifier-reborn
   dotenv
+  gemoji
   guard
   guard-bundler
   guard-livereload

@@ -14,6 +14,7 @@ group :jekyll do
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
   gem 'image_optim'
+  gem 'gemoji'
   gem 'jekyll'
   gem 'kramdown'
   gem 'mini_magick'
