@@ -36,7 +36,6 @@ namespace :build do
 
   task :deploy do
     puts "----> Building for #{ENV['ENV']}"
-    puts `bundle exec gemoji extract src/_assets/images/emoji`
     puts Rake::Task['build:prod'].invoke if ENV['ENV'] == 'production'
     puts Rake::Task['build:dev'].invoke unless ENV['ENV'] == 'production'
   end

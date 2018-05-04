@@ -196,6 +196,3 @@ liquid:
 isso_host: comments.jacky.wtf
 
 category_path: weblog/categories/
-
-emoji:
-  src: "/assets/emoji"
