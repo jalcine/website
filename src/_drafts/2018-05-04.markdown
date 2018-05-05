@@ -13,7 +13,7 @@ tags:
   - c++
 ---
 
-A while back, like a _while_ back, I mentioned on <https://mastodon.xyz> that
+A while back, like a _while_ back, I mentioned on one of my [Mastodon][] accounts that
 I wanted a [ActivityPub][] client for Linux, namely KDE. Another person on here
 mentioned that they've begun working on one for GNOME. Which is great! The whole
 ability for people to just ahead and build their own foundational tools and
@@ -39,3 +39,4 @@ https://www.twitch.tv/events/qTG8p3gjTLarW9mV_qI2Vw
 [activitystream]: https://www.w3.org/ns/activitystreams
 [json-ld]: https://www.w3.org/TR/json-ld/
 [rdf]: https://duckduckgo.com/?q=rdf&atb=v115-2_f&ia=web
+[mastodon]: /faq/mastodon/

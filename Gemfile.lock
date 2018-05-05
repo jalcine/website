@@ -153,6 +153,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
+    jekyll-include-cache (0.1.0)
+      jekyll (~> 3.3)
     jekyll-paginate-v2 (1.9.4)
       jekyll (~> 3.0)
     jekyll-redirect-from (0.13.0)
@@ -333,6 +335,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-feed
   jekyll-gist
+  jekyll-include-cache
   jekyll-paginate-v2
   jekyll-redirect-from
   jekyll-sitemap

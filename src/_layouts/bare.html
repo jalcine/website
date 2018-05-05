@@ -6,7 +6,6 @@
   <body>
     {% unless page.components.header == false %}{% include header.html %}{% endunless %}
     <main>
-      {% include breadcrumb.html %}
       {{ content }}
     </main>
     {% unless page.components.footer == false %}{% include footer.html %}{% endunless %}
