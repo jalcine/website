@@ -1,6 +1,7 @@
 ﻿---
 build_drafts: true
 show_drafts: true
+incremental: false
 url: 'http://localhost:1993'
 
 assets:

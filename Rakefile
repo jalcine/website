@@ -23,7 +23,7 @@ end
 
 namespace :build do
   task :watch do
-    run_jekyll_in_dev(['build', '--incremental', '--watch', '--verbose'])
+    run_jekyll_in_dev(['build', '--watch'])
   end
 
   task :prod do
