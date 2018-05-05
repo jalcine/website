@@ -171,7 +171,7 @@ webmentions:
     last_year: every 2 weeks
     older: monthly
   js:
-    uglify: false
+    uglify: true
     deploy: true
     destination: _assets/js
 
