@@ -10,27 +10,29 @@
     <span>:baby: by <a href="{{ site.url }}" class="p-author h-card">{{
         site.author }}</a></span>
     <span>:book: an {{ page.category | linkify_categories }} post</span>
-    {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
-    {% capture indieweb %}{% if page.tags contains 'indieweb' %}1{% else %}0{% endif %}{% endcapture %}
-    {{ indieweb }}
-    {% if indieweb == "1" %}
-    <span>
-      :globe_with_meridians:
-      <a href="https://news.indieweb.org/en" class="u-syndication">
-        Also posted on IndieNews
-      </a>
-    </span>
+    {% if page.tags contains "indieweb" %}
+      <span>
+        :globe_with_meridians:
+        <a href="https://news.indieweb.org/en" class="u-syndication">
+          Also posted on IndieNews
+        </a>
+      </span>
     {% endif %}
-
+    {% if page.tags %}
+      <span>:bookmark: {{ page.tags | linkify_tags }}</span>
+    {% endif %}
     <span>
-      :clock7: written <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date:'%B %-d %Y' }}</time>
+      :clock7: written <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string: "ordinal", "US" }}</time>
       {% if page.revised %}- revised <time>{{ page.revised | date_to_rfc822 }}</time>>{% endif %}
     </span>
-    <span>:eyeglasses: {{ content | reading_time }}</span>
+    <span>
+      :eyeglasses:
+      {{ content | reading_time }},
+      {{ content | number_of_words }} words
+    </span>
     <span>
       :link: <a href="#isso-thread">Comments</a> -
-      {% webmention_count page.url %} <a
-        href="/faq/indieweb/#webmentions">mention(s)</a> - 
+      {% webmention_count page.url %} <a href="/faq/indieweb/#webmentions">Mention(s)</a> - 
       <a href="{{ page.url }}" class="u-url">Permalink</a>
     </span>
   </address>
