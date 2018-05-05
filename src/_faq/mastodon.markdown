@@ -11,8 +11,8 @@ over on [Play Vicious][2]. At the time of writing, I'm going to be working off
 the Play Vicious account. But I do frequent on other places. Below are 
 profiles of myself elsewhere.
 
-  * [`@jalcine@playvicious.social`][a2]: Primary
-  * [`@jackyalcine@mastodon.xyz`][a1]
+  * [`@jalcine@playvicious.social`][a1]: Primary
+  * [`@jackyalcine@mastodon.xyz`][a2]
 
 I'm working on pulling off reliance on others for this and keeping it on my own
 systems. Stay tuned.
