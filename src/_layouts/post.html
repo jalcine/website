@@ -3,7 +3,7 @@ layout: bare
 image: none
 excerpt: none
 ---
-<div class="h-entry">
+<article class="h-entry">
   {% if page.image and page.image != 'none' %}
     {% include masthead_post_header.html %}
   {% else %}
@@ -15,4 +15,4 @@ excerpt: none
     {{ content | letter_spacing | improve }}
   </main>
   {% include post_footer.html %}
-</div>
+</article>
