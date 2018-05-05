@@ -1,10 +1,11 @@
 {% if site.related_posts.size >= 1 %}
-<section class="ph5 mv2">
-  <h3 class="f3 lh-title tracked-tight">Related Posts</h3>
-  <ul>
-    {% for related_post in site.related_posts limit: 5 %}
-      <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</section>
+<h3 class="f3 lh-title tracked-tight">Related Posts</h3>
+<p>
+  If you found this interesting; check out these related posts.
+</p>
+<ul>
+  {% for related_post in site.related_posts limit: 5 %}
+    <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+  {% endfor %}
+</ul>
 {% endif %}
