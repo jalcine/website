@@ -180,7 +180,7 @@ GEM
       typogruby
     jekyll-watch (2.0.0)
       listen (~> 3.0)
-    jekyll-webmention_io (2.9.1)
+    jekyll-webmention_io (2.9.0)
       htmlbeautifier (~> 1.1)
       http (~> 2.0)
       jekyll (>= 2.0, < 4.0)
@@ -344,7 +344,7 @@ DEPENDENCIES
   jekyll-tidy
   jekyll-twitter-plugin
   jekyll-typogrify
-  jekyll-webmention_io
+  jekyll-webmention_io (= 2.9.0)
   jemoji
   kramdown
   libnotify
