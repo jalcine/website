@@ -1,12 +1,10 @@
 # vim:set fdl=1 nospell:
 # frozen_string_literal: true
 
-ruby '2.4.1'
-
 source 'https://rubygems.org'
 
 # {{{ Core Utilities
-gem 'bundler', '1.16.0'
+gem 'bundler'
 gem 'dotenv'
 gem 'rake'
 # }}}
@@ -15,8 +13,8 @@ group :jekyll do
   gem 'activesupport'
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
-  gem 'execjs'
   gem 'image_optim'
+  gem 'gemoji'
   gem 'jekyll'
   gem 'kramdown'
   gem 'mini_magick'
@@ -28,10 +26,10 @@ group :jekyll do
 end
 
 group :jekyll_plugins do
-  gem 'jekyll-analytics'
   gem 'jekyll-assets'
   gem 'jekyll-feed'
   gem 'jekyll-gist'
+  gem 'jekyll-include-cache'
   gem 'jekyll-paginate-v2'
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'

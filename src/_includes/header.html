@@ -1,18 +1,18 @@
-<header role="document" class="bg-near-black near-white w-100 ph1 pv4 cb cf bw3 b--black-50 bb">
-  <h1 class="tracked-tight lh-title f1 f-headline-l ma1 pa1 center-s">
+<header role="document" class="bg-near-black washed-blue w-100 ph1 pv4 cb cf">
+  <h1 class="tracked-tight lh-title f1 f-headline-l ma1 pa1 center-s tc-s">
     {% asset brand/self.jpeg class='v-mid cb-s br-100 bg-black-80 b--black-80 ba h3 mb3 ma1-ns' alt='{{ site.name }}' width=auto height=auto %}
     {{ site.name }}
   </h1>
   <nav class="cf cb">
     {% for link in site.data.links.navigation %}
-      <a class="{{ link.classes }} db dib-l tc fl fn-l link mh0 pa3 mv1 dim mh1-l w-third w-auto-l"
+      <a class="{{ link.classes }} db dib-l tc fl fn-l br4 link mh0 pa3 mv1 dim mh1-l w-third w-auto-l"
          href="{{ link.link }}" title="{{ link.title }}">
         {{ link.title }}
       </a>
     {% endfor %}
-    <div class="fr-l mr3-l w-100 mw6-l mv2-s">
-      {% include search.html %}
+    <div class="fr-l mw6 cb cf pr3-l center mv2-s">
+      {% include_cached search.html %}
     </div>
   </nav>
 </header>
-{% include notices.html %}
+{% include_cached notices.html %}

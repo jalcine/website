@@ -38,3 +38,4 @@ src/.jekyll-metadata
 .bundle
 src/assets/JekyllWebmentionIO.js
 spec/examples.txt
+src/_assets/js/JekyllWebmentionIO.js
