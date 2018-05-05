@@ -9,9 +9,10 @@
   <address role="group" class="post pl3">
     <span>:baby: by <a href="{{ site.url }}" class="p-author h-card">{{
         site.author }}</a></span>
-    <span>:book: {{ page.category | linkify_categories }}</span>
+    <span>:book: an {{ page.category | linkify_categories }} post</span>
     {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
-    {% if page.tags contains 'indieweb' %}
+    {% capture foobar = page.tags contains 'indieweb' %}{% endcapture %}
+    {% if foobar %}
     <span>
       :globe_with_meridians:
       <a href="https://news.indieweb.org/en" class="u-syndication">
