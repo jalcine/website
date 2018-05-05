@@ -11,6 +11,15 @@
         site.author }}</a></span>
     <span>:book: {{ page.category | linkify_categories }}</span>
     {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
+    {% if page.tags contains 'indieweb' %}
+    <span>
+      :globe_with_meridians:
+      <a href="https://news.indieweb.org/en" class="u-syndication">
+        Also posted on IndieNews
+      </a>
+    </span>
+    {% endif %}
+
     <span>
       :clock7: written <time class="dt-published" datetime="{{ page.date }}">{{ page.date | date:'%B %-d %Y' }}</time>
       {% if page.revised %}- revised <time>{{ page.revised | date_to_rfc822 }}</time>>{% endif %}
