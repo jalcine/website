@@ -2,15 +2,16 @@
   <h1 class="pl3 lh-title f-headline-l f-subheadline-l">{{ page.title | improve }}</h1>
   {% if page.byline %}<h3>{{ page.byline | improve }}</h3>{% endif %}
   {% if page.excerpt and page.excerpt != 'none' %}
-  <blockquote class="excerpt">
+  <blockquote class="excerpt p-summary">
     {{ page.excerpt | markdownify | strip_tags: '<p>' }}
   </blockquote>
   {% endif %}
   <address role="group" class="post pl3">
+    <span>:link: <a href="{{ page.url }}" class="u-url">Permalink</a></span>
     <span>:book: {{ page.category | linkify_categories }}</span>
     {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
     <span>
-        :clock7: written <time>{{ page.date | date:'%B %-d %Y' }}</time>
+        :clock7: written <time class="dt-published">{{ page.date | date:'%B %-d %Y' }}</time>
         {% if page.revised %}- revised <time>{{ page.revised | date_to_rfc822 }}</time>>{% endif %}
     </span>
     <span>:eyeglasses: {{ content | reading_time }}</span>
