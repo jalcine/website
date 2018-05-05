@@ -72,22 +72,4 @@
 <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 <link rel="micropub" href="https://pub.jacky.wtf/micropub">
 <link rel="token_endpoint" href="https://pub.jacky.wtf/token">
-
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(['setDomains', ['*.jacky.wtf']]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  _paq.push(['trackVisibleContentImpressions']);
-
-  (function() {
-    var u="https://{{ site.analytics.host }}/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '{{ site.analytics.site_id }}']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><img src="//{{ site.analytics.host }}/piwik.php?idsite={{ site.analyitcs.site_id }}&rec=1&action_name={{ page.title | url_param_escape }}" style="border:0;" alt="" /></noscript>
-
 {% webmentions_head %}

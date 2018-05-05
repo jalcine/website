@@ -1,5 +1,6 @@
 //= require webfontloader/webfontloader.js
 //= require _fonts.js
+//= require _analytics.js
 
 // Do some tweaks on images.
 function stretchOutImages () {
@@ -16,5 +17,3 @@ function stretchOutImages () {
   WebFont.load(WebFontConfig);
   stretchOutImages();
 })(document);
-
-// vim: set ft=javascript.liquid :
