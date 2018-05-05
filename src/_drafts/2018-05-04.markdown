@@ -33,6 +33,7 @@ a way of taking context-_less_ data and giving it contextual information that
 machines can do more with it.
 
 https://www.twitch.tv/events/qTG8p3gjTLarW9mV_qI2Vw
+
 [indieweb]: /faq/indieweb/
 [activitypub]: http://activitypub.rocks/
 [activitystream]: https://www.w3.org/ns/activitystreams

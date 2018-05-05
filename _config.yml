@@ -82,7 +82,7 @@ defaults:
   -
     scope:
       path: "_drafts"
-      type: "posts"
+      type: "drafts"
     values:
       layout: post
       image: none
@@ -194,5 +194,4 @@ liquid:
   error_mode: strict
 
 isso_host: comments.jacky.wtf
-
 category_path: weblog/categories/
