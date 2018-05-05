@@ -171,8 +171,8 @@ webmentions:
     last_year: every 2 weeks
     older: monthly
   js:
-    uglify: true
-    deploy: false
+    uglify: false
+    deploy: true
     destination: _assets/js
 
 autolink_email:
