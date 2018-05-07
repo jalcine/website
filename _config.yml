@@ -131,9 +131,9 @@ assets:
     type: file
     enabled: true
   sources:
-    - ../node_modules
     - _assets/files
     - _assets/favicon
+    - ../node_modules
   plugins:
     css:
       autoprefixer:
@@ -172,7 +172,7 @@ webmentions:
     older: monthly
   js:
     uglify: true
-    deploy: true
+    deploy: false
     destination: _assets/js
 
 autolink_email:

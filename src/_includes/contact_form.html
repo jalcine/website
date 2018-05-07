@@ -1,50 +1,77 @@
-<section class="w-100 bg-near-white bw1 b--black-90 near-black pa2"
-  data-track-content data-content-name="contact">
-  <h3 class="f3">Send Jacky a Message</h3>
-  <p class="f4 lh-copy measure-narrow">
-    When it comes to scheduling time,
-    <a href="http://cattsmall.com/coffee/" target="_blank">Catt Small's post</a> is something to keep in mind.
-  </p>
-  <form class="measure"
-        action="https://formspree.io/yo@jacky.wtf"
-        onsubmit="snitchAboutFormSubmission()"
-        method="POST">
-    <input type="hidden" name="_next" value="https://jacky.wtf/contact/thank-you/">
-    <input type="hidden" name="_format" value="plain">
-    <fieldset id="contact" class="ba b--transparent ph0 mh0">
-      <legend class="f4 fw6 ph0 mh0">Contact Jacky</legend>
-      <div class="mt3">
-        <label class="db fw6 lh-copy f6" for="email-address">Email</label>
-        <input class="pa2 input-reset w-100 ba b--black-20 border-box" type="email" name="email-address"  id="email-address">
-      </div>
-      <div class="mv3">
-        <label class="db fw6 lh-copy f6" for="first_name">First Name</label>
-        <input class="pa2 input-reset w-100 ba b--black-20 border-box" type="text" name="first_name"  id="first_name">
-      </div>
-      <div class="mv3">
-        <label class="db fw6 lh-copy f6" for="intent">Intent</label>
-        <select class="pa2 input-reset w-100 ba b--black-20 border-box" name="intent" id="intent">
-          <option value="work:contract">Work // Contract Proposition</option>
-          <option value="work:general">Work // Inquiry</option>
-          <option value="press:general">Press // General</option>
-          <option value="press:permission">Press // Permission</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-      <div class="mv3">
-        <label class="db fw6 lh-copy f6" for="body">Message</label>
-        <textarea class="db border-box hover-black w-100 measure ba b--black-20
-          pa2 br2 mb2 h4" name="body"  id="body">
-        </textarea>
-      </div>
-    </fieldset>
-    <div class="">
+<div class="cb cf">
+  <h2 class="f2 lh-title mv0">Send Jacky a Message</h2>
+  <div class="fl ph2 w-60-ns">
+    <p class="f4 lh-copy measure-narrow">
+      When it comes to scheduling time,
+      <a href="http://cattsmall.com/coffee/" target="_blank">Catt Small's post</a> is something to keep in mind.
+    </p>
+    <form class="measure" action="https://formspree.io/yo@jacky.wtf"
+                          method="POST">
+      <input type="hidden" name="_next" value="{{ site.url }}/contact/thank-you/">
+      <fieldset id="contact" class="ba b--transparent ph0 mh0">
+        <div class="mt3">
+          <label class="db fw6 lh-copy f5" for="email-address">Email</label>
+          <input class="pa2 input-reset w-100 ba b--black-20 border-box" type="email" name="email-address"  id="email-address">
+          <span class="f7 gray">The address that I'll send your reply to!</span>
+        </div>
+        <div class="mv3">
+          <label class="db fw5 lh-copy f6" for="first_name">Name</label>
+          <input class="pa2 input-reset w-100 ba b--black-20 border-box" type="text" name="name" id="name">
+          <span class="f7 gray">The name you'd like to address you with.</span>
+        </div>
+        <div class="mv3">
+          <label class="db fw6 lh-copy f6" for="intent">Intent</label>
+          <select class="pa2 input-reset w-100 ba b--black-20 border-box" name="intent" id="intent">
+            <option disabled>Work</option>
+            <option value="work:contract">&mdash;&nbsp;Contract Proposition</option>
+            <option value="work:general">&mdash;&nbsp;Inquiry</option>
+            <option disabled>Press</option>
+            <option value="press:general">&mdash;&nbsp;General</option>
+            <option value="press:permission">&mdash;&nbsp;Permission</option>
+            <option value="press:talk">&mdash;&nbsp;Talk Inquiry</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="f7 gray">The kind of inquiry you're aiming to make.</span>
+        </div>
+        <div class="mv3">
+          <label class="db fw6 lh-copy f6" for="body">Message</label>
+          <div id="bodyEditor"></div>
+          <textarea name="body" id="body"
+                                class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2 h4"  />
+          </textarea>
+          <span class="f7 gray">The kind of inquiry you're aiming to make.</span>
+        </div>
+      </fieldset>
       <input class="ph3 pv2 input-reset ba b--black bg-transparent grow
-      pointer f6 dib" type="submit" value="Send Message" data-track-piece>
-    </div>
-  </form>
-</section>
+      pointer f6 dib" type="submit" value="Send Message" data-track-piece />
+    </form>
+  </div>
+  <div class="fl ph2 w-40-ns">
+    <h3 class="lh-title f3">Pre-Contact Questionnaire</h3>
+    <p class="f4 lh-copy measure-narrow">
+      Before hitting that button below, there's some things you should consider
+      that'd help ensure I respond to your message in a timely fashion.
+    </p>
+  </div>
+</div>
 <script type="text/javascript">
-  function snitchAboutFormSubmission () {
-  }
+  function setupEditorForm () {
+    var editorElem = document.getElementById("bodyEditor");
+    var editorTextarea = document.getElementById("body");
+    var editor = new Quill(editorElem, {
+      debug: 'info',
+      placeholder: 'What do you want to tell me?'
+    });
+    editorElem.classList.add('b--black-20', 'ba', 'border-box', 'mb2', 'mw6');
+    editorTextarea.classList.replace('db', 'dn');
+
+    editor.on('text-change', function(delta, oldDelta, source) {
+      var region = document.querySelector("#bodyEditor > .ql-editor");
+      editorTextarea.value = region.innerHTML;
+    });
+  };
+
+  (function (w) {
+    // w.addEventListener('load', setupEditorForm);
+  })(window);
 </script>

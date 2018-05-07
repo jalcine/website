@@ -12,20 +12,20 @@
 {% if page.image contains 'http://' or page.image contains 'https://' %}
   {% assign image = page.image %}
 {% else %}
-  {% assign image = 'favicon/android-chrome-192x192.png' | asset_path %}
+  {% assign image = '196x196.png' %}
 {% endif %}
-{% assign full_page_uri = page.url | prepend: '/' | prepend: site.url %}
+{% assign full_page_uri = page.url | prepend: site.url %}
 {% if page.redirect %}
   {% assign full_page_uri = page.redirect.to %}
 {% endif %}
 {% endcapture %}
-<title>{{ correct_title }}</title>
+
 {% if page.updated_at %}
 <meta name="revised" content="{{ page.updated_at }}">
 {% endif %}
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 {% if page.redirect %}
-  <meta http-equiv="refresh" content="2; url={{ page.redirect.to }}">
+  <meta http-equiv="refresh" content="2; url={{ page.redirect.to | prepend: site.url }}">
 {% endif %}
 <meta name='revisit-after' content='7 days'>
 {% if page.date %}
@@ -36,21 +36,21 @@
 
 <link rel="help" title="FAQ" href="{{ site.url }}/faq/">
 <link rel="index" title="{{ site.name }}" href="{{ site.url }}">
-<link rel="shortcut icon" href="{% asset favicon/favicon.ico @path %}">
+{% include_cached favicon.html %}
 
 <!-- Feeds -->
-<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="/feeds/articles.xml" />
-<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Recent" href="/feeds/recent.xml" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="{{site.url}}/feeds/articles.xml" />
 
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 <meta http-equiv='Expires' content='0'>
 <meta itemprop="name" content="{{ correct_title }}">
+<meta name="application-name" content="{{ site.name }}"/>
 <meta itemprop="description" content="{{ blurb }}">
 
 <meta property="og:title" content="{{ correct_title }}">
 <meta property="og:description" content="{{ blurb }}">
 <meta property="og:url"  content="{{ full_page_uri }}">
-<meta property="og:image" content="{{ image }}" />
+<meta property="og:image" content="{{site.url}}{% asset '{{image}}' @path %}" />
 
 <meta name="twitter:url" content="{{ full_page_uri }}" />
 <meta name="twitter:creator" content="@jackyalcine" />
@@ -58,7 +58,7 @@
 <meta name="twitter:title" content="{{ correct_title }}" />
 <meta name="twitter:domain" content="{{ site.url }}" />
 <meta name="twitter:description" content="{{ blurb }}" />
-<meta name="twitter:image:src" content="{{ image }}" />
+<meta name="twitter:image:src" content="{{site.url}}{% asset '{{ image }}' @path %}" />
 <meta name="twitter:card" content="summary_large_image" />
 
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -68,8 +68,9 @@
 <link href="https://twitter.com/jackyalcine" rel="me" />
 <link href="https://instagram.com/jackyalcine" rel="me" />
 <link href="{{ site.url }}/pgp.asc" rel="pgpkey" />
+
 <link rel="canonical" href="{{ full_page_uri }}">
 <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-<link rel="micropub" href="https://pub.jacky.wtf/micropub">
-<link rel="token_endpoint" href="https://pub.jacky.wtf/token">
+
+<title>{{ correct_title }}</title>
 {% webmentions_head %}
