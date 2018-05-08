@@ -52,5 +52,12 @@ http {
       try_files $uri /$uri$is_args$args /= 404;
       access_log off;
     }
+
+    # Rewrite direct requests to go to my API for IndieAuth.
+    rewrite ^/.indie/(.*)/$ ${scheme}://api.${server_name}/indie/$1 redirect;
+
+    return 404;
   }
 }
+
+# vim: set ft=nginx.sigil :

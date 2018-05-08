@@ -38,7 +38,6 @@
 <link rel="index" title="{{ site.name }}" href="{{ site.url }}">
 {% include_cached favicon.html %}
 
-<!-- Feeds -->
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="{{site.url}}/feeds/articles.xml" />
 
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
@@ -72,5 +71,8 @@
 <link rel="canonical" href="{{ full_page_uri }}">
 <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 
-<title>{{ correct_title }}</title>
 {% webmentions_head %}
+<link rel="authorization_endpoint" href="{{ site.url }}/.indie/auth">
+<link rel="token_endpoint" href="{{ site.url }}/.indie/token">
+
+<title>{{ correct_title }}</title>
