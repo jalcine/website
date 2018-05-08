@@ -2,7 +2,6 @@ worker_processes 1;
 error_log stderr;
 pid nginx.pid;
 daemon off;
-server_tokens off;
 
 events {
   worker_connections 768;
@@ -11,6 +10,8 @@ events {
 http {
   types_hash_max_size 2048;
   include mime.types;
+  server_tokens off;
+
   server {
     listen {{ $.PORT }};
     server_name  _;
