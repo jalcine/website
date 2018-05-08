@@ -2,6 +2,7 @@ worker_processes 1;
 error_log stderr;
 pid nginx.pid;
 daemon off;
+server_tokens off;
 
 events {
   worker_connections 768;
@@ -55,8 +56,6 @@ http {
 
     # Rewrite direct requests to go to my API for IndieAuth.
     # rewrite ^/.indie/(.*)/$ ${scheme}://api.${server_name}/indie/$1 redirect;
-
-    return 404;
   }
 }
 
