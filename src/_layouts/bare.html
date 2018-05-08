@@ -9,7 +9,7 @@
       {{ content }}
     </main>
     {% unless page.components.footer == false %}{% include_cached footer.html %}{% endunless %}
-    <script type='text/javascript' async=true src="//{{ site.analytics.host }}/piwik.js"></script>
+    <script type='text/javascript' defer=true async=true src="//{{ site.analytics.host }}/piwik.js"></script>
     <noscript><img src="//{{ site.analytics.host }}/piwik.php?idsite={{ site.analyitcs.site_id }}&rec=1&action_name={{ page.title | url_param_escape }}" style="border:0;" alt="" /></noscript>
     {% webmentions_js %}
     <script data-isso="//{{ site.isso_host }}/"
@@ -25,6 +25,6 @@
       data-isso-vote="true" src="//{{ site.isso_host }}/js/embed.min.js"
       async=true defer=true
     ></script>
-    {% asset page.js async=true defer=true %}
+    {% asset page.js async=false defer=false %}
   </body>
 </html>

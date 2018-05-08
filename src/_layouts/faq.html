@@ -7,5 +7,6 @@ layout: page
   data-content-piece="{{ page.title }}">
   {{ content | improve | letter_spacing }}
   {% include comments.html %}
+  {% webmentions page.url %}
 </main>
 <a href="/faq/">&laquo; Back to FAQ index</a>

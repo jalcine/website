@@ -54,7 +54,7 @@ http {
     }
 
     # Rewrite direct requests to go to my API for IndieAuth.
-    rewrite ^/.indie/(.*)/$ ${scheme}://api.${server_name}/indie/$1 redirect;
+    # rewrite ^/.indie/(.*)/$ ${scheme}://api.${server_name}/indie/$1 redirect;
 
     return 404;
   }
