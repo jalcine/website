@@ -1,5 +1,5 @@
 @import "tachyons-sass/tachyons";
-@import asset_url("animate.css/animate.css");
+@import url(asset_path("animate.css/animate"));
 
 @import "components/color";
 @import "components/typography";
@@ -10,3 +10,4 @@
 
 @import "components/social";
 @import "syntax";
+

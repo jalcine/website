@@ -1,5 +1,4 @@
 //= require webfontloader/webfontloader.js
-//= require quill/dist/quill.js
 //= require _fonts.js
 //= require _analytics.js
 
