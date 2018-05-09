@@ -1,7 +1,5 @@
 @import "tachyons-sass/tachyons";
-@import url(asset_url("animate.css/animate.css"));
-@import url(asset_url("quill/dist/quill.core.css"));
-@import url(asset_url("quill/dist/quill.snow.css"));
+@import asset_url("animate.css/animate.css");
 
 @import "components/color";
 @import "components/typography";
