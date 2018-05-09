@@ -144,7 +144,7 @@ assets:
 jekyll-mentions: https://twitter.com
 
 gpg:
-  fingerprint: 0x4DEFFC9FF82E8908
+  fingerprint: "0x4DEFFC9FF82E8908"
 
 analytics:
   host: analytics.jacky.wtf
