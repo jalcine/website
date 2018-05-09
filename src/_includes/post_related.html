@@ -1,8 +1,5 @@
 {% if site.related_posts.size >= 1 %}
-<h3 class="f3 lh-title tracked-tight">Related Posts</h3>
-<p>
-  If you found this interesting; check out these related posts.
-</p>
+<h4 class="f3 tracked-tight gray">Related Posts</h4>
 <ul>
   {% for related_post in site.related_posts limit: 5 %}
     <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
