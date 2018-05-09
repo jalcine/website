@@ -167,8 +167,8 @@ webmentions:
     - "https://www.jalcine.me"
   throttle_lookups:
     last_week: daily
-    last_month: weekly
-    last_year: every 2 weeks
+    last_month: every 2 days
+    last_year: every week
     older: monthly
   js:
     uglify: true
