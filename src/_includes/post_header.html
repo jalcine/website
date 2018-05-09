@@ -23,8 +23,8 @@
       <span>:bookmark: {{ page.tags | linkify_tags }}</span>
     {% endif %}
     <span>
-      :clock7: written <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string: "ordinal", "US" }}</time>
-      {% if page.revised %}- revised <time>{{ page.revised | date_to_rfc822 }}</time>>{% endif %}
+      :clock7: written <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string: "ordinal" }}</time>
+      {% if page.revised %}- revised <time class="dt-updated" datetime="{{ page.revised | date_to_xmlschema }}">{{ page.revised | date_to_string: "oridinal" }}</time>>{% endif %}
     </span>
     <span>
       :eyeglasses:
