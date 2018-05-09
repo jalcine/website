@@ -6,7 +6,9 @@
       bg-black-80 b--black-80 ba h3 h4-ns grow mb3 ma1-ns' alt='{{ site.name }}' width=auto height=auto %}
       <a class="n-nickname p-name u-url near-white" rel="me" href="{{ site.url }}">{{ site.name_safe }}</a>
     </h1>
-    <h2 class="f3 gray ttu tc tracked-tight fw3">This is who I be.</h2>
+    <h2 class="f3 gray ttu tc tracked-tight fw3">
+      :fist: This is who I be. :punch:
+    </h2>
     <nav class="f4 w-100 white tc center">
       {% for link in site.data.links.navigation %}
         <a class="fw5" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
@@ -18,16 +20,26 @@
     <div class="f3 w-50-l fl-l tc-s tl-ns">
       {% include_cached search.html %}
       <p class="p-note f5 lh-copy measure-narrow-l">{{ site.description | improve }}</p>
-      <p class="gray">{{ "See a pesky :bug:? [Let me know](/faq/reporting-bugs/)." | markdownify | strip_tags:"<p></p>" }}</p>
-      <p class="gray">PGP Key: <a class="p-key" href="{% asset pgp.asc @path %}">{{ site.gpg.fingerprint }}</a></p>
+      <p class="gray">
+        See a pesky :bug:?
+        <a target="_blank" href="{{site.url}}/faq/reporting-bugs">
+          Let me know
+        </a>
+      </p>
+      <p class="gray">
+        :lock: PGP Key:
+        <a target="_blank" class="p-key" href="{% asset pgp.asc @path %}">
+          {{ site.gpg.fingerprint }}
+        </a>
+      </p>
       <p class="h-adr gray">
-        Made in <span class="p-locality">Oakland</span>, <span
+        Made in :city_sunset: <span class="p-locality">Oakland</span>, :us: <span
           class="p-country-name">United States of America</a>.
       </p>
     </div>
     <div class="db pa2-l w-100 mt5 mt3-ns fl-l w-50-l color-inherit">
       <p class="tr-l">
-        <a href="/now/" target="_blank">See what I'm up to right now.</a>
+        <a href="/now/" target="_blank">:eyes: See what I'm up to right now.</a>
       </p>
       {% include_cached newsletter_inline.html %}
     </div>
