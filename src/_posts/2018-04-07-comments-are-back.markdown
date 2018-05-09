@@ -31,7 +31,7 @@ patches if maintainers are interested!
 ## Looking Towards the IndieWeb
 
 The end goal of this site is to eventually have something that'd look like
-<https://aaronparecki.com/2018/04/01/39/q1-review> data-wise. It's going to take
+what [aaronparecki.com][5] does data-wise. It's going to take
 some time to get here and to be frank, I think I might even move the micro
 status facet of things to a separate service - that's for another post. For now,
 you can catch that kind of content over on [Mastodon][4].
@@ -40,4 +40,5 @@ you can catch that kind of content over on [Mastodon][4].
 [2]: {% post_url 2018-01-18-new-infra %}
 [3]: https://git.jacky.wtf/me/isso/
 [4]: /subscribe/#social-media
+[5]: https://aaronparecki.com/2018/04/01/39/q1-review
 [isso]: https://posativ.org/isso/
