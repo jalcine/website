@@ -12,7 +12,7 @@ assets:
 
 webmentions:
   debug: true
-  pause_lookups: true
+  pause_lookups: false
   throttle_lookups:
     last_week: weekly
     last_month: monthly
