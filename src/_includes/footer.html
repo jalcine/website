@@ -21,7 +21,10 @@
         Made in <span class="p-locality">Oakland</span>, <span
           class="p-country-name">United States of America</a>.
       </p>
-      <p class="p-key">PGP Key: <a href="{% asset pgp.asc @path %}">{{ site.key_fingerprint }}
+      <p>
+        {{ ":lock:" | markdownify | strip_tags:"<p></p>" }}
+        PGP Key: <a class="p-key" href="{% asset pgp.asc @path %}">{{ site.gpg.fingerprint }}</a>
+      </p>
     </div>
     <div class="db pa2-l w-100 mt5 mt3-ns fl-l w-50-l color-inherit">
       <p class="tr-l">
