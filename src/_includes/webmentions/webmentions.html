@@ -1,7 +1,7 @@
 {% capture webmention_types %}{{ types | join: ',' }}{% endcapture %}
 <div class="webmentions"{% unless webmention_types=="" %} data-webmention-types="{{ webmention_types }}"{% endunless %}>
   {% if webmentions.size > 0 %}
-    <ol class="webmentions__list list">
+    <ol class="webmentions__list list pa1">
       {% for webmention in webmentions %}
         <li id="webmention-{{ webmention.id }}" class="webmentions__item">
           <article class="h-cite webmention webmention--{{ webmention.type }}

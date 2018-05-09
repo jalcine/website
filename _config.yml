@@ -152,7 +152,7 @@ analytics:
 
 webmentions:
   debug: false
-  pages: false
+  pages: true
   collections: true
   pause_lookups: false
   username: jacky.wtf
