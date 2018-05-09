@@ -17,9 +17,7 @@
       {% include_cached search.html %}
       <p class="p-note f5 lh-copy measure-narrow-l">{{ site.description | improve }}</p>
       <p class="gray">{{ "See a pesky :bug:? [Let me know](/faq/reporting-bugs/)." | markdownify | strip_tags:"<p></p>" }}</p>
-      <p class="gray">
-        {{ "PGP Key [{{ site.gpg.fingerprint }}]({% asset pgp.asc @path %}) :lock:" | markdownify | strip_tags:"<p></p>" }}
-      </p>
+      <p class="gray">PGP Key: <a class="p-key" href="{% asset pgp.asc @path %}">{{ site.gpg.fingerprint }}</a></p>
       <p class="h-adr gray">
         Made in <span class="p-locality">Oakland</span>, <span
           class="p-country-name">United States of America</a>.
