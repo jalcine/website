@@ -8,6 +8,8 @@ category: updates
 tags:
   - indieweb
   - tips
+syndication:
+  - https://playvicious.social/@jalcine/100001100841226841
 ---
 
 A new addition I've added to the site was the ability to send [WebMentions][1]
