@@ -3,6 +3,8 @@
 
 source 'https://rubygems.org'
 
+ruby '2.4.4'
+
 # {{{ Core Utilities
 gem 'bundler'
 gem 'dotenv'

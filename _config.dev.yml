@@ -13,6 +13,11 @@ assets:
 webmentions:
   debug: true
   pause_lookups: true
+  throttle_lookups:
+    last_week: weekly
+    last_month: monthly
+    last_year: yearly
+    older: yearly
 
 isso_host: comments.jacky.vagrant.test
 
