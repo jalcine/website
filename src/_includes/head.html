@@ -27,7 +27,7 @@
 {% if page.redirect %}
   <meta http-equiv="refresh" content="2; url={{ page.redirect.to | prepend: site.url }}">
 {% endif %}
-<meta name='revisit-after' content='7 days'>
+<meta name='revisit-after' content='1 day'>
 {% if page.date %}
   <meta name="date" content="{{ page.date }}">
 {% endif %}
@@ -71,8 +71,9 @@
 <link rel="canonical" href="{{ full_page_uri }}">
 <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 
-{% webmentions_head %}
 <link rel="authorization_endpoint" href="{{ site.url }}/.indie/auth">
 <link rel="token_endpoint" href="{{ site.url }}/.indie/token">
+
+{% webmentions_head %}
 
 <title>{{ correct_title }}</title>

@@ -1,0 +1,6 @@
+{% if webmentions.size > 0 %}
+  <strong>Liked by:</strong>
+  <div class="webmentions webmentions--likes cb cf">
+    {% include_relative _facepile.html %}
+  </div>
+{% endif %}

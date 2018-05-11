@@ -16,4 +16,6 @@
     </div>
   </fieldset>
 </form>
-{% webmentions page.url replies posts reposts likes %}
+{% webmention_likes page.url %}
+{% webmention_reposts page.url %}
+{% webmention_posts page.url %}
