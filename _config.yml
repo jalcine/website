@@ -169,14 +169,6 @@ webmentions:
     uglify: true
     deploy: false
     destination: _assets/js
-  templates:
-    count: src/_includes/webmentions/count.html
-    likes: src/_includes/webmentions/likes.html
-    links: src/_includes/webmentions/links.html
-    posts: src/_includes/webmentions/posts.html
-    replies: src/_includes/webmentions/replies.html
-    reposts: src/_includes/webmentions/reposts.html
-    webmentions: src/_includes/webmentions/webmentions.html
 
 autolink_email:
   link_attr: class="email-link" # attributes to add to the link
