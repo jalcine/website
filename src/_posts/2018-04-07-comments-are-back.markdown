@@ -6,7 +6,7 @@ category: system
 tags:
   - infrastructure
   - comments
-  - introduction
+  - indieweb
 excerpt: |
   You know, comments _aren't_ so bad. I missed them.
 ---
