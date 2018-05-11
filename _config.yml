@@ -36,7 +36,7 @@ markdown: kramdown
 
 pagination:
   enabled: true
-  debug: true
+  debug: false
   collection: posts
   per_page: 12
   permalink: '/page/:num/'
@@ -151,7 +151,7 @@ analytics:
   site_id: 1
 
 webmentions:
-  debug: true
+  debug: false
   pages: true
   collections: true
   pause_lookups: false
