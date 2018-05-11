@@ -165,11 +165,6 @@ webmentions:
     - "https://jalcine.me"
     - "https://www.jacky.wtf"
     - "https://www.jalcine.me"
-  throttle_lookups:
-    last_week: daily
-    last_month: every 2 days
-    last_year: every week
-    older: monthly
   js:
     uglify: true
     deploy: false
