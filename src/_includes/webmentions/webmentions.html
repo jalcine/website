@@ -13,7 +13,7 @@
           {% include webmentions/repost.html webmention=webmention %}
           {% else %}
           {% include webmentions/catch_all.html webmention=webmention %}
-          {% endif %}
+          {% endcase %}
         </li>
       {% endfor %}
     </ol>
