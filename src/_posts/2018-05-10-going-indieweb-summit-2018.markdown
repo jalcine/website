@@ -8,10 +8,10 @@ syndication:
   - https://twitter.com/jackyalcine/status/995052829667557376
 event:
   uri: "https://2018.indieweb.org/"
-  name: Indie Web Camp 2018
-  geo: Eliot Center, 1226 SW Salmon St, Portland, Oregon
-  comment: I'm excited to be at IndieWebCamp 2018.
-  rsvp: yes
+  name: "Indie Web Camp 2018"
+  geo: "Eliot Center, 1226 SW Salmon St, Portland, Oregon"
+  comment: "I'm excited to be at IndieWebCamp 2018."
+  rsvp: "yes"
   date:
     start: 2018-06-26 09:00:00 PDT
     end: 2018-06-27 17:30:00 PDT
