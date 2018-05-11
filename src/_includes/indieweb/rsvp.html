@@ -9,7 +9,7 @@
   </div>
   <div class="dib fl ml3">
     <h2 class="mv1">
-      <a class="u-in-reply-to" href="{{ page.event.url}}">
+      <a class="u-in-reply-to" href="{{ page.event.uri }}">
         {{ page.event.name }}
       </a>
     </h2>
@@ -23,8 +23,10 @@
         Permalink
       </a>
       &mdash;
-      RSVP: <strong class="p-rsvp" value="{{ page.event.rsvp}}">
-        {{ page.event.comment }}</strong>
+      RSVP:
+      <strong class="p-rsvp" value="{{ page.event.rsvp }}">
+        {{ page.event.comment }}
+      </strong>
     </p>
   </div>
 </section>
