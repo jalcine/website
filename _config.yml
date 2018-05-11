@@ -36,7 +36,7 @@ markdown: kramdown
 
 pagination:
   enabled: true
-  debug: false
+  debug: true
   collection: posts
   per_page: 12
   permalink: '/page/:num/'
@@ -104,7 +104,7 @@ collections:
     output: true
     layout: post
   drafts:
-    output: true
+    output: false
     layout: post
   projects:
     output: true
@@ -151,7 +151,7 @@ analytics:
   site_id: 1
 
 webmentions:
-  debug: false
+  debug: true
   pages: true
   collections: true
   pause_lookups: false
@@ -170,6 +170,12 @@ webmentions:
     deploy: false
     destination: _assets/js
   templates:
+    count: src/_includes/webmentions/count.html
+    likes: src/_includes/webmentions/likes.html
+    links: src/_includes/webmentions/links.html
+    posts: src/_includes/webmentions/posts.html
+    replies: src/_includes/webmentions/replies.html
+    reposts: src/_includes/webmentions/reposts.html
     webmentions: src/_includes/webmentions/webmentions.html
 
 autolink_email:
