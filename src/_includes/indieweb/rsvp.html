@@ -24,9 +24,11 @@
       </a>
       &mdash;
       RSVP:
-      <strong class="p-rsvp" value="{{ page.event.rsvp }}">
-        {{ page.event.comment }}
-      </strong>
+      <data class="p-rsvp" value="{{ page.event.rsvp }}">
+        {% if page.event.rsvp == "yes" %}:heavy_check_mark:{% endif %}
+        {% if page.event.rsvp == "no"  %}:no_entry_sign:{% endif %}
+        <strong>{{ page.event.comment }}</strong>
+      </data>
     </p>
   </div>
 </section>
