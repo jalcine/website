@@ -38,6 +38,14 @@
   }
 }
 
+.fontFamily__serif {
+  @include expected-serif-fonts;
+}
+
+.fontFamily__sansSerif {
+  @include expected-sans-serif-fonts;
+}
+
 .fontFamily__special {
   @include expected-display-fonts;
 }

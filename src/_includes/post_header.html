@@ -27,8 +27,17 @@
       <span>:bookmark: {{ page.tags | linkify_tags }}</span>
     {% endif %}
     <span>
-      :clock7: written <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string: "ordinal" }}</time>
-      {% if page.revised %}- revised <time class="dt-updated" datetime="{{ page.revised | date_to_xmlschema }}">{{ page.revised | date_to_string: "oridinal" }}</time>>{% endif %}
+      :clock7:
+      written
+      <time class="dt-published"
+            datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%B %-d %Y" }}
+      </time>
+      {% if page.revised %}- revised
+        <time class="dt-updated" datetime="{{ page.revised | date_to_xmlschema }}">
+          {{ page.revised | date_to_string: "%B %-d %Y" }}
+        </time>
+      {% endif %}
     </span>
     <span>
       :eyeglasses:
