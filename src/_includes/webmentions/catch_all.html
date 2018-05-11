@@ -1,0 +1,35 @@
+<article class="h-cite webmention webmention--{{ include.webmention.type }}
+         {% unless webmention.author %}webmention--no-author{% endunless %}
+         {% unless webmention.author.photo %}webmention--no-photo{% endunless %}
+         {% if include.webmention.source=='twitter' %}{% if include.webmention.type=='like' or include.webmention.type=='repost' %}webmention--author-starts{% endif %}{% endif %}">
+  {% if include.webmention.author %}
+    <div class="webmention__author p-author h-card">
+      <a class="u-url" href="{{ include.webmention.author.url }}">
+        {% if include.webmention.author.photo %}
+          <img class="webmention__author__photo u-photo" src="{{ include.webmention.author.photo }}" alt="" title="{{ include.webmention.author.name }}">
+        {% endif %}
+        <b class="p-name">{{ include.webmention.author.name }}</b>
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="webmention__content p-content">
+    {% if include.webmention.content %}
+      {{ include.webmention.content }}
+    {% else %}
+      {{ include.webmention.title }}
+    {% endif %}
+  </div>
+
+  <div class="webmention__meta">
+    {% if include.webmention.pubdate %}
+      <time class="webmention__pubdate dt-published"
+            datetime="{{ include.webmention.pubdate | date_to_xmlschema }}">{{ include.webmention.pubdate | date_to_string: 'ordianal' }}</time>
+    {% endif %}
+    {% if include.webmention.pubdate and webmention.url %}|{% endif %}
+    {% if include.webmention.url %}
+      <a target="_blank" class="webmention__source u-url" href="{{ include.webmention.url }}">Permalink</a>
+    {% endif %}
+  </div>
+</article>
+

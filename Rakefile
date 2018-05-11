@@ -78,9 +78,9 @@ namespace :notify do
 
   desc 'Notify the IndieWeb'
   task :webmention do
-    FileUtils.mkdir_p "#{ENV['PWD']}.cache/webmention"
     puts '* Notifying webmention.io'
     puts system('bundle exec jekyll webmention')
+    puts system('bundle exec webmention https://jacky.wtf/')
   end
 end
 

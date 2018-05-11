@@ -4,40 +4,16 @@
     <ol class="webmentions__list list pa1">
       {% for webmention in webmentions %}
         <li id="webmention-{{ webmention.id }}" class="webmentions__item">
-          <article class="h-cite webmention webmention--{{ webmention.type }}
-            {% unless webmention.author %}webmention--no-author{% endunless %}
-            {% unless webmention.author.photo %}webmention--no-photo{% endunless %}
-            {% if webmention.source=='twitter' %}{% if webmention.type=='like' or webmention.type=='repost' %}webmention--author-starts{% endif %}{% endif %}">
-            {% if webmention.author %}
-              <div class="webmention__author p-author h-card">
-                <a class="u-url" href="{{ webmention.author.url }}">
-                  {% if webmention.author.photo %}
-                    <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}">
-                  {% endif %}
-                  <b class="p-name">{{ webmention.author.name }}</b>
-                </a>
-              </div>
-            {% endif %}
-
-            <div class="webmention__content p-content">
-              {% if webmention.content %}
-                {{ webmention.content }}
-              {% else %}
-                {{ webmention.title }}
-              {% endif %}
-            </div>
-            
-            <div class="webmention__meta">
-              {% if webmention.pubdate %}
-                <time class="webmention__pubdate dt-published"
-                      datetime="{{ webmention.pubdate | date_to_xmlschema }}">{{ webmention.pubdate | date_to_string: 'ordianal' }}</time>
-              {% endif %}
-              {% if webmention.pubdate and webmention.url %}|{% endif %}
-              {% if webmention.url %}
-                <a target="_blank" class="webmention__source u-url" href="{{ webmention.url }}">Permalink</a>
-              {% endif %}
-            </div>
-          </article>
+          {% case webmention.type %}
+          {% when 'like' %}
+          {% include webmentions/like.html webmention=webmention %}
+          {% when 'repost' %}
+          {% include webmentions/repost.html webmention=webmention %}
+          {% when 'reply' %}
+          {% include webmentions/repost.html webmention=webmention %}
+          {% else %}
+          {% include webmentions/catch_all.html webmention=webmention %}
+          {% endif %}
         </li>
       {% endfor %}
     </ol>

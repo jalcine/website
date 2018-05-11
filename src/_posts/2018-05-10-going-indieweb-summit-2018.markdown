@@ -3,6 +3,9 @@ layout: post
 title: I'm Going to the IndieWeb Summit 2018!
 date: 2018-05-10 20:58:50 PDT
 category: rsvp
+syndication:
+  - https://playvicious.social/@jalcine/100012786597022712
+   -https://twitter.com/jackyalcine/status/995052829667557376
 event:
   uri: "https://2018.indieweb.org/"
   name: Indie Web Camp 2018
