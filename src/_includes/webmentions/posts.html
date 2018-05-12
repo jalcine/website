@@ -3,14 +3,14 @@
     <strong>:pencil: Posted by:</strong>
     <ul class="list">
       {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
-          <a class="webmention__title webmention__source u-url"
+        <li id="webmention-{{ webmention.id }}" class="webmention--{{ webmention.type }}">
+          <a class="u-url"
              href="{{ webmention.url }}">
             {{ webmention.title }}
           </a>
           <div class="webmention__meta">
             {% if webmention.pubdate %}
-              <time class="webmention__pubdate dt-published" datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
+              <time class="gray dt-published" datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
             {% endif %}
           </div>
         </li>
