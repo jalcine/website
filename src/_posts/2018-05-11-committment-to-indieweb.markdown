@@ -25,9 +25,19 @@ Now, that same set of WebMentions look like this:
 
 ![How WebMentions look now.]({% asset posts/webmentions-new.png @path %})
 
-So much better!
+So much better now!
+
+## Work on Libraries and Apps
+I use a bit of a [unconventional system][4] as my daily driver. That said, 
+having a native client for my machine to interact with the IndieWeb
+would make my life a lot easier. On top of working on an [ActivityPub][5]
+library that other applications can build on top of, I think I'll be
+moving into seeing if I can work on making a live posting / streaming
+client for my site. Something to ponder.
 
 [indieweb]: https://indieweb.org/
 [1]: {{ site.url }}/faq/about-website/
 [2]: {{ site.url }}{% post_url 2018-04-07-comments-are-back %}
 [3]: {{ site.url }}{% post_url 2018-05-09-getting-more-indie %}
+[4]: {{ site.url }}/gear/#operating-system
+[3]: {{ site.url }}{% post_url 2018-05-04-library-jsonld-activitypub %}

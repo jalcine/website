@@ -173,6 +173,7 @@ webmentions:
     likes: src/_includes/webmentions/likes.html
     links: src/_includes/webmentions/links.html
     posts: src/_includes/webmentions/posts.html
+    replies: src/_includes/webmentions/replies.html
     reposts: src/_includes/webmentions/reposts.html
 
 autolink_email:

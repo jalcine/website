@@ -1,18 +1,19 @@
 {% if webmentions.size > 0 %}
-  <strong>:link: Links from:</strong>
-  <div class="webmentions webmentions--links">
-    <ul class="webmentions__list list">
+  <section class="cb cf mv2">
+    <strong>:link: Linked from:</strong>
+    <ul class="list">
       {% for webmention in webmentions %}
-        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }} ma0 pa0">
+        <li id="webmention-{{ webmention.id }}"
+            class="ma1">
           <div class="webmention__meta">
             {% if webmention.author %}
               <a class="webmention__author h-card u-url"
                  href="{{ webmention.author.url }}">
                 {% if webmention.author.photo %}
                   <img class="mw2 br-100 dim grow u-photo v-mid"
-                      src="{{ webmention.author.photo }}"
-                      alt="{{ webmention.author.name }}"
-                      title="{{ webmention.author.name }}" />
+                       src="{{ webmention.author.photo }}"
+                       alt="{{ webmention.author.name }}"
+                       title="{{ webmention.author.name }}" />
                 {% endif %}
                 {{ webmention.author.name }}
               </a>
@@ -31,5 +32,5 @@
         </li>
       {% endfor %}
     </ul>
-  </div>
+  </section>
 {% endif %}

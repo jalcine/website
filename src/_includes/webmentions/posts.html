@@ -1,7 +1,7 @@
 {% if webmentions.size > 0 %}
-  <strong>:pencil: Posted by:</strong>
-  <div class="webmentions webmentions--posts">
-    <ul class="webmentions__list list">
+  <section class="cb cf mv2">
+    <strong>:pencil: Posted by:</strong>
+    <ul class="list">
       {% for webmention in webmentions %}
         <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }}">
           <a class="webmention__title webmention__source u-url"
@@ -16,5 +16,5 @@
         </li>
       {% endfor %}
     </ul>
-  </div>
+  </section>
 {% endif %}
