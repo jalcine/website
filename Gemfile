@@ -16,7 +16,7 @@ group :jekyll do
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
   gem 'image_optim'
-  gem 'jekyll', '3.7.0'
+  gem 'jekyll'
   gem 'kramdown'
   gem 'mini_magick'
   gem 'parallel'
@@ -38,7 +38,7 @@ group :jekyll_plugins do
   gem 'jekyll-tagging-related_posts'
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
-  gem 'jekyll-webmention_io', '2.8.0'
+  gem 'jekyll-webmention_io'
   gem 'jemoji'
   gem 'ruby-oembed'
 end

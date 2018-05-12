@@ -124,7 +124,7 @@ GEM
     image_size (1.5.0)
     in_threads (1.5.0)
     io-like (0.3.0)
-    jekyll (3.7.0)
+    jekyll (3.8.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -175,7 +175,7 @@ GEM
       typogruby
     jekyll-watch (2.0.0)
       listen (~> 3.0)
-    jekyll-webmention_io (2.8.0)
+    jekyll-webmention_io (2.9.1)
       htmlbeautifier (~> 1.1)
       http (~> 2.0)
       jekyll (>= 2.0, < 4.0)
@@ -222,7 +222,7 @@ GEM
     nuggets (1.5.0)
     octokit (4.9.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    openssl (2.1.0)
+    openssl (2.1.1)
     parallel (1.12.1)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
@@ -325,7 +325,7 @@ DEPENDENCIES
   haml
   html-proofer
   image_optim
-  jekyll (= 3.7.0)
+  jekyll
   jekyll-assets
   jekyll-feed
   jekyll-gist
@@ -337,7 +337,7 @@ DEPENDENCIES
   jekyll-tagging-related_posts
   jekyll-twitter-plugin
   jekyll-typogrify
-  jekyll-webmention_io (= 2.8.0)
+  jekyll-webmention_io
   jemoji
   kramdown
   libnotify
