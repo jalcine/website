@@ -1,0 +1,37 @@
+{% if webmentions.size > 0 %}
+  <strong>Links from:</strong>
+  <div class="webmentions webmentions--links">
+    <ul class="webmentions__list list">
+      {% for webmention in webmentions %}
+        <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }} ma0 pa0">
+          <div class="webmention__meta">
+            {% if webmention.author %}
+              <a class="webmention__author h-card u-url" href="{{ webmention.author.url }}">
+                {% if mention.author.photo %}
+                  <img class="mw2 br-100 dim grow u-photo v-mid"
+                      src="{{ mention.author.photo }}"
+                      alt="{{ mention.author.name }}"
+                      title="{{ mention.author.name }}" />
+                {% endif %}
+                {{ webmention.author.name }}
+              </a>
+            {% endif %}
+            {% if webmention.pubdate and webmention.url %}on{% endif %}
+            {% if webmention.pubdate %}
+              &mdash;
+              <a class="webmention__source u-url" href="{{ webmention.url }}">
+                <time class="webmention__pubdate dt-published"
+                      datetime="{{ webmention.pubdate | date_to_rfc822 }}">
+                  {{ webmention.pubdate | date: '%B %-d %Y' }}
+                </time>
+              </a>
+            {% endif %}
+          </div>
+          <div class="webmention__content p-content mv1 pa1 bl bw2">
+            {{ webmention.content | strip_tags:"<p>" }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

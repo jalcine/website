@@ -1,6 +1,21 @@
 {% if webmentions.size > 0 %}
   <strong>Liked by:</strong>
   <div class="webmentions webmentions--likes cb cf">
-    {% include_relative _facepile.html %}
+    {% for mention in webmentions %}
+      <div class="ma2 dib fl webmention__author p-author h-card">
+        <a title="{{ mention.author.name }}"
+           target="_blank"
+           class="u-url"
+           href="{{ mention.author.url }}">
+          {% if mention.author.photo %}
+          <img class="mw2 br-100 dim grow u-photo v-mid"
+               src="{{ mention.author.photo }}"
+               alt="{{ mention.author.name }}"
+               title="{{ mention.author.name }}" />
+          {% endif %}
+          {{ mention.author.name }}
+        </a>
+      </div>
+    {% endfor %}
   </div>
 {% endif %}

@@ -28,7 +28,6 @@ $ git add -i
 *** Commands ***
   1: status     2: update      3: revert     4: add untracked
   5: patch      6: diff        7: quit       8: help
-What now>
 {% endhighlight %}
 
 It shows you a diff of the changes made to a particular file and allows you to

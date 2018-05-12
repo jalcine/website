@@ -2,6 +2,7 @@
 build_drafts: true
 show_drafts: true
 incremental: true
+verbose: true
 url: 'http://localhost:1993'
 
 assets:
@@ -12,12 +13,10 @@ assets:
 
 webmentions:
   debug: true
-  pause_lookups: false
-  throttle_lookups:
-    last_week: weekly
-    last_month: monthly
-    last_year: yearly
-    older: yearly
+  pause_lookups: true
+
+pagination:
+  debug: true
 
 isso_host: comments.jacky.vagrant.test
 

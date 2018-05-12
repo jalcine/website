@@ -3,7 +3,7 @@ destination: _site/
 source: src/
 layouts_dir: src/_layouts/
 plugins_dir: plugins/
-strict_front_matter: false
+strict_front_matter: true
 
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
@@ -113,7 +113,7 @@ collections:
 assets:
   destination: '/assets'
   compression: true
-  gzip: true
+  gzip: false
   cdn:
     baseurl: true
   defaults:
@@ -171,6 +171,8 @@ webmentions:
     destination: _assets/js
   templates:
     likes: src/_includes/webmentions/likes.html
+    links: src/_includes/webmentions/links.html
+    posts: src/_includes/webmentions/posts.html
     reposts: src/_includes/webmentions/reposts.html
 
 autolink_email:
@@ -193,6 +195,3 @@ liquid:
 
 isso_host: comments.jacky.wtf
 category_path: weblog/categories/
-
-jekyll_tidy:
-  compress_html: true
