@@ -5,7 +5,6 @@
       {% for webmention in webmentions %}
         <li id="webmention-{{ webmention.id }}" class="webmentions__item webmention webmention--{{ webmention.type }} ma0 pa0">
           <div class="webmention__meta">
-            {{ webmention }}
             {% if webmention.author %}
               <a class="webmention__author h-card u-url"
                  href="{{ webmention.author.url }}">
