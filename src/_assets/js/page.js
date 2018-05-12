@@ -1,4 +1,5 @@
 //= require webfontloader/webfontloader.js
+//= require picturefill/dist/picturefill.min.js
 //= require _fonts.js
 //= require _analytics.js
 
