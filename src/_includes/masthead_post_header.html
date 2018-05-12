@@ -1,10 +1,10 @@
 <header role="group" class="masthead post">
   {% asset '{{ page.image }}' width=auto height=auto %}
-  <h1>{{ page.title | improve }}</h1>
+  <h1 itemprop="name headline">{{ page.title | improve }}</h1>
   {% if page.byline %}<h2>{{ page.byline | improve }}</h2>{% endif %}
   {% if page.excerpt and page.excerpt != 'none' %}
     <blockquote class="excerpt">
-    {{ page.excerpt | markdownify | strip_tags: '<p>' }}
+    {{ page.excerpt | markdownify }}
     </blockquote>
   {% endif %}
   <address role="group" class="post">

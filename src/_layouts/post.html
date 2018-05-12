@@ -3,7 +3,7 @@ layout: bare
 image: none
 excerpt: none
 ---
-<article class="h-entry">
+<article class="h-entry" itemscope itemtype="http://schema.org/BlogPosting">
   {% if page.image and page.image != 'none' %}
     {% include masthead_post_header.html %}
   {% else %}
@@ -11,6 +11,7 @@ excerpt: none
   {% endif %}
   {% include post_indieweb.html %}
   <main role="group" class="e-content post"
+                     itemprop="articleBody"
         data-track-content data-content-name="blog-post"
         data-content-piece="{{ page.title }}">
     {{ content | letter_spacing | improve }}

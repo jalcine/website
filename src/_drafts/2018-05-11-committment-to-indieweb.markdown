@@ -23,6 +23,10 @@ a bit like this:
 
 Now, that same set of WebMentions look like this:
 
+![How WebMentions look now.]({% asset posts/webmentions-new.png @path %})
+
+So much better!
+
 [indieweb]: https://indieweb.org/
 [1]: {{ site.url }}/faq/about-website/
 [2]: {{ site.url }}{% post_url 2018-04-07-comments-are-back %}

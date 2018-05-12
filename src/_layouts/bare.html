@@ -4,26 +4,11 @@
     {% include head.html title=page.title %}
   </head>
   <body>
-    {% unless page.components.header == false %}{% include_cached header.html %}{% endunless %}
+    {% unless page.components.header == false %}{% include header.html %}{% endunless %}
     <main>
       {{ content }}
     </main>
-    {% unless page.components.footer == false %}{% include_cached footer.html %}{% endunless %}
-    <script type='text/javascript' defer=true async=true src="//{{ site.analytics.host }}/piwik.js"></script>
-    <noscript><img src="//{{ site.analytics.host }}/piwik.php?idsite={{ site.analyitcs.site_id }}&rec=1&action_name={{ page.title | url_param_escape }}" style="border:0;" alt="" /></noscript>
-    <script data-isso="//{{ site.isso_host }}/"
-      data-isso-css="true"
-      data-isso-lang="en"
-      data-isso-reply-to-self="true"
-      data-isso-require-author="true"
-      data-isso-require-email="true"
-      data-isso-max-comments-top="10"
-      data-isso-max-comments-nested="3"
-      data-isso-reveal-on-click="3"
-      data-isso-avatar="true"
-      data-isso-vote="true" src="//{{ site.isso_host }}/js/embed.min.js"
-      async=true defer=true></script>
-    {% webmentions_js %}
-    {% asset page.js async=true defer=true %}
+    {% unless page.components.footer == false %}{% include footer.html %}{% endunless %}
+    {% include javascript.html %}
   </body>
 </html>
