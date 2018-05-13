@@ -166,7 +166,7 @@ webmentions:
     - "https://www.jacky.wtf"
     - "https://www.jalcine.me"
   js:
-    uglify: true
+    uglify: false
     deploy: false
     destination: _assets/js
   templates:
