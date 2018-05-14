@@ -9,20 +9,7 @@
       {{ content }}
     </main>
     {% unless page.components.footer == false %}{% include footer.html %}{% endunless %}
-    {% asset page.js async=true defer=true %}
-    {% webmentions_js %}
-    <script data-isso="//{{ site.isso_host }}/"
-      data-isso-css="true"
-      data-isso-lang="en"
-      data-isso-reply-to-self="true"
-      data-isso-require-author="true"
-      data-isso-require-email="true"
-      data-isso-max-comments-top="10"
-      data-isso-max-comments-nested="3"
-      data-isso-reveal-on-click="3"
-      data-isso-avatar="true"
-      data-isso-vote="true" src="//{{ site.isso_host }}/js/embed.min.js"
-      async=true defer=true
-    ></script>
+    {% include_cached javascript.html %}
+    <noscript><img src="//{{ site.analytics.host }}/piwik.php?idsite={{ site.analyitcs.site_id }}&rec=1&action_name={{ page.title | url_param_escape }}" style="border:0;" alt="" /></noscript>
   </body>
 </html>

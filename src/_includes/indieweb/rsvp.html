@@ -1,0 +1,35 @@
+<section class="w-100 near-black ph4 pv2 cb cf">
+  <div class="mw3 ml2 db fl v-mid mv1">
+    <span class="mw3 bg-red white w-100 db f3 tc pa1 fw7 fontFamily__sansSerif">
+      {{ page.event.date.start | date: "%B" }}
+    </span>
+    <span class="mw3 bg-near-white near-black w-100 db tc f2 fw7 pa1 fontFamily__serif">
+      {{ page.event.date.end | date: "%-d" }}
+    </span>
+  </div>
+  <div class="dib fl ml3">
+    <h2 class="mv1">
+      <a class="u-in-reply-to" href="{{ page.event.uri }}">
+        {{ page.event.name }}
+      </a>
+    </h2>
+    <p class="lh-copy h-adr mv1">
+      :globe_with_meridians:
+      {{ page.event.geo }}
+    </p>
+    <p class="mv1">
+      :link:
+      <a href="{{ page.event.uri }}">
+        Permalink
+      </a>
+      &mdash;
+      RSVP:
+      {{ page.event.rsvp }}
+      <data class="p-rsvp" value="{{ page.event.rsvp }}">
+        {% if page.event.rsvp == "yes" %}:heavy_check_mark:{% endif %}
+        {% if page.event.rsvp == "no"  %}:no_entry_sign:{% endif %}
+        <strong>{{ page.event.comment }}</strong>
+      </data>
+    </p>
+  </div>
+</section>

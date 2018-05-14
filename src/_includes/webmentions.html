@@ -1,0 +1,23 @@
+<h4 class="f4 mv2 tracked-tight gray">WebMentions</h4>
+<form class="mention-form" method="post" action="https://webmention.io/{{ site.webmentions.username }}/webmention">
+  <fieldset class="cf bn ma0 pa0">
+    <p class='lh-copy'>
+      Made a post on social media or wrote about this post? Link it below so I
+      can credit you and create a WebMention.
+    </p>
+    <label for="url-mention">Response URI:</label>
+    <input name="target" value="{{site.url}}{{ page.url }}" type="hidden">
+    <div class="cf pv2">
+      <input class="br--left br4 ba f6 w-75 f5-l input-reset fl gray hover-black
+             bg-white lh-solid pa3 b--black-70 br-0"
+      id="url-mention" name="source" required placeholder="https://yourdomain/response" type="url">
+      <input type="submit" value="Send WebMention" class="br4 lh-solid br--right
+      f6 w-25 pa3 f5-l button-reset ba b--black-70 fl tc bl-0 bg-animate bg-black-70 hover-bg-black white pointer" />
+    </div>
+  </fieldset>
+</form>
+{% webmention_likes page.url %}
+{% webmention_links page.url %}
+{% webmention_replies page.url %}
+{% webmention_posts page.url %}
+{% webmention_reposts page.url %}

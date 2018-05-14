@@ -1,0 +1,20 @@
+{% if webmentions.size > 0 %}
+  <section class="cb cf mv2">
+    <strong>:stars: Liked by:</strong>
+    <div class="cb cf mv2">
+      {% for mention in webmentions %}
+        {% if mention.author.photo %}
+          <span class="ma1 fl p-author h-card">
+            <a title="{{ mention.author.name }}" target="_blank"
+               class="u-url" href="{% if mention.url %}{{ mention.url }}{% else %}{{ mention.author.url }}{% endif %}">
+                <img class="mw2 br-100 dim grow u-photo v-mid"
+                     src="{{ mention.author.photo }}"
+                     alt="{{ mention.author.name }}"
+                     title="{{ mention.author.name }}">
+            </a>
+          </span>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

@@ -3,7 +3,7 @@ destination: _site/
 source: src/
 layouts_dir: src/_layouts/
 plugins_dir: plugins/
-strict_front_matter: false
+strict_front_matter: true
 
 # Metadata about the site that we'd use very very often.
 # {{{ Metadata
@@ -104,7 +104,7 @@ collections:
     output: true
     layout: post
   drafts:
-    output: true
+    output: false
     layout: post
   projects:
     output: true
@@ -113,7 +113,7 @@ collections:
 assets:
   destination: '/assets'
   compression: true
-  gzip: true
+  gzip: false
   cdn:
     baseurl: true
   defaults:
@@ -131,9 +131,9 @@ assets:
     type: file
     enabled: true
   sources:
-    - ../node_modules
     - _assets/files
     - _assets/favicon
+    - ../node_modules
   plugins:
     css:
       autoprefixer:
@@ -144,7 +144,7 @@ assets:
 jekyll-mentions: https://twitter.com
 
 gpg:
-  fingerprint: 0x4DEFFC9FF82E8908
+  fingerprint: "0x4DEFFC9FF82E8908"
 
 analytics:
   host: analytics.jacky.wtf
@@ -152,9 +152,9 @@ analytics:
 
 webmentions:
   debug: false
-  pages: false
+  pages: true
   collections: true
-  pause_lookups: true
+  pause_lookups: false
   username: jacky.wtf
   cache_folder: .cache/webmention
   cache_bad_uris_for: 1
@@ -165,15 +165,16 @@ webmentions:
     - "https://jalcine.me"
     - "https://www.jacky.wtf"
     - "https://www.jalcine.me"
-  throttle_lookups:
-    last_week: daily
-    last_month: weekly
-    last_year: every 2 weeks
-    older: monthly
   js:
-    uglify: true
+    uglify: false
     deploy: false
     destination: _assets/js
+  templates:
+    likes: src/_includes/webmentions/likes.html
+    links: src/_includes/webmentions/links.html
+    posts: src/_includes/webmentions/posts.html
+    replies: src/_includes/webmentions/replies.html
+    reposts: src/_includes/webmentions/reposts.html
 
 autolink_email:
   link_attr: class="email-link" # attributes to add to the link

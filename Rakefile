@@ -14,7 +14,7 @@ def run_jekyll_in_dev(args = [])
 end
 
 def run_jekyll_in_prod(args = [])
-  run_jekyll(args + ['--destination', './_deploy', '--trace', '--verbose'])
+  run_jekyll(args + ['--destination', './_deploy', '--verbose', '--trace'])
 end
 
 task :serve do
@@ -23,7 +23,7 @@ end
 
 namespace :build do
   task :watch do
-    run_jekyll_in_dev(['build', '--incremental', '--watch', '--verbose'])
+    run_jekyll_in_dev(['build', '--watch'])
   end
 
   task :prod do
@@ -78,9 +78,9 @@ namespace :notify do
 
   desc 'Notify the IndieWeb'
   task :webmention do
-    FileUtils.mkdir_p "#{ENV['PWD']}.cache/webmention"
     puts '* Notifying webmention.io'
-    puts `bundle exec jekyll webmention`
+    puts system('bundle exec jekyll webmention')
+    puts system('bundle exec webmention https://jacky.wtf/')
   end
 end
 

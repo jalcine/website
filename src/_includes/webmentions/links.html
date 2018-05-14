@@ -1,0 +1,35 @@
+{% if webmentions.size > 0 %}
+  <section class="cb cf mv2">
+    <strong>:link: Linked from:</strong>
+    <ul class="list">
+      {% for webmention in webmentions %}
+        <li id="webmention-{{ webmention.id }}" class="ma1">
+          <div> 
+            {% if webmention.author %}
+              <a class="h-card u-url"
+                 href="{{ webmention.author.url }}">
+                {% if webmention.author.photo %}
+                  <img class="mw2 mr2 br-100 dim grow u-photo v-mid"
+                       src="{{ webmention.author.photo }}"
+                       alt="{{ webmention.author.name }}"
+                       title="{{ webmention.author.name }}">
+                {% endif %}
+                {{ webmention.author.name }}
+              </a>
+            {% endif %}
+            {% if webmention.pubdate and webmention.url %}on{% endif %}
+            {% if webmention.pubdate %}
+              &mdash;
+              <a class="u-url" href="{{ webmention.url }}">
+                <time class="gray dt-published"
+                      datetime="{{ webmention.pubdate | date_to_rfc822 }}">
+                  {{ webmention.pubdate | date: '%B %-d %Y' }}
+                </time>
+              </a>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}

@@ -6,6 +6,7 @@ layout: page
   data-track-content data-content-name="faq"
   data-content-piece="{{ page.title }}">
   {{ content | improve | letter_spacing }}
+  {% include webmentions.html %}
   {% include comments.html %}
 </main>
 <a href="/faq/">&laquo; Back to FAQ index</a>

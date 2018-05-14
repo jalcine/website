@@ -19,8 +19,10 @@ the spec's abstract:
 > other sites mention it.
 
 It's a powerful way to counteract things like spam, allows people to own their
-responses and much more. This site supports it.
+responses and much more. This site supports it. Below are mentions that I've
+gotten straight to my home page.
 
+{% webmentions '{{ site.url }}' %}
 
 [indieweb]: https://indieweb.org
 [webmentions]: https://indieweb.org/webmentions

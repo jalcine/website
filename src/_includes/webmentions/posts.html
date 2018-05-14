@@ -1,0 +1,20 @@
+{% if webmentions.size > 0 %}
+  <section class="cb cf mv2">
+    <strong>:pencil: Posted by:</strong>
+    <ul class="list">
+      {% for webmention in webmentions %}
+        <li id="webmention-{{ webmention.id }}" class="webmention--{{ webmention.type }}">
+          <a class="u-url"
+             href="{{ webmention.url }}">
+            {{ webmention.title }}
+          </a>
+          <div class="webmention__meta">
+            {% if webmention.pubdate %}
+              <time class="gray dt-published" datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}

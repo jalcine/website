@@ -1,6 +1,8 @@
 ﻿---
 build_drafts: true
 show_drafts: true
+incremental: true
+verbose: true
 url: 'http://localhost:1993'
 
 assets:
@@ -13,10 +15,10 @@ webmentions:
   debug: true
   pause_lookups: true
 
-isso_host: comments.jacky.vagrant.test
-
 pagination:
   debug: true
+
+isso_host: comments.jacky.vagrant.test
 
 analytics:
   host: analytics.jacky.vagrant.test

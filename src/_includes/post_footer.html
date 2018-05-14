@@ -1,8 +1,9 @@
 <footer role="group" class="post" data-track-content>
-  <div class="mw8">
-    {% include post_related.html %}
+  <div class="mw8 mv2 ph4 mh2">
+    {% include post_syndication.html %}
+    {% include webmentions.html %}
     {% include comments.html %}
-    {% webmentions %}
+    {% include post_related.html %}
     {% include post_navigation.html %}
   </div>
   {% include post_lead.html %}

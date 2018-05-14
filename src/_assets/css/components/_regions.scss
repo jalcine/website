@@ -67,18 +67,25 @@ section.section__region {
   }
 }
 
+footer[role=document],
+header[role=document]
+{
+  a,
+  a:visited
+  {
+    @extend .washed-blue;
+    @extend .fw7;
+  }
+}
+
 header[role=document] {
   > nav {
     a {
       &.selected {
         @extend .bw2;
         @extend .b--yellow;
-        background-color: $yellow;
-        color: $black;
-      }
-
-      &:visited {
-        color: $navy;
+        @extend .bg-yellow;
+        @extend .near-black;
       }
     }
   }

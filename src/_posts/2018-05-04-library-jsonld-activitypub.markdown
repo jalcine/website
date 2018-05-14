@@ -11,6 +11,9 @@ tags:
   - activitypub
   - activitystream
   - c++
+syndication:
+  - https://twitter.com/jackyalcine/status/994250025055252484
+  - https://playvicious.social/@jalcine/99983953373994011
 ---
 
 A while back, like a _while_ back, I mentioned on one of my [Mastodon][] accounts that

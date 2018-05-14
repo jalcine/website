@@ -1,0 +1,36 @@
+{% if webmentions.size > 0 %}
+  <section class="cb cf mv2">
+    <strong>:leftwards_arrow_with_hook: Replies:</strong>
+    <ul class="list">
+      {% for mention in webmentions %}
+        {% if mention.author.photo %}
+          <li id="webmention-{{ webmention.id }}"
+              class="ma1 db p-author h-card cb cf">
+            <div class="lh-copy">
+              {% if mention.author.photo %}
+                <img class="fl shadow-3 mw3 mh2 mv3 br-100 dim u-photo v-mid"
+                     src="{{ mention.author.photo }}"
+                     alt="{{ mention.author.name }}"
+                     title="{{ mention.author.name }}" />
+              {% endif %}
+              <div>
+                <a title="{{ mention.author.name }}"
+                   target="_blank"
+                   class="u-url db"
+                 href="{% if mention.url %}{{ mention.url }}{% else %}{{ mention.author.url }}{% endif %}">
+                    {{ mention.author.name }}
+                </a>
+                {% if mention.pubdate %}
+                  <time class="db f5 ttu tracked-tight  gray dt-published" datetime="{{ mention.pubdate | date: '%FT%T%:z' }}">{{ mention.pubdate | date: '%d %B %Y' }}</time>
+                {% endif %}
+                </span>
+              </div>
+              <div>
+                {{ mention.content }}
+              </div>
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+  </section>
+{% endif %}

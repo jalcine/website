@@ -7,6 +7,7 @@ tags:
  - dokku
  - docker
  - self hosted
+ - indieweb
  - federation
 excerpt: |
   I love the notion of hosting software for single tenant use. It’s the

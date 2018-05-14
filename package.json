@@ -14,9 +14,10 @@
   },
   "homepage": "https://github.com/jalcine/website#readme",
   "dependencies": {
+    "animate.css": "3.6.1",
+    "picturefill": "3.0.2",
     "tachyons-sass": "4.7.4",
-    "webfontloader": "1.6.28",
-    "picturefill": "3.0.2"
+    "webfontloader": "1.6.28"
   },
   "engines": {
     "npm": "*",

@@ -1,7 +1,8 @@
 //= require webfontloader/webfontloader.js
+//= require picturefill/dist/picturefill.min.js
 //= require _fonts.js
+//= require _analytics.js
 
-// Do some tweaks on images.
 function stretchOutImages () {
   var images = document.querySelectorAll("img.x-bleed");
   images.forEach(function stretchImage(image) {
@@ -12,9 +13,7 @@ function stretchOutImages () {
   });
 };
 
-(function () {
+window.addEventListener('load', function () {
   WebFont.load(WebFontConfig);
   stretchOutImages();
-})(document);
-
-// vim: set ft=javascript.liquid :
+});

@@ -3,6 +3,8 @@
 
 source 'https://rubygems.org'
 
+ruby '2.4.4'
+
 # {{{ Core Utilities
 gem 'bundler'
 gem 'dotenv'
@@ -14,7 +16,6 @@ group :jekyll do
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
   gem 'image_optim'
-  gem 'gemoji'
   gem 'jekyll'
   gem 'kramdown'
   gem 'mini_magick'
@@ -35,7 +36,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-tagging'
   gem 'jekyll-tagging-related_posts'
-  gem 'jekyll-tidy'
   gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'

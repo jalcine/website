@@ -12,14 +12,14 @@ GEM
       io-like (~> 0.3.0)
     autoprefixer-rails (8.4.1)
       execjs
-    capybara (3.0.2)
+    capybara (3.1.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
       xpath (~> 3.0)
-    capybara-screenshot (1.0.19)
+    capybara-screenshot (1.0.21)
       capybara (>= 1.0, < 4)
       launchy
     childprocess (0.9.0)
@@ -42,20 +42,20 @@ GEM
       http_parser.rb (~> 0.6.0)
     ethon (0.11.0)
       ffi (>= 1.3.0)
-    eventmachine (1.2.5)
+    eventmachine (1.2.7)
     execjs (2.7.0)
-    exifr (1.3.3)
+    exifr (1.3.4)
     extras (0.3.0)
       forwardable-extended (~> 2.5)
-    faraday (0.15.0)
+    faraday (0.15.1)
       multipart-post (>= 1.2, < 3)
     fast-stemmer (1.0.2)
-    fastimage (2.1.1)
+    fastimage (2.1.3)
     ffi (1.9.23)
     formatador (0.2.5)
     forwardable-extended (2.6.0)
     fspath (3.1.0)
-    gemoji (2.1.0)
+    gemoji (3.0.0)
     guard (2.14.2)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -89,7 +89,7 @@ GEM
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
-    html-pipeline (2.7.2)
+    html-pipeline (2.8.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
     html-proofer (3.8.0)
@@ -102,7 +102,6 @@ GEM
       typhoeus (~> 1.3)
       yell (~> 2.0)
     htmlbeautifier (1.3.1)
-    htmlcompressor (0.4.0)
     http (2.2.2)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -125,7 +124,7 @@ GEM
     image_size (1.5.0)
     in_threads (1.5.0)
     io-like (0.3.0)
-    jekyll (3.8.0)
+    jekyll (3.8.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -170,10 +169,6 @@ GEM
     jekyll-tagging-related_posts (1.0.0)
       jekyll (~> 3.0)
       jekyll-tagging (~> 1.0)
-    jekyll-tidy (0.2.2)
-      htmlbeautifier
-      htmlcompressor
-      jekyll
     jekyll-twitter-plugin (2.0.0)
     jekyll-typogrify (0.3.3)
       titlecase
@@ -189,10 +184,10 @@ GEM
       string_inflection (~> 0.1)
       uglifier (~> 3.2)
       webmention (~> 0.1.6)
-    jemoji (0.6.2)
-      gemoji (~> 2.0)
+    jemoji (0.10.0)
+      gemoji (~> 3.0)
       html-pipeline (~> 2.2)
-      jekyll (>= 3.0)
+      jekyll (~> 3.0)
     json (2.1.0)
     kramdown (1.16.2)
     launchy (2.4.3)
@@ -225,9 +220,9 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     nuggets (1.5.0)
-    octokit (4.8.0)
+    octokit (4.9.0)
       sawyer (~> 0.8.0, >= 0.5.3)
-    openssl (2.1.0)
+    openssl (2.1.1)
     parallel (1.12.1)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
@@ -273,7 +268,7 @@ GEM
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
-    selenium-webdriver (3.11.0)
+    selenium-webdriver (3.12.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
     shellany (0.0.1)
@@ -321,7 +316,6 @@ DEPENDENCIES
   chromedriver-helper
   classifier-reborn
   dotenv
-  gemoji
   guard
   guard-bundler
   guard-livereload
@@ -341,7 +335,6 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-tagging
   jekyll-tagging-related_posts
-  jekyll-tidy
   jekyll-twitter-plugin
   jekyll-typogrify
   jekyll-webmention_io
@@ -361,6 +354,9 @@ DEPENDENCIES
   sprockets (~> 4.0.0.beta7)
   uglifier
   xmlrpc
+
+RUBY VERSION
+   ruby 2.4.4p296
 
 BUNDLED WITH
    1.16.1

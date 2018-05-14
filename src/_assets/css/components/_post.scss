@@ -45,6 +45,8 @@ address[role=group].post {
   > span {
     @extend .db;
     @extend .pv1;
+    @extend .w-60;
+    @extend .w-100;
   }
 }
 

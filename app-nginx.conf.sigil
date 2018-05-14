@@ -10,6 +10,8 @@ events {
 http {
   types_hash_max_size 2048;
   include mime.types;
+  server_tokens off;
+
   server {
     listen {{ $.PORT }};
     server_name  _;
@@ -52,5 +54,10 @@ http {
       try_files $uri /$uri$is_args$args /= 404;
       access_log off;
     }
+
+    # Rewrite direct requests to go to my API for IndieAuth.
+    # rewrite ^/.indie/(.*)/$ ${scheme}://api.${server_name}/indie/$1 redirect;
   }
 }
+
+# vim: set ft=nginx.sigil :
