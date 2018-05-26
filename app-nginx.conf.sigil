@@ -55,7 +55,7 @@ http {
       access_log off;
     }
 
-    set $csp "default-src 'self' data: *.jacky.wtf https; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.jacky.wtf https://webmention.io https; style-src 'self' 'unsafe-inline'; img-src 'self' data: https *.jacky.wtf webmention.io https://assets-cdn.github.com; media-src 'self' https; font-src 'self'; connect-src 'self' ws://webmention.io:8080 *.jacky.wtf https";
+    set $csp "default-src 'self' data: *.jacky.wtf https; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.jacky.wtf https://webmention.io https; style-src 'self' 'unsafe-inline'; img-src 'self' data: https *.jacky.wtf *.amazonaws.com webmention.io https://assets-cdn.github.com; media-src 'self' https; font-src 'self'; connect-src 'self' ws://webmention.io:8080 *.jacky.wtf https";
 
     add_header Content-Security-Policy "$csp" always;
     add_header X-Content-Security-Policy "$csp" always;
