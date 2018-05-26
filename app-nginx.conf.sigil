@@ -55,11 +55,12 @@ http {
       access_log off;
     }
 
-    set $csp "default-src 'self' data: *.jacky.wtf https; script-src 'self' 'unsafe-inline' *.jacky.wtf https://webmention.io https; style-src 'self' data: 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self' ws://webmention.io:8080";
+    set $csp "default-src 'self' data: *.jacky.wtf https; script-src 'self' 'unsafe-inline' *.jacky.wtf https://webmention.io https; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self' ws://webmention.io:8080";
 
-    add_header Content-Security-Policy $csp;
-    add_header X-Content-Security-Policy $csp;
-    add_header X-WebKit-CSP $csp;
+    add_header Content-Security-Policy "$csp" always;
+    add_header X-Content-Security-Policy "$csp" always;
+    add_header X-WebKit-CSP "$csp" always;
+    add_header Referrer-Policy "no-referrer-when-downgrade" always;
 
     # Rewrite direct requests to go to my API for IndieAuth.
     # rewrite ^/.indie/(.*)/$ ${scheme}://api.${server_name}/indie/$1 redirect;
