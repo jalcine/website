@@ -31,7 +31,7 @@ http {
     gzip_comp_level 6;
     gzip_buffers 16 8k;
     gzip_http_version 1.1;
-    gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+    gzip_types image/* text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
 
     location / {
       try_files $uri $uri/ $uri/index.html /= 404;
@@ -55,7 +55,7 @@ http {
       access_log off;
     }
 
-    set $csp "default-src 'self' data: *.jacky.wtf https; script-src 'self' 'unsafe-inline' *.jacky.wtf https://webmention.io https; style-src 'self'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self' ws://webmention.io:8080";
+    set $csp "default-src 'self' data: *.jacky.wtf https; script-src 'self' 'unsafe-inline' *.jacky.wtf https://webmention.io https; style-src 'self'; img-src 'self' data: https; media-src 'self' htttps; font-src 'self'; connect-src 'self' ws://webmention.io:8080 *.jacky.wtf https";
 
     add_header Content-Security-Policy "$csp" always;
     add_header X-Content-Security-Policy "$csp" always;
