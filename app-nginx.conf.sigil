@@ -22,9 +22,9 @@ http {
     {{ end }}
     index index.html;
     port_in_redirect off;
-    error_page 404 /errors/404.html;
+    error_page 404 /errors/404/index.html;
 
-    gzip off;
+    gzip on;
     gzip_disable "msie6";
     gzip_vary on;
     gzip_proxied any;
@@ -54,6 +54,12 @@ http {
       try_files $uri /$uri$is_args$args /= 404;
       access_log off;
     }
+
+    set $csp "default-src 'self' data: *.jacky.wtf https; script-src 'self' 'unsafe-inline' *.jacky.wtf https://webmention.io https; style-src 'self' data: 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self' ws://webmention.io:8080";
+
+    add_header Content-Security-Policy $csp;
+    add_header X-Content-Security-Policy $csp;
+    add_header X-WebKit-CSP $csp;
 
     # Rewrite direct requests to go to my API for IndieAuth.
     # rewrite ^/.indie/(.*)/$ ${scheme}://api.${server_name}/indie/$1 redirect;
