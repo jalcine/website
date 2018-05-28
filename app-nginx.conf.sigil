@@ -4,7 +4,7 @@ pid nginx.pid;
 daemon off;
 
 events {
-  worker_connections 768;
+  worker_connections 128;
 }
 
 http {
@@ -38,6 +38,7 @@ http {
     }
 
     location ~* \.(?:css|js|woff|svg|gif|jpeg|png|otf|ico|ttf)$ {
+      access_log off;
       add_header Cache-Control "public, max-age=7200";
       add_header Strict-Transport-Security "max-age=15768000; includeSubDomains; preload;";
       add_header X-Content-Type-Options nosniff;
@@ -46,16 +47,15 @@ http {
       add_header X-Robots-Tag none;
       add_header X-Download-Options noopen;
       add_header X-Permitted-Cross-Domain-Policies none;
-      access_log off;
       try_files $uri /assets/$uri$is_args$args /= 404;
     }
 
     location ~* \.(?:png|html|ttf|ico|jpg|jpeg|otf)$ {
-      try_files $uri /$uri$is_args$args /= 404;
       access_log off;
+      try_files $uri /$uri$is_args$args /= 404;
     }
 
-    set $csp "default-src 'self' data: comments.jacky.wtf analytics.jacky.wtf https; script-src 'self' 'unsafe-eval' 'unsafe-inline' comments.jacky.wtf analytics.jacky.wtf webmention.io https; style-src 'self' 'unsafe-inline' comments.jacky.wtf; img-src 'self' data: https analytics.jacky.wtf comments.jacky.wtf *.amazonaws.com webmention.io assets-cdn.github.com; media-src 'self' https; connect-src 'self' wss://webmention.io:8080 comments.jacky.wtf https; report-uri https://jackyalcine.report-uri.com/r/d/csp/enforce";
+    set $csp "default-src 'self' data: comments.jacky.wtf analytics.jacky.wtf https; script-src 'self' 'unsafe-eval' 'unsafe-inline' comments.jacky.wtf analytics.jacky.wtf webmention.io https; style-src 'self' 'unsafe-inline' comments.jacky.wtf; img-src 'self' data: https analytics.jacky.wtf comments.jacky.wtf *.amazonaws.com webmention.io assets-cdn.github.com; media-src 'self' https; connect-src 'self' wss://webmention.io:8080 anayltics.jacky.wtf comments.jacky.wtf https; report-uri https://jackyalcine.report-uri.com/r/d/csp/enforce";
 
     add_header Content-Security-Policy "$csp" always;
     add_header X-Content-Security-Policy "$csp" always;
