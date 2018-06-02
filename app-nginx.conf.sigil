@@ -13,7 +13,8 @@ http {
   server_tokens off;
 
   server {
-    listen {{ $.PORT }};
+    # listen {{ $.PORT }};
+    listen 5000;
     server_name  _;
     {{ if ne $.NGINX_ROOT "" }}
     root /app/www/{{ $.NGINX_ROOT }};
