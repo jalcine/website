@@ -55,7 +55,7 @@ http {
       try_files $uri /$uri$is_args$args /= 404;
     }
 
-    set $csp "base-uri 'none'; manifest-src 'self'; default-src 'self' data: comments.jacky.wtf analytics.jacky.wtf https; script-src 'self' comments.jacky.wtf analytics.jacky.wtf webmention.io 'unsafe-eval' 'unsafe-inline' https; style-src 'self' 'unsafe-inline' comments.jacky.wtf; img-src 'self' data: https analytics.jacky.wtf comments.jacky.wtf *.amazonaws.com webmention.io assets-cdn.github.com; media-src 'self' https; connect-src 'self' wss://webmention.io:8080 anayltics.jacky.wtf comments.jacky.wtf https; report-uri https://jackyalcine.report-uri.com/r/d/csp/enforce";
+    set $csp "base-uri 'none'; manifest-src 'self'; default-src 'self' comments.jacky.wtf analytics.jacky.wtf https; script-src 'self' comments.jacky.wtf analytics.jacky.wtf webmention.io 'unsafe-eval' 'unsafe-inline' https; style-src 'self' 'unsafe-inline' comments.jacky.wtf; img-src 'self' https analytics.jacky.wtf comments.jacky.wtf *.amazonaws.com webmention.io assets-cdn.github.com; media-src 'self' https; connect-src 'self' wss://webmention.io:8080 anayltics.jacky.wtf comments.jacky.wtf https; report-uri https://jackyalcine.report-uri.com/r/d/csp/enforce";
 
     add_header Content-Security-Policy "$csp" always;
     add_header X-Content-Security-Policy "$csp" always;
