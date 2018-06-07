@@ -4,7 +4,7 @@ pid nginx.pid;
 daemon off;
 
 events {
-  worker_connections 768;
+  worker_connections 128;
 }
 
 http {
@@ -24,20 +24,21 @@ http {
     port_in_redirect off;
     error_page 404 /errors/404/index.html;
 
-    gzip off;
+    gzip on;
     gzip_disable "msie6";
     gzip_vary on;
     gzip_proxied any;
     gzip_comp_level 6;
     gzip_buffers 16 8k;
     gzip_http_version 1.1;
-    gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
+    gzip_types image/* text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript;
 
     location / {
       try_files $uri $uri/ $uri/index.html /= 404;
     }
 
-    location ~* \.(?:css|js|woff|svg|gif)$ {
+    location ~* \.(?:css|js|woff|svg|gif|jpeg|png|otf|ico|ttf)$ {
+      access_log off;
       add_header Cache-Control "public, max-age=7200";
       add_header Strict-Transport-Security "max-age=15768000; includeSubDomains; preload;";
       add_header X-Content-Type-Options nosniff;
@@ -46,14 +47,20 @@ http {
       add_header X-Robots-Tag none;
       add_header X-Download-Options noopen;
       add_header X-Permitted-Cross-Domain-Policies none;
-      access_log off;
       try_files $uri /assets/$uri$is_args$args /= 404;
     }
 
     location ~* \.(?:png|html|ttf|ico|jpg|jpeg|otf)$ {
-      try_files $uri /$uri$is_args$args /= 404;
       access_log off;
+      try_files $uri /$uri$is_args$args /= 404;
     }
+
+    set $csp "base-uri 'none'; manifest-src 'self'; default-src 'self' comments.jacky.wtf analytics.jacky.wtf https; script-src 'self' comments.jacky.wtf analytics.jacky.wtf webmention.io 'unsafe-eval' 'unsafe-inline' https; style-src 'self' 'unsafe-inline' comments.jacky.wtf; img-src 'self' https analytics.jacky.wtf comments.jacky.wtf *.amazonaws.com webmention.io assets-cdn.github.com; media-src 'self' https; connect-src 'self' https wss://webmention.io:8080 anayltics.jacky.wtf comments.jacky.wtf; report-uri https://jackyalcine.report-uri.com/r/d/csp/enforce";
+
+    add_header Content-Security-Policy "$csp" always;
+    add_header X-Content-Security-Policy "$csp" always;
+    add_header X-WebKit-CSP "$csp" always;
+    add_header Referrer-Policy "no-referrer-when-downgrade" always;
 
     # Rewrite direct requests to go to my API for IndieAuth.
     # rewrite ^/.indie/(.*)/$ ${scheme}://api.${server_name}/indie/$1 redirect;

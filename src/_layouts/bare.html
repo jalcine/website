@@ -10,6 +10,9 @@
     </main>
     {% unless page.components.footer == false %}{% include footer.html %}{% endunless %}
     {% include_cached javascript.html %}
-    <noscript><img src="//{{ site.analytics.host }}/piwik.php?idsite={{ site.analyitcs.site_id }}&rec=1&action_name={{ page.title | url_param_escape }}" style="border:0;" alt="" /></noscript>
+    <noscript>
+      <img src="//{{ site.analytics.host }}/piwik.php?idsite={{ site.analyitcs.site_id }}&rec=1&action_name={{ page.title | url_param_escape }}"
+           style="border:0;" alt="" />
+    </noscript>
   </body>
 </html>

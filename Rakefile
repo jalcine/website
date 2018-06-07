@@ -80,7 +80,6 @@ namespace :notify do
   task :webmention do
     puts '* Notifying webmention.io'
     puts system('bundle exec jekyll webmention')
-    puts system('bundle exec webmention https://jacky.wtf/')
   end
 end
 

@@ -16,12 +16,11 @@
   "dependencies": {
     "animate.css": "3.6.1",
     "picturefill": "3.0.2",
-    "tachyons-sass": "4.7.4",
+    "tachyons-sass": "4.9.3",
     "webfontloader": "1.6.28"
   },
   "engines": {
-    "npm": "*",
-    "yarn": "*",
+    "npm": "6.1.0",
     "node": "9.8.0"
   }
 }
