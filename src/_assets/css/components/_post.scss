@@ -1,5 +1,5 @@
 header[role=group].post {
-  @extend .ph4, .pv2, .mw7;
+  @extend .pa2, .mw7;
 
   > h1 {
     @extend .tracked-tight;
@@ -39,7 +39,7 @@ header[role=group].post {
 }
 
 address[role=group].post {
-  @extend .f6, .w-80, .db;
+  @extend .f6, .w-100, .pv2, .db;
   @extend .ml4;
 
   > span {
