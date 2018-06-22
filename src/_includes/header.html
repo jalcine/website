@@ -1,22 +1,14 @@
-<header role="document" class="bg-near-black washed-blue w-100 ph1 pv4 cb cf ">
-  <h1 class="tracked-tight lh-title f1 f-headline-l ma1 pa1 center-s tc-s animated fadeInLeftBig">
-    {% asset brand/self.jpeg class='v-mid cb-s br-100 bg-black-80 b--black-80 ba h3 mb3 ma1-ns' alt='{{ site.name }}' width=auto height=auto %}
-    {{ site.name }}
-  </h1>
-  <nav class="cf cb">
-    <ul class="db center-s w-80-s cb cf">
-    {% for link in site.data.links.navigation %}
-      <li class="mh1-l w-third w-auto-l mv2 fl fn-l dib-l grow tc">
-        <a class="gray tc {{ link.classes }} white br4 pa3"
-          href="{{ link.link }}" title="{{ link.title }}">
-          {{ link.title }}
-        </a>
-      </li>
-    {% endfor %}
-    </ul>
-    <div class="fr-l mw6 cb cf pr3-l center mv2-s">
-      {% include_cached search.html %}
-    </div>
+<header role="document" class="bg-near-black near-white items-center flex flex-column-s flex-wrap justify-between pa1 pv3-l">
+  {% asset brand/self.jpeg class="v-mid br-100 h3 center db mv2 dib-l ma0-l" alt="{{ site.name }}" width=auto height=auto %}
+  <nav class="flex justify-around flex-wrap">
+  {% for link in site.data.links.navigation %}
+    <a class="{{ link.classes }} white pa2 ph4-l" href="{{ link.link }}" title="{{ link.title }}">
+      {{ link.title }}
+    </a>
+  {% endfor %}
   </nav>
+  <div class="ph2">
+    {% include_cached search.html %}
+  </div>
 </header>
 {% include_cached notices.html %}

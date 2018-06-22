@@ -5,10 +5,10 @@ layout: bare
 <div class="bg-near-black washed-yellow w-100">
   {% if page.masthead and page.masthead.image %}
     {% asset "{{ page.masthead.image }}"
-    class="w-100 center db" width="auto" height="auto"
+    class="mw-100 center db" width="auto" height="auto"
     title="{{ masthead.title }}"
-    srcset:max-width="600 0.4x"
-    srcset:max-width="1200 0.6x"
+    srcset:max-width="600 0.5x"
+    srcset:max-width="1200 0.75x"
     srcset:min-width="1201 1x"
     %}
   {% endif %}
@@ -19,7 +19,7 @@ layout: bare
   {% endunless %}
 </div>
 {% endif %}
-<section role="document" class="mw8 pv4 pv2" data-track-content
+<section role="document" class="mw8 mw-100-l pv4 pv2" data-track-content
   data-content-name="page"
   data-content-piece="{{ page.title }}">
   {{ content }}
