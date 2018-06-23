@@ -59,7 +59,7 @@ main {
 
 section[role=document],
 section.section__region {
-  @extend .mw8, .w-100, .db, .pa4, .cf;
+  @extend .mw9, .w-100, .db, .pa4, .cf;
 
   > img.masthead {
     @extend .db, .center, .w-100, .h-auto, .cb, .fl;
