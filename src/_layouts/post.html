@@ -12,8 +12,9 @@ excerpt: none
   {% include post_indieweb.html %}
   <main role="group" class="e-content post"
                      itemprop="articleBody"
-        data-track-content data-content-name="blog-post"
-        data-content-piece="{{ page.title }}">
+                     data-track-content
+                     data-content-name="blog-post"
+                     data-content-piece="{{ page.title }}">
     {{ content | letter_spacing | improve }}
   </main>
   {% include post_footer.html %}

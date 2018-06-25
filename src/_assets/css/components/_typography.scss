@@ -3,7 +3,7 @@
   
   @at-root {
     html.wf-sourcesanspro-n4-active & {
-      font-family: "Source Sans Pro";
+      font-family: "Source Sans Pro", $sans-serif;
     }
   }
 }
@@ -13,7 +13,7 @@
   
   @at-root {
     html.wf-sourceserifpro-n4-active & {
-      font-family: "Source Serif Pro";
+      font-family: "Source Serif Pro", $serif;
     }
   }
 }
@@ -23,7 +23,7 @@
   
   @at-root {
     html.wf-sourcecodepro-n4-active & {
-      font-family: "Source Code Pro";
+      font-family: "Source Code Pro", $code;
     }
   }
 }

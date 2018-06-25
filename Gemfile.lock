@@ -310,7 +310,6 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   autoprefixer-rails
-  bundler
   capybara
   capybara-screenshot
   chromedriver-helper
@@ -356,7 +355,7 @@ DEPENDENCIES
   xmlrpc
 
 RUBY VERSION
-   ruby 2.4.4p296
+   ruby 2.4.0p0
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
