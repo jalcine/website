@@ -3,10 +3,9 @@
 
 source 'https://rubygems.org'
 
-ruby '2.4.4'
+ruby '2.4.0'
 
 # {{{ Core Utilities
-gem 'bundler'
 gem 'dotenv'
 gem 'rake'
 # }}}
