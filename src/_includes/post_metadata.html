@@ -1,0 +1,44 @@
+<address role="group" class="post">
+  <span>
+    :pencil: by <a title="{{ site.author }}" href="{{ site.url }}" class="p-author h-card">
+    {% asset brand/self.jpeg class='v-mid cb-s br-100 mh3 mw4 mh4-l fr grow' alt="" @magick:height=48 %}
+    {{ site.author }}
+    </a>
+  </span>
+  <span>:book: an {{ page.category | linkify_categories }} post</span>
+  {% if page.tags contains "indieweb" %}
+    <span>
+      :globe_with_meridians:
+      Posted on
+      <a href="https://news.indieweb.org/en" class="u-syndication">
+        IndieNews
+      </a>
+    </span>
+  {% endif %}
+  {% if page.tags %}
+    <span>:bookmark: {{ page.tags | linkify_tags }}</span>
+  {% endif %}
+  <span>
+    :clock7:
+    written
+    <time class="dt-published"
+          datetime="{{ page.date | date_to_xmlschema }}">
+      {{ page.date | date: "%B %-d %Y" }}
+    </time>
+    {% if page.revised %}- revised
+      <time class="dt-updated" datetime="{{ page.revised | date_to_xmlschema }}">
+        {{ page.revised | date: "%B %-d %Y" }}
+      </time>
+    {% endif %}
+  </span>
+  <span>
+    :eyeglasses:
+    {{ content | reading_time }},
+    {{ content | number_of_words }} words
+  </span>
+  <span>
+    :link: <a href="#isso-thread">Comments</a> -
+    {% webmention_count page.url %} <a href="/faq/indieweb/#webmentions">Mention(s)</a> - 
+    <a href="{{ page.url }}" class="u-url">Permalink</a>
+  </span>
+</address>
