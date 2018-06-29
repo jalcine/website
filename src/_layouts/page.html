@@ -3,14 +3,16 @@ layout: bare
 ---
 {% if page.components.header and page.components.header == true %}
 <div class="bg-near-black washed-yellow w-100">
-  {% if page.masthead and page.masthead.image %}
-    {% asset "{{ page.masthead.image }}"
-    class="mw-100 center db" width="auto" height="auto"
-    title="{{ masthead.title }}"
-    srcset:max-width="600 0.5x"
-    srcset:max-width="1200 0.75x"
-    srcset:min-width="1201 1x"
-    %}
+  {% if page.masthead %}
+    {% if page.masthead.image != 'none' or page.masthead.image != '' %}
+      {% asset "{{ page.masthead.image }}"
+      class="mw-100 center db" width="auto" height="auto"
+      title="{{ masthead.title }}"
+      srcset:max-width="600 0.5x"
+      srcset:max-width="1200 0.75x"
+      srcset:min-width="1201 1x"
+      %}
+    {% endif %}
   {% endif %}
   {% unless page.components.header and page.components.header == true %}
     <h1 class="w-80 f2 f1-l lh-title ttu ma0 pa3 ph4-ns">

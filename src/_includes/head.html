@@ -9,7 +9,7 @@
 {% else %}
   {% assign blurb = site.description | strip_newlines %}
 {% endif %}
-{% if page.image contains 'http://' or page.image contains 'https://' %}
+{% if page.image != none or page.image != "" or page.image != "none" %}
   {% assign image = page.image %}
 {% else %}
   {% assign image = '196x196.png' %}

@@ -51,75 +51,15 @@ address[role=group].post {
 }
 
 main[role=group].post {
+  // All secondary copy
   p,
-  blockquote,
-  ul, ol,
-  h1, h2, h3, h4, h5, h6
-  {
-    @extend .w-auto, .mw7;
+  li {
+    @extend .ph4, .ph2;
     @extend .lh-copy;
-    @extend .ph4, .pv3, .mh2;
   }
 
-  h1, h2, h3, h4, h5, h6
-  {
-    @extend .ph4, .pv3;
-  }
-
-  blockquote
-  {
-    @extend .f3;
-    @extend .mw-none-l;
-    @extend .bg-dark-gray, .white;
-    @extend .mh0;
-
-    > p
-    {
-      font-size: inherit;
-      @extend .pa2;
-
-      &:first-child { @extend .pt0; }
-    }
-
-    a {
-      @extend .light-blue;
-    }
-  }
-
-  > p,
-  > ol > li,
-  > ul > li
-  {
-    @extend .w-auto;
-    @extend .f4;
-    @extend .db;
-    text-align: justify;
-    text-align-last: left;
-  }
-
-  p {
-    @extend .w-auto;
-  }
-
-  div.footnotes {
-    @extend .ml4;
-  }
-
-  ul {
-    @extend .arrows;
-  }
-
-  ol > li {
-    > p {
-      @extend .ma0;
-      @extend .di;
-      @extend .pa0;
-    }
-  }
-
-  hr {
-    @extend .mw7;
-    @extend .mh0;
+  h1, h2, h3, h4, h5, h6 {
+    @extend .lh-title;
   }
 }
 
