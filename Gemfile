@@ -28,6 +28,7 @@ end
 group :jekyll_plugins do
   gem 'jekyll-assets'
   gem 'jekyll-feed'
+  gem 'jekyll-json-feed'
   gem 'jekyll-gist'
   gem 'jekyll-include-cache'
   gem 'jekyll-paginate-v2'

@@ -154,6 +154,8 @@ GEM
       octokit (~> 4.2)
     jekyll-include-cache (0.1.0)
       jekyll (~> 3.3)
+    jekyll-json-feed (1.0.0)
+      jekyll (~> 3.3)
     jekyll-paginate-v2 (1.9.4)
       jekyll (~> 3.0)
     jekyll-redirect-from (0.13.0)
@@ -329,6 +331,7 @@ DEPENDENCIES
   jekyll-feed
   jekyll-gist
   jekyll-include-cache
+  jekyll-json-feed
   jekyll-paginate-v2
   jekyll-redirect-from
   jekyll-sitemap
