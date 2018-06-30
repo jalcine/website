@@ -1,12 +1,7 @@
 ---
-layout: bare
+layout: page
 masthead: none
 ---
-{% if page.masthead %}
-  {% asset "{{ page.masthead }}"
-      class="w-100 dib ma1-l mw7-l h-75-l fr-l"
-      width=auto height=auto %}
-{% endif %}
 <section role="document">
   <h2 class="f2 lh-title">{{ page.title }}</h2>
   <h4 class="f4 lh-subtitle">{{ page.description }}</h4>

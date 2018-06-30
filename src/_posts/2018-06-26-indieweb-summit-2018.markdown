@@ -1,6 +1,6 @@
 ---
 title: "I Went to The IndieWeb Summit 2018!"
-image: posts/indie-web-summit-2018.jpeg
+image: "posts/indie-web-summit-2018.jpeg"
 layout: post
 date: 2018-06-26 23:17:48 PDT
 excerpt: |
