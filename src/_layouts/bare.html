@@ -8,9 +8,7 @@ image: none
   </head>
   <body>
     {% unless page.components.header == false %}{% include header.html %}{% endunless %}
-    <main>
-      {{ content }}
-    </main>
+    {{ content }}
     {% unless page.components.footer == false %}{% include footer.html %}{% endunless %}
     {% include_cached javascript.html %}
     <noscript>
