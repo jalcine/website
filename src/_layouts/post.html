@@ -5,11 +5,11 @@ excerpt: none
 <article class="h-entry"
          itemscope
          itemtype="http://schema.org/BlogPosting">
-  {% if page.image %}{% include post_image.html %}{% endif %}
+  {% include post_image.html image=page.image %}
   {% include post_header.html %}
   {% include post_indieweb.html %}
   <main role="group"
-        class="e-content post mw7 center pa2"
+        class="e-content post w-60 center pa2"
         itemprop="articleBody"
         data-track-content
         data-content-name="blog-post"
