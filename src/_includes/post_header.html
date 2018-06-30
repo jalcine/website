@@ -1,10 +1,10 @@
 {% capture _garbage_ %}
 {% endcapture %}
-<header role="group" class="post ph4 center-s" data-track-content>
-  <h1 itemprop="name headline" class="p-name lh-title f-headline-l f-subheadline-l">{{ page.title | improve }}</h1>
-  {% if page.byline %}<h3>{{ page.byline | improve }}</h3>{% endif %}
+<header role="group" class="post ph4 center" data-track-content>
+  <h1 itemprop="name headline" class="tc p-name lh-title f-headline-l f-subheadline-l">{{ page.title | improve }}</h1>
+  {% if page.byline %}<h3 class="f3 tc lh-subtitle">{{ page.byline | improve }}</h3>{% endif %}
   {% if page.excerpt and page.excerpt != 'none' %}
-  <blockquote class="excerpt p-summary">
+  <blockquote class="excerpt p-summary tc">
     {{ page.excerpt | markdownify | strip_tags: '<p>' }}
   </blockquote>
   {% endif %}

@@ -1,0 +1,16 @@
+{% if post.image %}
+  {% capture _garbage_ %}
+  {% assign image = post.image %}
+  {% endcapture %}
+  {%
+    asset
+      "{{ post.image }}"
+      class="mw-100 center db"
+      width="auto"
+      height="auto"
+      title="{{ post.image.title }}"
+      srcset:max-width="600 0.5x"
+      srcset:max-width="1200 0.75x"
+      srcset:min-width="1201 1x"
+  %}
+{% endif %}

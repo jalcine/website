@@ -50,12 +50,12 @@ address[role=group].post {
   }
 }
 
-main[role=group].post {
+article.h-entry {
   // All secondary copy
   p,
   li {
-    @extend .ph4, .ph2;
     @extend .lh-copy;
+    @extend .f4;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -64,5 +64,5 @@ main[role=group].post {
 }
 
 footer[role=group].post {
-  @extend .mt1, .cb, .cf;
+  @extend .mt1, .cb, .cf, .center;
 }
