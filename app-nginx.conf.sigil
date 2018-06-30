@@ -22,7 +22,7 @@ http {
     {{ end }}
     index index.html;
     port_in_redirect off;
-    error_page 404 /errors/404/index.html;
+    error_page 404 /errors/404/;
 
     gzip on;
     gzip_disable "msie6";

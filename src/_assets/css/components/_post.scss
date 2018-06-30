@@ -1,46 +1,9 @@
 header[role=group].post {
-  @extend .pa2, .mw7;
-
-  > h1 {
-    @extend .tracked-tight;
-    @extend .pa1, .ph4;
-    @extend .fw7, .f1;
-    @extend .near-black;
-  }
-
-  > h3 {
-    @extend .pa2;
-    @extend .f3;
-    @extend .fw1;
-    @extend .gray;
-  }
-
-  &.masthead {
-    @extend .w-100, .mw-none;
-    @extend .ma0, .pa0;
-
-    > img {
-      @extend .w-100, .db;
-    }
-
-    > h1 {
-      @extend .f-headline-l;
-    }
-
-    > h1 + h2 {
-      @extend .mh4;
-      @extend .f2;
-    }
-
-    > address[role=group].post {
-      @extend .w-100, .mw7-ns;
-    }
-  }
+  @extend .pa2, .mw8;
 }
 
 address[role=group].post {
-  @extend .f6, .w-90, .pv2, .db;
-  @extend .ml4;
+  @extend .f6, .w-60, .pa2, .db, .center, .ttu;
 
   > span {
     @extend .db;
@@ -50,79 +13,19 @@ address[role=group].post {
   }
 }
 
-main[role=group].post {
+article.h-entry {
+  // All secondary copy
   p,
-  blockquote,
-  ul, ol,
-  h1, h2, h3, h4, h5, h6
-  {
-    @extend .w-auto, .mw7;
+  li {
     @extend .lh-copy;
-    @extend .ph4, .pv3, .mh2;
+    @extend .f5;
   }
 
-  h1, h2, h3, h4, h5, h6
-  {
-    @extend .ph4, .pv3;
-  }
-
-  blockquote
-  {
-    @extend .f3;
-    @extend .mw-none-l;
-    @extend .bg-dark-gray, .white;
-    @extend .mh0;
-
-    > p
-    {
-      font-size: inherit;
-      @extend .pa2;
-
-      &:first-child { @extend .pt0; }
-    }
-
-    a {
-      @extend .light-blue;
-    }
-  }
-
-  > p,
-  > ol > li,
-  > ul > li
-  {
-    @extend .w-auto;
-    @extend .f4;
-    @extend .db;
-    text-align: justify;
-    text-align-last: left;
-  }
-
-  p {
-    @extend .w-auto;
-  }
-
-  div.footnotes {
-    @extend .ml4;
-  }
-
-  ul {
-    @extend .arrows;
-  }
-
-  ol > li {
-    > p {
-      @extend .ma0;
-      @extend .di;
-      @extend .pa0;
-    }
-  }
-
-  hr {
-    @extend .mw7;
-    @extend .mh0;
+  h1, h2, h3, h4, h5, h6 {
+    @extend .lh-title;
   }
 }
 
 footer[role=group].post {
-  @extend .mt1, .cb, .cf;
+  @extend .mt1, .cb, .cf, .center;
 }

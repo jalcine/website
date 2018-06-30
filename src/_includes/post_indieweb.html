@@ -1,3 +1,6 @@
 {% if page.category == 'rsvp' %}
   {% include indieweb/rsvp.html %}
 {% endif %}
+{% if page.reply %}
+  {% include indieweb/reply.html %}
+{% endif %}

@@ -1,0 +1,16 @@
+{% if page.masthead %}
+  {% capture _garbage_ %}
+  {% assign image = page.masthead.image %}
+  {% endcapture %}
+  {%
+    asset
+      "{{ page.masthead.image }}"
+      class="mw-100 center db"
+      width="auto"
+      height="auto"
+      title="{{ page.masthead.title }}"
+      srcset:max-width="600 0.5x"
+      srcset:max-width="1200 0.75x"
+      srcset:min-width="1201 1x"
+  %}
+{% endif %}
