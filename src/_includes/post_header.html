@@ -1,10 +1,17 @@
 {% capture _garbage_ %}
 {% endcapture %}
 <header role="group" class="post ph4 center" data-track-content>
-  <h1 itemprop="name headline" class="tc near-black fw7 tracked-tight p-name lh-title f-headline-l f-subheadline-l">{{ page.title | improve }}</h1>
-  {% if page.byline %}<h3 class="f3 fw1 gray p-name lh-subtitle">{{ page.byline | improve }}</h3>{% endif %}
+  <h1 itemprop="name headline"
+      class="tc near-black fw7 tracked-tight p-name lh-title f1 f-headline-l">
+    {{ page.title | improve }}
+  </h1>
+  {% if page.byline %}
+    <h3 class="f3 fw1 gray p-name lh-subtitle">
+      {{ page.byline | markdownify | strip_tags: '<p>'  | improve }}
+    </h3>
+  {% endif %}
   {% if page.excerpt and page.excerpt != 'none' %}
-  <blockquote class="excerpt p-summary">
+  <blockquote class="excerpt p-summary tc">
     {{ page.excerpt | markdownify | strip_tags: '<p>' }}
   </blockquote>
   {% endif %}

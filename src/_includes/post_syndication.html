@@ -1,7 +1,7 @@
 {% if page.syndication %}
 <p class="lh-copy measure near-black">
   Shared on:
-  {% for syn in page.syndication_links %}
+  {% for syn in page.syndication %}
     <a target="_blank" rel="syndication" class="u-syndication" href="{{ syn }}">{{ syn | syndication_title }}</a>
   {% endfor %}
 </p>

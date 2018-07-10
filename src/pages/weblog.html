@@ -35,7 +35,7 @@ masthead:
   </div>
   {% if post.excerpt and post.excerpt != 'none' %}
     <p class="measure-copy lh-copy near-black bl bw2 b--silver pa2 pa3-l">
-      {{ post.excerpt | strip_html | improve }}
+      {{ post.excerpt | markdownify | strip_html | improve }}
     </p>
   {% endif %}
 </section>
