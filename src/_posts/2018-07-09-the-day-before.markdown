@@ -2,6 +2,9 @@
 layout: post
 title: A Few Hours before Twenty Five
 date: 2018-07-09 18:45:35 PDT
+syndication:
+  - https://playvicious.social/@jalcine/100348653703426205
+  - https://twitter.com/jackyalcine/status/1016548446977908741
 tags:
   - age
   - growth
