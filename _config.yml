@@ -49,6 +49,12 @@ tag_feed_layout: tag_feed
 tag_page_dir: weblog/tag/
 tag_page_layout: tags
 
+feed:
+  path: feeds/articles.xml
+
+json_feed:
+  path: feeds/articles.json
+
 exclude:
   - _assets
   - .*
