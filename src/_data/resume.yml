@@ -14,10 +14,13 @@ roles:
     role: Senior SWE, Platform
     time:
       start: December 2017
+      end: July 2018
     blurb: |
-      I work on the **Platform** team that aims to maintain nothing but an
+      I worked on the **Platform** team that aims to maintain nothing but an
       excellent user experience for our self-serving customers as well as
       keeping our API performance to the highest of standards in the industry.
+      Two projects of note were around extending finance related tooling and 
+      laying groundwork for extending enterprise security-related features.
   -
     anchor: lyft
     name: Lyft

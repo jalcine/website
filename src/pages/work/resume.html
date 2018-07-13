@@ -28,10 +28,17 @@ components:
             <strong>{{ position.name }}</strong>
           </a>
         </h3>
+        {% if position.time.end %}
         <p class="gray f5 mv1 f6">
-          From <em class="near-black">{{ position.time.start }}</em> until
-          <em class="near-black">{{ position.time.end }}</em>
+          From <em class="near-black">{{ position.time.start }}</em>
+          until <em class="near-black">{{ position.time.end }}</em>
         </p>
+        {% else %}
+        <p class="gray f5 mv1 f6">
+          From <em class="near-black">{{ position.time.start }}</em>
+          until <strong>today</strong>
+        </p>
+        {% endif %}
         <div class="lh-copy f5 measure">
           {{ position.blurb | strip | markdownify }}
         </div>
