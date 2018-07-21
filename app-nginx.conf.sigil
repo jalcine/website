@@ -18,11 +18,11 @@ http {
     {{ if ne $.NGINX_ROOT "" }}
     root /app/www/{{ $.NGINX_ROOT }};
     {{ else }}
-    root /app/www;
+    root /app/www/;
     {{ end }}
     index index.html;
     port_in_redirect off;
-    error_page 404 /errors/404/;
+    error_page 404 /errors/404/index.html;
 
     gzip on;
     gzip_disable "msie6";
