@@ -15,4 +15,4 @@ code of my site on [my personal Git server][2].
 [jekyll]: http://jekyllrb.com/
 [1]: {% post_url 2018-01-21-tracking-you %}
 [2]: https://git.jacky.wtf/me/website/
-[1]: {% post_url 2018-01-08-new-infra %}
+[1]: {% post_url 2018-01-18-new-infra %}
