@@ -39,7 +39,7 @@ masthead:
 </p>
 <section class="flex flex-row flex-wrap justify-around">
   {% for region in site.data.contracting.regions %}
-  <div class="measure-wide-l w-100 ma2 lh-copy">
+  <div class="w-100 w-50-ns pa2 lh-copy">
     <h3 class="f3 lh-subtitle">{{ region.title }}</h3>
     {{ region.content | markdownify }}
   </div>
