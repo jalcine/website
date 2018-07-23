@@ -6,8 +6,8 @@ masthead:
 ---
 <p class="lead">
   This page reflects a listing of the tools I use for my every day activity.
-  This ranges from my <a href="#cameras">cameras</a> to <a
-    href="#shell">terminal shell of choice</a>. Good chance that you've
+  This ranges from my <a href="#cameras">cameras</a> to
+  <a href="#shell">terminal shell of choice</a>. Good chance that you've
   learned here out of curiousity or because I pointed you to it. Quite
   frankly, this page serves as a point of reference for me whenever I have to
   discuss what I use on my day-to-day with people.
@@ -22,17 +22,19 @@ masthead:
       :hourglass: Updated <time>{{ category.last_updated }}</time>
     </address>
     {% for item in category.components %}
-      <section role="group" class="cf db cb">
+      <section role="group">
         <h3 class="f3 lh-solid">
           <a name="{{item.anchor}}">{{ item.name }}</a>
         </h3>
-        {% if item.image %}
-          {% asset "{{ item.image }}"
-                class="w-auto h-auto mw6 db ma2 center-s vh-25 fr"
-                width=auto height=auto %}
-        {% endif %}
-        <div class="f5 lh-copy center-s fl-l measure-narrow-l">
-          {{ item.bio | strip_tags: '<p></p>' | markdownify }}
+        <div class="flex flex-row flex-wrap">
+          {% if item.image %}
+            {% asset "{{ item.image }}"
+                  class="w-100 mw6 h-auto h-auto center db ma1-l"
+                  width=auto height=auto %}
+          {% endif %}
+          <aside class="f5 lh-copy center-s measure-narrow-l">
+            {{ item.bio | strip_tags: '<p></p>' | markdownify }}
+          </aside>
         </div>
       </section>
     {% endfor %}
