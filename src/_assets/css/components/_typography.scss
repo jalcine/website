@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 p, body, div, li, blockquote {
   @include expected-sans-serif-fonts;
   @extend .f5;
+  @extend .lh-copy;
   word-wrap: break-word;
 }
 
@@ -68,7 +69,6 @@ pre, code, kbd {
 main[role=group] > p:first-child,
 p.lead {
   @extend .f4;
-  @extend .lh-copy;
   text-align: justify;
   text-align-last: left;
 }
@@ -89,6 +89,7 @@ ul {
 
   li {
     @extend .pa1;
+    @extend .lh-copy;
   }
 }
 

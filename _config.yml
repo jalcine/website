@@ -87,6 +87,12 @@ defaults:
       image: none
   -
     scope:
+      path: "_portfolio"
+      type: "portfolio"
+    values:
+      layout: portfolio
+  -
+    scope:
       path: "_drafts"
       type: "drafts"
     values:
@@ -112,9 +118,6 @@ collections:
   drafts:
     output: false
     layout: post
-  projects:
-    output: true
-    layout: project
 
 assets:
   destination: '/assets'
