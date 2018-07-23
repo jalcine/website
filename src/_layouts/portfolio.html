@@ -3,11 +3,11 @@ layout: page
 image: none
 ---
 <section role="document">
-  <h2 class="f2 lh-title">
-    <a href="{{ page.website }}">{{ page.title }}</a>
-  </h2>
-  <h4 class="f4 lh-subtitle">{{ page.description }}</h4>
-  <a href="/projects/">&laquo; Back to project index</a>
+  <h1 class="f1 lh-title">
+    <a target="_blank" title="{{ page.title }}" href="{{ page.website }}">{{ page.title }}</a>
+  </h1>
+  <h3 class="f3 gray lh-subtitle">{{ page.description }}</h3>
+  <a href="/portfolio/">&laquo; Back to portfolio index</a>
   <main role="group">
     {{ content | improve | letter_spacing | markdownify }}
   </main>

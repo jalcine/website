@@ -1,4 +1,5 @@
 ---
+layout: portfolio
 title: Good For PoC
 website: http://goodforpocin.tech
 image: portfolio/goodforpoc.png

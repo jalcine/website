@@ -15,13 +15,15 @@
           <span class="f7 gray">The address that I'll send your reply to!</span>
         </div>
         <div class="mv3">
-          <label class="db fw5 lh-copy f6" for="first_name">Name</label>
+          <label class="db fw5 lh-copy f5" for="first_name">Name</label>
           <input class="pa2 input-reset w-100 ba b--black-20 border-box" type="text" name="name" id="name">
           <span class="f7 gray">The name you'd like to address you with.</span>
         </div>
         <div class="mv3">
-          <label class="db fw6 lh-copy f6" for="intent">Intent</label>
+          <label class="db fw6 lh-copy f5" for="intent">Intent</label>
           <select class="pa2 input-reset w-100 ba b--black-20 border-box" name="intent" id="intent">
+            <option disabled>Networking</option>
+            <option value="networking:general">&mdash;&nbsp;Saying Hello</option>
             <option disabled>Work</option>
             <option value="work:contract">&mdash;&nbsp;Contract Proposition</option>
             <option value="work:general">&mdash;&nbsp;Inquiry</option>
@@ -34,10 +36,10 @@
           <span class="f7 gray">The kind of inquiry you're aiming to make.</span>
         </div>
         <div class="mv3">
-          <label class="db fw6 lh-copy f6" for="body">Message</label>
+          <label class="db fw6 lh-copy f5" for="body">Message</label>
           <div id="bodyEditor"></div>
           <textarea name="body" id="body"
-                                class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2 h4"  />
+                    class="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2 h4"  />
           </textarea>
           <span class="f7 gray">The kind of inquiry you're aiming to make.</span>
         </div>
@@ -52,26 +54,33 @@
       Before hitting that button below, there's some things you should consider
       that'd help ensure I respond to your message in a timely fashion.
     </p>
+    <ol class="f5">
+      <li>
+        <b>Have I answered it before?</b> Search my blog using the fields at the 
+        top or bottom of the site. Chances are if I've answered it on my site,
+        I'll give a short description and link you to that post. I'd want you to
+        have the most relevant answer!
+      </li>
+      <li>
+        <b>Is it a mutual exchange for help?</b> Optimal situations for
+        knowledge exchange happens when both parties have something to
+        contribute. However, if this is more of a "teaching" opportunity for me
+        to you, I'd suggest switching it to a consulting kind of question (I do
+        this with your consent once I've noticed said behavior).
+      </li>
+      <li>
+        <b>What's your mission?</b> As much I love talking ears off about specs,
+        standards and history; I'm not here to be your library. I'm a <em>human
+        being</em> and I aim for you to treat me the way you expect to be
+        treated.
+      </li>
+      <li>
+        <b>You look familiar!</b> Not only do I see a lot of people on a regular
+        basis, they also tend to be new and I almost <em>instantaneously</em>
+        forget them. It's not them &mdash; it's genuinely me. However, if you know
+        that we've met once before &mdash; say it! I'll be more likely to
+        respond and reach out. Even reference people we might have in common
+        &mdash; it'll help reinforce the mental ties.
+    </ol>
   </div>
 </div>
-<script type="text/javascript">
-  function setupEditorForm () {
-    var editorElem = document.getElementById("bodyEditor");
-    var editorTextarea = document.getElementById("body");
-    var editor = new Quill(editorElem, {
-      debug: 'info',
-      placeholder: 'What do you want to tell me?'
-    });
-    editorElem.classList.add('b--black-20', 'ba', 'border-box', 'mb2', 'mw6');
-    editorTextarea.classList.replace('db', 'dn');
-
-    editor.on('text-change', function(delta, oldDelta, source) {
-      var region = document.querySelector("#bodyEditor > .ql-editor");
-      editorTextarea.value = region.innerHTML;
-    });
-  };
-
-  (function (w) {
-    // w.addEventListener('load', setupEditorForm);
-  })(window);
-</script>
