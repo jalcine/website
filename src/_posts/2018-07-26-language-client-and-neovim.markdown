@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Using Language Servers with Neovim for a Powerful Editor Experience"
+image: posts/strength.jpg
+title: Using Language Servers within NeoVim
 date: 2018-07-26 13:53:45 PDT
 tags:
   - vim
@@ -15,7 +16,7 @@ description: |
   Neovim, I got curious.
 ---
 
-As noticed a lot, I'm a _big_ user of Vim. I use to write my journal entries,
+As noticed a lot, I'm a _big_ user of [NeoVim][]. I use to write my journal entries,
 notes or anything that I can capture into text and save to my local file system.
 
 Recently, I [shared a link][1] with a friend who wanted to get TypeScript
@@ -119,8 +120,9 @@ Nice. Now if we open a new TypeScript file...
 </noscript>
 
 Voilà! I use this every day in larger projects like [twch.at][12] and [client
-work][13] and it's _really_ great.
-
+work][13] and it's _really_ great. Adding more support for other languages is
+as simple as looking for the [corresponding language server][14] and adding it
+to the dictionary in your Vim configuration above.
 
 [1]: https://fortes.com/2017/language-servuer-neovim/
 [2]: https://langserver.org/
@@ -135,6 +137,8 @@ work][13] and it's _really_ great.
 [11]: https://github.com/sourcegraph/javascript-typescript-langserver
 [12]: /portfolio/twchat/?ref=blog
 [13]: /work/contract/?ref=blog
+[14]: https://langserver.org/#implementations-server
 [sha-ncm2]: https://github.com/ncm2/ncm2/commit/bf1806e2ef256772a44c7c874250ef0b4a7dc04e
 [sha-lcnvim]: https://github.com/autozimu/LanguageClient-neovim/commit/8acdc380dc0a0c5d1722d7b8c061f378c2999f13
+[neovim]: https://neovim.io/
 [^1]: They wrote about it - [a nice read][4]!
