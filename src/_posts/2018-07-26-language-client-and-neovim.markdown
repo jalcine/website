@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using Language Servers with Neovim for a Powerful Editor Experience"
-date: 2018-07-25 16:10:20 PDT
+date: 2018-07-26 13:53:45 PDT
 tags:
   - vim
   - neovim
@@ -113,10 +113,18 @@ let g:LanguageClient_serverCommands = {
 
 Nice. Now if we open a new TypeScript file...
 
+<script defer src="https://asciinema.org/a/jpqs4bdOrDsMpbtAF7PUXepqn.js" id="asciicast-jpqs4bdOrDsMpbtAF7PUXepqn" async></script>
+<noscript>
+  [![asciicast](https://asciinema.org/a/jpqs4bdOrDsMpbtAF7PUXepqn.png)](https://asciinema.org/a/jpqs4bdOrDsMpbtAF7PUXepqnk)
+</noscript>
+
+Voilà! I use this every day in larger projects like [twch.at][12] and [client
+work][13] and it's _really_ great.
+
 
 [1]: https://fortes.com/2017/language-servuer-neovim/
 [2]: https://langserver.org/
-[3]: /faq/how-to-reply/
+[3]: /faq/how-to-reply/?ref=blog
 [4]: https://web.archive.org/web/20180722174120/https://code.visualstudio.com/blogs/2016/06/27/common-language-protocol
 [5]: https://github.com/ncm2/ncm2
 [6]: https://vimawesome.com/plugin/ncm2
@@ -125,6 +133,8 @@ Nice. Now if we open a new TypeScript file...
 [9]: https://github.com/ncm2/ncm2-jedi
 [10]: https://neovim.io/doc/user/options.html#'runtimepath'
 [11]: https://github.com/sourcegraph/javascript-typescript-langserver
+[12]: /portfolio/twchat/?ref=blog
+[13]: /work/contract/?ref=blog
 [sha-ncm2]: https://github.com/ncm2/ncm2/commit/bf1806e2ef256772a44c7c874250ef0b4a7dc04e
 [sha-lcnvim]: https://github.com/autozimu/LanguageClient-neovim/commit/8acdc380dc0a0c5d1722d7b8c061f378c2999f13
 [^1]: They wrote about it - [a nice read][4]!
