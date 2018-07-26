@@ -39,13 +39,13 @@ masthead:
 </p>
 <section class="flex flex-row flex-wrap justify-around">
   {% for region in site.data.contracting.regions %}
-  <div class="w-40 ma2 lh-copy">
+  <div class="w-100 w-50-ns pa2 lh-copy">
     <h3 class="f3 lh-subtitle">{{ region.title }}</h3>
     {{ region.content | markdownify }}
   </div>
   {% endfor %}
 </section>
-<section class="w-80 center near-black bg-near-white pa3 pa5-l">
+<section class="w-100 w-two-thirds-l center near-black bg-near-white pa3 pa5-l">
   <h2 class="f2 tc">All Sounds Good?</h2>
   <p class="lead measure">
     Let's get this started. Head over to my <a href="/contact/">contact</a> page
@@ -55,7 +55,8 @@ masthead:
   <ul>
     <li>MVP prototyping,</li>
     <li>Performance investigation and improvements, </li>
-    <li>Intermediate security diagnostics</li>
+    <li>Intermediate security diagnostics,</li>
+    <li>Project-based pricing over hourly pricing (<em>with discussion</em>)</li>
     <li><strong>and so much more.</strong></li>
   </ul>
 </section>
