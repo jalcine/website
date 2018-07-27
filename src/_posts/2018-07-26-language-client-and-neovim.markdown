@@ -124,7 +124,7 @@ work][13] and it's _really_ great. Adding more support for other languages is
 as simple as looking for the [corresponding language server][14] and adding it
 to the dictionary in your Vim configuration above.
 
-[1]: https://fortes.com/2017/language-servuer-neovim/
+[1]: https://fortes.com/2017/language-server-neovim/
 [2]: https://langserver.org/
 [3]: /faq/how-to-reply/?ref=blog
 [4]: https://web.archive.org/web/20180722174120/https://code.visualstudio.com/blogs/2016/06/27/common-language-protocol
