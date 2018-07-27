@@ -2,6 +2,9 @@
 layout: post
 image: posts/strength.jpg
 title: Using Language Servers within NeoVim
+syndication:
+  - https://twitter.com/jackyalcine/status/1022631862361944071 
+  - https://playvicious.social/@jalcine/100443715527402602
 date: 2018-07-26 13:53:45 PDT
 tags:
   - vim
