@@ -1,13 +1,18 @@
 ---
 layout: page
-image: none
 ---
 <section role="document">
   <h1 class="f1 lh-title">
-    <a target="_blank" title="{{ page.title }}" href="{{ page.website }}">{{ page.title }}</a>
+    {{ page.title }}
   </h1>
   <h3 class="f3 gray lh-subtitle">{{ page.description }}</h3>
-  <a href="/portfolio/">&laquo; Back to portfolio index</a>
+  <div class="tc">
+    <a href="/portfolio/">Back to portfolio index</a>
+    &mdash;
+    <a target="_blank" href="{{ page.website }}">
+      Visit {{ page.title }}'s Website
+    </a>
+  </div>
   <main role="group">
     {{ content | improve | letter_spacing | markdownify }}
   </main>

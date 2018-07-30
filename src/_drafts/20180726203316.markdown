@@ -1,0 +1,25 @@
+---
+layout: post
+title: Going Beyond Jekyll
+date: 2018-07-26 20:33:37 PDT
+category: thoughts
+tags:
+  - jekyll
+  - web
+  - indieweb
+excerpt: |
+  I've used Jekyll for quite some time now. However, my objectives and goals to
+  move my site to be more IndieWeb-adjacent is making me reconsider using this
+  particular static site generator.
+---
+
+I like using the Web. A lot. Like despite my stances on data privacy, I give
+chunks of it away to companies in return for pretty graphs and a sense of
+"progress". Now that I've begun to understand _how_ more of this information can
+be pulled back in house and kept under my control, I debate if I should consider
+removing myself from the world of consumer-to-business dependency cycling and
+look for other venues. I say all of this to mention that, this journey is going
+to require me to re purpose my existing site here at https://jacky.wtf/.
+
+## Trusting Myself
+

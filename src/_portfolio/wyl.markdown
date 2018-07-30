@@ -6,6 +6,15 @@ image: portfolio/whoseyourlandlord.png
 description: A platform for reviewing your landlord and discovering places to live.
 ---
 
+# Objectives
+
+WhoseYourLandlord, at the time that I worked on their project, is a Ruby on
+Rails application. A project I focused on there was improving rental listing
+discovery for renters as well as sanitizing address inputs for realtors who came
+in to claim a listing.
+
+# About
+
 The following is grabbed from [WhoseYourLandlord's website][1]:
 
 > [WYL is] giving renters ownership of their living situation by putting housing

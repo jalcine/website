@@ -1,5 +1,3 @@
-{% capture _garbage_ %}
-{% endcapture %}
 <header role="group" class="post ph4 center" data-track-content>
   <h1 itemprop="name headline"
       class="tc near-black fw7 tracked-tight p-name lh-title f1 f-headline-l">
@@ -11,7 +9,7 @@
     </h3>
   {% endif %}
   {% if page.excerpt and page.excerpt != 'none' %}
-  <blockquote class="excerpt p-summary tc">
+  <blockquote class="excerpt p-summary">
     {{ page.excerpt | markdownify | strip_tags: '<p>' }}
   </blockquote>
   {% endif %}

@@ -5,6 +5,8 @@ title: Using Language Servers within NeoVim
 syndication:
   - https://twitter.com/jackyalcine/status/1022631862361944071 
   - https://playvicious.social/@jalcine/100443715527402602
+  - https://www.reddit.com/r/neovim/comments/927n1d/getting_simple_language_server_support_working/
+  - https://medium.com/@jackyalcine/using-language-servers-within-neovim-1788e80c5d08
 date: 2018-07-26 13:53:45 PDT
 tags:
   - vim
