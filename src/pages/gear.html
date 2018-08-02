@@ -26,13 +26,13 @@ masthead:
         <h3 class="f3 lh-solid">
           <a name="{{item.anchor}}">{{ item.name }}</a>
         </h3>
-        <div class="flex flex-row flex-wrap">
+        <div class="flex flex-column flex-row-l flex-wrap">
           {% if item.image %}
             {% asset "{{ item.image }}"
-                  class="w-100 mw6 h-auto h-auto center db ma1-l"
+                  class="w-100 w-auto-ns mw6 h5 center ma0-l ma1-l"
                   width=auto height=auto %}
           {% endif %}
-          <aside class="f5 lh-copy center-s measure-narrow-l">
+          <aside class="f5 lh-copy center-s measure">
             {{ item.bio | strip_tags: '<p></p>' | markdownify }}
           </aside>
         </div>

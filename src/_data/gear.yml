@@ -8,19 +8,16 @@ categories:
       -
         anchor: laptop
         name: My Primary Laptop
-        last_updated: 2017-10-08 00:28:40 PDT
-        image: gear/dell-xps-14-keyboard-amzn.jpeg
+        last_updated: 2018-08-02 14:52:03 PDT
+        image: gear/dell-inspiron-7373.jpeg
         bio: |
-          My laptop of choice is the [Dell XPS 14][1] with 500 GB of disk space,
-          32 GB SSD and a [Intel i7-3537U][2] core. With 8 GB SDDRAM3 @ 1.6 GHz,
-          a moderately decent set of cores &mdash; gets the job done.
-          Bluetooth is in there as well and it has a backlit keyboard which
-          really helps at night. A nugget of gold about this laptop? Under the
-          bottom left corner of the keyboard, a button lights up to five LEDs,
-          letting you know how much power is left.
+          I made the upgrade earlier in 2018 to the [Dell Inspiron 13][1]. I got
+          it souped it as a thank-you gift to myself. Sadly, not a ton of Linux
+          environments are tailored for touch screens so things like pop up
+          keyboards, gesture recognition or even screen rotation work out of the box.
+          Sounds like a hack project!
 
-          [1]: http://amzn.com/B00HK8V4PU
-          [2]: http://ark.intel.com/products/72054
+          [1]: https://www.dell.com/en-us/shop/dell-laptops/inspiron-13-7000-2-in-1/spd/inspiron-13-7373-2-in-1-laptop
       -
         anchor: camera
         name: My Cameras
@@ -38,13 +35,24 @@ categories:
           [2]: http://amzn.com/B009OAOG9S
       -
         anchor: mouse
-        name: My Mouse
+        name: My Mouse on the Road
         last_updated: 2017-10-08 10:54:43 PDT
         image: gear/logitech-m705-amzn.jpeg
         bio: |
           Nothing too fantastic here. I got this because it was a bit more
           friendly to left-handed mouse users (one of the few!) thus making it
           worthwhile. It doubles as my road mouse as well.
+      -
+        anchor: desk-mouse
+        name: My Mouse in my Home Office
+        last_updated: 2018-08-02 14:49:46 PDT
+        image: gear/anker-ak-uba.jpeg
+        bio: |
+          I got this [mouse from Anker][1] for my home use and my wrist can't 
+          keep thanking me. If you have the option, switch to this and feel
+          the moments of wrist pain just disappear.
+
+          [1]: http://a.co/3dyouKN
   -
     anchor: software
     name: Software

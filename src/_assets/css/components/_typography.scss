@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, body, div, li, blockquote {
   @include expected-sans-serif-fonts;
-  @extend .f5;
+  @extend .f5, .f4-l;
   @extend .lh-copy;
   word-wrap: break-word;
 }
@@ -66,11 +66,19 @@ pre, code, kbd {
   @include expected-monospace-fonts;
 }
 
-main[role=group] > p:first-child,
-p.lead {
-  @extend .f4;
-  text-align: justify;
-  text-align-last: left;
+main[role=group] {
+  p, blockquote {
+    @extend .f4;
+    @extend .measure;
+
+    &:first-child {
+      @extend .f3;
+      @extend .measure-wide;
+
+      text-align-last: left;
+      text-align: justify;
+    }
+  }
 }
 
 ul {
@@ -95,6 +103,7 @@ ul {
 
 a {
   @extend .link;
+  @extend .navy;
 }
 
 blockquote {
