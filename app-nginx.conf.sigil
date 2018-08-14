@@ -16,7 +16,6 @@ http {
     listen {{ $.PORT }};
     server_name  _;
     root /app/www/_deploy/;
-    {{ end }}
     index index.html;
     port_in_redirect off;
     error_page 404 /errors/404/index.html;
