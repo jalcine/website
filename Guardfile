@@ -7,7 +7,7 @@ end
 
 # Handle the act of live reloading changes to the browser (hard refreshes)
 guard :livereload do
-  watch(/^_site*.(?!asset-cache)*(html|css|js)/) { |m| "/#{m[0]}" }
+  watch(/^_site/)
 end
 
 # Load a Rack server to handle the local serving of the site.

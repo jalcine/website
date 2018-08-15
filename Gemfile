@@ -14,14 +14,11 @@ group :jekyll do
   gem 'activesupport'
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
-  gem 'image_optim'
   gem 'jekyll'
   gem 'kramdown'
-  gem 'mini_magick'
   gem 'parallel'
   gem 'rouge'
   gem 'sprockets', '~> 4.0.0.beta7'
-  gem 'uglifier'
   gem 'xmlrpc'
 end
 
@@ -59,16 +56,6 @@ group :development do
   gem 'guard-livereload', require: false
   gem 'guard-rack', require: false
   gem 'guard-rake', require: false
-  gem 'guard-rspec', require: false
-  gem 'libnotify'
-end
-
-group :test do
-  gem 'capybara'
-  gem 'capybara-screenshot'
-  gem 'chromedriver-helper'
-  gem 'html-proofer'
-  gem 'rspec'
-  gem 'selenium-webdriver'
+  gem 'libnotify', require: false
 end
 # }}}

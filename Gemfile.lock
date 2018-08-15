@@ -8,43 +8,21 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
-    archive-zip (0.11.0)
-      io-like (~> 0.3.0)
     autoprefixer-rails (8.4.1)
       execjs
-    capybara (3.1.0)
-      addressable
-      mini_mime (>= 0.1.3)
-      nokogiri (~> 1.8)
-      rack (>= 1.6.0)
-      rack-test (>= 0.6.3)
-      xpath (~> 3.0)
-    capybara-screenshot (1.0.21)
-      capybara (>= 1.0, < 4)
-      launchy
-    childprocess (0.9.0)
-      ffi (~> 1.0, >= 1.0.11)
-    chromedriver-helper (1.2.0)
-      archive-zip (~> 0.10)
-      nokogiri (~> 1.8)
     classifier-reborn (2.2.0)
       fast-stemmer (~> 1.0)
     coderay (1.1.2)
     colorator (1.1.0)
-    colorize (0.8.1)
     concurrent-ruby (1.0.5)
-    diff-lcs (1.3)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.4.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
-    ethon (0.11.0)
-      ffi (>= 1.3.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
-    exifr (1.3.4)
     extras (0.3.0)
       forwardable-extended (~> 2.5)
     faraday (0.15.1)
@@ -54,7 +32,6 @@ GEM
     ffi (1.9.25)
     formatador (0.2.5)
     forwardable-extended (2.6.0)
-    fspath (3.1.0)
     gemoji (3.0.0)
     guard (2.14.2)
       formatador (>= 0.2.4)
@@ -82,25 +59,12 @@ GEM
     guard-rake (1.0.0)
       guard
       rake
-    guard-rspec (4.7.3)
-      guard (~> 2.1)
-      guard-compat (~> 1.1)
-      rspec (>= 2.99.0, < 4.0)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
     html-pipeline (2.8.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
-    html-proofer (3.8.0)
-      activesupport (>= 4.2, < 6.0)
-      addressable (~> 2.3)
-      colorize (~> 0.8)
-      mercenary (~> 0.3.2)
-      nokogiri (~> 1.8.1)
-      parallel (~> 1.3)
-      typhoeus (~> 1.3)
-      yell (~> 2.0)
     htmlbeautifier (1.3.1)
     http (2.2.2)
       addressable (~> 2.3)
@@ -115,15 +79,6 @@ GEM
       multi_xml (>= 0.5.2)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    image_optim (0.26.1)
-      exifr (~> 1.2, >= 1.2.2)
-      fspath (~> 3.0)
-      image_size (~> 1.5)
-      in_threads (~> 1.3)
-      progress (~> 3.0, >= 3.0.1)
-    image_size (1.5.0)
-    in_threads (1.5.0)
-    io-like (0.3.0)
     jekyll (3.8.3)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -192,8 +147,6 @@ GEM
       jekyll (~> 3.0)
     json (2.1.0)
     kramdown (1.17.0)
-    launchy (2.4.3)
-      addressable (~> 2.3)
     libnotify (0.9.4)
       ffi (>= 1.0.11)
     link_header (0.0.8)
@@ -208,8 +161,6 @@ GEM
     lumberjack (1.0.13)
     mercenary (0.3.6)
     method_source (0.9.0)
-    mini_magick (4.8.0)
-    mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
@@ -228,7 +179,6 @@ GEM
     parallel (1.12.1)
     pathutil (0.16.1)
       forwardable-extended (~> 2.6)
-    progress (3.4.0)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -237,30 +187,14 @@ GEM
     rack (2.0.5)
     rack-livereload (0.3.17)
       rack
-    rack-test (1.0.0)
-      rack (>= 1.0, < 3)
     rake (12.3.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rouge (3.1.1)
-    rspec (3.7.0)
-      rspec-core (~> 3.7.0)
-      rspec-expectations (~> 3.7.0)
-      rspec-mocks (~> 3.7.0)
-    rspec-core (3.7.1)
-      rspec-support (~> 3.7.0)
-    rspec-expectations (3.7.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-mocks (3.7.0)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-support (3.7.1)
     ruby-oembed (0.12.0)
     ruby_dep (1.5.0)
     rubypants (0.7.0)
-    rubyzip (1.2.1)
     safe_yaml (1.0.4)
     sass (3.5.6)
       sass-listen (~> 4.0.0)
@@ -270,9 +204,6 @@ GEM
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
-    selenium-webdriver (3.12.0)
-      childprocess (~> 0.5)
-      rubyzip (~> 1.2)
     shellany (0.0.1)
     spoon (0.0.6)
       ffi
@@ -285,8 +216,6 @@ GEM
     thread_safe (0.3.6)
     tilt (2.0.8)
     titlecase (0.1.1)
-    typhoeus (1.3.0)
-      ethon (>= 0.9.0)
     typogruby (1.0.18)
       rubypants
     tzinfo (1.2.5)
@@ -302,9 +231,6 @@ GEM
       link_header (~> 0.0.8)
       nokogiri
     xmlrpc (0.3.0)
-    xpath (3.0.0)
-      nokogiri (~> 1.8)
-    yell (2.0.7)
 
 PLATFORMS
   ruby
@@ -312,9 +238,6 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   autoprefixer-rails
-  capybara
-  capybara-screenshot
-  chromedriver-helper
   classifier-reborn
   dotenv
   guard
@@ -322,10 +245,7 @@ DEPENDENCIES
   guard-livereload
   guard-rack
   guard-rake
-  guard-rspec
   haml
-  html-proofer
-  image_optim
   jekyll
   jekyll-assets
   jekyll-feed
@@ -343,18 +263,14 @@ DEPENDENCIES
   jemoji
   kramdown
   libnotify
-  mini_magick
   parallel
   puma
   rack
   rack-livereload
   rake
   rouge
-  rspec
   ruby-oembed
-  selenium-webdriver
   sprockets (~> 4.0.0.beta7)
-  uglifier
   xmlrpc
 
 RUBY VERSION
