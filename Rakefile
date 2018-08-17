@@ -21,23 +21,26 @@ task :serve do
   system 'bundle exec jekyll serve'
 end
 
-namespace :build do
-  task :watch do
-    run_jekyll_in_dev(['build', '--watch', '--trace'])
-  end
+task :dev do
+  run_jekyll_in_dev(['serve', '--livereload'])
+end
 
+namespace :build do
   task :prod do
     run_jekyll_in_prod(['build'])
   end
 
   task :dev do
+    puts "-----> Building a development release..."
     run_jekyll_in_dev(['build', '--verbose'])
+    puts "-----> Built a development release."
   end
 
   task :deploy do
     puts "----> Building for #{ENV['ENV']}"
     puts Rake::Task['build:prod'].invoke if ENV['ENV'] == 'production'
     puts Rake::Task['build:dev'].invoke unless ENV['ENV'] == 'production'
+    puts "----> Built site for #{ENV['ENV']}"
   end
 end
 

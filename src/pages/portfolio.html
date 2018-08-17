@@ -10,13 +10,11 @@ pagination:
   collection: portfolio
   title: 'Portfolio - Page :num of :max'
 ---
-<p class="lead lh-copy">
+<p class="f3 lead lh-copy measure">
   As mentioned on <a href="/work/resume/">my resume</a>, I work as a
   full-stack software developer; ranging from client-side mobile applications
-  on Android to server infrastructure.
-  <br />
-  Sounds interesting? <a href="/work/contract/">Let's get to work</a>. I'd
-  love to hear what ideas you got brewing!
+  on Android to server infrastructure. Sounds interesting? 
+  <a class="link" href="/work/contract/?ref=portfolio">Let's get to work</a>.
 </p>
 {% for entry in paginator.posts %}
   {% include listing/project.html project=entry %}

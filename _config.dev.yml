@@ -3,23 +3,13 @@ build_drafts: true
 show_drafts: true
 incremental: true
 verbose: true
-url: 'http://localhost:1993'
+port: 1993
 
 assets:
   compression: false
-  debug: false
-  verbose: false
+  debug: true
+  verbose: true
   gzip: false
-  defaults:
-    js:
-      integrity: true
-      prefetch: false
-    css:
-      integrity: true
-      prefetch: false
-    img:
-      integrity: true
-      prefetch: false
 
 webmentions:
   debug: true

@@ -2,15 +2,11 @@
 
 require 'rubygems'
 require 'bundler/setup'
+require 'rack/livereload'
 
-if ENV['RACK_ENV'] == 'development'
-  require 'rack/livereload'
-
-  # Make it easy to see changes in near-real-time.
-  use Rack::LiveReload,
-      no_swf: true,
-      use_swf: false
-end
+use Rack::LiveReload,
+    no_swf: true,
+    use_swf: false
 
 # Serve all of the generated files from '_site' out to the local server.
 use Rack::Static,

@@ -2,6 +2,11 @@
 layout: post
 image: posts/strength.jpg
 title: Using Language Servers within NeoVim
+syndication:
+  - https://twitter.com/jackyalcine/status/1022631862361944071 
+  - https://playvicious.social/@jalcine/100443715527402602
+  - https://www.reddit.com/r/neovim/comments/927n1d/getting_simple_language_server_support_working/
+  - https://medium.com/@jackyalcine/using-language-servers-within-neovim-1788e80c5d08
 date: 2018-07-26 13:53:45 PDT
 tags:
   - vim
@@ -124,7 +129,7 @@ work][13] and it's _really_ great. Adding more support for other languages is
 as simple as looking for the [corresponding language server][14] and adding it
 to the dictionary in your Vim configuration above.
 
-[1]: https://fortes.com/2017/language-servuer-neovim/
+[1]: https://fortes.com/2017/language-server-neovim/
 [2]: https://langserver.org/
 [3]: /faq/how-to-reply/?ref=blog
 [4]: https://web.archive.org/web/20180722174120/https://code.visualstudio.com/blogs/2016/06/27/common-language-protocol

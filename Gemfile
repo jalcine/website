@@ -1,4 +1,4 @@
-# vim:set fdl=1 nospell:
+# vim: set fdl=1 nospell:
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
@@ -14,14 +14,11 @@ group :jekyll do
   gem 'activesupport'
   gem 'autoprefixer-rails'
   gem 'classifier-reborn'
-  gem 'image_optim'
-  gem 'jekyll'
+  gem 'jekyll', '~> 3.8.0'
   gem 'kramdown'
-  gem 'mini_magick'
   gem 'parallel'
   gem 'rouge'
   gem 'sprockets', '~> 4.0.0.beta7'
-  gem 'uglifier'
   gem 'xmlrpc'
 end
 
@@ -50,25 +47,5 @@ group :web do
   gem 'puma'
   gem 'rack'
   gem 'rack-livereload', require: 'rack/livereload', group: :development
-end
-
-# Automation
-group :development do
-  gem 'guard'
-  gem 'guard-bundler', require: false
-  gem 'guard-livereload', require: false
-  gem 'guard-rack', require: false
-  gem 'guard-rake', require: false
-  gem 'guard-rspec', require: false
-  gem 'libnotify'
-end
-
-group :test do
-  gem 'capybara'
-  gem 'capybara-screenshot'
-  gem 'chromedriver-helper'
-  gem 'html-proofer'
-  gem 'rspec'
-  gem 'selenium-webdriver'
 end
 # }}}
