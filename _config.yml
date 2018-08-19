@@ -122,9 +122,9 @@ collections:
 assets:
   destination: '/assets'
   compression: true
-  gzip: false
+  gzip: true
   cdn:
-    baseurl: true
+    baseurl: false
   defaults:
     js:
       integrity: true
@@ -175,7 +175,7 @@ webmentions:
     - "https://www.jacky.wtf"
     - "https://www.jalcine.me"
   js:
-    uglify: false
+    uglify: true
     deploy: false
     destination: _assets/js
   templates:

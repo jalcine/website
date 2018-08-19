@@ -22,5 +22,9 @@
   "engines": {
     "npm": "6.1.0",
     "node": "9.8.0"
+  },
+  "devDependencies": {
+    "stylelint": "9.4.0",
+    "stylelint-scss": "3.3.0"
   }
 }
