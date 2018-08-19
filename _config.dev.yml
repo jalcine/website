@@ -12,14 +12,14 @@ assets:
   gzip: false
   defaults:
     js:
-      integrity: true
-      prefetch: true
+      integrity: false
+      prefetch: false
     css:
-      integrity: true
-      prefetch: true
+      integrity: false
+      prefetch: false
     img:
-      integrity: true
-      prefetch: true
+      integrity: false
+      prefetch: false
 
 
 webmentions:
