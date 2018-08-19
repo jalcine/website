@@ -8,47 +8,34 @@ components:
   header: false
 ---
 <style>
-body > section a:hover,
-body > section a:link,
-body > section a:visited,
-{
-  color: #EFEFEF!important;
-  text-decoration: underline;
+section[data-content-name="page"] a,
+section[data-content-name="page"] a:visited {
+  color: #96CCFF;
 }
 </style>
-<section class="near-white flex flex-row flex-wrap items-center justify-center bg-near-black near-white"
-         data-track-content
-         data-content-name="page"
-         data-content-piece="{{ page.title }}">
+<section class="bg-near-black near-white flex flex-row flex-wrap items-end justify-center" data-track-content data-content-name="page" data-content-piece="{{ page.title }}">
   {% asset brand/landing.jpeg
-    class="mw-100 mw5 mv0 mw6-l shadow-2 mr3-l"
+    class="mw-100 mw6-l w-100 mv0 mr3-l"
     width="100%" height="100%"
     alt="Picture of Jacky sitting looking to the right of the frame."%}
-  <div class="pa3 pa2-l">
-    <h3 class="pa0 ma0 tc tl-l lh-subtitle ttu f5 fontFamily__sansSerif">
-      Hey there.
-    </h3>
-    <h1 class="ph0 pv2 tj-s tc tl-l mv1 lh-title f1-s f-headline fontFamily__special">
-      I'm Jacky. 
-    </h1>
-    <p class="lh-copy measure tj f3">
-      I use this site to share my stories with the world and her children.
-      I've been doing it since 2010. This site is a
-      <a href="/faq/indieweb/">Level 1 IndieWeb</a> site.
+  <div class="pa3 pv2-l">
+    <p class="lh-copy measure-narrow tj f3 f2-ns">
+      <strong>Yo</strong>.
+      I'm Jacky, independent owner and lead developer of
+      :fist:
+      <a class="link fw5" href="https://black.af">black.af</a> based out of
+      :city_sunset: <a class="link fw5" href="https://en.wikipedia.org/wiki/Oakland,_ca">
+        Oakland, CA, (KKK)/USA</a>.
     </p>
-    <p class="lh-copy measure tj f4">
-      I recently wrote <a href="{{ site.posts[0].url }}">{{ site.posts[0].title }}
-      </a>. I have <a href="/weblog/">more posts available</a> as well.
+    <p class="light-gray lh-copy measure tj f4 f3-ns">
+      My website's my guide to you on how to interact with me. Be it an attempt
+      to <a class="link fw5" href="/contact/">reach out</a>, <a class="link fw5" href="/work/contract/">do some
+        work together</a> or even figure out <a class="link fw5" href="/gear/#mouse">what kind of
+        mouse I use</a>, my site will have the info.
     </p>
-    <p class="lh-copy measure tj f4">
-      I'd talk more about myself on my <em>home</em> page but that'd detract from
-      other parts of my site. I have pages that tell you <a href="/gear/">what I
-        use</a>, <a href="/work/">what I tend to do during the day</a>,
-      <a href="/subscribe/">how to stay in touch</a> even
-      <a class="white" href="/now/">what I'm doing now</a>. Lastly, I've created a place for you
-      to <a href="/contact/">reach out to me</a>. I want this site to be a decent
-      reflection of myself but also provide value to you. Let me know what helps
-      you be a better you.
+    <p class="light-gray lh-copy measure tj f5 f4-ns">
+      My last entry was <a class="link fw5" href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a>.
+      I have {{ site.posts.length }} entries in my <a class="link fw5" href="/weblog/">blog</a> for you to check out!
     </p>
   </div>
 </section>

@@ -10,6 +10,17 @@ assets:
   debug: true
   verbose: true
   gzip: false
+  defaults:
+    js:
+      integrity: false
+      prefetch: false
+    css:
+      integrity: false
+      prefetch: false
+    img:
+      integrity: false
+      prefetch: false
+
 
 webmentions:
   debug: true

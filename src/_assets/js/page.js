@@ -10,10 +10,11 @@ function stretchOutImages () {
     parentElement.style.maxWidth = "none";
     parentElement.style.margin = "0rem";
     parentElement.style.padding = "0rem";
+    image.style.width = "100vw";
   });
 };
 
 window.addEventListener('load', function () {
-  WebFont.load(WebFontConfig);
   stretchOutImages();
+  WebFont.load(WebFontConfig);
 });

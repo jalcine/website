@@ -14,11 +14,10 @@ address[role=group].post {
 }
 
 article.h-entry {
-  // All secondary copy
   p,
   li {
     @extend .lh-copy;
-    @extend .f5;
+    @extend .f4;
   }
 
   h1, h2, h3, h4, h5, h6 {

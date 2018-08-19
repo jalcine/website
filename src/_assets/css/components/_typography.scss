@@ -67,7 +67,7 @@ pre, code, kbd {
 }
 
 main[role=group] {
-  p, blockquote {
+  blockquote {
     @extend .f4;
     @extend .measure;
 
