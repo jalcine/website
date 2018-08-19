@@ -8,9 +8,9 @@
     <h2 class="f4 f3-ns gray tc tracked-tight fw3">
       :fist: This who I be. :punch:
     </h2>
-    <nav class="f5 f4-ns w-100 mw4 pa1 white center flex flex-wrap flex-column justify-between">
+    <nav class="f5 f4-ns w-100 mw6 pa1 white center flex flex-wrap flex-row justify-between">
       {% for link in site.data.links.navigation %}
-        <a class="w-50 fw5" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
+        <a class="w-third w-auto-ns pa2 tc fw5" href="{{ link.link }}" title="{{ link.title }}">{{ link.title }}</a>
       {% endfor %}
     </nav>
   </div>
