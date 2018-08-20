@@ -2,20 +2,6 @@
 require 'oembed'
 require 'uri'
 
-module JackyWtf
-  class StubBlock < Liquid::Block
-    def render(_context)
-      'TODO: Fix this block'
-    end
-  end
-
-  class StubTag < Liquid::Tag
-    def render(_context)
-      'TODO: Fix this tag'
-    end
-  end
-end
-
 # register all default OEmbed providers
 ::OEmbed::Providers.register_all
 # since register_all does not register all default providers, we need to do this here. See https://github.com/judofyr/ruby-oembed/issues/18
@@ -41,15 +27,17 @@ module Jekyll
         # Odd: slideshare uses provider-name instead of provider_name
         provider = result.fields['provider_name'] || result.fields['provider-name'] || 'unknown'
 
+        result = <<-HTML
+<div class="w-100 center pt4 embed embed-type__#{result.type} embed-provider__#{provider}">
+  #{result.html}
+</div>
+HTML
         "<div class=\"embed #{result.type} #{provider}\">#{result.html}</div>"
       rescue
-        # Do nothing.
+        "<a href=\"#{url}\">#{url}</a>"
       end
     end
   end
 end
 
 Liquid::Template.register_tag('oembed', Jekyll::OEmbed)
-Liquid::Template.register_tag('quote', JackyWtf::StubBlock)
-Liquid::Template.register_tag('video', JackyWtf::StubTag)
-Liquid::Template.register_tag('youtube', JackyWtf::StubTag)

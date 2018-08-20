@@ -1,5 +1,5 @@
 <header role="document" class="bg-near-black near-white items-center flex flex-column-s flex-wrap justify-between pa1 pv3-l">
-  {% asset brand/self.jpeg class="v-mid br-100 h3 center db mv2 dib-l ma0-l" alt="{{ site.name }}" width=auto height=auto %}
+  {% asset brand/self.jpeg @magick:resize="64x" class="v-mid br-100 h3 center db mv2 dib-l ma0-l" alt="{{ site.name }}" width=auto height=auto %}
   <nav class="flex justify-around flex-wrap center mv2">
   {% for link in site.data.links.navigation %}
     <a class="{{ link.classes }} white pa2 ph4-l" href="{{ link.link }}" title="{{ link.title }}">

@@ -20,12 +20,12 @@ more frequently. But I ended up breaking down and writing out a few 5+ tweet
 threads about things I could have expanded on here. Why? Because it's so _easy_
 to write a tweet after tweet after tweet. What's going to stop me?
 
-{% tweet https://twitter.com/jackyalcine/status/647847405598191616 %}
+{% oembed https://twitter.com/jackyalcine/status/647847405598191616 %}
 
 And then the ease of using Twitter to write out a tweet versus my current (but
 favored) setup for handling my blog posts:
 
-{% tweet https://twitter.com/jackyalcine/status/647848957985615872 %}
+{% oembed https://twitter.com/jackyalcine/status/647848957985615872 %}
 
 Of course, there's a difference in perhaps the quality of content provided as
 well as the detail that could be provided (unless it's accompanied by video,
@@ -38,7 +38,7 @@ into your thoughts on Twitter. The rest of the thread (and perhaps a rehashing
 of the thoughts made in the 140 limit) could be done in a blog post. Of course,
 there's the angle of visibility[^1]:
 
-{% tweet https://twitter.com/jackyalcine/status/647849798478000129 %}
+{% oembed https://twitter.com/jackyalcine/status/647849798478000129 %}
 
 There is the notion that with Medium's ability to provide screenshots of
 highlighted text and with one's follower base[^2] that classical
@@ -51,7 +51,7 @@ for inline commenting via its product [Carnival][2]. It looks pretty compelling
 of a means to provide inline commenting[^4] (sans the lack of love for Firefox
 on Linux :sob:):
 
-{% video "{{ 'snapshot396.png' }}" /videos/carnival_preview.webm 800 600 preload:metadata %}{: .present}
+{% asset carnival_preview.webm 800 600 preload:metadata %}{: .present}
 
 One of the values that inline commenting provides is the ability to reply in a
 condensed, tweet sized response. Of course, if it has to be longer, there's the
@@ -65,7 +65,7 @@ out for the latter[^5].
 This begs the question of whether or not you'd want to be that social butterfly
 with your blog. If so, Medium is your best bet:
 
-{% twitter https://twitter.com/jackyalcine/status/647865764159078400 %}
+{% oembed https://twitter.com/jackyalcine/status/647865764159078400 %}
 
 My particular use case is different. I write my posts in [Markdown][] and then
 generate the static version of this site using [Jekyll][]. So how would I
@@ -86,7 +86,7 @@ tweetable comments as well, provided that they are of an acceptable size.
 Again, this is a deviation from the original thought of this post: how can I
 feel less guilty of tweeting whilst still writing on my own blog?
 
-{% asset "{{ 'rdj-im3-haul-suit.gif' }}" alt="The baggage of the world..." class="present" %}
+{% asset rdj-im3-haul-suit.gif alt="The baggage of the world..." class="present" %}
 
 ### Separation of Topics
 
@@ -104,12 +104,12 @@ since <http://www.howoftendoyoutweet.com/> is down, but I know that I do it too
 often and it's mostly manually[^7]. Another site did provide me with some
 interesting graphs for the month of September:
 
-{% asset "{{ 'snapshot397.png' }}" class="present" %}
+{% asset snapshot397.png class="present" %}
 
 I tweet a lot. That's a bit over 25 tweets in an hour if I did in a 8 hour
 window.
 
-{% asset "{{ 'snapshot398.png' }}" class="present" %}
+{% asset snapshot398.png class="present" %}
 
 This graph is the one I wanted the most: how often I tweeted in relation to
 other days. It also exposes my non-conventional sleeping cycle. I take longer
