@@ -8,12 +8,24 @@ address[role=group].post {
   > span {
     @extend .db;
     @extend .pv1;
-    @extend .w-60;
     @extend .w-100;
   }
 }
 
 article.h-entry {
+  main[role=group] {
+    p, h1, h2, h3, h4, h5, h6,
+    blockquote, ul, ol {
+      @extend .center;
+      @extend .mw8;
+    }
+  }
+
+  img.fill {
+    @extend .w-100;
+    @extend .center;
+  }
+
   p,
   li {
     @extend .lh-copy;

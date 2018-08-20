@@ -48,3 +48,7 @@ group :web do
   gem 'rack-livereload', require: 'rack/livereload', group: :development
 end
 # }}}
+
+group :development do
+  gem 'rubocop'
+end

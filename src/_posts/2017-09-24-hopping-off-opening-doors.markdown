@@ -35,7 +35,7 @@ know**][7].
 ## So [Good For Poc][1] is … Open?
 Yeah! It was announced on our Twitter account recently:
 
-{% twitter https://twitter.com/goodforpoc/status/912294527993511937 %}
+{% oembed https://twitter.com/goodforpoc/status/912294527993511937 %}
 
 We're going from a [statically generated Jekyll site][8] to serving a SPA that
 communicates to a Sinatra application via GraphQL and a wee bit of REST

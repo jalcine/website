@@ -72,8 +72,6 @@ those amazing fangs, wings and flight scenes we adore in film. Well, a lot of
 tech users out there figured it to be an awesome idea. 
 
 ## Visually
-{% oembed https://www.youtube.com/watch?v=v1uyQZNg2vE %}
-
 That video wasn't edited to include those graphics to the upper left, this is
 [*Google Glass*](http://www.google.com/glass). It's here and it's getting
 better each and every day. Personally, I'd love to have it, but it'd be more

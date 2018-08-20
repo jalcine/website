@@ -1,14 +1,13 @@
 div.embed > iframe {
   @extend .aspect-ratio;
-  @extend .aspect-ratio--16x9;
+  @extend .aspect-ratio--4x3;
   @extend .mv2;
   @extend .w-100;
-  @extend .h-auto;
+  @extend .h5;
 }
 
 
-div.embed-provder__Twitter
-{
+div.embed-provder__Twitter {
   blockquote.twitter-tweet {
     font-size: inherit;
     @extend .mw-none;
@@ -20,5 +19,13 @@ div.embed-provder__Twitter
   p {
     @extend .tl;
     @extend .pa0, .mh0;
+  }
+}
+
+div.embed--provider__PeerTube {
+  iframe {
+    @extend .w-100;
+    @extend .h-100;
+    @extend .aspect-ratio--object;
   }
 }

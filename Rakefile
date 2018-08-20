@@ -22,7 +22,7 @@ task :serve do
 end
 
 task :dev do
-  run_jekyll_in_dev(['serve', '--livereload'])
+  run_jekyll_in_dev(['serve', '--livereload', '--trace', '--verbose'])
 end
 
 namespace :build do
