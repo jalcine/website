@@ -13,7 +13,15 @@ function stretchOutImages () {
   });
 };
 
+function stretchOutIframes () {
+  var frames = document.querySelectorAll("iframe");
+  frames.forEach(function stretchImage(frame) {
+    delete frame.height;
+  });
+}
+
 window.addEventListener('load', function () {
   stretchOutImages();
+  stretchOutIframes();
   WebFont.load(WebFontConfig);
 });

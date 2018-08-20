@@ -16,10 +16,14 @@ module Jekyll
       @text = text
     end
 
+    def clean_up_html(html)
+      html
+    end
+
     def generate_html(result)
       <<~HTML
 <div class="w-100 center pt4 embed embed-type__#{result.type} embed-provider__#{result.provider_name}">
-  #{result.html}
+  #{clean_up_html(result.html)}
 </div>
       HTML
     end

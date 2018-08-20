@@ -2,6 +2,9 @@
 layout: post
 title: "Setting up PeerTube on Dokku in One Go"
 date: 2018-08-20 03:19:51 PDT
+syndication:
+  - https://playvicious.social/@jalcine/100583120598291163
+  - https://video.jacky.wtf/videos/watch/20a8e663-c4fd-4410-829a-b08545665e1f
 category: guides
 tags:
   - dokku
@@ -143,7 +146,7 @@ Depending on the processing speed and the number of threads you've allowed
 PeerTube, the availability of your videos could be anywhere from mere seconds to
 an hour - be sure to consider that.
 
-{% oembed https://video.jacky.wtf/videos/watch/20a8e663-c4fd-4410-829a-b08545665e1f?height=auto %}
+{% oembed https://video.jacky.wtf/videos/watch/20a8e663-c4fd-4410-829a-b08545665e1f %}
 
 [1]: https://git.jacky.wtf/me/website
 [2]: https://github.com/dokku/dokku-postgres.git
