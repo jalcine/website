@@ -40,3 +40,4 @@ src/assets/JekyllWebmentionIO.js
 spec/examples.txt
 src/_assets/js/JekyllWebmentionIO.js
 .jekyll-metadata
+src/.cache
