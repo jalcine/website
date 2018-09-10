@@ -29,7 +29,7 @@ end
 namespace :build do
   task :prod do
     puts '----> Creating cache directories...'
-    FileUtils::mkdir_p '.cache/webmention'
+    FileUtils::mkdir_p '/tmp/build/src/.cache/webmention'
     run_jekyll_in_prod(['build'])
   end
 
