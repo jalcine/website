@@ -27,6 +27,7 @@ end
 
 namespace :build do
   task :prod do
+    FileUtils::mkdir_p '.cache/webmention'
     run_jekyll_in_prod(['build'])
   end
 
