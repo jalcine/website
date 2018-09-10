@@ -36,6 +36,13 @@ article.h-entry {
   h1, h2, h3, h4, h5, h6 {
     @extend .lh-title;
   }
+
+  hr {
+    @extend .near-black;
+    @extend .ba;
+    @extend .bw0;
+    @extend .w-60-l, .w-100;
+  }
 }
 
 footer[role=group].post {

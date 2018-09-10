@@ -35,7 +35,7 @@ I focus heavily on Web development around Vue and Elixir applications but do
 check out the [tools][3] to see if we align.
 
 ### What else is going on?
-As part of me [setting up PeerTube on my server][6c], I've decided to double
+As part of me [setting up PeerTube on my server][6], I've decided to double
 down and get more frequent with my live coding videos. If there's something
 I benefited from a lot in my career was the ability to just sit and pair with
 another developer. This gave me a chance to see the insight that another
