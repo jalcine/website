@@ -1,12 +1,19 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'ubuntu:xenial'
+            args '-p 3000:3000'
+        }
+    }
     environment { 
         CI = 'true'
     }
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+              sh 'sudo apt-get install nodejs ruby'
+              sh 'npm install'
+              sh 'bundle install'
             }
         }
         stage('Test') {
