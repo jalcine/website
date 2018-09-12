@@ -18,7 +18,7 @@ world where computers will have a hand in every aspect of life; from driving to
 creating food and probably making our beds for us. But for now, we'll have to deal
 and work on the problems that technology and our internal biases produce:
 
-{% twitter https://twitter.com/jackyalcine/status/615329515909156865 %}
+{% oembed https://twitter.com/jackyalcine/status/615329515909156865 %}
 
 The speed at which this was screenshotted and tweeted represents the anger
 I felt at the moment. A company with offices in probably every part of the
@@ -46,7 +46,7 @@ managers work with comfort knowing that products are working to the expectations
 that they both can agree on. There's no question that Google has the such[^2].
 [Scott][sh] presented this point on Twitter:
 
-{% twitter https://twitter.com/shanselman/status/616478860981334016 %}
+{% oembed https://twitter.com/shanselman/status/616478860981334016 %}
 
 My thoughts align with this. Like :100:. With Google being a global company, you'd
 assume that [racial and gender diversity][13] wouldn't be that difficult of a
@@ -59,7 +59,7 @@ a dark skinned Black person.
 In a reply to Scott's tweet, [Erica][eb] mentions her experience as a beta user
 for Google Photos:
 
-{% twitter https://twitter.com/EricaJoy/status/616649164978388992 %}
+{% oembed https://twitter.com/EricaJoy/status/616649164978388992 %}
 
 Of course, a few questions began to come to mind. For starters, what kind of photos
 were used in the acceptance cycle (or during Erica's testing experience) that
@@ -99,7 +99,7 @@ One can only assume how much of a deal this might be to Google. The chief
 architect didn't think it was a good thing. My tweet following is one a _LOT_ of
 people somehow over looked; at least the first sentence.
 
-{% twitter https://twitter.com/yonatanzunger/status/615355996114804737 %}
+{% oembed https://twitter.com/yonatanzunger/status/615355996114804737 %}
 
 Will they lose money over the fact that darker-toned Black faces aren't that
 matchable or detectable by their systems? Not necessarily, as far as I can tell.

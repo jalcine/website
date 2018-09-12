@@ -3,17 +3,30 @@ header[role=group].post {
 }
 
 address[role=group].post {
-  @extend .f6, .w-60, .pa2, .db, .center, .ttu;
+  @extend .f6, .w-100, .pa2, .db, .center, .ttu;
 
   > span {
     @extend .db;
     @extend .pv1;
-    @extend .w-60;
     @extend .w-100;
   }
 }
 
 article.h-entry {
+  main[role=group] {
+    p, h1, h2, h3, h4, h5, h6,
+    blockquote, ul, ol {
+      @extend .center;
+      @extend .mw8;
+      @extend .pa2, .pa0-ns;
+    }
+  }
+
+  img.fill {
+    @extend .w-100;
+    @extend .center;
+  }
+
   p,
   li {
     @extend .lh-copy;
@@ -22,6 +35,13 @@ article.h-entry {
 
   h1, h2, h3, h4, h5, h6 {
     @extend .lh-title;
+  }
+
+  hr {
+    @extend .near-black;
+    @extend .ba;
+    @extend .bw0;
+    @extend .w-60-l, .w-100;
   }
 }
 

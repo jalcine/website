@@ -2,13 +2,13 @@
 build_drafts: true
 show_drafts: true
 incremental: true
-verbose: true
+verbose: false
 port: 1993
 
 assets:
   compression: false
-  debug: true
-  verbose: true
+  debug: false
+  verbose: false
   gzip: false
   defaults:
     js:
@@ -21,13 +21,34 @@ assets:
       integrity: false
       prefetch: false
 
-
 webmentions:
-  debug: true
-  pause_lookups: true
+  debug: false
+  pages: true
+  collections: true
+  pause_lookups: false
+  username: jacky.wtf
+  cache_folder: .cache/webmention
+  cache_bad_uris_for: 1
+  legacy_domains:
+    - "http://jacky.wtf"
+    - "http://jalcine.me"
+    - "http://www.jalcine.me"
+    - "https://jalcine.me"
+    - "https://www.jacky.wtf"
+    - "https://www.jalcine.me"
+  js:
+    uglify: false
+    deploy: false
+    destination: _assets/js
+  templates:
+    likes: src/_includes/webmentions/likes.html
+    links: src/_includes/webmentions/links.html
+    posts: src/_includes/webmentions/posts.html
+    replies: src/_includes/webmentions/replies.html
+    reposts: src/_includes/webmentions/reposts.html
 
 pagination:
-  debug: true
+  debug: false
 
 isso_host: comments.jacky.vagrant.test
 

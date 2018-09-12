@@ -2,8 +2,10 @@
 layout: post
 title: I’ve Failed At Being a Man
 image: posts/banner-shay.jpg
+redirect_from:
+  - /weblog/ive-failed/
 date: 2017-02-12 12:56:40 PST
-reivsed: 2017-02-23 11:11:31 PST
+revised: 2017-02-23 11:11:31 PST
 tags:
   - reflection
   - apology
@@ -14,10 +16,9 @@ excerpt: |
   something that comes with great difficulty for me. The end of the last
   relationship I was in allowed me to see how toxic of a person we both are
   and what we both need to do in order to grow as people.
-
 ---
 
-{% asset "{{'posts/serenity-shay.jpg'|image_path}}" width="auto" height="auto" class="db w-80-l center" %}
+{% asset posts/serenity-shay.jpg class=fill %}
 
 At the time of writing, I’m beginning to process the end of a relationship that
 was toxic, deceitful and grew to be borderline dangerous. The abusers lied about
@@ -33,7 +34,7 @@ nothing was happening.
 > this hits the Web. I do know this; my mental state will be a lot more clearer
 > and therapy will become much easier once I’ve published this.
 
-{% asset "{{'posts/hiking-with-shay.jpg'|image_path}}" width="auto" height="auto" class="db w-80-l center" %}
+{% asset posts/hiking-with-shay.jpg class=fill %}
 
 I’ve hurt a Black Womban capable of and currently doing incredible things. I
 tarnished her name, potentially damaging her professional and personal
@@ -64,7 +65,7 @@ stances for the sake of a “healthy relationship”. I can only hope that over
 time, I’d be blessed with the chance to be friends once more. Until then, I have
 growing, healing and damage control to work on.
 
-{% asset "{{'posts/dining-with-shay.jpg'|image_path}}" width="auto" height="auto" class="db w-80-l center" %}
+{% asset posts/dining-with-shay.jpg class=fill %}
 
 Black womyn hold their lips [*tightly*][2] for the sake of protection against
 men’s inherently violent nature. She did this for me but didn’t stand for it any
@@ -72,7 +73,7 @@ longer. She’s protected me from people who were willing to tear me apart for t
 things I’ve done to her and that, in itself, is an example of how I’ve failed
 her and myself as a man.
 
-{% twitter https://twitter.com/theAfroLegalise/status/676258784646336513 %}
+{% oembed https://twitter.com/theAfroLegalise/status/676258784646336513 %}
 
 I write this to both apologize to her publicly and to inform men who are
 currently exhibiting behaviors similar to me as a warning sign. *Listen* to
@@ -88,9 +89,9 @@ Understand that vulnerability does NOT make you lesser of a man. Go to
 therapy[^1]. [Understand that healing is not a milestone, but a river of
 flow][3].
 
-{% twitter https://twitter.com/ForRevolution/status/798253605430104065 %}
+{% oembed https://twitter.com/ForRevolution/status/798253605430104065 %}
 
-{% asset "{{'posts/beach-with-shay.jpg'|image_path}}" width="auto" height="auto" class="db w-80-l center" %}
+{% asset posts/beach-with-shay.jpg class=fill %}
 
 ---
 

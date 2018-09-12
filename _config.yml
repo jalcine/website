@@ -143,12 +143,17 @@ assets:
     - _assets/files
     - _assets/favicon
     - ../node_modules
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
   plugins:
     css:
       autoprefixer:
         browsers:
           - "last 2 versions"
           - "IE > 9"
+
 
 jekyll-mentions: https://twitter.com
 

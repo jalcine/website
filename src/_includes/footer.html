@@ -17,27 +17,27 @@
   <section class="w-90 center cb cf db mw8 color-inherit">
     <div class="f3 w-50-l fl-l tc-s tl-ns">
       {% include_cached search.html %}
-      <p class="p-note center f5 lh-copy measure-narrow-l">{{ site.description | improve }}</p>
-      <p class="gray">
+      <p class="p-note f5 lh-copy measure-narrow-l">{{ site.description | improve }}</p>
+      <p class="gray f6">
         See a pesky :bug:?
         <a target="_blank" href="{{site.url}}/faq/reporting-bugs/">
           Let me know
         </a>!
       </p>
-      <p class="gray">
+      <p class="gray f6">
         :lock: PGP Key:
         <a target="_blank" class="p-key" href="{% asset pgp.asc @path %}">
           {{ site.gpg.fingerprint }}
         </a>
       </p>
-      <p class="h-adr gray">
+      <p class="h-adr f6 gray">
         Made in :city_sunset: <span class="p-locality">Oakland</span>, :us: <span
           class="p-country-name">United States of America</a>.
       </p>
     </div>
     <div class="db pa2-l w-100 mt5 mt3-ns fl-l w-50-l color-inherit">
-      <p class="tr-l">
-        <a href="/now/" target="_blank">:eyes: See what I'm up to right now.</a>
+      <p class="tr-l f6">
+        :eyes: See what I'm up to <a href="/now/" target="_blank">right now</a>.
       </p>
       {% include_cached newsletter_inline.html %}
     </div>

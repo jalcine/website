@@ -1,21 +1,17 @@
-.jekyll-twitter-plugin {
-  @extend .w-80;
-  @extend .pa4;
+div.embed {
+  @extend .db;
+  @extend .vh-100;
+  @extend .vh-75-ns;
+  @extend .mv3;
 }
 
-.twitter-tweet,
 div.embed > iframe {
-  margin: 0rem auto!important;
-  text-align: left!important;
+  @extend .w-100;
+  @extend .h-100;
 }
 
-
-div.embed.Twitter
-{
-  @extend .mv2;
-
-  > blockquote.twitter-tweet
-  {
+div.embed-provder__Twitter {
+  blockquote.twitter-tweet {
     font-size: inherit;
     @extend .mw-none;
     @extend .bt, .bb;
@@ -26,5 +22,17 @@ div.embed.Twitter
   p {
     @extend .tl;
     @extend .pa0, .mh0;
+  }
+}
+
+div.embed--provider__PeerTube {
+  @extend .aspect-ratio;
+  @extend .aspect-ratio--4x3;
+
+  iframe {
+    @extend .db;
+    @extend .center;
+    @extend .w-80;
+    @extend .mw8;
   }
 }

@@ -11,33 +11,32 @@ gem 'rake'
 # }}}
 
 group :jekyll do
-  gem 'activesupport'
-  gem 'autoprefixer-rails'
-  gem 'classifier-reborn'
   gem 'jekyll', '~> 3.8.0'
-  gem 'kramdown'
   gem 'parallel'
-  gem 'rouge'
-  gem 'sprockets', '~> 4.0.0.beta7'
   gem 'xmlrpc'
 end
 
 group :jekyll_plugins do
+  gem 'activesupport'
+  gem 'autoprefixer-rails'
+  gem 'classifier-reborn'
   gem 'jekyll-assets'
   gem 'jekyll-feed'
-  gem 'jekyll-json-feed'
   gem 'jekyll-gist'
   gem 'jekyll-include-cache'
+  gem 'jekyll-json-feed'
   gem 'jekyll-paginate-v2'
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
   gem 'jekyll-tagging'
   gem 'jekyll-tagging-related_posts'
-  gem 'jekyll-twitter-plugin'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
   gem 'jemoji'
+  gem 'kramdown'
+  gem 'rouge'
   gem 'ruby-oembed'
+  gem 'sprockets', '~> 4.0.0.beta7'
 end
 
 # {{{ Development
@@ -49,3 +48,7 @@ group :web do
   gem 'rack-livereload', require: 'rack/livereload', group: :development
 end
 # }}}
+
+group :development do
+  gem 'rubocop'
+end

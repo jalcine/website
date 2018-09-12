@@ -72,8 +72,6 @@ those amazing fangs, wings and flight scenes we adore in film. Well, a lot of
 tech users out there figured it to be an awesome idea. 
 
 ## Visually
-{% youtube v1uyQZNg2vE %}
-
 That video wasn't edited to include those graphics to the upper left, this is
 [*Google Glass*](http://www.google.com/glass). It's here and it's getting
 better each and every day. Personally, I'd love to have it, but it'd be more
@@ -93,7 +91,7 @@ shopping.
 
 ### Physically
 
-{% youtube 3b4w749Tud8 %}
+{% oembed https://www.youtube.com/watch?v=3b4w749Tud8 %}
 
 [LeapMotion](http://leapmotion.com) is, hands on, the craziest cool piece of
 technology I've personally seen. It brings hand gestures and control to any
@@ -116,7 +114,7 @@ Some of these guys need no introduction. But I will anyways. Introducing **Googl
 ### Google Now
 Below is [Google Mobile](http://www.youtube.com/user/GoogleMobile?feature=watch)'s video about [Google Now](http://www.google.com/now).
 
-{% youtube pPqliPzHYyc %}
+{% oembed https://www.youtube.com/watch?v=pPqliPzHYyc %}
 
 [Google Now](http://www.google.com/now) is fucking awesome, but only if you're
 a heavy Google user. If you store your contacts, e-mails, calendar, news (via
@@ -128,7 +126,7 @@ know before you know, thus curating to your pre born needs. [Inception,
 much?](http://www.youtube.com/watch?v=V3-a58Wt2tk).
 
 ### Siri
-{% youtube rNsrl86inpo %}
+{% oembed https://www.youtube.com/watch?v=rNsrl86inpo %}
 
 Siri, from my research and tinkering, attempts to be your pocket assistant. It
 doesn't do any heavy lifting compared to Google Now. It waits for you to ask a

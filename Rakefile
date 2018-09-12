@@ -6,6 +6,7 @@ require 'dotenv'
 
 def run_jekyll(args = [])
   command = 'bundle exec jekyll' + ' ' + args.join(' ')
+  puts "----> Running '#{command}'"
   puts system(command)
 end
 
@@ -22,11 +23,13 @@ task :serve do
 end
 
 task :dev do
-  run_jekyll_in_dev(['serve', '--livereload'])
+  run_jekyll_in_dev(['serve', '--livereload', '--trace', '--verbose'])
 end
 
 namespace :build do
   task :prod do
+    puts '----> Creating cache directories...'
+    FileUtils::mkdir_p '/tmp/build/src/.cache/webmention'
     run_jekyll_in_prod(['build'])
   end
 
