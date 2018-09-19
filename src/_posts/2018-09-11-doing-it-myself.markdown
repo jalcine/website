@@ -3,6 +3,9 @@ layout: post
 title: "Doing it Myself (Kinda) - Going Full Freelance"
 date: 2018-09-11 19:21:34 PDT
 category: updates
+syndication:
+  - https://playvicious.social/@jalcine/100711031080737179
+  - https://twitter.com/jackyalcine/status/1039864961063903232
 excerpt: |
   Hey Ma! I finally did it! I took an idea I've been sitting on and made it into
   a reality. black.af is a software consultancy geared to provide you with top
