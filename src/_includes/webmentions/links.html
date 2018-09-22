@@ -16,10 +16,10 @@
                 {% endif %}
                 {{ webmention.author.name }}
               </a>
+              &mdash;
             {% endif %}
             {% if webmention.pubdate and webmention.url %}on{% endif %}
             {% if webmention.pubdate %}
-              &mdash;
               <a class="u-url" href="{{ webmention.url }}">
                 <time class="gray dt-published"
                       datetime="{{ webmention.pubdate | date_to_rfc822 }}">
