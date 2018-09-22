@@ -17,7 +17,7 @@ article.h-entry {
     p, h1, h2, h3, h4, h5, h6,
     blockquote, ul, ol {
       @extend .center;
-      @extend .mw8;
+      @extend .mw8-l, .mw6;
       @extend .pa2, .pa0-ns;
     }
   }

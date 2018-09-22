@@ -15,38 +15,41 @@ masthead:
 <p class="measure-wide lh-copy f4">
   These are thoughts and updates I collect from my desk to bring to you.
 </p>
-{% for post in paginator.posts %}
-<section class="mw7">
-  <h2 class="f3 tracked-tight">
-    <a class="db dim underline-hover" href="{{ post.url }}">
-      {{ post.title | improve }}
-    </a>
-  </h2>
-  <div>
-    <time class="w4" datetime="{{ post.date }}">
-      :calendar: {{ post.date | date: "%d %b %Y" }}
-    </time> &mdash;
-    <span>
-      :link: {% webmention_count post.url %} mention(s)
-    </span> &mdash;
-    <span>:eyeglasses: {{ post.content | reading_time }}</span>
-    {% if page.category %}<span>:book: {{ page.category | linkify_categories }}</span>{% endif %}
-    {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
+<section class="h-feed">
+  <h1 class="f1 lh-title p-name">{{ site.name }}</h1>
+  {% for post in paginator.posts %}
+  <section class="mw7">
+    <h2 class="f3 tracked-tight">
+      <a class="db dim underline-hover" href="{{ post.url }}">
+        {{ post.title | improve }}
+      </a>
+    </h2>
+    <div>
+      <time class="w4" datetime="{{ post.date }}">
+        :calendar: {{ post.date | date: "%d %b %Y" }}
+      </time> &mdash;
+      <span>
+        :link: {% webmention_count post.url %} mention(s)
+      </span> &mdash;
+      <span>:eyeglasses: {{ post.content | reading_time }}</span>
+      {% if page.category %}<span>:book: {{ page.category | linkify_categories }}</span>{% endif %}
+      {% if page.tags %}<span>:bookmark: {{ page.tags | linkify_tags }}</span>{% endif %}
+    </div>
+    {% if post.excerpt and post.excerpt != 'none' %}
+      <p class="measure-copy lh-copy near-black bl bw2 b--silver pa2 pa3-l">
+        {{ post.excerpt | markdownify | strip_html | improve }}
+      </p>
+    {% endif %}
+  </section>
+  {% endfor %}
+  {% if paginator.total_pages > 1 %}
+  <div class="w-100 pa2">
+    {% if paginator.previous_page %}
+      <a class="fl ml2" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+    {% endif %}
+    {% if paginator.next_page %}
+      <a class="fr mr2" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+    {% endif %}
   </div>
-  {% if post.excerpt and post.excerpt != 'none' %}
-    <p class="measure-copy lh-copy near-black bl bw2 b--silver pa2 pa3-l">
-      {{ post.excerpt | markdownify | strip_html | improve }}
-    </p>
   {% endif %}
 </section>
-{% endfor %}
-{% if paginator.total_pages > 1 %}
-<div class="w-100 pa2">
-  {% if paginator.previous_page %}
-    <a class="fl ml2" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a class="fr mr2" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% endif %}
-</div>
-{% endif %}

@@ -64,17 +64,19 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <link rel="author" href="https://plus.google.com/118415769922038925979/posts" />
 
-<link href="https://github.com/jalcine" rel="me" />
-<link href="https://reddit.com/jackyalcine_" rel="me" />
-<link href="https://lobste.rs/u/jalcine" rel="me" />
-<link href="https://twitter.com/jackyalcine" rel="me" />
-<link href="https://playvicious.social/@jalcine" rel="me" />
 <link href="{{ site.url }}/{% asset pgp.asc @path %}" rel="pgpkey" />
+
+{% for uri in site.data.relme %}
+  <link href="{{ uri }}" rel="me" />
+{% endfor %}
 
 <link rel="canonical" href="{{ full_page_uri }}">
 
 <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+
+<link rel="openid.delegate" href="https://jacky.wtf/" />
+<link rel="openid.server" href="https://openid.indieauth.com/openid" />
 
 {% webmentions_head %}
 

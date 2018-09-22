@@ -15,6 +15,10 @@
     html.wf-sourceserifpro-n4-active & {
       font-family: "Source Serif Pro", $serif;
     }
+
+    html.wf-sourceserifpro-n4-inactive & {
+      font-family: $serif;
+    }
   }
 }
 
@@ -24,6 +28,10 @@
   @at-root {
     html.wf-sourcecodepro-n4-active & {
       font-family: "Source Code Pro", $code;
+    }
+
+    html.wf-sourcecodepro-n4-inactive & {
+      font-family: $code;
     }
   }
 }
@@ -104,7 +112,7 @@ a {
 }
 
 blockquote {
-  @extend .gray;
+  @extend .dark-gray;
   @extend .lh-copy;
   @extend .mh4;
 }

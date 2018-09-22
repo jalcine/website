@@ -1,8 +1,7 @@
 ---
 layout: bare
-title: "My Resume"
-permalink: /work/resume/
-redirect_from: /resume/
+title: "My Education Resume"
+permalink: /work/resume/education/
 components:
   header: false
 ---
@@ -15,16 +14,17 @@ components:
   </p>
   <h2 class="tc-s fl-l w-100 w-20-l pv1 ph2 ma0 mt1 mh2-s bg-accent fg-white avenir sans-serif ttu tr-l">Summary</h2>
   <div class="f4 pa2 fl w-80-l w-100-l pl2-l ma0 lh-copy measure fw2">
-    {{ site.data.resume.bio | strip | markdownify | remove: '<p>' | remove: '</p>'}}
+    {{ site.data.resume.education.bio | strip | markdownify | remove: '<p>' | remove: '</p>'}}
   </div>
 </section>
 <main role="body" class="w-100 w-90-m w-75-l center cb sans-serif">
   <h2 class="tc-s fl-l w-100 w-20-l pv1 ph2 bg-accent fg-white avenir sans-serif ttu ma0 mt1 mh2-s tr-l">Roles</h2>
   <div class="fl-l w-80-l w-100 pa2">
-    {% for position in site.data.resume.roles %}
+    {% for position in site.data.resume.education.roles %}
       <div class="pb4" data-track-content="resume" data-content-piece="{{ position.anchor }}">
         <h3 class="mv0 f3 garamond serif">
-          <em class="fw3 gray">{{ position.role }},</em> <a href="{{ position.uri }}" target="_blank" name="{{ position.anchor }}" class="near-black">
+          <em class="fw3 gray">{{ position.role }},</em>
+          <a href="{{ position.uri }}" target="_blank" name="{{ position.anchor }}" class="near-black">
             <strong>{{ position.name }}</strong>
           </a>
         </h3>

@@ -1,0 +1,42 @@
+---
+bio: |
+  In conjunction to working as a [_skilled software engineer_](/work/resume/tech),
+  Jacky has worked in classrooms with youth ranging in grades 5 - 12 on
+  introduction to software courses. He takes the experiences and educational
+  tracks of his life to connect to youth in a more colloquially reputable fashion.
+
+  **I'm eager to expand this part** of my background, please reach out to me
+  about roles!
+
+roles:
+  -
+    anchor: bpl
+    name: AdHoc Study Group
+    role: Instructor
+    time:
+      start: Feb 2012
+      end: Jan 2013
+    blurb: |
+      A few friends and parents got together to teach some local youth about
+      game development. The goal was to have them going from knowing nothing
+      about software development or game theory to building a simple 2D
+      side-scroller. We met at the Youth Space in Central Library of the
+      Brooklyn Public Library branch. About ten kids (aged from 12 - 16) met
+      regularly and would go through guided coursework to learn how to build
+      games using Phaser. I focused on the game engine logic and helping
+      students that fell off from instruction paths or who wanted more insight.
+      **Technologies**: [Phaser.Js](https://phaser.io/)
+  - 
+    anchor: vettio
+    name: Vettio Outreach
+    role: Instructor
+    time:
+      start: Nov 2013
+      end: Jan 2014
+    blurb: |
+      A friend connected me with a set of youth at his former high school to
+      introduce them to computer science (namely algorithms). We met twice a
+      week as part of an after school program. The classes were terminated
+      after a brief run due to the holidays in New York City and dropping off of
+      interest from the youth.
+      **Technologies**: JavaScript
