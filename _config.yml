@@ -170,7 +170,6 @@ webmentions:
   collections: true
   pause_lookups: false
   username: jacky.wtf
-  cache_folder: .cache/webmention
   cache_bad_uris_for: 1
   legacy_domains:
     - "http://jacky.wtf"

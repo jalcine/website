@@ -5,7 +5,9 @@ excerpt: |
   I'm not an veteran blogger but I do wonder what blogging or just sharing our
   thoughts on the Internet will look like in the next decade or so.
 date: 2018-09-22 15:41:49 PDT
-category: thoughts
+syndication:
+  - https://playvicious.social/@jalcine/100771954522412129
+category: indieweb
 tags:
   - blogging
   - future
