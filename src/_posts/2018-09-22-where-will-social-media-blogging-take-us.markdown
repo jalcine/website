@@ -7,10 +7,12 @@ excerpt: |
 date: 2018-09-22 15:41:49 PDT
 syndication:
   - https://playvicious.social/@jalcine/100771954522412129
-category: indieweb
+category: thoughts
 tags:
+  - social media
   - blogging
   - future
+  - indieweb
   - software
   - rant
 ---
