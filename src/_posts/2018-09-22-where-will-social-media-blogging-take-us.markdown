@@ -7,6 +7,7 @@ excerpt: |
 date: 2018-09-22 15:41:49 PDT
 syndication:
   - https://playvicious.social/@jalcine/100771954522412129
+  - https://news.indieweb.org/en/jacky.wtf/weblog/where-will-social-media-blogging-take-us/
 category: thoughts
 tags:
   - social media
