@@ -4,6 +4,8 @@ title: "I'm Working on a New Engine for My Site"
 byline: I'm going to leave Jekyll for something I built all for me!
 excerpt: Jekyll's going to be deprecated for me soon. Long live Koype!
 date: 2018-10-12 12:38:52 PDT
+syndication:
+  - https://playvicious.social/@jalcine/100884460222294662
 category: updates
 tags:
   - indieweb
