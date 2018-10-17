@@ -2,7 +2,7 @@
 layout: faq
 title: What are you up to now?
 permalink: /now/
-date: 2018-04-07 23:01:57 PDT
+date: 2018-10-17 15:07:06 PDT
 ---
 
 > Inspired by Derek Siver's ["Now Page" movement][1], this page serves as a way
@@ -14,12 +14,13 @@ habits][lsh] that are encouraging me to be more healthy and work more efficientl
 
 ## Hacking Constantly
 
-I've rebuilt [my personal infrastructure][1], [adding some tracking][2] and
-[reintroduced comments][3].
+I'm working on making a completely [new blog engine for my personal site][1].
+The goal is to have it adhere to a lot of the [IndieWeb](htps://indiewerb.rog)
+principles and also make a set of tools that provide familiar interfaces to
+platforms people use everyday.
 
-I got a few new projects in the pipeline. I'm working on re-vamping the
-[projects page][4] to give more detail into that - I'll be telling my
-[subscribers][sub] about it first.
+I'm also working more on [twchat](https://twchat.app) these days. I've given up
+on announcing a release date - when it's ready, it'll be ready.
 
 ## That's it!
 
@@ -31,8 +32,4 @@ a particular question answered.
 [nowff]: https://sivers.org/nowff/
 [sub]: /subscribe/
 [contact]: /contact/
-[1]: /weblog/new-infra/
-[2]: /weblog/tracking-you/
-[3]: {% post_url 2018-04-07-comments-are-back %}
-[lsh]: {% post_url 2018-01-27-a-different-january %}
-[4]: /projects/
+[1]: {% post_url 2018-10-12-building-koype %}
