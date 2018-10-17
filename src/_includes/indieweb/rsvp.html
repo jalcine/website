@@ -9,13 +9,13 @@
   </div>
   <div class="ma2">
     <h2 class="mv1">
-      <a class="u-in-reply-to" href="{{ page.event.uri }}">
+      <a class="p-name u-in-reply-to" href="{{ page.event.uri }}">
         {{ page.event.name }}
       </a>
     </h2>
     <p class="lh-copy h-adr mv1">
       :globe_with_meridians:
-      {{ page.event.geo }}
+      <span class="p-label">{{ page.event.geo }}</span>
     </p>
     <p class="mv1">
       :link:
@@ -24,12 +24,12 @@
       </a>
       &mdash;
       RSVP:
-      {{ page.event.rsvp }}
       <data class="p-rsvp" value="{{ page.event.rsvp }}">
-        {% if page.event.rsvp == "yes" %}:heavy_check_mark:{% endif %}
-        {% if page.event.rsvp == "no"  %}:no_entry_sign:{% endif %}
-        <strong>{{ page.event.comment }}</strong>
+        {{ page.event.rsvp }}
       </data>
+      {% if page.event.rsvp == "yes" %}:heavy_check_mark:{% endif %}
+      {% if page.event.rsvp == "no"  %}:no_entry_sign:{% endif %}
+      <strong class="p-content">{{ page.event.comment }}</strong>
     </p>
   </div>
 </section>
