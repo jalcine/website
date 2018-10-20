@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "I'll Be Working for You, the Community!"
+syndication:
+  - https://playvicious.social/@jalcine/100930475456574115
 excerpt: |
   I've launched my Patreon account to help build the federated Web
   and lower the barrier to entry!
