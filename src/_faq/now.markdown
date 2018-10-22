@@ -2,7 +2,7 @@
 layout: faq
 title: What are you up to now?
 permalink: /now/
-date: 2018-10-17 15:07:06 PDT
+date: 2018-10-21 18:00:57 PDT
 ---
 
 > Inspired by Derek Siver's ["Now Page" movement][1], this page serves as a way
@@ -14,13 +14,18 @@ habits][lsh] that are encouraging me to be more healthy and work more efficientl
 
 ## Hacking Constantly
 
-I'm working on making a completely [new blog engine for my personal site][1].
-The goal is to have it adhere to a lot of the [IndieWeb](htps://indiewerb.rog)
-principles and also make a set of tools that provide familiar interfaces to
-platforms people use everyday.
+I'm still working on a [new blog engine for my personal site][1]. I won't be
+working on [twchat](https://twchat.app) this week however; I have another project
+that'll be taking up my time for an upcoming event that I'd like to hash
+out quickly.
 
-I'm also working more on [twchat](https://twchat.app) these days. I've given up
-on announcing a release date - when it's ready, it'll be ready.
+## Updates
+
+  * I launched [my Patreon page](https://patreon.com/jackyalcine)!
+  * I've begun working on a (another) new project for the Fediverse.
+  * I've been reading of the following books:
+    * [Debt: The First 5000 Years][2]
+    * [Programming Elixir 1.2][3]
 
 ## That's it!
 
@@ -33,3 +38,5 @@ a particular question answered.
 [sub]: /subscribe/
 [contact]: /contact/
 [1]: {% post_url 2018-10-12-building-koype %}
+[2]: https://www.goodreads.com/book/show/6617037-debt
+[3]: https://www.goodreads.com/book/show/17971957-programming-elixir
