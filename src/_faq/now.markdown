@@ -5,8 +5,8 @@ permalink: /now/
 date: 2018-10-21 18:00:57 PDT
 ---
 
-> Inspired by Derek Siver's ["Now Page" movement][1], this page serves as a way
-> for visitors to see what I'm up to at the moment. I updated this page
+> Inspired by Derek Siver's ["Now Page" movement][nowff], this page serves as a
+> way for visitors to see what I'm up to at the moment. I updated this page
 > on **{{ page.date | date: "%-d %B %Y" }}**.
 
 I'm currently in Oakland, CA. I'm in a "grind" mode, attempting to knock out
