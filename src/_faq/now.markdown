@@ -9,8 +9,8 @@ date: 2018-10-21 18:00:57 PDT
 > for visitors to see what I'm up to at the moment. I updated this page
 > on **{{ page.date | date: "%-d %B %Y" }}**.
 
-I'm currently in Oakland, CA. I've been enjoying embracing new [life-style
-habits][lsh] that are encouraging me to be more healthy and work more efficiently.
+I'm currently in Oakland, CA. I'm in a "grind" mode, attempting to knock out
+a bunch of projects and ideas as quickly as cleanly as possible.
 
 ## Hacking Constantly
 
