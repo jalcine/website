@@ -34,13 +34,6 @@
 
 {% asset page.css %}
 
-<link rel="help" title="FAQ" href="{{ site.url }}/faq/">
-<link rel="index" title="{{ site.name }}" href="{{ site.url }}">
-
-{% include_cached favicon.html %}
-
-<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="{{site.url}}/feeds/articles.xml" />
-
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
 <meta http-equiv='Expires' content='0'>
 <meta itemprop="name" content="{{ correct_title }}">
@@ -63,18 +56,17 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <link rel="author" href="https://plus.google.com/118415769922038925979/posts" />
+<link rel="help" title="FAQ" href="{{ site.url }}/faq/">
+<link rel="index" title="{{ site.name }}" href="{{ site.url }}">
+{% include_cached favicon.html %}
 
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - Articles" href="{{site.url}}/feeds/articles.xml" />
 <link href="{{ site.url }}/{% asset pgp.asc @path %}" rel="pgpkey" />
-
-{% for uri in site.data.relme %}
-  <link href="{{ uri }}" rel="me" />
+{% for uri in site.data.relme %}<link href="{{ uri }}" rel="me" />
 {% endfor %}
-
 <link rel="canonical" href="{{ full_page_uri }}">
-
 <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-<link rel="microsub" href="https://aperture.p3k.io/microsub/126">
 
 <link rel="openid.delegate" href="https://jacky.wtf/" />
 <link rel="openid.server" href="https://openid.indieauth.com/openid" />

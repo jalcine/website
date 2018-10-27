@@ -2,7 +2,7 @@
 layout: faq
 title: What are you up to now?
 permalink: /now/
-date: 2018-10-21 18:00:57 PDT
+date: 2018-10-26 17:13:53 PDT
 ---
 
 > Inspired by Derek Siver's ["Now Page" movement][nowff], this page serves as a
@@ -18,6 +18,10 @@ I'm still working on a [new blog engine for my personal site][1]. I won't be
 working on [twchat](https://twchat.app) this week however; I have another project
 that'll be taking up my time for an upcoming event that I'd like to hash
 out quickly.
+
+## System Information
+
+{% asset "neofetch/Screenshot_20181026_171610.png" class="w-100 mw7 db" %}
 
 ## Updates
 
