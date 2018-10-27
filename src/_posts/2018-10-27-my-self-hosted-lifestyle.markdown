@@ -3,6 +3,9 @@ layout: post
 title: "My Self-Hosted Lifestyle"
 date: 2018-10-27 08:09:37 PDT
 category: review
+syndication:
+  - https://twitter.com/jackyalcine/status/1056226575279112193
+  - https://playvicious.social/@jalcine/100968624973022850
 tags:
   - dokku
   - nextcloud
