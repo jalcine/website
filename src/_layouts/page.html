@@ -16,4 +16,7 @@ layout: bare
       data-content-name="page"
       data-content-piece="{{ page.title }}">
   {{ content }}
+  {% webmention_links page.url %}
+  {% webmention_replies page.url %}
+  {% webmention_likes page.url %}
 </main>
