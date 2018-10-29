@@ -2,34 +2,34 @@
 layout: faq
 title: What are you up to now?
 permalink: /now/
-date: 2018-10-26 17:13:53 PDT
+date: 2018-10-29 00:55:10 PDT
 ---
 
 > Inspired by Derek Siver's ["Now Page" movement][nowff], this page serves as a
 > way for visitors to see what I'm up to at the moment. I updated this page
 > on **{{ page.date | date: "%-d %B %Y" }}**.
 
-I'm currently in Oakland, CA. I'm in a "grind" mode, attempting to knock out
-a bunch of projects and ideas as quickly as cleanly as possible.
+I'm currently in Oakland, CA. I'm still hacking on projects I hold close. It
+being one of the more hectic quarters of the year, I'm bracing for impact.
 
-## Hacking Constantly
+## Open Projects I'm Working On
 
-I'm still working on a [new blog engine for my personal site][1]. I won't be
-working on [twchat](https://twchat.app) this week however; I have another project
-that'll be taking up my time for an upcoming event that I'd like to hash
-out quickly.
+The flagship open project I'm working on is still going to be [Koype][1]
+However, I am looking to re-implement some projects I started for the
+[IndieWeb][], namely the [IndieMark Scanner][4].
 
 ## System Information
 
-{% asset "neofetch/Screenshot_20181026_171610.png" class="w-100 mw7 db" %}
+{% asset "neofetch/Screenshot_20181029_005819.png" class="w-100 h-auto w-auto db center" %}
 
 ## Updates
 
-  * I launched [my Patreon page](https://patreon.com/jackyalcine)!
-  * I've begun working on a (another) new project for the Fediverse.
-  * I've been reading of the following books:
+  * I'm finishing up some touches for an application that'd go live sometime
+    this week.
+  * I've still reading of the following books:
     * [Debt: The First 5000 Years][2]
     * [Programming Elixir 1.2][3]
+  * I wrote a post about [the self hosted services I run][blog:1]
 
 ## That's it!
 
@@ -41,6 +41,9 @@ a particular question answered.
 [nowff]: https://sivers.org/nowff/
 [sub]: /subscribe/
 [contact]: /contact/
+[indieweb]: https://indieweb.org/
 [1]: {% post_url 2018-10-12-building-koype %}
 [2]: https://www.goodreads.com/book/show/6617037-debt
 [3]: https://www.goodreads.com/book/show/17971957-programming-elixir
+[4]: https://indieweb.org/IndieMark_Scanner
+[blog:1]: {% post_url 2018-10-27-my-self-hosted-lifestyle %}
