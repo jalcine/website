@@ -28,6 +28,7 @@ div.embed-provder__Twitter {
 div.embed--provider__PeerTube {
   @extend .aspect-ratio;
   @extend .aspect-ratio--4x3;
+  @extend .center;
 
   iframe {
     @extend .db;

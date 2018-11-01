@@ -39,6 +39,10 @@ article.h-entry {
     @extend .bw0;
     @extend .w-60-l, .w-100;
   }
+
+  blockquote {
+    @extend .pv2;
+  }
 }
 
 footer[role=group].post {

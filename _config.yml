@@ -91,13 +91,6 @@ defaults:
       type: "portfolio"
     values:
       layout: portfolio
-  -
-    scope:
-      path: "_drafts"
-      type: "drafts"
-    values:
-      layout: post
-      image: none
 
 collections:
   events:
