@@ -38,6 +38,6 @@ section[data-content-name="page"] a:visited {
       My last entry was <a class="link fw5" href="{{ site.posts[0].url }}">{{ site.posts[0].title }}</a>.
       I have {{ site.posts.length }} entries in my <a class="link fw5" href="/weblog/">blog</a> for you to check out!
     </p>
-    {{ webmentions_likes "https://jacky.wtf/" }}
+    {% webmention_likes "https://jacky.wtf/" %}
   </div>
 </section>
