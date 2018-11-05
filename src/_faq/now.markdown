@@ -26,15 +26,14 @@ Dokku more likely since that's how I [host all of my personal software][blog:1].
 
 This week, I'm reading the following:
 
-  * [Debt: The First 5,000 Years][book:1] by [David Graeber][author:1]
-  * [The Gifts of Imperfection][book:2] by [Brenè Brown][author:2]
+* [Debt: The First 5,000 Years][book:1] by [David Graeber][author:1]
+* [The Gifts of Imperfection][book:2] by [Brenè Brown][author:2]
 
-## Photo!
+## Photo
+
 I also have a new picture of my face for y'all:
 
-<a href="https://www.instagram.com/p/BpypANentBs/">
-  {% asset "brand/self-2018.jpeg" class="w-100 mw7 db center v-mid cb cf" %}
-</a>
+[{% asset "brand/self-2018.jpeg" class="w-100 mw7 db center v-mid cb cf" %}](https://www.ditchinghourly.com/9502ebc7)
 
 ---
 
