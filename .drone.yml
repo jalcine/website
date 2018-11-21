@@ -9,4 +9,5 @@ steps:
   - name: website building
     image: ruby:2.5.0-alpine
     commands:
+      - apk add -U build-base
       - bundle install
