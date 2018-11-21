@@ -3,10 +3,10 @@ kind: pipeline
 name: default
 steps:
   - name: frontend building
-    image: node:alpine
+    image: node:9.8.0-alpine
     commands:
       - npm install
   - name: website building
-    image: ruby
+    image: ruby:2.5.0-alpine
     commands:
       - bundle install
