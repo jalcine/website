@@ -6,8 +6,12 @@ steps:
     image: node:9.8.0-alpine
     commands:
       - npm install
-  - name: website building
+  - name: jekyll dep fetching
     image: ruby:2.5.0-alpine
     commands:
       - apk add -U build-base
       - bundle install
+  - name: jekyll dep fetching
+    image: ruby:2.5.0-alpine
+    commands:
+      - bundle exec rake build:dev spec
