@@ -8,9 +8,6 @@ clone:
 steps:
   - name: frontend building
     image: node:9.8.0-alpine
-    volumes:
-      - name: cache
-        path: ./node_modules
     commands:
       - npm install
   - name: jekyll dep fetching
@@ -22,7 +19,3 @@ steps:
     image: ruby:2.5.0-alpine
     commands:
       - bundle exec rake build:dev spec
-
-volumes:
-  - name: cache
-    temp: {}
