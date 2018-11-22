@@ -2,6 +2,10 @@
 layout: post
 title: A November Status Update of Koype
 date: 2018-11-21 13:17:43 PST
+syndication:
+ - https://news.indieweb.org/en/jacky.wtf/weblog/status-of-koype/
+ - https://playvicious.social/@jalcine/101112979391254261
+ - https://twitter.com/jackyalcine/status/1065465243457871872
 excerpt: |
   I've gotten some baseline IndieWeb-adjacent features working in Koype and I'm
   eager to work on a few more!
