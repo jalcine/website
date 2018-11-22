@@ -2,6 +2,13 @@
 kind: pipeline
 name: website
 
+pipeline:
+  git_push:
+    image: appleboy/drone-git-push
+    remote: dokku@jacky.wtf:jacky-wtf-static
+    branch: master
+    local_ref: HEAD
+
 clone:
   depth: 1
 
