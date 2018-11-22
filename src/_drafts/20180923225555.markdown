@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Do You Need to Own Your Data?"
+date: 2018-09-23 22:56:16 PDT
+category: thoughts
+tags:
+  - indieweb
+  - ownership
+---

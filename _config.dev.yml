@@ -55,3 +55,5 @@ isso_host: comments.jacky.vagrant.test
 analytics:
   host: analytics.jacky.vagrant.test
   site_id: 1
+
+
