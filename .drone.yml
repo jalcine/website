@@ -2,13 +2,6 @@
 kind: pipeline
 name: website
 
-pipeline:
-  git_push:
-    image: appleboy/drone-git-push
-    remote: dokku@jacky.wtf:jacky-wtf-static
-    branch: master
-    local_ref: HEAD
-
 clone:
   depth: 1
 
@@ -44,11 +37,7 @@ steps:
       - bundle exec rake build:deploy
       - bundle exec rake spec
   - name: deploy
-    image: ruby:2.5.0-alpine
-    environment:
-      DOKKU_SSH_KEY:
-        from_secret: drone_ssh_key
-    commands:
-      - echo "${DRONE_SSH_KEY}" | tee ~/.ssh/id_rsa
-      - git remote add dokku dokku@jacky.wtf:jacky-wtf-static
-      - git push dokku HEAD:master
+    image: appleboy/drone-git-push
+    remote: dokku@jacky.wtf:jacky-wtf-static
+    branch: master
+    local_ref: HEAD
