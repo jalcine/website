@@ -12,7 +12,7 @@ steps:
       - name: npm
         path: /drone/src/node_modules
     commands:
-      - npm config set loglevel debug
+      - npm config set loglevel info
       - npm install
   - name: build - jekyll deps
     image: ruby:2.5.0-alpine
@@ -23,6 +23,7 @@ steps:
         path: /drone/src/vendor/bundle
     environment:
       ENV: 'test'
+      RAKE_ENV: 'test'
     commands:
       - apk add -U build-base
       - bundle install --deployment --binstubs=vendor/bin
