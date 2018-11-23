@@ -19,6 +19,7 @@ steps:
       - name: npm
         path: /drone/src/node_modules
     commands:
+      - npm config set loglevel warn
       - npm install
   - name: build - jekyll deps
     image: ruby:2.5.0-alpine
@@ -42,3 +43,12 @@ steps:
     commands:
       - bundle exec rake build:deploy
       - bundle exec rake spec
+  - name: deploy
+    image: ruby:2.5.0-alpine
+    environment:
+      DOKKU_SSH_KEY:
+        from_secret: drone_ssh_key
+    commands:
+      - echo "${DRONE_SSH_KEY}" | tee ~/.ssh/id_rsa
+      - git remote add dokku dokku@jacky.wtf:jacky-wtf-static
+      - git push dokku HEAD:master
