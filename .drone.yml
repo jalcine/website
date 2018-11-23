@@ -38,7 +38,7 @@ steps:
       - name: ruby
         path: /drone/src/vendor/bundle
     environment:
-      ENV: 'production'
+      ENV: 'test'
     commands:
       - bundle exec rake build:deploy
-      - bundle exec rake notify
+      - bundle exec rake spec
