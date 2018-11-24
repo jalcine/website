@@ -23,7 +23,7 @@ steps:
       ENV: 'production'
       RAKE_ENV: 'production'
     commands:
-      - apk add -U build-base
+      - apk add -U build-base nodejs
       - bundle install
       - bundle exec rake build:deploy
   - name: deploy
