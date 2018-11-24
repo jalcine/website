@@ -19,16 +19,13 @@ steps:
     volumes:
       - name: npm
         path: /drone/src/node_modules
-      - name: ruby
-        path: /drone/src/vendor/bundle
     environment:
-      ENV: 'test'
-      RAKE_ENV: 'test'
+      ENV: 'production'
+      RAKE_ENV: 'production'
     commands:
       - apk add -U build-base
-      - bundle install --deployment --binstubs=vendor/bin
-      - vendor/bin/rake build:deploy
-      - vendor/bin/rake rake spec
+      - bundle install
+      - bundle exec rake build:deploy
   - name: deploy
     image: appleboy/drone-git-push
     remote: dokku@jacky.wtf:jacky-wtf-static
