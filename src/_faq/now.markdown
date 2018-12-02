@@ -9,31 +9,21 @@ date: 2018-11-05 11:35:47 PST
 > way for visitors to see what I'm up to at the moment. I updated this page
 > on **{{ page.date | date: "%-d %B %Y" }}**.
 
-I'm out in **Oakland, California** at the moment. I'm attending a bunch of events
-around the conference [AfroTech 2018][5]. I'm aiming to have some recap posts
-about what I learned, who I ran into and what occurred at [Blavity][]'s third
-annual conference.
+I'm out in **Oakland, California** at the moment. I'm working on a suite of
+projects targeted the open source Web. [I've written about them at length on
+my blog][1]{: .u-mention-of .u-reply-to}
 
 ## Projects
 
-Outside of _work_ [work][], I'm picking up development again on [Koype][1] and
-aiming to have something more presentational. Namely getting the main project
-website for Koype up and going with something light and simple as well as
-getting some Heroku deploy links going as well. I'd set up instructions for
-Dokku more likely since that's how I [host all of my personal software][blog:1].
+When I'm not [working on client projects][work], I'm hacking away on [Koype][1].
+I also began looking again at some code I had for a desktop client for
+ActivityPub servers and have picked up development on it once more!
 
-## Books
+## New Posts
 
-This week, I'm reading the following:
+I've written some new content on my blog.
 
-* [Debt: The First 5,000 Years][book:1] by [David Graeber][author:1]
-* [The Gifts of Imperfection][book:2] by [Brenè Brown][author:2]
-
-## Photo
-
-I also have a new picture of my face for y'all:
-
-[{% asset "brand/self-2018.jpeg" class="w-100 mw7 db center v-mid cb cf" %}](https://www.ditchinghourly.com/9502ebc7)
+  1. [My Commitment to the IndieWeb and Free Web][1]
 
 ---
 
@@ -45,16 +35,6 @@ a particular question answered.
 [nowff]: https://sivers.org/nowff/
 [sub]: /subscribe/
 [contact]: /contact/
-[indieweb]: https://indieweb.org/
-[1]: {% post_url 2018-10-12-building-koype %}
-[2]: https://www.goodreads.com/book/show/6617037-debt
-[3]: https://www.goodreads.com/book/show/17971957-programming-elixir
-[4]: https://indieweb.org/IndieMark_Scanner
-[blog:1]: {% post_url 2018-10-27-my-self-hosted-lifestyle %}
-[5]: https://afrotech.com/events/afrotech-2018/official-schedule
-[blavity]: https://blavity.com/
-[work]: https://black.af/
-[book:1]: https://www.goodreads.com/book/show/6617037-debt
-[author:1]: https://www.goodreads.com/author/show/29101.David_Graeber
-[book:2]: https://www.goodreads.com/book/show/7015403-the-gifts-of-imperfection
-[author:2]: https://www.goodreads.com/author/show/162578.Bren_Brown
+[1]: {% post_url 2018-12-02-commitment-free-web %}
+[2]: https://git.jacky.wtf/indieweb/koype/
+[3]: https://git.jacky.wtf/fediverse/activitydesk

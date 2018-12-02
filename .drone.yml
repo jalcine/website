@@ -2,13 +2,6 @@
 kind: pipeline
 name: website
 
-pipeline:
-  git_push:
-    image: appleboy/drone-git-push
-    remote: dokku@jacky.wtf:jacky-wtf-static
-    branch: master
-    local_ref: HEAD
-
 clone:
   depth: 1
 
@@ -19,26 +12,22 @@ steps:
       - name: npm
         path: /drone/src/node_modules
     commands:
+      - npm config set loglevel info
       - npm install
   - name: build - jekyll deps
     image: ruby:2.5.0-alpine
     volumes:
       - name: npm
         path: /drone/src/node_modules
-      - name: ruby
-        path: /drone/src/vendor/bundle
-    commands:
-      - apk add -U build-base
-      - bundle install --deployment
-  - name: build - website
-    image: ruby:2.5.0-alpine
-    volumes:
-      - name: npm
-        path: /drone/src/node_modules
-      - name: ruby
-        path: /drone/src/vendor/bundle
     environment:
-      ENV: 'test'
+      ENV: 'production'
+      RAKE_ENV: 'production'
     commands:
+      - apk add -U build-base nodejs
+      - bundle install
       - bundle exec rake build:deploy
-      - bundle exec rake spec
+  - name: deploy
+    image: appleboy/drone-git-push
+    remote: dokku@jacky.wtf:jacky-wtf-static
+    branch: master
+    local_ref: HEAD

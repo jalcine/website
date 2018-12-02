@@ -1,39 +1,53 @@
 div.embed {
   @extend .db;
-  @extend .vh-100;
-  @extend .vh-75-ns;
-  @extend .mv3;
-}
 
-div.embed > iframe {
-  @extend .w-100;
-  @extend .h-100;
+  @extend .mv3;
+
+  @extend .mw6;
+
+  > iframe {
+    @extend .w-100;
+
+    @extend .h-100;
+
+    @extend .mv3;
+  }
 }
 
 div.embed-provder__Twitter {
   blockquote.twitter-tweet {
     font-size: inherit;
+
     @extend .mw-none;
+
     @extend .bt, .bb;
+
     @extend .bg-washed-blue, .b--blue;
+
     @extend .navy;
   }
 
   p {
     @extend .tl;
+
     @extend .pa0, .mh0;
   }
 }
 
 div.embed--provider__PeerTube {
   @extend .aspect-ratio;
+
   @extend .aspect-ratio--4x3;
+
   @extend .center;
 
   iframe {
     @extend .db;
+
     @extend .center;
+
     @extend .w-80;
+
     @extend .mw8;
   }
 }
