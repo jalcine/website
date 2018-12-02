@@ -9,6 +9,8 @@ excerpt: |
 tags:
   - indieweb
   - fediverse
+syndication:
+  - https://playvicious.social/@jalcine/101173672961099316
 ---
 
 As the year comes to a close, it's tradition in the [IndieWeb][] to give
