@@ -53,15 +53,14 @@
 <meta name="twitter:description" content="{{ blurb }}" />
 <meta name="twitter:image:src" content="{{site.url}}{% asset '{{ image }}' @path %}" />
 <meta name="twitter:card" content="summary_large_image" />
-
+{% json_feed_meta %}
+{% feed_meta %}
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
 <link rel="author" href="https://plus.google.com/118415769922038925979/posts" />
 <link rel="help" title="FAQ" href="{{ site.url }}/faq/">
 <link rel="index" title="{{ site.name }}" href="{{ site.url }}">
 {% include_cached favicon.html %}
-
-<link rel="alternate" type="application/jf2feed+json" title="{{ site.name }} - Articles" href="{{site.url}}/feeds/articles.json" />
-<link rel="alternate" type="application/atom+xml" title="{{ site.name }} - Articles" href="{{site.url}}/feeds/articles.xml" />
 <link href="{{ site.url }}/{% asset pgp.asc @path %}" rel="pgpkey" />
 {% for uri in site.data.relme %}<link href="{{ uri }}" rel="me" />
 {% endfor %}
