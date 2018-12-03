@@ -105,4 +105,4 @@ on these projects!
 [microsub]: https://indieweb.org/Microsub-spec
 [silos]: https://indieweb.org/silo
 [plasma]: https://www.kde.org/plasma-desktop
-[gnome]: https://wiki.gnome.org/Projects/GnomeShell
+[gnome shell]: https://wiki.gnome.org/Projects/GnomeShell
