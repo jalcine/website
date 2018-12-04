@@ -8,9 +8,11 @@ excerpt: |
   and onward.
 tags:
   - indieweb
+  - indienews
   - fediverse
 syndication:
   - https://playvicious.social/@jalcine/101173672961099316
+  - https://news.indieweb.org/en
 ---
 
 As the year comes to a close, it's tradition in the [IndieWeb][] to give
