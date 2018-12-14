@@ -3,7 +3,7 @@
   <div class="w-100 center mv3 pb2 pb4-ns">
     <h1 class="f2 f-headline-ns lh-title-ns washed-blue tc tracked-tight ma0
       pa0 fontFamily__special dim">
-      {% asset brand/self.jpeg class='p-logo u-photo v-mid cb-s br-100 h3 h4-ns grow mb3 ma1-ns' alt='{{ site.name }}' width=auto height=auto %}
+      {% asset brand/self-2018.jpeg class='p-logo u-photo v-mid cb-s br-100 h3 h4-ns grow mb3 ma1-ns' alt='{{ site.name }}' width=auto height=auto %}
       <a class="n-nickname p-name u-url near-white" rel="me" href="{{ site.url }}">{{ site.name_safe }}</a>
     </h1>
     <h2 class="f4 f3-ns gray tc tracked-tight fw3">
@@ -19,6 +19,12 @@
     <div class="f3 w-50-l fl-l tc-s tl-ns">
       {% include_cached search.html %}
       <p class="p-note f5 f4-l lh-copy measure-narrow-l">{{ site.description | improve }}</p>
+      <p class="f5 f4-l lh-copy measure-narrow-l">
+        <strong>Pronouns:</strong>
+        <a href="http://pronoun.is/he/him/his" class="white p-x-pronoun-nominative">he</a> / 
+        <a href="http://pronoun.is/he/him/his" class="white p-x-pronoun-oblique">him</a> / 
+        <a href="http://pronoun.is/he/him/his" class="white p-x-pronoun-posessive">hims</a>
+      </p>
       <p class="gray f6">
         See a pesky :bug:?
         <a target="_blank" href="{{site.url}}/faq/reporting-bugs/">
