@@ -1,0 +1,2 @@
+command! DeployHEAD :Gpush dokku HEAD:master -f
+command! Deploy :Gpush dokku develop:master -f
