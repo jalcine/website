@@ -14,9 +14,12 @@ projects for [Koype][] and **ActivityDesk**, my [ActivityPub][] desktop client.
 
 ## Projects
 
-When I'm not [working on client projects][work], I'm hacking away on [Koype][1].
-I also began looking again at some code I had for a desktop client for
-ActivityPub servers and have picked up development on it once more!
+When I'm not [working on client projects or doing sales][work], I'm hacking
+away on [Koype][1]. Right now, I'm looking into re-implementing a few popular
+themes and using that as a demonstration of what can be done with [Koype][].
+
+**ActivityDesk** is still in the experimental design phases but the logic for
+the 
 
 ---
 
@@ -28,7 +31,8 @@ a particular question answered.
 [nowff]: https://sivers.org/nowff/
 [sub]: /subscribe/
 [contact]: /contact/
-[3]: https://git.jacky.wtf/fediverse/activitydesk
-[1]: {% post_url 2018-12-02-commitment-free-web %}
 [koype]: https://git.jacky.wtf/indieweb/koype/
 [activitypub]:https://www.w3.org/TR/activitypub/
+[work]: https://black.af/
+[1]: {% post_url 2018-12-02-commitment-free-web %}
+[3]: https://git.jacky.wtf/fediverse/activitydesk
