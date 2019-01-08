@@ -1,0 +1,30 @@
+---
+title: "Attending WaffleJS // January 2019"
+layout: post
+category: rsvp
+date: 2019-01-07 22:31:12 PST
+tags:
+  - indieweb
+  - social
+event:
+  uri: "https://wafflejs.com"
+  name: "WaffleJS // January 2019"
+  geo: "Mozilla SF, 2 Harrison St, San Francisco, CA 94105"
+  comment: "I'll be speaking about the IndieWeb at this meetup!"
+  rsvp: "yes"
+  date:
+    start: 2018-12-26 19:00:00 PDT
+    end: 2018-12-26 21:15:00 PDT
+excerpt: |
+  I'll be speaking about the IndieWeb and Fediverse at the first WaffleJS of
+  2019.
+---
+
+This Wednesday is your chance to pull up to [WaffleJS][] - a super chill monthly
+meetup about things JavaScript (or not - it's a safe and open space to talk
+about tech and things related to it). I'm going to be speaking about the
+[IndieWeb][] and the [Fediverse][] at this meetup; maybe I'll see you there?
+
+[wafflejs]: https://wafflejs.com
+[indieweb]: https://indieweb.org/why
+[fediverse]: https://fediverse.party/

@@ -1,0 +1,58 @@
+---
+layout: post
+title: Koype Updates for January 2019
+date: 2019-01-07 18:23:21 PST
+category: 
+  - koype
+excerpt: |
+  I'm getting closer and closer to a solid release for Koype.
+---
+
+{% asset "posts/Screen Shot 2019-01-07 at 18.20.58-fullpage.png" class="fill" width="100%" height="100%" %}
+
+The progress with [Koype][] is moving. It's not as fast as I'd like - [work][]
+is keeping me busy during the day so my evenings are spent looking for things to
+add as well as plugging through [the backlog][1] of tasks. I'm glad to note that
+[Webmention][] support is all in there in a very simple fashion. It's not
+asynchronous yet but doing that in Elixir is _very_ simple - hence the punting.
+Right now, I'm working on transforming the information from a Webmention into
+something Koype can use to present to a post's viewer and the site owner in a
+semantically relevant and cached fashion. This means likes from Twitter,
+Mastodon or any platform that <https://brid.gy> can support _should_ show up fine
+if they render stuff in [Microformats2][].
+
+## Release
+
+I won't have a solid release for Koype for some time. I'm punting until I can
+get it in a "simple" deploy unit that someone can just pick up and use.
+Something like Go binaries but more battle tested :wink:. That and the pending
+release of the [Hub][2] are tied to this release. It's kind of silly but I want
+to provide a solid experience for Koype.
+
+## Design
+
+Below is a snapshot of how blog posts will look with Koype:
+
+{% asset "posts/Screen Shot 2019-01-07 at 18.21.51-fullpage.png" %}
+
+I like it. _A lot_. Like I'm so excited to make it my primary solution for my
+personal site. There's also a Liquid extension for Elixir - that'll make it
+simple to port [Jekyll themes][3] to Koype. I have a working list on [the
+repository for them][4]; hoping I get the priority ones out soon.
+
+## Contributors
+
+I'm _very_ open to people with experience in design and/or using Elixir to help
+out with the project or to even just see if they can get it up and running on
+their systems! I had my [first PR review][5] for the project today - super
+exciting! Hope to see more in the near future.
+
+[work]: https://black.af/
+[koype]: https://koype.net/
+[1]: https://git.jacky.wtf/indieweb/koype/issues
+[webmention]: https://webmention.rocks/
+[microformats2]: http://microformats.org/
+[2]: https://indieweb.org/Koype_Hub
+[3]: https://jekyllthemes.io/
+[4]: https://git.jacky.wtf/indieweb/koype-themes/issues/1
+[5]: https://git.jacky.wtf/indieweb/koype/pulls/100

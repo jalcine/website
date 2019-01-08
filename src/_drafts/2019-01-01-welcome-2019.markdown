@@ -1,0 +1,35 @@
+---
+layout: post
+date: 2019-01-01 12:14:46 PST
+title: "Welcome 2019! I'm Glad You Could Make It"
+category: updates
+excerpt: |
+  This is going to be the year when it happens. When I finally dump social media
+  from large unethically-slant companies by default. I'm super excited.
+tags:
+  - 2019
+  - updates
+---
+
+I spent my New Years in Oakland with some family that's in town, a book and some
+nice hot tea. Conventionally, I would have been out in the town partying but
+I haven't felt fulfilled doing that last night. Instead, after a few pages in
+[a book I've been churning through][1], I began listing out some goals I wanted
+to knock out this quarter and for the rest of the year[^1]. It's a short one:
+
+* Backup information from corporate [silos][2].
+* Get [Koype][] to an operational MVP.
+* Build import tool from silo to Koype.
+* Build supporting tools around Koype.
+
+So far, I'm pretty far along with Koype! The only thing that's probably stopping
+me from sending it out into the wild would be theming. I'm looking for a decent
+solution to implement that within [Elixir][] / [Phoenix][].
+
+[1]: https://www.goodreads.com/book/show/6617037-debt
+[2]: https://indieweb.org/silo
+[3]: https://black.af
+[koype]: https://koype.net/
+[elixir]: https://elixir-lang.org
+[phoenix]: https://phoenixframework.org
+[^1]: Not really resolutions in the pop culture sense since rarely do people manage to accomplish and brands manipulate peoples' inability to do so to market to their weakness - which is unethical.
